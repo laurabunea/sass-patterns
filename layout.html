@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
 
     <head>
@@ -34,6 +35,11 @@
                 <li>
                     <a class='block--xs theme__block_100' href='#layout-clearfix'>
                         Clearfix
+                    </a>
+                </li>
+                <li>
+                    <a class='block--xs theme__block_100' href='#layout-inline-block'>
+                        Inline Blocks
                     </a>
                 </li>
                 <li>
@@ -87,11 +93,34 @@
                 </div><!--  code block ends -->
             </div><!-- layout-clearfix ends-->
 
+            <!-- /****************************************  Inline Blocks  *******************************/ -->
+
+            <div class='m' id='layout-inline-block'>
+                <h2 class='h3'>
+                    Inline block 
+                </h2>
+
+                <!--  code block starts -->
+                <div class='block--xs m theme__block_800'>
+                    <h4 class='tiny caps muted'>
+                        code
+                    </h4>
+                    <pre>
+<code class="language-markup">
+    &lt;div class='inline-block'&gt; 
+        ...  
+    &lt;/div&gt;
+</code>
+                    </pre>
+                </div><!--  code block ends -->
+
+            </div><!-- layout-clearfix ends-->
+
             <!-- /****************************************  Positioning  *******************************/ -->
 
             <div class='mxxx' id='layout-positioning'>
                 <h2 class='h3'>
-                    Positioning
+                    Positioning - Floating and Absolute
                 </h2>
 
                 <!-- /********  Floating elements *************/ -->
@@ -139,24 +168,21 @@
         &nbsp;&lt;img class=&#39;absolute__top_right' src='assets/images/green-bird.jpg' /&gt; 
     &lt;/div&gt;   
 </code>
-
 <code class="language-markup">
     &lt;div class='relative'&gt;
         &nbsp;&lt;img class='absolute__top_left' src='assets/images/green-bird.jpg' /&gt; 
     &lt;/div&gt;   
 </code>
-
 <code class="language-markup">
     &lt;div class='relative'&gt;
         &nbsp;&lt;img class='absolute__bottom_right' src='assets/images/green-bird.jpg' /&gt; 
     &lt;/div&gt;   
 </code>
-
 <code class="language-markup">
     &lt;div class='relative'&gt;
         &nbsp;&lt;img class='absolute__bottom_left' src='assets/images/green-bird.jpg' /&gt; 
     &lt;/div&gt;   
-    </code>
+</code>
                     </pre>  
                    
                 </div><!--  code block ends -->
@@ -185,6 +211,7 @@
             </div><!-- layout-positioning ends-->
 
             <!-- /****************************************  Generic blocks  *******************************/ -->
+            
             <div class='mxxx' id='layout-generic-block' >
                 <h2 class='h3'>
                     Generic blocks
@@ -273,10 +300,26 @@
                     Media blocks
                 </h2>
                 <!--  code block starts -->
-                <div class='block--xs bt-0 theme__block_800'>
+                <div class='block--xs m theme__block_800'>
                     <h4 class='tiny caps muted'>
                         code
                     </h4>
+                    <pre>
+<code class="language-markup">
+    &lt;div class='media'&gt;
+        &lt;img class='media__image' src='ssets/images/green-bird.jpg' alt='' /&gt;
+        &lt;div class='media__body'&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+<code class="language-markup">
+    &lt;div class='media--rev'&gt;
+        &lt;img class='media__image' src='ssets/images/green-bird.jpg' alt='' /&gt;
+        &lt;div class='media__body'&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+                    </pre>
                 </div><!--  code block ends -->
 
                 <!--  hello world block starts -->
@@ -284,10 +327,24 @@
                     <h4 class='tiny caps muted'>
                         hello world
                     </h4>
+                    <div class='media'>
+                        <img src='assets/images/green-bird.jpg' class='media__image'>
+                        <div class='media__body'>
+                           Uncle Bully was pashing when the pearler packing a sad event occured. Oh no! I'm beached as, this carked it seabed is as stoked as a flat stick kumara. Mean while, in a waka, Rhys Darby and Cardigan Bay were up to no good with a bunch of random milks.
+                        </div>
+                    </div>
+
+                    <div class='media--rev'>
+                        <img src='assets/images/green-bird.jpg' class='media__image'>
+                        <div class='media__body'>
+                           I'd slam that clam, good afterble constanoon. The snarky force of his burning my Vogel's was on par with Hercules Morse, as big as a horse's good as mate.
+                        </div>
+                    </div>
+
                 </div><!--  hello world block ends -->
             </div><!-- layout-media-block ends-->
 
-            <!-- /****************************************  Media blocks  *******************************/ -->
+            <!-- /****************************************  Inline gird  *******************************/ -->
 
             <div class='mxxx' id='layout-inline-grid'>
                 <h2 class='h3'>
@@ -364,7 +421,7 @@
                     <p>
                         4 column vertically centered grid blocks
                     </p>
-                    
+
                     <div class='grid grid--middle'>
                         <div class=' g--1-4 testbox-100-100 theme__block_300'>
                             &nbsp;

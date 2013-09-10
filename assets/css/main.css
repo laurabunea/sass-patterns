@@ -515,61 +515,23 @@ body {
  *
  * Structure:
  *
- *      1. Sans/serif text
- *		2. Heading styles
+ *      1. Heading styles
+ *		2. Sub Heading styles
  *      3. Paragraph styles
  *      4. Typographic relationships
- *      5. Links
- *      6. Text Allignment classes 
- *		7. List styles
- *		8. Descriptions
-        9. Caps
- *
- *
+ *      5. Sans vs sans serif
+ *      6. Lower vs Uppercase
+ *		7. Text allignments
+ *		8. List styles
  *
  * ----------------------------------------------------------------------------
  *
  */
-/** 1. Sans/serif text
+/** 1. Header styles
  * ----------------------------------------------------------------------------
  *
  */
-/* line 36, ../sass/core/_typography.scss */
-html,
-body {
-  color: #2E2F2B;
-  font-family: "helvetica", sans-serif;
-}
-
-/* line 41, ../sass/core/_typography.scss */
-.sans {
-  font-family: "helvetica", sans-serif;
-}
-
-/* line 45, ../sass/core/_typography.scss */
-.serif {
-  font-family: "georgia", serif;
-}
-
-/**
- *  3. Caps
- * ----------------------------------------------------------------------------
- */
-/* line 54, ../sass/core/_typography.scss */
-.caps {
-  text-transform: uppercase;
-}
-
-/* line 57, ../sass/core/_typography.scss */
-.caps-lower {
-  text-transform: lowercase;
-}
-
-/** 2. Header defaults
- * ----------------------------------------------------------------------------
- *
- */
-/* line 66, ../sass/core/_typography.scss */
+/* line 27, ../sass/core/_typography.scss */
 h1, .h1 {
   font-size: 2.25em;
   /* 36px */
@@ -579,7 +541,7 @@ h1, .h1 {
   /* 24px */
 }
 
-/* line 74, ../sass/core/_typography.scss */
+/* line 35, ../sass/core/_typography.scss */
 h2, .h2 {
   font-size: 1.875em;
   /* 30px */
@@ -588,7 +550,7 @@ h2, .h2 {
   /* 24px */
 }
 
-/* line 82, ../sass/core/_typography.scss */
+/* line 43, ../sass/core/_typography.scss */
 h3, .h3 {
   font-size: 1.375em;
   /* 22px */
@@ -597,7 +559,7 @@ h3, .h3 {
   /* 24px */
 }
 
-/* line 90, ../sass/core/_typography.scss */
+/* line 51, ../sass/core/_typography.scss */
 h4, .h4 {
   font-size: 1.125em;
   /* 18px */
@@ -607,7 +569,7 @@ h4, .h4 {
   /* 20px */
 }
 
-/* line 99, ../sass/core/_typography.scss */
+/* line 60, ../sass/core/_typography.scss */
 h5, .h5 {
   font-size: 1em;
   /* 16px */
@@ -616,7 +578,7 @@ h5, .h5 {
   /* 12px */
 }
 
-/* line 107, ../sass/core/_typography.scss */
+/* line 68, ../sass/core/_typography.scss */
 h6, .h6 {
   font-size: .875em;
   /* 14px */
@@ -625,11 +587,15 @@ h6, .h6 {
   /* 12px */
 }
 
+/** 2. Sub Heading styles
+ * ----------------------------------------------------------------------------
+ *
+ */
 /**
  *  3. Paragraph styles
  * ----------------------------------------------------------------------------
  */
-/* line 119, ../sass/core/_typography.scss */
+/* line 89, ../sass/core/_typography.scss */
 p, .para {
   font-size: .875em;
   /* 14px */
@@ -639,31 +605,31 @@ p, .para {
   /* 12px */
 }
 
-/* line 126, ../sass/core/_typography.scss */
+/* line 96, ../sass/core/_typography.scss */
 .medium {
   font-size: .875em;
   /* 14px */
 }
 
-/* line 130, ../sass/core/_typography.scss */
+/* line 100, ../sass/core/_typography.scss */
 .intro {
   font-size: 1.125em;
   /* 18px */
 }
 
-/* line 134, ../sass/core/_typography.scss */
+/* line 104, ../sass/core/_typography.scss */
 .small {
   font-size: .8125em;
   /* 14px */
 }
 
-/* line 138, ../sass/core/_typography.scss */
+/* line 108, ../sass/core/_typography.scss */
 .tiny {
   font-size: .75em;
   /* 12px */
 }
 
-/* line 142, ../sass/core/_typography.scss */
+/* line 112, ../sass/core/_typography.scss */
 .weak {
   font-weight: normal;
 }
@@ -672,7 +638,7 @@ p, .para {
  * 4. Typographic relationships (nawww, aren't they so good together?)
  * ----------------------------------------------------------------------------
  */
-/* line 152, ../sass/core/_typography.scss */
+/* line 125, ../sass/core/_typography.scss */
 h4 + h6,
 h4 + p,
 h5 + p {
@@ -680,128 +646,88 @@ h5 + p {
   /* 4px @ 14px */
 }
 
-/* line 156, ../sass/core/_typography.scss */
+/* line 129, ../sass/core/_typography.scss */
 p + p {
   margin-top: .571428571em;
   /* 8px @ 14px */
 }
 
+/** 5. Sans/serif text
+ * ----------------------------------------------------------------------------
+ *
+ */
+/* line 143, ../sass/core/_typography.scss */
+html,
+body {
+  color: #2E2F2B;
+  font-family: "helvetica", sans-serif;
+}
+
+/* line 148, ../sass/core/_typography.scss */
+.sans {
+  font-family: "helvetica", sans-serif;
+}
+
+/* line 152, ../sass/core/_typography.scss */
+.serif {
+  font-family: "georgia", serif;
+}
+
 /**
- * 5. Links
+ *  6. Lowercase vs Uppercase
  * ----------------------------------------------------------------------------
  */
+/* line 163, ../sass/core/_typography.scss */
+.caps {
+  text-transform: uppercase;
+}
+
+/* line 166, ../sass/core/_typography.scss */
+.caps-lower {
+  text-transform: lowercase;
+}
+
 /**
- * 6. Text Allignment classes
+ * 7. Text Allignment classes
  * ----------------------------------------------------------------------------
 
- 	<p class="text_align--left">Left aligned text.</p>
-	<p class="text_align--center">Center aligned text.</p>
-	<p class="text_align--right">Right aligned text.</p>
+    <p class="text_align--left">Left aligned text.</p>
+    <p class="text_align--center">Center aligned text.</p>
+    <p class="text_align--right">Right aligned text.</p>
 
  */
-/* line 182, ../sass/core/_typography.scss */
+/* line 183, ../sass/core/_typography.scss */
 .text-align--left {
   text-align: left;
 }
 
-/* line 185, ../sass/core/_typography.scss */
+/* line 186, ../sass/core/_typography.scss */
 .text-align--right {
   text-align: right;
 }
 
-/* line 188, ../sass/core/_typography.scss */
+/* line 189, ../sass/core/_typography.scss */
 .text-align--center {
   text-align: center;
 }
 
 /**
- * 7. List styles
+ * 8. List styles
  * ----------------------------------------------------------------------------
  */
-/* line 199, ../sass/core/_typography.scss */
+/* line 200, ../sass/core/_typography.scss */
 .list--unstyled, .list--inline {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-/* line 205, ../sass/core/_typography.scss */
+/* line 206, ../sass/core/_typography.scss */
 .list--unstyled > li, .list--inline > li {
   list-style: none;
   margin-left: 0;
 }
 
-/**
- * 8. Descriptions
- * ----------------------------------------------------------------------------
- *
- * A list of terms with their associated descriptions.
- *
- *
- */
-/* line 230, ../sass/core/_typography.scss */
-dl {
-  margin-bottom: 20px;
-}
-
-/* line 235, ../sass/core/_typography.scss */
-dt,
-dd {
-  line-height: 1.428571429;
-}
-
-/* line 239, ../sass/core/_typography.scss */
-dt {
-  font-weight: bold;
-}
-
-/* line 243, ../sass/core/_typography.scss */
-dd {
-  margin-left: 0;
-}
-
-/* Make terms and descriptions in <dl> line up side-by-side. Starts off stacked like default <dl>s, but when the navbar expands, so do these. */
-@media (min-width: 768px) {
-  /* line 250, ../sass/core/_typography.scss */
-  .dl-horizontal dt {
-    float: left;
-    width: 160px;
-    overflow: hidden;
-    clear: left;
-    text-align: right;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  /* line 259, ../sass/core/_typography.scss */
-  .dl-horizontal dd {
-    margin-left: 180px;
-  }
-
-  /* line 263, ../sass/core/_typography.scss */
-  .dl-horizontal dd:before,
-  .dl-horizontal dd:after {
-    display: table;
-    content: " ";
-  }
-
-  /* line 267, ../sass/core/_typography.scss */
-  .dl-horizontal dd:after {
-    clear: both;
-  }
-
-  /* line 271, ../sass/core/_typography.scss */
-  .dl-horizontal dd:before,
-  .dl-horizontal dd:after {
-    display: table;
-    content: " ";
-  }
-
-  /* line 275, ../sass/core/_typography.scss */
-  .dl-horizontal dd:after {
-    clear: both;
-  }
-}
 /**
  *
  * Themes

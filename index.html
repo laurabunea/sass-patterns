@@ -1,9 +1,11 @@
 <!doctype html>
 <html>
+
     <head>
         <link rel="stylesheet" href="assets/css/main.css">
         <link href="assets/css/prism.css" type="text/css" rel="stylesheet" />
     </head>
+
     <body>
         <!-- Top Navigation Bar - this holds the parent categories -->
         <div class='navigation--wrapper theme__block_600' style=''>
@@ -32,11 +34,6 @@
         <div class='navigation--side'>
             <ul class='list--unstyled'>
                 <li>
-                    <a class='block--xs theme__block_100' href='#typo-sans'>
-                        Sans vs San Serif
-                    </a>
-                </li>
-                <li>
                     <a class='block--xs theme__block_100' href='#typo-headings'>
                         Heading styles
                     </a>
@@ -52,17 +49,27 @@
                     </a>
                 </li>
                 <li>
-                    <a class='block--xs theme__block_100' href='#typo-inline-grid'>
+                    <a class='block--xs theme__block_100' href='#typo-text-relatinoships'>
                         Text relationships
                     </a>
                 </li>
                 <li>
-                    <a class='block--xs theme__block_100' href='#typo-inline-grid'>
+                    <a class='block--xs theme__block_100' href='#typo-sans'>
+                        Sans vs San Serif
+                    </a>
+                </li>
+                <li>
+                    <a class='block--xs theme__block_100' href='#typo-cases'>
+                        Lower vs Upper case
+                    </a>
+                </li>
+                <li>
+                    <a class='block--xs theme__block_100' href='#typo-text-align'>
                         Text allignment
                     </a>
                 </li>
                 <li>
-                    <a class='block--xs theme__block_100' href='#typo-inline-grid'>
+                    <a class='block--xs theme__block_100' href='#typo-lists'>
                         List styles
                     </a>
                 </li>
@@ -76,39 +83,6 @@
                 Typography
             </h1>
             <hr>
-
-        <!-- /****************************************  Sans/serif text  *******************************/ -->
-            <div class='m' id='typo-sans'>
-                <h2 class='h3' >
-                    Sans vs Sans Serif
-                </h2>
-
-                <!--  code block starts -->
-                <div class='block--xs m theme__block_800'>
-                    <h4 class='tiny caps muted'>
-                        code
-                    </h4>
-                    <pre>
-<code class="language-markup">
-    &lt;p class='sans'&gt; sans &lt;/p&gt;
-    &lt;p class='serif'&gt; sans serif &lt;/p&gt;
-</code>
-                    </pre>
-                </div><!-- code block starts -->
-
-                <!-- hello world block starts -->
-                <div class='block--xs bt-0 theme__block_150'>
-                    <h4 class='tiny caps muted'>
-                        hello world
-                    </h4>
-                    <p class='sans'>
-                        sans
-                    </p>
-                    <p class='serif'>
-                        sans serif
-                    </p>
-                </div><!-- hello world block ends -->
-            </div>
 
         <!-- /****************************************  Heading styles  *******************************/ -->
 
@@ -159,7 +133,7 @@
         <!-- /****************************************  Sub - Heading styles  *******************************/ -->
 
             <div class='mxxx' id='typo-sub-headings'>
-                
+
                 <h2 class='h3' >
                     Sub Heading styles
                 </h2>
@@ -249,17 +223,57 @@
                 </div><!-- hello world block ends -->
             </div><!-- -->
 
-        <!-- /***********************************************  Links **************************************/ -->
-
-            <div class='mxxx' id=''>
+        <!-- /****************************************  Sans/serif text  *******************************/ -->
+            <div class='m' id='typo-sans'>
                 <h2 class='h3' >
-                    Links
+                    Sans vs Sans Serif
                 </h2>
+
+                <!--  code block starts -->
+                <div class='block--xs m theme__block_800'>
+                    <h4 class='tiny caps muted'>
+                        code
+                    </h4>
+                    <pre>
+<code class="language-markup">
+    &lt;p class='sans'&gt; sans &lt;/p&gt;
+    &lt;p class='serif'&gt; sans serif &lt;/p&gt;
+</code>
+                    </pre>
+                </div><!-- code block starts -->
+
+                <!-- hello world block starts -->
+                <div class='block--xs bt-0 theme__block_150'>
+                    <h4 class='tiny caps muted'>
+                        hello world
+                    </h4>
+                    <p class='sans'>
+                        sans
+                    </p>
+                    <p class='serif'>
+                        sans serif
+                    </p>
+                </div><!-- hello world block ends -->
+            </div><!--typo sans ends-->
+
+        <!-- /****************************************  Lower Case vs Upper Case  *******************************/ -->
+            <div class='mxxx' id='typo-cases'>
+
+                <h2 class='h3' >
+                    Lower vs Upper case
+                </h2>
+
                 <!-- code block starts -->
                 <div class='block--xs xm theme__block_800'>
                     <h4 class='tiny caps muted'>
                         code
                     </h4>
+                    <pre>
+<code class="language-markup">
+    &lt;p class='caps'&gt; Uppercase &lt;/p&gt;
+    &lt;p class='caps-lower'&gt; Lowercase &lt;/p&gt;
+</code>
+                    </pre>
                 </div><!-- code block ends -->
 
                 <!-- hello world block starts -->
@@ -267,13 +281,15 @@
                     <h4 class='tiny caps muted'>
                         hello world
                     </h4>
+                    <p class='caps'>Uppercase</p>
+                    <p class='caps-lower'>Lowercase</p>
                 </div><!-- hello world block ends -->
-            </div><!--  -->
+            </div><!-- typo cases ends  -->
 
 
          <!-- /****************************************  Text allignment classes  *******************************/ -->
 
-            <div class='mxxx' id=''>
+            <div class='mxxx' id='typo-text-align'>
 
                 <h2 class='h3' >
                     Text allignment classes
@@ -308,10 +324,10 @@
                         Right aligned text
                     </p>
                 </div><!-- hello world block ends -->
-            </div><!--  -->
+            </div><!--  typo-text-align ends -->
 
         <!-- /****************************************  List styles  *******************************/ -->
-            <div class='mxxx' id=''>
+            <div class='mxxx' id='typo-lists'>
 
                 <h2 class='h3 ' >
                     List styles
@@ -376,53 +392,8 @@
                         </li>
                     </ul>
                 </div><!-- hello world block ends -->
-            </div><!--  -->
+            </div><!-- typo-lists ends -->
 
-        <!-- /****************************************  Caps  *******************************/ -->
-            <div class='mxxx' id=''>
-
-                <h2 class='h3' >
-                    Caps
-                </h2>
-
-                <!-- code block starts -->
-                <div class='block--xs xm theme__block_800'>
-                    <h4 class='tiny caps muted'>
-                        code
-                    </h4>
-                </div><!-- code block ends -->
-
-                <!-- hello world block starts -->
-                <div class='block--xs theme__block_150'>
-                    <h4 class='tiny caps muted'>
-                        hello world
-                    </h4>
-                </div><!-- hello world block ends -->
-            </div><!--  -->
-
-        <!-- /****************************************  Descriptions  *******************************/ -->
-            
-            <div class='mxxx' id=''>
-                <h2 class='h3 xm--b m'>
-                    Descriptions
-                </h2>
-
-                <!-- code block starts -->
-                <div class='block--xs xm theme__block_800'>
-                    <h4 class='tiny caps muted'>
-                        code
-                    </h4>
-                </div><!-- code block ends -->
-
-                <!-- hello world block starts -->
-                <div class='block--xs theme__block_150'>
-                    <h4 class='tiny caps muted'>
-                        hello world
-                    </h4>
-                </div><!-- hello world block ends -->
-
-            </div><!--  -->
-        </div><!--  -->
         <script type="text/javascript" src="assets/includes/prism.js"></script>
     </body>
 </html>
