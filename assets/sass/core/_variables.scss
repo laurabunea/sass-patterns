@@ -1,0 +1,140 @@
+//
+// Variables
+// --------------------------------------------------
+
+$line-height-base:        1.428571429; // 20/14
+
+
+// Typography Defaults    
+//----------------------------------
+
+//$base_font_size:        	14; //px
+//$base_line_height:        	21; //px
+//$em:              			$base_font_size * 1;
+//$base_font_size_px:       	#{$base_font_size}px;
+//$base_font_family:          'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif;
+//$heading_font_family:       'Olsen', Georgia, serif;
+//$base_font_monospaced:      'Courier New', 'Courier', monospace;
+//$base_font_weight:        	400;
+
+
+// Global values
+// --------------------------------------------------
+
+
+// Grays
+// -------------------------
+
+$gray-darker:            lighten(#000, 13.5%); // #222
+$gray-dark:              lighten(#000, 20%);   // #333
+$gray:                   lighten(#000, 33.5%); // #555
+$gray-light:             lighten(#000, 60%);   // #999
+$gray-lighter:           lighten(#000, 93.5%); // #eee
+
+
+// Links
+// -------------------------
+
+$link-color:            blue;
+$link-hover-color:      darken($link-color, 15%);
+
+/**
+ * Spacing: she's a fickle mistress.
+ * -----------------------------------------------------------------------------
+ */
+
+
+$base-spacing-unit: 1.5em; // 24px
+
+$xxxm :     0.1em;
+$xxm :      $base-spacing-unit / 3;     // 8px
+$xm :       $base-spacing-unit / 1.5;   // 16px
+$m :        $base-spacing-unit;         // 24px
+$mx :       $base-spacing-unit * 1.5;   // 36px
+$mxx :      $base-spacing-unit * 2;     // 48px
+
+.m0     	{ margin-top: 0; }
+.m0--b 		{ margin-bottom: 0; }
+.xxxm       { margin-top: $xxxm; }
+.xxm        { margin-top: $xxm; }
+.xm         { margin-top: $xm; }
+.m          { margin-top: $m; }
+.mx         { margin-top: $mx; }
+.mxx        { margin-top: $mxx; }
+
+.xxm--b     { margin-bottom: $xxm; }
+.xm--b      { margin-bottom: $xm; }
+.m--b       { margin-bottom: $m; }
+.mx--b      { margin-bottom: $mx; }
+.mxx--b     { margin-bottom: $mxx; }
+
+.p0         { padding-top: 0 !important; }
+.p0--b      { padding-bottom: 0 !important; }
+.xxp 		{ padding-top: $xxm; }
+.xp 		{ padding-top: $xm; }
+.p 			{ padding-top: $m; }
+.px 		{ padding-top: $mx; }
+.pxx 		{ padding-top: $mxx; }
+
+
+
+// Tables
+// -------------------------
+
+$table-cell-padding:                 8px;
+$table-condensed-cell-padding:       5px;
+
+$table-bg:                           transparent; // overall background-color
+$table-bg-accent:                    #f9f9f9; // for striping
+$table-bg-hover:                     #f5f5f5;
+$table-bg-active:                    $table-bg-hover;
+
+$table-border-color:                 #ddd; // table and cell border
+
+
+
+
+// Media queries breakpoints
+// --------------------------------------------------
+
+// Extra small screen / phone
+$screen-xs:                  480px;
+$screen-phone:               $screen-xs;
+
+// Small screen / tablet
+$screen-sm:                  768px;
+$screen-tablet:              $screen-sm;
+
+// Medium screen / desktop
+$screen-md:                  992px;
+$screen-desktop:             $screen-md;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px;
+$screen-lg-desktop:          $screen-lg;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm - 1);
+$screen-sm-max:              ($screen-md - 1);
+$screen-md-max:              ($screen-lg - 1);
+
+
+
+// Form states and alerts
+// -------------------------
+
+$state-warning-text:             #c09853;
+$state-warning-bg:               #fcf8e3;
+//$state-warning-border:           darken(spin($state-warning-bg, -10), 3%);
+
+$state-danger-text:              #b94a48;
+$state-danger-bg:                #f2dede;
+//$state-danger-border:            darken(spin($state-danger-bg, -10), 3%);
+
+$state-success-text:             #468847;
+$state-success-bg:               #dff0d8;
+//$state-success-border:           darken(spin($state-success-bg, -10), 5%);
+
+$state-info-text:                #3a87ad;
+$state-info-bg:                  #d9edf7;
+//$state-info-border:              darken(spin($state-info-bg, -10), 7%);

@@ -1,0 +1,278 @@
+/**
+ *
+ * Typography defaults
+ * -----------------------------------------------------------------------------
+ *
+ * Structure:
+ *
+ *      1. Sans/serif text
+ *		2. Heading styles
+ *      3. Paragraph styles
+ *      4. Typographic relationships
+ *      5. Links
+ *      6. Text Allignment classes 
+ *		7. List styles
+ *		8. Descriptions
+        9. Caps
+ *
+ *
+ *
+ * ----------------------------------------------------------------------------
+ *
+ */
+
+
+
+
+
+/** 1. Sans/serif text
+ * ----------------------------------------------------------------------------
+ *
+ */
+$sansSerifStack: "helvetica", sans-serif ;
+$serifStack: "georgia", serif;
+
+html,
+body {
+    color: #2E2F2B;
+    font-family: $sansSerifStack;
+}
+
+.sans {
+  	font-family: $sansSerifStack;
+}
+
+.serif {
+	font-family: $serifStack;
+}
+
+
+/**
+ *  3. Caps
+ * ----------------------------------------------------------------------------
+ */
+.caps {
+    text-transform:uppercase;
+}
+.caps-lower {
+    text-transform:lowercase;
+}
+
+/** 2. Header defaults
+ * ----------------------------------------------------------------------------
+ *
+ */
+
+h1, .h1 {
+    @extend .m0--b;
+    //font-family:$serifStack;
+    font-size: 2.25em;                      /* 36px */
+    line-height: 1;                         /* 36px */
+    margin-top: .666666667em;               /* 24px */
+}
+
+h2, .h2 {
+    @extend .m0--b;
+    //font-family:$serifStack;
+    font-size: 1.875em;                     /* 30px */
+    line-height: 1.2;
+    margin-top: .8em;                       /* 24px */
+}
+
+h3, .h3 {
+    @extend .m0--b;
+    //font-family:$serifStack;
+    font-size: 1.375em;                     /* 22px */
+    line-height: 1.2;
+    margin-top: 1.090909091em;              /* 24px */
+}
+
+h4, .h4 {
+    @extend .m0--b;
+    @extend .fix-webkit-font-rendering;
+    //font-family:$serifStack;
+    font-size: 1.125em;                     /* 18px */         
+    line-height: 1.33333333;                /* 24px */
+    margin-top: 1.11111111em;               /* 20px */
+}
+
+h5, .h5 {
+    @extend .m0--b;
+    //font-family:$serifStack;
+    font-size: 1em;                         /* 16px */
+    line-height: 1.2;
+    margin-top: .75em;                      /* 12px */
+}
+
+h6, .h6 {
+    @extend .m0--b;
+    //font-family:$sansSerifStack;
+    font-size: .875em;                      /* 14px */
+    line-height: 1.2;
+    margin-top: .857142857em;               /* 12px */
+}
+
+/**
+ *  3. Paragraph styles
+ * ----------------------------------------------------------------------------
+ */
+p, .para {
+    @extend .m0--b;
+    font-size: .875em;                      /* 14px */
+    line-height: 1.785714286em;             /* 25px */
+    margin-top: .857142857em;               /* 12px */
+}
+
+.medium{
+    font-size: .875em;                      /* 14px */
+}
+
+.intro { 
+    font-size: 1.125em;                     /* 18px */
+}
+
+.small { 
+    font-size: .8125em;                     /* 14px */
+}
+
+.tiny {
+    font-size: .75em;                       /* 12px */
+}
+//TODO
+.weak {
+    font-weight: normal;
+}
+
+/**
+ * 4. Typographic relationships (nawww, aren't they so good together?)
+ * ----------------------------------------------------------------------------
+ */
+h4 + h6,
+h4 + p,
+h5 + p {
+    margin-top: .285714286em;               /* 4px @ 14px */
+}
+
+p + p{
+    margin-top: .571428571em;               /* 8px @ 14px */               
+}
+
+
+
+/**
+ * 5. Links
+ * ----------------------------------------------------------------------------
+ */
+
+a {
+	// something for links
+}
+
+
+/**
+ * 6. Text Allignment classes
+ * ----------------------------------------------------------------------------
+
+ 	<p class="text_align--left">Left aligned text.</p>
+	<p class="text_align--center">Center aligned text.</p>
+	<p class="text_align--right">Right aligned text.</p>
+
+ */
+
+.text-align--left { 
+	text-align: left;
+}
+.text-align--right { 
+	text-align: right;
+}
+.text-align--center{
+	text-align: center;
+}
+
+
+
+/**
+ * 7. List styles
+ * ----------------------------------------------------------------------------
+ */
+
+.list--unstyled {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+	.list--unstyled > li {
+        list-style: none;
+        margin-left: 0;
+    }
+
+.list--inline {
+	@extend .clearfix;
+    @extend .list--unstyled;
+}
+
+	.list--inline > li {
+		@extend .inline-block;
+	}
+
+
+/**
+ * 8. Descriptions
+ * ----------------------------------------------------------------------------
+ *
+ * A list of terms with their associated descriptions.
+ *
+ *
+ */
+
+
+dl {
+  margin-bottom: 20px;
+}
+
+dt,
+dd {
+  line-height: 1.428571429;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Make terms and descriptions in <dl> line up side-by-side. Starts off stacked like default <dl>s, but when the navbar expands, so do these. */
+//TODO check breakpoint variables 
+@media (min-width: $screen-tablet) {
+	.dl-horizontal dt {
+		float: left;
+		width: 160px;
+		overflow: hidden;
+		clear: left;
+		text-align: right;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.dl-horizontal dd {
+		margin-left: 180px;
+	}
+	.dl-horizontal dd:before,
+	.dl-horizontal dd:after {
+		display: table;
+		content: " ";
+	}
+	.dl-horizontal dd:after {
+		clear: both;
+	}
+	.dl-horizontal dd:before,
+	.dl-horizontal dd:after {
+		display: table;
+		content: " ";
+	}
+	.dl-horizontal dd:after {
+	clear: both;
+	}
+}

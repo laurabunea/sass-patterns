@@ -1,0 +1,293 @@
+/**
+ *
+ * Layout helpers
+ *
+ * ----------------------------------------------------------------------------
+ * 
+ * Structure:
+ *
+ *      1. Clearfix
+ *		2. Float Helpers
+ *      3. Absolute positioning helpers
+ *      4. Generic blocks
+ *      5. Media blocks
+ *      6. Inline Grid  
+ *
+ *
+ *
+ * ----------------------------------------------------------------------------
+ *
+ */
+
+
+/**
+ * 1. Clearfix
+ * -----------------------------------------------------------------------------
+ *
+ */
+
+.clearfix, .cf{
+	&:before,
+	&:after {
+	    content: " "; /* 1 */
+	    display: table; /* 2 */
+	}
+
+	&:after {
+	    clear: both;
+	}
+	
+	/**
+	 * For IE 6/7 only
+	 * Include this rule to trigger hasLayout and contain floats.
+	 */
+	*zoom: 1;
+}
+
+
+/**
+ * 2. Float helpers
+ * ----------------------------------------------------------------------------
+ */
+
+.pull-left {
+	float:left;
+}
+
+.pull-right {
+	float:right;
+}
+
+
+/**
+ * 3. Absolute positioning helpers
+ * ----------------------------------------------------------------------------
+ */
+
+.relative {
+    position: relative;
+}
+
+%absolute {
+    position: absolute;
+}
+
+.absolute__bottom_left {
+	@extend %absolute;
+	bottom:0;
+	left:0;
+}
+
+.absolute__bottom_right {
+	@extend %absolute;
+	bottom:0;
+	right:0;
+}
+
+.absolute__top_left {
+	@extend %absolute;
+	top:0;
+	left:0;
+}
+
+.absolute__top_right {
+	@extend %absolute;
+	top:0;
+	right:0;
+}
+
+
+
+/**
+ * 4. Generic blocks
+ * ----------------------------------------------------------------------------
+ <div class='block block--bleed block--mobile'>
+	Some content.
+ </div>
+ */
+.block {
+	margin-top: $base-spacing-unit;
+    padding: $base-spacing-unit $base-spacing-unit * 2;
+}
+
+    .block > :first-child, 
+    .block--xl > :first-child, 
+    .block--xxl > :first-child, 
+    .block--xxxl > :first-child,
+    .block--xs > :first-child,
+    .block--xxs > :first-child  {
+        margin-top: 0;
+    }
+
+.block--xl {
+    padding: $base-spacing-unit * 1.5 $base-spacing-unit * 3;
+}
+
+.block--xxl {
+    padding: $base-spacing-unit * 2 $base-spacing-unit * 4;
+}
+
+.block--xxxl {
+    padding: $base-spacing-unit * 2.5 $base-spacing-unit * 5;
+}
+
+.block--xs {
+    padding: $base-spacing-unit / 1.5 $base-spacing-unit / 2;
+}
+
+.block--xxs {
+    padding: $base-spacing-unit / 2 $base-spacing-unit / 4;
+}
+
+.block--tight {
+	padding-top: $base-spacing-unit / 2;
+    padding-bottom: $base-spacing-unit / 2;
+}
+
+.block--bleed {
+	padding: 0;
+}
+
+    .block--bleed__padding {
+        padding: $base-spacing-unit $base-spacing-unit * 2;
+    }
+
+.block--mobile {
+	//@include media(mobile) {
+	//	padding: 1em;
+	//}
+}
+
+
+
+/**
+ * 5. Float an image to the left, with a clearfixed block of content to the right.
+ * ----------------------------------------------------------------------------
+ <div class='media'>
+	<img src='/some/image.png' class='media__image'>
+	<div class='media__body'>
+       The text!
+	</div>
+ </div>
+ */
+.media {
+	@extend .clearfix;
+	margin-top: $base-spacing-unit;
+}
+
+	.media__image{
+		float: left;
+	}
+
+	.media__body{
+		@extend .overflow-hidden;
+	}	
+
+.media--rev {
+	@extend .clearfix;
+	margin-top: $base-spacing-unit;
+}
+
+	.media--rev > .media__image{
+		float: right;
+	}
+
+	.media--rev > .media__body{
+		@extend .overflow-hidden;
+	}
+
+
+
+
+/**
+ * 6. Inline block grid
+ * -----------------------------------------------------------------------------
+ *
+ * [1] Sets the child elements to take up full justified width of the parent
+ * [2] Overcomes an issue where the :after element blows out the bottom.
+ * [3] A fix for Internet Explorer 8/9
+ * 
+ */
+.grid {
+    text-align: justify;                /* [1] */
+    font-size: 0;                       /* [2] */
+    text-justify: distribute-all-lines; /* [3] */
+}
+
+	.grid > *{
+	    @extend .grid__item;
+	}
+
+    .grid__item{
+        @extend .inline-block;
+        font-size: medium;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .grid:after,
+    .grid__break {
+        @extend .inline-block;
+        content: '';
+        height: 0;
+        width:100%;
+    }
+/**
+ * Vertical align these grid items in the middle!
+ */
+.grid--middle > .grid__item{
+    vertical-align: middle;
+}
+
+    .g--1-1{
+        width: 100%;
+    }
+    .g--1-2 {
+        width: 50%;
+    }
+    .g--1-4 {
+        width: 25%;
+    }
+    .g--3-4 {
+        width: 75%;
+    }
+
+    .g--9-10{
+        width: 80%;
+    }
+    .g--1-10{
+        width: 20%;
+    }
+
+@media only screen and (max-width: 30em) {
+    .g-m--1-1{
+        width: 100%;
+    }
+    .g-m--1-2{
+        width: 50%;
+    }
+    .g-m--9-10{
+        width: 90%;
+    }
+    .g-m--1-10{
+        width: 10%;
+    }
+    .g-m--8-10{
+        width: 80%;
+    }
+    .g-m--2-10{
+        width: 20%;
+    }
+}
+
+
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.inline-block{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}

@@ -1,0 +1,95 @@
+
+/**
+ * Helpers
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * A lightweight way of vendor-prefixing things:
+ *
+ * @include vendor(transition, opacity 0.3s ease-out, margin-top 5s linear);
+ */
+@mixin vendor($property, $value...){
+    -webkit-#{$property}:$value;
+       -moz-#{$property}:$value;
+        -ms-#{$property}:$value;
+         -o-#{$property}:$value;
+            #{$property}:$value;
+}
+
+@mixin media($breakpoint) {
+    @if $breakpoint == "mobile-only" {
+        @media only screen and (max-width: 30em) {
+            @content;
+        }
+    } @else if $breakpoint == "mobile" {
+        @media only screen and (max-width: 30em) {
+           @content;
+        }  
+    } @else if $breakpoint == "skinny-down" {
+        @media only screen and (max-width: 56em) {
+           @content;
+        }  
+    }
+}
+
+
+@mixin opacity($value) {
+    $ieOpacity: 100 * $value;
+    opacity: $value;
+    filter: alpha(opacity=#{$ieOpacity});
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{50})";
+}
+
+@mixin placeholder($color) {
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        color:    $color;
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    $color;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    $color;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color:    $color;
+    }
+}
+
+.inline-block{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/**
+ * Since v22, Chrome makes fat sausage horrible web typography. Fix it with 
+ * these properties right here. Maybe consider scoping this to a class for
+ * chrome/mac osx only at some point?
+ */
+.fix-webkit-font-rendering{
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/**
+ * Place something before an element
+ * ----------------------------------------------------------------------------
+ */
+.prepend{
+    &:before{
+        content: attr(data-prepend);
+        display: inline-block;
+    }
+}
+
+/**
+ * Place something after an element
+ * ----------------------------------------------------------------------------
+ */
+.append{
+    &:after{
+        content: attr(data-append);
+        display: inline-block;
+    }
+}

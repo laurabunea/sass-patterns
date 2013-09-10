@@ -1,0 +1,34 @@
+
+/* ------------------------------------------------------------------- *
+ |  TYPE:           Main stylesheet
+ |  AUTHOR(S):
+ |  DATE CREATED:   DD/MM/YYYY
+ |  DATE UPDATED:   DD/MM/YYYY
+ |  DESCRIPTION:
+ |
+ |	STRUCTURE:
+ |		1. CORE
+ |		2. HELPER FUNCTIONS & MIXINS
+ |		3. GLOBAL STYLES
+ |		4. LAYOUTS
+ |		5. UI ELEMENTS
+ |		6. PAGE/SECTION SPECIFIC STYLES
+ |		7. PRINT
+ |
+ * ------------------------------------------------------------------- */
+// Include the Compass framework
+// -------------------------------------------------------------
+@import 'compass';
+
+// Include variables for global use
+// -------------------------------------------------------------
+
+@import 'core/reset';
+@import 'core/variables';
+@import 'core/print';
+@import 'core/layout';
+@import 'core/typography';
+@import 'core/theme';
+@import 'core/laura';
+@import 'core/buttons';
+
