@@ -29,22 +29,18 @@
         <div class='navigation--side '>
             <ul class='list--unstyled'>
                 <li>
-                    <a class='block--xs theme__block_100' href='#layout-clearfix'>
+                    <a class='block--xs theme__block_100' href='#btn-variations'>
                         Button variations
                     </a>
                 </li>
                 <li>
-                    <a class='block--xs theme__block_100' href='#layout-clearfix'>
+                    <a class='block--xs theme__block_100' href='#btn-modifier'>
                         Button modifiers
                     </a>
                 </li>
+                
                 <li>
-                    <a class='block--xs theme__block_100' href='#layout-clearfix'>
-                        Button modifiers
-                    </a>
-                </li>
-                <li>
-                    <a class='block--xs theme__block_100' href='#layout-clearfix'>
+                    <a class='block--xs theme__block_100' href='#btn-icons'>
                         Buttons with icons
                     </a>
                 </li>
@@ -67,146 +63,175 @@
 
             <!-- /****************************************  Button variations  *******************************/ -->
 
-            <h2 class='h3 xm--b m' id=''>Button variations</h2>
-            <p>Make a button with <code>&lt;a class='btn'&gt;A button&lt;/a&gt;</code>. You can build your buttons out of a bunch of useful classnames.</p>
+            <div class='m'>
+                <h2 class='h3' id='btn-variations'>Button variations</h2>
 
-            <div class='block--xs m theme__block_800'>
-                <h4 class='tiny caps muted'>
-                    code
-                </h4>
-                <pre>
+                <div class='block--xs m theme__block_800'>
+                    <h4 class='tiny caps muted'>
+                        code
+                    </h4>
+                    <pre>
 <code class="language-markup">
     &lt;a class='btn--label'&gt; Button 1 &lt;/a&gt;
     &lt;a class='btn btn-secondary'&gt; Button 2 &lt;/a&gt;
     &lt;a class='btn btn-tertiary'&gt; Button 3 &lt;/a&gt;
 </code>
-                </pre>
-            </div>
-            <div class='block--xs theme__block_150'>
-                <h4 class='tiny caps muted'>
-                    hello world
-                </h4>
+                    </pre>
+                </div>
+                <div class='block--xs theme__block_150'>
+                    <h4 class='tiny caps muted'>
+                        hello world
+                    </h4>
+                    <p>
+                        <a class='btn btn-primary' data-btn-loading-indicator='Thinking...'>
+                            <span class='btn--label'>
+                                Button 1
+                            </span>
+                        </a>
+                    
+                        <a class='btn btn-secondary'>
+                            Button 2
+                        </a>
+                    
+                        <a class='btn btn-tertiary'>
+                            Button 3
+                        </a>
+                    </p>
+                </div>
+                
+                <h3 class='h4'>
+                    Positive/negative actions
+                </h3>
                 <p>
-                    <a class='btn btn-primary' data-btn-loading-indicator='Thinking...'>
-                        <span class='btn--label'>
-                            Button 1
-                        </span>
-                    </a>
-                
-                    <a class='btn btn-secondary'>
-                        Button 2
-                    </a>
-                
-                    <a class='btn btn-tertiary'>
-                        Button 3
-                    </a>
+                    Stack a variation class to add some color
                 </p>
+                <div class='block--xs xm theme__block_800'>
+                    <h4 class='tiny caps muted'>
+                        code
+                    </h4>
+                    <pre>
+<code class="language-markup">
+    &lt;a class='btn btn-positive'&gt; Button 1 &lt;/a&gt;
+    &lt;a class='btn btn-negative'&gt; Button 2 &lt;/a&gt;
+</code>
+                    </pre>
+                </div>
+                <div class='block--xs theme__block_150'>
+                    <h4 class='tiny caps muted'>
+                        hello world
+                    </h4>
+                    <p>
+                        <a class='btn btn-positive'>A button with .btn and .btn-positive</a>
+                        <a class='btn btn-negative'>A button with .btn and .btn-negative</a>
+                    </p>
+                </div>
             </div>
-            
-            <p>Stack a variation class to add some color, e.g: <code>&lt;a class='btn btn-primary'&gt;Next&lt;/a&gt;</code></p>
-            
-            
-            <h4>Positive/negative actions</h4>
-            <p>
-                <a class='btn btn-positive'>A button with .btn and .btn-positive</a>
-                <a class='btn btn-negative'>A button with .btn and .btn-negative</a>
-            </p>
 
             <!-- /****************************************  Button modifiers  *******************************/ -->
 
-            <h2 class='h3 xm--b m' id=''>
-                Button modifiers
-            </h2>
-            <p>
-                Stick buttons on anything you want. They don't have to go on anchor tags!
-            </p>
-            <div class='block--xs bt-0 theme__block_800'>
-                <h4 class='tiny caps muted'>
-                    code
-                </h4>
-                <pre>
+            <div class='mxx'>
+                <h2 class='h3' id='btn-modifier'>
+                    Button modifiers
+                </h2>
+                <p>
+                    Stick buttons on anything you want. They don't have to go on anchor tags!
+                </p>
+                <div class='block--xs bt-0 m theme__block_800'>
+                    <h4 class='tiny caps muted'>
+                        code
+                    </h4>
+                    <pre>
 <code class="language-markup">
     &lt;h3 class='btn btn-primary btn--large btn--bounce'&gt; Button 1 &lt;/h3&gt;
     &lt;small class='bbtn btn-tertiary btn--small btn--bob'&gt; Button 2 &lt;/small&gt;
 </code>
-                </pre>
-            </div>
-            <div class='block--xs theme__block_150'>
-                <h4 class='tiny caps muted'>
-                    hello world
-                </h4>
-                <h3 class='btn btn-primary btn--large btn--bounce'>Button 1</h3>
+                    </pre>
+                </div>
+                <div class='block--xs theme__block_150'>
+                    <h4 class='tiny caps muted'>
+                        hello world
+                    </h4>
+                    <h3 class='btn btn-primary btn--large btn--bounce'>Button 1</h3>
+                    <p>
+                        <small class='btn btn-tertiary btn--small btn--bob'>Button 2</small>    
+                    </p>
+
+                </div>
+
                 <p>
-                    <small class='btn btn-tertiary btn--small btn--bob'>Button 2</small>    
+                    Modifers allow you to have hard and soft edges on your buttons:
                 </p>
 
-            </div>
-
-            <p>
-                Modifers allow you to have hard and soft edges on your buttons:
-            </p>
-
-             <div class='block--xs bt-0 theme__block_800'>
-                <h4 class='tiny caps muted'>
-                    code
-                </h4>
-                <pre>
+                 <div class='block--xs bt-0 m theme__block_800'>
+                    <h4 class='tiny caps muted'>
+                        code
+                    </h4>
+                    <pre>
 <code class="language-markup">
     &lt;a class='tn btn-primary btn--soft'&gt; Button 1 &lt;/a&gt;
     &lt;a class='btn btn-secondary btn--hard'&gt; Button 2 &lt;/a&gt;
 </code>
-                </pre>
-            </div>
-            <div class='block--xs theme__block_150'>
-                <h4 class='tiny caps muted'>
-                    hello world
-                </h4>
+                    </pre>
+                </div>
+                <div class='block--xs theme__block_150'>
+                    <h4 class='tiny caps muted'>
+                        hello world
+                    </h4>
+                    <p>
+                        <a class='btn btn-primary btn--soft'>Button 1</a>
+                        <a class='btn btn-secondary btn--hard'>Button 2</a>
+                    </p>
+                </div>
+                
                 <p>
-                <a class='btn btn-primary btn--soft'>Button 1</a>
-                <a class='btn btn-secondary btn--hard'>Button 2</a>
-            </p>
-            </div>
-            
-            <p>
-                Buttons can be block level elements:
-            </p>
+                    Buttons can be block level elements:
+                </p>
 
-            <div class='block--xs bt-0 theme__block_800'>
-                <h4 class='tiny caps muted'>
-                    code
-                </h4>
-                <pre>
+                <div class='block--xs bt-0 m theme__block_800'>
+                    <h4 class='tiny caps muted'>
+                        code
+                    </h4>
+                    <pre>
 <code class="language-markup">
     &lt;a class='btn btn-positive btn--block'&gt; Button 1 &lt;/a&gt;
     &lt;a class='btn btn-primary btn--block-mobile'&gt; Responsinate! &lt;/a&gt;
 </code>
-                </pre>
+                    </pre>
+                </div>
+                <div class='block--xs theme__block_150'>
+                    <h4 class='tiny caps muted'>
+                        hello world
+                    </h4>
+                    <p>
+                        <a class='btn btn-positive btn--block'>Button 1</a>
+                    </p>
+                    <p>
+                        A sneaky button that becomes a block on mobile: 
+                    </p>
+                    <p>
+                        <a class='btn btn-primary btn--block-mobile'>Responsinate!</a>
+                    </p>
+                </div>
+                
             </div>
-            <div class='block--xs theme__block_150'>
-                <h4 class='tiny caps muted'>
-                    hello world
-                </h4>
-                <p>
-                    <a class='btn btn-positive btn--block'>Button 1</a>
-                </p>
-                <p>A sneaky button that becomes a block on mobile: </p>
-                <p>
-                    <a class='btn btn-primary btn--block-mobile'>Responsinate!</a>
-                </p>
-            </div>
-            
-            
 
             <!-- /****************************************  Buttons with icons  *******************************/ -->
 
-            <h2 class='h3 xm--b m' id=''>Buttons with icons</h2>
-            <p>These assume there's an inline-block element with a class of <code>.i</code> inside the button</p>
+            <div class='mxx'>
+                <h2 class='h3' id='btn-icons'>
+                    Buttons with icons
+                </h2>
+                <p>
+                    These assume there's an inline-block element with a class of 
+                    <code>.i</code> 
+                    inside the button
+                </p>
 
-            <div class='block--xs bt-0 theme__block_800'>
-                <h4 class='tiny caps muted'>
-                    code
-                </h4>
-                <pre>
+                <div class='block--xs bt-0 m theme__block_800'>
+                    <h4 class='tiny caps muted'>
+                        code
+                    </h4>
+                    <pre>
 <code class='language-markup'>
     &lt;a class='btn btn-primary btn--icon btn--bounce-icon--left'&gt;&lt;i class='i'&gt;&#9834;&lt;/i&gt; A button with .btn--icon&lt;/a&gt;
     &lt;a class='btn btn-primary btn--icon--rev btn--bounce-icon--bottom'&gt; A button with .btn--icon--rev &lt;i class='i'&gt;&#9835;&lt;/i&gt;&lt;/a&gt;
@@ -217,41 +242,41 @@
     &lt;a class='bbtn btn-tertiary btn--icon-small'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt; A button with .btn--icon-small &lt;/a&gt;
     &lt;a class='btn btn-tertiary btn--icon-small'&gt;&lt;i class='i'&gt;&#9733;&lt;/i&gt; A small with .btn--icon-small&lt;/a&gt;
 </code>
-                </pre>
-                
+                    </pre>
+                    
 
-            </div>
+                </div>
 
-            <div class='block--xs theme__block_150'>
-                <h4 class='tiny caps muted'>
-                    hello world
-                </h4>
+                <div class='block--xs theme__block_150'>
+                    <h4 class='tiny caps muted'>
+                        hello world
+                    </h4>
+                    <p>
+                        <a class='btn btn-primary btn--icon btn--bounce-icon--left'><i class='i'>&#9834;</i> A button with .btn--icon</a>
+                        <a class='btn btn-primary btn--icon--rev btn--bounce-icon--bottom'>A button with .btn--icon--rev <i class='i'>&#9835;</i></a>
+                    </p>
+                    
+                    <p>
+                        <a class='btn btn-secondary btn--icon-large btn--bounce-icon--top'><i class='i'>&#9829;</i> A button with .btn--icon-large</a>
+                        <a class='btn btn-secondary btn--icon-large--rev btn--bounce-icon--right'>A button with .btn--icon-large--rev <i class='i'>&#9733;</i></a>
+                    </p>
+
+                    <p>
+                        <a class='btn btn-tertiary btn--icon-small'><i class='i'>&#163;</i> A button with .btn--icon-small</a>
+                        <small class='btn btn-tertiary btn--icon-small'><i class='i'>&#163;</i> A small with .btn--icon-small</small>
+                    </p>
+                </div>
+
+        
                 <p>
-                    <a class='btn btn-primary btn--icon btn--bounce-icon--left'><i class='i'>&#9834;</i> A button with .btn--icon</a>
-                    <a class='btn btn-primary btn--icon--rev btn--bounce-icon--bottom'>A button with .btn--icon--rev <i class='i'>&#9835;</i></a>
-                </p>
-                
-                <p>
-                    <a class='btn btn-secondary btn--icon-large btn--bounce-icon--top'><i class='i'>&#9829;</i> A button with .btn--icon-large</a>
-                    <a class='btn btn-secondary btn--icon-large--rev btn--bounce-icon--right'>A button with .btn--icon-large--rev <i class='i'>&#9733;</i></a>
+                    Buttons can also be icon only:
                 </p>
 
-                <p>
-                    <a class='btn btn-tertiary btn--icon-small'><i class='i'>&#163;</i> A button with .btn--icon-small</a>
-                    <small class='btn btn-tertiary btn--icon-small'><i class='i'>&#163;</i> A small with .btn--icon-small</small>
-                </p>
-            </div>
-
-    
-            <p>
-                Buttons can also be icon only:
-            </p>
-
-             <div class='block--xs bt-0 theme__block_800'>
-                <h4 class='tiny caps muted'>
-                    code
-                </h4>
-                <pre>
+                 <div class='block--xs bt-0 theme__block_800'>
+                    <h4 class='tiny caps muted'>
+                        code
+                    </h4>
+                    <pre>
 <code class='language-markup'>
     &lt;a class='btn btn-positive btn--icon-only--large'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
     &lt;a class='btn btn-negative btn--icon-only'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
@@ -259,30 +284,37 @@
     &lt;a class='btn btn-tertiary btn--icon-only--small btn--soft'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
     &lt;a class='btn btn-tertiary btn--icon-only--small btn--hard'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
 </code>
-            </pre>
+                </pre>
 
+                </div>
+                <div class='block--xs theme__block_150'>
+                    <h4 class='tiny caps muted'>
+                        hello world
+                    </h4>
+                    <p>
+                        <a class='btn btn-positive btn--icon-only--large'><i class='i'>&#9829;</i></a>
+                        <a class='btn btn-negative btn--icon-only'><i class='i'>&#9829;</i></a>
+                        <a class='btn btn-tertiary btn--icon-only--small'><i class='i'>&#9829;</i></a>
+                        <a class='btn btn-tertiary btn--icon-only--small btn--soft'><i class='i'>&#9733;</i></a>
+                        <a class='btn btn-tertiary btn--icon-only--small btn--hard'><i class='i'>&#9834;</i></a>
+                    </p>
+                </div>
             </div>
-            <div class='block--xs theme__block_150'>
-                <h4 class='tiny caps muted'>
-                    hello world
-                </h4>
-                <p>
-                    <a class='btn btn-positive btn--icon-only--large'><i class='i'>&#9829;</i></a>
-                    <a class='btn btn-negative btn--icon-only'><i class='i'>&#9829;</i></a>
-                    <a class='btn btn-tertiary btn--icon-only--small'><i class='i'>&#9829;</i></a>
-                    <a class='btn btn-tertiary btn--icon-only--small btn--soft'><i class='i'>&#9733;</i></a>
-                    <a class='btn btn-tertiary btn--icon-only--small btn--hard'><i class='i'>&#9834;</i></a>
-                </p>
-            </div>
-            
 
             <!-- /*********************************  Buttons on media content elements  *******************************/ -->
-            <h2 class='h3 xm--b m' id=''>Buttons on media/content elements</h2>
-            <div class='image btn--inset btn--inset-secondary btn--inset-large'></div>
-            <p></p>
-            <div class='image btn--inset btn--inset-primary'></div>
-            <p></p>
-            <div class='image btn--inset btn--inset-primary btn--inset-small'></div>
+            <div class='mxx'>
+                <h2 class='h3' id=''>
+                    Buttons on media/content elements
+                </h2>
+                <div class='image btn--inset btn--inset-secondary btn--inset-large'>
+                </div>
+                <p></p>
+                <div class='image btn--inset btn--inset-primary'>
+                </div>
+                <p></p>
+                <div class='image btn--inset btn--inset-primary btn--inset-small'>
+                </div>
+            </div>
 
         </div>
         <script type="text/javascript" src="assets/includes/prism.js"></script>
