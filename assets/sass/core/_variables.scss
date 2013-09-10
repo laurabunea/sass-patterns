@@ -52,6 +52,7 @@ $xm :       $base-spacing-unit / 1.5;   // 16px
 $m :        $base-spacing-unit;         // 24px
 $mx :       $base-spacing-unit * 1.5;   // 36px
 $mxx :      $base-spacing-unit * 2;     // 48px
+$mxxx :     $base-spacing-unit * 3;     // px
 
 .m0     	{ margin-top: 0; }
 .m0--b 		{ margin-bottom: 0; }
@@ -61,6 +62,7 @@ $mxx :      $base-spacing-unit * 2;     // 48px
 .m          { margin-top: $m; }
 .mx         { margin-top: $mx; }
 .mxx        { margin-top: $mxx; }
+.mxxx        { margin-top: $mxxx; }
 
 .xxm--b     { margin-bottom: $xxm; }
 .xm--b      { margin-bottom: $xm; }
