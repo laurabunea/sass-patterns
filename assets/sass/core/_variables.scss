@@ -1,12 +1,33 @@
-//
-// Variables
-// --------------------------------------------------
+/**
+ *
+ * SASS Variables 
+ *
+ * ----------------------------------------------------------------------------
+ * 
+ * Structure:
+ *
+ *      1. Typography defaults
+ *		2. Spacing 
+ *      3. Themes
+ *      4. Buttons
+ *      5. 
+ *      6. 
+ *      7.
+ *      8.
+ *
+ *
+ *
+ * ----------------------------------------------------------------------------
+ *
+ */
+
+
+/**
+ * 1. Typography Defaults
+ * -----------------------------------------------------------------------------
+ */
 
 $line-height-base:        1.428571429; // 20/14
-
-
-// Typography Defaults    
-//----------------------------------
 
 //$base_font_size:        	14; //px
 //$base_line_height:        	21; //px
@@ -18,28 +39,17 @@ $line-height-base:        1.428571429; // 20/14
 //$base_font_weight:        	400;
 
 
-// Global values
-// --------------------------------------------------
-
-
-// Grays
-// -------------------------
-
-$gray-darker:            lighten(#000, 13.5%); // #222
-$gray-dark:              lighten(#000, 20%);   // #333
-$gray:                   lighten(#000, 33.5%); // #555
-$gray-light:             lighten(#000, 60%);   // #999
-$gray-lighter:           lighten(#000, 93.5%); // #eee
-
-
 // Links
 // -------------------------
 
 $link-color:            blue;
 $link-hover-color:      darken($link-color, 15%);
 
+
+
+
 /**
- * Spacing: she's a fickle mistress.
+ * 2. Spacing: she's a fickle mistress.
  * -----------------------------------------------------------------------------
  */
 
@@ -52,7 +62,7 @@ $xm :       $base-spacing-unit / 1.5;   // 16px
 $m :        $base-spacing-unit;         // 24px
 $mx :       $base-spacing-unit * 1.5;   // 36px
 $mxx :      $base-spacing-unit * 2;     // 48px
-$mxxx :     $base-spacing-unit * 3;     // px
+$mxxx :     $base-spacing-unit * 3;     // 72px
 
 .m0     	{ margin-top: 0; }
 .m0--b 		{ margin-bottom: 0; }
@@ -77,6 +87,101 @@ $mxxx :     $base-spacing-unit * 3;     // px
 .p 			{ padding-top: $m; }
 .px 		{ padding-top: $mx; }
 .pxx 		{ padding-top: $mxx; }
+
+
+
+/**
+ * 3. Themes
+ * -----------------------------------------------------------------------------
+ */
+
+
+// Text emphasis colours
+// -------------------------
+
+$text-success: #468847;
+$text-warning: #c09853;
+$text-danger: #b94a48;
+
+$text-muted: #999;
+
+
+// Grays
+// -------------------------
+
+$gray-darker:            lighten(#000, 13.5%); // #222
+$gray-dark:              lighten(#000, 20%);   // #333
+$gray:                   lighten(#000, 33.5%); // #555
+$gray-light:             lighten(#000, 60%);   // #999
+$gray-lighter:           lighten(#000, 93.5%); // #eee
+
+
+// Block theme colours - warning
+// -------------------------------
+
+$success-block-bg:#C5FFC6;
+$success-block-text:#468847;
+$success-block-border:$success-block-text;
+
+$warning-block-bg:#FFFFD2;
+$warning-block-text:#DAB26D;
+$warning-block-border:$warning-block-text;
+
+$danger-block-bg:#FFC9C7;
+$danger-block-text:#B94A48;
+$danger-block-border:$danger-block-text;
+
+
+// Block theme colours - primary, secondary, tertiary
+// -------------------------------
+
+
+$primary-bg-color:			#fff;
+$primary-txt-color:			#444; 
+$primary-border-color:		$primary-bg-color;
+
+$secondary-bg-color:		#FAFBF7;
+$secondary-txt-color:		#444 ; 
+$secondary-border-color:	#E1E2DE;
+
+$tertiary-bg-color:			#2E2F2B;
+$tertiary-txt-color:		#444; 
+$tertiary-border-color:		$tertiary-bg-color;
+
+$quarternary-bg-color:		#4AA1C5;
+$quarternary-txt-color:		#fff; 
+$quarternary-border-color:	$quarternary-bg-color;
+
+
+
+// Block theme colours - other block theme colours
+// -------------------------------
+
+//green theme box
+$green-bg-color:			#A6E22E;
+$green-txt-color:			#444; 
+$green-border-color:		$primary-txt-color;
+
+//pink theme box
+$pink-bg-color:				#F92672;
+$pink-txt-color:			#444 ; 
+$pink-border-color:			$secondary-bg-color;
+
+//blue theme box
+$blue-bg-color:				#4AA1C5;
+$blue-txt-color:			#fff; 
+$blue-border-color:			$tertiary-bg-color;
+
+
+
+/**
+ * 4. Buttons
+ * -----------------------------------------------------------------------------
+ */
+
+
+
+
 
 
 

@@ -7,11 +7,8 @@
  * Structure:
  *
  *      1. Warning Themes
- *		2. Float Helpers
- *      3. Absolute positioning helpers
- *      4. Generic blocks
- *      5. Media blocks
- *      6. Inline Grid  
+ *		2. Text colours
+ 		3. Theme blocks
  *
  *
  *
@@ -20,64 +17,60 @@
  */
 
 
-
 /**
- * 2. 
+ * 2. Text colours
  * -----------------------------------------------------------------------------
  */
-.text_muted  {
-	color:#999;
+ 
+%border {
+    border-style: solid;
+    border-width: 1px;
 }
 
-$success-text: #468847;
-$warning-text: #c09853;
-$danger-text: #b94a48;
+.text_muted  {
+	color:$text-muted;
+}
 
 .text_success {
-  color: $success-text;
+  color: $text-success;
 }
 
 .text_warning {
-  color: $warning-text;
+  color: $text-warning;
 }
 
 .text_danger {
-  color: $danger-text;
+  color: $text-danger;
 }
 
-$success-bg:#468847;
-$warning-bg:#c09853;
-$danger-bg:#b94a48;
 
-.success {
-	background-color: $success-bg;
-}
+/**
+ * 2. Theme blocks
+ * -----------------------------------------------------------------------------
+ */
 
-.warning {
-	background-color: $warning-bg ;
-}
 
-.danger {
-	background-color: $danger-bg ;
-}
-
-.theme__block_success {
-	background-color: $success-bg  ;
-	//color: $state-success-text;
-	//border-color:$state-success-border;
+ .theme__block_success {
+	background-color: $success-block-bg  ;
+	color: $success-block-text;
+	@extend %border;
+	border-color:$success-block-border;
 }
 
 .theme__block_warning {
-	background-color: $warning-bg ;
-	//color: $state-warning-text;
-	//border-color:$state-warning-border;
+	background-color: $warning-block-bg;
+	color: $warning-block-text;
+	@extend %border;
+	border-color:$warning-block-border;
 }
 
 .theme__block_danger {
-	background-color: $danger-bg;
-	//color:$state-danger-text;
-	//border-color:$state-danger-border;
+	background-color: $danger-block-bg;
+	color:$danger-block-text;
+	@extend %border;
+	border-color:$danger-block-border;
 }
+
 
 
 /**
@@ -85,82 +78,58 @@ $danger-bg:#b94a48;
  * -----------------------------------------------------------------------------
  */
  
-.bt-0 {
-	border-top:0!important;
-}
-.bb-0 {
-	border-bottom:0!important;
-}
-.theme__block_100 {
-	background-color: #fff;
-	//color: ;
-	//border-color:#ccc ;
-	//border:1px solid #ccc;
-	//box-shadow: 0 1px 4px 1px #B4B6A9, 2px 2px 1px 0 #FFFFFF inset;
-	
-	box-shadow: 1px 1px 2px #FFFFFF inset, 1px 1px 3px 0 #D7D8CF;
-}
 
-.theme__block_150 {
-	background-color: #FAFBF7;
-	//color: ;
-	//border-color:#ccc ;
-	border:1px solid #E1E2DE;
-	//box-shadow: 0 1px 4px 1px #B4B6A9, 2px 2px 1px 0 #FFFFFF inset;
-	
-	//box-shadow: 1px 1px 2px #FFFFFF inset, 1px 1px 3px 0 #D7D8CF;
-}
-
-.theme__block_200 {
-	background-color: #A6E22E ;
-	//color: ;
-	//border-color: ;
-	//border:1px solid #ccc;
-}
-
-.theme__block_300 {
-	background-color: #F92672;
-	//color: ;
-	//border-color: ;
-}
-
-/*
-.theme__block_400 {
-	background-color: pink;
-	//color: ;
-	//border-color: ;
-}
-
-.theme__block_500 {
-	background-color: ;
-	color: ;
-	border-color: ;
-}
-*/
 .theme__block_600 {
 	background-color:#61625E ;
 	color: #fff;
 	//border:1px solid #fff ;
 }
-/*
 
-.theme__block_700 {
-	background-color:#444 ;
-	color: #fff;
-	border-color:#000 ;
-}
-*/
-.theme__block_800 {
-	background-color: #2E2F2B;
-	//color: ;
-	//border-color: ;
-}
-.theme__block_blue {
-	background-color: #4aa1c5;
-	color: #fff;
-	border:1px solid #4aa1c5;
+
+/**
+ * Main theme colours of your site
+ * -----------------------------------------------------------------------------
+ */
+
+.tb__primary {
+	@include theme-block( $primary-bg-color, $primary-txt-color, $primary-border-color );
+	@extend %border;
+	box-shadow: 1px 1px 2px #FFFFFF inset, 1px 1px 3px 0 #D7D8CF;
 }
 
-.text_muted {
-	color:#999999;
+.tb__secondary {
+	@include theme-block( $secondary-bg-color, $secondary-txt-color, $secondary-border-color );
+	@extend %border;
 }
+
+.tb__tertiary {
+	@include theme-block( $tertiary-bg-color, $tertiary-txt-color, $tertiary-border-color );
+	@extend %border;
+}
+
+.tb__quarternary {
+	@include theme-block( $quarternary-bg-color, $quarternary-txt-color, $quarternary-border-color );
+	@extend %border;
+}
+
+/**
+ * 
+ * -----------------------------------------------------------------------------
+ */
+
+
+.tb__green {
+	@include theme-block( $green-bg-color, $green-txt-color, $green-border-color );
+	@extend %border;
+}
+
+.tb__pink {
+	@include theme-block( $pink-bg-color, $pink-txt-color, $pink-border-color );
+	@extend %border;
+}
+
+.tb__blue {
+	@include theme-block( $blue-bg-color, $blue-txt-color, $blue-border-color );
+	@extend %border;
+}
+

@@ -1,6 +1,34 @@
+.bt-0 {
+    border-top:0!important;
+}
+.bb-0 {
+    border-bottom:0!important;
+}
+
+%border {
+    border-style: solid;
+    border-width: 1px;
+}
 
 //pills  - badges  ADDTHIS 
 // ADDTHIS breadcrumbs  see http://inuitcss.com/
+
+
+/**
+ * Icons
+ * -----------------------------------------------------------------------------
+ <a class='' href='#'>
+    <i class='i s_icons_icon_name'></i>
+    A link!
+ </a>
+ */
+ 
+.i {
+    @extend .inline-block;
+    vertical-align: middle;
+    font-style: normal;
+}
+
 
 
 /*
@@ -14,18 +42,7 @@ images rounded etc<img src="..." alt="..." class="img-rounded">
     }
 
 
-/*
 
-table styles
-Basic example
-Striped rows
-Bordered table
-Hover rows
-Condensed table
-Contextual classes
-Responsive tables
-
-*/
 /*
 fomrs
 */
@@ -49,8 +66,6 @@ Malesuada porta
 
 Horizontal description
 
-
-
 Description lists
     A description list is perfect for defining terms.
 Euismod
@@ -71,17 +86,6 @@ Felis euismod semper eget lacinia
 */
 
 
-
-
-/**
- * Responsive images <img src="..." class="img-responsive" alt="Responsive image">
-
- * ----------------------------------------------------------------------------
- */
-.img-responsive {
-    height: auto;
-    max-width: 100%;
-}
 
 
 

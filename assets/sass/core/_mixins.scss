@@ -79,6 +79,9 @@
     @include opacity(0.25);
 }
 
+
+
+
 /**
  * 4. Placeholder mixin
  * -----------------------------------------------------------------------------
@@ -96,4 +99,16 @@
     &:-ms-input-placeholder { /* Internet Explorer 10+ */
         color:    $color;
     }
+}
+
+.pink-input-text {
+    /* @include placeholder($color);*/
+    @include placeholder(#F92672);
+}
+
+
+@mixin theme-block($bg-color, $txt-color, $border-color){
+    background-color:$bg-color;
+    color:$txt-color;
+    border-color:$border-color;
 }

@@ -48,29 +48,29 @@
         <div class='navigation--side '>
             <ul class='list--unstyled'>
                 <li>
-                    <a class='block--xs theme__block_100' href='#mixin-vendor'>
+                    <a class='block--xs tb__primary' href='#mixin-vendor'>
                         Vendor
                     </a>
                 </li>
                 <li>
-                    <a class='block--xs theme__block_100' href='#mixin-media-break-point'>
+                    <a class='block--xs tb__primary' href='#mixin-media-break-point'>
                         Media breakpoint
                     </a>
                 </li>
                 <li>
-                    <a class='block--xs theme__block_100' href='#mixin-opacity'>
+                    <a class='block--xs tb__primary' href='#mixin-opacity'>
                         Opacity
                     </a>
                 </li>
                 <li>
-                    <a class='block--xs theme__block_100' href='#mixin-placeholder'>
+                    <a class='block--xs tb__primary' href='#mixin-placeholder'>
                         Placeholder
                     </a>
                 </li>
             </ul><!--list unstyled ends-->
         </div><!--navigation side ends-->
 
-        <div class='container clearfix theme__block_100 block'>
+        <div class='container clearfix tb__primary block'>
             <h1>
                 Mixins
             </h1>
@@ -84,7 +84,7 @@
 
                     <p>This mixin takes the hassle out of defining one css-attribute in all vendor-specific prefixes (-moz, -webkit, -o, -ms).</p>
                     <!--  code block starts -->
-                    <div class='block--xs m theme__block_800'>
+                    <div class='block--xs m tb__tertiary'>
                         <h4 class='tiny caps text_muted'>
                             scss code
                         </h4>
@@ -107,11 +107,11 @@
                     </div><!--  code block ends -->
 
                     <!--  hello world block starts -->
-                    <div class='block--xs theme__block_150'>
+                    <div class='block--xs tb__secondary'>
                         <h4 class='tiny caps text_muted'>
                             hello world
                         </h4>
-                        <div class='img-rounded xm testbox-100-100 theme__block_200'>
+                        <div class='img-rounded xm testbox-100-100 tb__green'>
                         </div>
                     
                     </div><!--  hello world block ends -->
@@ -124,7 +124,7 @@
                         Media break point 
                     </h2>
                     <!--  code block starts -->
-                    <div class='block--xs m theme__block_800'>
+                    <div class='block--xs m tb__tertiary'>
                         <h4 class='tiny caps text_muted'>
                             scss code
                         </h4>
@@ -138,7 +138,7 @@
                     </div><!--  code block ends -->
 
                     <!--  hello world block starts -->
-                    <div class='block--xs theme__block_150'>
+                    <div class='block--xs tb__secondary'>
                         <h4 class='tiny caps text_muted'>
                             hello world
                         </h4>
@@ -153,7 +153,7 @@
                         Opacity 
                     </h2>
                     <!--  code block starts -->
-                    <div class='block--xs m theme__block_800'>
+                    <div class='block--xs m tb__tertiary'>
                         <h4 class='tiny caps text_muted'>
                             scss code
                         </h4>
@@ -183,20 +183,20 @@
                     </div><!--  code block ends -->
 
                     <!--  hello world block starts -->
-                    <div class='block--xs theme__block_150'>
+                    <div class='block--xs tb__secondary'>
                         <h4 class='tiny caps text_muted'>
                             hello world
                         </h4>
                         <div class='grid'>
-                            <div class='overlay--25 m testbox-100-100 block--xs theme__block_200'>
+                            <div class='overlay--25 m testbox-100-100 block--xs tb__green'>
                                 <p>25% opacity</p>
                             </div>
 
-                            <div class='overlay--50 m testbox-100-100 block--xs theme__block_200'>
+                            <div class='overlay--50 m testbox-100-100 block--xs tb__green'>
                                 <p>50% opacity</p>
                             </div>
 
-                            <div class='m testbox-100-100 block--xs theme__block_200'>
+                            <div class='m testbox-100-100 block--xs tb__green'>
                                 <p>Block with out an opacity class</p>
                             </div>
                         </div>
@@ -205,27 +205,46 @@
 
                 <!-- /****************************************  Placeholder  *******************************/ -->
 
-                <div class='mxxx' id='mixin-vendor'>
+                <div class='mxxx' id='mixin-placeholder'>
                     <h2  class='h3'>
                         Placeholder Mixin 
                     </h2>
                     <!--  code block starts -->
-                    <div class='block--xs m theme__block_800'>
+
+                    <p>This mixin takes the hassle out of defining placeholder prefixes (:-moz-placeholder, ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder).</p>
+                    
+                    <div class='block--xs m tb__tertiary'>
                         <h4 class='tiny caps text_muted'>
                             scss code
                         </h4>
                         <pre>
 <code class='language-css'>
-   @include placeholder($color);
+   .pink-input-text {
+        /* @include placeholder($color);*/
+        @include placeholder(#F92672);
+    }
+</code>
+                        </pre>
+                        <h4 class='tiny caps text_muted'>
+                            html code
+                        </h4>
+                        <pre>
+<code class='language-markup'>
+    &lt;form&gt;
+        &lt;input class='pink-input-text' type='text' name='fname' placeholder='irst name'/&gt;
+    &lt;/form&gt;
 </code>
                         </pre>
                     </div><!--  code block ends -->
 
                     <!--  hello world block starts -->
-                    <div class='block--xs theme__block_150'>
+                    <div class='block--xs tb__secondary'>
                         <h4 class='tiny caps text_muted'>
                             hello world
                         </h4>
+                        <form class='xm'>
+                            <input class='pink-input-text' type="text" name="fname" placeholder="First name">
+                        </form>
                     
                     </div><!--  hello world block ends -->
                 </div><!-- mixin-vendor ends-->
