@@ -53,17 +53,17 @@
                     </a>
                 </li>
                 <li>
-                    <a class='block--xs theme__block_100' href='#mixin-vendor'>
+                    <a class='block--xs theme__block_100' href='#mixin-media-break-point'>
                         Media breakpoint
                     </a>
                 </li>
                 <li>
-                    <a class='block--xs theme__block_100' href='#mixin-vendor'>
+                    <a class='block--xs theme__block_100' href='#mixin-opacity'>
                         Opacity
                     </a>
                 </li>
                 <li>
-                    <a class='block--xs theme__block_100' href='#mixin-vendor'>
+                    <a class='block--xs theme__block_100' href='#mixin-placeholder'>
                         Placeholder
                     </a>
                 </li>
@@ -82,15 +82,26 @@
                         Vendor 
                     </h2>
 
-                    <p>A lightweight way of vendor-prefixing things. This could be used with transition, opacity 0.3s ease-out, margin-top 5s linear</p>
+                    <p>This mixin takes the hassle out of defining one css-attribute in all vendor-specific prefixes (-moz, -webkit, -o, -ms).</p>
                     <!--  code block starts -->
                     <div class='block--xs m theme__block_800'>
                         <h4 class='tiny caps text_muted'>
-                            code
+                            scss code
                         </h4>
                         <pre>
 <code class='language-css'>
-    @include vendor($property, $value);
+    .img-rounded {
+        /* @include vendor($property, $value); */
+        @include vendor(border-radius, 50% 50% 50% 50%);
+    }
+</code>
+                        </pre>
+                        <h4 class='tiny caps text_muted m0 '>
+                            html code
+                        </h4>
+                        <pre>
+<code class='language-markup'>
+    &lt;div class='img-rounded'&gt; .. &lt;/div&gt;
 </code>
                         </pre>
                     </div><!--  code block ends -->
@@ -100,6 +111,8 @@
                         <h4 class='tiny caps text_muted'>
                             hello world
                         </h4>
+                        <div class='img-rounded xm testbox-100-100 theme__block_200'>
+                        </div>
                     
                     </div><!--  hello world block ends -->
                 </div><!-- mixin-vendor ends-->
@@ -117,7 +130,9 @@
                         </h4>
                         <pre>
 <code class='language-css'>
-    @include media($breakpoint);
+    .classname{
+        /* add media mixin code here */   
+    }
 </code>
                         </pre>
                     </div><!--  code block ends -->
@@ -144,9 +159,27 @@
                         </h4>
                         <pre>
 <code class='language-css'>
-    @include opacity($value);
+    .overlay--50 {
+        /* @include opacity($value); */
+        @include opacity(0.5); 
+    }
+    .overlay--25 {
+        /* @include opacity($value); */
+        @include opacity(0.5); 
+    }
 </code>
                         </pre>
+                        <h4 class='tiny caps text_muted m0 '>
+                            html code
+                        </h4>
+                        <pre>
+<code class='language-markup'>
+    &lt;div class='overlay--50'&gt; .. &lt;/div&gt;
+
+    &lt;div class='overlay--25'&gt; .. &lt;/div&gt;
+</code>
+                        </pre>
+
                     </div><!--  code block ends -->
 
                     <!--  hello world block starts -->
@@ -154,7 +187,19 @@
                         <h4 class='tiny caps text_muted'>
                             hello world
                         </h4>
-                    
+                        <div class='grid'>
+                            <div class='overlay--25 m testbox-100-100 block--xs theme__block_200'>
+                                <p>25% opacity</p>
+                            </div>
+
+                            <div class='overlay--50 m testbox-100-100 block--xs theme__block_200'>
+                                <p>50% opacity</p>
+                            </div>
+
+                            <div class='m testbox-100-100 block--xs theme__block_200'>
+                                <p>Block with out an opacity class</p>
+                            </div>
+                        </div>
                     </div><!--  hello world block ends -->
                 </div><!-- mixin-opacity ends-->
 
@@ -162,7 +207,7 @@
 
                 <div class='mxxx' id='mixin-vendor'>
                     <h2  class='h3'>
-                        PLaceholder Mixin 
+                        Placeholder Mixin 
                     </h2>
                     <!--  code block starts -->
                     <div class='block--xs m theme__block_800'>

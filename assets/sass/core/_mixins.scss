@@ -35,8 +35,10 @@
          -o-#{$property}:$value;
             #{$property}:$value;
 }
-
-
+//test one move this when you add images
+.img-rounded {
+    @include vendor(border-radius, 50% 50% 50% 50%);
+}
 /**
  * 2. Break point
  * -----------------------------------------------------------------------------
@@ -69,7 +71,13 @@
     filter: alpha(opacity=#{$ieOpacity});
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{50})";
 }
+.overlay--50 {
+    @include opacity(0.5);
+}
 
+.overlay--25 {
+    @include opacity(0.25);
+}
 
 /**
  * 4. Placeholder mixin

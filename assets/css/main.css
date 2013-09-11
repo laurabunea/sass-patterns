@@ -2063,3 +2063,65 @@ html, body {
 .btn--spinner--text:after {
   content: attr(data-btn-loading-indicator);
 }
+
+/**
+ *
+ * Mixin helpers
+ *
+ * ----------------------------------------------------------------------------
+ * 
+ * Structure:
+ *
+ *      1. Vendor
+ *      2. Media breakpoint
+ *      3. Opacity
+ *      4. Placeholder
+ *
+ *
+ * ----------------------------------------------------------------------------
+ *
+ */
+/**
+ * 1. Vendor
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * A lightweight way of vendor-prefixing things:
+ *
+ * @include vendor(transition, opacity 0.3s ease-out, margin-top 5s linear);
+ */
+/* line 39, ../sass/core/_mixins.scss */
+.img-rounded {
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  -ms-border-radius: 50% 50% 50% 50%;
+  -o-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+}
+
+/**
+ * 2. Break point
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * 3. Opacity mixin
+ * -----------------------------------------------------------------------------
+ */
+/* line 74, ../sass/core/_mixins.scss */
+.overlay--50 {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+/* line 78, ../sass/core/_mixins.scss */
+.overlay--25 {
+  opacity: 0.25;
+  filter: alpha(opacity=25);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+/**
+ * 4. Placeholder mixin
+ * -----------------------------------------------------------------------------
+ */
