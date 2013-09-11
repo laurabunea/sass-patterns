@@ -1441,28 +1441,22 @@ body {
  * 2. Text colours
  * -----------------------------------------------------------------------------
  */
-/* line 25, ../sass/core/_theme.scss */
-.theme__block_success, .theme__block_warning, .theme__block_danger, .tb__primary, .tb__secondary, .tb__tertiary, .tb__quarternary, .tb__green, .tb__pink, .tb__blue {
-  border-style: solid;
-  border-width: 1px;
-}
-
-/* line 30, ../sass/core/_theme.scss */
+/* line 26, ../sass/core/_theme.scss */
 .text_muted {
   color: #999999;
 }
 
-/* line 34, ../sass/core/_theme.scss */
+/* line 30, ../sass/core/_theme.scss */
 .text_success {
   color: #468847;
 }
 
-/* line 38, ../sass/core/_theme.scss */
+/* line 34, ../sass/core/_theme.scss */
 .text_warning {
   color: #c09853;
 }
 
-/* line 42, ../sass/core/_theme.scss */
+/* line 38, ../sass/core/_theme.scss */
 .text_danger {
   color: #b94a48;
 }
@@ -1471,21 +1465,21 @@ body {
  * 2. Theme blocks
  * -----------------------------------------------------------------------------
  */
-/* line 53, ../sass/core/_theme.scss */
+/* line 49, ../sass/core/_theme.scss */
 .theme__block_success {
   background-color: #c5ffc6;
   color: #468847;
   border-color: #468847;
 }
 
-/* line 60, ../sass/core/_theme.scss */
+/* line 56, ../sass/core/_theme.scss */
 .theme__block_warning {
   background-color: #ffffd2;
   color: #dab26d;
   border-color: #dab26d;
 }
 
-/* line 67, ../sass/core/_theme.scss */
+/* line 63, ../sass/core/_theme.scss */
 .theme__block_danger {
   background-color: #ffc9c7;
   color: #b94a48;
@@ -1496,7 +1490,7 @@ body {
  * 2. 
  * -----------------------------------------------------------------------------
  */
-/* line 82, ../sass/core/_theme.scss */
+/* line 78, ../sass/core/_theme.scss */
 .theme__block_600 {
   background-color: #61625E;
   color: #fff;
@@ -1506,58 +1500,72 @@ body {
  * Main theme colours of your site
  * -----------------------------------------------------------------------------
  */
-/* line 94, ../sass/core/_theme.scss */
+/* line 90, ../sass/core/_theme.scss */
 .tb__primary {
   background-color: white;
   color: #444444;
   border-color: white;
+  border-weight: 1px;
+  border-style: solid;
   box-shadow: 1px 1px 2px #FFFFFF inset, 1px 1px 3px 0 #D7D8CF;
 }
 
-/* line 100, ../sass/core/_theme.scss */
+/* line 95, ../sass/core/_theme.scss */
 .tb__secondary {
   background-color: #fafbf7;
   color: #444444;
   border-color: #e1e2de;
+  border-weight: 1px;
+  border-style: solid;
 }
 
-/* line 105, ../sass/core/_theme.scss */
+/* line 100, ../sass/core/_theme.scss */
 .tb__tertiary {
   background-color: #2e2f2b;
   color: #444444;
   border-color: #2e2f2b;
+  border-weight: 1px;
+  border-style: solid;
 }
 
-/* line 110, ../sass/core/_theme.scss */
+/* line 105, ../sass/core/_theme.scss */
 .tb__quarternary {
   background-color: #4aa1c5;
   color: white;
   border-color: #4aa1c5;
+  border-weight: 1px;
+  border-style: solid;
 }
 
 /**
  * 
  * -----------------------------------------------------------------------------
  */
-/* line 121, ../sass/core/_theme.scss */
+/* line 116, ../sass/core/_theme.scss */
 .tb__green {
   background-color: #a6e22e;
   color: #444444;
   border-color: #a6e22e;
+  border-weight: 1px;
+  border-style: solid;
 }
 
-/* line 126, ../sass/core/_theme.scss */
+/* line 120, ../sass/core/_theme.scss */
 .tb__pink {
   background-color: #f92672;
   color: #444444;
   border-color: #f92672;
+  border-weight: 1px;
+  border-style: solid;
 }
 
-/* line 131, ../sass/core/_theme.scss */
+/* line 124, ../sass/core/_theme.scss */
 .tb__blue {
   background-color: #4aa1c5;
   color: white;
   border-color: #4aa1c5;
+  border-weight: 1px;
+  border-style: solid;
 }
 
 /* 

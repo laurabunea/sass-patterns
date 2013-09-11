@@ -249,6 +249,52 @@
                     </div><!--  hello world block ends -->
                 </div><!-- mixin-vendor ends-->
 
+                <!-- /****************************************  Theme mixin  *******************************/ -->
+
+                <div class='mxxx' id='mixin-placeholder'>
+                    <h2  class='h3'>
+                        Theme Mixin 
+                    </h2>
+                    <!--  code block starts -->
+
+                    <p>Notes....</p>
+                    
+                    <div class='block--xs m tb__tertiary'>
+                        <h4 class='tiny caps text_muted'>
+                            scss code
+                        </h4>
+                        <pre>
+<code class='language-css'>
+   .tb__blue {
+        /* @include theme-block($bg-color, $txt-color, $border-color);*/
+        @include theme-block( #4AA1C5, #fff, #4AA1C5 );
+    }
+</code>
+                        </pre>
+                        <h4 class='tiny caps text_muted'>
+                            html code
+                        </h4>
+                        <pre>
+<code class='language-markup'>
+    &lt;div class='tb__blue'&gt;
+        &lt;p&gt; Some text &lt;/p&gt;
+    &lt;/div&gt;  
+</code>
+                        </pre>
+                    </div><!--  code block ends -->
+
+                    <!--  hello world block starts -->
+                    <div class='block--xs tb__secondary'>
+                        <h4 class='tiny caps text_muted'>
+                            hello world
+                        </h4>
+                        <div class='xm tb__blue block--xs'>
+                            <p>Some text</p>
+                        </div>
+                    
+                    </div><!--  hello world block ends -->
+                </div><!-- mixin-vendor ends-->
+
                 <!-- /****************************************  Blocks end   *******************************/ -->
 
             </div><!-- container ends-->

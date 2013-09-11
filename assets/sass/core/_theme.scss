@@ -21,11 +21,7 @@
  * 2. Text colours
  * -----------------------------------------------------------------------------
  */
- 
-%border {
-    border-style: solid;
-    border-width: 1px;
-}
+
 
 .text_muted  {
 	color:$text-muted;
@@ -93,23 +89,22 @@
 
 .tb__primary {
 	@include theme-block( $primary-bg-color, $primary-txt-color, $primary-border-color );
-	@extend %border;
 	box-shadow: 1px 1px 2px #FFFFFF inset, 1px 1px 3px 0 #D7D8CF;
 }
 
 .tb__secondary {
 	@include theme-block( $secondary-bg-color, $secondary-txt-color, $secondary-border-color );
-	@extend %border;
+
 }
 
 .tb__tertiary {
 	@include theme-block( $tertiary-bg-color, $tertiary-txt-color, $tertiary-border-color );
-	@extend %border;
+
 }
 
 .tb__quarternary {
 	@include theme-block( $quarternary-bg-color, $quarternary-txt-color, $quarternary-border-color );
-	@extend %border;
+
 }
 
 /**
@@ -120,16 +115,13 @@
 
 .tb__green {
 	@include theme-block( $green-bg-color, $green-txt-color, $green-border-color );
-	@extend %border;
 }
 
 .tb__pink {
 	@include theme-block( $pink-bg-color, $pink-txt-color, $pink-border-color );
-	@extend %border;
 }
 
 .tb__blue {
 	@include theme-block( $blue-bg-color, $blue-txt-color, $blue-border-color );
-	@extend %border;
 }
 
