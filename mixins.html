@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link href="assets/css/prism.css" type="text/css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class='navigation--wrapper theme__block_600' style=''>
+            <div class='navigation--top clearfix'>
+                <ul class='list--inline pull-right'>
+                    <li>
+                        <a class='block--xs' href='/codagirl/www/index.html'>
+                            Typography
+                        </a>
+                    </li>
+                    <li>
+                        <a class='block--xs' href=''>
+                            Layout
+                        </a>
+                    </li>
+                    <li>
+                        <a class='block--xs' href='/codagirl/www/buttons.html'>
+                            Buttons
+                        </a>
+                    </li>
+                    <li>
+                        <a class='block--xs' href='/codagirl/www/themes.html'>
+                            Themes
+                        </a>
+                    </li>
+                    <li>
+                        <a class='block--xs' href='/codagirl/www/forms.html'>
+                            Forms
+                        </a>
+                    </li>
+                    <li>
+                        <a class='block--xs active' href='/codagirl/www/mixins.html'>
+                            Mixins
+                        </a>
+                    </li>
+                </ul><!--list inline ends-->
+            </div><!--navigation top ends-->
+        </div><!--navigation wrapper ends-->
+
+        <!-- Side Navigation Bar - this holds the children categories -->
+        <div class='navigation--side '>
+            <ul class='list--unstyled'>
+                <li>
+                    <a class='block--xs theme__block_100' href='#mixin-vendor'>
+                        Vendor
+                    </a>
+                </li>
+                <li>
+                    <a class='block--xs theme__block_100' href='#mixin-vendor'>
+                        Media breakpoint
+                    </a>
+                </li>
+                <li>
+                    <a class='block--xs theme__block_100' href='#mixin-vendor'>
+                        Opacity
+                    </a>
+                </li>
+                <li>
+                    <a class='block--xs theme__block_100' href='#mixin-vendor'>
+                        Placeholder
+                    </a>
+                </li>
+            </ul><!--list unstyled ends-->
+        </div><!--navigation side ends-->
+
+        <div class='container clearfix theme__block_100 block'>
+            <h1>
+                Mixins
+            </h1>
+            <hr>
+            <!-- /****************************************  Vendor block  *******************************/ -->
+
+                <div class='m' id='mixin-vendor'>
+                    <h2  class='h3'>
+                        Vendor 
+                    </h2>
+
+                    <p>A lightweight way of vendor-prefixing things. This could be used with transition, opacity 0.3s ease-out, margin-top 5s linear</p>
+                    <!--  code block starts -->
+                    <div class='block--xs m theme__block_800'>
+                        <h4 class='tiny caps text_muted'>
+                            code
+                        </h4>
+                        <pre>
+<code class='language-css'>
+    @include vendor($property, $value);
+</code>
+                        </pre>
+                    </div><!--  code block ends -->
+
+                    <!--  hello world block starts -->
+                    <div class='block--xs theme__block_150'>
+                        <h4 class='tiny caps text_muted'>
+                            hello world
+                        </h4>
+                    
+                    </div><!--  hello world block ends -->
+                </div><!-- mixin-vendor ends-->
+
+                <!-- /****************************************  Media break point block  *******************************/ -->
+
+                <div class='mxxx' id='mixin-break-point'>
+                    <h2  class='h3'>
+                        Media break point 
+                    </h2>
+                    <!--  code block starts -->
+                    <div class='block--xs m theme__block_800'>
+                        <h4 class='tiny caps text_muted'>
+                            scss code
+                        </h4>
+                        <pre>
+<code class='language-css'>
+    @include media($breakpoint);
+</code>
+                        </pre>
+                    </div><!--  code block ends -->
+
+                    <!--  hello world block starts -->
+                    <div class='block--xs theme__block_150'>
+                        <h4 class='tiny caps text_muted'>
+                            hello world
+                        </h4>
+                    
+                    </div><!--  hello world block ends -->
+                </div><!-- mixin-break-point ends-->
+
+                <!-- /****************************************  Opacity block  *******************************/ -->
+
+                <div class='mxxx' id='mixin-opacity'>
+                    <h2  class='h3'>
+                        Opacity 
+                    </h2>
+                    <!--  code block starts -->
+                    <div class='block--xs m theme__block_800'>
+                        <h4 class='tiny caps text_muted'>
+                            scss code
+                        </h4>
+                        <pre>
+<code class='language-css'>
+    @include opacity($value);
+</code>
+                        </pre>
+                    </div><!--  code block ends -->
+
+                    <!--  hello world block starts -->
+                    <div class='block--xs theme__block_150'>
+                        <h4 class='tiny caps text_muted'>
+                            hello world
+                        </h4>
+                    
+                    </div><!--  hello world block ends -->
+                </div><!-- mixin-opacity ends-->
+
+                <!-- /****************************************  Placeholder  *******************************/ -->
+
+                <div class='mxxx' id='mixin-vendor'>
+                    <h2  class='h3'>
+                        PLaceholder Mixin 
+                    </h2>
+                    <!--  code block starts -->
+                    <div class='block--xs m theme__block_800'>
+                        <h4 class='tiny caps text_muted'>
+                            scss code
+                        </h4>
+                        <pre>
+<code class='language-css'>
+   @include placeholder($color);
+</code>
+                        </pre>
+                    </div><!--  code block ends -->
+
+                    <!--  hello world block starts -->
+                    <div class='block--xs theme__block_150'>
+                        <h4 class='tiny caps text_muted'>
+                            hello world
+                        </h4>
+                    
+                    </div><!--  hello world block ends -->
+                </div><!-- mixin-vendor ends-->
+
+                <!-- /****************************************  Blocks end   *******************************/ -->
+
+            </div><!-- container ends-->
+            <script type="text/javascript" src="assets/includes/prism.js"></script>
+    </body>
+</html>

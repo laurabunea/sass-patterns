@@ -1,6 +1,25 @@
+/**
+ *
+ * Mixin helpers
+ *
+ * ----------------------------------------------------------------------------
+ * 
+ * Structure:
+ *
+ *      1. Vendor
+ *      2. Media breakpoint
+ *      3. Opacity
+ *      4. Placeholder
+ *
+ *
+ * ----------------------------------------------------------------------------
+ *
+ */
+
+
 
 /**
- * Helpers
+ * 1. Vendor
  * -----------------------------------------------------------------------------
  */
 
@@ -17,6 +36,11 @@
             #{$property}:$value;
 }
 
+
+/**
+ * 2. Break point
+ * -----------------------------------------------------------------------------
+ */
 @mixin media($breakpoint) {
     @if $breakpoint == "mobile-only" {
         @media only screen and (max-width: 30em) {
@@ -34,6 +58,11 @@
 }
 
 
+/**
+ * 3. Opacity mixin
+ * -----------------------------------------------------------------------------
+ */
+
 @mixin opacity($value) {
     $ieOpacity: 100 * $value;
     opacity: $value;
@@ -41,6 +70,11 @@
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{50})";
 }
 
+
+/**
+ * 4. Placeholder mixin
+ * -----------------------------------------------------------------------------
+ */
 @mixin placeholder($color) {
     &::-webkit-input-placeholder { /* WebKit browsers */
         color:    $color;
@@ -53,43 +87,5 @@
     }
     &:-ms-input-placeholder { /* Internet Explorer 10+ */
         color:    $color;
-    }
-}
-
-.inline-block{
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-}
-
-/**
- * Since v22, Chrome makes fat sausage horrible web typography. Fix it with 
- * these properties right here. Maybe consider scoping this to a class for
- * chrome/mac osx only at some point?
- */
-.fix-webkit-font-rendering{
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
-
-/**
- * Place something before an element
- * ----------------------------------------------------------------------------
- */
-.prepend{
-    &:before{
-        content: attr(data-prepend);
-        display: inline-block;
-    }
-}
-
-/**
- * Place something after an element
- * ----------------------------------------------------------------------------
- */
-.append{
-    &:after{
-        content: attr(data-append);
-        display: inline-block;
     }
 }

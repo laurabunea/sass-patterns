@@ -15,9 +15,417 @@
  |		7. PRINT
  |
  * ------------------------------------------------------------------- */
-/* line 1, ../sass/core/_reset.scss */
+/* normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 24, ../sass/core/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 34, ../sass/core/_reset.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 43, ../sass/core/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 54, ../sass/core/_reset.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 67, ../sass/core/_reset.scss */
+html {
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 77, ../sass/core/_reset.scss */
 body {
   margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, ../sass/core/_reset.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 97, ../sass/core/_reset.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 106, ../sass/core/_reset.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 119, ../sass/core/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 128, ../sass/core/_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 137, ../sass/core/_reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 145, ../sass/core/_reset.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 153, ../sass/core/_reset.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 163, ../sass/core/_reset.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 175, ../sass/core/_reset.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 184, ../sass/core/_reset.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 192, ../sass/core/_reset.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 200, ../sass/core/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 209, ../sass/core/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 216, ../sass/core/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 220, ../sass/core/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 232, ../sass/core/_reset.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 240, ../sass/core/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 252, ../sass/core/_reset.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 264, ../sass/core/_reset.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 275, ../sass/core/_reset.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 289, ../sass/core/_reset.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 301, ../sass/core/_reset.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 313, ../sass/core/_reset.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 328, ../sass/core/_reset.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 338, ../sass/core/_reset.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 348, ../sass/core/_reset.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 359, ../sass/core/_reset.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 372, ../sass/core/_reset.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 381, ../sass/core/_reset.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 391, ../sass/core/_reset.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 404, ../sass/core/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /**
@@ -670,6 +1078,7 @@ body {
  *      6. Lower vs Uppercase
  *		7. Text allignments
  *		8. List styles
+ *      9. Fix webkit font rendering
  *
  * ----------------------------------------------------------------------------
  *
@@ -678,7 +1087,7 @@ body {
  * ----------------------------------------------------------------------------
  *
  */
-/* line 27, ../sass/core/_typography.scss */
+/* line 28, ../sass/core/_typography.scss */
 h1, .h1 {
   font-size: 2.25em;
   /* 36px */
@@ -688,7 +1097,7 @@ h1, .h1 {
   /* 24px */
 }
 
-/* line 35, ../sass/core/_typography.scss */
+/* line 36, ../sass/core/_typography.scss */
 h2, .h2 {
   font-size: 1.875em;
   /* 30px */
@@ -697,7 +1106,7 @@ h2, .h2 {
   /* 24px */
 }
 
-/* line 43, ../sass/core/_typography.scss */
+/* line 44, ../sass/core/_typography.scss */
 h3, .h3 {
   font-size: 1.375em;
   /* 22px */
@@ -706,7 +1115,7 @@ h3, .h3 {
   /* 24px */
 }
 
-/* line 51, ../sass/core/_typography.scss */
+/* line 52, ../sass/core/_typography.scss */
 h4, .h4 {
   font-size: 1.125em;
   /* 18px */
@@ -716,7 +1125,7 @@ h4, .h4 {
   /* 20px */
 }
 
-/* line 60, ../sass/core/_typography.scss */
+/* line 61, ../sass/core/_typography.scss */
 h5, .h5 {
   font-size: 1em;
   /* 16px */
@@ -725,7 +1134,7 @@ h5, .h5 {
   /* 12px */
 }
 
-/* line 68, ../sass/core/_typography.scss */
+/* line 69, ../sass/core/_typography.scss */
 h6, .h6 {
   font-size: .875em;
   /* 14px */
@@ -742,7 +1151,7 @@ h6, .h6 {
  *  3. Paragraph styles
  * ----------------------------------------------------------------------------
  */
-/* line 89, ../sass/core/_typography.scss */
+/* line 90, ../sass/core/_typography.scss */
 p, .para {
   font-size: .875em;
   /* 14px */
@@ -752,31 +1161,31 @@ p, .para {
   /* 12px */
 }
 
-/* line 96, ../sass/core/_typography.scss */
+/* line 97, ../sass/core/_typography.scss */
 .medium {
   font-size: .875em;
   /* 14px */
 }
 
-/* line 100, ../sass/core/_typography.scss */
+/* line 101, ../sass/core/_typography.scss */
 .intro {
   font-size: 1.125em;
   /* 18px */
 }
 
-/* line 104, ../sass/core/_typography.scss */
+/* line 105, ../sass/core/_typography.scss */
 .small {
   font-size: .8125em;
   /* 14px */
 }
 
-/* line 108, ../sass/core/_typography.scss */
+/* line 109, ../sass/core/_typography.scss */
 .tiny {
   font-size: .75em;
   /* 12px */
 }
 
-/* line 112, ../sass/core/_typography.scss */
+/* line 113, ../sass/core/_typography.scss */
 .weak {
   font-weight: normal;
 }
@@ -785,7 +1194,7 @@ p, .para {
  * 4. Typographic relationships (nawww, aren't they so good together?)
  * ----------------------------------------------------------------------------
  */
-/* line 125, ../sass/core/_typography.scss */
+/* line 126, ../sass/core/_typography.scss */
 h4 + h6,
 h4 + p,
 h5 + p {
@@ -793,7 +1202,7 @@ h5 + p {
   /* 4px @ 14px */
 }
 
-/* line 129, ../sass/core/_typography.scss */
+/* line 130, ../sass/core/_typography.scss */
 p + p {
   margin-top: .571428571em;
   /* 8px @ 14px */
@@ -803,19 +1212,19 @@ p + p {
  * ----------------------------------------------------------------------------
  *
  */
-/* line 143, ../sass/core/_typography.scss */
+/* line 144, ../sass/core/_typography.scss */
 html,
 body {
   color: #2E2F2B;
   font-family: "helvetica", sans-serif;
 }
 
-/* line 148, ../sass/core/_typography.scss */
+/* line 149, ../sass/core/_typography.scss */
 .sans {
   font-family: "helvetica", sans-serif;
 }
 
-/* line 152, ../sass/core/_typography.scss */
+/* line 153, ../sass/core/_typography.scss */
 .serif {
   font-family: "georgia", serif;
 }
@@ -824,12 +1233,12 @@ body {
  *  6. Lowercase vs Uppercase
  * ----------------------------------------------------------------------------
  */
-/* line 163, ../sass/core/_typography.scss */
+/* line 164, ../sass/core/_typography.scss */
 .caps {
   text-transform: uppercase;
 }
 
-/* line 166, ../sass/core/_typography.scss */
+/* line 167, ../sass/core/_typography.scss */
 .caps-lower {
   text-transform: lowercase;
 }
@@ -843,17 +1252,17 @@ body {
     <p class="text_align--right">Right aligned text.</p>
 
  */
-/* line 183, ../sass/core/_typography.scss */
+/* line 184, ../sass/core/_typography.scss */
 .text-align--left {
   text-align: left;
 }
 
-/* line 186, ../sass/core/_typography.scss */
+/* line 187, ../sass/core/_typography.scss */
 .text-align--right {
   text-align: right;
 }
 
-/* line 189, ../sass/core/_typography.scss */
+/* line 190, ../sass/core/_typography.scss */
 .text-align--center {
   text-align: center;
 }
@@ -862,17 +1271,32 @@ body {
  * 8. List styles
  * ----------------------------------------------------------------------------
  */
-/* line 200, ../sass/core/_typography.scss */
+/* line 201, ../sass/core/_typography.scss */
 .list--unstyled, .list--inline {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-/* line 206, ../sass/core/_typography.scss */
+/* line 207, ../sass/core/_typography.scss */
 .list--unstyled > li, .list--inline > li {
   list-style: none;
   margin-left: 0;
+}
+
+/**
+ * 9. Fix webkit font rendering
+ * ----------------------------------------------------------------------------
+ */
+/**
+ * Since v22, Chrome makes fat sausage horrible web typography. Fix it with 
+ * these properties right here. Maybe consider scoping this to a class for
+ * chrome/mac osx only at some point?
+ */
+/* line 232, ../sass/core/_typography.scss */
+.fix-webkit-font-rendering, h4, .h4 {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 /**
@@ -900,7 +1324,7 @@ body {
  * -----------------------------------------------------------------------------
  */
 /* line 28, ../sass/core/_theme.scss */
-.muted {
+.text_muted {
   color: #999;
 }
 
@@ -934,25 +1358,21 @@ body {
   background-color: #b94a48;
 }
 
-/*
+/* line 64, ../sass/core/_theme.scss */
 .theme__block_success {
-	background-color: $state-success-bg ;
-	color: $state-success-text;
-	border-color:$state-success-border;
+  background-color: #468847;
 }
 
+/* line 70, ../sass/core/_theme.scss */
 .theme__block_warning {
-	background-color: $state-warning-bg ;
-	color: $state-warning-text;
-	border-color:$state-warning-border;
+  background-color: #c09853;
 }
 
+/* line 76, ../sass/core/_theme.scss */
 .theme__block_danger {
-	background-color: $state-danger-bg;
-	color:$state-danger-text;
-	border-color:$state-danger-border;
+  background-color: #b94a48;
 }
-*/
+
 /**
  * 2. 
  * -----------------------------------------------------------------------------
