@@ -1543,21 +1543,21 @@ body {
 .tb__green {
   background-color: #a6e22e;
   color: #444444;
-  border-color: #444444;
+  border-color: #a6e22e;
 }
 
 /* line 126, ../sass/core/_theme.scss */
 .tb__pink {
   background-color: #f92672;
   color: #444444;
-  border-color: #fafbf7;
+  border-color: #f92672;
 }
 
 /* line 131, ../sass/core/_theme.scss */
 .tb__blue {
   background-color: #4aa1c5;
   color: white;
-  border-color: #2e2f2b;
+  border-color: #4aa1c5;
 }
 
 /* 
