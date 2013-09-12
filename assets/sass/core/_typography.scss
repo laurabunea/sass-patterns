@@ -4,7 +4,7 @@
  * -----------------------------------------------------------------------------
  *
  * Structure:
- *
+ *         Base typography styles
  *      1. Heading styles
  *		2. Sub Heading styles
  *      3. Paragraph styles
@@ -20,10 +20,36 @@
  */
 
 
+/** Base styles
+ * ----------------------------------------------------------------------------
+ *
+ */
+
+html,
+body {
+    color:          $base-font-color;
+    font-size:      $base-font-size;
+    font-family:    $sansSerifStack;
+    line-height:    $base-line-height;
+    /* see point 9 */
+    @extend %fix-webkit-font-rendering;
+}
+
+a {
+    color:          $base-link-color;
+    &:hover {
+        color:          $base-link-hover-color;
+    }
+}
+
+
 /** 1. Header styles
  * ----------------------------------------------------------------------------
  *
  */
+.h0 {
+    font-size: 5em;                         /* 72px */
+}
 
 h1, .h1 {
     @extend .m0--b;
@@ -76,10 +102,8 @@ h6, .h6 {
 
 
 
-/** 2. Sub Heading styles
- * ----------------------------------------------------------------------------
- *
- */
+
+
 
 
 /**
@@ -137,14 +161,7 @@ p + p{
  * ----------------------------------------------------------------------------
  *
  */
-$sansSerifStack: "helvetica", sans-serif ;
-$serifStack: "georgia", serif;
 
-html,
-body {
-    color: #2E2F2B;
-    font-family: $sansSerifStack;
-}
 
 .sans {
     font-family: $sansSerifStack;
@@ -229,7 +246,7 @@ body {
  * chrome/mac osx only at some point?
  */
 
-.fix-webkit-font-rendering{
+%fix-webkit-font-rendering {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }

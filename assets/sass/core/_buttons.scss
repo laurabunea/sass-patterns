@@ -136,6 +136,7 @@
     padding-bottom: $base-spacing-unit / 4;
 }
 
+
 /**
  * Buttons with icons
  * ----------------------------------------------------------------------------
@@ -218,71 +219,6 @@
     }
 }
 
-/**
- * Button types
- * ----------------------------------------------------------------------------
- * E.g:
-    <a class='btn btn-primary'>
-        My awesome button
-    </a> 
- */
-.btn-primary:hover,
-.btn-secondary:hover,
-.btn-positive:hover,
-.btn-negative:hover {
-    color: #fff;
-}
-
-.btn-primary {
-    background-color: #3CBE8A;
-    color: #fff;
-    
-    &:hover {
-        background-color: darken(#3CBE8A, 7%);
-    }
-}
-
-.btn-secondary {
-    background-color: #999;
-    color: #fff;
-
-    &:hover {
-        background-color: #777;
-    }
-}
-
-.btn-tertiary {
-    background-color: #ddd;
-    color: #444;
-
-    &:hover {
-        background-color: #ccc;
-        color: #333;
-    }
-}
-
-.btn-positive {
-    background-color: #3977B1;
-    color: #fff;
-    &:hover {
-        background-color: darken(#3977B1, 7%);
-    }
-}
-
-.btn-negative {
-    background-color: #eb3930;
-    color: #fff;
-    &:hover {
-        background-color: #d8281f;
-    }
-}
-/**
- * A common active state makes us look pro as, bro!
- */
-.btn:active {
-    background-color: #333;
-    color: #fff;
-}
 
 /**
  * ----------------------------------------------------------------------------

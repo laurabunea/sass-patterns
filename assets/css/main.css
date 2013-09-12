@@ -195,12 +195,16 @@ samp {
 /* line 185, ../sass/core/_reset.scss */
 pre {
   white-space: pre-wrap;
+  width: 99%;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
 }
 
 /**
  * Set consistent quote types.
  */
-/* line 193, ../sass/core/_reset.scss */
+/* line 197, ../sass/core/_reset.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -208,7 +212,7 @@ q {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 201, ../sass/core/_reset.scss */
+/* line 205, ../sass/core/_reset.scss */
 small {
   font-size: 80%;
 }
@@ -216,7 +220,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 210, ../sass/core/_reset.scss */
+/* line 214, ../sass/core/_reset.scss */
 sub,
 sup {
   font-size: 75%;
@@ -225,12 +229,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 217, ../sass/core/_reset.scss */
+/* line 221, ../sass/core/_reset.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 221, ../sass/core/_reset.scss */
+/* line 225, ../sass/core/_reset.scss */
 sub {
   bottom: -0.25em;
 }
@@ -241,7 +245,7 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
-/* line 233, ../sass/core/_reset.scss */
+/* line 237, ../sass/core/_reset.scss */
 img {
   border: 0;
 }
@@ -249,7 +253,7 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 241, ../sass/core/_reset.scss */
+/* line 245, ../sass/core/_reset.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -260,7 +264,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-/* line 253, ../sass/core/_reset.scss */
+/* line 257, ../sass/core/_reset.scss */
 figure {
   margin: 0;
 }
@@ -271,7 +275,7 @@ figure {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 265, ../sass/core/_reset.scss */
+/* line 269, ../sass/core/_reset.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -282,7 +286,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 276, ../sass/core/_reset.scss */
+/* line 280, ../sass/core/_reset.scss */
 legend {
   border: 0;
   /* 1 */
@@ -295,7 +299,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 290, ../sass/core/_reset.scss */
+/* line 294, ../sass/core/_reset.scss */
 button,
 input,
 select,
@@ -312,7 +316,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 302, ../sass/core/_reset.scss */
+/* line 306, ../sass/core/_reset.scss */
 button,
 input {
   line-height: normal;
@@ -324,7 +328,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 314, ../sass/core/_reset.scss */
+/* line 318, ../sass/core/_reset.scss */
 button,
 select {
   text-transform: none;
@@ -337,7 +341,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 329, ../sass/core/_reset.scss */
+/* line 333, ../sass/core/_reset.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -351,7 +355,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 339, ../sass/core/_reset.scss */
+/* line 343, ../sass/core/_reset.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -361,7 +365,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 349, ../sass/core/_reset.scss */
+/* line 353, ../sass/core/_reset.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -375,7 +379,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 360, ../sass/core/_reset.scss */
+/* line 364, ../sass/core/_reset.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -389,7 +393,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 373, ../sass/core/_reset.scss */
+/* line 377, ../sass/core/_reset.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -398,7 +402,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 382, ../sass/core/_reset.scss */
+/* line 386, ../sass/core/_reset.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -409,7 +413,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 392, ../sass/core/_reset.scss */
+/* line 396, ../sass/core/_reset.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -423,10 +427,17 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 405, ../sass/core/_reset.scss */
+/* line 409, ../sass/core/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* line 415, ../sass/core/_reset.scss */
+ul,
+ol {
+  padding: 0;
+  margin: 0;
 }
 
 /**
@@ -436,7 +447,7 @@ table {
  * ----------------------------------------------------------------------------
  * 
  * Structure:
- *
+ *			Base font sizes
  *      1. Typography defaults
  *		2. Spacing 
  *      3. Themes
@@ -452,6 +463,10 @@ table {
  *
  */
 /**
+ * 1. Base Typography Defaults
+ * -----------------------------------------------------------------------------
+ */
+/**
  * 1. Typography Defaults
  * -----------------------------------------------------------------------------
  */
@@ -459,107 +474,107 @@ table {
  * 2. Spacing: she's a fickle mistress.
  * -----------------------------------------------------------------------------
  */
-/* line 67, ../sass/core/_variables.scss */
+/* line 70, ../sass/core/_variables.scss */
 .m0 {
   margin-top: 0;
 }
 
-/* line 68, ../sass/core/_variables.scss */
+/* line 71, ../sass/core/_variables.scss */
 .m0--b, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .para {
   margin-bottom: 0;
 }
 
-/* line 69, ../sass/core/_variables.scss */
+/* line 72, ../sass/core/_variables.scss */
 .xxxm {
   margin-top: 0.1em;
 }
 
-/* line 70, ../sass/core/_variables.scss */
+/* line 73, ../sass/core/_variables.scss */
 .xxm {
   margin-top: 0.5em;
 }
 
-/* line 71, ../sass/core/_variables.scss */
+/* line 74, ../sass/core/_variables.scss */
 .xm {
   margin-top: 1em;
 }
 
-/* line 72, ../sass/core/_variables.scss */
+/* line 75, ../sass/core/_variables.scss */
 .m {
   margin-top: 1.5em;
 }
 
-/* line 73, ../sass/core/_variables.scss */
+/* line 76, ../sass/core/_variables.scss */
 .mx {
   margin-top: 2.25em;
 }
 
-/* line 74, ../sass/core/_variables.scss */
+/* line 77, ../sass/core/_variables.scss */
 .mxx {
   margin-top: 3em;
 }
 
-/* line 75, ../sass/core/_variables.scss */
+/* line 78, ../sass/core/_variables.scss */
 .mxxx {
   margin-top: 4.5em;
 }
 
-/* line 77, ../sass/core/_variables.scss */
+/* line 80, ../sass/core/_variables.scss */
 .xxm--b {
   margin-bottom: 0.5em;
 }
 
-/* line 78, ../sass/core/_variables.scss */
+/* line 81, ../sass/core/_variables.scss */
 .xm--b {
   margin-bottom: 1em;
 }
 
-/* line 79, ../sass/core/_variables.scss */
+/* line 82, ../sass/core/_variables.scss */
 .m--b {
   margin-bottom: 1.5em;
 }
 
-/* line 80, ../sass/core/_variables.scss */
+/* line 83, ../sass/core/_variables.scss */
 .mx--b {
   margin-bottom: 2.25em;
 }
 
-/* line 81, ../sass/core/_variables.scss */
+/* line 84, ../sass/core/_variables.scss */
 .mxx--b {
   margin-bottom: 3em;
 }
 
-/* line 83, ../sass/core/_variables.scss */
+/* line 86, ../sass/core/_variables.scss */
 .p0 {
   padding-top: 0 !important;
 }
 
-/* line 84, ../sass/core/_variables.scss */
+/* line 87, ../sass/core/_variables.scss */
 .p0--b {
   padding-bottom: 0 !important;
 }
 
-/* line 85, ../sass/core/_variables.scss */
+/* line 88, ../sass/core/_variables.scss */
 .xxp {
   padding-top: 0.5em;
 }
 
-/* line 86, ../sass/core/_variables.scss */
+/* line 89, ../sass/core/_variables.scss */
 .xp {
   padding-top: 1em;
 }
 
-/* line 87, ../sass/core/_variables.scss */
+/* line 90, ../sass/core/_variables.scss */
 .p {
   padding-top: 1.5em;
 }
 
-/* line 88, ../sass/core/_variables.scss */
+/* line 91, ../sass/core/_variables.scss */
 .px {
   padding-top: 2.25em;
 }
 
-/* line 89, ../sass/core/_variables.scss */
+/* line 92, ../sass/core/_variables.scss */
 .pxx {
   padding-top: 3em;
 }
@@ -569,7 +584,7 @@ table {
  * -----------------------------------------------------------------------------
  */
 /**
- * 4. Buttons
+ * 4. Button themes
  * -----------------------------------------------------------------------------
  */
 /**
@@ -658,6 +673,10 @@ table {
   color: #f92672;
 }
 
+/**
+ * 5. Simple theme mixins
+ * -----------------------------------------------------------------------------
+ */
 @media print {
   /* line 7, ../sass/core/_print.scss */
   * {
@@ -912,16 +931,18 @@ table {
 /* line 181, ../sass/core/_layout.scss */
 .media__image {
   float: left;
+  margin-right: 1.5em;
 }
 
-/* line 189, ../sass/core/_layout.scss */
+/* line 190, ../sass/core/_layout.scss */
 .media--rev {
   margin-top: 1.5em;
 }
 
-/* line 194, ../sass/core/_layout.scss */
+/* line 195, ../sass/core/_layout.scss */
 .media--rev > .media__image {
   float: right;
+  margin-left: 1.5em;
 }
 
 /**
@@ -933,7 +954,7 @@ table {
  * [3] A fix for Internet Explorer 8/9
  * 
  */
-/* line 214, ../sass/core/_layout.scss */
+/* line 216, ../sass/core/_layout.scss */
 .grid {
   text-align: justify;
   /* [1] */
@@ -943,14 +964,14 @@ table {
   /* [3] */
 }
 
-/* line 224, ../sass/core/_layout.scss */
+/* line 226, ../sass/core/_layout.scss */
 .grid__item, .grid > * {
   font-size: medium;
   text-align: left;
   vertical-align: top;
 }
 
-/* line 232, ../sass/core/_layout.scss */
+/* line 234, ../sass/core/_layout.scss */
 .grid:after,
 .grid__break {
   content: '';
@@ -961,78 +982,78 @@ table {
 /**
  * Vertical align these grid items in the middle!
  */
-/* line 241, ../sass/core/_layout.scss */
+/* line 243, ../sass/core/_layout.scss */
 .grid--middle > .grid__item, .grid.grid--middle > * {
   vertical-align: middle;
 }
 
-/* line 245, ../sass/core/_layout.scss */
+/* line 247, ../sass/core/_layout.scss */
 .g--1-1 {
   width: 100%;
 }
 
-/* line 248, ../sass/core/_layout.scss */
+/* line 250, ../sass/core/_layout.scss */
 .g--1-2 {
   width: 50%;
 }
 
-/* line 251, ../sass/core/_layout.scss */
+/* line 253, ../sass/core/_layout.scss */
 .g--1-4 {
   width: 25%;
 }
 
-/* line 254, ../sass/core/_layout.scss */
+/* line 256, ../sass/core/_layout.scss */
 .g--3-4 {
   width: 75%;
 }
 
-/* line 258, ../sass/core/_layout.scss */
+/* line 260, ../sass/core/_layout.scss */
 .g--9-10 {
   width: 80%;
 }
 
-/* line 261, ../sass/core/_layout.scss */
+/* line 263, ../sass/core/_layout.scss */
 .g--1-10 {
   width: 20%;
 }
 
 @media only screen and (max-width: 30em) {
-  /* line 266, ../sass/core/_layout.scss */
+  /* line 268, ../sass/core/_layout.scss */
   .g-m--1-1 {
     width: 100%;
   }
 
-  /* line 269, ../sass/core/_layout.scss */
+  /* line 271, ../sass/core/_layout.scss */
   .g-m--1-2 {
     width: 50%;
   }
 
-  /* line 272, ../sass/core/_layout.scss */
+  /* line 274, ../sass/core/_layout.scss */
   .g-m--9-10 {
     width: 90%;
   }
 
-  /* line 275, ../sass/core/_layout.scss */
+  /* line 277, ../sass/core/_layout.scss */
   .g-m--1-10 {
     width: 10%;
   }
 
-  /* line 278, ../sass/core/_layout.scss */
+  /* line 280, ../sass/core/_layout.scss */
   .g-m--8-10 {
     width: 80%;
   }
 
-  /* line 281, ../sass/core/_layout.scss */
+  /* line 283, ../sass/core/_layout.scss */
   .g-m--2-10 {
     width: 20%;
   }
 }
-/* line 288, ../sass/core/_layout.scss */
+/* line 290, ../sass/core/_layout.scss */
 .overflow-hidden, .media__body, .media--rev > .media__body {
   overflow: hidden;
 }
 
-/* line 292, ../sass/core/_layout.scss */
+/* line 294, ../sass/core/_layout.scss */
 .inline-block, .grid__item, .grid > *, .grid:after,
 .grid__break, .list--inline > li, .btn {
   display: inline-block;
@@ -1048,7 +1069,7 @@ table {
  * Place something before an element
  * ----------------------------------------------------------------------------
  */
-/* line 310, ../sass/core/_layout.scss */
+/* line 312, ../sass/core/_layout.scss */
 .prepend:before {
   content: attr(data-prepend);
   display: inline-block;
@@ -1058,7 +1079,7 @@ table {
  * Place something after an element
  * ----------------------------------------------------------------------------
  */
-/* line 321, ../sass/core/_layout.scss */
+/* line 323, ../sass/core/_layout.scss */
 .append:after {
   content: attr(data-append);
   display: inline-block;
@@ -1078,7 +1099,7 @@ table {
  * </div>
  *
  */
-/* line 344, ../sass/core/_layout.scss */
+/* line 346, ../sass/core/_layout.scss */
 .arrow {
   /*i,span*/
   position: absolute;
@@ -1089,35 +1110,35 @@ table {
   border-width: .4em;
 }
 
-/* line 354, ../sass/core/_layout.scss */
+/* line 356, ../sass/core/_layout.scss */
 .arrow-top {
   border-top-width: 0;
   border-bottom-color: inherit;
   top: -0.4em;
 }
 
-/* line 360, ../sass/core/_layout.scss */
+/* line 362, ../sass/core/_layout.scss */
 .arrow-bottom {
   border-bottom-width: 0;
   border-top-color: inherit;
   bottom: -0.4em;
 }
 
-/* line 366, ../sass/core/_layout.scss */
+/* line 368, ../sass/core/_layout.scss */
 .arrow-left {
   border-left-width: 0;
   border-right-color: inherit;
   left: -0.4em;
 }
 
-/* line 372, ../sass/core/_layout.scss */
+/* line 374, ../sass/core/_layout.scss */
 .arrow-right {
   border-right-width: 0;
   border-left-color: inherit;
   right: -0.4em;
 }
 
-/* line 381, ../sass/core/_layout.scss */
+/* line 383, ../sass/core/_layout.scss */
 .arrow--left,
 .arrow--right,
 .arrow--side,
@@ -1126,7 +1147,7 @@ table {
   position: relative;
 }
 
-/* line 385, ../sass/core/_layout.scss */
+/* line 387, ../sass/core/_layout.scss */
 .arrow--center .arrow {
   left: 0;
   right: 0;
@@ -1134,17 +1155,17 @@ table {
   margin-right: auto;
 }
 
-/* line 392, ../sass/core/_layout.scss */
+/* line 394, ../sass/core/_layout.scss */
 .arrow--left .arrow {
   left: 1.5em;
 }
 
-/* line 396, ../sass/core/_layout.scss */
+/* line 398, ../sass/core/_layout.scss */
 .arrow--right .arrow {
   right: 1.5em;
 }
 
-/* line 400, ../sass/core/_layout.scss */
+/* line 402, ../sass/core/_layout.scss */
 .arrow--side .arrow {
   top: 1.5em;
 }
@@ -1153,30 +1174,30 @@ table {
  * Icon block 
  * ----------------------------------------------------------------------------
  */
-/* line 410, ../sass/core/_layout.scss */
+/* line 412, ../sass/core/_layout.scss */
 .icon-text,
 .icon-text--rev {
   /* a, div, etc */
   display: inline-block;
 }
 
-/* line 415, ../sass/core/_layout.scss */
+/* line 417, ../sass/core/_layout.scss */
 .i {
   overflow: hidden;
   /* for IE6 */
   vertical-align: middle;
   /* SMACSS line-height: 0; ? */
 }
-/* line 420, ../sass/core/_layout.scss */
+/* line 422, ../sass/core/_layout.scss */
 .icon-text .i, .btn--icon .i {
   margin-right: 0.5em;
 }
-/* line 425, ../sass/core/_layout.scss */
+/* line 427, ../sass/core/_layout.scss */
 .icon-text--rev .i, .btn--icon-rev .i {
   margin-left: 0.5em;
 }
 
-/* line 431, ../sass/core/_layout.scss */
+/* line 433, ../sass/core/_layout.scss */
 .icon-placeholder {
   background-image: url("/codagirl/www/assets/images/icon-placeholder.png");
   width: 40px;
@@ -1190,7 +1211,7 @@ table {
  * -----------------------------------------------------------------------------
  *
  * Structure:
- *
+ *         Base typography styles
  *      1. Heading styles
  *		2. Sub Heading styles
  *      3. Paragraph styles
@@ -1204,11 +1225,40 @@ table {
  * ----------------------------------------------------------------------------
  *
  */
+/** Base styles
+ * ----------------------------------------------------------------------------
+ *
+ */
+/* line 29, ../sass/core/_typography.scss */
+html,
+body {
+  color: #2e2f2b;
+  font-size: 14;
+  font-family: "helvetica", sans-serif;
+  line-height: 1.42857;
+  /* see point 9 */
+}
+
+/* line 38, ../sass/core/_typography.scss */
+a {
+  color: #2f72ba;
+}
+/* line 40, ../sass/core/_typography.scss */
+a:hover {
+  color: #204d7d;
+}
+
 /** 1. Header styles
  * ----------------------------------------------------------------------------
  *
  */
-/* line 28, ../sass/core/_typography.scss */
+/* line 50, ../sass/core/_typography.scss */
+.h0 {
+  font-size: 5em;
+  /* 72px */
+}
+
+/* line 54, ../sass/core/_typography.scss */
 h1, .h1 {
   font-size: 2.25em;
   /* 36px */
@@ -1218,7 +1268,7 @@ h1, .h1 {
   /* 24px */
 }
 
-/* line 36, ../sass/core/_typography.scss */
+/* line 62, ../sass/core/_typography.scss */
 h2, .h2 {
   font-size: 1.875em;
   /* 30px */
@@ -1227,7 +1277,7 @@ h2, .h2 {
   /* 24px */
 }
 
-/* line 44, ../sass/core/_typography.scss */
+/* line 70, ../sass/core/_typography.scss */
 h3, .h3 {
   font-size: 1.375em;
   /* 22px */
@@ -1236,7 +1286,7 @@ h3, .h3 {
   /* 24px */
 }
 
-/* line 52, ../sass/core/_typography.scss */
+/* line 78, ../sass/core/_typography.scss */
 h4, .h4 {
   font-size: 1.125em;
   /* 18px */
@@ -1246,7 +1296,7 @@ h4, .h4 {
   /* 20px */
 }
 
-/* line 61, ../sass/core/_typography.scss */
+/* line 87, ../sass/core/_typography.scss */
 h5, .h5 {
   font-size: 1em;
   /* 16px */
@@ -1255,7 +1305,7 @@ h5, .h5 {
   /* 12px */
 }
 
-/* line 69, ../sass/core/_typography.scss */
+/* line 95, ../sass/core/_typography.scss */
 h6, .h6 {
   font-size: .875em;
   /* 14px */
@@ -1264,15 +1314,11 @@ h6, .h6 {
   /* 12px */
 }
 
-/** 2. Sub Heading styles
- * ----------------------------------------------------------------------------
- *
- */
 /**
  *  3. Paragraph styles
  * ----------------------------------------------------------------------------
  */
-/* line 90, ../sass/core/_typography.scss */
+/* line 114, ../sass/core/_typography.scss */
 p, .para {
   font-size: .875em;
   /* 14px */
@@ -1282,31 +1328,31 @@ p, .para {
   /* 12px */
 }
 
-/* line 97, ../sass/core/_typography.scss */
+/* line 121, ../sass/core/_typography.scss */
 .medium {
   font-size: .875em;
   /* 14px */
 }
 
-/* line 101, ../sass/core/_typography.scss */
+/* line 125, ../sass/core/_typography.scss */
 .intro {
   font-size: 1.125em;
   /* 18px */
 }
 
-/* line 105, ../sass/core/_typography.scss */
+/* line 129, ../sass/core/_typography.scss */
 .small {
   font-size: .8125em;
   /* 14px */
 }
 
-/* line 109, ../sass/core/_typography.scss */
+/* line 133, ../sass/core/_typography.scss */
 .tiny {
   font-size: .75em;
   /* 12px */
 }
 
-/* line 113, ../sass/core/_typography.scss */
+/* line 137, ../sass/core/_typography.scss */
 .weak {
   font-weight: normal;
 }
@@ -1315,7 +1361,7 @@ p, .para {
  * 4. Typographic relationships (nawww, aren't they so good together?)
  * ----------------------------------------------------------------------------
  */
-/* line 126, ../sass/core/_typography.scss */
+/* line 150, ../sass/core/_typography.scss */
 h4 + h6,
 h4 + p,
 h5 + p {
@@ -1323,7 +1369,7 @@ h5 + p {
   /* 4px @ 14px */
 }
 
-/* line 130, ../sass/core/_typography.scss */
+/* line 154, ../sass/core/_typography.scss */
 p + p {
   margin-top: .571428571em;
   /* 8px @ 14px */
@@ -1333,19 +1379,12 @@ p + p {
  * ----------------------------------------------------------------------------
  *
  */
-/* line 144, ../sass/core/_typography.scss */
-html,
-body {
-  color: #2E2F2B;
-  font-family: "helvetica", sans-serif;
-}
-
-/* line 149, ../sass/core/_typography.scss */
+/* line 166, ../sass/core/_typography.scss */
 .sans {
   font-family: "helvetica", sans-serif;
 }
 
-/* line 153, ../sass/core/_typography.scss */
+/* line 170, ../sass/core/_typography.scss */
 .serif {
   font-family: "georgia", serif;
 }
@@ -1354,12 +1393,12 @@ body {
  *  6. Lowercase vs Uppercase
  * ----------------------------------------------------------------------------
  */
-/* line 164, ../sass/core/_typography.scss */
+/* line 181, ../sass/core/_typography.scss */
 .caps {
   text-transform: uppercase;
 }
 
-/* line 167, ../sass/core/_typography.scss */
+/* line 184, ../sass/core/_typography.scss */
 .caps-lower {
   text-transform: lowercase;
 }
@@ -1373,17 +1412,17 @@ body {
     <p class="text_align--right">Right aligned text.</p>
 
  */
-/* line 184, ../sass/core/_typography.scss */
+/* line 201, ../sass/core/_typography.scss */
 .text-align--left {
   text-align: left;
 }
 
-/* line 187, ../sass/core/_typography.scss */
+/* line 204, ../sass/core/_typography.scss */
 .text-align--right {
   text-align: right;
 }
 
-/* line 190, ../sass/core/_typography.scss */
+/* line 207, ../sass/core/_typography.scss */
 .text-align--center {
   text-align: center;
 }
@@ -1392,14 +1431,14 @@ body {
  * 8. List styles
  * ----------------------------------------------------------------------------
  */
-/* line 201, ../sass/core/_typography.scss */
+/* line 218, ../sass/core/_typography.scss */
 .list--unstyled, .list--inline {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-/* line 207, ../sass/core/_typography.scss */
+/* line 224, ../sass/core/_typography.scss */
 .list--unstyled > li, .list--inline > li {
   list-style: none;
   margin-left: 0;
@@ -1414,15 +1453,18 @@ body {
  * these properties right here. Maybe consider scoping this to a class for
  * chrome/mac osx only at some point?
  */
-/* line 232, ../sass/core/_typography.scss */
-.fix-webkit-font-rendering, h4, .h4 {
+/* line 249, ../sass/core/_typography.scss */
+html,
+body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
 /**
  *
- * Themes
+ * Themes 
+ *
+ *	This file controls all of the colours / themes for the site! 
  *
  * ----------------------------------------------------------------------------
  * 
@@ -1437,26 +1479,38 @@ body {
  * ----------------------------------------------------------------------------
  *
  */
+/* line 20, ../sass/core/_theme.scss */
+.theme__block_success, .theme__block_warning, .theme__block_danger, .tb__primary, .tb__secondary, .tb__tertiary, .tb__quarternary, .tb__green, .tb__pink, .tb__blue {
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* line 26, ../sass/core/_theme.scss */
+html,
+body {
+  background-color: #ededed;
+}
+
 /**
  * 2. Text colours
  * -----------------------------------------------------------------------------
  */
-/* line 26, ../sass/core/_theme.scss */
+/* line 36, ../sass/core/_theme.scss */
 .text_muted {
   color: #999999;
 }
 
-/* line 30, ../sass/core/_theme.scss */
+/* line 40, ../sass/core/_theme.scss */
 .text_success {
   color: #468847;
 }
 
-/* line 34, ../sass/core/_theme.scss */
+/* line 44, ../sass/core/_theme.scss */
 .text_warning {
   color: #c09853;
 }
 
-/* line 38, ../sass/core/_theme.scss */
+/* line 48, ../sass/core/_theme.scss */
 .text_danger {
   color: #b94a48;
 }
@@ -1465,21 +1519,21 @@ body {
  * 2. Theme blocks
  * -----------------------------------------------------------------------------
  */
-/* line 49, ../sass/core/_theme.scss */
+/* line 59, ../sass/core/_theme.scss */
 .theme__block_success {
   background-color: #c5ffc6;
   color: #468847;
   border-color: #468847;
 }
 
-/* line 56, ../sass/core/_theme.scss */
+/* line 66, ../sass/core/_theme.scss */
 .theme__block_warning {
   background-color: #ffffd2;
   color: #dab26d;
   border-color: #dab26d;
 }
 
-/* line 63, ../sass/core/_theme.scss */
+/* line 73, ../sass/core/_theme.scss */
 .theme__block_danger {
   background-color: #ffc9c7;
   color: #b94a48;
@@ -1490,9 +1544,9 @@ body {
  * 2. 
  * -----------------------------------------------------------------------------
  */
-/* line 78, ../sass/core/_theme.scss */
+/* line 88, ../sass/core/_theme.scss */
 .theme__block_600 {
-  background-color: #61625E;
+  background-color: #4D4D4D;
   color: #fff;
 }
 
@@ -1500,72 +1554,144 @@ body {
  * Main theme colours of your site
  * -----------------------------------------------------------------------------
  */
-/* line 90, ../sass/core/_theme.scss */
+/* line 100, ../sass/core/_theme.scss */
 .tb__primary {
-  background-color: white;
-  color: #444444;
-  border-color: white;
-  border-weight: 1px;
-  border-style: solid;
+  background-color: #fafafa;
+  color: #2e2f2b;
+  border-color: #fafafa;
   box-shadow: 1px 1px 2px #FFFFFF inset, 1px 1px 3px 0 #D7D8CF;
 }
 
-/* line 95, ../sass/core/_theme.scss */
+/* line 106, ../sass/core/_theme.scss */
 .tb__secondary {
-  background-color: #fafbf7;
-  color: #444444;
-  border-color: #e1e2de;
-  border-weight: 1px;
-  border-style: solid;
+  background-color: #f2f2f2;
+  color: #2e2f2b;
+  border-color: #e6e6e6;
 }
 
-/* line 100, ../sass/core/_theme.scss */
+/* line 112, ../sass/core/_theme.scss */
 .tb__tertiary {
   background-color: #2e2f2b;
-  color: #444444;
+  color: white;
   border-color: #2e2f2b;
-  border-weight: 1px;
-  border-style: solid;
 }
 
-/* line 105, ../sass/core/_theme.scss */
+/* line 118, ../sass/core/_theme.scss */
 .tb__quarternary {
-  background-color: #4aa1c5;
+  background-color: #4d4d4d;
   color: white;
-  border-color: #4aa1c5;
-  border-weight: 1px;
-  border-style: solid;
+  border-color: #4d4d4d;
 }
 
 /**
  * 
  * -----------------------------------------------------------------------------
  */
-/* line 116, ../sass/core/_theme.scss */
+/* line 130, ../sass/core/_theme.scss */
 .tb__green {
   background-color: #a6e22e;
-  color: #444444;
+  color: #2e2f2b;
   border-color: #a6e22e;
-  border-weight: 1px;
-  border-style: solid;
 }
 
-/* line 120, ../sass/core/_theme.scss */
+/* line 135, ../sass/core/_theme.scss */
 .tb__pink {
   background-color: #f92672;
-  color: #444444;
+  color: #2e2f2b;
   border-color: #f92672;
-  border-weight: 1px;
-  border-style: solid;
 }
 
-/* line 124, ../sass/core/_theme.scss */
+/* line 140, ../sass/core/_theme.scss */
 .tb__blue {
   background-color: #4aa1c5;
   color: white;
   border-color: #4aa1c5;
-  border-weight: 1px;
-  border-style: solid;
+}
+
+/**
+ * Button theming
+ * -----------------------------------------------------------------------------
+ */
+/* line 153, ../sass/core/_theme.scss */
+.btn-primary {
+  background-color: #3cbe8a;
+  color: white;
+  border-color: #3cbe8a;
+}
+/* line 156, ../sass/core/_theme.scss */
+.btn-primary:hover {
+  background-color: #33a376;
+  color: white;
+}
+
+/* line 162, ../sass/core/_theme.scss */
+.btn-secondary {
+  background-color: #999999;
+  color: white;
+  border-color: #3cbe8a;
+}
+/* line 164, ../sass/core/_theme.scss */
+.btn-secondary:hover {
+  background-color: #777777;
+  color: white;
+}
+
+/* line 170, ../sass/core/_theme.scss */
+.btn-tertiary {
+  background-color: #dddddd;
+  color: white;
+  border-color: #444444;
+}
+/* line 172, ../sass/core/_theme.scss */
+.btn-tertiary:hover {
+  background-color: #cccccc;
+  color: #333333;
+}
+
+/* line 180, ../sass/core/_theme.scss */
+.btn-positive {
+  background-color: #3977b1;
+  color: white;
+  border-color: #3cbe8a;
+}
+/* line 182, ../sass/core/_theme.scss */
+.btn-positive:hover {
+  background-color: #306596;
+  color: white;
+}
+
+/* line 188, ../sass/core/_theme.scss */
+.btn-negative {
+  background-color: #eb3930;
+  color: white;
+  border-color: #444444;
+}
+/* line 190, ../sass/core/_theme.scss */
+.btn-negative:hover {
+  background-color: #d8281f;
+  color: white;
+}
+
+/**
+ * A common active state makes us look pro as, bro!
+ */
+/* line 202, ../sass/core/_theme.scss */
+.btn:active {
+  background-color: #333333;
+  color: white;
+}
+
+/* line 208, ../sass/core/_theme.scss */
+.tb__breadrumbs {
+  background-color: #cccccc;
+}
+/* line 211, ../sass/core/_theme.scss */
+.tb__breadrumbs > li + li:before {
+  color: #666666;
+}
+/* line 215, ../sass/core/_theme.scss */
+.tb__breadrumbs > .active {
+  color: #555555;
 }
 
 /* 
@@ -1573,89 +1699,14 @@ body {
 shame!!!! just some dirty styles to get a basic style. i WILL refacter :) ;
 
 */
-/* line 7, ../sass/core/_laura.scss */
+/* line 7, ../sass/core/_page-specific.scss */
 .container {
   max-width: 700px;
   margin: 80px 20px 0 auto;
   margin-left: 335px;
 }
 
-/* line 12, ../sass/core/_laura.scss */
-.navigation--top {
-  margin: 0 auto;
-  max-width: 960px;
-}
-
-/* line 17, ../sass/core/_laura.scss */
-.navigation--top li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* line 21, ../sass/core/_laura.scss */
-.navigation--top li a:hover {
-  color: #E6DB74;
-}
-
-/* line 24, ../sass/core/_laura.scss */
-pre {
-  width: 99%;
-  overflow: auto;
-  padding: 0;
-  margin: 0;
-}
-
-/* line 31, ../sass/core/_laura.scss */
-.navigation--top li a.active {
-  background-color: #484945;
-}
-
-/* line 34, ../sass/core/_laura.scss */
-.navigation--side {
-  position: fixed;
-  top: 80px;
-  left: 100px;
-  width: 200px;
-}
-
-/* line 40, ../sass/core/_laura.scss */
-.navigation--side li a, .navigation--top li a {
-  display: block;
-  text-decoration: none;
-}
-
-/* line 46, ../sass/core/_laura.scss */
-.navigation--side li a {
-  color: #4B4D43;
-}
-
-/* line 50, ../sass/core/_laura.scss */
-.navigation--side li a:hover {
-  background-color: #555;
-  color: #E6DB74;
-  box-shadow: none;
-}
-
-/* line 55, ../sass/core/_laura.scss */
-.testbox {
-  height: 150px;
-  width: 150px;
-  display: inline-block;
-}
-
-/* line 61, ../sass/core/_laura.scss */
-.testbox-100-100 {
-  height: 100px;
-  width: 100px;
-}
-
-/* line 66, ../sass/core/_laura.scss */
-.testbox-400-100 {
-  height: 100px;
-  width: 300px;
-}
-
-/* line 71, ../sass/core/_laura.scss */
+/* line 13, ../sass/core/_page-specific.scss */
 .navigation--wrapper {
   position: fixed;
   top: 0;
@@ -1663,9 +1714,72 @@ pre {
   z-index: 5;
 }
 
-/* line 77, ../sass/core/_laura.scss */
-html, body {
-  background-color: #fafbf7;
+/* line 19, ../sass/core/_page-specific.scss */
+.navigation--top {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/* line 23, ../sass/core/_page-specific.scss */
+.navigation--top li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 27, ../sass/core/_page-specific.scss */
+.navigation--top li a.active {
+  background-color: #2E2F2B;
+}
+
+/* line 30, ../sass/core/_page-specific.scss */
+.navigation--top li a:hover {
+  color: #E6DB74;
+}
+
+/* line 35, ../sass/core/_page-specific.scss */
+.navigation--side {
+  position: fixed;
+  top: 80px;
+  left: 100px;
+  width: 200px;
+}
+
+/* line 42, ../sass/core/_page-specific.scss */
+.navigation--side li a,
+.navigation--top li a {
+  display: block;
+  text-decoration: none;
+}
+
+/* line 47, ../sass/core/_page-specific.scss */
+.navigation--side li a {
+  color: #4B4D43;
+}
+
+/* line 51, ../sass/core/_page-specific.scss */
+.navigation--side li a:hover {
+  background-color: #4D4D4D;
+  color: #E6DB74;
+  box-shadow: none;
+}
+
+/* line 58, ../sass/core/_page-specific.scss */
+.testbox {
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+}
+
+/* line 63, ../sass/core/_page-specific.scss */
+.testbox-100-100 {
+  height: 100px;
+  width: 100px;
+}
+
+/* line 67, ../sass/core/_page-specific.scss */
+.testbox-400-100 {
+  height: 100px;
+  width: 300px;
 }
 
 /**
@@ -1848,7 +1962,7 @@ html, body {
         <i class='i sprite_icon_close'></i>
     </a>
  */
-/* line 155, ../sass/core/_buttons.scss */
+/* line 156, ../sass/core/_buttons.scss */
 .btn--icon-only,
 .btn--icon-only--small,
 .btn--icon-only--large {
@@ -1856,156 +1970,80 @@ html, body {
   min-width: 1em;
 }
 
-/* line 159, ../sass/core/_buttons.scss */
+/* line 160, ../sass/core/_buttons.scss */
 .btn--icon-only {
   padding-left: 0.9375em;
   padding-right: 0.9375em;
 }
 
-/* line 164, ../sass/core/_buttons.scss */
+/* line 165, ../sass/core/_buttons.scss */
 .btn--icon-only--small {
   padding-left: 0.6em;
   padding-right: 0.6em;
 }
 
-/* line 169, ../sass/core/_buttons.scss */
+/* line 170, ../sass/core/_buttons.scss */
 .btn--icon-only--large {
   padding-left: 1.66667em;
   padding-right: 1.66667em;
 }
 
-/* line 175, ../sass/core/_buttons.scss */
+/* line 176, ../sass/core/_buttons.scss */
 .btn--icon {
   padding-left: 0.75em;
 }
-/* line 177, ../sass/core/_buttons.scss */
+/* line 178, ../sass/core/_buttons.scss */
 .btn--icon > .i {
   margin-right: 0.75em;
 }
 
-/* line 182, ../sass/core/_buttons.scss */
+/* line 183, ../sass/core/_buttons.scss */
 .btn--icon--rev {
   padding-right: 0.75em;
 }
-/* line 184, ../sass/core/_buttons.scss */
+/* line 185, ../sass/core/_buttons.scss */
 .btn--icon--rev > .i {
   margin-left: 0.75em;
 }
 
-/* line 189, ../sass/core/_buttons.scss */
+/* line 190, ../sass/core/_buttons.scss */
 .btn--icon-large {
   padding-left: 1.5em;
   padding-right: 3em;
 }
-/* line 192, ../sass/core/_buttons.scss */
+/* line 193, ../sass/core/_buttons.scss */
 .btn--icon-large > .i {
   margin-right: 0.75em;
 }
 
-/* line 197, ../sass/core/_buttons.scss */
+/* line 198, ../sass/core/_buttons.scss */
 .btn--icon-large--rev {
   padding-left: 3em;
   padding-right: 1.5em;
 }
-/* line 200, ../sass/core/_buttons.scss */
+/* line 201, ../sass/core/_buttons.scss */
 .btn--icon-large--rev > .i {
   margin-left: 0.75em;
 }
 
-/* line 205, ../sass/core/_buttons.scss */
+/* line 206, ../sass/core/_buttons.scss */
 .btn--icon-small {
   padding-left: 0.5em;
   padding-right: 0.75em;
 }
-/* line 208, ../sass/core/_buttons.scss */
+/* line 209, ../sass/core/_buttons.scss */
 .btn--icon-small > .i {
   margin-right: 0.375em;
 }
 
-/* line 213, ../sass/core/_buttons.scss */
+/* line 214, ../sass/core/_buttons.scss */
 .btn--icon-small--rev {
   padding-left: 0.75em;
   padding-right: 0.375em;
 }
-/* line 216, ../sass/core/_buttons.scss */
+/* line 217, ../sass/core/_buttons.scss */
 .btn--icon-small--rev > .i {
   margin-left: 0.75em;
-}
-
-/**
- * Button types
- * ----------------------------------------------------------------------------
- * E.g:
-    <a class='btn btn-primary'>
-        My awesome button
-    </a> 
- */
-/* line 232, ../sass/core/_buttons.scss */
-.btn-primary:hover,
-.btn-secondary:hover,
-.btn-positive:hover,
-.btn-negative:hover {
-  color: #fff;
-}
-
-/* line 236, ../sass/core/_buttons.scss */
-.btn-primary {
-  background-color: #3CBE8A;
-  color: #fff;
-}
-/* line 240, ../sass/core/_buttons.scss */
-.btn-primary:hover {
-  background-color: #33a376;
-}
-
-/* line 245, ../sass/core/_buttons.scss */
-.btn-secondary {
-  background-color: #999;
-  color: #fff;
-}
-/* line 249, ../sass/core/_buttons.scss */
-.btn-secondary:hover {
-  background-color: #777;
-}
-
-/* line 254, ../sass/core/_buttons.scss */
-.btn-tertiary {
-  background-color: #ddd;
-  color: #444;
-}
-/* line 258, ../sass/core/_buttons.scss */
-.btn-tertiary:hover {
-  background-color: #ccc;
-  color: #333;
-}
-
-/* line 264, ../sass/core/_buttons.scss */
-.btn-positive {
-  background-color: #3977B1;
-  color: #fff;
-}
-/* line 267, ../sass/core/_buttons.scss */
-.btn-positive:hover {
-  background-color: #306596;
-}
-
-/* line 272, ../sass/core/_buttons.scss */
-.btn-negative {
-  background-color: #eb3930;
-  color: #fff;
-}
-/* line 275, ../sass/core/_buttons.scss */
-.btn-negative:hover {
-  background-color: #d8281f;
-}
-
-/**
- * A common active state makes us look pro as, bro!
- */
-/* line 282, ../sass/core/_buttons.scss */
-.btn:active {
-  background-color: #333;
-  color: #fff;
 }
 
 /**
@@ -2017,7 +2055,7 @@ html, body {
  * Simple bounces
  * ----------------------------------------------------------------------------
  */
-/* line 298, ../sass/core/_buttons.scss */
+/* line 234, ../sass/core/_buttons.scss */
 .btn--bounce,
 .btn--bob {
   position: relative;
@@ -2028,12 +2066,12 @@ html, body {
   transition: bottom 100ms ease-out;
 }
 
-/* line 303, ../sass/core/_buttons.scss */
+/* line 239, ../sass/core/_buttons.scss */
 .btn--bounce:active {
   bottom: -2px;
 }
 
-/* line 307, ../sass/core/_buttons.scss */
+/* line 243, ../sass/core/_buttons.scss */
 .btn--bob:active {
   bottom: -1px;
 }
@@ -2041,7 +2079,7 @@ html, body {
 /**
  * Bounce the icon to a side
  */
-/* line 317, ../sass/core/_buttons.scss */
+/* line 253, ../sass/core/_buttons.scss */
 .btn--bounce-icon--right .i,
 .btn--bounce-icon--left .i,
 .btn--bounce-icon--bottom .i,
@@ -2059,7 +2097,7 @@ html, body {
   transition-duration: 300ms;
 }
 
-/* line 323, ../sass/core/_buttons.scss */
+/* line 259, ../sass/core/_buttons.scss */
 .btn--bounce-icon--right:hover .i {
   -webkit-transition-property: left;
   -moz-transition-property: left;
@@ -2069,7 +2107,7 @@ html, body {
   left: .3125em;
 }
 
-/* line 328, ../sass/core/_buttons.scss */
+/* line 264, ../sass/core/_buttons.scss */
 .btn--bounce-icon--left:hover .i {
   -webkit-transition-property: right;
   -moz-transition-property: right;
@@ -2079,7 +2117,7 @@ html, body {
   right: .3125em;
 }
 
-/* line 333, ../sass/core/_buttons.scss */
+/* line 269, ../sass/core/_buttons.scss */
 .btn--bounce-icon--bottom:hover .i {
   -webkit-transition-property: top;
   -moz-transition-property: top;
@@ -2089,7 +2127,7 @@ html, body {
   top: .3125em;
 }
 
-/* line 338, ../sass/core/_buttons.scss */
+/* line 274, ../sass/core/_buttons.scss */
 .btn--bounce-icon--top:hover .i {
   -webkit-transition-property: bottom;
   -moz-transition-property: bottom;
@@ -2103,12 +2141,12 @@ html, body {
  * Inset buttons on block level elements
  * ----------------------------------------------------------------------------
  */
-/* line 347, ../sass/core/_buttons.scss */
+/* line 283, ../sass/core/_buttons.scss */
 .btn--inset {
   position: relative;
 }
 
-/* line 351, ../sass/core/_buttons.scss */
+/* line 287, ../sass/core/_buttons.scss */
 .btn--inset:after {
   position: absolute;
   top: 0;
@@ -2128,28 +2166,28 @@ html, body {
   border-style: solid;
 }
 
-/* line 365, ../sass/core/_buttons.scss */
+/* line 301, ../sass/core/_buttons.scss */
 .btn--inset:hover:after {
   border-width: 4px;
   visibility: visible;
 }
 
-/* line 369, ../sass/core/_buttons.scss */
+/* line 305, ../sass/core/_buttons.scss */
 .btn--inset-primary:after {
   border-color: #3977B1;
 }
 
-/* line 372, ../sass/core/_buttons.scss */
+/* line 308, ../sass/core/_buttons.scss */
 .btn--inset-secondary:after {
   border-color: #eb3930;
 }
 
-/* line 375, ../sass/core/_buttons.scss */
+/* line 311, ../sass/core/_buttons.scss */
 .btn--inset-large:hover:after {
   border-width: 8px;
 }
 
-/* line 378, ../sass/core/_buttons.scss */
+/* line 314, ../sass/core/_buttons.scss */
 .btn--inset-small:hover:after {
   border-width: 1px;
 }
@@ -2158,19 +2196,19 @@ html, body {
  * Buttons that show a loading indicator when clicked
  * ----------------------------------------------------------------------------
  */
-/* line 386, ../sass/core/_buttons.scss */
+/* line 322, ../sass/core/_buttons.scss */
 .btn--spinner {
   position: relative;
   cursor: default;
 }
 
-/* line 391, ../sass/core/_buttons.scss */
+/* line 327, ../sass/core/_buttons.scss */
 .btn--spinner .btn--label {
   opacity: 0;
   visibility: hidden;
 }
 
-/* line 396, ../sass/core/_buttons.scss */
+/* line 332, ../sass/core/_buttons.scss */
 .btn--spinner:after {
   position: absolute;
   top: 0;
@@ -2183,7 +2221,37 @@ html, body {
   width: 100%;
 }
 
-/* line 407, ../sass/core/_buttons.scss */
+/* line 343, ../sass/core/_buttons.scss */
 .btn--spinner--text:after {
   content: attr(data-btn-loading-indicator);
+}
+
+/** 2. Sub Heading styles
+ * ----------------------------------------------------------------------------
+ *
+ */
+/* line 7, ../sass/core/_components.scss */
+.page-header {
+  padding-bottom: -0.28571;
+  margin: 2.85714 0 1.42857;
+  border-bottom: 1px solid #2e2f2b;
+}
+/* line 11, ../sass/core/_components.scss */
+.page-header span {
+  color: #999999;
+}
+
+/* line 17, ../sass/core/_components.scss */
+.breadcrumbs {
+  padding: 8px 15px;
+  list-style: none;
+}
+/* line 21, ../sass/core/_components.scss */
+.breadcrumbs > li {
+  display: inline-block;
+}
+/* line 23, ../sass/core/_components.scss */
+.breadcrumbs > li + li:before {
+  content: "/\00a0";
+  padding: 0 5px;
 }

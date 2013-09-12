@@ -5,7 +5,7 @@
  * ----------------------------------------------------------------------------
  * 
  * Structure:
- *
+ *			Base font sizes
  *      1. Typography defaults
  *		2. Spacing 
  *      3. Themes
@@ -20,6 +20,23 @@
  * ----------------------------------------------------------------------------
  *
  */
+$sub-header:	#999;
+
+$bg-color:		#ededed;
+
+
+$pg-header-border:	#2E2F2B;
+
+
+/**
+ * 1. Base Typography Defaults
+ * -----------------------------------------------------------------------------
+ */
+
+
+$base-font-color:#2E2F2B;
+$base-font-size:        	14; //px
+$base-line-height:        	1.428571429; // 20/14
 
 
 /**
@@ -27,24 +44,10 @@
  * -----------------------------------------------------------------------------
  */
 
-$line-height-base:        1.428571429; // 20/14
-
-//$base_font_size:        	14; //px
-//$base_line_height:        	21; //px
-//$em:              			$base_font_size * 1;
-//$base_font_size_px:       	#{$base_font_size}px;
-//$base_font_family:          'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', sans-serif;
-//$heading_font_family:       'Olsen', Georgia, serif;
-//$base_font_monospaced:      'Courier New', 'Courier', monospace;
-//$base_font_weight:        	400;
 
 
-// Links
-// -------------------------
-
-$link-color:            blue;
-$link-hover-color:      darken($link-color, 15%);
-
+$sansSerifStack: "helvetica", sans-serif ;
+$serifStack: "georgia", serif;
 
 
 
@@ -96,6 +99,14 @@ $mxxx :     $base-spacing-unit * 3;     // 72px
  */
 
 
+// Link colors
+// -------------------------
+
+$base-link-color:            #2F72BA;
+$base-link-hover-color:      darken($base-link-color, 15%);
+
+
+
 // Text emphasis colours
 // -------------------------
 
@@ -136,19 +147,19 @@ $danger-block-border:$danger-block-text;
 // -------------------------------
 
 
-$primary-bg-color:			#fff;
-$primary-txt-color:			#444; 
+$primary-bg-color:			#FAFAFA;
+$primary-txt-color:			$base-font-color; 
 $primary-border-color:		$primary-bg-color;
 
-$secondary-bg-color:		#FAFBF7;
-$secondary-txt-color:		#444 ; 
-$secondary-border-color:	#E1E2DE;
+$secondary-bg-color:		#f2f2f2;
+$secondary-txt-color:		$base-font-color ; 
+$secondary-border-color:	#E6E6E6;
 
 $tertiary-bg-color:			#2E2F2B;
-$tertiary-txt-color:		#444; 
+$tertiary-txt-color:		#fff; 
 $tertiary-border-color:		$tertiary-bg-color;
 
-$quarternary-bg-color:		#4AA1C5;
+$quarternary-bg-color:		#4D4D4D;
 $quarternary-txt-color:		#fff; 
 $quarternary-border-color:	$quarternary-bg-color;
 
@@ -159,12 +170,12 @@ $quarternary-border-color:	$quarternary-bg-color;
 
 //green theme box
 $green-bg-color:			#A6E22E;
-$green-txt-color:			#444; 
+$green-txt-color:			$base-font-color; 
 $green-border-color:		$green-bg-color;
 
 //pink theme box
 $pink-bg-color:				#F92672;
-$pink-txt-color:			#444 ; 
+$pink-txt-color:			$base-font-color ; 
 $pink-border-color:			$pink-bg-color;
 
 //blue theme box
@@ -175,14 +186,55 @@ $blue-border-color:			$blue-bg-color;
 
 
 /**
- * 4. Buttons
+ * 4. Button themes
  * -----------------------------------------------------------------------------
  */
 
+//default active states
+
+$active-btn-bg:				#333;
+$active-btn-text:			#fff;
+
+// main theme blocks
+$primary-btn-bg: 			#3CBE8A;
+$primary-btn-txt:			#fff;
+$primary-btn-border:		$primary-btn-bg;
+$primary-btn-hover-bg:		darken(#3CBE8A, 7%);
+$primary-btn-hover-txt:	#fff;
+
+$secondary-btn-bg: 			#999;
+$secondary-btn-txt:			#fff;
+$secondary-btn-border:		$primary-btn-bg;
+$secondary-btn-hover-bg:	#777;
+$secondary-btn-hover-txt: 	#fff;
+
+$tertiary-btn-bg: 			#ddd;
+$tertiary-btn-txt:			#fff;
+$tertiary-btn-border:		#444;
+$tertiary-btn-hover-bg:		#ccc;
+$tertiary-btn-hover-txt:	#333;
 
 
+// theme blocks positive negative.. ??
+$positive-btn-bg: 			#3977B1;
+$positive-btn-txt:			#fff;
+$positive-btn-border:		$primary-btn-bg;
+$positive-btn-hover-bg:		darken(#3977B1, 7%);
+$positive-btn-hover-txt: 	$secondary-btn-txt;
+
+$negative-btn-bg: 			#eb3930;
+$negative-btn-txt:			#fff;
+$negative-btn-border:		#444;
+$negative-btn-hover-bg:		#d8281f;
+$negative-btn-hover-txt:	$negative-btn-txt;
 
 
+// Breadcrumbs
+// -------------------------
+
+$breadcrumb-active-txt:		#555;
+$breadcrumb-txt:			#666;
+$breadcrumb-bg:				#ccc;
 
 
 // Tables

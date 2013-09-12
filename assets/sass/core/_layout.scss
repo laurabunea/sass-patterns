@@ -180,6 +180,7 @@
 
 	.media__image{
 		float: left;
+        margin-right:$base-spacing-unit;
 	}
 
 	.media__body{
@@ -193,6 +194,7 @@
 
 	.media--rev > .media__image{
 		float: right;
+        margin-left:$base-spacing-unit;
 	}
 
 	.media--rev > .media__body{

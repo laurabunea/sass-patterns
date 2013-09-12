@@ -106,12 +106,21 @@
     @include placeholder(#F92672);
 }
 
-// could pass it border weight and and style later too 
+
+/**
+ * 5. Simple theme mixins
+ * -----------------------------------------------------------------------------
+ */
 
 @mixin theme-block($bg-color, $txt-color, $border-color){
     background-color:$bg-color;
     color:$txt-color;
     border-color:$border-color;
-    border-weight:1px;
-    border-style:solid;
+}
+
+//maybe max width- height .....
+
+@mixin box-dimensions($height, $width){
+    height: $height;
+    width:  $width;
 }
