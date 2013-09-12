@@ -14,6 +14,7 @@
  *		7. Text allignments
  *		8. List styles
  *      9. Fix webkit font rendering
+        10. hr
  *
  * ----------------------------------------------------------------------------
  *
@@ -113,7 +114,7 @@ h6, .h6 {
 
 p, .para {
     @extend .m0--b;
-    font-size: .875em;                      /* 14px */
+    //font-size: .875em;                      /* 14px */
     line-height: 1.785714286em;             /* 25px */
     margin-top: .857142857em;               /* 12px */
 }
@@ -250,3 +251,17 @@ p + p{
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
+
+
+/**
+ * 10. hr
+ * ----------------------------------------------------------------------------
+ */
+
+ hr {
+    background-color: $hr-colour;
+    border: none;
+    color: $hr-colour;
+    height: 2px;
+    margin-top: $m;
+ }
