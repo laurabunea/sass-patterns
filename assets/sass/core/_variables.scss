@@ -237,6 +237,18 @@ $breadcrumb-txt:			#666;
 $breadcrumb-bg:				#ccc;
 
 
+// Badges
+// -------------------------
+$badge-txt:					#fff;
+$badge-bg:					red;
+$badge-radius:				10px;
+
+$badge-active-txt:			#efefef;
+$badge-active-bg:			blue;
+
+
+
+
 // Tables
 // -------------------------
 
@@ -297,3 +309,4 @@ $state-success-bg:               #dff0d8;
 $state-info-text:                #3a87ad;
 $state-info-bg:                  #d9edf7;
 //$state-info-border:              darken(spin($state-info-bg, -10), 7%);
+

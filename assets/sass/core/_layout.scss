@@ -291,14 +291,10 @@
 	overflow: hidden;
 }
 
-.inline-block{
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
+
+.inline-block {
+    @extend %inline-block;
 }
-
-
-
 /**
  * Append vs Prepend
  * ----------------------------------------------------------------------------

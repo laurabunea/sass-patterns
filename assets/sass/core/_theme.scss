@@ -17,10 +17,7 @@
  * ----------------------------------------------------------------------------
  *
  */
-%border {
-	border-width: 1px;
-	border-style: solid;
-}
+
 
 html, 
 body {
@@ -215,4 +212,16 @@ body {
   > .active {
     color: $breadcrumb-active-txt;
   }
+}
+
+.tb__badge {
+	color: $badge-txt;
+	background-color: $badge-bg;
+	border-radius: $badge-radius;
+}
+
+// Account for counters in navs
+a.tb__badge_active > .badge {
+  color: $badge-active-txt;
+  background-color: $badge-active-bg;
 }
