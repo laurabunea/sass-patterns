@@ -222,6 +222,16 @@ body {
 
 // Account for counters in navs
 a.tb__badge_active > .badge {
-  color: $badge-active-txt;
-  background-color: $badge-active-bg;
+	color: $badge-active-txt;
+	background-color: $badge-active-bg;
+}
+
+
+
+.tb__header {
+    color:$pg-header-txt;
+    border-bottom:1px solid $pg-header-border;
+    span {
+        color:$pg-header-span-txt;
+    }
 }

@@ -25,8 +25,6 @@ $sub-header:	#999;
 $bg-color:		#ededed;
 
 
-$pg-header-border:	#2E2F2B;
-
 
 /**
  * 1. Base Typography Defaults
@@ -246,6 +244,12 @@ $badge-radius:				10px;
 $badge-active-txt:			#efefef;
 $badge-active-bg:			blue;
 
+
+// Page header
+// -------------------------
+$pg-header-border:			#2E2F2B;
+$pg-header-txt:				$pg-header-border;
+$pg-header-span-txt:		#777;
 
 
 

@@ -481,107 +481,107 @@ ol {
  * 2. Spacing: she's a fickle mistress.
  * -----------------------------------------------------------------------------
  */
-/* line 70, ../sass/core/_variables.scss */
+/* line 68, ../sass/core/_variables.scss */
 .m0 {
   margin-top: 0;
 }
 
-/* line 71, ../sass/core/_variables.scss */
+/* line 69, ../sass/core/_variables.scss */
 .m0--b, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .para {
   margin-bottom: 0;
 }
 
-/* line 72, ../sass/core/_variables.scss */
+/* line 70, ../sass/core/_variables.scss */
 .xxxm {
   margin-top: 0.1em;
 }
 
-/* line 73, ../sass/core/_variables.scss */
+/* line 71, ../sass/core/_variables.scss */
 .xxm {
   margin-top: 0.5em;
 }
 
-/* line 74, ../sass/core/_variables.scss */
+/* line 72, ../sass/core/_variables.scss */
 .xm {
   margin-top: 1em;
 }
 
-/* line 75, ../sass/core/_variables.scss */
+/* line 73, ../sass/core/_variables.scss */
 .m {
   margin-top: 1.5em;
 }
 
-/* line 76, ../sass/core/_variables.scss */
+/* line 74, ../sass/core/_variables.scss */
 .mx {
   margin-top: 2.25em;
 }
 
-/* line 77, ../sass/core/_variables.scss */
+/* line 75, ../sass/core/_variables.scss */
 .mxx {
   margin-top: 3em;
 }
 
-/* line 78, ../sass/core/_variables.scss */
+/* line 76, ../sass/core/_variables.scss */
 .mxxx {
   margin-top: 4.5em;
 }
 
-/* line 80, ../sass/core/_variables.scss */
+/* line 78, ../sass/core/_variables.scss */
 .xxm--b {
   margin-bottom: 0.5em;
 }
 
-/* line 81, ../sass/core/_variables.scss */
+/* line 79, ../sass/core/_variables.scss */
 .xm--b {
   margin-bottom: 1em;
 }
 
-/* line 82, ../sass/core/_variables.scss */
+/* line 80, ../sass/core/_variables.scss */
 .m--b {
   margin-bottom: 1.5em;
 }
 
-/* line 83, ../sass/core/_variables.scss */
+/* line 81, ../sass/core/_variables.scss */
 .mx--b {
   margin-bottom: 2.25em;
 }
 
-/* line 84, ../sass/core/_variables.scss */
+/* line 82, ../sass/core/_variables.scss */
 .mxx--b {
   margin-bottom: 3em;
 }
 
-/* line 86, ../sass/core/_variables.scss */
+/* line 84, ../sass/core/_variables.scss */
 .p0 {
   padding-top: 0 !important;
 }
 
-/* line 87, ../sass/core/_variables.scss */
+/* line 85, ../sass/core/_variables.scss */
 .p0--b {
   padding-bottom: 0 !important;
 }
 
-/* line 88, ../sass/core/_variables.scss */
+/* line 86, ../sass/core/_variables.scss */
 .xxp {
   padding-top: 0.5em;
 }
 
-/* line 89, ../sass/core/_variables.scss */
+/* line 87, ../sass/core/_variables.scss */
 .xp {
   padding-top: 1em;
 }
 
-/* line 90, ../sass/core/_variables.scss */
+/* line 88, ../sass/core/_variables.scss */
 .p {
   padding-top: 1.5em;
 }
 
-/* line 91, ../sass/core/_variables.scss */
+/* line 89, ../sass/core/_variables.scss */
 .px {
   padding-top: 2.25em;
 }
 
-/* line 92, ../sass/core/_variables.scss */
+/* line 90, ../sass/core/_variables.scss */
 .pxx {
   padding-top: 3em;
 }
@@ -1715,6 +1715,16 @@ a.tb__badge_active > .badge {
   background-color: blue;
 }
 
+/* line 231, ../sass/core/_theme.scss */
+.tb__header {
+  color: #2e2f2b;
+  border-bottom: 1px solid #2e2f2b;
+}
+/* line 234, ../sass/core/_theme.scss */
+.tb__header span {
+  color: #777777;
+}
+
 /* 
 
 shame!!!! just some dirty styles to get a basic style. i WILL refacter :) ;
@@ -2251,24 +2261,13 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter :) ;
  * ----------------------------------------------------------------------------
  *
  */
-/* line 7, ../sass/core/_components.scss */
-.page-header {
-  padding-bottom: -0.28571;
-  margin: 2.85714 0 1.42857;
-  border-bottom: 1px solid #2e2f2b;
-}
 /* line 11, ../sass/core/_components.scss */
-.page-header span {
-  color: #999999;
-}
-
-/* line 20, ../sass/core/_components.scss */
 .breadcrumbs > li + li:before {
   content: "/\00a0";
   padding: 0 5px;
 }
 
-/* line 32, ../sass/core/_components.scss */
+/* line 23, ../sass/core/_components.scss */
 .badge {
   min-width: 10px;
   padding: 3px 7px;
@@ -2277,13 +2276,18 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter :) ;
   white-space: nowrap;
   text-align: center;
 }
-/* line 41, ../sass/core/_components.scss */
+/* line 32, ../sass/core/_components.scss */
 .badge:empty {
   display: none;
 }
 
-/* line 47, ../sass/core/_components.scss */
+/* line 38, ../sass/core/_components.scss */
 .badge {
   position: relative;
   top: -1px;
+}
+
+/* line 44, ../sass/core/_components.scss */
+.page-header {
+  padding-bottom: 0.5em;
 }
