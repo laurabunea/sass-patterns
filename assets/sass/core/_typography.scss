@@ -29,7 +29,7 @@
 html,
 body {
     color:          $base-font-color;
-    font-size:      $base-font-size;
+    //font-size:    $base-font-size;
     font-family:    $sansSerifStack;
     line-height:    $base-line-height;
     /* see point 9 */
@@ -219,7 +219,7 @@ p + p{
 .list--unstyled {
 	list-style: none;
 	padding-left: 0;
-	margin: 0;
+	margin: 0 0 0 0;
 }
 
 	.list--unstyled > li {
@@ -235,6 +235,14 @@ p + p{
 	.list--inline > li {
 		@extend .inline-block;
 	}
+
+.list--styled {
+    padding-left:$m;
+    margin-top: .857142857em; //same as the margin top on p tags
+    list-style: circle;
+    //or custom image here
+    //list-style-image: url('');
+}
 
 /**
  * 9. Fix webkit font rendering
