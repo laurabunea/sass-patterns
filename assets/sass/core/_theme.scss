@@ -1,0 +1,237 @@
+/**
+ *
+ * Themes 
+ *
+ *	This file controls all of the colours / themes for the site! 
+ *
+ * ----------------------------------------------------------------------------
+ * 
+ * Structure:
+ *
+ *      1. Warning Themes
+ *		2. Text colours
+ 		3. Theme blocks
+ *
+ *
+ *
+ * ----------------------------------------------------------------------------
+ *
+ */
+
+
+html, 
+body {
+    background-color: $bg-color;
+}
+
+/**
+ * 2. Text colours
+ * -----------------------------------------------------------------------------
+ */
+
+
+.text_muted  {
+	color:$text-muted;
+}
+
+.text_success {
+  color: $text-success;
+}
+
+.text_warning {
+  color: $text-warning;
+}
+
+.text_danger {
+  color: $text-danger;
+}
+
+
+/**
+ * 2. Theme blocks
+ * -----------------------------------------------------------------------------
+ */
+
+
+ .theme__block_success {
+	background-color: $success-block-bg  ;
+	color: $success-block-text;
+	@extend %border;
+	border-color:$success-block-border;
+}
+
+.theme__block_warning {
+	background-color: $warning-block-bg;
+	color: $warning-block-text;
+	@extend %border;
+	border-color:$warning-block-border;
+}
+
+.theme__block_danger {
+	background-color: $danger-block-bg;
+	color:$danger-block-text;
+	@extend %border;
+	border-color:$danger-block-border;
+}
+
+
+
+/**
+ * 2. 
+ * -----------------------------------------------------------------------------
+ */
+ 
+
+.theme__block_600 {
+	background-color:#4D4D4D ;
+	color: #fff;
+	//border:1px solid #fff ;
+}
+
+
+/**
+ * Main theme colours of your site
+ * -----------------------------------------------------------------------------
+ */
+
+.tb__primary {
+	@include theme-block( $primary-bg-color, $primary-txt-color, $primary-border-color );
+	box-shadow: 1px 1px 2px #FFFFFF inset, 1px 1px 3px 0 #D7D8CF;
+	@extend %border;
+}
+
+.tb__secondary {
+	@include theme-block( $secondary-bg-color, $secondary-txt-color, $secondary-border-color );
+	@extend %border;
+
+}
+
+.tb__tertiary {
+	@include theme-block( $tertiary-bg-color, $tertiary-txt-color, $tertiary-border-color );
+	@extend %border;
+
+}
+
+.tb__quarternary {
+	@include theme-block( $quarternary-bg-color, $quarternary-txt-color, $quarternary-border-color );
+	@extend %border;
+
+}
+
+/**
+ * 
+ * -----------------------------------------------------------------------------
+ */
+
+
+.tb__green {
+	@include theme-block( $green-bg-color, $green-txt-color, $green-border-color );
+	@extend %border;
+}
+
+.tb__pink {
+	@include theme-block( $pink-bg-color, $pink-txt-color, $pink-border-color );
+	@extend %border;
+}
+
+.tb__blue {
+	@include theme-block( $blue-bg-color, $blue-txt-color, $blue-border-color );
+	@extend %border;
+}
+
+
+
+/**
+ * Button theming
+ * -----------------------------------------------------------------------------
+ */
+
+
+.btn-primary {
+    
+    @include theme-block($primary-btn-bg, $primary-btn-txt, $primary-btn-border);  
+    &:hover {
+        background-color: $primary-btn-hover-bg;
+        color: $primary-btn-hover-txt;
+    }
+}
+
+.btn-secondary {
+    @include theme-block($secondary-btn-bg, $secondary-btn-txt, $secondary-btn-border);
+    &:hover {
+        background-color: $secondary-btn-hover-bg;
+        color: $secondary-btn-hover-txt;
+    }
+}
+
+.btn-tertiary {
+    @include theme-block($tertiary-btn-bg, $tertiary-btn-txt, $tertiary-btn-border);
+    &:hover {
+        background-color: $tertiary-btn-hover-bg;
+        color: $tertiary-btn-hover-txt;
+    }
+}
+
+
+
+.btn-positive {
+	@include theme-block($positive-btn-bg, $positive-btn-txt, $positive-btn-border);
+    &:hover {
+        background-color: $positive-btn-hover-bg;
+        color: $positive-btn-hover-txt;
+    }
+}
+
+.btn-negative {
+	@include theme-block($negative-btn-bg, $negative-btn-txt, $negative-btn-border);
+    &:hover {
+        background-color: $negative-btn-hover-bg;
+        color: $negative-btn-hover-txt;
+    }
+}
+
+
+
+/**
+ * A common active state makes us look pro as, bro!
+ */
+
+.btn:active {
+    background-color: $active-btn-bg;
+    color: $active-btn-text;
+}
+
+
+.tb__breadrumbs {
+  background-color: $breadcrumb-bg;
+  > li {
+    &+li:before {
+      color: $breadcrumb-txt;
+    }
+  }
+  > .active {
+    color: $breadcrumb-active-txt;
+  }
+}
+
+.tb__badge {
+	color: $badge-txt;
+	background-color: $badge-bg;
+	border-radius: $badge-radius;
+}
+
+// Account for counters in navs
+a.tb__badge_active > .badge {
+	color: $badge-active-txt;
+	background-color: $badge-active-bg;
+}
+
+
+
+.tb__header {
+    color:$pg-header-txt;
+    border-bottom:1px solid $pg-header-border;
+    span {
+        color:$pg-header-span-txt;
+    }
+}

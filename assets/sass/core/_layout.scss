@@ -1,0 +1,498 @@
+/**
+ *
+ * Layout helpers
+ *
+ * ----------------------------------------------------------------------------
+ * 
+ * Structure:
+ *
+ *      1. Clearfix
+ *		2. Float Helpers
+ *      3. Absolute positioning helpers
+ *      4. Generic blocks
+ *      5. Media blocks
+ *      6. Inline Grid  
+ *      7. Arrows  
+ *      8. Inline Block 
+        9. Icon block
+ *
+ *
+ *
+ * ----------------------------------------------------------------------------
+ *
+ */
+
+/**
+ * 1. Clearfix
+ * -----------------------------------------------------------------------------
+ *
+ */
+
+.clearfix{
+	@extend %clearfix;
+}
+
+
+/**
+ * 2. Float helpers
+ * ----------------------------------------------------------------------------
+ */
+
+.pull-left {
+	float:left;
+}
+
+.pull-right {
+	float:right;
+}
+
+
+/**
+ * 3. Absolute positioning helpers
+ * ----------------------------------------------------------------------------
+ */
+
+.relative {
+    position: relative;
+}
+
+.absolute__bottom_left {
+	@extend %absolute;
+	bottom:0;
+	left:0;
+}
+
+.absolute__bottom_right {
+	@extend %absolute;
+	bottom:0;
+	right:0;
+}
+
+.absolute__top_left {
+	@extend %absolute;
+	top:0;
+	left:0;
+}
+
+.absolute__top_right {
+	@extend %absolute;
+	top:0;
+	right:0;
+}
+
+
+
+/**
+ * 4. Generic blocks
+ * ----------------------------------------------------------------------------
+ <div class='block block--bleed block--mobile'>
+	Some content.
+ </div>
+ */
+
+/*
+    making sure the first element has no margin on it 
+*/
+
+.block--xxxs__stacked,
+.block--xxs__stacked,
+.block--xs__stacked,
+.block__stacked,
+.block--xl__stacked,
+.block--xxl__stacked,
+.block--xxxl__stacked,
+.block__stacked > :first-child, 
+.block--xl__stacked > :first-child,
+.block--xxl__stacked > :first-child,
+.block--xxxl__stacked > :first-child,
+.block--xs__stacked > :first-child,
+.block--xxs__stacked > :first-child,
+.block--xxxs__stacked > :first-child,
+.block > :first-child, 
+.block--xl > :first-child,
+.block--xxl > :first-child,
+.block--xxxl > :first-child,
+.block--xs > :first-child,
+.block--xxs > :first-child,
+.block--xxxs > :first-child,
+.section > :first-child, 
+.section--xl > :first-child,
+.section--xxl > :first-child,
+.section--xxxl > :first-child,
+.section--xs > :first-child,
+.section--xxs > :first-child {
+    margin-top:0;
+}
+
+/* 
+ adding a base margin-top to all block elements 
+*/
+.block--xxxs,
+.block--xxs,
+.block--xs,
+.block,
+.block--xl,
+.block--xxl,
+.block--xxxl {
+    margin-top:$xm;
+}
+
+.block, 
+.block__stacked {
+    @extend %block;
+}
+
+.block--xxxl,
+.block--xxxl__stacked {
+     @extend %block--xxxl;
+}
+
+.block--xxl,
+.block--xxl__stacked {
+     @extend %block--xxl;
+}
+
+.block--xl,
+.block--xl__stacked {
+    @extend %block--xl;
+}
+
+.block--xs,
+.block--xs__stacked {
+    @extend %block--xs;
+}
+
+.block--xxs,
+.block--xxs__stacked {
+    @extend %block--xxs;
+}
+
+.block--xxxs, 
+.block--xxxs__stacked {
+    @extend %block--xxxs;
+}
+
+
+
+
+//---- work out ----------------------------------------
+
+.block--tight {
+    padding-top: $base-spacing-unit / 2;
+    padding-bottom: $base-spacing-unit / 2;
+}
+
+.block--bleed {
+	padding: 0;
+}
+
+    .block--bleed__padding {
+        padding: $base-spacing-unit $base-spacing-unit * 2;
+    }
+
+.block--mobile {
+	//@include media(mobile) {
+	//	padding: 1em;
+	//}
+}
+
+/**
+ * ?. wrapper blocks
+ * ----------------------------------------------------------------------------
+ */
+
+.section--xxxl {
+    margin-top:$mxxx;
+}
+
+.section--xxl {
+    margin-top:$mxx;
+}
+
+.section--xl {
+    margin-top:$mx;
+}
+
+.section {
+    margin-top:$m;
+}
+
+.section--xs {
+    margin-top:$xm;
+}
+
+.section--xxs {
+     margin-top:$xxm;
+}
+
+
+/**
+ * 5. Float an image to the left, with a clearfixed block of content to the right.
+ * ----------------------------------------------------------------------------
+ <div class='media'>
+	<img src='/some/image.png' class='media__image'>
+	<div class='media__body'>
+       The text!
+	</div>
+ </div>
+ */
+.media {
+	@extend .clearfix;
+	margin-top: $base-spacing-unit;
+}
+
+	.media__image{
+		float: left;
+        margin-right:$base-spacing-unit;
+	}
+
+	.media__body{
+		@extend .overflow-hidden;
+	}	
+
+.media--rev {
+	@extend .clearfix;
+	margin-top: $base-spacing-unit;
+}
+
+	.media--rev > .media__image{
+		float: right;
+        margin-left:$base-spacing-unit;
+	}
+
+	.media--rev > .media__body{
+		@extend .overflow-hidden;
+	}
+
+
+
+
+/**
+ * 6. Inline block grid
+ * -----------------------------------------------------------------------------
+ *
+ * [1] Sets the child elements to take up full justified width of the parent
+ * [2] Overcomes an issue where the :after element blows out the bottom.
+ * [3] A fix for Internet Explorer 8/9
+ * 
+ */
+.grid {
+    text-align: justify;                /* [1] */
+    font-size: 0;                       /* [2] */
+    text-justify: distribute-all-lines; /* [3] */
+}
+
+	.grid > *{
+	    @extend .grid__item;
+	}
+
+    .grid__item{
+        @extend .inline-block;
+        font-size: medium;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .grid:after,
+    .grid__break {
+        @extend .inline-block;
+        content: '';
+        height: 0;
+        width:100%;
+    }
+/**
+ * Vertical align these grid items in the middle!
+ */
+.grid--middle > .grid__item{
+    vertical-align: middle;
+}
+
+    .g--1-1{
+        width: 100%;
+    }
+    .g--1-2 {
+        width: 50%;
+    }
+    .g--1-4 {
+        width: 25%;
+    }
+    .g--3-4 {
+        width: 75%;
+    }
+
+    .g--9-10{
+        width: 80%;
+    }
+    .g--1-10{
+        width: 20%;
+    }
+
+@media only screen and (max-width: 30em) {
+    .g-m--1-1{
+        width: 100%;
+    }
+    .g-m--1-2{
+        width: 50%;
+    }
+    .g-m--9-10{
+        width: 90%;
+    }
+    .g-m--1-10{
+        width: 10%;
+    }
+    .g-m--8-10{
+        width: 80%;
+    }
+    .g-m--2-10{
+        width: 20%;
+    }
+}
+
+
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+
+.inline-block {
+    @extend %inline-block;
+}
+/**
+ * Append vs Prepend
+ * ----------------------------------------------------------------------------
+ */
+
+/**
+ * Place something before an element
+ * ----------------------------------------------------------------------------
+ */
+.prepend{
+    &:before{
+        content: attr(data-prepend);
+        display: inline-block;
+    }
+}
+
+/**
+ * Place something after an element
+ * ----------------------------------------------------------------------------
+ */
+.append{
+    &:after{
+        content: attr(data-append);
+        display: inline-block;
+    }
+}
+
+
+
+/**
+ * Arrows
+ * ----------------------------------------------------------------------------
+ * $base-spacing-unit: 1.4em
+ *
+ *
+ * Apply the modifier classes to the parent. For instance, this will put an
+ * arrow in the top left corner of the containing div:
+ *
+ * <div class='arrow__left'>
+ *        <i class='arrow arrow_top'></i>
+ * </div>
+ *
+ */
+
+.arrow{/*i,span*/
+    @extend %inline-block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: .4em;
+}
+
+    .arrow-top{
+        border-top-width: 0;
+        border-bottom-color: inherit;
+        top: -.4em;
+    }
+
+    .arrow-bottom{
+        border-bottom-width: 0;
+        border-top-color: inherit;
+        bottom: -.4em;
+    }
+
+    .arrow-left{
+        border-left-width: 0;
+        border-right-color: inherit;
+        left: -.4em;
+    }
+
+    .arrow-right{
+        border-right-width: 0;
+        border-left-color: inherit;
+        right: -.4em;
+    }
+
+.arrow--left,
+.arrow--right,
+.arrow--side,
+.arrow--center{/*div,block*/
+    position:relative;
+}
+
+    .arrow--center .arrow{
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .arrow--left .arrow{
+        left: $base-spacing-unit;
+    }
+
+    .arrow--right .arrow{
+        right: $base-spacing-unit;
+    }
+
+    .arrow--side .arrow{
+        top: $base-spacing-unit;
+    }
+
+/**
+ * Icon block 
+ * ----------------------------------------------------------------------------
+ */
+
+.icon-text,
+.icon-text--rev{/* a, div, etc */
+    @extend %inline-block;
+    display:inline-block; //CHECK why this isn't extending
+}
+
+    .i{
+        overflow: hidden; /* for IE6 */
+        vertical-align: middle;
+        /* SMACSS line-height: 0; ? */
+        .icon-text &,
+        .btn--icon &{
+            margin-right: $base-spacing-unit/3;
+        }
+
+        .icon-text--rev &,
+        .btn--icon-rev &{
+            margin-left: $base-spacing-unit/3;
+        }
+    }
+
+//dummy icon for this tut :) 
+.icon-placeholder {
+    
+    background-image:url("/assets/images/icon-placeholder.png");
+    width:40px;
+    height:40px;
+    display:inline-block;
+}
