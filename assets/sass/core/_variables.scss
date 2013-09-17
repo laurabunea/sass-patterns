@@ -272,13 +272,13 @@ $table-border-color:                 #ddd; // table and cell border
 // Media queries breakpoints
 // --------------------------------------------------
 
-$screen-mobile:                  30em //480px;
+$screen-mobile:                  30em;  //480px
 
-$screen-skinny:                  48em //768px;
+$screen-skinny:                  48em;//768px
 
-$screen-desktop:                  60em //960px;
+$screen-desktop:                  60em; //960px
 
-$screen-wide:                  75em //1200px;
+$screen-wide:                  75em; //1200px
 
 /* So media queries don't overlap when required, provide a maximum */
 
