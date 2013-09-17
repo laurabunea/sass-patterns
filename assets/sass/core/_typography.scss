@@ -29,7 +29,6 @@
 html,
 body {
     color:          $base-font-color;
-    //font-size:    $base-font-size;
     font-family:    $sansSerifStack;
     line-height:    $base-line-height;
     /* see point 9 */
@@ -46,6 +45,7 @@ a {
 
 /** 1. Header styles
  * ----------------------------------------------------------------------------
+ * NOTE: These can change per project depending on what font etc you use :) 
  *
  */
 .h0 {

@@ -141,8 +141,16 @@
                         </h4>
                         <pre>
 <code class='language-css'>
-    .classname{
-        /* add media mixin code here */   
+    .element{
+        background-color:#fff;
+
+        @include media(skinny-only){
+            background-color:pink;
+        }
+
+        @include media(mobile-only){
+            background-color:blue;
+        }
     }
 </code>
                         </pre>
@@ -153,7 +161,9 @@
                         <h4 class='tiny caps text_muted'>
                             hello world
                         </h4>
-                    
+                        <div class='element block--xs__stacked'>
+                            resize the browser
+                        </div>
                     </div><!--  hello world block ends -->
                 </div><!-- mixin-break-point ends-->
 

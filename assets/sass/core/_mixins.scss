@@ -43,22 +43,61 @@
  * 2. Break point
  * -----------------------------------------------------------------------------
  */
+
+
 @mixin media($breakpoint) {
     @if $breakpoint == "mobile-only" {
-        @media only screen and (max-width: 30em) {
+        @media only screen and (max-width: $screen-mobile) {
             @content;
         }
-    } @else if $breakpoint == "mobile" {
-        @media only screen and (max-width: 30em) {
+    } @else if $breakpoint == "skinny-down" {
+        @media only screen and (max-width: $screen-skinny){
+           @content;
+        } 
+    
+    } @else if $breakpoint == "skinny-only" {
+        @media only screen and ($screen-skinny) and (max-width: $screen-skinny-max){
+           @content;
+        } 
+    } @else if $breakpoint == "skinny-up" {
+        @media only screen and (min-width: $screen-skinny) {
+           @content;
+        } 
+    
+    } @else if $breakpoint == "desktop-only" {
+        @media only screen and (min-width: $screen-desktop) and (max-width: $screen-desktop-max){
+           @content;
+        } 
+     } @else if $breakpoint == "desktop-up" {
+        @media only screen and (min-width: $screen-desktop){
            @content;
         }  
-    } @else if $breakpoint == "skinny-down" {
-        @media only screen and (max-width: 56em) {
+    } @else if $breakpoint == "wide" {
+        @media only screen and (min-width: $screen-wide) {
            @content;
         }  
     }
 }
 
+//need to add in the crazy polly fill thing so if i do a query that is skinny up and i want it to show in ie 8 it extends a special class
+
+
+.element{
+
+    @include media(wide){
+        background-color:#F92672;
+    }
+    @include media(desktop-only){
+        background-color:#A6E22E;
+    }
+    @include media(skinny-only){
+        background-color:#4AA1C5;
+    }
+    @include media(mobile-only){
+        background-color:#E6DB74;
+    }
+
+}
 
 /**
  * 3. Opacity mixin

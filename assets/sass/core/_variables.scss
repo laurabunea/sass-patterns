@@ -33,7 +33,6 @@ $bg-color:		#ededed;
 
 
 $base-font-color:#2E2F2B;
-//$base-font-size:        	14; //px
 $base-line-height:        	1.428571429; // 20/14
 
 
@@ -273,27 +272,21 @@ $table-border-color:                 #ddd; // table and cell border
 // Media queries breakpoints
 // --------------------------------------------------
 
-// Extra small screen / phone
-$screen-xs:                  480px;
-$screen-phone:               $screen-xs;
+$screen-mobile:                  30em //480px;
 
-// Small screen / tablet
-$screen-sm:                  768px;
-$screen-tablet:              $screen-sm;
+$screen-skinny:                  48em //768px;
 
-// Medium screen / desktop
-$screen-md:                  992px;
-$screen-desktop:             $screen-md;
+$screen-desktop:                  60em //960px;
 
-// Large screen / wide desktop
-$screen-lg:                  1200px;
-$screen-lg-desktop:          $screen-lg;
+$screen-wide:                  75em //1200px;
 
-// So media queries don't overlap when required, provide a maximum
-$screen-xs-max:              ($screen-sm - 1);
-$screen-sm-max:              ($screen-md - 1);
-$screen-md-max:              ($screen-lg - 1);
+/* So media queries don't overlap when required, provide a maximum */
 
+$screen-mobile-max:              ($screen-skinny - 1);
+
+$screen-skinny-max:              ($screen-desktop - 1);
+
+$screen-desktop-max:              ($screen-wide - 1);
 
 
 // Form states and alerts
