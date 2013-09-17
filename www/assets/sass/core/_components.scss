@@ -1,0 +1,49 @@
+/** 2. Sub Heading styles
+ * ----------------------------------------------------------------------------
+ *
+ */
+
+
+
+.breadcrumbs {
+  > li {
+    @extend %inline-block;
+    &+li:before {
+      content: "/\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+      padding: 0 5px;
+    }
+  } 
+}
+
+
+//
+// Badges
+// --------------------------------------------------
+
+.badge {
+  @extend %inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  line-height: $base-line-height;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  // Empty badges collapse automatically (not available in IE8)
+  &:empty {
+    display: none;
+  }
+}
+
+// Quick fix for labels/badges in buttons
+.badge {
+  position: relative;
+  top: -1px;
+}
+
+
+.page-header {
+    padding-bottom: $xxm;
+    > :first-child {
+    	margin-top:0;
+    }
+}

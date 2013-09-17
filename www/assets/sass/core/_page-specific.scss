@@ -1,0 +1,70 @@
+/* 
+
+shame!!!! just some dirty styles to get a basic style. i WILL refacter :) ;
+
+*/
+
+.container {
+    max-width: 700px;
+    margin: 80px 20px 0 auto;
+    margin-left:335px;
+}
+
+.navigation--wrapper {
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 5;
+}
+    .navigation--top {
+        margin:0 auto;
+        max-width:960px;
+    }
+        .navigation--top li a {
+            color:#fff;
+            text-decoration: none;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+        }
+            .navigation--top li a.active {
+                background-color: #2E2F2B;
+            }
+            .navigation--top li a:hover {
+                color:#E6DB74;
+            }
+
+
+.navigation--side {
+    position:fixed;
+    top:80px;
+    left:100px;
+    width:200px;
+}
+    .navigation--side li a, 
+    .navigation--top li a  {
+        display: block;
+        text-decoration: none;  
+    }
+
+    .navigation--side li a {
+        color:#4B4D43;
+    }
+
+        .navigation--side li a:hover {
+            background-color: #4D4D4D;
+            color:#E6DB74;
+            box-shadow: none;
+            
+        }
+
+.testbox {
+    @include box-dimensions(150px, 150px);
+    display:inline-block;
+}
+
+.testbox-100-100 {
+    @include box-dimensions(100px, 100px);
+}
+
+.testbox-400-100 {
+    @include box-dimensions(100px, 300px);  
+}

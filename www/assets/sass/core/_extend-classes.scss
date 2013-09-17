@@ -1,0 +1,83 @@
+/**
+ *
+ * Extends - Common patterns that can be re used and then compiled together for nice pretty code
+ *
+ * ----------------------------------------------------------------------------
+ * 
+ * Structure:
+ *
+ *    
+ *
+ *
+ * ----------------------------------------------------------------------------
+ *
+ */
+
+%absolute {
+    position: absolute;
+}
+
+%inline-block {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+
+%border {
+	border-width: 1px;
+	border-style: solid;
+}
+
+%clearfix{
+	&:before,
+	&:after {
+	    content: " "; /* 1 */
+	    display: table; /* 2 */
+	}
+
+	&:after {
+	    clear: both;
+	}
+	
+	/**
+	 * For IE 6/7 only
+	 * Include this rule to trigger hasLayout and contain floats.
+	 */
+	*zoom: 1;
+}
+
+
+
+/*
+	block spacing 
+*/
+
+%block--xxxl {
+    padding: $base-spacing-unit * 2.5 $base-spacing-unit * 5;
+}
+
+%block--xxl {
+    padding: $base-spacing-unit * 2 $base-spacing-unit * 4;
+}
+
+%block--xl {
+    padding: $base-spacing-unit * 1.5 $base-spacing-unit * 3;
+}
+
+%block {
+    padding: $base-spacing-unit $base-spacing-unit * 2;
+}
+
+%block--xs {
+    padding: $base-spacing-unit / 1.5 $base-spacing-unit / 2;
+}
+
+%block--xxs {
+    padding: $base-spacing-unit / 2 $base-spacing-unit / 4;
+}
+
+%block--xxxs {
+    padding: $base-spacing-unit / 2.5 $base-spacing-unit / 5;
+}
+
