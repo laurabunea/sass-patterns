@@ -60,23 +60,8 @@
         <div class='navigation--side'>
             <ul class='list--unstyled'>
                 <li>
-                    <a class='block--xs__stacked tb__primary' href='#typo-headings'>
-                        Heading styles
-                    </a>
-                </li>
-                <li>
-                    <a class='block--xs__stacked tb__primary' href='#typo-sub-headings'>
-                        Sub Heading styles
-                    </a>
-                </li>
-                <li>
                     <a class='block--xs__stacked tb__primary' href='#typo-paragraph'>
-                        Text sizes
-                    </a>
-                </li>
-                <li>
-                    <a class='block--xs__stacked tb__primary' href='#typo-text-relatinoships'>
-                        Text relationships
+                        Font size
                     </a>
                 </li>
                 <li>
@@ -112,15 +97,40 @@
                 </h1>
             </div>
 
-            <!--<p>
-                Notes about base typography values
-            </p>-->
-        <!-- /****************************************  Heading styles  *******************************/ -->
+            <p>
+                There are a couple of things you need to set up before you begin a project.
+            </p>
+            <ul class='list--styled'>   
+                <li>base font family</li>
+                <li>base font sizes</li>
+                <li>base line heights and text heirarchy</li>
+            </ul>
+           
+            <p>
+                The best way to do this is sit down with the designer and go through the
+                <a href='/text-heirarchy.html'>
+                    text heirarchy
+                </a>
+                template with them.
+            </p>
+            
+            <p>
+                Below is a list of helper classes that relate to Typography
+            </p>
+        
 
-            <div class='section--xl' id='typo-headings'>
-                <h2 class='h3'>
-                    Heading styles
+        <!-- /****************************************  Text sizes  *******************************/ -->
+
+            <div class='section--xxxl' id='typo-paragraph'>
+                <h2 >
+                    Font size
                 </h2>
+
+                <p>
+                    Heading sizes, text sizes and sub headings
+                </p>
+
+                <h3 clas='h4'>Headings</h3>
 
                 <!-- code block starts -->
                 <div class='block--xs tb__tertiary'>
@@ -130,10 +140,10 @@
                     <pre>
 <code class="language-markup">
     &lt;h1&gt; H1 Heading 1 &lt;/h1&gt;
-    &lt;h2&gt; H2 Heading 2 &lt;/h2&gt;
-    &lt;h3&gt; H3 Heading 3 &lt;/h3&gt;
-    &lt;h4&gt; H4 Heading 4 &lt;/h4&gt;
-    &lt;h5&gt; H5 Heading 5 &lt;/h5&gt;
+    &lt;h1 class='h2'&gt; H1 Heading with a class of H2 &lt;/h1&gt;
+    &lt;h2&gt; H2 Heading &lt;/h2&gt;
+    &lt;h2 class='h4'&gt; H2 Heading with a class of H4 &lt;/h2&gt;
+    &lt;h4 class='h4'&gt; H4 Heading  &lt;/h4&gt;
 </code>
                     </pre>
                 </div><!-- code block ends -->
@@ -144,30 +154,25 @@
                         hello world
                     </h4>
                     <h1>
-                        H1 Heading 1
+                        H1 Heading 
+                    </h1>
+                    <h1 class='h2'>
+                        H1 Heading with a class of H2
                     </h1>
                     <h2>
-                        H2 Heading 2
+                        H2 Heading 
                     </h2>
-                    <h3>
-                        H3 Heading 3
-                    </h3>
+                    <h2 class='h4'>
+                        H2 Heading with a class of H4
+                    </h2>
                     <h4>
-                        H4 Heading 4
+                        H4 Heading 
                     </h4>
-                    <h5>
-                        H5 Heading 5
-                    </h5>
                 </div><!-- hello world block ends -->
-            </div><!--typo-headings ends-->
 
-        <!-- /****************************************  Sub - Heading styles  *******************************/ -->
-
-            <div class='section--xxxl' id='typo-sub-headings'>
-
-                <h2 class='h3' >
-                    Sub Heading styles
-                </h2>
+               <h3 class='h4' >
+                    Sub Headings
+                </h3>
                 <p>
                     see
                     <a href='/components.html#components-pg-headers'>
@@ -175,20 +180,9 @@
                     </a>
                     on the components page or have a look at the example below in Text sizes.
                 </p>
-
-            </div><!--typo-sub-headings-->
-
-        <!-- /****************************************  Text sizes  *******************************/ -->
-
-            <div class='section--xxxl' id='typo-paragraph'>
-                <h2 class='h3'>
-                    Text sizes
-                </h2>
-
-                <p>
-                    Notes good for... sub headings ..
-                </p>
-
+                <h3 class='h4' >
+                    common Text sizes
+                </h3>
                 <!-- code block starts -->
                 <div class='block--xs tb__tertiary'>
                     <h4 class='tiny caps text_muted'>
@@ -199,7 +193,6 @@
     &lt;p class='tiny'&gt; ... &lt;/p&gt;
     &lt;p class='small'&gt; ... &lt;/p&gt;
     &lt;p&gt; ... &lt;/p&gt;
-    &lt;p class='medium'&gt; ... &lt;/p&gt;
     &lt;p class='intro'&gt; ... &lt;/p&gt;
 
     &lt;h3&gt;
@@ -224,9 +217,6 @@
                     </p>
                     <p>I am a plain paragraph
                     </p>
-                    <p class='medium'>
-                        I am a medium paragraph
-                    </p>
                     <p class='intro'>
                         I am an intro paragraph
                     </p>
@@ -242,7 +232,7 @@
 
         <!-- /****************************************  Typographic relationships  *******************************/ -->
 
-            <div class='section--xxxl' id='typo-text-relatinoships'>
+            <!--<div class='section--xxxl' id='typo-text-relatinoships'>
                 <h2 class='h3' >
                     Text relationships
                 </h2>
@@ -255,7 +245,7 @@
                     template and adjust any margins or line heights that look whack. (These values will need to be tweaked depending on what font you use)            
                 </p>
             
-            </div><!-- -->
+            </div>-->
 
         <!-- /****************************************  Sans/serif text  *******************************/ -->
             <div class='section--xxxl' id='typo-sans'>
