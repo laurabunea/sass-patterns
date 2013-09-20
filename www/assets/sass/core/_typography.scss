@@ -4,7 +4,7 @@
  * -----------------------------------------------------------------------------
  *
  * Structure:
- *         Base typography styles
+ *      1. Base typography styles
  *      1. Heading styles
  *		2. Sub Heading styles
  *      3. Paragraph styles
@@ -78,7 +78,6 @@ h3, .h3 {
 
 h4, .h4 {
     @extend .m0--b;
-    @extend .fix-webkit-font-rendering;
     //font-family:$serifStack;
     font-size: 1.125em;                     /* 18px */         
     line-height: 1.33333333;                /* 24px */
@@ -244,21 +243,7 @@ p + p{
     //list-style-image: url('');
 }
 
-/**
- * 9. Fix webkit font rendering
- * ----------------------------------------------------------------------------
- */
- 
-/**
- * Since v22, Chrome makes fat sausage horrible web typography. Fix it with 
- * these properties right here. Maybe consider scoping this to a class for
- * chrome/mac osx only at some point?
- */
 
-%fix-webkit-font-rendering {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
 
 
 /**
@@ -270,6 +255,5 @@ p + p{
     background-color: $hr-colour;
     border: none;
     color: $hr-colour;
-    height: 2px;
-    margin-top: $m;
+    height: 1px;
  }

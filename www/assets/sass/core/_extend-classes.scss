@@ -47,6 +47,20 @@
 	*zoom: 1;
 }
 
+/**
+ * 9. Fix webkit font rendering
+ * ----------------------------------------------------------------------------
+ */
+ 
+/**
+ * Since v22, Chrome makes fat sausage horrible web typography. Fix it with 
+ * these properties right here. Maybe consider scoping this to a class for
+ * chrome/mac osx only at some point?
+ */
+%fix-webkit-font-rendering {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
 
 
 /*

@@ -122,7 +122,7 @@ $gray:                   lighten(#000, 33.5%); // #555
 $gray-light:             lighten(#000, 60%);   // #999
 $gray-lighter:           lighten(#000, 93.5%); // #eee
 
-$hr-colour: $gray-light;
+$hr-colour: #e5e5e5;
 
 
 // Block theme colours - warning
@@ -249,7 +249,7 @@ $badge-active-bg:			blue;
 // -------------------------
 $pg-header-border:			#2E2F2B;
 $pg-header-txt:				$pg-header-border;
-$pg-header-span-txt:		#777;
+$pg-header-span-txt:		#666;
 
 
 
