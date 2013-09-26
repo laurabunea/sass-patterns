@@ -45,5 +45,10 @@
     padding-bottom: $xxm;
     > :first-child {
     	margin-top:0;
+
+    }
+    //quick fix need to change this
+    .tiny {
+      font-weight: normal;
     }
 }

@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/stylesheets/main.css">
         <link href="assets/css/prism.css" type="text/css" rel="stylesheet" />
     </head>
 
@@ -57,7 +57,7 @@
         </div><!--navigation wrapper ends-->
 
         <!-- Side Navigation Bar - this holds the children categories -->
-        <div class='navigation--side'>
+        <!--<div class='navigation--side'>
             <ul class='list--unstyled'>
                 <li>
                     <a class='block--xs__stacked tb__primary' href='#typo-paragraph'>
@@ -85,31 +85,31 @@
                     </a>
                 </li>
 
-            </ul><!--list unstyled ends-->
-        </div><!--navigation side ends-->
+            </ul>--><!--list unstyled ends-->
+        <!--</div><!--navigation side ends-->
 
         <!-- Main Content container -->
-        <div class='container tb__primary clearfix block'>
+        <div class='container tb__primary clearfix '>
 
             <div class='page-header tb__header'>
                 <h1>
                     Typography
                     <span class='tiny'>
-                        Setting up
+                        - Setting up
                     </span>
                 </h1>
             </div>
 
-            <p>
-                There are a couple of things you need to set up before you begin a project.
+            <p class='intro'>
+                There are a couple of things you need to set up before you begin a project. These are:
             </p>
-            <ul class='list--styled '>   
+            <ul class='list--styled intro'>   
                 <li>base font family</li>
                 <li>base font sizes</li>
                 <li>base line heights and text heirarchy</li>
             </ul>
            
-            <p>
+            <p class='intro'>
                 The best way to do this is sit down with the designer and go through the
                 <a href='/text-heirarchy.html'>
                     text heirarchy
@@ -117,11 +117,11 @@
                 template with them.
             </p>
             
-            <div class='page-header tb__header mxxx '>
+            <div class='page-header tb__header mxx '>
                 <h1>
                     Typography
                     <span class='tiny'>
-                        Helper classes
+                       - Helper classes
                     </span>
                 </h1>
             </div>
@@ -129,17 +129,17 @@
 
         <!-- /****************************************  Text sizes  *******************************/ -->
 
-            <div class='section--xxl' id='typo-paragraph'>
+            <div class='section--xl' id='typo-paragraph'>
                 <h2>
                     Font sizes
                 </h2>
 
-                <p>
+                <p class='intro'>
                     Notes for Heading sizes, text sizes and sub headings
                 </p>
 
-                <h3 clas='h4'>
-                    Headings
+                <h3 >
+                    1. Headings
                 </h3>
 
                 <p>
@@ -185,8 +185,8 @@
                 </div><!-- hello world block ends -->
 
                 
-                <h3 class='h4' >
-                    Common Text sizes
+                <h3>
+                    2. Common Text sizes
                 </h3>
                 <p>Notes</p>
                 <!-- code block starts -->
@@ -235,8 +235,8 @@
                     </h3>
                 </div><!-- hello world block ends -->
 
-                <h3 class='h4 m' >
-                    Sub Headings
+                <h3 class='m' >
+                    3. Sub Headings
                 </h3>
                 <p>
                     see
@@ -249,12 +249,14 @@
             </div><!-- typo-paragraph ends -->
 
         <!-- /****************************************  Sans/serif text  *******************************/ -->
-            <hr class='mxx'>
-            <div class='section--xxl' id='typo-sans'>
-                <h2 class='h3' >
+            <hr class='mx'>
+            <div class='section--xl' id='typo-sans'>
+                <h2  >
                     Sans vs Sans Serif
                 </h2>
-
+                <p> 
+                    Notes 
+                </p>
                 <!--  code block starts -->
                 <div class='block--xs tb__tertiary'>
                     <h4 class='tiny caps text_muted'>
@@ -283,13 +285,15 @@
             </div><!--typo sans ends-->
 
         <!-- /****************************************  Lower Case vs Upper Case  *******************************/ -->
-            <hr class='mxx'>
-            <div class='section--xxl' id='typo-cases'>
+            <hr class='mx'>
+            <div class='section--xl' id='typo-cases'>
 
-                <h2 class='h3' >
+                <h2>
                     Lower vs Upper case
                 </h2>
-
+                <p> 
+                    Notes 
+                </p>
                 <!-- code block starts -->
                 <div class='block--xs tb__tertiary'>
                     <h4 class='tiny caps text_muted'>
@@ -315,13 +319,13 @@
 
 
          <!-- /****************************************  Text allignment classes  *******************************/ -->
-            <hr class='mxx'>
-            <div class='section--xxl' id='typo-text-align'>
+            <hr class='mx'>
+            <div class='section--xl' id='typo-text-align'>
 
-                <h2 class='h3' >
+                <h2 >
                     Text allignment classes
                 </h2>
-
+                <p> Notes </p>
                 <!-- code block starts -->
                 <div class='block--xs tb__tertiary'>
                     <h4 class='tiny caps text_muted'>
@@ -354,10 +358,10 @@
             </div><!--  typo-text-align ends -->
 
         <!-- /****************************************  List styles  *******************************/ -->
-            <hr class='mxx'>
-            <div class='section--xxl' id='typo-lists'>
+            <hr class='mx'>
+            <div class='section--xl' id='typo-lists'>
 
-                <h2 class='h3 ' >
+                <h2 >
                     List styles
                 </h2>
 
@@ -365,8 +369,8 @@
                     Notes
                 </p>
 
-                <h3 class='h4'>
-                    Un styled list
+                <h3 >
+                    1. Un styled list
                 </h3>
 
                 <!-- code block ends -->
@@ -400,7 +404,7 @@
                 </div><!-- hello world block ends -->
 
 
-                <h3 class='h4'>Styled list</h3>
+                <h3>2. Styled list</h3>
                 <!-- code block starts -->
                 <div class='block--xs tb__tertiary'>
                     <h4 class='tiny caps text_muted'>
@@ -431,7 +435,7 @@
                     </ul>
                 </div><!-- hello world block ends -->
 
-                <h3 class='h4'> Inline list</h3>
+                <h3>3. Inline list</h3>
                 <!-- code block starts -->
                 <div class='block--xs tb__tertiary'>
                     <h4 class='tiny caps text_muted'>

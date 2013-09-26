@@ -18,7 +18,7 @@
  */
 .btn{
     @extend .inline-block;                          /* [1] */
-    @extend .user-select-none;
+    //@extend .user-select-none;
     vertical-align: middle;                         /* [2] */
     white-space: nowrap;                            /* [3] */
     font-family: inherit;                           /* [4] */
