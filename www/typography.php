@@ -58,7 +58,7 @@
    
     <p class='intro'>
         The best way to do this is sit down with the designer and go through the
-        <a href='/text-heirarchy.html'>
+        <a href='/text-heirarchy.php'>
             text heirarchy
         </a>
         template with them.
