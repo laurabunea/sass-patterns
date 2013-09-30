@@ -4,47 +4,49 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter :)
 
 */
 
-.main-container {
-    max-width:700px;
-    margin:0 auto; 
+.content_wrapper {
+    max-width:860px;
+    margin:80px auto 0 auto;
 }
-
-.container {
-    max-width: 700px;
-    margin: 80px auto 0 auto;
-    padding:2em 3em;
-}
-
-.navigation--wrapper {
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index: 5;
-}
-    .navigation--top {
-        margin:0 auto;
-        max-width: 786px;
-        padding:0 1.5em;
+    .content {
+        max-width: 550px;
+        //margin: 80px auto 0 auto;
+        padding:2em 3em;
+        float:left;
 
     }
-        .navigation--top li a {
-            color:#fff;
-            text-decoration: none;
-            text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+
+    .navigation--wrapper {
+        position:fixed;
+        top:0;
+        width:100%;
+        z-index: 5;
+    }
+        .navigation--top {
+            margin:0 auto;
+            max-width: 860px;
+            //padding:0 1.5em;
+
         }
-            .navigation--top li a.active {
-                background-color: #2E2F2B;
+            .navigation--top li a {
+                color:#fff;
+                text-decoration: none;
+                text-shadow: 0 1px rgba(0, 0, 0, 0.3);
             }
-            .navigation--top li a:hover {
-                color:#E6DB74;
-            }
+                .navigation--top li a.active {
+                    background-color: #2E2F2B;
+                }
+                .navigation--top li a:hover {
+                    color:#E6DB74;
+                }
 
 
 .navigation--side {
-    position:fixed;
-    top:80px;
-    left:100px;
+    //position:fixed;
+    //top:80px;
+    //left:100px;
     width:200px;
+    float:right;
 }
     .navigation--side li a, 
     .navigation--top li a  {
