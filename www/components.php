@@ -1,5 +1,6 @@
-
-
+<?php 
+    include 'header.php'; 
+?>
 <!-- Side Navigation Bar - this holds the children categories -->
 <div class='navigation--side '>
     <ul class='list--unstyled'>
