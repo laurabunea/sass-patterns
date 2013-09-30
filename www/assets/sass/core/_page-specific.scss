@@ -99,13 +99,19 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 
 
 @media all and (max-width: 800px) {
+
+    /*dirty i know!*/
     .content_wrapper, 
     .navigation--side, 
     .content  {
         width:100%;
     }
+
     .navigation--side {
         margin-bottom:30px;
+        a {
+            padding:1em 1.5em;
+        }
     }
     .content--padding {
         padding:1.5em;

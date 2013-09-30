@@ -1987,19 +1987,24 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 }
 
 @media all and (max-width: 800px) {
-  /* line 104, ../sass/core/_page-specific.scss */
+  /*dirty i know!*/
+  /* line 106, ../sass/core/_page-specific.scss */
   .content_wrapper,
   .navigation--side,
   .content {
     width: 100%;
   }
 
-  /* line 107, ../sass/core/_page-specific.scss */
+  /* line 110, ../sass/core/_page-specific.scss */
   .navigation--side {
     margin-bottom: 30px;
   }
+  /* line 112, ../sass/core/_page-specific.scss */
+  .navigation--side a {
+    padding: 1em 1.5em;
+  }
 
-  /* line 110, ../sass/core/_page-specific.scss */
+  /* line 116, ../sass/core/_page-specific.scss */
   .content--padding {
     padding: 1.5em;
   }
