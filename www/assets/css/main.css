@@ -1986,25 +1986,31 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   width: 300px;
 }
 
+/* line 99, ../sass/core/_page-specific.scss */
+.homepage {
+  background-color: #4D4D4D;
+  color: #fff;
+}
+
 @media all and (max-width: 800px) {
   /*dirty i know!*/
-  /* line 106, ../sass/core/_page-specific.scss */
+  /* line 109, ../sass/core/_page-specific.scss */
   .content_wrapper,
   .navigation--side,
   .content {
     width: 100%;
   }
 
-  /* line 110, ../sass/core/_page-specific.scss */
+  /* line 113, ../sass/core/_page-specific.scss */
   .navigation--side {
     margin-bottom: 30px;
   }
-  /* line 112, ../sass/core/_page-specific.scss */
+  /* line 115, ../sass/core/_page-specific.scss */
   .navigation--side a {
     padding: 1em 1.5em;
   }
 
-  /* line 116, ../sass/core/_page-specific.scss */
+  /* line 119, ../sass/core/_page-specific.scss */
   .content--padding {
     padding: 1.5em;
   }

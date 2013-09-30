@@ -96,7 +96,10 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 .testbox-400-100 {
     @include box-dimensions(100px, 300px);  
 }
-
+.homepage {
+    background-color:#4D4D4D;
+    color:#fff;
+}
 
 @media all and (max-width: 800px) {
 
