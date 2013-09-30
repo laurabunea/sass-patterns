@@ -1872,23 +1872,27 @@ a.tb__badge_active > .badge {
 
 /* 
 
-shame!!!! just some dirty styles to get a basic style. i WILL refacter :) 
+shame!!!! just some dirty styles to get a basic style. i WILL refacter to get the project started :) 
 
 */
 /* line 7, ../sass/core/_page-specific.scss */
 .content_wrapper {
-  max-width: 860px;
+  width: 860px;
   margin: 80px auto 80px auto;
 }
 
 /* line 11, ../sass/core/_page-specific.scss */
 .content {
-  max-width: 550px;
-  padding: 2em 3em;
+  width: 625px;
   float: left;
 }
 
-/* line 19, ../sass/core/_page-specific.scss */
+/* line 16, ../sass/core/_page-specific.scss */
+.content--padding {
+  padding: 2em 3em;
+}
+
+/* line 20, ../sass/core/_page-specific.scss */
 .navigation--wrapper {
   position: fixed;
   top: 0;
@@ -1896,7 +1900,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter :)
   z-index: 5;
 }
 
-/* line 25, ../sass/core/_page-specific.scss */
+/* line 26, ../sass/core/_page-specific.scss */
 .navigation--top {
   margin: 0 auto;
   max-width: 860px;
@@ -1982,6 +1986,24 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter :)
   width: 300px;
 }
 
+@media all and (max-width: 800px) {
+  /* line 104, ../sass/core/_page-specific.scss */
+  .content_wrapper,
+  .navigation--side,
+  .content {
+    width: 100%;
+  }
+
+  /* line 107, ../sass/core/_page-specific.scss */
+  .navigation--side {
+    margin-bottom: 30px;
+  }
+
+  /* line 110, ../sass/core/_page-specific.scss */
+  .content--padding {
+    padding: 1.5em;
+  }
+}
 /**
  * Buttons
  * -----------------------------------------------------------------------------

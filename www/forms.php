@@ -13,11 +13,13 @@
 </div><!--navigation side ends-->
 
 <div class='content clearfix tb__primary '>
-    <div class='page-header tb__header'>
-        <h1>
-            Forms 
-        </h1>
-    </div>
+    <div class='content--padding'>
+        <div class='page-header tb__header'>
+            <h1>
+                Forms 
+            </h1>
+        </div>
+    </div><!--content padding ends-->
 </div>
 
 <?php 

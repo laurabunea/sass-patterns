@@ -1,20 +1,21 @@
 /* 
 
-shame!!!! just some dirty styles to get a basic style. i WILL refacter :) 
+shame!!!! just some dirty styles to get a basic style. i WILL refacter to get the project started :) 
 
 */
 
 .content_wrapper {
-    max-width:860px;
+    width:860px;
     margin:80px auto 80px auto;
 }
     .content {
-        max-width: 550px;
-        //margin: 80px auto 0 auto;
-        padding:2em 3em;
+        width: 625px;
         float:left;
 
     }
+        .content--padding {
+            padding:2em 3em;
+        }
 
     .navigation--wrapper {
         position:fixed;
@@ -25,7 +26,6 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter :)
         .navigation--top {
             margin:0 auto;
             max-width: 860px;
-            //padding:0 1.5em;
 
         }
             .navigation--top li a {
@@ -95,4 +95,19 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter :)
 
 .testbox-400-100 {
     @include box-dimensions(100px, 300px);  
+}
+
+
+@media all and (max-width: 800px) {
+    .content_wrapper, 
+    .navigation--side, 
+    .content  {
+        width:100%;
+    }
+    .navigation--side {
+        margin-bottom:30px;
+    }
+    .content--padding {
+        padding:1.5em;
+    }
 }
