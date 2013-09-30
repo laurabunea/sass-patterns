@@ -1,4 +1,6 @@
 <?php 
+
+	$page = 'home';
     include 'header.php'; 
 ?>      
 <!--add a theme class-->

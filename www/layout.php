@@ -79,6 +79,21 @@
         <h1>
             Layout
             <span class='tiny'>
+                - Rules
+            </span>
+        </h1>
+    </div>
+
+    <ul class='list--styled'>
+        <li>
+            Be consistent with vertical spacing. Avoid setting arbitrary margins on items. Defer these to a variable, and use multiples of that variable to control your vertical spacing. Our designs will often change right up til the end, so it's worth making stuff really easy to change.
+        </li>
+    </ul>
+
+    <div class='page-header tb__header mxx'>
+        <h1>
+            Layout
+            <span class='tiny'>
                 - Helper classes
             </span>
         </h1>
@@ -87,10 +102,12 @@
     <!-- /****************************************  Clearfix  *******************************/ -->
 
     <div class='section--xl' id='layout-clearfix'>
-        <h2 >
+        <h2>
             Clearfix
         </h2>
-        <p>Add a note :)</p>
+        <p>
+            What clearfix does is it forces content after the floats or the container containing the floats to render below it.
+        </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
             <h4 class='tiny caps text_muted'>
@@ -112,7 +129,9 @@
         <h2 >
             Inline block 
         </h2>
-        <p>Add a note :)</p>
+        <p>
+            Displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box
+        </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
             <h4 class='tiny caps text_muted'>
@@ -137,9 +156,11 @@
         </h2>
 
         <!-- /********  Floating elements *************/ -->
-        <p>Notes...</p>
+        
         <h3 class=' xm'>1. Floating elements</h3>
-
+        <p>
+            With CSS float, an element can be pushed to the left or right, allowing other elements to wrap around it.
+        </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
             <h4 class='tiny caps text_muted'>
@@ -147,8 +168,8 @@
             </h4>
             <pre>
 <code class="language-markup">
-    &lt;img class='pull-left' src='assets/images/yellow-bird.png' /&gt;
-    &lt;img class='pull-right' src='assets/images/blue-bird.png' /&gt;
+    &lt;img class='left' src='assets/images/yellow-bird.png' /&gt;
+    &lt;img class='right' src='assets/images/blue-bird.png' /&gt;
 </code>
             </pre>
         </div><!--  code block ends -->
@@ -159,8 +180,8 @@
                 hello world
             </h4>
             <div class='block--xs__stacked clearfix'> 
-                <img class='pull-left' src='assets/images/yellow-bird.jpg' alt='i am an image'/>
-                <img class='pull-right' src='assets/images/blue-bird.jpg' alt='i am an image'/>    
+                <img class='left' src='assets/images/yellow-bird.jpg' alt='i am an image'/>
+                <img class='right' src='assets/images/blue-bird.jpg' alt='i am an image'/>    
             </div>
         </div><!--  hello world block ends -->
 
@@ -169,7 +190,9 @@
         <h3>
             2. Absolute Positioning
         </h3>
-
+        <p>
+            A page element with relative positioning gives you the control to absolutely position children elements inside of it.
+        </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
             <h4 class='tiny caps text_muted'>
@@ -392,6 +415,9 @@
         <h2  class='h3'>
             Media blocks
         </h2>
+        <p>
+            Float an image to the left, with a clearfixed block of content to the right.
+        </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
             <h4 class='tiny caps text_muted'>
@@ -562,6 +588,9 @@
         <h2>
             Inline Grid
         </h2>
+        <p>
+            Sets the child elements to take up full justified width of the parent.
+        </p>
         <!--  code block ends -->
         <div class='block--xs tb__tertiary'>
             <h4 class='tiny caps text_muted'>
@@ -631,7 +660,7 @@
             <br />
 
             <p>
-                4 column vertically centered grid blocks
+                Vertical align these grid items in the middle!
             </p>
 
             <div class='grid grid--middle'>
@@ -657,6 +686,9 @@
         <h2  class='h3'>
             Prepend vs Append
         </h2>
+        <p>
+            Place something before or after an element.
+        </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
             <h4 class='tiny caps text_muted'>

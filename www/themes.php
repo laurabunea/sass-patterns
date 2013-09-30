@@ -30,9 +30,12 @@
 </div><!--navigation side ends-->
 
 <div class='content clearfix tb__primary '>
-    <div class='page-header '>
+     <div class='page-header tb__header'>
         <h1>
-            Themes 
+            Themes
+            <span class='tiny'>
+                - 
+            </span>
         </h1>
     </div>
 	<!-- /****************************************  Block themes  *******************************/ -->

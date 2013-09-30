@@ -63,7 +63,28 @@
         </a>
         template with them.
     </p>
-    
+    <div class='page-header tb__header mxx'>
+        <h1>
+            Typography
+            <span class='tiny'>
+                - Rules
+            </span>
+        </h1>
+    </div>
+<ul class='list--styled'>
+    <li>
+        Leave html, body font-size at 100% -  Even for responsive sites, it's nice knowing that 1em is always 16px. 
+        Computers calculate things in base2 rather than base10. This is a fundamentally awesome feature of the browser and 
+        we shouldn't break it.
+    </li>
+    <li>
+        Always set font-sizes in ems.
+    </li>
+    <li>
+        Don't use units on line-heights
+    </li>
+</ul>
+
     <div class='page-header tb__header mxx '>
         <h1>
             Typography

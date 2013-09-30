@@ -2,7 +2,9 @@
 <html>
 
     <head>
-        <link rel="stylesheet" href="assets/stylesheets/main.css">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>FRED</title>
+        <link rel="stylesheet" href="assets/css/main.css">
         <link href="assets/css/prism.css" type="text/css" rel="stylesheet" />
     </head>
 
@@ -10,13 +12,13 @@
     <!-- Top Navigation Bar - this holds the parent categories -->
     <div class='navigation--wrapper tb__quarternary'>
         <div class='navigation--top clearfix'>
-            <h1 class='caps pull-left logo' >
+            <h1 class='caps left logo' >
                 <a href='/'>
                     F<span>R</span>ED
                 </a>
             </h1>
 
-            <ul class='list--inline pull-right'>
+            <ul class='list--inline right'>
                 <li> 
                     <a class='block--xs__stacked' href='/typography.php'>
                         Typography

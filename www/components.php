@@ -123,7 +123,7 @@
             <h4 class='tiny caps text_muted'>
                 hello world
             </h4>
-            <div class='page-header tb__header'>
+            <div class='page-header tb__header mx'>
                 <h1>
                     H1 Heading 
                     <span class='tiny'>
@@ -131,7 +131,7 @@
                     </span>
                 </h1>
             </div>
-            <div class='page-header tb__header'>
+            <div class='page-header tb__header m'>
                 <h2>
                     H2 Heading 
                     <span class='tiny'>
@@ -139,7 +139,7 @@
                     </span>
                 </h2>
             </div>
-            <div class='page-header tb__header'>
+            <div class='page-header tb__header m'>
                 <h3>
                     H3 Heading 
                     <span class='tiny'>
@@ -147,7 +147,7 @@
                     </span>
                 </h3>
             </div>
-            <div class='page-header tb__header'>
+            <div class='page-header tb__header m'>
                 <h4>
                     H4 Heading 
                     <span class='tiny'>
@@ -155,7 +155,7 @@
                     </span>
                 </h4>
             </div>
-            <div class='page-header tb__header'>
+            <div class='page-header tb__header m'>
                 <h5>
                     H5 Heading 
                     <span class='tiny'>

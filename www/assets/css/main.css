@@ -654,46 +654,62 @@ ol {
   clear: both;
 }
 
+/**
+ * 9. Fix webkit font rendering
+ * ----------------------------------------------------------------------------
+ */
+/**
+ * Since v22, Chrome makes fat sausage horrible web typography. Fix it with 
+ * these properties right here. Maybe consider scoping this to a class for
+ * chrome/mac osx only at some point?
+ */
+/* line 60, ../sass/core/_extend-classes.scss */
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
 /*
 	block spacing 
 */
-/* line 56, ../sass/core/_extend-classes.scss */
+/* line 69, ../sass/core/_extend-classes.scss */
 .block--xxxl,
 .block--xxxl__stacked {
   padding: 3.75em 7.5em;
 }
 
-/* line 60, ../sass/core/_extend-classes.scss */
+/* line 73, ../sass/core/_extend-classes.scss */
 .block--xxl,
 .block--xxl__stacked {
   padding: 3em 6em;
 }
 
-/* line 64, ../sass/core/_extend-classes.scss */
+/* line 77, ../sass/core/_extend-classes.scss */
 .block--xl,
 .block--xl__stacked {
   padding: 2.25em 4.5em;
 }
 
-/* line 68, ../sass/core/_extend-classes.scss */
+/* line 81, ../sass/core/_extend-classes.scss */
 .block,
 .block__stacked {
   padding: 1.5em 3em;
 }
 
-/* line 72, ../sass/core/_extend-classes.scss */
+/* line 85, ../sass/core/_extend-classes.scss */
 .block--xs,
 .block--xs__stacked {
   padding: 1em 0.75em;
 }
 
-/* line 76, ../sass/core/_extend-classes.scss */
+/* line 89, ../sass/core/_extend-classes.scss */
 .block--xxs,
 .block--xxs__stacked {
   padding: 0.75em 0.375em;
 }
 
-/* line 80, ../sass/core/_extend-classes.scss */
+/* line 93, ../sass/core/_extend-classes.scss */
 .block--xxxs,
 .block--xxxs__stacked {
   padding: 0.6em 0.3em;
@@ -920,12 +936,12 @@ ol {
  * ----------------------------------------------------------------------------
  */
 /* line 41, ../sass/core/_layout.scss */
-.pull-left {
+.left {
   float: left;
 }
 
 /* line 45, ../sass/core/_layout.scss */
-.pull-right {
+.right {
   float: right;
 }
 
@@ -1357,7 +1373,7 @@ ol {
  * -----------------------------------------------------------------------------
  *
  * Structure:
- *         Base typography styles
+ *      1. Base typography styles
  *      1. Heading styles
  *		2. Sub Heading styles
  *      3. Paragraph styles
@@ -1443,7 +1459,7 @@ h4, .h4 {
   /* 20px */
 }
 
-/* line 88, ../sass/core/_typography.scss */
+/* line 87, ../sass/core/_typography.scss */
 h5, .h5 {
   font-size: 1em;
   /* 16px */
@@ -1452,7 +1468,7 @@ h5, .h5 {
   /* 12px */
 }
 
-/* line 96, ../sass/core/_typography.scss */
+/* line 95, ../sass/core/_typography.scss */
 h6, .h6 {
   font-size: .875em;
   /* 14px */
@@ -1465,7 +1481,7 @@ h6, .h6 {
  *  3. Paragraph styles
  * ----------------------------------------------------------------------------
  */
-/* line 115, ../sass/core/_typography.scss */
+/* line 114, ../sass/core/_typography.scss */
 p, .para {
   line-height: 1.785714286em;
   /* 25px */
@@ -1473,40 +1489,35 @@ p, .para {
   /* 12px */
 }
 
-/* line 122, ../sass/core/_typography.scss */
+/* line 121, ../sass/core/_typography.scss */
 .medium {
   font-size: .875em;
   /* 14px */
 }
 
-/* line 126, ../sass/core/_typography.scss */
+/* line 125, ../sass/core/_typography.scss */
 .intro {
   font-size: 1.125em;
   /* 18px */
 }
 
-/* line 130, ../sass/core/_typography.scss */
+/* line 129, ../sass/core/_typography.scss */
 .small {
   font-size: .8125em;
   /* 14px */
 }
 
-/* line 134, ../sass/core/_typography.scss */
+/* line 133, ../sass/core/_typography.scss */
 .tiny {
   font-size: .75em;
   /* 12px */
-}
-
-/* line 138, ../sass/core/_typography.scss */
-.weak {
-  font-weight: normal;
 }
 
 /**
  * 4. Typographic relationships (nawww, aren't they so good together?)
  * ----------------------------------------------------------------------------
  */
-/* line 151, ../sass/core/_typography.scss */
+/* line 145, ../sass/core/_typography.scss */
 h4 + h6,
 h4 + p,
 h5 + p {
@@ -1514,7 +1525,7 @@ h5 + p {
   /* 4px @ 14px */
 }
 
-/* line 155, ../sass/core/_typography.scss */
+/* line 149, ../sass/core/_typography.scss */
 p + p {
   margin-top: .571428571em;
   /* 8px @ 14px */
@@ -1524,12 +1535,12 @@ p + p {
  * ----------------------------------------------------------------------------
  *
  */
-/* line 167, ../sass/core/_typography.scss */
+/* line 161, ../sass/core/_typography.scss */
 .sans {
   font-family: "helvetica", sans-serif;
 }
 
-/* line 171, ../sass/core/_typography.scss */
+/* line 165, ../sass/core/_typography.scss */
 .serif {
   font-family: "georgia", serif;
 }
@@ -1538,12 +1549,12 @@ p + p {
  *  6. Lowercase vs Uppercase
  * ----------------------------------------------------------------------------
  */
-/* line 182, ../sass/core/_typography.scss */
+/* line 176, ../sass/core/_typography.scss */
 .caps {
   text-transform: uppercase;
 }
 
-/* line 185, ../sass/core/_typography.scss */
+/* line 179, ../sass/core/_typography.scss */
 .caps-lower {
   text-transform: lowercase;
 }
@@ -1557,17 +1568,17 @@ p + p {
     <p class="text_align--right">Right aligned text.</p>
 
  */
-/* line 202, ../sass/core/_typography.scss */
+/* line 196, ../sass/core/_typography.scss */
 .text-align--left {
   text-align: left;
 }
 
-/* line 205, ../sass/core/_typography.scss */
+/* line 199, ../sass/core/_typography.scss */
 .text-align--right {
   text-align: right;
 }
 
-/* line 208, ../sass/core/_typography.scss */
+/* line 202, ../sass/core/_typography.scss */
 .text-align--center {
   text-align: center;
 }
@@ -1576,20 +1587,20 @@ p + p {
  * 8. List styles
  * ----------------------------------------------------------------------------
  */
-/* line 219, ../sass/core/_typography.scss */
+/* line 213, ../sass/core/_typography.scss */
 .list--unstyled, .list--inline {
   list-style: none;
   padding-left: 0;
   margin: 0 0 0 0;
 }
 
-/* line 225, ../sass/core/_typography.scss */
+/* line 219, ../sass/core/_typography.scss */
 .list--unstyled > li, .list--inline > li {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 239, ../sass/core/_typography.scss */
+/* line 233, ../sass/core/_typography.scss */
 .list--styled {
   padding-left: 1.5em;
   margin-top: .857142857em;
@@ -1597,32 +1608,15 @@ p + p {
 }
 
 /**
- * 9. Fix webkit font rendering
- * ----------------------------------------------------------------------------
- */
-/**
- * Since v22, Chrome makes fat sausage horrible web typography. Fix it with 
- * these properties right here. Maybe consider scoping this to a class for
- * chrome/mac osx only at some point?
- */
-/* line 258, ../sass/core/_typography.scss */
-html,
-body {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-/**
  * 10. hr
  * ----------------------------------------------------------------------------
  */
-/* line 269, ../sass/core/_typography.scss */
+/* line 249, ../sass/core/_typography.scss */
 hr {
-  background-color: #999999;
+  background-color: #e5e5e5;
   border: none;
-  color: #999999;
-  height: 2px;
-  margin-top: 1.5em;
+  color: #e5e5e5;
+  height: 1px;
 }
 
 /**
@@ -1869,11 +1863,11 @@ a.tb__badge_active > .badge {
 /* line 231, ../sass/core/_theme.scss */
 .tb__header {
   color: #2e2f2b;
-  border-bottom: 1px solid #2e2f2b;
+  border-bottom: 1px solid #e6e6e6;
 }
 /* line 234, ../sass/core/_theme.scss */
 .tb__header span {
-  color: #777777;
+  color: #999999;
 }
 
 /* 
@@ -1882,19 +1876,19 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter :)
 
 */
 /* line 7, ../sass/core/_page-specific.scss */
-.main-container {
-  max-width: 880px;
-  margin: 0 auto;
+.content_wrapper {
+  max-width: 860px;
+  margin: 80px auto 80px auto;
 }
 
 /* line 11, ../sass/core/_page-specific.scss */
-.container {
-  max-width: 700px;
-  margin: 80px 20px 0 auto;
-  margin-left: 335px;
+.content {
+  max-width: 550px;
+  padding: 2em 3em;
+  float: left;
 }
 
-/* line 17, ../sass/core/_page-specific.scss */
+/* line 19, ../sass/core/_page-specific.scss */
 .navigation--wrapper {
   position: fixed;
   top: 0;
@@ -1902,89 +1896,87 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter :)
   z-index: 5;
 }
 
-/* line 23, ../sass/core/_page-specific.scss */
+/* line 25, ../sass/core/_page-specific.scss */
 .navigation--top {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 860px;
 }
 
-/* line 27, ../sass/core/_page-specific.scss */
+/* line 31, ../sass/core/_page-specific.scss */
 .navigation--top li a {
   color: #fff;
   text-decoration: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
-/* line 32, ../sass/core/_page-specific.scss */
+/* line 36, ../sass/core/_page-specific.scss */
 .navigation--top li a.active {
   background-color: #2E2F2B;
 }
 
-/* line 35, ../sass/core/_page-specific.scss */
+/* line 39, ../sass/core/_page-specific.scss */
 .navigation--top li a:hover {
   color: #E6DB74;
 }
 
-/* line 40, ../sass/core/_page-specific.scss */
+/* line 44, ../sass/core/_page-specific.scss */
 .navigation--side {
-  position: fixed;
-  top: 80px;
-  left: 100px;
   width: 200px;
+  float: right;
 }
 
-/* line 47, ../sass/core/_page-specific.scss */
+/* line 52, ../sass/core/_page-specific.scss */
 .navigation--side li a,
 .navigation--top li a {
   display: block;
   text-decoration: none;
 }
 
-/* line 52, ../sass/core/_page-specific.scss */
+/* line 57, ../sass/core/_page-specific.scss */
 .navigation--side li a {
   color: #4B4D43;
 }
 
-/* line 56, ../sass/core/_page-specific.scss */
+/* line 61, ../sass/core/_page-specific.scss */
 .navigation--side li a:hover {
   background-color: #4D4D4D;
   color: #E6DB74;
   box-shadow: none;
 }
 
-/* line 63, ../sass/core/_page-specific.scss */
+/* line 68, ../sass/core/_page-specific.scss */
 .logo {
   display: inline-block;
   margin-top: 12px;
   font-size: 1.8em;
 }
-/* line 67, ../sass/core/_page-specific.scss */
+/* line 72, ../sass/core/_page-specific.scss */
 .logo a {
   color: #fff;
 }
-/* line 70, ../sass/core/_page-specific.scss */
+/* line 75, ../sass/core/_page-specific.scss */
 .logo a:hover {
   color: #E6DB74;
 }
-/* line 76, ../sass/core/_page-specific.scss */
+/* line 81, ../sass/core/_page-specific.scss */
 .logo span {
   color: #E6DB74;
 }
 
-/* line 82, ../sass/core/_page-specific.scss */
+/* line 87, ../sass/core/_page-specific.scss */
 .testbox {
   height: 150px;
   width: 150px;
   display: inline-block;
 }
 
-/* line 87, ../sass/core/_page-specific.scss */
+/* line 92, ../sass/core/_page-specific.scss */
 .testbox-100-100 {
   height: 100px;
   width: 100px;
 }
 
-/* line 91, ../sass/core/_page-specific.scss */
+/* line 96, ../sass/core/_page-specific.scss */
 .testbox-400-100 {
   height: 100px;
   width: 300px;
@@ -2471,4 +2463,8 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter :)
 /* line 46, ../sass/core/_components.scss */
 .page-header > :first-child {
   margin-top: 0;
+}
+/* line 51, ../sass/core/_components.scss */
+.page-header .tiny {
+  font-weight: normal;
 }
