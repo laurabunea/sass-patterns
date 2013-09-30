@@ -30,7 +30,7 @@
 </div><!--navigation side ends-->
 
 <div class='content clearfix tb__primary '>
-    <div class='content-padding'>
+    <div class='content--padding'>
          <div class='page-header tb__header'>
             <h1>
                 Themes
