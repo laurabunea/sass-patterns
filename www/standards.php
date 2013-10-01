@@ -1,32 +1,25 @@
-<?php 
-    include 'header.php'; 
-?>
-<!-- Side Navigation Bar - this holds the children categories -->
-<div class='navigation--side '>
-    <ul class='list--unstyled'>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#layout-clearfix'>
-                Clearfix
-            </a>
-        </li>      
-    </ul><!--list unstyled ends-->
-</div><!--navigation side ends-->
+<!doctype html>
+<html>
 
-<div class='content clearfix tb__primary '>
-	<div class='content-padding'>
-		<div class='page-header tb__header'>
-	        <h1>
-	            Coding standards
-	            <span class='tiny'>
-	                - Rules to obey 
-	            </span>
-	        </h1>
-	    </div>
-	    <p class='intro'>
-	    	Howdy, Developer. You're here because you're building a Springload web project. To make it easy for everyone to understand your code and maintain it later, you'll need to stick to the house rules.
-	    </p>
-	</div><!--content padding ends-->
-</div>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>FRED</title>
+        <link rel="stylesheet" href="assets/stylesheets/main.css">
+        <link href="assets/css/prism.css" type="text/css" rel="stylesheet" />
+    </head>
+
+    <body>
+   
+    <div class='grid-test'>
+		<!-- Side Navigation Bar - this holds the children categories -->
+		<div class='test1'>
+			<p style='margin-top:10px'>hey</p>
+		</div><!--navigation side ends-->
+
+		<div class='test2'>
+			<p>hey</p>
+		</div>
+	</div>
 <?php 
     include 'footer.php'; 
 ?>

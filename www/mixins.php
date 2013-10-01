@@ -2,39 +2,7 @@
     include 'header.php'; 
 ?>
 
-<!-- Side Navigation Bar - this holds the children categories -->
-<div class='navigation--side '>
-    <ul class='list--unstyled'>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#mixin-vendor'>
-                Vendor
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#mixin-media-break-point'>
-                Media breakpoint
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#mixin-opacity'>
-                Opacity
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#mixin-placeholder'>
-                Placeholder
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#mixin-placeholder'>
-                Theme mixin
-            </a>
-        </li>
-    </ul><!--list unstyled ends-->
-</div><!--navigation side ends-->
-
-
-<div class='content clearfix tb__primary '>
+<div class='content clearfix tb__primary grid__item'>
     <div class='content--padding'>
         <div class='page-header tb__header'>
             <h1>
@@ -292,6 +260,37 @@
 
     </div><!-- content padding ends-->
 </div><!--content  ends-->
+
+<!-- Side Navigation Bar - this holds the children categories -->
+<div class='navigation--side grid__item'>
+    <ul class='list--unstyled'>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#mixin-vendor'>
+                Vendor
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#mixin-media-break-point'>
+                Media breakpoint
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#mixin-opacity'>
+                Opacity
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#mixin-placeholder'>
+                Placeholder
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#mixin-placeholder'>
+                Theme mixin
+            </a>
+        </li>
+    </ul><!--list unstyled ends-->
+</div><!--navigation side ends-->
 <?php 
     include 'footer.php'; 
 ?>

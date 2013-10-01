@@ -920,7 +920,7 @@ body {
  *      6. Inline Grid  
  *      7. Arrows  
  *      8. Inline Block 
-        9. Icon block
+ *       9. Icon block
  *
  *
  *
@@ -937,12 +937,12 @@ body {
  * ----------------------------------------------------------------------------
  */
 /* line 41, ../sass/core/_layout.scss */
-.pull-left {
+.left {
   float: left;
 }
 
 /* line 45, ../sass/core/_layout.scss */
-.pull-right {
+.right {
   float: right;
 }
 
@@ -1137,7 +1137,8 @@ body {
 
 /* line 289, ../sass/core/_layout.scss */
 .grid__item, .grid > * {
-  font-size: medium;
+  font-size: 14px;
+  /*?????*/
   text-align: left;
   vertical-align: top;
 }
@@ -1873,23 +1874,26 @@ a.tb__badge_active > .badge {
 
 /* 
 
-shame!!!! just some dirty styles to get a basic style. i WILL refacter :) 
+shame!!!! just some dirty styles to get a basic style. i WILL refacter to get the project started :) 
 
 */
-/* line 11, ../sass/core/_page-specific.scss */
+/* line 7, ../sass/core/_page-specific.scss */
 .content_wrapper {
-  max-width: 860px;
-  margin: 80px auto 0 auto;
+  width: 860px;
+  margin: 80px auto 80px auto;
+}
+
+/* line 12, ../sass/core/_page-specific.scss */
+.content {
+  width: 70%;
 }
 
 /* line 15, ../sass/core/_page-specific.scss */
-.content {
-  max-width: 550px;
+.content--padding {
   padding: 2em 3em;
-  float: left;
 }
 
-/* line 22, ../sass/core/_page-specific.scss */
+/* line 19, ../sass/core/_page-specific.scss */
 .navigation--wrapper {
   position: fixed;
   top: 0;
@@ -1897,92 +1901,114 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter :)
   z-index: 5;
 }
 
-/* line 28, ../sass/core/_page-specific.scss */
+/* line 25, ../sass/core/_page-specific.scss */
 .navigation--top {
   margin: 0 auto;
   max-width: 860px;
 }
 
-/* line 34, ../sass/core/_page-specific.scss */
+/* line 30, ../sass/core/_page-specific.scss */
 .navigation--top li a {
   color: #fff;
   text-decoration: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
-/* line 39, ../sass/core/_page-specific.scss */
+/* line 35, ../sass/core/_page-specific.scss */
 .navigation--top li a.active {
   background-color: #2E2F2B;
 }
 
-/* line 42, ../sass/core/_page-specific.scss */
+/* line 38, ../sass/core/_page-specific.scss */
 .navigation--top li a:hover {
   color: #E6DB74;
 }
 
-/* line 47, ../sass/core/_page-specific.scss */
+/* line 43, ../sass/core/_page-specific.scss */
 .navigation--side {
-  width: 200px;
-  float: right;
+  width: 25%;
 }
 
-/* line 55, ../sass/core/_page-specific.scss */
+/* line 47, ../sass/core/_page-specific.scss */
 .navigation--side li a,
 .navigation--top li a {
   display: block;
   text-decoration: none;
 }
 
-/* line 60, ../sass/core/_page-specific.scss */
+/* line 52, ../sass/core/_page-specific.scss */
 .navigation--side li a {
   color: #4B4D43;
 }
 
-/* line 64, ../sass/core/_page-specific.scss */
+/* line 56, ../sass/core/_page-specific.scss */
 .navigation--side li a:hover {
   background-color: #4D4D4D;
   color: #E6DB74;
   box-shadow: none;
 }
 
-/* line 71, ../sass/core/_page-specific.scss */
+/* line 63, ../sass/core/_page-specific.scss */
 .logo {
   display: inline-block;
   margin-top: 12px;
   font-size: 1.8em;
 }
-/* line 75, ../sass/core/_page-specific.scss */
+/* line 67, ../sass/core/_page-specific.scss */
 .logo a {
   color: #fff;
 }
-/* line 78, ../sass/core/_page-specific.scss */
+/* line 70, ../sass/core/_page-specific.scss */
 .logo a:hover {
   color: #E6DB74;
 }
-/* line 84, ../sass/core/_page-specific.scss */
+/* line 76, ../sass/core/_page-specific.scss */
 .logo span {
   color: #E6DB74;
 }
 
-/* line 90, ../sass/core/_page-specific.scss */
+/* line 82, ../sass/core/_page-specific.scss */
 .testbox {
   height: 150px;
   width: 150px;
   display: inline-block;
 }
 
-/* line 95, ../sass/core/_page-specific.scss */
+/* line 87, ../sass/core/_page-specific.scss */
 .testbox-100-100 {
   height: 100px;
   width: 100px;
 }
 
-/* line 99, ../sass/core/_page-specific.scss */
+/* line 91, ../sass/core/_page-specific.scss */
 .testbox-400-100 {
   height: 100px;
   width: 300px;
 }
 
+/* line 94, ../sass/core/_page-specific.scss */
+.homepage {
+  background-color: #4D4D4D;
+  color: #fff;
+}
+
+@media all and (max-width: 800px) {
+  /*dirty i know!*/
+  /* line 102, ../sass/core/_page-specific.scss */
+  .grid__item, .grid > *, .grid {
+    width: 100%;
+  }
+
+  /* line 106, ../sass/core/_page-specific.scss */
+  .navigation--side {
+    display: none;
+  }
+
+  /* line 109, ../sass/core/_page-specific.scss */
+  .content--padding {
+    padding: 1.5em;
+  }
+}
 /**
  * Buttons
  * -----------------------------------------------------------------------------

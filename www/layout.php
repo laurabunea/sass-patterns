@@ -2,65 +2,7 @@
     include 'header.php'; 
 ?>
 
-<!-- Side Navigation Bar - this holds the children categories -->
-<div class='navigation--side '>
-    <ul class='list--unstyled'>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#layout-clearfix'>
-                Clearfix
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#layout-inline-block'>
-                Inline Blocks
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#layout-positioning'>
-                Positioning
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#layout-generic-block'>
-                Generic blocks
-            </a>
-        </li>
-         <li>
-            <a class='block--xs__stacked tb__primary' href='#layout-section-block'>
-                Section blocks
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#layout-media-block'>
-                Media Blocks
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#layout-icon-block'>
-                Icon block
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#layout-arrows'>
-                Arrows
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#layout-inline-grid'>
-                Inline Grid
-            </a>
-        </li>
-
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#layout-append'>
-                Prepend vs Append
-            </a>
-        </li>
-        
-    </ul><!--list unstyled ends-->
-</div><!--navigation side ends-->
-
-<div class='content clearfix tb__primary'>
+<div class='content clearfix tb__primary grid__item'>
     <div class='content--padding'>
         <div class='page-header tb__header'>
             <h1>
@@ -743,6 +685,65 @@
         </div><!-- layout-append ends-->
     </div><!--content-padding-->
 </div><!-- content ends-->
+
+
+<!-- Side Navigation Bar - this holds the children categories -->
+<div class='navigation--side grid__item'>
+    <ul class='list--unstyled'>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#layout-clearfix'>
+                Clearfix
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#layout-inline-block'>
+                Inline Blocks
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#layout-positioning'>
+                Positioning
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#layout-generic-block'>
+                Generic blocks
+            </a>
+        </li>
+         <li>
+            <a class='block--xs__stacked tb__primary' href='#layout-section-block'>
+                Section blocks
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#layout-media-block'>
+                Media Blocks
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#layout-icon-block'>
+                Icon block
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#layout-arrows'>
+                Arrows
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#layout-inline-grid'>
+                Inline Grid
+            </a>
+        </li>
+
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#layout-append'>
+                Prepend vs Append
+            </a>
+        </li>
+        
+    </ul><!--list unstyled ends-->
+</div><!--navigation side ends-->
 <?php 
     include 'footer.php'; 
 ?>

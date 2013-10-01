@@ -7,11 +7,10 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 .content_wrapper {
     width:860px;
     margin:80px auto 80px auto;
+
 }
     .content {
-        width: 625px;
-        float:left;
-
+        width: 70%;
     }
         .content--padding {
             padding:2em 3em;
@@ -42,11 +41,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 
 
 .navigation--side {
-    //position:fixed;
-    //top:80px;
-    //left:100px;
-    width:200px;
-    float:right;
+    width:25%;
 }
     .navigation--side li a, 
     .navigation--top li a  {
@@ -104,17 +99,12 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 @media all and (max-width: 800px) {
 
     /*dirty i know!*/
-    .content_wrapper, 
-    .navigation--side, 
-    .content  {
+    .grid__item, .grid  {
         width:100%;
     }
 
     .navigation--side {
-        margin-bottom:30px;
-        a {
-            padding:1em 1.5em;
-        }
+        display:none
     }
     .content--padding {
         padding:1.5em;

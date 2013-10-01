@@ -2,40 +2,7 @@
     include 'header.php'; 
 ?>
 
-<!-- Side Navigation Bar - this holds the children categories -->
-<div class='navigation--side'>
-    <ul class='list--unstyled'>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#typo-paragraph'>
-                Font size
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#typo-sans'>
-                Sans vs San Serif
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#typo-cases'>
-                Lower vs Upper case
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#typo-text-align'>
-                Text allignment
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#typo-lists'>
-                List styles
-            </a>
-        </li>
-
-    </ul><!--list unstyled ends-->
-</div><!--navigation side ends-->
-
-<!-- Main Content container -->
-<div class='content tb__primary clearfix'>
+<div class='content tb__primary grid__item'>
     <div class='content--padding'>
         <div class='page-header tb__header'>
             <h1>
@@ -440,6 +407,38 @@
         </div><!-- typo-lists ends -->
     </div><!--content-padding-->
 </div><!--content ends-->
+
+<!-- Side Navigation Bar - this holds the children categories -->
+<div class='navigation--side grid__item'>
+    <ul class='list--unstyled'>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#typo-paragraph'>
+                Font size
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#typo-sans'>
+                Sans vs San Serif
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#typo-cases'>
+                Lower vs Upper case
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#typo-text-align'>
+                Text allignment
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#typo-lists'>
+                List styles
+            </a>
+        </li>
+
+    </ul><!--list unstyled ends-->
+</div><!--navigation side ends-->
 
 <?php 
     include 'footer.php'; 

@@ -4,7 +4,7 @@
     <head>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <title>FRED</title>
-        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/stylesheets/main.css">
         <link href="assets/css/prism.css" type="text/css" rel="stylesheet" />
     </head>
 
@@ -57,4 +57,4 @@
             </ul><!--list inline ends-->
         </div><!--navigation top ends-->
     </div><!--navigation wrapper ends-->
-    <div class='content_wrapper clearfix'>
+    <div class='content_wrapper grid '>

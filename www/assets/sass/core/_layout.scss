@@ -14,7 +14,7 @@
  *      6. Inline Grid  
  *      7. Arrows  
  *      8. Inline Block 
-        9. Icon block
+ *       9. Icon block
  *
  *
  *
@@ -288,7 +288,7 @@
 
     .grid__item{
         @extend .inline-block;
-        font-size: medium;
+        font-size: 14px;/*?????*/
         text-align: left;
         vertical-align: top;
     }

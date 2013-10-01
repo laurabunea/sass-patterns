@@ -1,28 +1,8 @@
 <?php 
     include 'header.php'; 
 ?>
-<!-- Side Navigation Bar - this holds the children categories -->
-<div class='navigation--side '>
-    <ul class='list--unstyled'>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#components-bread-crumbs'>
-                Breadcrumbs
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#components-badges'>
-                Badges
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#components-pg-headers'>
-                Badges
-            </a>
-        </li>
-    </ul><!--list unstyled ends-->
-</div><!--navigation side ends-->
 
-<div class='content clearfix tb__primary'>
+<div class='content tb__primary grid__item'>
     <div class='content--padding'>
         <div class='page-header tb__header'>
             <h1>
@@ -66,7 +46,7 @@
         </div><!-- components-bread-crumbs ends-->
 
         <!-- /****************************************  Badges  *******************************/ -->
-        <div class='section--xxxl' id='components-badges'>
+        <div class='section--xl' id='components-badges'>
             <h2  class='h3'>
                 Badges
             </h2>
@@ -95,7 +75,7 @@
 
 
         <!-- /****************************************  Page headers  *******************************/ -->
-        <div class='section--xxxl' id='components-pg-headers'>
+        <div class='section--xl' id='components-pg-headers'>
             <h2  class='h3'>
                 Page Headers
             </h2>
@@ -166,8 +146,30 @@
 
             </div><!--  hello world block ends -->
         </div><!-- components-page-headers ends-->
-    <div><!--content padding ends-->
+    </div><!--content padding ends-->
 </div><!--content ends-->
+
+<!-- Side Navigation Bar - this holds the children categories -->
+<div class='navigation--side grid__item'>
+    <ul class='list--unstyled'>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#components-bread-crumbs'>
+                Breadcrumbs
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#components-badges'>
+                Badges
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#components-pg-headers'>
+                Badges
+            </a>
+        </li>
+    </ul><!--list unstyled ends-->
+</div><!--navigation side ends-->
+
 <?php 
     include 'footer.php'; 
 ?>

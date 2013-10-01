@@ -1,34 +1,8 @@
 <?php 
     include 'header.php'; 
 ?> 
-<!-- Side Navigation Bar - this holds the children categories -->
-<div class='navigation--side '>
-    <ul class='list--unstyled'>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#btn-variations'>
-                Button variations
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#btn-modifier'>
-                Button modifiers
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#btn-icons'>
-                Buttons with icons
-            </a>
-        </li>
-        <!--<li>
-            <a class='block--xs tb__primary' href='#layout-clearfix'>
-                Buttons on media/content elements
-            </a>
-        </li>-->
 
-    </ul><!--list unstyled ends-->
-</div><!--navigation side ends-->
-
-<div class='content clearfix tb__primary'>
+<div class='content clearfix tb__primary grid__item'>
     <div class='content--padding'>
         <div class='page-header tb__header'>
             <h1>
@@ -318,6 +292,33 @@
         </div>
     </div><!--content padding ends-->
 </div>
+
+<!-- Side Navigation Bar - this holds the children categories -->
+<div class='navigation--side grid__item'>
+    <ul class='list--unstyled'>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#btn-variations'>
+                Button variations
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#btn-modifier'>
+                Button modifiers
+            </a>
+        </li>
+        <li>
+            <a class='block--xs__stacked tb__primary' href='#btn-icons'>
+                Buttons with icons
+            </a>
+        </li>
+        <!--<li>
+            <a class='block--xs tb__primary' href='#layout-clearfix'>
+                Buttons on media/content elements
+            </a>
+        </li>-->
+
+    </ul><!--list unstyled ends-->
+</div><!--navigation side ends-->
 <?php 
     include 'footer.php'; 
 ?> 
