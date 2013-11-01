@@ -18,7 +18,7 @@
             
             <!--  code block starts -->
             <div class='block--xs m tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -34,7 +34,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <ol class='breadcrumbs tb__breadrumbs block--xxs xm'>
@@ -52,7 +52,7 @@
             </h2>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -64,7 +64,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <p><a class='xm' href='#'>Inbox <span class='tb__badge badge tiny'>42</span></a></p>
@@ -81,7 +81,7 @@
             </h2>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -100,7 +100,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <div class='page-header tb__header mx'>

@@ -35,7 +35,7 @@
             <p>This mixin takes the hassle out of defining one css-attribute in all vendor-specific prefixes (-moz, -webkit, -o, -ms).</p>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     scss code
                 </h4>
                 <pre>
@@ -46,7 +46,7 @@
     }
 </code>
                 </pre>
-                <h4 class='tiny caps text_muted m0 '>
+                <h4 class='tiny uppercase text_muted m0 '>
                     html code
                 </h4>
                 <pre>
@@ -58,7 +58,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <div class='img-rounded xm testbox-100-100 tb__green'>
@@ -75,7 +75,7 @@
             </h2>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     scss code
                 </h4>
                 <pre>
@@ -97,7 +97,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <div class='element block--xs__stacked'>
@@ -114,7 +114,7 @@
             </h2>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     scss code
                 </h4>
                 <pre>
@@ -129,7 +129,7 @@
     }
 </code>
                 </pre>
-                <h4 class='tiny caps text_muted m0 '>
+                <h4 class='tiny uppercase text_muted m0 '>
                     html code
                 </h4>
                 <pre>
@@ -144,7 +144,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <div class='grid'>
@@ -174,7 +174,7 @@
             <p>This mixin takes the hassle out of defining placeholder prefixes (:-moz-placeholder, ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder).</p>
             
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     scss code
                 </h4>
                 <pre>
@@ -185,7 +185,7 @@
     }
 </code>
                 </pre>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     html code
                 </h4>
                 <pre>
@@ -199,7 +199,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <form class='xm'>
@@ -223,7 +223,7 @@
             </p>
             
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     scss code
                 </h4>
                 <pre>
@@ -234,7 +234,7 @@
         }
     </code>
                 </pre>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     html code
                 </h4>
                 <pre>
@@ -248,7 +248,54 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
+                    hello world
+                </h4>
+                <div class='xm tb__blue block--xs'>
+                    <p>Some text</p>
+                </div>
+            
+            </div><!--  hello world block ends -->
+        </div><!-- mixin-vendor ends-->  
+
+        <!-- /****************************************  Theme mixin  *******************************/ -->
+
+        <div class='section--xl' id='mixin-placeholder'>
+            <h2>
+                Form validation
+            </h2>
+            <!--  code block starts -->
+
+            <p>
+                Apply contextual and semantic states to individual form controls. 
+            </p>
+            
+            <div class='block--xs tb__tertiary'>
+                <h4 class='tiny uppercase text_muted'>
+                    scss code
+                </h4>
+                <pre>
+<code class='language-css'>
+    .has-success {
+        @include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
+    }      
+</code>
+                </pre>
+                <h4 class='tiny uppercase text_muted'>
+                    html code
+                </h4>
+                <pre>
+<code class='language-markup'>
+    &lt;div class='tb__blue'&gt;
+        &lt;p&gt; Some text &lt;/p&gt;
+    &lt;/div&gt;  
+</code>
+                </pre>
+            </div><!--  code block ends -->
+
+            <!--  hello world block starts -->
+            <div class='block--xs__stacked tb__secondary'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <div class='xm tb__blue block--xs'>
@@ -257,6 +304,7 @@
             
             </div><!--  hello world block ends -->
         </div><!-- mixin-vendor ends-->               
+             
 
     </div><!-- content padding ends-->
 </div><!--content  ends-->

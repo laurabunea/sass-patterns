@@ -20,7 +20,7 @@
             </h2>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -32,7 +32,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
             	<div class='grid'>
@@ -53,7 +53,7 @@
 
             <!--  code block starts -->
             <div class='block--xs  tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -65,7 +65,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
             	<div class='grid'>
@@ -94,7 +94,7 @@
             </p>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -109,7 +109,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <p class='text_muted'>Some muted text</p>
@@ -129,7 +129,7 @@
             
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -143,7 +143,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <p class='xm'><a class='btn btn-primary '>I'm a primary button</a>
@@ -161,7 +161,7 @@
             
             <!--  code block starts -->
             <div class='block--xs m tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -175,7 +175,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <!-- On rows -->

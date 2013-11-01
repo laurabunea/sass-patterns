@@ -83,7 +83,7 @@
 
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -99,7 +99,7 @@
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <h1>
@@ -126,7 +126,7 @@
             <p>Notes</p>
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -147,7 +147,7 @@
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <p class='tiny'>
@@ -194,7 +194,7 @@
             </p>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -207,7 +207,7 @@
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <p class='sans'>
@@ -231,24 +231,24 @@
             </p>
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
 <code class="language-markup">
-    &lt;p class='caps'&gt; Uppercase &lt;/p&gt;
-    &lt;p class='caps-lower'&gt; Lowercase &lt;/p&gt;
+    &lt;p class='uppercase'&gt; Uppercase &lt;/p&gt;
+    &lt;p class='lowercase'&gt; Lowercase &lt;/p&gt;
 </code>
                 </pre>
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
-                <p class='caps'>Uppercase</p>
-                <p class='caps-lower'>Lowercase</p>
+                <p class='uppercase'>Uppercase</p>
+                <p class='lowercase'>Lowercase</p>
             </div><!-- hello world block ends -->
         </div><!-- typo-cases ends  -->
 
@@ -266,30 +266,30 @@
             </p>
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
 <code class="language-markup">
-    &lt;p class='text-align--left'&gt; Left aligned text &lt;/p&gt;
-    &lt;p class='text-align--center'&gt; Center aligned text &lt;/p&gt;
-    &lt;p class='text-align--right'&gt; Right aligned text &lt;/p&gt;
+    &lt;p class='text_align--left'&gt; Left aligned text &lt;/p&gt;
+    &lt;p class='text_align--center'&gt; Center aligned text &lt;/p&gt;
+    &lt;p class='text_align--right'&gt; Right aligned text &lt;/p&gt;
 </code>
             </pre>
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
-                <p class='text-align--left'>
+                <p class='text_align--left'>
                     Left aligned text
                 </p>
-                <p class='text-align--center'>
+                <p class='text_align--center'>
                     Center aligned text
                 </p>
-                <p class='text-align--right'>
+                <p class='text_align--right'>
                     Right aligned text
                 </p>
             </div><!-- hello world block ends -->
@@ -313,7 +313,7 @@
 
             <!-- code block ends -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -328,7 +328,7 @@
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <ul class='list--unstyled '>
@@ -345,7 +345,7 @@
             <h3>2. Styled list</h3>
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -360,7 +360,7 @@
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='h tiny caps text_muted'>
+                <h4 class='h tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <ul class='list--styled'>
@@ -376,7 +376,7 @@
             <h3>3. Inline list</h3>
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
             <pre>
@@ -391,7 +391,7 @@
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <ul class='list--inline '>
@@ -405,6 +405,46 @@
             </div><!-- hello world block ends -->
 
         </div><!-- typo-lists ends -->
+
+
+        <!-- /****************************************  Sans/serif text  *******************************/ -->
+        <hr class='mx'>
+        <div class='section--xl' id='typo-sans'>
+            <h2 >
+                Text overflow 
+            </h2>
+            <p> 
+                Notes 
+            </p>
+            <!--  code block starts -->
+            <div class='block--xs tb__tertiary'>
+                <h4 class='tiny uppercase text_muted'>
+                    code
+                </h4>
+                <pre>
+<code class="language-markup">
+    &lt;p class='text-overflow'&gt; Hello I'm a long sentence &lt;/p&gt;
+  
+</code>
+                </pre>
+            </div><!-- code block starts -->
+
+            <!-- hello world block starts -->
+            <div class='block--xs__stacked tb__secondary'>
+                <h4 class='tiny uppercase text_muted'>
+                    hello world
+                </h4>
+                <div class='block tb__primary testbox-100-100' >
+                <p class='text--overflow'>
+                    Hello I'm a text with an ellipsis
+                </p>
+
+                <p class='text--nowrap'>
+                    I'm text that doesn't wrap
+                </p>
+                </div>
+            </div><!-- hello world block ends -->
+        </div><!--typo-sans ends-->
     </div><!--content-padding-->
 </div><!--content ends-->
 

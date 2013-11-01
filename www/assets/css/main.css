@@ -1550,7 +1550,7 @@ p + p {
  * ----------------------------------------------------------------------------
  */
 /* line 176, ../sass/core/_typography.scss */
-.caps {
+.uppercase{
   text-transform: uppercase;
 }
 

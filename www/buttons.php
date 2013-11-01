@@ -24,7 +24,7 @@
 
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -38,7 +38,7 @@
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <p>
@@ -66,7 +66,7 @@
             </p>
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -79,7 +79,7 @@
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <p>
@@ -101,7 +101,7 @@
 
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -114,7 +114,7 @@
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <h3 class='btn btn-primary btn--large btn--bounce'>Button 1</h3>
@@ -129,7 +129,7 @@
 
             <!-- code block starts -->
              <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -142,7 +142,7 @@
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <p>
@@ -157,7 +157,7 @@
 
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -170,7 +170,7 @@
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <p>
@@ -202,7 +202,7 @@
 
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -221,7 +221,7 @@
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <p>
@@ -246,7 +246,7 @@
 
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -262,7 +262,7 @@
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <p>

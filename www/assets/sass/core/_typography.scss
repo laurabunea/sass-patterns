@@ -173,10 +173,10 @@ p + p{
  *  6. Lowercase vs Uppercase
  * ----------------------------------------------------------------------------
  */
-.caps {
+.uppercase {
     text-transform:uppercase;
 }
-.caps-lower {
+.lowercase {
     text-transform:lowercase;
 }
 
@@ -193,13 +193,13 @@ p + p{
 
  */
 
-.text-align--left { 
+.text_align--left  { 
     text-align: left;
 }
-.text-align--right { 
+.text_align--right { 
     text-align: right;
 }
-.text-align--center{
+.text_align--center  {
     text-align: center;
 }
 
@@ -252,3 +252,19 @@ p + p{
     color: $hr-colour;
     height: 1px;
  }
+
+/**
+ * 10. text overflow helper class
+ * ----------------------------------------------------------------------------
+ */
+ .text--overflow {
+    @extend .inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.text--nowrap {
+    white-space: nowrap;
+}

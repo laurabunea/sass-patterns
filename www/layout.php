@@ -52,7 +52,7 @@
             </p>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -76,7 +76,7 @@
             </p>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -105,7 +105,7 @@
             </p>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -118,7 +118,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <div class='block--xs__stacked clearfix'> 
@@ -137,7 +137,7 @@
             </p>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4> 
                 <pre>
@@ -167,7 +167,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__primary'> 
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <div class='grid '>
@@ -196,7 +196,7 @@
             </h2>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'> 
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -210,7 +210,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__primary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4> 
 
@@ -283,7 +283,7 @@
             </p>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'> 
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -302,7 +302,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__primary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 
@@ -362,7 +362,7 @@
             </p>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -385,7 +385,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <div class='media'>
@@ -413,7 +413,7 @@
             </h2>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -433,7 +433,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <p>
@@ -460,7 +460,7 @@
             </h2>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -493,7 +493,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 <div class='arrow--left xm block--xxs tb__blue'>
@@ -535,7 +535,7 @@
             </p>
             <!--  code block ends -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
             </div><!--  code block ends -->
@@ -543,7 +543,7 @@
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__primary'>  
                 <div class='grid'>
-                    <div class=' testbox-400-100 g--1-1 tb__pink '>
+                    <div class='g--1-1 tb__pink '>
                         &nbsp;
                     </div>
                 </div>
@@ -551,27 +551,10 @@
                 <br />
 
                 <div class='grid'>
-                    <div class='testbox-400-100 tb__pink' >
+                    <div class='g--1-2 tb__pink' >
                         &nbsp;
                     </div>
-                    <div class='testbox-400-100 tb__pink'>
-                        &nbsp;
-                    </div>
-                </div>
-
-                <br />
-
-                <div class='grid'>
-                    <div class=' g--1-4 testbox-100-100 tb__pink'>
-                        &nbsp;
-                    </div>
-                    <div class=' g--1-4 testbox-100-100 tb__pink'>
-                        &nbsp;
-                    </div>
-                    <div class=' g--1-4 testbox-100-100 tb__pink'>
-                        &nbsp;
-                    </div>
-                    <div class=' g--1-4 testbox-100-100 tb__pink'>
+                    <div class='g--1-2 tb__pink'>
                         &nbsp;
                     </div>
                 </div>
@@ -579,22 +562,39 @@
                 <br />
 
                 <div class='grid'>
-                    <div class=' g--1-4 testbox-100-100 tb__pink'>
+                    <div class=' g--1-4 tb__pink'>
                         &nbsp;
                     </div>
-                    <div class=' g--1-4 testbox-100-100 tb__pink'>
+                    <div class=' g--1-4 tb__pink'>
                         &nbsp;
                     </div>
-                    <div class=' g--1-4 testbox-100-100 tb__pink'>
+                    <div class=' g--1-4 tb__pink'>
                         &nbsp;
                     </div>
-                    <div class=' g--1-4 testbox-100-100 tb__pink'>
+                    <div class=' g--1-4 tb__pink'>
                         &nbsp;
                     </div>
-                    <div class=' g--1-4 testbox-100-100 tb__pink'>
+                </div>
+
+                <br />
+
+                <div class='grid'>
+                    <div class=' g--1-4 tb__pink'>
                         &nbsp;
                     </div>
-                    <div class=' g--1-4 testbox-100-100 tb__pink'>
+                    <div class=' g--1-4  tb__pink'>
+                        &nbsp;
+                    </div>
+                    <div class=' g--1-4  tb__pink'>
+                        &nbsp;
+                    </div>
+                    <div class=' g--1-4 tb__pink'>
+                        &nbsp;
+                    </div>
+                    <div class=' g--1-4 tb__pink'>
+                        &nbsp;
+                    </div>
+                    <div class=' g--1-4 tb__pink'>
                         &nbsp;
                     </div>
                 </div>
@@ -606,16 +606,16 @@
                 </p>
 
                 <div class='grid grid--middle'>
-                    <div class=' g--1-4 testbox-100-100 tb__pink'>
+                    <div class=' g--1-4 tb__pink'>
                         &nbsp;
                     </div>
-                    <div class=' g--1-4 testbox-100-100 tb__pink'>
+                    <div class=' g--1-4 tb__pink'>
                         &nbsp;
                     </div>
-                    <div class=' g--1-4 testbox-100-100 tb__pink'>
+                    <div class=' g--1-4 tb__pink'>
                         &nbsp;
                     </div>
-                    <div class=' g--1-4 testbox-100-100 tb__pink'>
+                    <div class=' g--1-4 tb__pink'>
                         &nbsp;
                     </div>
                 </div>   
@@ -633,7 +633,7 @@
             </p>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -646,7 +646,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
                 
@@ -665,7 +665,7 @@
             </h2>
             <!--  code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
@@ -677,7 +677,7 @@
 
             <!--  hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny caps text_muted'>
+                <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
             

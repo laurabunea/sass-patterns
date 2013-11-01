@@ -308,3 +308,18 @@ $state-info-text:                #3a87ad;
 $state-info-bg:                  #d9edf7;
 //$state-info-border:              darken(spin($state-info-bg, -10), 7%);
 
+
+
+// Grid system
+// --------------------------------------------------
+
+// Number of columns in the grid system
+$grid-columns:              12;
+// Padding, to be divided by two and applied to the left and right of all columns
+$grid-gutter-width:         30px;
+// Point at which the navbar stops collapsing
+$grid-float-breakpoint:     $screen-skinny;
+
+$container-wide:            1120px;
+$container-desktop:         960px;
+

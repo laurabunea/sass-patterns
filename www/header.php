@@ -12,7 +12,7 @@
     <!-- Top Navigation Bar - this holds the parent categories -->
     <div class='navigation--wrapper tb__quarternary'>
         <div class='navigation--top clearfix'>
-            <h1 class='caps left logo' >
+            <h1 class='uppercase left logo' >
                 <a href='/'>
                     F<span>R</span>ED
                 </a>

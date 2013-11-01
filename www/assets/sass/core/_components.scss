@@ -52,3 +52,12 @@
       font-weight: normal;
     }
 }
+
+
+.tb__header {
+    color:$pg-header-txt;
+    border-bottom:1px solid $pg-header-border;
+    span {
+        color:$pg-header-span-txt;
+    }
+}
