@@ -25,6 +25,36 @@
                 </span>
             </h1>
         </div>
+        <p>
+            text 
+        </p>
+        <ul class='list--styled'>
+            <li>
+                <a href='#mixin-vendor'>
+                    Vendor
+                </a>
+            </li>
+            <li>
+                <a href='#mixin-media-break-point'>
+                    Media breakpoint
+                </a>
+            </li>
+            <li>
+                <a href='#mixin-opacity'>
+                    Opacity
+                </a>
+            </li>
+            <li>
+                <a href='#mixin-placeholder'>
+                    Placeholder
+                </a>
+            </li>
+            <li>
+                <a href='#mixin-placeholder'>
+                    Theme mixin
+                </a>
+            </li>
+        </ul><!--list unstyled ends-->
         <!-- /****************************************  Vendor block  *******************************/ -->
 
         <div class='section--xl' id='mixin-vendor'>
@@ -310,7 +340,7 @@
 </div><!--content  ends-->
 
 <!-- Side Navigation Bar - this holds the children categories -->
-<div class='navigation--side grid__item'>
+<!--<div class='navigation--side grid__item'>
     <ul class='list--unstyled'>
         <li>
             <a class='block--xs__stacked tb__primary' href='#mixin-vendor'>
@@ -337,8 +367,8 @@
                 Theme mixin
             </a>
         </li>
-    </ul><!--list unstyled ends-->
-</div><!--navigation side ends-->
+    </ul>
+</div>--><!--navigation side ends-->
 <?php 
     include 'footer.php'; 
 ?>

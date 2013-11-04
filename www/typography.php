@@ -60,10 +60,47 @@
                 </span>
             </h1>
         </div>
-            
+
+        <p>
+           Helper classes blah blah blah  
+        </p>
+
+        <ul class='list--styled' intro>
+            <li>
+                <a href='typo-paragraph'>
+                    Font sizes
+                </a>
+            </li>
+            <li>
+                <a href='typo-sans'>
+                    Sans vs Serif
+                </a>
+            </li>
+
+            <li>
+                <a href='#typo-cases'>
+                    Lower vs Upper case
+                </a>
+            </li>
+            <li>
+                <a href='#typo-text-align'>
+                    Text allignment
+                </a>
+            </li>
+            <li>
+                <a href='#typo-overflow'>
+                    Overflow vs Ellipsis
+                </a>
+            </li>
+            <li>
+                <a href='#typo-lists'>
+                    List styles
+                </a>
+            </li>
+        </ul>
 
         <!-- /****************************************  Text sizes  *******************************/ -->
-
+        <hr class='mx'>
         <div class='section--xl' id='typo-paragraph'>
             <h2>
                 Font sizes
@@ -175,7 +212,7 @@
             </h3>
             <p>
                 see
-                <a href='/components.html#components-pg-headers'>
+                <a href='/components.php#components-pg-headers'>
                     Sub headings
                 </a>
                 on the components page or have a look at the example below in Text sizes.
@@ -294,7 +331,47 @@
                 </p>
             </div><!-- hello world block ends -->
         </div><!--  typo-text-align ends -->
+<!-- /****************************************  Txt overflow and ellipsis  *******************************/ -->
+        <hr class='mx'>
+        <div class='section--xl' id='typo-overflow'>
+            <h2 >
+                Text overflow and Ellipsis
+            </h2>
+            <p> 
+                Notes 
+            </p>
+            <!--  code block starts -->
+            <div class='block--xs tb__tertiary'>
+                <h4 class='tiny uppercase text_muted'>
+                    code
+                </h4>
+                <pre>
+<code class="language-markup">
+    &lt;p class='text--overflow'&gt; Hello I'm a long sentence &lt;/p&gt;
+</code>
+                </pre>
+            </div><!-- code block starts -->
 
+            <!-- hello world block starts -->
+            <div class='block--xs__stacked tb__secondary clearfix'>
+                <h4 class='tiny uppercase text_muted'>
+                    hello world
+                </h4>
+                <div class='block--xs tb__primary testbox-100-100 push_left left' >
+                    <p class='text--overflow'>
+                        Hello I'm a text with an ellipsis
+                    </p>
+
+                    
+                </div>
+                <div class='block--xs tb__primary testbox-100-100 right' >
+                 
+                    <p class='text--nowrap'>
+                        I'm text that doesn't wrap
+                    </p>
+                </div>
+            </div><!-- hello world block ends -->
+        </div><!--typo-overflow ends-->
     <!-- /****************************************  List styles  *******************************/ -->
         <hr class='mx'>
         <div class='section--xl' id='typo-lists'>
@@ -407,49 +484,13 @@
         </div><!-- typo-lists ends -->
 
 
-        <!-- /****************************************  Sans/serif text  *******************************/ -->
-        <hr class='mx'>
-        <div class='section--xl' id='typo-sans'>
-            <h2 >
-                Text overflow 
-            </h2>
-            <p> 
-                Notes 
-            </p>
-            <!--  code block starts -->
-            <div class='block--xs tb__tertiary'>
-                <h4 class='tiny uppercase text_muted'>
-                    code
-                </h4>
-                <pre>
-<code class="language-markup">
-    &lt;p class='text-overflow'&gt; Hello I'm a long sentence &lt;/p&gt;
-  
-</code>
-                </pre>
-            </div><!-- code block starts -->
+        
 
-            <!-- hello world block starts -->
-            <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny uppercase text_muted'>
-                    hello world
-                </h4>
-                <div class='block tb__primary testbox-100-100' >
-                <p class='text--overflow'>
-                    Hello I'm a text with an ellipsis
-                </p>
-
-                <p class='text--nowrap'>
-                    I'm text that doesn't wrap
-                </p>
-                </div>
-            </div><!-- hello world block ends -->
-        </div><!--typo-sans ends-->
     </div><!--content-padding-->
 </div><!--content ends-->
 
 <!-- Side Navigation Bar - this holds the children categories -->
-<div class='navigation--side grid__item'>
+<!--<div class='navigation--side grid__item'>
     <ul class='list--unstyled'>
         <li>
             <a class='block--xs__stacked tb__primary' href='#typo-paragraph'>
@@ -472,13 +513,18 @@
             </a>
         </li>
         <li>
+            <a class='block--xs__stacked tb__primary' href='#typo-overflow'>
+                Overflow vs Ellipsis
+            </a>
+        </li>
+        <li>
             <a class='block--xs__stacked tb__primary' href='#typo-lists'>
                 List styles
             </a>
         </li>
 
-    </ul><!--list unstyled ends-->
-</div><!--navigation side ends-->
+    </ul>
+</div>--><!--navigation side ends-->
 
 <?php 
     include 'footer.php'; 

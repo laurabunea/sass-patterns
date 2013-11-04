@@ -1535,8 +1535,9 @@ h5 + p {
   /* 4px @ 14px */
 }
 
-/* line 149, ../sass/core/_typography.scss */
-p + p {
+/* line 150, ../sass/core/_typography.scss */
+p + p,
+ul.list--styled li + li {
   margin-top: .571428571em;
   /* 8px @ 14px */
 }
@@ -1545,12 +1546,12 @@ p + p {
  * ----------------------------------------------------------------------------
  *
  */
-/* line 161, ../sass/core/_typography.scss */
+/* line 162, ../sass/core/_typography.scss */
 .sans {
   font-family: "helvetica", sans-serif;
 }
 
-/* line 165, ../sass/core/_typography.scss */
+/* line 166, ../sass/core/_typography.scss */
 .serif {
   font-family: "georgia", serif;
 }
@@ -1559,12 +1560,12 @@ p + p {
  *  6. Lowercase vs Uppercase
  * ----------------------------------------------------------------------------
  */
-/* line 176, ../sass/core/_typography.scss */
+/* line 177, ../sass/core/_typography.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 179, ../sass/core/_typography.scss */
+/* line 180, ../sass/core/_typography.scss */
 .lowercase {
   text-transform: lowercase;
 }
@@ -1578,17 +1579,17 @@ p + p {
     <p class="text_align--right">Right aligned text.</p>
 
  */
-/* line 196, ../sass/core/_typography.scss */
+/* line 197, ../sass/core/_typography.scss */
 .text_align--left {
   text-align: left;
 }
 
-/* line 199, ../sass/core/_typography.scss */
+/* line 200, ../sass/core/_typography.scss */
 .text_align--right {
   text-align: right;
 }
 
-/* line 202, ../sass/core/_typography.scss */
+/* line 203, ../sass/core/_typography.scss */
 .text_align--center {
   text-align: center;
 }
@@ -1597,20 +1598,20 @@ p + p {
  * 8. List styles
  * ----------------------------------------------------------------------------
  */
-/* line 213, ../sass/core/_typography.scss */
+/* line 214, ../sass/core/_typography.scss */
 .list--unstyled, .list--inline {
   list-style: none;
   padding-left: 0;
   margin: 0 0 0 0;
 }
 
-/* line 219, ../sass/core/_typography.scss */
+/* line 220, ../sass/core/_typography.scss */
 .list--unstyled > li, .list--inline > li {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 233, ../sass/core/_typography.scss */
+/* line 234, ../sass/core/_typography.scss */
 .list--styled {
   padding-left: 1.5em;
   margin-top: .857142857em;
@@ -1903,22 +1904,27 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 
 */
 /* line 7, ../sass/core/_page-specific.scss */
+.content_wrapper,
+.navigation--top {
+  max-width: 760px;
+}
+
+/* line 10, ../sass/core/_page-specific.scss */
 .content_wrapper {
-  width: 860px;
   margin: 80px auto 80px auto;
 }
 
-/* line 12, ../sass/core/_page-specific.scss */
+/* line 14, ../sass/core/_page-specific.scss */
 .content {
-  width: 70%;
+  width: 100%;
 }
 
-/* line 15, ../sass/core/_page-specific.scss */
+/* line 17, ../sass/core/_page-specific.scss */
 .content--padding {
   padding: 2em 3em;
 }
 
-/* line 19, ../sass/core/_page-specific.scss */
+/* line 21, ../sass/core/_page-specific.scss */
 .navigation--wrapper {
   position: fixed;
   top: 0;
@@ -1926,92 +1932,91 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   z-index: 5;
 }
 
-/* line 25, ../sass/core/_page-specific.scss */
+/* line 27, ../sass/core/_page-specific.scss */
 .navigation--top {
   margin: 0 auto;
-  max-width: 860px;
 }
 
-/* line 30, ../sass/core/_page-specific.scss */
+/* line 31, ../sass/core/_page-specific.scss */
 .navigation--top li a {
   color: #fff;
   text-decoration: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
-/* line 35, ../sass/core/_page-specific.scss */
+/* line 36, ../sass/core/_page-specific.scss */
 .navigation--top li a.active {
   background-color: #2E2F2B;
 }
 
-/* line 38, ../sass/core/_page-specific.scss */
+/* line 39, ../sass/core/_page-specific.scss */
 .navigation--top li a:hover {
   color: #E6DB74;
 }
 
-/* line 43, ../sass/core/_page-specific.scss */
+/* line 44, ../sass/core/_page-specific.scss */
 .navigation--side {
   width: 25%;
 }
 
-/* line 47, ../sass/core/_page-specific.scss */
+/* line 48, ../sass/core/_page-specific.scss */
 .navigation--side li a,
 .navigation--top li a {
   display: block;
   text-decoration: none;
 }
 
-/* line 52, ../sass/core/_page-specific.scss */
+/* line 53, ../sass/core/_page-specific.scss */
 .navigation--side li a {
   color: #4B4D43;
 }
 
-/* line 56, ../sass/core/_page-specific.scss */
+/* line 57, ../sass/core/_page-specific.scss */
 .navigation--side li a:hover {
   background-color: #4D4D4D;
   color: #E6DB74;
   box-shadow: none;
 }
 
-/* line 63, ../sass/core/_page-specific.scss */
+/* line 64, ../sass/core/_page-specific.scss */
 .logo {
   display: inline-block;
   margin-top: 12px;
   font-size: 1.8em;
 }
-/* line 67, ../sass/core/_page-specific.scss */
+/* line 68, ../sass/core/_page-specific.scss */
 .logo a {
   color: #fff;
 }
-/* line 70, ../sass/core/_page-specific.scss */
+/* line 71, ../sass/core/_page-specific.scss */
 .logo a:hover {
   color: #E6DB74;
 }
-/* line 76, ../sass/core/_page-specific.scss */
+/* line 77, ../sass/core/_page-specific.scss */
 .logo span {
   color: #E6DB74;
 }
 
-/* line 82, ../sass/core/_page-specific.scss */
+/* line 83, ../sass/core/_page-specific.scss */
 .testbox {
   height: 150px;
   width: 150px;
   display: inline-block;
 }
 
-/* line 87, ../sass/core/_page-specific.scss */
+/* line 88, ../sass/core/_page-specific.scss */
 .testbox-100-100 {
   height: 100px;
   width: 100px;
 }
 
-/* line 91, ../sass/core/_page-specific.scss */
+/* line 92, ../sass/core/_page-specific.scss */
 .testbox-400-100 {
   height: 100px;
   width: 300px;
 }
 
-/* line 94, ../sass/core/_page-specific.scss */
+/* line 95, ../sass/core/_page-specific.scss */
 .homepage {
   background-color: #4D4D4D;
   color: #fff;
@@ -2019,17 +2024,17 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 
 @media all and (max-width: 800px) {
   /*dirty i know!*/
-  /* line 102, ../sass/core/_page-specific.scss */
+  /* line 103, ../sass/core/_page-specific.scss */
   .grid__item, .grid > *, .grid {
     width: 100%;
   }
 
-  /* line 106, ../sass/core/_page-specific.scss */
+  /* line 107, ../sass/core/_page-specific.scss */
   .navigation--side {
     display: none;
   }
 
-  /* line 109, ../sass/core/_page-specific.scss */
+  /* line 110, ../sass/core/_page-specific.scss */
   .content--padding {
     padding: 1.5em;
   }

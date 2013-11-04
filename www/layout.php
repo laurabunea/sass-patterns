@@ -41,6 +41,64 @@
             </h1>
         </div>
 
+        <p>
+            blah blah blah
+        </p>
+        <ul class='list--styled'>
+            <li>
+                <a href='#layout-clearfix'>
+                    Clearfix
+                </a>
+            </li>
+            <li>
+                <a href='#layout-inline-block'>
+                    Inline Blocks
+                </a>
+            </li>
+            <li>
+                <a href='#layout-positioning'>
+                    Positioning
+                </a>
+            </li>
+            <li>
+                <a href='#layout-generic-block'>
+                    Generic blocks
+                </a>
+            </li>
+             <li>
+                <a href='#layout-section-block'>
+                    Section blocks
+                </a>
+            </li>
+            <li>
+                <a href='#layout-media-block'>
+                    Media Blocks
+                </a>
+            </li>
+            <li>
+                <a href='#layout-icon-block'>
+                    Icon block
+                </a>
+            </li>
+            <li>
+                <a href='#layout-arrows'>
+                    Arrows
+                </a>
+            </li>
+            <li>
+                <a href='#layout-inline-grid'>
+                    Inline Grid
+                </a>
+            </li>
+
+            <li>
+                <a href='#layout-append'>
+                    Prepend vs Append
+                </a>
+            </li>
+            
+        </ul><!--list unstyled ends-->
+
         <!-- /****************************************  Clearfix  *******************************/ -->
 
         <div class='section--xl' id='layout-clearfix'>
@@ -688,7 +746,7 @@
 
 
 <!-- Side Navigation Bar - this holds the children categories -->
-<div class='navigation--side grid__item'>
+<!--<div class='navigation--side grid__item'>
     <ul class='list--unstyled'>
         <li>
             <a class='block--xs__stacked tb__primary' href='#layout-clearfix'>
@@ -742,8 +800,8 @@
             </a>
         </li>
         
-    </ul><!--list unstyled ends-->
-</div><!--navigation side ends-->
+    </ul>
+</div>--><!--navigation side ends-->
 <?php 
     include 'footer.php'; 
 ?>

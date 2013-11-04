@@ -12,6 +12,34 @@
                 </span>
             </h1>
         </div>
+
+        <p>
+            Text
+        </p>
+        <ul class='list--styled'>
+            <li>
+                <a href='#themes-blocks'>
+                    Theme blocks
+                </a>
+            </li>
+            <li>
+                <a href='#themes-text'>
+                    Emphasis text colours
+                </a>
+            </li>
+            <li>
+                <a href='#themes-text'>
+                    Button colours
+                </a>
+            </li>
+            <li>
+                <a href='#themes-text'>
+                    Tables
+                </a>
+            </li>
+            
+        </ul><!--list unstyled ends-->
+        
     	<!-- /****************************************  Block themes  *******************************/ -->
 
         <div class='section--xl' id='theme-blocks'>
@@ -194,7 +222,7 @@
 
 
 <!-- Side Navigation Bar - this holds the children categories -->
-<div class='navigation--side grid__item'>
+<!--<div class='navigation--side grid__item'>
     <ul class='list--unstyled'>
         <li>
             <a class='block--xs__stacked tb__primary' href='#themes-blocks'>
@@ -217,8 +245,8 @@
             </a>
         </li>
         
-    </ul><!--list unstyled ends-->
-</div><!--navigation side ends-->
+    </ul>
+</div>--><!--navigation side ends-->
 
 <?php 
     include 'footer.php'; 

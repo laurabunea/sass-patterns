@@ -15,6 +15,25 @@
         <p class='intro'>
             Notes
         </p>
+        <ul class='list--styled'>
+            <li>
+                <a href='#btn-variations'>
+                    Button variations
+                </a>
+            </li>
+            <li>
+                <a href='#btn-modifier'>
+                    Button modifiers
+                </a>
+            </li>
+            <li>
+                <a href='#btn-icons'>
+                    Buttons with icons
+                </a>
+            </li>
+    
+
+        </ul><!--list unstyled ends-->
         <!--<p>Make a button with <code>&lt;a class='btn'&gt;A button&lt;/a&gt;</code>. You can build your buttons out of a bunch of useful classnames.</p>-->
 
         <!-- /****************************************  Button variations  *******************************/ -->
@@ -294,7 +313,7 @@
 </div>
 
 <!-- Side Navigation Bar - this holds the children categories -->
-<div class='navigation--side grid__item'>
+<!--<div class='navigation--side grid__item'>
     <ul class='list--unstyled'>
         <li>
             <a class='block--xs__stacked tb__primary' href='#btn-variations'>
@@ -311,14 +330,10 @@
                 Buttons with icons
             </a>
         </li>
-        <!--<li>
-            <a class='block--xs tb__primary' href='#layout-clearfix'>
-                Buttons on media/content elements
-            </a>
-        </li>-->
+        
 
-    </ul><!--list unstyled ends-->
-</div><!--navigation side ends-->
+    </ul>
+</div>--><!--navigation side ends-->
 <?php 
     include 'footer.php'; 
 ?> 

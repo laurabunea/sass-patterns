@@ -4,12 +4,35 @@
 
 <div class='content tb__primary grid__item'>
     <div class='content--padding'>
+        
         <div class='page-header tb__header'>
             <h1>
-                Components 
+                Components   
             </h1>
         </div>
-        
+
+        <p class='intro'>
+            text here
+        </p>
+        <ul class='list--styled'>
+            <li>
+                <a href='#components-bread-crumbs'>
+                    Breadcrumbs
+                </a>
+            </li>
+            <li>
+                <a href='#components-badges'>
+                    Badges
+                </a>
+            </li>
+            <li>
+                <a href='#components-pg-headers'>
+                    Badges
+                </a>
+            </li>
+        </ul><!--list unstyled ends-->
+
+
         <!-- /****************************************  Breadcrumbs *******************************/ -->
         <div class='section--xl' id='components-bread-crumbs'>
             <h2  class='h3'>
@@ -150,7 +173,7 @@
 </div><!--content ends-->
 
 <!-- Side Navigation Bar - this holds the children categories -->
-<div class='navigation--side grid__item'>
+<!--<div class='navigation--side grid__item'>
     <ul class='list--unstyled'>
         <li>
             <a class='block--xs__stacked tb__primary' href='#components-bread-crumbs'>
@@ -167,8 +190,8 @@
                 Badges
             </a>
         </li>
-    </ul><!--list unstyled ends-->
-</div><!--navigation side ends-->
+    </ul>
+</div>--><!--navigation side ends-->
 
 <?php 
     include 'footer.php'; 

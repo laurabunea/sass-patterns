@@ -3,14 +3,16 @@
 shame!!!! just some dirty styles to get a basic style. i WILL refacter to get the project started :) 
 
 */
-
+.content_wrapper,
+.navigation--top {
+    max-width:760px;
+}
 .content_wrapper {
-    width:860px;
     margin:80px auto 80px auto;
 
 }
     .content {
-        width: 70%;
+        width: 100%;
     }
         .content--padding {
             padding:2em 3em;
@@ -24,7 +26,6 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
     }
         .navigation--top {
             margin:0 auto;
-            max-width: 860px;
 
         }
             .navigation--top li a {

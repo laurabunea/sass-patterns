@@ -146,7 +146,8 @@ h5 + p {
     margin-top: .285714286em;               /* 4px @ 14px */
 }
 
-p + p{
+p + p, 
+ul.list--styled li + li {
     margin-top: .571428571em;               /* 8px @ 14px */               
 }
 
@@ -237,7 +238,6 @@ p + p{
     //or custom image here
     //list-style-image: url('');
 }
-
 
 
 
