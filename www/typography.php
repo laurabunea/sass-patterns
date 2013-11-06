@@ -13,24 +13,30 @@
             </h1>
         </div>
 
-        <p class='intro'>
-            There are a couple of things you need to set up before you begin a project. These are:
+        <p class=''>
+            There are a couple of things you need to set up before you begin a project:
         </p>
 
-        <ul class='list--styled intro'>   
-            <li>base font family</li>
-            <li>base font sizes</li>
-            <li>base line heights and text heirarchy</li>
+        <ul class='list--styled '>   
+            <li>
+                base font family
+            </li>
+            <li>
+                base font sizes
+            </li>
+            <li>
+                base line heights and text heirarchy
+            </li>
         </ul>
        
-        <p class='intro'>
+        <p class=''>
             The best way to do this is sit down with the designer and go through the
             <a href='/text-heirarchy.php'>
                 text heirarchy
             </a>
             template with them.
         </p>
-        <div class='page-header tb__header mxx'>
+        <div class='page-header tb__header mx'>
             <h1>
                 Typography
                 <span class='tiny'>
@@ -38,21 +44,21 @@
                 </span>
             </h1>
         </div>
-    <ul class='list--styled'>
-        <li>
-            Leave html, body font-size at 100% -  Even for responsive sites, it's nice knowing that 1em is always 16px. 
-            Computers calculate things in base2 rather than base10. This is a fundamentally awesome feature of the browser and 
-            we shouldn't break it.
-        </li>
-        <li>
-            Always set font-sizes in ems.
-        </li>
-        <li>
-            Don't use units on line-heights
-        </li>
-    </ul>
+        <ul class='list--styled'>
+            <li>
+                Leave html, body font-size at 100% -  Even for responsive sites, it's nice knowing that 1em is always 16px. 
+                Computers calculate things in base2 rather than base10. This is a fundamentally awesome feature of the browser and 
+                we shouldn't break it.
+            </li>
+            <li>
+                Always set font-sizes in ems.
+            </li>
+            <li>
+                Don't use units on line-heights
+            </li>
+        </ul>
 
-        <div class='page-header tb__header mxx '>
+        <div class='page-header tb__header mx'>
             <h1>
                 Typography
                 <span class='tiny'>
@@ -65,7 +71,7 @@
            Helper classes blah blah blah  
         </p>
 
-        <ul class='list--styled' intro>
+        <ul class='list--styled'>
             <li>
                 <a href='typo-paragraph'>
                     Font sizes
@@ -76,7 +82,6 @@
                     Sans vs Serif
                 </a>
             </li>
-
             <li>
                 <a href='#typo-cases'>
                     Lower vs Upper case

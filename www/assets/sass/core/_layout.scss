@@ -286,9 +286,10 @@
 	    @extend .grid__item;
 	}
 
-    .grid__item{
+    .grid__item {
         @extend .inline-block;
-        font-size: 14px;/*?????*/
+        //@extend %type__size_14;
+        font-size:16px;
         text-align: left;
         vertical-align: top;
     }
@@ -303,10 +304,9 @@
 /**
  * Vertical align these grid items in the middle!
  */
-.grid--middle > .grid__item{
+.grid--middle > .grid__item {
     vertical-align: middle;
 }
-
     .g--1-1{
         width: 100%;
     }

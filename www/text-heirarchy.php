@@ -1,7 +1,7 @@
 <?php 
     include 'header.php'; 
 ?>
-<div class='content clearfix tb__primary block'>
+<div class='content clearfix tb__primary grid__item'>
     <div class='content--padding'>
         <div class='page-header tb__header'>
             <h1>
@@ -26,7 +26,10 @@
         	<h5>
         		H5 Heading
         	</h5>
-        	<hr>
+        <div>
+        <div class='section--xl'>   
+        	
+            <hr>
         	<h1>
         		H1 Heading
         	</h1>

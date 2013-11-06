@@ -20,6 +20,28 @@
  * ----------------------------------------------------------------------------
  *
  */
+@function px-to-em($size, $context: 16) {
+    @return #{($size / $context)}em;
+}
+
+.type__size--body { font-size: px-to-em(16); } 
+ 	%type__size_72  { font-size: px-to-em(72);  }
+    %type__size_36  { font-size: px-to-em(32);  }
+    %type__size_32  { font-size: px-to-em(32);  }
+    %type__size_28  { font-size: px-to-em(28);  }
+    %type__size_22  { font-size: px-to-em(22);  }
+    %type__size_21  { font-size: px-to-em(21);  }
+    %type__size_20  { font-size: px-to-em(20);  }
+    %type__size_19  { font-size: px-to-em(19);  }
+    %type__size_18  { font-size: px-to-em(18);  }
+    %type__size_16  { font-size: px-to-em(16);  }
+    %type__size_15  { font-size: px-to-em(15);  }
+    %type__size_14  { font-size: px-to-em(14);  }
+    %type__size_13  { font-size: px-to-em(13);  }
+    %type__size_12  { font-size: px-to-em(12);  }
+    %type__size_11  { font-size: px-to-em(11);  }
+
+
 $sub-header:	#999;
 
 $bg-color:		#ededed;
@@ -33,7 +55,7 @@ $bg-color:		#ededed;
 
 
 $base-font-color:#2E2F2B;
-$base-line-height:        	1.428571429; // 20/14
+$base-line-height: 1.428571429; // 20/14
 
 
 /**
