@@ -468,52 +468,42 @@ ol {
  * ----------------------------------------------------------------------------
  *
  */
-/* line 27, ../sass/core/_variables.scss */
-.type__size--body {
-  font-size: 1em;
-}
-
-/* line 28, ../sass/core/_variables.scss */
+/* line 37, ../sass/core/_variables.scss */
 .h0 {
   font-size: 4.5em;
 }
 
-/* line 29, ../sass/core/_variables.scss */
+/* line 38, ../sass/core/_variables.scss */
 h1, .h1 {
-  font-size: 2em;
+  font-size: 2.25em;
 }
 
-/* line 30, ../sass/core/_variables.scss */
+/* line 39, ../sass/core/_variables.scss */
 h2, .h2 {
   font-size: 2em;
 }
 
-/* line 32, ../sass/core/_variables.scss */
+/* line 40, ../sass/core/_variables.scss */
 h3, .h3 {
   font-size: 1.375em;
 }
 
-/* line 36, ../sass/core/_variables.scss */
+/* line 42, ../sass/core/_variables.scss */
 h4, .h4 {
   font-size: 1.125em;
 }
 
-/* line 37, ../sass/core/_variables.scss */
+/* line 43, ../sass/core/_variables.scss */
 h5, .h5, .intro {
   font-size: 1em;
 }
 
-/* line 39, ../sass/core/_variables.scss */
-h6, .h6, p, .para, ul {
+/* line 44, ../sass/core/_variables.scss */
+h6, .h6, p, .para, ul, .small {
   font-size: 0.875em;
 }
 
-/* line 41, ../sass/core/_variables.scss */
-.small {
-  font-size: 0.75em;
-}
-
-/* line 42, ../sass/core/_variables.scss */
+/* line 46, ../sass/core/_variables.scss */
 .tiny {
   font-size: 0.6875em;
 }
@@ -530,107 +520,107 @@ h6, .h6, p, .para, ul {
  * 2. Spacing: she's a fickle mistress.
  * -----------------------------------------------------------------------------
  */
-/* line 88, ../sass/core/_variables.scss */
+/* line 105, ../sass/core/_variables.scss */
 .m0 {
   margin-top: 0;
 }
 
-/* line 89, ../sass/core/_variables.scss */
+/* line 106, ../sass/core/_variables.scss */
 .m0--b, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .para, ul {
   margin-bottom: 0;
 }
 
-/* line 90, ../sass/core/_variables.scss */
+/* line 107, ../sass/core/_variables.scss */
 .xxxm {
   margin-top: 0.1em;
 }
 
-/* line 91, ../sass/core/_variables.scss */
+/* line 108, ../sass/core/_variables.scss */
 .xxm {
   margin-top: 0.5em;
 }
 
-/* line 92, ../sass/core/_variables.scss */
+/* line 109, ../sass/core/_variables.scss */
 .xm {
   margin-top: 1em;
 }
 
-/* line 93, ../sass/core/_variables.scss */
+/* line 110, ../sass/core/_variables.scss */
 .m {
   margin-top: 1.5em;
 }
 
-/* line 94, ../sass/core/_variables.scss */
+/* line 111, ../sass/core/_variables.scss */
 .mx {
   margin-top: 2.25em;
 }
 
-/* line 95, ../sass/core/_variables.scss */
+/* line 112, ../sass/core/_variables.scss */
 .mxx {
   margin-top: 3em;
 }
 
-/* line 96, ../sass/core/_variables.scss */
+/* line 113, ../sass/core/_variables.scss */
 .mxxx {
   margin-top: 4.5em;
 }
 
-/* line 98, ../sass/core/_variables.scss */
+/* line 115, ../sass/core/_variables.scss */
 .xxm--b {
   margin-bottom: 0.5em;
 }
 
-/* line 99, ../sass/core/_variables.scss */
+/* line 116, ../sass/core/_variables.scss */
 .xm--b {
   margin-bottom: 1em;
 }
 
-/* line 100, ../sass/core/_variables.scss */
+/* line 117, ../sass/core/_variables.scss */
 .m--b {
   margin-bottom: 1.5em;
 }
 
-/* line 101, ../sass/core/_variables.scss */
+/* line 118, ../sass/core/_variables.scss */
 .mx--b {
   margin-bottom: 2.25em;
 }
 
-/* line 102, ../sass/core/_variables.scss */
+/* line 119, ../sass/core/_variables.scss */
 .mxx--b {
   margin-bottom: 3em;
 }
 
-/* line 104, ../sass/core/_variables.scss */
+/* line 121, ../sass/core/_variables.scss */
 .p0 {
   padding-top: 0 !important;
 }
 
-/* line 105, ../sass/core/_variables.scss */
+/* line 122, ../sass/core/_variables.scss */
 .p0--b {
   padding-bottom: 0 !important;
 }
 
-/* line 106, ../sass/core/_variables.scss */
+/* line 123, ../sass/core/_variables.scss */
 .xxp {
   padding-top: 0.5em;
 }
 
-/* line 107, ../sass/core/_variables.scss */
+/* line 124, ../sass/core/_variables.scss */
 .xp {
   padding-top: 1em;
 }
 
-/* line 108, ../sass/core/_variables.scss */
+/* line 125, ../sass/core/_variables.scss */
 .p {
   padding-top: 1.5em;
 }
 
-/* line 109, ../sass/core/_variables.scss */
+/* line 126, ../sass/core/_variables.scss */
 .px {
   padding-top: 2.25em;
 }
 
-/* line 110, ../sass/core/_variables.scss */
+/* line 127, ../sass/core/_variables.scss */
 .pxx {
   padding-top: 3em;
 }
@@ -1452,31 +1442,31 @@ h1, .h1 {
   margin-top: 0.66667em;
 }
 
-/* line 67, ../sass/core/_typography.scss */
+/* line 64, ../sass/core/_typography.scss */
 h2, .h2 {
   line-height: 1.2;
   margin-top: 0.75em;
 }
 
-/* line 74, ../sass/core/_typography.scss */
+/* line 71, ../sass/core/_typography.scss */
 h3, .h3 {
   line-height: 1.2;
   margin-top: 1.09091em;
 }
 
-/* line 81, ../sass/core/_typography.scss */
+/* line 78, ../sass/core/_typography.scss */
 h4, .h4 {
   line-height: 1.33333333;
   margin-top: 1.11111em;
 }
 
-/* line 88, ../sass/core/_typography.scss */
+/* line 85, ../sass/core/_typography.scss */
 h5, .h5 {
   line-height: 1.2;
   margin-top: 0.75em;
 }
 
-/* line 95, ../sass/core/_typography.scss */
+/* line 92, ../sass/core/_typography.scss */
 h6, .h6 {
   line-height: 1.2;
   margin-top: 0.85714em;
@@ -1486,7 +1476,7 @@ h6, .h6 {
  *  3. Paragraph styles
  * ----------------------------------------------------------------------------
  */
-/* line 108, ../sass/core/_typography.scss */
+/* line 105, ../sass/core/_typography.scss */
 p, .para, ul {
   line-height: 1.5em;
   margin-top: 0.85714em;
@@ -1496,7 +1486,7 @@ p, .para, ul {
  * 4. Typographic relationships (nawww, aren't they so good together?)
  * ----------------------------------------------------------------------------
  */
-/* line 136, ../sass/core/_typography.scss */
+/* line 133, ../sass/core/_typography.scss */
 h4 + h6,
 h4 + p,
 h5 + p {
@@ -1504,7 +1494,7 @@ h5 + p {
   /* 4px @ 14px */
 }
 
-/* line 141, ../sass/core/_typography.scss */
+/* line 138, ../sass/core/_typography.scss */
 p + p,
 ul.list--styled li + li {
   margin-top: .571428571em;
@@ -1515,7 +1505,7 @@ ul.list--styled li + li {
  * 5. hr
  * ----------------------------------------------------------------------------
  */
-/* line 150, ../sass/core/_typography.scss */
+/* line 148, ../sass/core/_typography.scss */
 hr {
   background-color: #e5e5e5;
   border: none;
@@ -1527,12 +1517,12 @@ hr {
  *  6. Lowercase vs Uppercase
  * ----------------------------------------------------------------------------
  */
-/* line 162, ../sass/core/_typography.scss */
+/* line 161, ../sass/core/_typography.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 165, ../sass/core/_typography.scss */
+/* line 164, ../sass/core/_typography.scss */
 .lowercase {
   text-transform: lowercase;
 }
@@ -1541,17 +1531,17 @@ hr {
  * 7. Text Allignment classes
  * ----------------------------------------------------------------------------
  */
-/* line 175, ../sass/core/_typography.scss */
+/* line 174, ../sass/core/_typography.scss */
 .text_align--left {
   text-align: left;
 }
 
-/* line 178, ../sass/core/_typography.scss */
+/* line 177, ../sass/core/_typography.scss */
 .text_align--right {
   text-align: right;
 }
 
-/* line 181, ../sass/core/_typography.scss */
+/* line 180, ../sass/core/_typography.scss */
 .text_align--center {
   text-align: center;
 }
@@ -1560,33 +1550,33 @@ hr {
  * 8. List styles
  * ----------------------------------------------------------------------------
  */
-/* line 192, ../sass/core/_typography.scss */
+/* line 190, ../sass/core/_typography.scss */
 .list--unstyled, .list--inline {
   list-style: none;
   padding-left: 0;
   margin: 0 0 0 0;
 }
 
-/* line 198, ../sass/core/_typography.scss */
+/* line 196, ../sass/core/_typography.scss */
 .list--unstyled > li, .list--inline > li {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 213, ../sass/core/_typography.scss */
+/* line 211, ../sass/core/_typography.scss */
 .list--styled, .list--styled_decimal, .list--styled_alpha {
   padding-left: 1.5em;
   margin-top: .857142857em;
   list-style: circle;
 }
 
-/* line 225, ../sass/core/_typography.scss */
+/* line 223, ../sass/core/_typography.scss */
 .list--styled_decimal {
   list-style: decimal-leading-zero;
   padding-left: 2.25em;
 }
 
-/* line 231, ../sass/core/_typography.scss */
+/* line 229, ../sass/core/_typography.scss */
 .list--styled_alpha {
   list-style: lower-alpha;
 }
@@ -1595,7 +1585,7 @@ hr {
  * 9. text overflow helper class
  * ----------------------------------------------------------------------------
  */
-/* line 241, ../sass/core/_typography.scss */
+/* line 239, ../sass/core/_typography.scss */
 .text--overflow {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1603,7 +1593,7 @@ hr {
   width: 100%;
 }
 
-/* line 249, ../sass/core/_typography.scss */
+/* line 247, ../sass/core/_typography.scss */
 .text--nowrap {
   white-space: nowrap;
 }
@@ -1616,7 +1606,7 @@ hr {
  * these properties right here. Maybe consider scoping this to a class for
  * chrome/mac osx only at some point?
  */
-/* line 262, ../sass/core/_typography.scss */
+/* line 260, ../sass/core/_typography.scss */
 html,
 body {
   -webkit-font-smoothing: antialiased;
@@ -1627,7 +1617,7 @@ body {
  * 11. hide text
  * ----------------------------------------------------------------------------
  */
-/* line 271, ../sass/core/_typography.scss */
+/* line 270, ../sass/core/_typography.scss */
 .visually_hidden {
   position: absolute;
   overflow: hidden;

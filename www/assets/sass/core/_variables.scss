@@ -20,33 +20,36 @@
  * ----------------------------------------------------------------------------
  *
  */
+
+ 
 @function px-to-em($size, $context: 16) {
     @return #{($size / $context)}em;
 }
 
-.type__size--body { font-size: px-to-em(16); } 
- 	%type__size_72  { font-size: px-to-em(72);  }
-    %type__size_36  { font-size: px-to-em(32);  }
-    %type__size_32  { font-size: px-to-em(32);  }
-    %type__size_28  { font-size: px-to-em(28);  }
-    %type__size_22  { font-size: px-to-em(22);  }
-    %type__size_21  { font-size: px-to-em(21);  }
-    %type__size_20  { font-size: px-to-em(20);  }
-    %type__size_19  { font-size: px-to-em(19);  }
-    %type__size_18  { font-size: px-to-em(18);  }
-    %type__size_16  { font-size: px-to-em(16);  }
-    %type__size_15  { font-size: px-to-em(15);  }
-    %type__size_14  { font-size: px-to-em(14);  }
-    %type__size_13  { font-size: px-to-em(13);  }
-    %type__size_12  { font-size: px-to-em(12);  }
-    %type__size_11  { font-size: px-to-em(11);  }
+$font-size-xxxxl:       72;
+$font-size-xxxl:        36;
+$font-size-xxl:         32;
+$font-size-xl:          22;
+$font-size-l:           20;
+$font-size-m:           18;
+$font-size-s:           16;
+$font-size-xs:          14;
+$font-size-xxs:         12;
+$font-size-xxxs:        11;
 
+%font-size-xxxxl     { font-size: px-to-em($font-size-xxxxl);}
+%font-size-xxxl     { font-size: px-to-em($font-size-xxxl);}
+%font-size-xxl      { font-size: px-to-em($font-size-xxl);}
+%font-size-xl       { font-size: px-to-em($font-size-xl);}
+%font-size-l        { font-size: px-to-em($font-size-l);}
+%font-size-m        { font-size: px-to-em($font-size-m);}
+%font-size-s        { font-size: px-to-em($font-size-s);}
+%font-size-xs       { font-size: px-to-em($font-size-xs);}
+%font-size-xxs      { font-size: px-to-em($font-size-xxs);}
+%font-size-xxxs     { font-size: px-to-em($font-size-xxxs);}
 
 $sub-header:	#999;
 $bg-color:      #4D4D4D;
-//$bg-color:		#ededed;
-
-
 
 /**
  * 1. Base Typography Defaults

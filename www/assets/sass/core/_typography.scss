@@ -51,52 +51,49 @@ a {
  */
 
 .h0 {
-    @extend %type__size_72;
+    @extend %font-size-xxxxl;
 }
 
 h1, .h1 {
     @extend .m0--b;
-    @extend %type__size_36;                   
+    @extend %font-size-xxxl;                   
     line-height: 1;
-    //The top margin is 24 which relates to the font size of 36 
-    //if you change the font size you need to change the number below (36)
-    //this is the same for all the top margins below
-    margin-top: px-to-em(24, 36);              
+    margin-top: px-to-em(24, $font-size-xxxl);              
 }
 
 h2, .h2 {
     @extend .m0--b;
-    @extend %type__size_32;                    
+    @extend %font-size-xxl;                    
     line-height: 1.2;
-    margin-top: px-to-em(24, 32);                  
+    margin-top: px-to-em(24, $font-size-xxl);                  
 }
 
 h3, .h3 {
     @extend .m0--b;
-    @extend %type__size_22;
+    @extend %font-size-xl;
     line-height: 1.2;
-    margin-top: px-to-em(24, 22);
+    margin-top: px-to-em(24, $font-size-xl);
 }
 
 h4, .h4 {
     @extend .m0--b;
-    @extend %type__size_18;
+    @extend %font-size-m;
     line-height: 1.33333333;
-    margin-top: px-to-em(20, 18);
+    margin-top: px-to-em(20, $font-size-m);
 }
 
 h5, .h5 {
     @extend .m0--b;
-    @extend %type__size_16;
+    @extend %font-size-s;
     line-height: 1.2;
-    margin-top: px-to-em(12, 16);
+    margin-top: px-to-em(12, $font-size-s);
 }
 
 h6, .h6 {
     @extend .m0--b;
-    @extend %type__size_14;
+    @extend %font-size-xs;
     line-height: 1.2;
-    margin-top: px-to-em(12, 14);
+    margin-top: px-to-em(12, $font-size-xs);
 }
 
 
@@ -107,22 +104,22 @@ h6, .h6 {
 
 p, .para, ul {
     @extend .m0--b;
-    @extend %type__size_14;
+    @extend %font-size-xs;
     //reminder line height is relative to the font size declared above
-    line-height: px-to-em(21, 14); 
-    margin-top: px-to-em(12, 14);              
+    line-height: px-to-em(21, $font-size-xs); 
+    margin-top: px-to-em(12, $font-size-xs);              
 }
 
 .intro { 
-    @extend %type__size_16;                    
+    @extend %font-size-s;                    
 }
 
 .small { 
-    @extend %type__size_12;                     
+    @extend %font-size-xs;                     
 }
 
 .tiny {
-    @extend %type__size_11;                      
+    @extend %font-size-xxxs;                      
 }
 
 
@@ -142,6 +139,7 @@ ul.list--styled li + li {
     margin-top: .571428571em;               /* 8px @ 14px */               
 }
 
+
 /**
  * 5. hr
  * ----------------------------------------------------------------------------
@@ -159,6 +157,7 @@ ul.list--styled li + li {
  *  6. Lowercase vs Uppercase
  * ----------------------------------------------------------------------------
  */
+
 .uppercase {
     text-transform:uppercase;
 }
@@ -181,7 +180,6 @@ ul.list--styled li + li {
 .text_align--center  {
     text-align: center;
 }
-
 
 
 /**
@@ -264,6 +262,7 @@ ul.list--styled li + li {
     text-rendering: optimizeLegibility;
 }
 
+
 /**
  * 11. hide text
  * ----------------------------------------------------------------------------
@@ -275,3 +274,4 @@ ul.list--styled li + li {
     height: 1px; width: 1px;
     margin: -1px; padding: 0; border: 0;
 }
+
