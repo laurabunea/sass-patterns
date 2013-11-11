@@ -15,6 +15,7 @@
  *      9. text overflow helper class
  *      10. Fix webkit font rendering
  *      11. hide text
+ *      12. Sans vs serif
  *
  * ----------------------------------------------------------------------------
  *
@@ -28,11 +29,56 @@
 
 html,
 body {
-    font-family:    $sans-serif-stack;
+    @extend .font-family;
+    @extend %fix-webkit-font-rendering;
     line-height:    $base-line-height;
     font-size:      100%;
-    @extend %fix-webkit-font-rendering;
+    
 }
+
+
+/** Font families
+ * ----------------------------------------------------------------------------
+ *
+ *
+ */
+/* primary */
+
+.font-family {
+    @include font($font-family, 400 , normal);
+}
+
+    .font-family--italic {
+        @include font($font-family, 400 , italic);
+    }
+
+    .font-family--bold {
+        @include font($font-family, 700 , normal);
+    }
+
+    .font-family--bold-italic {
+        @include font($font-family, 700 , italic);
+    }
+
+
+/* secondary */
+
+.font-family__secondary {
+    @include font($font-family-secondary, 400 , normal);
+}
+
+    .font-family--italic__secondary {
+        @include font($font-family-secondary, 400 , italic);
+    }
+
+    .font-family--bold__secondary {
+        @include font($font-family-secondary, 700 , normal);
+    }
+
+    .font-family--bold-italic__secondary {
+        @include font($font-family-secondary, 700 , italic);
+    }
+
 
 
 /** 2. Header styles
@@ -42,13 +88,13 @@ body {
  */
 
 .h0 {
-    @extend %font-size-xxxxl;
+    @extend .font-size-xxxxl;
 }
 
 h1, 
 .h1 {
     @extend .m0--b;
-    @extend %font-size-xxxl;                   
+    @extend .font-size-xxxl;                   
     line-height: 1;
     margin-top: px-to-em(24, $font-size-xxxl);              
 }
@@ -56,7 +102,7 @@ h1,
 h2, 
 .h2 {
     @extend .m0--b;
-    @extend %font-size-xxl;                    
+    @extend .font-size-xxl;                    
     line-height: 1.2;
     margin-top: px-to-em(24, $font-size-xxl);                  
 }
@@ -64,7 +110,7 @@ h2,
 h3, 
 .h3 {
     @extend .m0--b;
-    @extend %font-size-xl;
+    @extend .font-size-xl;
     line-height: 1.2;
     margin-top: px-to-em(24, $font-size-xl);
 }
@@ -72,7 +118,7 @@ h3,
 h4, 
 .h4 {
     @extend .m0--b;
-    @extend %font-size-m;
+    @extend .font-size-m;
     line-height: 1.33333333;
     margin-top: px-to-em(20, $font-size-m);
 }
@@ -80,7 +126,7 @@ h4,
 h5, 
 .h5 {
     @extend .m0--b;
-    @extend %font-size-s;
+    @extend .font-size-s;
     line-height: 1.2;
     margin-top: px-to-em(12, $font-size-s);
 }
@@ -88,9 +134,32 @@ h5,
 h6, 
 .h6 {
     @extend .m0--b;
-    @extend %font-size-xs;
+    @extend .font-size-xs;
     line-height: 1.2;
     margin-top: px-to-em(12, $font-size-xs);
+}
+
+
+/**
+ *  
+ * ----------------------------------------------------------------------------
+ */
+
+p, 
+.para, 
+li {
+    @extend .m0--b;
+    @extend .font-size-s;
+    line-height: px-to-em(21, $font-size-s); 
+    margin-top: px-to-em(12, $font-size-s);              
+}
+
+strong, b {
+    @extend .font-family--bold;
+}
+
+em, i {
+    @extend .font-family--italic;
 }
 
 
@@ -99,25 +168,17 @@ h6,
  * ----------------------------------------------------------------------------
  */
 
-p, 
-.para, 
-ul {
-    @extend .m0--b;
-    @extend %font-size-xs;
-    line-height: px-to-em(21, $font-size-xs); 
-    margin-top: px-to-em(12, $font-size-xs);              
-}
 
 .intro { 
-    @extend %font-size-s;                    
+    @extend .font-size-m;                    
 }
 
 .small { 
-    @extend %font-size-xs;                     
+    @extend .font-size-xs;                     
 }
 
 .tiny {
-    @extend %font-size-xxxs;                      
+    @extend .font-size-xxxs;                      
 }
 
 
@@ -133,7 +194,9 @@ h5 + p {
 }
 
 p + p, 
-ul.list--styled li + li {
+.list--styled li + li, 
+.list--styled_decimal li + li, 
+.list--styled_alpha li + li,{
     margin-top: .571428571em;               /* 8px @ 14px */               
 }
 
@@ -167,13 +230,13 @@ ul.list--styled li + li {
  * ----------------------------------------------------------------------------
  */
 
-.text_align--left  { 
+.text-align--left  { 
     text-align: left;
 }
-.text_align--right { 
+.text-align--right { 
     text-align: right;
 }
-.text_align--center  {
+.text-align--center  {
     text-align: center;
 }
 
@@ -262,11 +325,27 @@ ul.list--styled li + li {
  * 11. hide text
  * ----------------------------------------------------------------------------
  */
-.visually_hidden {
+.visually-hidden {
     position: absolute;
     overflow: hidden;
     clip: rect(0 0 0 0);
     height: 1px; width: 1px;
     margin: -1px; padding: 0; border: 0;
+}
+
+
+/**
+ * 12. Sans vs serif
+ * ----------------------------------------------------------------------------
+ *
+ * 
+ */
+
+.sans {
+    font-family:$sans-serif-stack;
+}
+
+.serif {
+    font-family:$serif-stack;
 }
 

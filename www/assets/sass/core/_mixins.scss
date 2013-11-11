@@ -242,3 +242,10 @@
 }
 
 
+//font-mixin
+@mixin font($font-family, $font-weight , $font-style) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+

@@ -13,12 +13,12 @@
             </h1>
         </div>
         <p class=''>
-            There are a couple of things you need to set up before you begin a project:
+            There are a couple of things you should set up before you begin a project. These are:
         </p>
 
         <ul class='list--styled_decimal'>   
             <li>
-                Base font family and line heights 
+                Base font family and line height
             </li>
             <li>
                 Base font sizes
@@ -29,7 +29,7 @@
         </ul>
 
         <h2 class='h3'>
-            01. Base font family and line heights
+            01. Base font family and line height
         </h2>
         <p>
             For our base we use the following font settings on the HTML and body 
@@ -59,7 +59,7 @@
 
 html,
 body {
-    font-family:    $sans-serif-stack;
+    @extend %font-family;
     line-height:    $base-line-height;
     font-size:      100%;
     @extend %fix-webkit-font-rendering;
@@ -120,8 +120,8 @@ $font-size-xxxs:        11;     //.tiny
             03. Text Heirarchy
         </h2>
        
-        <p class=''>Notes
-            The best way to do this is sit down with the designer and go through the
+        <p class=''>
+            Notes... The best way to do this is sit down with the designer and go through the
             <a href='/text-heirarchy.php'>
                 text heirarchy
             </a>
@@ -400,9 +400,9 @@ $font-size-xxxs:        11;     //.tiny
                 </h4>
                 <pre>
 <code class='language-markup'>
-    &lt;p class='text_align--left'&gt; Left aligned text &lt;/p&gt;
-    &lt;p class='text_align--center'&gt; Center aligned text &lt;/p&gt;
-    &lt;p class='text_align--right'&gt; Right aligned text &lt;/p&gt;
+    &lt;p class='text-align--left'&gt; Left aligned text &lt;/p&gt;
+    &lt;p class='text-align--center'&gt; Center aligned text &lt;/p&gt;
+    &lt;p class='text-align--right'&gt; Right aligned text &lt;/p&gt;
 </code>
             </pre>
             </div><!-- code block ends -->
@@ -412,13 +412,13 @@ $font-size-xxxs:        11;     //.tiny
                 <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
-                <p class='text_align--left'>
+                <p class='text-align--left'>
                     Left aligned text
                 </p>
-                <p class='text_align--center'>
+                <p class='text-align--center'>
                     Center aligned text
                 </p>
-                <p class='text_align--right'>
+                <p class='text-align--right'>
                     Right aligned text
                 </p>
             </div><!-- hello world block ends -->
@@ -601,7 +601,7 @@ $font-size-xxxs:        11;     //.tiny
                 <pre>
 <code class='language-markup'>
     &lt;p&gt; Check out the source code to see a hidden h1 tag &lt;/p&gt;
-    &lt;h1 class='visually_hidden'&gt; I am hidden &lt;/h1&gt;
+    &lt;h1 class='visually-hidden'&gt; I am hidden &lt;/h1&gt;
 </code>
                 </pre>
             </div><!-- code block ends -->
@@ -614,7 +614,7 @@ $font-size-xxxs:        11;     //.tiny
                 <p>
                     Check out the source code to see a hidden h1 tag
                 </p>
-                <h1 class='visually_hidden'>
+                <h1 class='visually-hidden'>
                     I am hidden
                 </h1>
                 

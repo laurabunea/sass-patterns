@@ -249,3 +249,11 @@ a.tb__badge_active > .badge {
         color:$pg-header-span-txt;
     }
 }
+//::selection {
+//    @include theme(background-color);
+//    color: #fff;
+//}
+//::-moz-selection {
+//   @include theme(background-color);
+//   color: #fff;
+//}

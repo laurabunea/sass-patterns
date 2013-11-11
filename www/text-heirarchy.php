@@ -5,7 +5,7 @@
     <div class='content--padding'>
         <div class='page-header tb__header'>
             <h1>
-                Text Heirarchy 
+                Heading sizes
             </h1>
         </div>
 
@@ -26,10 +26,17 @@
         	<h5>
         		H5 Heading
         	</h5>
+            <h6>
+                H6 Heading
+            </h6>
         <div>
-        <div class='section--xl'>   
-        	
-            <hr>
+        <div class='section--xxl'>   
+        	<div class='page-header tb__header'>
+            <h1>
+                Text heirarchy
+            </h1>
+        </div>
+            
         	<h1>
         		H1 Heading
         	</h1>
