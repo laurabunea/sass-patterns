@@ -650,20 +650,14 @@ h6, .h6, p, .para, ul {
  *
  * ----------------------------------------------------------------------------
  * 
- * Structure:
- *
- *    
- *
- *
- * ----------------------------------------------------------------------------
  *
  */
-/* line 16, ../sass/core/_extend-classes.scss */
+/* line 10, ../sass/core/_extend-classes.scss */
 .absolute__bottom_left, .absolute__bottom_right, .absolute__top_left, .absolute__top_right {
   position: absolute;
 }
 
-/* line 20, ../sass/core/_extend-classes.scss */
+/* line 14, ../sass/core/_extend-classes.scss */
 .inline-block, .grid__item, .grid > *, .grid:after,
 .grid__break, .list--inline > li, .text--overflow, .btn, .arrow, .icon-text,
 .icon-text--rev, .breadcrumbs > li, .badge {
@@ -672,13 +666,13 @@ h6, .h6, p, .para, ul {
   *zoom: 1;
 }
 
-/* line 27, ../sass/core/_extend-classes.scss */
+/* line 21, ../sass/core/_extend-classes.scss */
 .theme__block_success, .theme__block_warning, .theme__block_danger, .tb__primary, .tb__secondary, .tb__tertiary, .tb__quarternary, .tb__green, .tb__pink, .tb__blue {
   border-width: 1px;
   border-style: solid;
 }
 
-/* line 32, ../sass/core/_extend-classes.scss */
+/* line 26, ../sass/core/_extend-classes.scss */
 .container, .clearfix, .media, .media--rev, .list--inline, .row {
   /**
    * For IE 6/7 only
@@ -686,14 +680,14 @@ h6, .h6, p, .para, ul {
    */
   *zoom: 1;
 }
-/* line 34, ../sass/core/_extend-classes.scss */
+/* line 28, ../sass/core/_extend-classes.scss */
 .container:before, .clearfix:before, .media:before, .media--rev:before, .list--inline:before, .row:before, .container:after, .clearfix:after, .media:after, .media--rev:after, .list--inline:after, .row:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
-/* line 39, ../sass/core/_extend-classes.scss */
+/* line 33, ../sass/core/_extend-classes.scss */
 .container:after, .clearfix:after, .media:after, .media--rev:after, .list--inline:after, .row:after {
   clear: both;
 }
@@ -701,43 +695,43 @@ h6, .h6, p, .para, ul {
 /*
 	block spacing 
 */
-/* line 56, ../sass/core/_extend-classes.scss */
+/* line 50, ../sass/core/_extend-classes.scss */
 .block--xxxl,
 .block--xxxl__stacked {
   padding: 3.75em 7.5em;
 }
 
-/* line 60, ../sass/core/_extend-classes.scss */
+/* line 54, ../sass/core/_extend-classes.scss */
 .block--xxl,
 .block--xxl__stacked {
   padding: 3em 6em;
 }
 
-/* line 64, ../sass/core/_extend-classes.scss */
+/* line 58, ../sass/core/_extend-classes.scss */
 .block--xl,
 .block--xl__stacked {
   padding: 2.25em 4.5em;
 }
 
-/* line 68, ../sass/core/_extend-classes.scss */
+/* line 62, ../sass/core/_extend-classes.scss */
 .block,
 .block__stacked {
   padding: 1.5em 3em;
 }
 
-/* line 72, ../sass/core/_extend-classes.scss */
+/* line 66, ../sass/core/_extend-classes.scss */
 .block--xs,
 .block--xs__stacked {
   padding: 1em 0.75em;
 }
 
-/* line 76, ../sass/core/_extend-classes.scss */
+/* line 70, ../sass/core/_extend-classes.scss */
 .block--xxs,
 .block--xxs__stacked {
   padding: 0.75em 0.375em;
 }
 
-/* line 80, ../sass/core/_extend-classes.scss */
+/* line 74, ../sass/core/_extend-classes.scss */
 .block--xxxs,
 .block--xxxs__stacked {
   padding: 0.6em 0.3em;
@@ -1419,6 +1413,7 @@ h6, .h6, p, .para, ul {
  *		8. List styles
  *      9. text overflow helper class
         10. Fix webkit font rendering
+        11. hide text
  *
  * ----------------------------------------------------------------------------
  *
@@ -1427,21 +1422,21 @@ h6, .h6, p, .para, ul {
  * ----------------------------------------------------------------------------
  *
  */
-/* line 29, ../sass/core/_typography.scss */
+/* line 30, ../sass/core/_typography.scss */
 html,
 body {
   color: #2e2f2b;
-  font-family: "helvetica", sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.42857;
   font-size: 100%;
   /* see point 9 */
 }
 
-/* line 38, ../sass/core/_typography.scss */
+/* line 39, ../sass/core/_typography.scss */
 a {
   color: #2f72ba;
 }
-/* line 40, ../sass/core/_typography.scss */
+/* line 41, ../sass/core/_typography.scss */
 a:hover {
   color: #204d7d;
 }
@@ -1451,37 +1446,37 @@ a:hover {
  * NOTE: These can change per project depending on what font etc you use :) 
  *
  */
-/* line 56, ../sass/core/_typography.scss */
+/* line 57, ../sass/core/_typography.scss */
 h1, .h1 {
   line-height: 1;
   margin-top: 0.66667em;
 }
 
-/* line 66, ../sass/core/_typography.scss */
+/* line 67, ../sass/core/_typography.scss */
 h2, .h2 {
   line-height: 1.2;
   margin-top: 0.75em;
 }
 
-/* line 73, ../sass/core/_typography.scss */
+/* line 74, ../sass/core/_typography.scss */
 h3, .h3 {
   line-height: 1.2;
   margin-top: 1.09091em;
 }
 
-/* line 80, ../sass/core/_typography.scss */
+/* line 81, ../sass/core/_typography.scss */
 h4, .h4 {
   line-height: 1.33333333;
   margin-top: 1.11111em;
 }
 
-/* line 87, ../sass/core/_typography.scss */
+/* line 88, ../sass/core/_typography.scss */
 h5, .h5 {
   line-height: 1.2;
   margin-top: 0.75em;
 }
 
-/* line 94, ../sass/core/_typography.scss */
+/* line 95, ../sass/core/_typography.scss */
 h6, .h6 {
   line-height: 1.2;
   margin-top: 0.85714em;
@@ -1491,7 +1486,7 @@ h6, .h6 {
  *  3. Paragraph styles
  * ----------------------------------------------------------------------------
  */
-/* line 107, ../sass/core/_typography.scss */
+/* line 108, ../sass/core/_typography.scss */
 p, .para, ul {
   line-height: 1.5em;
   margin-top: 0.85714em;
@@ -1501,7 +1496,7 @@ p, .para, ul {
  * 4. Typographic relationships (nawww, aren't they so good together?)
  * ----------------------------------------------------------------------------
  */
-/* line 135, ../sass/core/_typography.scss */
+/* line 136, ../sass/core/_typography.scss */
 h4 + h6,
 h4 + p,
 h5 + p {
@@ -1509,7 +1504,7 @@ h5 + p {
   /* 4px @ 14px */
 }
 
-/* line 140, ../sass/core/_typography.scss */
+/* line 141, ../sass/core/_typography.scss */
 p + p,
 ul.list--styled li + li {
   margin-top: .571428571em;
@@ -1520,7 +1515,7 @@ ul.list--styled li + li {
  * 5. hr
  * ----------------------------------------------------------------------------
  */
-/* line 149, ../sass/core/_typography.scss */
+/* line 150, ../sass/core/_typography.scss */
 hr {
   background-color: #e5e5e5;
   border: none;
@@ -1532,12 +1527,12 @@ hr {
  *  6. Lowercase vs Uppercase
  * ----------------------------------------------------------------------------
  */
-/* line 161, ../sass/core/_typography.scss */
+/* line 162, ../sass/core/_typography.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 164, ../sass/core/_typography.scss */
+/* line 165, ../sass/core/_typography.scss */
 .lowercase {
   text-transform: lowercase;
 }
@@ -1546,17 +1541,17 @@ hr {
  * 7. Text Allignment classes
  * ----------------------------------------------------------------------------
  */
-/* line 174, ../sass/core/_typography.scss */
+/* line 175, ../sass/core/_typography.scss */
 .text_align--left {
   text-align: left;
 }
 
-/* line 177, ../sass/core/_typography.scss */
+/* line 178, ../sass/core/_typography.scss */
 .text_align--right {
   text-align: right;
 }
 
-/* line 180, ../sass/core/_typography.scss */
+/* line 181, ../sass/core/_typography.scss */
 .text_align--center {
   text-align: center;
 }
@@ -1565,31 +1560,42 @@ hr {
  * 8. List styles
  * ----------------------------------------------------------------------------
  */
-/* line 191, ../sass/core/_typography.scss */
+/* line 192, ../sass/core/_typography.scss */
 .list--unstyled, .list--inline {
   list-style: none;
   padding-left: 0;
   margin: 0 0 0 0;
 }
 
-/* line 197, ../sass/core/_typography.scss */
+/* line 198, ../sass/core/_typography.scss */
 .list--unstyled > li, .list--inline > li {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 211, ../sass/core/_typography.scss */
-.list--styled {
+/* line 213, ../sass/core/_typography.scss */
+.list--styled, .list--styled_decimal, .list--styled_alpha {
   padding-left: 1.5em;
   margin-top: .857142857em;
   list-style: circle;
+}
+
+/* line 225, ../sass/core/_typography.scss */
+.list--styled_decimal {
+  list-style: decimal-leading-zero;
+  padding-left: 2.25em;
+}
+
+/* line 231, ../sass/core/_typography.scss */
+.list--styled_alpha {
+  list-style: lower-alpha;
 }
 
 /**
  * 9. text overflow helper class
  * ----------------------------------------------------------------------------
  */
-/* line 225, ../sass/core/_typography.scss */
+/* line 241, ../sass/core/_typography.scss */
 .text--overflow {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1597,7 +1603,7 @@ hr {
   width: 100%;
 }
 
-/* line 233, ../sass/core/_typography.scss */
+/* line 249, ../sass/core/_typography.scss */
 .text--nowrap {
   white-space: nowrap;
 }
@@ -1610,11 +1616,27 @@ hr {
  * these properties right here. Maybe consider scoping this to a class for
  * chrome/mac osx only at some point?
  */
-/* line 246, ../sass/core/_typography.scss */
+/* line 262, ../sass/core/_typography.scss */
 html,
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+/**
+ * 11. hide text
+ * ----------------------------------------------------------------------------
+ */
+/* line 271, ../sass/core/_typography.scss */
+.visually_hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 
 /**
@@ -1639,7 +1661,7 @@ body {
 /* line 23, ../sass/core/_theme.scss */
 html,
 body {
-  background-color: #ededed;
+  background-color: #4d4d4d;
 }
 
 /**
@@ -1710,24 +1732,24 @@ body {
   background-color: #fafafa;
   color: #2e2f2b;
   border-color: #fafafa;
-  box-shadow: 1px 1px 2px #FFFFFF inset, 1px 1px 3px 0 #D7D8CF;
+  border-radius: 10px;
 }
 
-/* line 103, ../sass/core/_theme.scss */
+/* line 104, ../sass/core/_theme.scss */
 .tb__secondary {
   background-color: #f2f2f2;
   color: #2e2f2b;
   border-color: #e6e6e6;
 }
 
-/* line 109, ../sass/core/_theme.scss */
+/* line 110, ../sass/core/_theme.scss */
 .tb__tertiary {
   background-color: #2e2f2b;
   color: white;
   border-color: #2e2f2b;
 }
 
-/* line 115, ../sass/core/_theme.scss */
+/* line 116, ../sass/core/_theme.scss */
 .tb__quarternary {
   background-color: #4d4d4d;
   color: white;
@@ -1738,21 +1760,21 @@ body {
  * 
  * -----------------------------------------------------------------------------
  */
-/* line 127, ../sass/core/_theme.scss */
+/* line 128, ../sass/core/_theme.scss */
 .tb__green {
   background-color: #a6e22e;
   color: #2e2f2b;
   border-color: #a6e22e;
 }
 
-/* line 132, ../sass/core/_theme.scss */
+/* line 133, ../sass/core/_theme.scss */
 .tb__pink {
   background-color: #f92672;
   color: #2e2f2b;
   border-color: #f92672;
 }
 
-/* line 137, ../sass/core/_theme.scss */
+/* line 138, ../sass/core/_theme.scss */
 .tb__blue {
   background-color: #4aa1c5;
   color: white;
@@ -1763,61 +1785,61 @@ body {
  * Button theming
  * -----------------------------------------------------------------------------
  */
-/* line 150, ../sass/core/_theme.scss */
+/* line 151, ../sass/core/_theme.scss */
 .btn-primary {
   background-color: #3cbe8a;
   color: white;
   border-color: #3cbe8a;
 }
-/* line 153, ../sass/core/_theme.scss */
+/* line 154, ../sass/core/_theme.scss */
 .btn-primary:hover {
   background-color: #33a376;
   color: white;
 }
 
-/* line 159, ../sass/core/_theme.scss */
+/* line 160, ../sass/core/_theme.scss */
 .btn-secondary {
   background-color: #999999;
   color: white;
   border-color: #3cbe8a;
 }
-/* line 161, ../sass/core/_theme.scss */
+/* line 162, ../sass/core/_theme.scss */
 .btn-secondary:hover {
   background-color: #777777;
   color: white;
 }
 
-/* line 167, ../sass/core/_theme.scss */
+/* line 168, ../sass/core/_theme.scss */
 .btn-tertiary {
   background-color: #dddddd;
   color: white;
   border-color: #444444;
 }
-/* line 169, ../sass/core/_theme.scss */
+/* line 170, ../sass/core/_theme.scss */
 .btn-tertiary:hover {
   background-color: #cccccc;
   color: #333333;
 }
 
-/* line 177, ../sass/core/_theme.scss */
+/* line 178, ../sass/core/_theme.scss */
 .btn-positive {
   background-color: #3977b1;
   color: white;
   border-color: #3cbe8a;
 }
-/* line 179, ../sass/core/_theme.scss */
+/* line 180, ../sass/core/_theme.scss */
 .btn-positive:hover {
   background-color: #306596;
   color: white;
 }
 
-/* line 185, ../sass/core/_theme.scss */
+/* line 186, ../sass/core/_theme.scss */
 .btn-negative {
   background-color: #eb3930;
   color: white;
   border-color: #444444;
 }
-/* line 187, ../sass/core/_theme.scss */
+/* line 188, ../sass/core/_theme.scss */
 .btn-negative:hover {
   background-color: #d8281f;
   color: white;
@@ -1826,44 +1848,44 @@ body {
 /**
  * A common active state makes us look pro as, bro!
  */
-/* line 199, ../sass/core/_theme.scss */
+/* line 200, ../sass/core/_theme.scss */
 .btn:active {
   background-color: #333333;
   color: white;
 }
 
-/* line 205, ../sass/core/_theme.scss */
+/* line 206, ../sass/core/_theme.scss */
 .tb__breadrumbs {
   background-color: #cccccc;
 }
-/* line 208, ../sass/core/_theme.scss */
+/* line 209, ../sass/core/_theme.scss */
 .tb__breadrumbs > li + li:before {
   color: #666666;
 }
-/* line 212, ../sass/core/_theme.scss */
+/* line 213, ../sass/core/_theme.scss */
 .tb__breadrumbs > .active {
   color: #555555;
 }
 
-/* line 217, ../sass/core/_theme.scss */
+/* line 218, ../sass/core/_theme.scss */
 .tb__badge {
   color: white;
   background-color: red;
   border-radius: 10px;
 }
 
-/* line 224, ../sass/core/_theme.scss */
+/* line 225, ../sass/core/_theme.scss */
 a.tb__badge_active > .badge {
   color: #efefef;
   background-color: blue;
 }
 
-/* line 231, ../sass/core/_theme.scss */
+/* line 232, ../sass/core/_theme.scss */
 .tb__header {
-  color: #2e2f2b;
+  color: #343434;
   border-bottom: 1px solid #e6e6e6;
 }
-/* line 234, ../sass/core/_theme.scss */
+/* line 235, ../sass/core/_theme.scss */
 .tb__header span {
   color: #999999;
 }
@@ -1884,17 +1906,17 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   margin: 80px auto 80px auto;
 }
 
-/* line 14, ../sass/core/_page-specific.scss */
+/* line 15, ../sass/core/_page-specific.scss */
 .content {
   width: 100%;
 }
 
-/* line 17, ../sass/core/_page-specific.scss */
+/* line 19, ../sass/core/_page-specific.scss */
 .content--padding {
   padding: 2em 3em;
 }
 
-/* line 21, ../sass/core/_page-specific.scss */
+/* line 23, ../sass/core/_page-specific.scss */
 .navigation--wrapper {
   position: fixed;
   top: 0;
@@ -1902,91 +1924,91 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   z-index: 5;
 }
 
-/* line 27, ../sass/core/_page-specific.scss */
+/* line 29, ../sass/core/_page-specific.scss */
 .navigation--top {
   margin: 0 auto;
 }
 
-/* line 31, ../sass/core/_page-specific.scss */
+/* line 33, ../sass/core/_page-specific.scss */
 .navigation--top li a {
   color: #fff;
   text-decoration: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
-/* line 36, ../sass/core/_page-specific.scss */
+/* line 38, ../sass/core/_page-specific.scss */
 .navigation--top li a.active {
   background-color: #2E2F2B;
 }
 
-/* line 39, ../sass/core/_page-specific.scss */
+/* line 41, ../sass/core/_page-specific.scss */
 .navigation--top li a:hover {
   color: #E6DB74;
 }
 
-/* line 44, ../sass/core/_page-specific.scss */
+/* line 46, ../sass/core/_page-specific.scss */
 .navigation--side {
   width: 25%;
 }
 
-/* line 48, ../sass/core/_page-specific.scss */
+/* line 50, ../sass/core/_page-specific.scss */
 .navigation--side li a,
 .navigation--top li a {
   display: block;
   text-decoration: none;
 }
 
-/* line 53, ../sass/core/_page-specific.scss */
+/* line 55, ../sass/core/_page-specific.scss */
 .navigation--side li a {
   color: #4B4D43;
 }
 
-/* line 57, ../sass/core/_page-specific.scss */
+/* line 59, ../sass/core/_page-specific.scss */
 .navigation--side li a:hover {
   background-color: #4D4D4D;
   color: #E6DB74;
   box-shadow: none;
 }
 
-/* line 64, ../sass/core/_page-specific.scss */
+/* line 66, ../sass/core/_page-specific.scss */
 .logo {
   display: inline-block;
   margin-top: 12px;
   font-size: 1.8em;
 }
-/* line 68, ../sass/core/_page-specific.scss */
+/* line 70, ../sass/core/_page-specific.scss */
 .logo a {
   color: #fff;
 }
-/* line 71, ../sass/core/_page-specific.scss */
+/* line 73, ../sass/core/_page-specific.scss */
 .logo a:hover {
   color: #E6DB74;
 }
-/* line 77, ../sass/core/_page-specific.scss */
+/* line 79, ../sass/core/_page-specific.scss */
 .logo span {
   color: #E6DB74;
 }
 
-/* line 83, ../sass/core/_page-specific.scss */
+/* line 85, ../sass/core/_page-specific.scss */
 .testbox {
   height: 150px;
   width: 150px;
   display: inline-block;
 }
 
-/* line 88, ../sass/core/_page-specific.scss */
+/* line 90, ../sass/core/_page-specific.scss */
 .testbox-100-100 {
   height: 100px;
   width: 100px;
 }
 
-/* line 92, ../sass/core/_page-specific.scss */
+/* line 94, ../sass/core/_page-specific.scss */
 .testbox-400-100 {
   height: 100px;
   width: 300px;
 }
 
-/* line 95, ../sass/core/_page-specific.scss */
+/* line 97, ../sass/core/_page-specific.scss */
 .homepage {
   background-color: #4D4D4D;
   color: #fff;
@@ -1994,17 +2016,17 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 
 @media all and (max-width: 800px) {
   /*dirty i know!*/
-  /* line 103, ../sass/core/_page-specific.scss */
+  /* line 105, ../sass/core/_page-specific.scss */
   .grid__item, .grid > *, .grid {
     width: 100%;
   }
 
-  /* line 107, ../sass/core/_page-specific.scss */
+  /* line 109, ../sass/core/_page-specific.scss */
   .navigation--side {
     display: none;
   }
 
-  /* line 110, ../sass/core/_page-specific.scss */
+  /* line 112, ../sass/core/_page-specific.scss */
   .content--padding {
     padding: 1.5em;
   }
@@ -2498,7 +2520,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 
 /* line 57, ../sass/core/_components.scss */
 .tb__header {
-  color: #2e2f2b;
+  color: #343434;
   border-bottom: 1px solid #e6e6e6;
 }
 /* line 60, ../sass/core/_components.scss */

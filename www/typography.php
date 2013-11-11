@@ -36,6 +36,7 @@
             </a>
             template with them.
         </p>
+
         <div class='page-header tb__header mx'>
             <h1>
                 Typography
@@ -44,6 +45,7 @@
                 </span>
             </h1>
         </div>
+
         <ul class='list--styled'>
             <li>
                 Leave html, body font-size at 100% -  Even for responsive sites, it's nice knowing that 1em is always 16px. 
@@ -71,7 +73,7 @@
            Helper classes blah blah blah  
         </p>
 
-        <ul class='list--styled'>
+        <ol class='list--styled_decimal'>
             <li>
                 <a href='typo-paragraph'>
                     Font sizes
@@ -102,21 +104,27 @@
                     List styles
                 </a>
             </li>
-        </ul>
+            <li>
+                <a href='#typo-lists'>
+                    Visually hidden elements
+                </a>
+            </li>
+        </ol>
 
         <!-- /****************************************  Text sizes  *******************************/ -->
-        <hr class='mx'>
+        <!--<hr class='mx'>-->
+        
         <div class='section--xl' id='typo-paragraph'>
-            <h2>
-                Font sizes
+            <h2 class='h3'>
+                01. Font sizes
             </h2>
 
             <p class='intro'>
                 Notes for Heading sizes, text sizes and sub headings
             </p>
 
-            <h3 >
-                1. Headings
+            <h3 class='h4'>
+                a) Headings
             </h3>
 
             <p>
@@ -129,7 +137,7 @@
                     code
                 </h4>
                 <pre>
-<code class="language-markup">
+<code class='language-markup'>
     &lt;h1&gt; H1 Heading 1 &lt;/h1&gt;
     &lt;h1 class='h2'&gt; H1 Heading with a class of H2 &lt;/h1&gt;
     &lt;h2&gt; H2 Heading &lt;/h2&gt;
@@ -141,6 +149,7 @@
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
+                
                 <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
@@ -159,20 +168,24 @@
                 <h4>
                     H4 Heading 
                 </h4>
+
             </div><!-- hello world block ends -->
 
-            
-            <h3>
-                2. Common Text sizes
-            </h3>
-            <p>Notes</p>
-            <!-- code block starts -->
-            <div class='block--xs tb__tertiary'>
-                <h4 class='tiny uppercase text_muted'>
-                    code
-                </h4>
-                <pre>
-<code class="language-markup">
+            <!-- 2. Common Text sizes-->
+            <div class='section--xl'>
+                <h3 class='h4'>
+                    2. Common Text sizes
+                </h3>
+                <p>
+                    Notes
+                </p>
+                <!-- code block starts -->
+                <div class='block--xs tb__tertiary'>
+                    <h4 class='tiny uppercase text_muted'>
+                        code
+                    </h4>
+                    <pre>
+<code class='language-markup'>
     &lt;p class='tiny'&gt; ... &lt;/p&gt;
     &lt;p class='small'&gt; ... &lt;/p&gt;
     &lt;p&gt; ... &lt;/p&gt;
@@ -184,51 +197,56 @@
         &lt;/span&gt;
     &lt;/h3&gt;
 </code>
-            </pre>
-            </div><!-- code block ends -->
+                </pre>
+                </div><!-- code block ends -->
 
-            <!-- hello world block starts -->
-            <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny uppercase text_muted'>
-                    hello world
-                </h4>
-                <p class='tiny'>
-                    I am a tiny paragraph
-                </p>
-                <p class='small'>
-                    I am a small paragraph
-                </p>
-                <p>I am a plain paragraph
-                </p>
-                <p class='intro'>
-                    I am an intro paragraph
-                </p>
+                <!-- hello world block starts -->
+                <div class='block--xs__stacked tb__secondary'>
+                    <h4 class='tiny uppercase text_muted'>
+                        hello world
+                    </h4>
+                    <p class='tiny'>
+                        I am a tiny paragraph
+                    </p>
+                    <p class='small'>
+                        I am a small paragraph
+                    </p>
+                    <p>
+                        I am a plain paragraph
+                    </p>
+                    <p class='intro'>
+                        I am an intro paragraph
+                    </p>
 
-                <h3>
-                    H5 Heading
-                    <span class='tiny'>
-                        Subtext for H3
-                    </span>
+                    <h3>
+                        H5 Heading
+                        <span class='tiny'>
+                            Subtext for H3
+                        </span>
+                    </h3>
+                </div><!-- hello world block ends -->
+            </div>
+
+            <!-- 3. sub headings-->
+            <div class='section--xl'>
+                <h3 class='m h4' >
+                    3. Sub Headings
                 </h3>
-            </div><!-- hello world block ends -->
-
-            <h3 class='m' >
-                3. Sub Headings
-            </h3>
-            <p>
-                see
-                <a href='/components.php#components-pg-headers'>
-                    Sub headings
-                </a>
-                on the components page or have a look at the example below in Text sizes.
-            </p>
+                <p>
+                    see
+                    <a href='/components.php#components-pg-headers'>
+                        Sub headings
+                    </a>
+                    on the components page or have a look at the example below in Text sizes.
+                </p>
+            </div>
 
         </div><!-- typo-paragraph ends -->
 
     <!-- /****************************************  Sans/serif text  *******************************/ -->
         <hr class='mx'>
         <div class='section--xl' id='typo-sans'>
-            <h2  >
+            <h2 class='h3'>
                 Sans vs Sans Serif
             </h2>
             <p> 
@@ -240,7 +258,7 @@
                     code
                 </h4>
                 <pre>
-<code class="language-markup">
+<code class='language-markup'>
     &lt;p class='sans'&gt; sans &lt;/p&gt;
     &lt;p class='serif'&gt; sans serif &lt;/p&gt;
 </code>
@@ -265,7 +283,7 @@
         <hr class='mx'>
         <div class='section--xl' id='typo-cases'>
 
-            <h2>
+            <h2 class='h3'>
                 Lower vs Upper case
             </h2>
             <p> 
@@ -277,7 +295,7 @@
                     code
                 </h4>
                 <pre>
-<code class="language-markup">
+<code class='language-markup'>
     &lt;p class='uppercase'&gt; Uppercase &lt;/p&gt;
     &lt;p class='lowercase'&gt; Lowercase &lt;/p&gt;
 </code>
@@ -299,7 +317,7 @@
         <hr class='mx'>
         <div class='section--xl' id='typo-text-align'>
 
-            <h2 >
+            <h2 class='h3'>
                 Text allignment classes
             </h2>
 
@@ -312,7 +330,7 @@
                     code
                 </h4>
                 <pre>
-<code class="language-markup">
+<code class='language-markup'>
     &lt;p class='text_align--left'&gt; Left aligned text &lt;/p&gt;
     &lt;p class='text_align--center'&gt; Center aligned text &lt;/p&gt;
     &lt;p class='text_align--right'&gt; Right aligned text &lt;/p&gt;
@@ -339,7 +357,7 @@
 <!-- /****************************************  Txt overflow and ellipsis  *******************************/ -->
         <hr class='mx'>
         <div class='section--xl' id='typo-overflow'>
-            <h2 >
+            <h2 class='h3'>
                 Text overflow and Ellipsis
             </h2>
             <p> 
@@ -351,7 +369,7 @@
                     code
                 </h4>
                 <pre>
-<code class="language-markup">
+<code class='language-markup'>
     &lt;p class='text--overflow'&gt; Hello I'm a long sentence &lt;/p&gt;
 </code>
                 </pre>
@@ -362,14 +380,14 @@
                 <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
-                <div class='block--xs tb__primary testbox-100-100 push_left left' >
+                <div class='block--xs tb__secondary testbox-100-100 push_left left' >
                     <p class='text--overflow'>
                         Hello I'm a text with an ellipsis
                     </p>
 
                     
                 </div>
-                <div class='block--xs tb__primary testbox-100-100 right' >
+                <div class='block--xs tb__secondary testbox-100-100 right' >
                  
                     <p class='text--nowrap'>
                         I'm text that doesn't wrap
@@ -381,7 +399,7 @@
         <hr class='mx'>
         <div class='section--xl' id='typo-lists'>
 
-            <h2 >
+            <h2 class='h3'>
                 List styles
             </h2>
 
@@ -389,147 +407,153 @@
                 Notes
             </p>
 
-            <h3 >
-                1. Un styled list
-            </h3>
+            <div class=''>
+                <h3 class='h4'>
+                    1. Un styled list
+                </h3>
 
-            <!-- code block ends -->
-            <div class='block--xs tb__tertiary'>
-                <h4 class='tiny uppercase text_muted'>
-                    code
-                </h4>
-                <pre>
-<code class="language-markup">
+                <!-- code block ends -->
+                <div class='block--xs tb__tertiary'>
+                    <h4 class='tiny uppercase text_muted'>
+                        code
+                    </h4>
+                    <pre>
+<code class='language-markup'>
     &lt;ul class='list--unstyled'&gt;
         &lt;li&gt; unstyled list item 1 &lt;/li&gt;
         &lt;li&gt; unstyled list item 2 &lt;/li&gt;
     &lt;ul&gt;
 </code>
-            </pre>
-            </div><!-- code block ends -->
+                </pre>
+                </div><!-- code block ends -->
 
-            <!-- hello world block starts -->
-            <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny uppercase text_muted'>
-                    hello world
-                </h4>
-                <ul class='list--unstyled '>
-                    <li>
-                        unstyled list item 1
-                    </li>
-                    <li>
-                        unstyled list item 2
-                    </li>
-                </ul>
-            </div><!-- hello world block ends -->
+                <!-- hello world block starts -->
+                <div class='block--xs__stacked tb__secondary'>
+                    <h4 class='tiny uppercase text_muted'>
+                        hello world
+                    </h4>
+                    <ul class='list--unstyled '>
+                        <li>
+                            unstyled list item 1
+                        </li>
+                        <li>
+                            unstyled list item 2
+                        </li>
+                    </ul>
+                </div><!-- hello world block ends -->
+            </div>
+            
+            <div class='section--xl'>
+                <h3 class='h4'>
+                    2. Styled list
+                </h3>
+                <!-- code block starts -->
+                <div class='block--xs tb__tertiary'>
+                    <h4 class='tiny uppercase text_muted'>
+                        code
+                    </h4>
+                    <pre>
+<code class='language-markup'>
+    &lt;ul class='list--styled'&gt;
+        &lt;li&gt; Styled list item 1 &lt;/li&gt;
+        &lt;li&gt; Styled list item 2 &lt;/li&gt;
+    &lt;ul&gt;
+</code>
+                    </pre>
+                </div><!-- code block ends -->
 
+                <!-- hello world block starts -->
+                <div class='block--xs__stacked tb__secondary'>
+                    <h4 class='h tiny uppercase text_muted'>
+                        hello world
+                    </h4>
+                    <ul class='list--styled'>
+                        <li>
+                            Styled list item 1
+                        </li>
+                        <li>
+                            Styled list item 2
+                        </li>
+                    </ul>
+                </div><!-- hello world block ends -->
+            </div>
 
-            <h3>2. Styled list</h3>
+            <!-- 3. Inline list -->
+            <div class='section--xl'>
+                <h3 class='h4'>3. Inline list</h3>
+                <!-- code block starts -->
+                <div class='block--xs tb__tertiary'>
+                    <h4 class='tiny uppercase text_muted'>
+                        code
+                    </h4>
+                <pre>
+<code class='language-markup'>
+    &lt;ul class='list--inline'&gt;
+        &lt;li&gt; inline list item 1 &lt;/li&gt;
+        &lt;li&gt; inline list item 2 &lt;/li&gt;
+    &lt;ul&gt;
+</code>
+                </pre>
+                </div><!-- code block ends -->
+
+                <!-- hello world block starts -->
+                <div class='block--xs__stacked tb__secondary'>
+                    <h4 class='tiny uppercase text_muted'>
+                        hello world
+                    </h4>
+                    <ul class='list--inline '>
+                        <li>
+                            inline list item 1
+                        </li>
+                        <li>
+                            inine list item 2
+                        </li>
+                    </ul>
+                </div><!-- hello world block ends -->
+            </div><!-- section--xl -->
+        </div><!-- typo-lists ends -->
+
+             <!-- /****************************************  Hide text *******************************/ -->
+        <hr class='mx'>
+        <div class='section--xl' id='typo-hide-text'>
+
+            <h2 class='h3'>
+                Hide text
+            </h2>
+
+            <p> 
+                Notes
+            </p>
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
                 <h4 class='tiny uppercase text_muted'>
                     code
                 </h4>
                 <pre>
-<code class="language-markup">
-    &lt;ul class='list--styled'&gt;
-        &lt;li&gt; Styled list item 1 &lt;/li&gt;
-        &lt;li&gt; Styled list item 2 &lt;/li&gt;
-    &lt;ul&gt;
+<code class='language-markup'>
+    &lt;p&gt; Check out the source code to see a hidden h1 tag &lt;/p&gt;
+    &lt;h1 class='visually_hidden'&gt; I am hidden &lt;/h1&gt;
 </code>
                 </pre>
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='h tiny uppercase text_muted'>
-                    hello world
-                </h4>
-                <ul class='list--styled'>
-                    <li>
-                        Styled list item 1
-                    </li>
-                    <li>
-                        Styled list item 2
-                    </li>
-                </ul>
-            </div><!-- hello world block ends -->
-
-            <h3>3. Inline list</h3>
-            <!-- code block starts -->
-            <div class='block--xs tb__tertiary'>
-                <h4 class='tiny uppercase text_muted'>
-                    code
-                </h4>
-            <pre>
-<code class="language-markup">
-    &lt;ul class='list--inline'&gt;
-        &lt;li&gt; inline list item 1 &lt;/li&gt;
-        &lt;li&gt; inline list item 2 &lt;/li&gt;
-    &lt;ul&gt;
-</code>
-            </pre>
-            </div><!-- code block ends -->
-
-            <!-- hello world block starts -->
-            <div class='block--xs__stacked tb__secondary'>
                 <h4 class='tiny uppercase text_muted'>
                     hello world
                 </h4>
-                <ul class='list--inline '>
-                    <li>
-                        inline list item 1
-                    </li>
-                    <li>
-                        inine list item 2
-                    </li>
-                </ul>
+                <p>
+                    Check out the source code to see a hidden h1 tag
+                </p>
+                <h1 class='visually_hidden'>
+                    I am hidden
+                </h1>
+                
             </div><!-- hello world block ends -->
-
-        </div><!-- typo-lists ends -->
-
-
-        
+        </div><!--  typo-text-align ends -->
 
     </div><!--content-padding-->
 </div><!--content ends-->
-
-<!-- Side Navigation Bar - this holds the children categories -->
-<!--<div class='navigation--side grid__item'>
-    <ul class='list--unstyled'>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#typo-paragraph'>
-                Font size
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#typo-sans'>
-                Sans vs San Serif
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#typo-cases'>
-                Lower vs Upper case
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#typo-text-align'>
-                Text allignment
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#typo-overflow'>
-                Overflow vs Ellipsis
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#typo-lists'>
-                List styles
-            </a>
-        </li>
-
-    </ul>
-</div>--><!--navigation side ends-->
 
 <?php 
     include 'footer.php'; 

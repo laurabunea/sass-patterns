@@ -14,7 +14,7 @@
         <div class='navigation--top clearfix'>
             <h1 class='uppercase left logo' >
                 <a href='/'>
-                    F<span>R</span>ED
+                    F<span>r</span>ed
                 </a>
             </h1>
 

@@ -14,6 +14,7 @@
  *		8. List styles
  *      9. text overflow helper class
         10. Fix webkit font rendering
+        11. hide text
  *
  * ----------------------------------------------------------------------------
  *
@@ -208,13 +209,28 @@ ul.list--styled li + li {
 		@extend .inline-block;
 	}
 
-.list--styled {
+//default list style in this case its circles
+%list--styled {
     padding-left:$m;
     margin-top: .857142857em; //same as the margin top on p tags
     list-style: circle;
-
     //or custom image here
     //list-style-image: url('');
+}
+.list--styled {
+    @extend %list--styled;
+}
+
+//decimal list
+.list--styled_decimal {
+    @extend %list--styled;
+    list-style: decimal-leading-zero;
+    padding-left:$mx;
+} 
+//alpha list
+.list--styled_alpha {
+    @extend %list--styled;
+    list-style: lower-alpha;
 }
 
 
@@ -246,4 +262,16 @@ ul.list--styled li + li {
 %fix-webkit-font-rendering {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+}
+
+/**
+ * 11. hide text
+ * ----------------------------------------------------------------------------
+ */
+.visually_hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
 }

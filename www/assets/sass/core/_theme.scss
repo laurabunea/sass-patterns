@@ -96,8 +96,9 @@ body {
 
 .tb__primary {
 	@include theme-block( $primary-bg-color, $primary-txt-color, $primary-border-color );
-	box-shadow: 1px 1px 2px #FFFFFF inset, 1px 1px 3px 0 #D7D8CF;
+	//box-shadow: 1px 1px 2px #FFFFFF inset, 1px 1px 3px 0 #D7D8CF;
 	@extend %border;
+  border-radius: 10px;
 }
 
 .tb__secondary {
