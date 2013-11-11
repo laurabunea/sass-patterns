@@ -454,11 +454,11 @@ ol {
  * 
  * Structure:
  *		
- *      1. TODO
- *		2. 
- *      3. 
- *      4. 
- *      5. 
+ *      1. Typography - Font familys 
+ *		2. Typography - Line height
+ *      3. Typography - Font sizes 
+ *      4. Layout - Spacing
+ *      5. TODO
  *      6. 
  *      7.
  *      8.
@@ -480,41 +480,41 @@ ol {
  * Typography - Font sizes 
  * -----------------------------------------------------------------------------
  */
-/* line 64, ../sass/core/_variables.scss */
+/* line 65, ../sass/core/_variables.scss */
 .font-size-xxxxl, .h0 {
   font-size: 4.5em;
 }
 
-/* line 65, ../sass/core/_variables.scss */
+/* line 66, ../sass/core/_variables.scss */
 .font-size-xxxl, h1,
 .h1 {
   font-size: 2.25em;
 }
 
-/* line 66, ../sass/core/_variables.scss */
+/* line 67, ../sass/core/_variables.scss */
 .font-size-xxl, h2,
 .h2 {
   font-size: 2em;
 }
 
-/* line 67, ../sass/core/_variables.scss */
+/* line 68, ../sass/core/_variables.scss */
 .font-size-xl, h3,
 .h3 {
   font-size: 1.375em;
 }
 
-/* line 68, ../sass/core/_variables.scss */
+/* line 69, ../sass/core/_variables.scss */
 .font-size-l {
   font-size: 1.25em;
 }
 
-/* line 69, ../sass/core/_variables.scss */
+/* line 70, ../sass/core/_variables.scss */
 .font-size-m, h4,
 .h4, .intro {
   font-size: 1.125em;
 }
 
-/* line 70, ../sass/core/_variables.scss */
+/* line 71, ../sass/core/_variables.scss */
 .font-size-s, h5,
 .h5, p,
 .para,
@@ -522,18 +522,18 @@ li {
   font-size: 1em;
 }
 
-/* line 71, ../sass/core/_variables.scss */
+/* line 72, ../sass/core/_variables.scss */
 .font-size-xs, h6,
 .h6, .small {
   font-size: 0.875em;
 }
 
-/* line 72, ../sass/core/_variables.scss */
+/* line 73, ../sass/core/_variables.scss */
 .font-size-xxs {
   font-size: 0.75em;
 }
 
-/* line 73, ../sass/core/_variables.scss */
+/* line 74, ../sass/core/_variables.scss */
 .font-size-xxxs, .tiny {
   font-size: 0.6875em;
 }
@@ -542,12 +542,12 @@ li {
  * Layout - Spacing: she's a fickle mistress.
  * -----------------------------------------------------------------------------
  */
-/* line 91, ../sass/core/_variables.scss */
+/* line 92, ../sass/core/_variables.scss */
 .m0 {
   margin-top: 0;
 }
 
-/* line 92, ../sass/core/_variables.scss */
+/* line 93, ../sass/core/_variables.scss */
 .m0--b, h1,
 .h1, h2,
 .h2, h3,
@@ -560,97 +560,97 @@ li {
   margin-bottom: 0;
 }
 
-/* line 93, ../sass/core/_variables.scss */
+/* line 94, ../sass/core/_variables.scss */
 .xxxm {
   margin-top: 0.1em;
 }
 
-/* line 94, ../sass/core/_variables.scss */
+/* line 95, ../sass/core/_variables.scss */
 .xxm {
   margin-top: 0.5em;
 }
 
-/* line 95, ../sass/core/_variables.scss */
+/* line 96, ../sass/core/_variables.scss */
 .xm {
   margin-top: 1em;
 }
 
-/* line 96, ../sass/core/_variables.scss */
+/* line 97, ../sass/core/_variables.scss */
 .m {
   margin-top: 1.5em;
 }
 
-/* line 97, ../sass/core/_variables.scss */
+/* line 98, ../sass/core/_variables.scss */
 .mx {
   margin-top: 2.25em;
 }
 
-/* line 98, ../sass/core/_variables.scss */
+/* line 99, ../sass/core/_variables.scss */
 .mxx {
   margin-top: 3em;
 }
 
-/* line 99, ../sass/core/_variables.scss */
+/* line 100, ../sass/core/_variables.scss */
 .mxxx {
   margin-top: 4.5em;
 }
 
-/* line 101, ../sass/core/_variables.scss */
+/* line 102, ../sass/core/_variables.scss */
 .xxm--b {
   margin-bottom: 0.5em;
 }
 
-/* line 102, ../sass/core/_variables.scss */
+/* line 103, ../sass/core/_variables.scss */
 .xm--b {
   margin-bottom: 1em;
 }
 
-/* line 103, ../sass/core/_variables.scss */
+/* line 104, ../sass/core/_variables.scss */
 .m--b {
   margin-bottom: 1.5em;
 }
 
-/* line 104, ../sass/core/_variables.scss */
+/* line 105, ../sass/core/_variables.scss */
 .mx--b {
   margin-bottom: 2.25em;
 }
 
-/* line 105, ../sass/core/_variables.scss */
+/* line 106, ../sass/core/_variables.scss */
 .mxx--b {
   margin-bottom: 3em;
 }
 
-/* line 107, ../sass/core/_variables.scss */
+/* line 108, ../sass/core/_variables.scss */
 .p0 {
   padding-top: 0 !important;
 }
 
-/* line 108, ../sass/core/_variables.scss */
+/* line 109, ../sass/core/_variables.scss */
 .p0--b {
   padding-bottom: 0 !important;
 }
 
-/* line 109, ../sass/core/_variables.scss */
+/* line 110, ../sass/core/_variables.scss */
 .xxp {
   padding-top: 0.5em;
 }
 
-/* line 110, ../sass/core/_variables.scss */
+/* line 111, ../sass/core/_variables.scss */
 .xp {
   padding-top: 1em;
 }
 
-/* line 111, ../sass/core/_variables.scss */
+/* line 112, ../sass/core/_variables.scss */
 .p {
   padding-top: 1.5em;
 }
 
-/* line 112, ../sass/core/_variables.scss */
+/* line 113, ../sass/core/_variables.scss */
 .px {
   padding-top: 2.25em;
 }
 
-/* line 113, ../sass/core/_variables.scss */
+/* line 114, ../sass/core/_variables.scss */
 .pxx {
   padding-top: 3em;
 }
@@ -1424,6 +1424,7 @@ li {
  *
  * Structure:
  *      1. Base typography styles
+        a. Font families
  *      2. Heading styles
  *      3. Paragraph styles
  *      4. Typographic relationships
@@ -1443,7 +1444,7 @@ li {
  * ----------------------------------------------------------------------------
  *
  */
-/* line 31, ../sass/core/_typography.scss */
+/* line 32, ../sass/core/_typography.scss */
 html,
 body {
   line-height: 1.42857;
@@ -1456,7 +1457,7 @@ body {
  *
  */
 /* primary */
-/* line 47, ../sass/core/_typography.scss */
+/* line 48, ../sass/core/_typography.scss */
 .font-family, html,
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1464,97 +1465,71 @@ body {
   font-style: normal;
 }
 
-/* line 51, ../sass/core/_typography.scss */
-.font-family--italic, em, i {
+/* line 52, ../sass/core/_typography.scss */
+.font-family--italic, em,
+i {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
-/* line 55, ../sass/core/_typography.scss */
-.font-family--bold, strong, b {
+/* line 56, ../sass/core/_typography.scss */
+.font-family--bold, strong,
+b {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-/* line 59, ../sass/core/_typography.scss */
+/* line 60, ../sass/core/_typography.scss */
 .font-family--bold-italic {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-style: italic;
 }
 
-/* secondary */
-/* line 66, ../sass/core/_typography.scss */
-.font-family__secondary {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* line 70, ../sass/core/_typography.scss */
-.font-family--italic__secondary {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-/* line 74, ../sass/core/_typography.scss */
-.font-family--bold__secondary {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* line 78, ../sass/core/_typography.scss */
-.font-family--bold-italic__secondary {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
+/* Secondary font family ..... etc*/
 /** 2. Header styles
  * ----------------------------------------------------------------------------
  * NOTE: These can change per project depending on what font etc you use :) 
  *
  */
-/* line 95, ../sass/core/_typography.scss */
+/* line 96, ../sass/core/_typography.scss */
 h1,
 .h1 {
   line-height: 1;
   margin-top: 0.66667em;
 }
 
-/* line 103, ../sass/core/_typography.scss */
+/* line 104, ../sass/core/_typography.scss */
 h2,
 .h2 {
   line-height: 1.2;
   margin-top: 0.75em;
 }
 
-/* line 111, ../sass/core/_typography.scss */
+/* line 112, ../sass/core/_typography.scss */
 h3,
 .h3 {
   line-height: 1.2;
   margin-top: 1.09091em;
 }
 
-/* line 119, ../sass/core/_typography.scss */
+/* line 120, ../sass/core/_typography.scss */
 h4,
 .h4 {
   line-height: 1.33333333;
   margin-top: 1.11111em;
 }
 
-/* line 127, ../sass/core/_typography.scss */
+/* line 128, ../sass/core/_typography.scss */
 h5,
 .h5 {
   line-height: 1.2;
   margin-top: 0.75em;
 }
 
-/* line 135, ../sass/core/_typography.scss */
+/* line 136, ../sass/core/_typography.scss */
 h6,
 .h6 {
   line-height: 1.2;
@@ -1565,7 +1540,7 @@ h6,
  *  
  * ----------------------------------------------------------------------------
  */
-/* line 150, ../sass/core/_typography.scss */
+/* line 151, ../sass/core/_typography.scss */
 p,
 .para,
 li {
@@ -1581,7 +1556,7 @@ li {
  * 4. Typographic relationships (nawww, aren't they so good together?)
  * ----------------------------------------------------------------------------
  */
-/* line 192, ../sass/core/_typography.scss */
+/* line 195, ../sass/core/_typography.scss */
 h4 + h6,
 h4 + p,
 h5 + p {
@@ -1589,7 +1564,7 @@ h5 + p {
   /* 4px @ 14px */
 }
 
-/* line 199, ../sass/core/_typography.scss */
+/* line 202, ../sass/core/_typography.scss */
 p + p,
 .list--styled li + li,
 .list--styled_decimal li + li,
@@ -1602,7 +1577,7 @@ p + p,
  * 5. hr
  * ----------------------------------------------------------------------------
  */
-/* line 209, ../sass/core/_typography.scss */
+/* line 212, ../sass/core/_typography.scss */
 hr {
   border: none;
   height: 1px;
@@ -1612,12 +1587,12 @@ hr {
  *  6. Lowercase vs Uppercase
  * ----------------------------------------------------------------------------
  */
-/* line 220, ../sass/core/_typography.scss */
+/* line 223, ../sass/core/_typography.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 223, ../sass/core/_typography.scss */
+/* line 226, ../sass/core/_typography.scss */
 .lowercase {
   text-transform: lowercase;
 }
@@ -1626,17 +1601,17 @@ hr {
  * 7. Text Allignment classes
  * ----------------------------------------------------------------------------
  */
-/* line 233, ../sass/core/_typography.scss */
+/* line 236, ../sass/core/_typography.scss */
 .text-align--left {
   text-align: left;
 }
 
-/* line 236, ../sass/core/_typography.scss */
+/* line 239, ../sass/core/_typography.scss */
 .text-align--right {
   text-align: right;
 }
 
-/* line 239, ../sass/core/_typography.scss */
+/* line 242, ../sass/core/_typography.scss */
 .text-align--center {
   text-align: center;
 }
@@ -1645,33 +1620,38 @@ hr {
  * 8. List styles
  * ----------------------------------------------------------------------------
  */
-/* line 249, ../sass/core/_typography.scss */
+/* line 252, ../sass/core/_typography.scss */
 .list--unstyled, .list--inline {
   list-style: none;
   padding-left: 0;
   margin: 0 0 0 0;
 }
 
-/* line 255, ../sass/core/_typography.scss */
+/* line 258, ../sass/core/_typography.scss */
 .list--unstyled > li, .list--inline > li {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 270, ../sass/core/_typography.scss */
+/* line 268, ../sass/core/_typography.scss */
+.list--inline > li {
+  margin: 0;
+}
+
+/* line 274, ../sass/core/_typography.scss */
 .list--styled, .list--styled_decimal, .list--styled_alpha {
   padding-left: 1.5em;
   margin-top: .857142857em;
   list-style: circle;
 }
 
-/* line 281, ../sass/core/_typography.scss */
+/* line 285, ../sass/core/_typography.scss */
 .list--styled_decimal {
   list-style: decimal-leading-zero;
   padding-left: 2.25em;
 }
 
-/* line 287, ../sass/core/_typography.scss */
+/* line 292, ../sass/core/_typography.scss */
 .list--styled_alpha {
   list-style: lower-alpha;
 }
@@ -1680,7 +1660,7 @@ hr {
  * 9. text overflow helper class
  * ----------------------------------------------------------------------------
  */
-/* line 297, ../sass/core/_typography.scss */
+/* line 302, ../sass/core/_typography.scss */
 .text--overflow {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1688,7 +1668,7 @@ hr {
   width: 100%;
 }
 
-/* line 305, ../sass/core/_typography.scss */
+/* line 310, ../sass/core/_typography.scss */
 .text--nowrap {
   white-space: nowrap;
 }
@@ -1701,7 +1681,7 @@ hr {
  * these properties right here. Maybe consider scoping this to a class for
  * chrome/mac osx only at some point?
  */
-/* line 318, ../sass/core/_typography.scss */
+/* line 323, ../sass/core/_typography.scss */
 html,
 body {
   -webkit-font-smoothing: antialiased;
@@ -1712,7 +1692,7 @@ body {
  * 11. hide text
  * ----------------------------------------------------------------------------
  */
-/* line 328, ../sass/core/_typography.scss */
+/* line 333, ../sass/core/_typography.scss */
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -1730,12 +1710,12 @@ body {
  *
  * 
  */
-/* line 344, ../sass/core/_typography.scss */
+/* line 349, ../sass/core/_typography.scss */
 .sans {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 348, ../sass/core/_typography.scss */
+/* line 353, ../sass/core/_typography.scss */
 .serif {
   font-family: "georgia", serif;
 }

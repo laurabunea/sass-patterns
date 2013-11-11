@@ -5,6 +5,7 @@
  *
  * Structure:
  *      1. Base typography styles
+        a. Font families
  *      2. Heading styles
  *      3. Paragraph styles
  *      4. Typographic relationships
@@ -61,23 +62,23 @@ body {
     }
 
 
-/* secondary */
+/* Secondary font family ..... etc*/
 
-.font-family__secondary {
-    @include font($font-family-secondary, 400 , normal);
-}
+//.font-family__secondary {
+//    @include font($font-family-secondary, 400 , normal);
+//}
 
-    .font-family--italic__secondary {
-        @include font($font-family-secondary, 400 , italic);
-    }
+//    .font-family--italic__secondary {
+//        @include font($font-family-secondary, 400 , italic);
+//    }
 
-    .font-family--bold__secondary {
-        @include font($font-family-secondary, 700 , normal);
-    }
+//    .font-family--bold__secondary {
+//        @include font($font-family-secondary, 700 , normal);
+//    }
 
-    .font-family--bold-italic__secondary {
-        @include font($font-family-secondary, 700 , italic);
-    }
+//    .font-family--bold-italic__secondary {
+//        @include font($font-family-secondary, 700 , italic);
+//    }
 
 
 
@@ -154,11 +155,13 @@ li {
     margin-top: px-to-em(12, $font-size-s);              
 }
 
-strong, b {
+strong, 
+b {
     @extend .font-family--bold;
 }
 
-em, i {
+em, 
+i {
     @extend .font-family--italic;
 }
 
@@ -259,11 +262,12 @@ p + p,
 
 .list--inline {
 	@extend .clearfix;
-    @extend .list--unstyled;
+    @extend .list--unstyled;  
 }
 
 	.list--inline > li {
 		@extend .inline-block;
+        margin: 0;
 	}
 
 //default list style in this case its circles
@@ -283,6 +287,7 @@ p + p,
     list-style: decimal-leading-zero;
     padding-left:$mx;
 } 
+
 //alpha list
 .list--styled_alpha {
     @extend %list--styled;
@@ -294,7 +299,7 @@ p + p,
  * 9. text overflow helper class
  * ----------------------------------------------------------------------------
  */
- .text--overflow {
+.text--overflow {
     @extend .inline-block;
     overflow: hidden;
     text-overflow: ellipsis;

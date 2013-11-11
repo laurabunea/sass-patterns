@@ -18,7 +18,10 @@
 
         <ul class='list--styled_decimal'>   
             <li>
-                Base font family and line height
+                Base font family 
+            </li>
+            <li>
+                Base font styles 
             </li>
             <li>
                 Base font sizes
@@ -28,28 +31,85 @@
             </li>
         </ul>
 
-        <h2 class='h3'>
-            01. Base font family and line height
-        </h2>
-        <p>
-            For our base we use the following font settings on the HTML and body 
-            element to standardize the typographic scale in a consistent manner. 
-            We also make sure not to use united values for our line-heights 
-            per the <a href='http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/'>
-            recommendations of Mr. Eric Meyer himself.</a>
-        </p>
-        <p>
-            <strong>Rule:</strong> We leave html, body font-size at 100% - Even for responsive sites, 
-            it's nice knowing that 1em is always 16px. Computers calculate things in base2 rather 
-            than base10. This is a fundamentally awesome feature of the browser and we shouldn't 
-            break it. 
-        </p>
-        
-        
-        <div class='block--xs tb__tertiary'>
-                <h4 class='tiny uppercase text_muted'>
-                    code
-                </h4>
+        <div class='section--xl'>
+            <h2 class='h3'>
+                01. Base font family
+            </h2>
+            <p>
+                notes..
+            </p>
+            
+            
+            <div class='block--xs tb__tertiary'>
+                    <h4 class='tiny uppercase text_muted'>
+                        code
+                    </h4>
+<pre>
+<code class='language-css'>
+.font-family {
+    @include font($font-family, 400 , normal);
+}
+
+    .font-family--italic {
+        @include font($font-family, 400 , italic);
+    }
+
+    .font-family--bold {
+        @include font($font-family, 700 , normal);
+    }
+
+    .font-family--bold-italic {
+        @include font($font-family, 700 , italic);
+    }
+
+
+/* Secondary font family ..... etc*/
+
+/*.font-family__secondary {
+    @include font($font-family-secondary, 400 , normal);
+}
+
+    .font-family--italic__secondary {
+        @include font($font-family-secondary, 400 , italic);
+    }
+
+    .font-family--bold__secondary {
+        @include font($font-family-secondary, 700 , normal);
+    }
+
+    .font-family--bold-italic__secondary {
+        @include font($font-family-secondary, 700 , italic);
+    }
+*/
+
+</code>
+</pre>
+
+            </div>
+        </div>
+        <div class='section--xl'>
+            <h2 class='h3'>
+                01. Base font styles
+            </h2>
+            <p>
+                For our base we use the following font settings on the HTML and body 
+                element to standardize the typographic scale in a consistent manner. 
+                We also make sure not to use united values for our line-heights 
+                per the <a href='http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/'>
+                recommendations of Mr. Eric Meyer himself.</a>
+            </p>
+            <p>
+                <strong>Rule:</strong> We leave html, body font-size at 100% - Even for responsive sites, 
+                it's nice knowing that 1em is always 16px. Computers calculate things in base2 rather 
+                than base10. This is a fundamentally awesome feature of the browser and we shouldn't 
+                break it. 
+            </p>
+            
+            
+            <div class='block--xs tb__tertiary'>
+                    <h4 class='tiny uppercase text_muted'>
+                        code
+                    </h4>
 <pre>
 <code class='language-css'>
  /** 1. Base styles
@@ -59,31 +119,34 @@
 
 html,
 body {
-    @extend %font-family;
+    @extend .font-family;
+    @extend %fix-webkit-font-rendering;
     line-height:    $base-line-height;
     font-size:      100%;
-    @extend %fix-webkit-font-rendering;
 }
 </code>
 </pre>
-</div>
 
-        <h2 class='h3'>
-            02. Base font sizes
-        </h2>
-        <p>
-            Sit down with the designer and establish distinguishable 
-            font sizes using the <a href='/text-heirarchy.php'>text heirarchy template
-            </a>
-        </p>
-        <p>
-            <strong>Rule:</strong> Always set font-sizes in ems.
-        </p>
+            </div>
+        </div><!--section ends-->
 
-        <div class='block--xs tb__tertiary'>
-                <h4 class='tiny uppercase text_muted'>
-                    code
-                </h4>
+        <div class='section--xl'>
+            <h2 class='h3'>
+                02. Base font sizes
+            </h2>
+            <p>
+                Sit down with the designer and establish distinguishable 
+                font sizes using the <a href='/text-heirarchy.php'>text heirarchy template
+                </a>
+            </p>
+            <p>
+                <strong>Rule:</strong> Always set font-sizes in ems.
+            </p>
+
+            <div class='block--xs tb__tertiary'>
+                    <h4 class='tiny uppercase text_muted'>
+                        code
+                    </h4>
 <pre>
 <code class='language-sass'>
  /** Project font sizes
@@ -115,21 +178,25 @@ $font-size-xxxs:        11;     //.tiny
 
 </code>
 </pre>
-</div>
-       <h2 class='h3'>
-            03. Text Heirarchy
-        </h2>
-       
-        <p class=''>
-            Notes... The best way to do this is sit down with the designer and go through the
-            <a href='/text-heirarchy.php'>
-                text heirarchy
-            </a>
-            template with them.
-        </p>
-        
+            </div>
+        </div><!--section ends-->
 
-        <div class='page-header tb__header mx'>
+        <div class='section--xl'>
+           <h2 class='h3'>
+                03. Text Heirarchy
+            </h2>
+           
+            <p class=''>
+                Notes... The best way to do this is sit down with the designer and go through the
+                <a href='/text-heirarchy.php'>
+                    text heirarchy
+                </a>
+                template with them.
+            </p>
+        </div><!--section ends-->
+            
+
+        <div class='page-header tb__header mxx'>
             <h1>
                 Typography
                 <span class='tiny'>
