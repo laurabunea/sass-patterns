@@ -21,23 +21,23 @@
  *
  */
 
- 
+
 @function px-to-em($size, $context: 16) {
     @return #{($size / $context)}em;
 }
 
-$font-size-xxxxl:       72;
-$font-size-xxxl:        36;
-$font-size-xxl:         32;
-$font-size-xl:          22;
-$font-size-l:           20;
-$font-size-m:           18;
-$font-size-s:           16;
-$font-size-xs:          14;
-$font-size-xxs:         12;
-$font-size-xxxs:        11;
+$font-size-xxxxl:       72;     //h0
+$font-size-xxxl:        36;     //h1
+$font-size-xxl:         32;     //h2
+$font-size-xl:          22;     //h3
+$font-size-l:           20;     //h4
+$font-size-m:           18;     //h5
+$font-size-s:           16;     //h6 & .intro
+$font-size-xs:          14;     //p
+$font-size-xxs:         12;     //.small
+$font-size-xxxs:        11;     //.tiny
 
-%font-size-xxxxl     { font-size: px-to-em($font-size-xxxxl);}
+%font-size-xxxxl    { font-size: px-to-em($font-size-xxxxl);}
 %font-size-xxxl     { font-size: px-to-em($font-size-xxxl);}
 %font-size-xxl      { font-size: px-to-em($font-size-xxl);}
 %font-size-xl       { font-size: px-to-em($font-size-xl);}
@@ -66,10 +66,8 @@ $base-line-height: 1.428571429; // 20/14
  * -----------------------------------------------------------------------------
  */
 
-
-
-$sansSerifStack: "Helvetica Neue",Helvetica,Arial,sans-serif ;
-$serifStack: "georgia", serif;
+$sans-serif-stack: "Helvetica Neue",Helvetica,Arial,sans-serif ;
+$serif-stack: "georgia", serif;
 
 
 /**

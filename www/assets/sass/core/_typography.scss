@@ -8,13 +8,13 @@
  *      2. Heading styles
  *      3. Paragraph styles
  *      4. Typographic relationships
-        5. hr
+ *      5. hr
  *      6. Lower vs Uppercase
  *		7. Text allignment
  *		8. List styles
  *      9. text overflow helper class
-        10. Fix webkit font rendering
-        11. hide text
+ *      10. Fix webkit font rendering
+ *      11. hide text
  *
  * ----------------------------------------------------------------------------
  *
@@ -28,19 +28,10 @@
 
 html,
 body {
-    color:          $base-font-color;
-    font-family:    $sansSerifStack;
+    font-family:    $sans-serif-stack;
     line-height:    $base-line-height;
-    font-size: 100%; // leave this as the natural browser size
-    /* see point 9 */
+    font-size:      100%;
     @extend %fix-webkit-font-rendering;
-}
-
-a {
-    color:          $base-link-color;
-    &:hover {
-        color:          $base-link-hover-color;
-    }
 }
 
 
@@ -54,42 +45,48 @@ a {
     @extend %font-size-xxxxl;
 }
 
-h1, .h1 {
+h1, 
+.h1 {
     @extend .m0--b;
     @extend %font-size-xxxl;                   
     line-height: 1;
     margin-top: px-to-em(24, $font-size-xxxl);              
 }
 
-h2, .h2 {
+h2, 
+.h2 {
     @extend .m0--b;
     @extend %font-size-xxl;                    
     line-height: 1.2;
     margin-top: px-to-em(24, $font-size-xxl);                  
 }
 
-h3, .h3 {
+h3, 
+.h3 {
     @extend .m0--b;
     @extend %font-size-xl;
     line-height: 1.2;
     margin-top: px-to-em(24, $font-size-xl);
 }
 
-h4, .h4 {
+h4, 
+.h4 {
     @extend .m0--b;
     @extend %font-size-m;
     line-height: 1.33333333;
     margin-top: px-to-em(20, $font-size-m);
 }
 
-h5, .h5 {
+h5, 
+.h5 {
     @extend .m0--b;
     @extend %font-size-s;
     line-height: 1.2;
     margin-top: px-to-em(12, $font-size-s);
 }
 
-h6, .h6 {
+h6, 
+.h6 {
     @extend .m0--b;
     @extend %font-size-xs;
     line-height: 1.2;
@@ -102,10 +99,11 @@ h6, .h6 {
  * ----------------------------------------------------------------------------
  */
 
-p, .para, ul {
+p, 
+.para, 
+ul {
     @extend .m0--b;
     @extend %font-size-xs;
-    //reminder line height is relative to the font size declared above
     line-height: px-to-em(21, $font-size-xs); 
     margin-top: px-to-em(12, $font-size-xs);              
 }
@@ -146,9 +144,7 @@ ul.list--styled li + li {
  */
 
  hr {
-    background-color: $hr-colour;
     border: none;
-    color: $hr-colour;
     height: 1px;
  }
 
@@ -212,9 +208,8 @@ ul.list--styled li + li {
     padding-left:$m;
     margin-top: .857142857em; //same as the margin top on p tags
     list-style: circle;
-    //or custom image here
-    //list-style-image: url('');
 }
+
 .list--styled {
     @extend %list--styled;
 }

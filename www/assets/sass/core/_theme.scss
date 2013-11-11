@@ -22,6 +22,19 @@
 html, 
 body {
     background-color: $bg-color;
+    color:          $base-font-color;
+}
+
+a {
+    color:          $base-link-color;
+    &:hover {
+        color:      $base-link-hover-color;
+    }
+}
+
+hr {
+  background-color: $hr-colour;
+  color: $hr-colour;
 }
 
 /**

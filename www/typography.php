@@ -12,53 +12,122 @@
                 </span>
             </h1>
         </div>
-
         <p class=''>
             There are a couple of things you need to set up before you begin a project:
         </p>
 
-        <ul class='list--styled '>   
+        <ul class='list--styled_decimal'>   
             <li>
-                base font family
+                Base font family and line heights 
             </li>
             <li>
-                base font sizes
+                Base font sizes
             </li>
             <li>
-                base line heights and text heirarchy
+                Text heirarchy
             </li>
         </ul>
+
+        <h2 class='h3'>
+            01. Base font family and line heights
+        </h2>
+        <p>
+            For our base we use the following font settings on the HTML and body 
+            element to standardize the typographic scale in a consistent manner. 
+            We also make sure not to use united values for our line-heights 
+            per the <a href='http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/'>
+            recommendations of Mr. Eric Meyer himself.</a>
+        </p>
+        <p>
+            <strong>Rule:</strong> We leave html, body font-size at 100% - Even for responsive sites, 
+            it's nice knowing that 1em is always 16px. Computers calculate things in base2 rather 
+            than base10. This is a fundamentally awesome feature of the browser and we shouldn't 
+            break it. 
+        </p>
+        
+        
+        <div class='block--xs tb__tertiary'>
+                <h4 class='tiny uppercase text_muted'>
+                    code
+                </h4>
+<pre>
+<code class='language-css'>
+ /** 1. Base styles
+ * ---------------------------------------------------
+ *
+ */
+
+html,
+body {
+    font-family:    $sans-serif-stack;
+    line-height:    $base-line-height;
+    font-size:      100%;
+    @extend %fix-webkit-font-rendering;
+}
+</code>
+</pre>
+</div>
+
+        <h2 class='h3'>
+            02. Base font sizes
+        </h2>
+        <p>
+            Sit down with the designer and establish distinguishable 
+            font sizes using the <a href='/text-heirarchy.php'>text heirarchy template
+            </a>
+        </p>
+        <p>
+            <strong>Rule:</strong> Always set font-sizes in ems.
+        </p>
+
+        <div class='block--xs tb__tertiary'>
+                <h4 class='tiny uppercase text_muted'>
+                    code
+                </h4>
+<pre>
+<code class='language-sass'>
+ /** Project font sizes
+ * ---------------------------------------------------
+ *
+ */
+
+$font-size-xxxxl:       72;     //h0
+$font-size-xxxl:        36;     //h1
+$font-size-xxl:         32;     //h2
+$font-size-xl:          22;     //h3
+$font-size-l:           20;     //h4
+$font-size-m:           18;     //h5
+$font-size-s:           16;     //h6 &amp; .intro
+$font-size-xs:          14;     //p
+$font-size-xxs:         12;     //.small
+$font-size-xxxs:        11;     //.tiny
+
+%font-size-xxxxl    { font-size: px-to-em($font-size-xxxxl);}
+%font-size-xxxl     { font-size: px-to-em($font-size-xxxl);}
+%font-size-xxl      { font-size: px-to-em($font-size-xxl);}
+%font-size-xl       { font-size: px-to-em($font-size-xl);}
+%font-size-l        { font-size: px-to-em($font-size-l);}
+%font-size-m        { font-size: px-to-em($font-size-m);}
+%font-size-s        { font-size: px-to-em($font-size-s);}
+%font-size-xs       { font-size: px-to-em($font-size-xs);}
+%font-size-xxs      { font-size: px-to-em($font-size-xxs);}
+%font-size-xxxs     { font-size: px-to-em($font-size-xxxs);}
+
+</code>
+</pre>
+</div>
+       <h2 class='h3'>
+            03. Text Heirarchy
+        </h2>
        
-        <p class=''>
+        <p class=''>Notes
             The best way to do this is sit down with the designer and go through the
             <a href='/text-heirarchy.php'>
                 text heirarchy
             </a>
             template with them.
         </p>
-
-        <div class='page-header tb__header mx'>
-            <h1>
-                Typography
-                <span class='tiny'>
-                    - Rules
-                </span>
-            </h1>
-        </div>
-
-        <ul class='list--styled'>
-            <li>
-                Leave html, body font-size at 100% -  Even for responsive sites, it's nice knowing that 1em is always 16px. 
-                Computers calculate things in base2 rather than base10. This is a fundamentally awesome feature of the browser and 
-                we shouldn't break it.
-            </li>
-            <li>
-                Always set font-sizes in ems.
-            </li>
-            <li>
-                Don't use units on line-heights
-            </li>
-        </ul>
+        
 
         <div class='page-header tb__header mx'>
             <h1>
