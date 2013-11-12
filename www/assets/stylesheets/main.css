@@ -2046,96 +2046,79 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   z-index: 5;
 }
 
-/* line 29, ../sass/core/_page-specific.scss */
-.navigation {
-  margin: 0 auto;
-}
-
-/* line 33, ../sass/core/_page-specific.scss */
-.navigation li a {
+/* line 30, ../sass/core/_page-specific.scss */
+.navigation a {
   color: #fff;
   text-decoration: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
-/* line 38, ../sass/core/_page-specific.scss */
-.navigation li a.active {
+/* line 35, ../sass/core/_page-specific.scss */
+.navigation a.active {
   background-color: #2E2F2B;
 }
 
-/* line 41, ../sass/core/_page-specific.scss */
-.navigation li a:hover {
+/* line 38, ../sass/core/_page-specific.scss */
+.navigation a:hover {
   color: #E6DB74;
 }
 
-/* line 46, ../sass/core/_page-specific.scss */
+/* line 43, ../sass/core/_page-specific.scss */
 .logo {
   display: inline-block;
-  margin-top: 12px;
   font-size: 1.8em;
 }
-/* line 50, ../sass/core/_page-specific.scss */
+/* line 47, ../sass/core/_page-specific.scss */
 .logo a {
   color: #fff;
 }
-/* line 53, ../sass/core/_page-specific.scss */
+/* line 50, ../sass/core/_page-specific.scss */
 .logo a:hover {
   color: #E6DB74;
 }
-/* line 59, ../sass/core/_page-specific.scss */
+/* line 56, ../sass/core/_page-specific.scss */
 .logo span {
   color: #E6DB74;
 }
 
-/* line 66, ../sass/core/_page-specific.scss */
+/* line 63, ../sass/core/_page-specific.scss */
 .br--s {
   border-radius: 10px;
 }
 
-/* line 71, ../sass/core/_page-specific.scss */
+/* line 68, ../sass/core/_page-specific.scss */
 .testbox {
   height: 150px;
   width: 150px;
   display: inline-block;
 }
 
-/* line 76, ../sass/core/_page-specific.scss */
+/* line 73, ../sass/core/_page-specific.scss */
 .testbox-100-100 {
   height: 100px;
   width: 100px;
 }
 
-/* line 80, ../sass/core/_page-specific.scss */
+/* line 77, ../sass/core/_page-specific.scss */
 .testbox-400-100 {
   height: 100px;
   width: 300px;
 }
 
-/* line 83, ../sass/core/_page-specific.scss */
+/* line 80, ../sass/core/_page-specific.scss */
 .homepage {
   background-color: #4D4D4D;
   color: #fff;
 }
 
-/* line 88, ../sass/core/_page-specific.scss */
+/* line 85, ../sass/core/_page-specific.scss */
 .fred {
   left: -138px;
   top: 0;
 }
 
 @media all and (max-width: 800px) {
-  /*dirty i know!*/
-  /* line 96, ../sass/core/_page-specific.scss */
-  .grid__item, .grid > *, .grid {
-    width: 100%;
-  }
-
-  /* line 100, ../sass/core/_page-specific.scss */
-  .navigation--side {
-    display: none;
-  }
-
-  /* line 103, ../sass/core/_page-specific.scss */
+  /* line 92, ../sass/core/_page-specific.scss */
   .content--padding {
     padding: 1.5em;
   }

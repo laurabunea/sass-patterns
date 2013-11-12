@@ -11,8 +11,8 @@
     <body>
     <!-- Top Navigation Bar - this holds the parent categories -->
     <div class='navigation--wrapper tb__quarternary '>
-        <div class='navigation clearfix '>
-            <h1 class='uppercase left logo' >
+        <div class='navigation clearfix xm'>
+            <h1 class='uppercase left logo m0' >
                 <a href='/'>
                     F<span>r</span>ed
                 </a>
