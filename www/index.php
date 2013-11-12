@@ -20,47 +20,47 @@
         </div>
     </div> 
 
-	<div class='content tb__primary grid__item '>
-        
-		<div class='content--padding'>
-			<p class='intro'>
-                Notes on Fred here ... and good rules ...
-            </p>
-            
 
-			<h3>
-				Naming Conventions
-			</h3>
-			<!-- code block starts -->
-            <div class='block--xs tb__tertiary'>
-                <h4 class='tiny uppercase text_muted'>
-                    code
-                </h4>
-                <pre>
+        
+	<div class='content--padding tb__primary'>
+		<p class='intro'>
+            Notes on Fred here ... and good rules ...
+        </p>
+        
+
+		<h3>
+			Naming Conventions
+		</h3>
+		<!-- code block starts -->
+        <div class='block--xs tb__tertiary'>
+            <h4 class='tiny uppercase text_muted'>
+                code
+            </h4>
+            <pre>
 <code class='language-css'>
 .name or .complex-name {
-	/* This is a class! */
-	color: red;
+    /* This is a class! */
+    color: red;
 }
 
-.name--extension {
-	/*This modifies the class*/
-	font-weight: bold;
-}
+    .name--extension {
+        /*This modifies the class*/
+        font-weight: bold;
+    }
 
-	.name__component {
-		/*This is a sub-component of the class*/
-	}
+    .name__component {
+    	/*This is a sub-component of the class*/
+    }
 
-		.name__component__subcomponent {
-			/*Tabbed to simulate sass nesting, without the specificity*/
-		}
+    	.name__component__subcomponent {
+    		/*Tabbed to simulate sass nesting, without the specificity*/
+    	}
 </code>
-                </pre>
-            </div><!-- code block ends -->
-		</div>
+            </pre>
+        </div><!-- code block ends -->
 	</div>
 </div>
+
 <?php 
     include 'footer.php'; 
 ?>

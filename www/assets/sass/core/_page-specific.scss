@@ -3,65 +3,45 @@
 shame!!!! just some dirty styles to get a basic style. i WILL refacter to get the project started :) 
 
 */
-.content_wrapper,
-.navigation--top {
+
+%center-element {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.content,
+.navigation {
+    @extend %center-element;
     max-width:760px;
+    width: 100%;
 }
-.content_wrapper {
-    margin:80px auto 80px auto;
 
+    .content--padding {
+        padding:2em 3em;
+    }
 
+.navigation--wrapper {
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 5;
 }
-    .content {
-        width: 100%;
-        
-    }
-        .content--padding {
-            padding:2em 3em;
-        }
+    .navigation {
+        margin:0 auto;
 
-    .navigation--wrapper {
-        position:fixed;
-        top:0;
-        width:100%;
-        z-index: 5;
     }
-        .navigation--top {
-            margin:0 auto;
-
+        .navigation li a {
+            color:#fff;
+            text-decoration: none;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.3);
         }
-            .navigation--top li a {
-                color:#fff;
-                text-decoration: none;
-                text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+            .navigation li a.active {
+                background-color: #2E2F2B;
             }
-                .navigation--top li a.active {
-                    background-color: #2E2F2B;
-                }
-                .navigation--top li a:hover {
-                    color:#E6DB74;
-                }
+            .navigation li a:hover {
+                color:#E6DB74;
+            }
 
-
-.navigation--side {
-    width:25%;
-}
-    .navigation--side li a, 
-    .navigation--top li a  {
-        display: block;
-        text-decoration: none;  
-    }
-
-    .navigation--side li a {
-        color:#4B4D43;
-    }
-
-        .navigation--side li a:hover {
-            background-color: #4D4D4D;
-            color:#E6DB74;
-            box-shadow: none;
-            
-        }
 
 .logo {
     display:inline-block;
@@ -81,6 +61,12 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
     }
 
 }
+
+//extract and make small medium and large
+.br--s {
+    border-radius:10px;
+}
+
 
 .testbox {
     @include box-dimensions(150px, 150px);

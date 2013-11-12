@@ -10,8 +10,8 @@
 
     <body>
     <!-- Top Navigation Bar - this holds the parent categories -->
-    <div class='navigation--wrapper tb__quarternary'>
-        <div class='navigation--top clearfix'>
+    <div class='navigation--wrapper tb__quarternary '>
+        <div class='navigation clearfix '>
             <h1 class='uppercase left logo' >
                 <a href='/'>
                     F<span>r</span>ed
@@ -57,4 +57,4 @@
             </ul><!--list inline ends-->
         </div><!--navigation top ends-->
     </div><!--navigation wrapper ends-->
-    <div class='content_wrapper grid '>
+    <div class='content mxxx'>

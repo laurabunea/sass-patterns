@@ -542,12 +542,12 @@ li {
  * Layout - Spacing: she's a fickle mistress.
  * -----------------------------------------------------------------------------
  */
-/* line 92, ../sass/core/_variables.scss */
+/* line 93, ../sass/core/_variables.scss */
 .m0 {
   margin-top: 0;
 }
 
-/* line 93, ../sass/core/_variables.scss */
+/* line 94, ../sass/core/_variables.scss */
 .m0--b, h1,
 .h1, h2,
 .h2, h3,
@@ -560,97 +560,97 @@ li {
   margin-bottom: 0;
 }
 
-/* line 94, ../sass/core/_variables.scss */
+/* line 95, ../sass/core/_variables.scss */
 .xxxm {
   margin-top: 0.1em;
 }
 
-/* line 95, ../sass/core/_variables.scss */
+/* line 96, ../sass/core/_variables.scss */
 .xxm {
   margin-top: 0.5em;
 }
 
-/* line 96, ../sass/core/_variables.scss */
+/* line 97, ../sass/core/_variables.scss */
 .xm {
   margin-top: 1em;
 }
 
-/* line 97, ../sass/core/_variables.scss */
+/* line 98, ../sass/core/_variables.scss */
 .m {
   margin-top: 1.5em;
 }
 
-/* line 98, ../sass/core/_variables.scss */
+/* line 99, ../sass/core/_variables.scss */
 .mx {
   margin-top: 2.25em;
 }
 
-/* line 99, ../sass/core/_variables.scss */
+/* line 100, ../sass/core/_variables.scss */
 .mxx {
   margin-top: 3em;
 }
 
-/* line 100, ../sass/core/_variables.scss */
+/* line 101, ../sass/core/_variables.scss */
 .mxxx {
   margin-top: 4.5em;
 }
 
-/* line 102, ../sass/core/_variables.scss */
+/* line 103, ../sass/core/_variables.scss */
 .xxm--b {
   margin-bottom: 0.5em;
 }
 
-/* line 103, ../sass/core/_variables.scss */
+/* line 104, ../sass/core/_variables.scss */
 .xm--b {
   margin-bottom: 1em;
 }
 
-/* line 104, ../sass/core/_variables.scss */
+/* line 105, ../sass/core/_variables.scss */
 .m--b {
   margin-bottom: 1.5em;
 }
 
-/* line 105, ../sass/core/_variables.scss */
+/* line 106, ../sass/core/_variables.scss */
 .mx--b {
   margin-bottom: 2.25em;
 }
 
-/* line 106, ../sass/core/_variables.scss */
+/* line 107, ../sass/core/_variables.scss */
 .mxx--b {
   margin-bottom: 3em;
 }
 
-/* line 108, ../sass/core/_variables.scss */
+/* line 109, ../sass/core/_variables.scss */
 .p0 {
   padding-top: 0 !important;
 }
 
-/* line 109, ../sass/core/_variables.scss */
+/* line 110, ../sass/core/_variables.scss */
 .p0--b {
   padding-bottom: 0 !important;
 }
 
-/* line 110, ../sass/core/_variables.scss */
+/* line 111, ../sass/core/_variables.scss */
 .xxp {
   padding-top: 0.5em;
 }
 
-/* line 111, ../sass/core/_variables.scss */
+/* line 112, ../sass/core/_variables.scss */
 .xp {
   padding-top: 1em;
 }
 
-/* line 112, ../sass/core/_variables.scss */
+/* line 113, ../sass/core/_variables.scss */
 .p {
   padding-top: 1.5em;
 }
 
-/* line 113, ../sass/core/_variables.scss */
+/* line 114, ../sass/core/_variables.scss */
 .px {
   padding-top: 2.25em;
 }
 
-/* line 114, ../sass/core/_variables.scss */
+/* line 115, ../sass/core/_variables.scss */
 .pxx {
   padding-top: 3em;
 }
@@ -2020,18 +2020,16 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 
 */
 /* line 7, ../sass/core/_page-specific.scss */
-.content_wrapper,
-.navigation--top {
+.content,
+.navigation {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 13, ../sass/core/_page-specific.scss */
+.content,
+.navigation {
   max-width: 760px;
-}
-
-/* line 10, ../sass/core/_page-specific.scss */
-.content_wrapper {
-  margin: 80px auto 80px auto;
-}
-
-/* line 15, ../sass/core/_page-specific.scss */
-.content {
   width: 100%;
 }
 
@@ -2049,96 +2047,77 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 }
 
 /* line 29, ../sass/core/_page-specific.scss */
-.navigation--top {
+.navigation {
   margin: 0 auto;
 }
 
 /* line 33, ../sass/core/_page-specific.scss */
-.navigation--top li a {
+.navigation li a {
   color: #fff;
   text-decoration: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
 
 /* line 38, ../sass/core/_page-specific.scss */
-.navigation--top li a.active {
+.navigation li a.active {
   background-color: #2E2F2B;
 }
 
 /* line 41, ../sass/core/_page-specific.scss */
-.navigation--top li a:hover {
+.navigation li a:hover {
   color: #E6DB74;
 }
 
 /* line 46, ../sass/core/_page-specific.scss */
-.navigation--side {
-  width: 25%;
-}
-
-/* line 50, ../sass/core/_page-specific.scss */
-.navigation--side li a,
-.navigation--top li a {
-  display: block;
-  text-decoration: none;
-}
-
-/* line 55, ../sass/core/_page-specific.scss */
-.navigation--side li a {
-  color: #4B4D43;
-}
-
-/* line 59, ../sass/core/_page-specific.scss */
-.navigation--side li a:hover {
-  background-color: #4D4D4D;
-  color: #E6DB74;
-  box-shadow: none;
-}
-
-/* line 66, ../sass/core/_page-specific.scss */
 .logo {
   display: inline-block;
   margin-top: 12px;
   font-size: 1.8em;
 }
-/* line 70, ../sass/core/_page-specific.scss */
+/* line 50, ../sass/core/_page-specific.scss */
 .logo a {
   color: #fff;
 }
-/* line 73, ../sass/core/_page-specific.scss */
+/* line 53, ../sass/core/_page-specific.scss */
 .logo a:hover {
   color: #E6DB74;
 }
-/* line 79, ../sass/core/_page-specific.scss */
+/* line 59, ../sass/core/_page-specific.scss */
 .logo span {
   color: #E6DB74;
 }
 
-/* line 85, ../sass/core/_page-specific.scss */
+/* line 66, ../sass/core/_page-specific.scss */
+.br--s {
+  border-radius: 10px;
+}
+
+/* line 71, ../sass/core/_page-specific.scss */
 .testbox {
   height: 150px;
   width: 150px;
   display: inline-block;
 }
 
-/* line 90, ../sass/core/_page-specific.scss */
+/* line 76, ../sass/core/_page-specific.scss */
 .testbox-100-100 {
   height: 100px;
   width: 100px;
 }
 
-/* line 94, ../sass/core/_page-specific.scss */
+/* line 80, ../sass/core/_page-specific.scss */
 .testbox-400-100 {
   height: 100px;
   width: 300px;
 }
 
-/* line 97, ../sass/core/_page-specific.scss */
+/* line 83, ../sass/core/_page-specific.scss */
 .homepage {
   background-color: #4D4D4D;
   color: #fff;
 }
 
-/* line 102, ../sass/core/_page-specific.scss */
+/* line 88, ../sass/core/_page-specific.scss */
 .fred {
   left: -138px;
   top: 0;
@@ -2146,17 +2125,17 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 
 @media all and (max-width: 800px) {
   /*dirty i know!*/
-  /* line 110, ../sass/core/_page-specific.scss */
+  /* line 96, ../sass/core/_page-specific.scss */
   .grid__item, .grid > *, .grid {
     width: 100%;
   }
 
-  /* line 114, ../sass/core/_page-specific.scss */
+  /* line 100, ../sass/core/_page-specific.scss */
   .navigation--side {
     display: none;
   }
 
-  /* line 117, ../sass/core/_page-specific.scss */
+  /* line 103, ../sass/core/_page-specific.scss */
   .content--padding {
     padding: 1.5em;
   }
