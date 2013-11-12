@@ -2,7 +2,8 @@
     include 'header.php'; 
 ?>
 
-<div class='content tb__primary grid__item'>
+<div class='content tb__primary grid__item relative'>
+    <img alt='fred the helpful fed' src='assets/images/fred-side.png' class='absolute fred' style='left:-138px; top:0;'/>
     <div class='content--padding'>
         <div class='page-header tb__header'>
             <h1>

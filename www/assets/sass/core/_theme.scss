@@ -87,7 +87,12 @@ hr {
 	border-color:$danger-block-border;
 }
 
-
+.br--xs {@include vendor(border-radius, 2px 2px 2px 2px);}
+.br--xs {@include vendor(border-radius, 5px 5px 5px 5px);}
+.br--s {@include vendor(border-radius, 10px 10px 10px 10px);}
+//.br--l {@include vendor(border-radius, 50% 50% 50% 50%);}
+//.br--xl {@include vendor(border-radius, 50% 50% 50% 50%);}
+//.br--xxl {@include vendor(border-radius, 50% 50% 50% 50%);}
 
 /**
  * 2. 

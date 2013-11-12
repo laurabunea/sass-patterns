@@ -55,7 +55,9 @@
 .relative {
     position: relative;
 }
-
+.absolute{
+    @extend %absolute;
+}
 .absolute__bottom_left {
 	@extend %absolute;
 	bottom:0;
