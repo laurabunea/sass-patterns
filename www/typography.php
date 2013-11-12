@@ -19,21 +19,29 @@
 
     <ul class='list--styled_decimal'>   
         <li>
-            Base font family 
+            <a href='#FontFamilyAnchor'>
+                Base font family 
+            </a>
         </li>
         <li>
-            Base font styles 
+            <a href='#FontStylesAnchor'>
+                Base font styles 
+            </a>
         </li>
         <li>
-            Base font sizes
+            <a href='#FontSizesAnchor'>
+                Base font sizes
+            </a>
         </li>
         <li>
-            Text heirarchy
+            <a href='#FontHeirarchyAnchor'>
+                Text heirarchy
+            </a>
         </li>
     </ul>
 
-    <div class='section--xl'>
-        <h2 class='h3'>
+    <div class='section--xl' id='FontFamilyAnchor'>
+        <h2 class='h3' >
             01. Base font family
         </h2>
         <p>
@@ -48,7 +56,7 @@
 <pre>
 <code class='language-css'>
 .font-family {
-@include font($font-family, 400 , normal);
+    @include font($font-family, 400 , normal);
 }
 
 .font-family--italic {
@@ -67,7 +75,7 @@
 /* Secondary font family ..... etc*/
 
 /*.font-family__secondary {
-@include font($font-family-secondary, 400 , normal);
+    @include font($font-family-secondary, 400 , normal);
 }
 
 .font-family--italic__secondary {
@@ -88,7 +96,7 @@
 
         </div>
     </div>
-    <div class='section--xl'>
+    <div class='section--xl' id='FontStylesAnchor'>
         <h2 class='h3'>
             01. Base font styles
         </h2>
@@ -131,7 +139,7 @@ font-size:      100%;
         </div>
     </div><!--section ends-->
 
-    <div class='section--xl'>
+    <div class='section--xl' id='FontSizesAnchor'>
         <h2 class='h3'>
             02. Base font sizes
         </h2>
@@ -182,7 +190,7 @@ $font-size-xxxs:        11;     //.tiny
         </div>
     </div><!--section ends-->
 
-    <div class='section--xl'>
+    <div class='section--xl' id='FontHeirarchyAnchor'>
        <h2 class='h3'>
             03. Text Heirarchy
         </h2>
@@ -212,37 +220,37 @@ $font-size-xxxs:        11;     //.tiny
 
     <ol class='list--styled_decimal'>
         <li>
-            <a href='typo-paragraph'>
+            <a href='#TypographyHelper1Anchor'>
                 Font sizes
             </a>
         </li>
         <li>
-            <a href='typo-sans'>
+            <a href='#TypographyHelper2Anchor'>
                 Sans vs Serif
             </a>
         </li>
         <li>
-            <a href='#typo-cases'>
+            <a href='#TypographyHelper3Anchor'>
                 Lower vs Upper case
             </a>
         </li>
         <li>
-            <a href='#typo-text-align'>
+            <a href='#TypographyHelper4Anchor'>
                 Text allignment
             </a>
         </li>
         <li>
-            <a href='#typo-overflow'>
+            <a href='#TypographyHelper5Anchor'>
                 Overflow vs Ellipsis
             </a>
         </li>
         <li>
-            <a href='#typo-lists'>
+            <a href='#TypographyHelper6Anchor'>
                 List styles
             </a>
         </li>
         <li>
-            <a href='#typo-lists'>
+            <a href='#TypographyHelper7Anchor'>
                 Visually hidden elements
             </a>
         </li>
@@ -251,7 +259,7 @@ $font-size-xxxs:        11;     //.tiny
     <!-- /****************************************  Text sizes  *******************************/ -->
     <!--<hr class='mx'>-->
     
-    <div class='section--xl' id='typo-paragraph'>
+    <div class='section--xl' id='TypographyHelper1Anchor'>
         <h2 class='h3'>
             01. Font sizes
         </h2>
@@ -311,7 +319,7 @@ $font-size-xxxs:        11;     //.tiny
         <!-- 2. Common Text sizes-->
         <div class='section--xl'>
             <h3 class='h4'>
-                2. Common Text sizes
+                b) Common Text sizes
             </h3>
             <p>
                 Notes
@@ -367,7 +375,7 @@ $font-size-xxxs:        11;     //.tiny
         <!-- 3. sub headings-->
         <div class='section--xl'>
             <h3 class='m h4' >
-                3. Sub Headings
+                c) Sub Headings
             </h3>
             <p>
                 see
@@ -382,9 +390,9 @@ $font-size-xxxs:        11;     //.tiny
 
 <!-- /****************************************  Sans/serif text  *******************************/ -->
     <hr class='mx'>
-    <div class='section--xl' id='typo-sans'>
+    <div class='section--xl' id='TypographyHelper2Anchor'>
         <h2 class='h3'>
-            Sans vs Sans Serif
+            02. Sans vs Sans Serif
         </h2>
         <p> 
             Notes 
@@ -418,10 +426,10 @@ $font-size-xxxs:        11;     //.tiny
 
 <!-- /****************************************  Lower Case vs Upper Case  *******************************/ -->
     <hr class='mx'>
-    <div class='section--xl' id='typo-cases'>
+    <div class='section--xl' id='TypographyHelper3Anchor'>
 
         <h2 class='h3'>
-            Lower vs Upper case
+            03. Lower vs Upper case
         </h2>
         <p> 
             Notes 
@@ -452,10 +460,10 @@ $font-size-xxxs:        11;     //.tiny
 
  <!-- /****************************************  Text allignment classes  *******************************/ -->
     <hr class='mx'>
-    <div class='section--xl' id='typo-text-align'>
+    <div class='section--xl' id='TypographyHelper4Anchor'>
 
         <h2 class='h3'>
-            Text allignment classes
+            04. Text allignment classes
         </h2>
 
         <p> 
@@ -493,9 +501,9 @@ $font-size-xxxs:        11;     //.tiny
     </div><!--  typo-text-align ends -->
 <!-- /****************************************  Txt overflow and ellipsis  *******************************/ -->
     <hr class='mx'>
-    <div class='section--xl' id='typo-overflow'>
+    <div class='section--xl' id='TypographyHelper5Anchor'>
         <h2 class='h3'>
-            Text overflow and Ellipsis
+            05. Text overflow and Ellipsis
         </h2>
         <p> 
             Notes 
@@ -534,10 +542,10 @@ $font-size-xxxs:        11;     //.tiny
     </div><!--typo-overflow ends-->
 <!-- /****************************************  List styles  *******************************/ -->
     <hr class='mx'>
-    <div class='section--xl' id='typo-lists'>
+    <div class='section--xl' id='TypographyHelper6Anchor'>
 
         <h2 class='h3'>
-            List styles
+            06. List styles
         </h2>
 
         <p>
@@ -546,7 +554,7 @@ $font-size-xxxs:        11;     //.tiny
 
         <div class=''>
             <h3 class='h4'>
-                1. Un styled list
+                a) Un styled list
             </h3>
 
             <!-- code block ends -->
@@ -582,7 +590,7 @@ $font-size-xxxs:        11;     //.tiny
         
         <div class='section--xl'>
             <h3 class='h4'>
-                2. Styled list
+                b) Styled list
             </h3>
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
@@ -617,7 +625,7 @@ $font-size-xxxs:        11;     //.tiny
 
         <!-- 3. Inline list -->
         <div class='section--xl'>
-            <h3 class='h4'>3. Inline list</h3>
+            <h3 class='h4'>c) Inline list</h3>
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
                 <h4 class='tiny uppercase text_muted'>
@@ -652,10 +660,10 @@ $font-size-xxxs:        11;     //.tiny
 
          <!-- /****************************************  Hide text *******************************/ -->
     <hr class='mx'>
-    <div class='section--xl' id='typo-hide-text'>
+    <div class='section--xl' id='TypographyHelper7Anchor'>
 
         <h2 class='h3'>
-            Hide text
+            07. Hide text
         </h2>
 
         <p> 

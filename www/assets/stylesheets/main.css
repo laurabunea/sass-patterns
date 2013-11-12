@@ -2051,74 +2051,75 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   color: #fff;
   text-decoration: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  display: inline-block;
 }
 
-/* line 35, ../sass/core/_page-specific.scss */
+/* line 36, ../sass/core/_page-specific.scss */
 .navigation a.active {
   background-color: #2E2F2B;
 }
 
-/* line 38, ../sass/core/_page-specific.scss */
+/* line 39, ../sass/core/_page-specific.scss */
 .navigation a:hover {
   color: #E6DB74;
 }
 
-/* line 43, ../sass/core/_page-specific.scss */
+/* line 44, ../sass/core/_page-specific.scss */
 .logo {
   display: inline-block;
   font-size: 1.8em;
 }
-/* line 47, ../sass/core/_page-specific.scss */
+/* line 48, ../sass/core/_page-specific.scss */
 .logo a {
   color: #fff;
 }
-/* line 50, ../sass/core/_page-specific.scss */
+/* line 51, ../sass/core/_page-specific.scss */
 .logo a:hover {
   color: #E6DB74;
 }
-/* line 56, ../sass/core/_page-specific.scss */
+/* line 57, ../sass/core/_page-specific.scss */
 .logo span {
   color: #E6DB74;
 }
 
-/* line 63, ../sass/core/_page-specific.scss */
+/* line 64, ../sass/core/_page-specific.scss */
 .br--s {
   border-radius: 10px;
 }
 
-/* line 68, ../sass/core/_page-specific.scss */
+/* line 69, ../sass/core/_page-specific.scss */
 .testbox {
   height: 150px;
   width: 150px;
   display: inline-block;
 }
 
-/* line 73, ../sass/core/_page-specific.scss */
+/* line 74, ../sass/core/_page-specific.scss */
 .testbox-100-100 {
   height: 100px;
   width: 100px;
 }
 
-/* line 77, ../sass/core/_page-specific.scss */
+/* line 78, ../sass/core/_page-specific.scss */
 .testbox-400-100 {
   height: 100px;
   width: 300px;
 }
 
-/* line 80, ../sass/core/_page-specific.scss */
+/* line 81, ../sass/core/_page-specific.scss */
 .homepage {
   background-color: #4D4D4D;
   color: #fff;
 }
 
-/* line 85, ../sass/core/_page-specific.scss */
+/* line 86, ../sass/core/_page-specific.scss */
 .fred {
   left: -138px;
   top: 0;
 }
 
 @media all and (max-width: 800px) {
-  /* line 92, ../sass/core/_page-specific.scss */
+  /* line 93, ../sass/core/_page-specific.scss */
   .content--padding {
     padding: 1.5em;
   }
