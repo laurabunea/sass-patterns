@@ -2,7 +2,6 @@
     include 'header.php'; 
 ?>
 
-
 <div class='content--padding clearfix tb__primary'>
     <div class='page-header tb__header'>
         <h1>

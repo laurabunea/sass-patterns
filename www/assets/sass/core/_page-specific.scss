@@ -26,21 +26,18 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
     width:100%;
     z-index: 5;
 }
-    .navigation {
-        margin:0 auto;
 
+    .navigation a {
+        color:#fff;
+        text-decoration: none;
+        text-shadow: 0 1px rgba(0, 0, 0, 0.3);
     }
-        .navigation li a {
-            color:#fff;
-            text-decoration: none;
-            text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+        .navigation a.active {
+            background-color: #2E2F2B;
         }
-            .navigation li a.active {
-                background-color: #2E2F2B;
-            }
-            .navigation li a:hover {
-                color:#E6DB74;
-            }
+        .navigation a:hover {
+            color:#E6DB74;
+        }
 
 
 .logo {
@@ -91,15 +88,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 }
 
 @media all and (max-width: 800px) {
-
-    /*dirty i know!*/
-    .grid__item, .grid  {
-        width:100%;
-    }
-
-    .navigation--side {
-        display:none
-    }
+    
     .content--padding {
         padding:1.5em;
     }
