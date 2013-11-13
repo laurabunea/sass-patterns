@@ -40,7 +40,9 @@
         </li>
     </ul>
 
-    <div class='section--xl' id='FontFamilyAnchor'>
+    <hr class='m'>
+    
+    <div class='section--l' id='FontFamilyAnchor'>
         <h2 class='h3' >
             01. Base font family
         </h2>

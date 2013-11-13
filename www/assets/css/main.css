@@ -615,7 +615,7 @@ ol {
  *
  */
 /* line 16, ../sass/core/_extend-classes.scss */
-.absolute__bottom_left, .absolute__bottom_right, .absolute__top_left, .absolute__top_right {
+.absolute__bottom-left, .absolute__bottom-right, .absolute__top-left, .absolute__top-right {
   position: absolute;
 }
 
@@ -955,25 +955,25 @@ body {
 }
 
 /* line 59, ../sass/core/_layout.scss */
-.absolute__bottom_left {
+.absolute__bottom-left {
   bottom: 0;
   left: 0;
 }
 
 /* line 65, ../sass/core/_layout.scss */
-.absolute__bottom_right {
+.absolute__bottom-right {
   bottom: 0;
   right: 0;
 }
 
 /* line 71, ../sass/core/_layout.scss */
-.absolute__top_left {
+.absolute__top-left {
   top: 0;
   left: 0;
 }
 
 /* line 77, ../sass/core/_layout.scss */
-.absolute__top_right {
+.absolute__top-right {
   top: 0;
   right: 0;
 }

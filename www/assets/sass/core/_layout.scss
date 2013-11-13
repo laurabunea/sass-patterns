@@ -55,25 +55,25 @@
     .absolute{
         @extend %absolute;
     }
-    .absolute__bottom_left {
+    .absolute__bottom-left {
     	@extend %absolute;
     	bottom:0;
     	left:0;
     }
 
-    .absolute__bottom_right {
+    .absolute__bottom-right {
     	@extend %absolute;
     	bottom:0;
     	right:0;
     }
 
-    .absolute__top_left {
+    .absolute__top-left {
     	@extend %absolute;
     	top:0;
     	left:0;
     }
 
-    .absolute__top_right {
+    .absolute__top-right {
     	@extend %absolute;
     	top:0;
     	right:0;
@@ -102,6 +102,7 @@
 %block {
    margin-top:$xm;
 }
+
 /* 
  removing a margin-top to all block elements 
 */
@@ -111,94 +112,80 @@
    margin-top:0!important;
 }
 
-.block--xxl {
-    @extend %block;
-    padding: $base-spacing-unit * 2.5 $base-spacing-unit * 5;
-    
-}
+    .block--xl {
+        @extend %block;
+        padding: $base-spacing-unit * 2 $base-spacing-unit * 4; 
+    }
 
-.block--xl {
-    @extend %block;
-    padding: $base-spacing-unit * 2 $base-spacing-unit * 4;
- 
-}
+    .block--l {
+        @extend %block;
+        padding: $base-spacing-unit * 1.5 $base-spacing-unit * 3;
+    }
 
-.block--l {
-    @extend %block;
-    padding: $base-spacing-unit * 1.5 $base-spacing-unit * 3;
+    .block--m {
+        @extend %block;
+        padding: $base-spacing-unit $base-spacing-unit * 2;
+    }
 
-}
+    .block--s {
+        @extend %block;
+        padding: $base-spacing-unit / 1.5 $base-spacing-unit / 2;
+    }
 
-.block-m {
-    @extend %block;
-    padding: $base-spacing-unit $base-spacing-unit * 2;
-}
+    .block--xs {
+        @extend %block;
+        padding: $base-spacing-unit / 2 $base-spacing-unit / 4;
+    }
 
-.block--s {
-    @extend %block;
-    padding: $base-spacing-unit / 1.5 $base-spacing-unit / 2;
-}
 
-.block--xs {
-    @extend %block;
-    padding: $base-spacing-unit / 2 $base-spacing-unit / 4;
-}
-
-.block--xxs {
-    @extend %block;
-    padding: $base-spacing-unit / 2.5 $base-spacing-unit / 5;
-}
 
 
 
 
 //---- work out ----------------------------------------
 
-.block--tight {
-    padding-top: $base-spacing-unit / 2;
-    padding-bottom: $base-spacing-unit / 2;
-}
+//.block--tight {
+//    padding-top: $base-spacing-unit / 2;
+ //   padding-bottom: $base-spacing-unit / 2;
+//}
 
-.block--bleed {
-	padding: 0;
-}
+//.block--bleed {
+//	padding: 0;
+//}
 
-    .block--bleed__padding {
-        padding: $base-spacing-unit $base-spacing-unit * 2;
-    }
+//    .block--bleed__padding {
+//        padding: $base-spacing-unit $base-spacing-unit * 2;
+//    }
 
-.block--mobile {
+//.block--mobile {
 	//@include media(mobile) {
 	//	padding: 1em;
 	//}
-}
+//}
 
 /**
  * ?. wrapper blocks
  * ----------------------------------------------------------------------------
  */
 
-.section--xxxl {
-    margin-top:$mxxx;
-}
 
-.section--xxl {
+.section--xl {
     margin-top:$mxx;
 }
 
-.section--xl {
+.section--l {
     margin-top:$mx;
 }
 
-.section {
+.section--m {
     margin-top:$m;
 }
 
-.section--xs {
+.section--s {
     margin-top:$xm;
 }
 
-.section--xxs {
+.section--xs {
      margin-top:$xxm;
 }
 

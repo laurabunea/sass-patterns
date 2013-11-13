@@ -673,7 +673,7 @@ li {
  *
  */
 /* line 10, ../sass/core/_extend-classes.scss */
-.absolute, .absolute__bottom_left, .absolute__bottom_right, .absolute__top_left, .absolute__top_right {
+.absolute, .absolute__bottom-left, .absolute__bottom-right, .absolute__top-left, .absolute__top-right {
   position: absolute;
 }
 
@@ -955,25 +955,25 @@ li {
 }
 
 /* line 58, ../sass/core/_layout.scss */
-.absolute__bottom_left {
+.absolute__bottom-left {
   bottom: 0;
   left: 0;
 }
 
 /* line 64, ../sass/core/_layout.scss */
-.absolute__bottom_right {
+.absolute__bottom-right {
   bottom: 0;
   right: 0;
 }
 
 /* line 70, ../sass/core/_layout.scss */
-.absolute__top_left {
+.absolute__top-left {
   top: 0;
   left: 0;
 }
 
 /* line 76, ../sass/core/_layout.scss */
-.absolute__top_right {
+.absolute__top-right {
   top: 0;
   right: 0;
 }
@@ -997,100 +997,84 @@ li {
  adding a base margin-top to all block elements 
 */
 /* line 102, ../sass/core/_layout.scss */
-.block--xxl, .block--xl, .block--l, .block-m, .block--s, .block--xs, .block--xxs {
+.block--xxl, .block--xl, .block--l, .block--m, .block--s, .block--xs, .block--xxs {
   margin-top: 1em;
 }
 
 /* 
  removing a margin-top to all block elements 
 */
-/* line 109, ../sass/core/_layout.scss */
+/* line 110, ../sass/core/_layout.scss */
 .block__stacked {
   /*only use this id we don't want a top margin on it */
   margin-top: 0!important;
 }
 
-/* line 114, ../sass/core/_layout.scss */
+/* line 115, ../sass/core/_layout.scss */
 .block--xxl {
   padding: 3.75em 7.5em;
 }
 
-/* line 120, ../sass/core/_layout.scss */
+/* line 121, ../sass/core/_layout.scss */
 .block--xl {
   padding: 3em 6em;
 }
 
-/* line 126, ../sass/core/_layout.scss */
+/* line 127, ../sass/core/_layout.scss */
 .block--l {
   padding: 2.25em 4.5em;
 }
 
-/* line 132, ../sass/core/_layout.scss */
-.block-m {
+/* line 133, ../sass/core/_layout.scss */
+.block--m {
   padding: 1.5em 3em;
 }
 
-/* line 137, ../sass/core/_layout.scss */
+/* line 138, ../sass/core/_layout.scss */
 .block--s {
   padding: 1em 0.75em;
 }
 
-/* line 142, ../sass/core/_layout.scss */
+/* line 143, ../sass/core/_layout.scss */
 .block--xs {
   padding: 0.75em 0.375em;
 }
 
-/* line 147, ../sass/core/_layout.scss */
+/* line 148, ../sass/core/_layout.scss */
 .block--xxs {
   padding: 0.6em 0.3em;
-}
-
-/* line 157, ../sass/core/_layout.scss */
-.block--tight {
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
-}
-
-/* line 162, ../sass/core/_layout.scss */
-.block--bleed {
-  padding: 0;
-}
-
-/* line 166, ../sass/core/_layout.scss */
-.block--bleed__padding {
-  padding: 1.5em 3em;
 }
 
 /**
  * ?. wrapper blocks
  * ----------------------------------------------------------------------------
  */
-/* line 181, ../sass/core/_layout.scss */
+/* line 182, ../sass/core/_layout.scss */
 .section--xxxl {
   margin-top: 4.5em;
 }
 
-/* line 185, ../sass/core/_layout.scss */
+/* line 186, ../sass/core/_layout.scss */
 .section--xxl {
   margin-top: 3em;
 }
 
-/* line 189, ../sass/core/_layout.scss */
+/* line 190, ../sass/core/_layout.scss */
 .section--xl {
   margin-top: 2.25em;
 }
 
-/* line 193, ../sass/core/_layout.scss */
+/* line 194, ../sass/core/_layout.scss */
 .section {
   margin-top: 1.5em;
 }
 
-/* line 197, ../sass/core/_layout.scss */
+/* line 198, ../sass/core/_layout.scss */
 .section--xs {
   margin-top: 1em;
 }
 
-/* line 201, ../sass/core/_layout.scss */
+/* line 202, ../sass/core/_layout.scss */
 .section--xxs {
   margin-top: 0.5em;
 }
@@ -1105,23 +1089,23 @@ li {
 	</div>
  </div>
  */
-/* line 216, ../sass/core/_layout.scss */
+/* line 217, ../sass/core/_layout.scss */
 .media {
   margin-top: 1.5em;
 }
 
-/* line 221, ../sass/core/_layout.scss */
+/* line 222, ../sass/core/_layout.scss */
 .media__image {
   float: left;
   margin-right: 1.5em;
 }
 
-/* line 230, ../sass/core/_layout.scss */
+/* line 231, ../sass/core/_layout.scss */
 .media--rev {
   margin-top: 1.5em;
 }
 
-/* line 235, ../sass/core/_layout.scss */
+/* line 236, ../sass/core/_layout.scss */
 .media--rev > .media__image {
   float: right;
   margin-left: 1.5em;
@@ -1136,7 +1120,7 @@ li {
  * [3] A fix for Internet Explorer 8/9
  * 
  */
-/* line 256, ../sass/core/_layout.scss */
+/* line 257, ../sass/core/_layout.scss */
 .grid {
   text-align: justify;
   /* [1] */
@@ -1146,14 +1130,14 @@ li {
   /* [3] */
 }
 
-/* line 266, ../sass/core/_layout.scss */
+/* line 267, ../sass/core/_layout.scss */
 .grid__item, .grid > * {
   font-size: 16px;
   text-align: left;
   vertical-align: top;
 }
 
-/* line 275, ../sass/core/_layout.scss */
+/* line 276, ../sass/core/_layout.scss */
 .grid:after,
 .grid__break {
   content: '';
@@ -1164,73 +1148,73 @@ li {
 /**
  * Vertical align these grid items in the middle!
  */
-/* line 284, ../sass/core/_layout.scss */
+/* line 285, ../sass/core/_layout.scss */
 .grid--middle > .grid__item, .grid.grid--middle > * {
   vertical-align: middle;
 }
 
-/* line 287, ../sass/core/_layout.scss */
+/* line 288, ../sass/core/_layout.scss */
 .g--1-1 {
   width: 100%;
 }
 
-/* line 290, ../sass/core/_layout.scss */
+/* line 291, ../sass/core/_layout.scss */
 .g--1-2 {
   width: 50%;
 }
 
-/* line 293, ../sass/core/_layout.scss */
+/* line 294, ../sass/core/_layout.scss */
 .g--1-4 {
   width: 25%;
 }
 
-/* line 296, ../sass/core/_layout.scss */
+/* line 297, ../sass/core/_layout.scss */
 .g--3-4 {
   width: 75%;
 }
 
-/* line 300, ../sass/core/_layout.scss */
+/* line 301, ../sass/core/_layout.scss */
 .g--9-10 {
   width: 80%;
 }
 
-/* line 303, ../sass/core/_layout.scss */
+/* line 304, ../sass/core/_layout.scss */
 .g--1-10 {
   width: 20%;
 }
 
 @media only screen and (max-width: 30em) {
-  /* line 308, ../sass/core/_layout.scss */
+  /* line 309, ../sass/core/_layout.scss */
   .g-m--1-1 {
     width: 100%;
   }
 
-  /* line 311, ../sass/core/_layout.scss */
+  /* line 312, ../sass/core/_layout.scss */
   .g-m--1-2 {
     width: 50%;
   }
 
-  /* line 314, ../sass/core/_layout.scss */
+  /* line 315, ../sass/core/_layout.scss */
   .g-m--9-10 {
     width: 90%;
   }
 
-  /* line 317, ../sass/core/_layout.scss */
+  /* line 318, ../sass/core/_layout.scss */
   .g-m--1-10 {
     width: 10%;
   }
 
-  /* line 320, ../sass/core/_layout.scss */
+  /* line 321, ../sass/core/_layout.scss */
   .g-m--8-10 {
     width: 80%;
   }
 
-  /* line 323, ../sass/core/_layout.scss */
+  /* line 324, ../sass/core/_layout.scss */
   .g-m--2-10 {
     width: 20%;
   }
 }
-/* line 330, ../sass/core/_layout.scss */
+/* line 331, ../sass/core/_layout.scss */
 .overflow-hidden, .media__body, .media--rev > .media__body {
   overflow: hidden;
 }
@@ -1243,7 +1227,7 @@ li {
  * Place something before an element
  * ----------------------------------------------------------------------------
  */
-/* line 346, ../sass/core/_layout.scss */
+/* line 347, ../sass/core/_layout.scss */
 .prepend:before {
   content: attr(data-prepend);
   display: inline-block;
@@ -1253,7 +1237,7 @@ li {
  * Place something after an element
  * ----------------------------------------------------------------------------
  */
-/* line 357, ../sass/core/_layout.scss */
+/* line 358, ../sass/core/_layout.scss */
 .append:after {
   content: attr(data-append);
   display: inline-block;
@@ -1273,7 +1257,7 @@ li {
  * </div>
  *
  */
-/* line 380, ../sass/core/_layout.scss */
+/* line 381, ../sass/core/_layout.scss */
 .arrow {
   /*i,span*/
   position: absolute;
@@ -1284,35 +1268,35 @@ li {
   border-width: .4em;
 }
 
-/* line 390, ../sass/core/_layout.scss */
+/* line 391, ../sass/core/_layout.scss */
 .arrow-top {
   border-top-width: 0;
   border-bottom-color: inherit;
   top: -0.4em;
 }
 
-/* line 396, ../sass/core/_layout.scss */
+/* line 397, ../sass/core/_layout.scss */
 .arrow-bottom {
   border-bottom-width: 0;
   border-top-color: inherit;
   bottom: -0.4em;
 }
 
-/* line 402, ../sass/core/_layout.scss */
+/* line 403, ../sass/core/_layout.scss */
 .arrow-left {
   border-left-width: 0;
   border-right-color: inherit;
   left: -0.4em;
 }
 
-/* line 408, ../sass/core/_layout.scss */
+/* line 409, ../sass/core/_layout.scss */
 .arrow-right {
   border-right-width: 0;
   border-left-color: inherit;
   right: -0.4em;
 }
 
-/* line 417, ../sass/core/_layout.scss */
+/* line 418, ../sass/core/_layout.scss */
 .arrow--left,
 .arrow--right,
 .arrow--side,
@@ -1321,7 +1305,7 @@ li {
   position: relative;
 }
 
-/* line 421, ../sass/core/_layout.scss */
+/* line 422, ../sass/core/_layout.scss */
 .arrow--center .arrow {
   left: 0;
   right: 0;
@@ -1329,17 +1313,17 @@ li {
   margin-right: auto;
 }
 
-/* line 428, ../sass/core/_layout.scss */
+/* line 429, ../sass/core/_layout.scss */
 .arrow--left .arrow {
   left: 1.5em;
 }
 
-/* line 432, ../sass/core/_layout.scss */
+/* line 433, ../sass/core/_layout.scss */
 .arrow--right .arrow {
   right: 1.5em;
 }
 
-/* line 436, ../sass/core/_layout.scss */
+/* line 437, ../sass/core/_layout.scss */
 .arrow--side .arrow {
   top: 1.5em;
 }
@@ -1348,30 +1332,30 @@ li {
  * Icon block 
  * ----------------------------------------------------------------------------
  */
-/* line 446, ../sass/core/_layout.scss */
+/* line 447, ../sass/core/_layout.scss */
 .icon-text,
 .icon-text--rev {
   /* a, div, etc */
   display: inline-block;
 }
 
-/* line 451, ../sass/core/_layout.scss */
+/* line 452, ../sass/core/_layout.scss */
 .i {
   overflow: hidden;
   /* for IE6 */
   vertical-align: middle;
   /* SMACSS line-height: 0; ? */
 }
-/* line 456, ../sass/core/_layout.scss */
+/* line 457, ../sass/core/_layout.scss */
 .icon-text .i, .btn--icon .i {
   margin-right: 0.5em;
 }
-/* line 461, ../sass/core/_layout.scss */
+/* line 462, ../sass/core/_layout.scss */
 .icon-text--rev .i, .btn--icon-rev .i {
   margin-left: 0.5em;
 }
 
-/* line 467, ../sass/core/_layout.scss */
+/* line 468, ../sass/core/_layout.scss */
 .icon-placeholder {
   background-image: url("/assets/images/icon-placeholder.png");
   width: 40px;

@@ -135,29 +135,29 @@
             </h4> 
             <pre>
 <code class="language-markup">
-/*  */
+/* */
 &lt;div class='relative'&gt;
-    &nbsp;&lt;img class='absolute' src='assets/images/green-bird.jpg' /&gt; 
+    &nbsp;&lt;img class='absolute specific-absolute-class' src='assets/images/green-bird.jpg' /&gt; 
 &lt;/div&gt;
 
 /* Top right */
 &lt;div class='relative'&gt;
-    &nbsp;&lt;img class=&#39;absolute__top_right' src='assets/images/green-bird.jpg' /&gt; 
+    &nbsp;&lt;img class=&#39;absolute__top-right' src='assets/images/green-bird.jpg' /&gt; 
 &lt;/div&gt; 
 
 /* Top Left */
 &lt;div class='relative'&gt;
-    &nbsp;&lt;img class='absolute__top_left' src='assets/images/green-bird.jpg' /&gt; 
+    &nbsp;&lt;img class='absolute__top-left' src='assets/images/green-bird.jpg' /&gt; 
 &lt;/div&gt;   
 
 /* Bottom right */
 &lt;div class='relative'&gt;
-    &nbsp;&lt;img class='absolute__bottom_right' src='assets/images/green-bird.jpg' /&gt; 
+    &nbsp;&lt;img class='absolute__bottom-right' src='assets/images/green-bird.jpg' /&gt; 
 &lt;/div&gt; 
 
 /* Bottom left */
 &lt;div class='relative'&gt;
-    &nbsp;&lt;img class='absolute__bottom_left' src='assets/images/green-bird.jpg' /&gt; 
+    &nbsp;&lt;img class='absolute__bottom-left' src='assets/images/green-bird.jpg' /&gt; 
 &lt;/div&gt;
  
 </code>
@@ -175,16 +175,16 @@
                     <img class='absolute specific-bird' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
                 <div class='tb__secondary xxm relative testbox-100-100' >
-                    <img class='absolute__top_right' src='assets/images/green-bird.jpg' alt='i am an image'/>
+                    <img class='absolute__top-right' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
                 <div class='tb__secondary xxm relative testbox-100-100' >
-                    <img class='absolute__top_left' src='assets/images/green-bird.jpg' alt='i am an image'/>
+                    <img class='absolute__top-left' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
                 <div class='tb__secondary xxm relative testbox-100-100' >
-                    <img class='absolute__bottom_right' src='assets/images/green-bird.jpg' alt='i am an image'/>
+                    <img class='absolute__bottom-right' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
                 <div class='tb__secondary xxm relative testbox-100-100' >
-                    <img class='absolute__bottom_left' src='assets/images/green-bird.jpg' alt='i am an image'/>
+                    <img class='absolute__bottom-left' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
                  
             </div>
@@ -280,11 +280,6 @@
                 hello world
             </h4> 
 
-            <div class='block block--xxs tb__green '>
-                <p>
-                    xxs block
-                </p>
-            </div><!-- block xxs ends-->
 
             <div class='block block--xs tb__green '>
                 <p>
@@ -292,17 +287,23 @@
                 </p>
             </div><!-- block xs ends-->
 
-            <div class='block block-s tb__green'>
+            <div class='block block--s tb__green'>
                 <p>
                     s block
                 </p>
             </div><!-- block ends-->
 
-            <div class='block block-m tb__green'>
+            <div class='block block--m tb__green'>
                 <p>
                     m block
                 </p>
             </div><!-- block ends-->
+
+            <div class='block block--l tb__green '>
+                <p>
+                    l block
+                </p>
+            </div><!-- block xl ends-->
 
             <div class='block block--xl tb__green '>
                 <p>
@@ -310,17 +311,8 @@
                 </p>
             </div><!-- block xl ends-->
 
-            <div class='block block--xxl tb__green '>
-                <p>
-                    xxl block
-                </p>
-            </div><!-- block xxl ends-->
 
-            <div class='block block--xxxl tb__green '>
-                <p>
-                    xxxl block
-                </p>
-            </div><!-- block xxxl ends-->
+
 
             <!--<div class='block--tight tb__green '>
                 <p>
@@ -360,11 +352,11 @@
             </h4>
             <pre>
 <code class="language-markup">
-&lt;div class='section--xxs'&gt;
-    &lt;div class='block--xxs'&gt;
+&lt;div class='section--xs'&gt;
+    &lt;div class='block--xs'&gt;
         ...
     &lt;/div&gt;
-    &lt;div class='block--xxs'&gt;
+    &lt;div class='block--xs'&gt;
         ...
     &lt;/div&gt;
 &lt;/div&gt;
@@ -386,39 +378,48 @@
                 </div><!-- block xxs ends-->
             </div>
             <div class='section--xs'>
-                <div class='block block--xxs tb__pink '>
+                <div class='block block--xs tb__pink '>
                     <p>
                         Block with a section--xs wrapper
                     </p>
                 </div><!-- block xxs ends-->
             </div>
             <div class='section'>
-                <div class='block block--xxs tb__blue '>
+                <div class='block block--xs tb__blue '>
                     <p>
                         Block with a section wrapper
                     </p>
                 </div><!-- block xxs ends-->
             </div>
             <div class='section--xl'>
-                <div class='block block--xxs tb__green '>
+                <div class='block block--xs tb__green '>
                     <p>
                         Block with a section--xl wrapper
                     </p>
                 </div><!-- block xxs ends-->
             </div>
              <div class='section--xxl'>
-                <div class='block block--xxxs tb__pink '>
+                <div class='block block--xs tb__pink '>
+                    <p>
+                        Block with a section--xxl wrapper
+                    </p>
+                </div><!-- block xs ends-->
+                <div class='block block--xs tb__pink '>
                     <p>
                         Block with a section--xxl wrapper
                     </p>
                 </div><!-- block xxs ends-->
             </div>
             <div class='section--xxxl'>
-                <div class='block block--xxxs tb__blue '>
+                <p>
+                    I am a group of text 
+                </p>
+                <div class='block block--xs tb__blue '>
                     <p>
                         Block with a section--xxxl wrapper
                     </p>
                 </div><!-- block xxs ends-->
+
 
             </div>
         </div><!--  hello world block ends -->
@@ -614,7 +615,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__primary'>  
+        <div class='block__stacked block--s tb__secondary'>  
             <div class='grid'>
                 <div class='g--1-1 tb__pink '>
                     &nbsp;
