@@ -629,7 +629,7 @@ ol {
 }
 
 /* line 27, ../sass/core/_extend-classes.scss */
-.theme__block_success, .theme__block_warning, .theme__block_danger, .tb__primary, .tb__secondary, .tb__tertiary, .tb__quarternary, .tb__green, .tb__pink, .tb__blue {
+.tb__success, .theme__block_warning, .theme__block_danger, .tb__primary, .tb__secondary, .tb__tertiary, .tb__quarternary, .tb__green, .tb__pink, .tb__blue {
   border-width: 1px;
   border-style: solid;
 }
@@ -1673,7 +1673,7 @@ body {
  * -----------------------------------------------------------------------------
  */
 /* line 56, ../sass/core/_theme.scss */
-.theme__block_success {
+.tb__success {
   background-color: #c5ffc6;
   color: #468847;
   border-color: #468847;

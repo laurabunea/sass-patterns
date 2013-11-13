@@ -2,7 +2,6 @@
     include 'header.php'; 
 ?>
 
-
 <div class='content--padding clearfix tb__primary'>
     <div class='page-header tb__header'>
         <h1>
@@ -19,53 +18,57 @@
 
     <div class='page-header tb__header mxx'>
         <h1>
+
             Mixins
             <span class='tiny'>
                 - Helper mixins
             </span>
         </h1>
     </div>
-    <p>
-        text 
-    </p>
-    <ul class='list--styled'>
+
+    <ul class='list--styled_decimal'>
         <li>
-            <a href='#mixin-vendor'>
+            <a href='#mixinAnchor1'>
                 Vendor
             </a>
         </li>
         <li>
-            <a href='#mixin-media-break-point'>
+            <a href='#mixinAnchor2'>
                 Media breakpoint
             </a>
         </li>
         <li>
-            <a href='#mixin-opacity'>
+            <a href='#mixinAnchor3'>
                 Opacity
             </a>
         </li>
         <li>
-            <a href='#mixin-placeholder'>
+            <a href='#mixinAnchor4'>
                 Placeholder
             </a>
         </li>
         <li>
-            <a href='#mixin-placeholder'>
+            <a href='#mixinAnchor5'>
                 Theme mixin
+            </a>
+        </li>
+        <li>
+            <a href='#mixinAnchor6'>
+                Form validation
             </a>
         </li>
     </ul><!--list unstyled ends-->
     <!-- /****************************************  Vendor block  *******************************/ -->
-
-    <div class='section--xl' id='mixin-vendor'>
-        <h2 >
-            Vendor 
+    <hr class='mx'>
+    <div class='section--l' id='mixinAnchor1'>
+        <h2 class='h3'>
+           01. Vendor 
         </h2>
 
         <p>This mixin takes the hassle out of defining one css-attribute in all vendor-specific prefixes (-moz, -webkit, -o, -ms).</p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
             <pre>
@@ -76,7 +79,7 @@
 }
 </code>
             </pre>
-            <h4 class='tiny uppercase text_muted m0 '>
+            <h4 class='tiny uppercase text-muted m0 '>
                 html code
             </h4>
             <pre>
@@ -88,7 +91,7 @@
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <div class='img-rounded xm testbox-100-100 tb__green'>
@@ -99,13 +102,13 @@
     <hr class='mx'>
     <!-- /****************************************  Media break point block  *******************************/ -->
 
-    <div class='section--xl' id='mixin-break-point'>
-        <h2 >
-            Media break point 
+    <div class='section--xl' id='mixinAnchor2'>
+        <h2 class='h3'>
+            02. Media break point 
         </h2>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
             <pre>
@@ -127,7 +130,7 @@
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <div class='element block--xs__stacked'>
@@ -138,13 +141,13 @@
     <hr class='mx'>
     <!-- /****************************************  Opacity block  *******************************/ -->
 
-    <div class='section--xl' id='mixin-opacity'>
-        <h2>
-            Opacity 
+    <div class='section--xl' id='mixinAnchor1'>
+        <h2 class='h3'>
+           03. Opacity 
         </h2>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
             <pre>
@@ -159,7 +162,7 @@
 }
 </code>
             </pre>
-            <h4 class='tiny uppercase text_muted m0 '>
+            <h4 class='tiny uppercase text-muted m0 '>
                 html code
             </h4>
             <pre>
@@ -174,7 +177,7 @@
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <div class='grid'>
@@ -195,16 +198,16 @@
     <hr class='mx'>
     <!-- /****************************************  Placeholder  *******************************/ -->
 
-    <div class='section--xl' id='mixin-placeholder'>
-        <h2>
-            Placeholder Mixin 
+    <div class='section--xl' id='mixinAnchor4'>
+        <h2 class='h3'>
+            04. Placeholder Mixin 
         </h2>
         <!--  code block starts -->
 
         <p>This mixin takes the hassle out of defining placeholder prefixes (:-moz-placeholder, ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder).</p>
         
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
             <pre>
@@ -215,7 +218,7 @@
 }
 </code>
             </pre>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 html code
             </h4>
             <pre>
@@ -229,7 +232,7 @@
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <form class='xm'>
@@ -241,9 +244,9 @@
     <hr class='mx'>
     <!-- /****************************************  Theme mixin  *******************************/ -->
 
-    <div class='section--xl' id='mixin-placeholder'>
-        <h2>
-            Theme Mixin 
+    <div class='section--xl' id='mixinAnchor5'>
+        <h2 class='h3'>
+            05. Theme Mixin 
         </h2>
         <!--  code block starts -->
 
@@ -253,7 +256,7 @@
         </p>
         
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
             <pre>
@@ -264,7 +267,7 @@
     }
 </code>
             </pre>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 html code
             </h4>
             <pre>
@@ -278,7 +281,7 @@
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <div class='xm tb__blue block--xs'>
@@ -290,9 +293,9 @@
 
     <!-- /****************************************  Theme mixin  *******************************/ -->
 
-    <div class='section--xl' id='mixin-placeholder'>
-        <h2>
-            Form validation
+    <div class='section--xl' id='mixinAnchor6'>
+        <h2 class='h3'>
+            06. Form validation
         </h2>
         <!--  code block starts -->
 
@@ -301,7 +304,7 @@
         </p>
         
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
             <pre>
@@ -311,7 +314,7 @@
 }      
 </code>
             </pre>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 html code
             </h4>
             <pre>
@@ -325,7 +328,7 @@
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <div class='xm tb__blue block--xs'>
@@ -338,37 +341,6 @@
 
 </div><!-- content padding ends-->
 
-
-<!-- Side Navigation Bar - this holds the children categories -->
-<!--<div class='navigation--side grid__item'>
-    <ul class='list--unstyled'>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#mixin-vendor'>
-                Vendor
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#mixin-media-break-point'>
-                Media breakpoint
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#mixin-opacity'>
-                Opacity
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#mixin-placeholder'>
-                Placeholder
-            </a>
-        </li>
-        <li>
-            <a class='block--xs__stacked tb__primary' href='#mixin-placeholder'>
-                Theme mixin
-            </a>
-        </li>
-    </ul>
-</div>--><!--navigation side ends-->
 <?php 
     include 'footer.php'; 
 ?>

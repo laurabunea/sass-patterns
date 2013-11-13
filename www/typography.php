@@ -50,7 +50,7 @@
         
         
         <div class='block--xs tb__tertiary'>
-                <h4 class='tiny uppercase text_muted'>
+                <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
 <pre>
@@ -116,7 +116,7 @@
         
         
         <div class='block--xs tb__tertiary'>
-                <h4 class='tiny uppercase text_muted'>
+                <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
 <pre>
@@ -153,7 +153,7 @@ font-size:      100%;
         </p>
 
         <div class='block--xs tb__tertiary'>
-                <h4 class='tiny uppercase text_muted'>
+                <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
 <pre>
@@ -278,7 +278,7 @@ $font-size-xxxs:        11;     //.tiny
 
         <!-- code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -295,7 +295,7 @@ $font-size-xxxs:        11;     //.tiny
         <!-- hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
             
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <h1>
@@ -326,7 +326,7 @@ $font-size-xxxs:        11;     //.tiny
             </p>
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny uppercase text_muted'>
+                <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
                 <pre>
@@ -347,7 +347,7 @@ $font-size-xxxs:        11;     //.tiny
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny uppercase text_muted'>
+                <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
                 <p class='tiny'>
@@ -399,7 +399,7 @@ $font-size-xxxs:        11;     //.tiny
         </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -412,7 +412,7 @@ $font-size-xxxs:        11;     //.tiny
 
         <!-- hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <p class='sans'>
@@ -436,7 +436,7 @@ $font-size-xxxs:        11;     //.tiny
         </p>
         <!-- code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -449,7 +449,7 @@ $font-size-xxxs:        11;     //.tiny
 
         <!-- hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <p class='uppercase'>Uppercase</p>
@@ -471,7 +471,7 @@ $font-size-xxxs:        11;     //.tiny
         </p>
         <!-- code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -485,7 +485,7 @@ $font-size-xxxs:        11;     //.tiny
 
         <!-- hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <p class='text-align--left'>
@@ -510,7 +510,7 @@ $font-size-xxxs:        11;     //.tiny
         </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -522,7 +522,7 @@ $font-size-xxxs:        11;     //.tiny
 
         <!-- hello world block starts -->
         <div class='block--xs__stacked tb__secondary clearfix'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <div class='block--xs tb__secondary testbox-100-100 push_left left' >
@@ -559,7 +559,7 @@ $font-size-xxxs:        11;     //.tiny
 
             <!-- code block ends -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny uppercase text_muted'>
+                <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
                 <pre>
@@ -574,7 +574,7 @@ $font-size-xxxs:        11;     //.tiny
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny uppercase text_muted'>
+                <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
                 <ul class='list--unstyled '>
@@ -594,7 +594,7 @@ $font-size-xxxs:        11;     //.tiny
             </h3>
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny uppercase text_muted'>
+                <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
                 <pre>
@@ -609,7 +609,7 @@ $font-size-xxxs:        11;     //.tiny
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='h tiny uppercase text_muted'>
+                <h4 class='h tiny uppercase text-muted'>
                     hello world
                 </h4>
                 <ul class='list--styled'>
@@ -628,7 +628,7 @@ $font-size-xxxs:        11;     //.tiny
             <h3 class='h4'>c) Inline list</h3>
             <!-- code block starts -->
             <div class='block--xs tb__tertiary'>
-                <h4 class='tiny uppercase text_muted'>
+                <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
             <pre>
@@ -643,7 +643,7 @@ $font-size-xxxs:        11;     //.tiny
 
             <!-- hello world block starts -->
             <div class='block--xs__stacked tb__secondary'>
-                <h4 class='tiny uppercase text_muted'>
+                <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
                 <ul class='list--inline '>
@@ -655,7 +655,7 @@ $font-size-xxxs:        11;     //.tiny
                     </li>
                 </ul>
             </div><!-- hello world block ends -->
-        </div><!-- section--xl -->
+        </div><!-- section xl -->
     </div><!-- typo-lists ends -->
 
          <!-- /****************************************  Hide text *******************************/ -->
@@ -671,7 +671,7 @@ $font-size-xxxs:        11;     //.tiny
         </p>
         <!-- code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -684,7 +684,7 @@ $font-size-xxxs:        11;     //.tiny
 
         <!-- hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <p>

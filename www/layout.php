@@ -40,10 +40,7 @@
         </h1>
     </div>
 
-    <p>
-        blah blah blah
-    </p>
-    <ul class='list--styled'>
+    <ul class='list--styled_decimal'>
         <li>
             <a href='#layout-clearfix'>
                 Clearfix
@@ -99,17 +96,17 @@
     </ul><!--list unstyled ends-->
 
     <!-- /****************************************  Clearfix  *******************************/ -->
-
-    <div class='section--xl' id='layout-clearfix'>
-        <h2>
-            Clearfix
+    <hr class='m'>
+    <div class='section--l' id='layout-clearfix'>
+        <h2 class='h3'>
+            01. Clearfix
         </h2>
         <p>
             What clearfix does is it forces content after the floats or the container containing the floats to render below it.
         </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -125,15 +122,15 @@
     <!-- /****************************************  Inline Blocks  *******************************/ -->
 
     <div class='section--xl' id='layout-inline-block'>
-        <h2 >
-            Inline block 
+        <h2 class='h3'>
+            02. Inline block 
         </h2>
         <p>
             Displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box
         </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -150,19 +147,19 @@
     <!-- /****************************************  Positioning  *******************************/ -->
 
     <div class='section--xl' id='layout-positioning'>
-        <h2>
-            Positioning - Floating and Absolute
+        <h2 class='h3'>
+            03. Positioning - Floating and Absolute
         </h2>
 
         <!-- /********  Floating elements *************/ -->
         
-        <h3 class=' xm'>1. Floating elements</h3>
+        <h3 class='h4 xm'>a) Floating elements</h3>
         <p>
             With CSS float, an element can be pushed to the left or right, allowing other elements to wrap around it.
         </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -175,7 +172,7 @@
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <div class='block--xs__stacked clearfix'> 
@@ -186,37 +183,46 @@
 
         <!-- /********  absolute positioing *************/ -->
 
-        <h3>
-            2. Absolute Positioning
+        <h3 class='h4'>
+            b) Absolute Positioning
         </h3>
         <p>
-            A page element with relative positioning gives you the control to absolutely position children elements inside of it.
+            A page element with relative positioning gives you the control to absolutely position 
+            children elements inside of it.
+
         </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4> 
             <pre>
 <code class="language-markup">
+/*  */
+&lt;div class='relative'&gt;
+    &nbsp;&lt;img class='absolute' src='assets/images/green-bird.jpg' /&gt; 
+&lt;/div&gt;
+
+/* Top right */
 &lt;div class='relative'&gt;
     &nbsp;&lt;img class=&#39;absolute__top_right' src='assets/images/green-bird.jpg' /&gt; 
-&lt;/div&gt;   
-</code>
-<code class="language-markup">
+&lt;/div&gt; 
+
+/* Top Left */
 &lt;div class='relative'&gt;
     &nbsp;&lt;img class='absolute__top_left' src='assets/images/green-bird.jpg' /&gt; 
 &lt;/div&gt;   
-</code>
-<code class="language-markup">
+
+/* Bottom right */
 &lt;div class='relative'&gt;
     &nbsp;&lt;img class='absolute__bottom_right' src='assets/images/green-bird.jpg' /&gt; 
-&lt;/div&gt;   
-</code>
-<code class="language-markup">
+&lt;/div&gt; 
+
+/* Bottom left */
 &lt;div class='relative'&gt;
     &nbsp;&lt;img class='absolute__bottom_left' src='assets/images/green-bird.jpg' /&gt; 
-&lt;/div&gt;   
+&lt;/div&gt;
+ 
 </code>
             </pre>  
            
@@ -224,23 +230,26 @@
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__primary'> 
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <div class='grid '>
-                <div class='tb__primary xxm relative testbox' >
-                    <img class='absolute__top_right' src='assets/images/green-bird.jpg' alt='i am an image'/>
-
+                <div class='tb__secondary xxm relative testbox-100-100' >
+                    <img class='absolute specific-bird' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
-                <div class='tb__primary xxm relative testbox' >
+                <div class='tb__secondary xxm relative testbox-100-100' >
+                    <img class='absolute__top_right' src='assets/images/green-bird.jpg' alt='i am an image'/>
+                </div>
+                <div class='tb__secondary xxm relative testbox-100-100' >
                     <img class='absolute__top_left' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
-                <div class='tb__primary xxm relative testbox' >
+                <div class='tb__secondary xxm relative testbox-100-100' >
                     <img class='absolute__bottom_right' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
-                <div class='tb__primary xxm relative testbox' >
+                <div class='tb__secondary xxm relative testbox-100-100' >
                     <img class='absolute__bottom_left' src='assets/images/green-bird.jpg' alt='i am an image'/>
-                </div> 
+                </div>
+                 
             </div>
         </div><!--  hello world block ends -->
     </div><!-- layout-positioning ends-->
@@ -248,12 +257,12 @@
     <!-- /****************************************  Generic blocks  *******************************/ -->
     
     <div class='section--xl' id='layout-generic-block' >
-        <h2 >
-            Generic blocks
+        <h2 class='h3'>
+            04. Generic blocks
         </h2>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'> 
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -267,7 +276,7 @@
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__primary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
 
@@ -307,23 +316,23 @@
                 </p>
             </div><!-- block xxxl ends-->
 
-            <div class='block--tight tb__green '>
+            <!--<div class='block--tight tb__green '>
                 <p>
                     I am a tight block
                 </p>
-            </div><!-- block tight ends-->
+            </div>
 
             <div class='block--bleed tb__green'>
                 <p>
                     I am a block
                 </p>
-            </div><!-- block bleed_ ends-->
+            </div>
 
             <div class='block--bleed_padding tb__green'>
                 <p>
                     I am a block
                 </p>
-            </div><!-- block bleed_padding ends-->
+            </div>-->
 
         </div><!--  hello world block ends -->
     </div><!--layout-generic-block ends-->
@@ -332,15 +341,15 @@
     <!-- /****************************************  Section blocks  *******************************/ -->
     
     <div class='section--xl' id='layout-section-block' >
-        <h2 >
-            Section blocks
+        <h2 class='h3'>
+            05. Section blocks
         </h2>
         <p>
             A handy little class to control the top margins of grouped elements 
         </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'> 
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -359,7 +368,7 @@
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__primary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             
@@ -404,6 +413,7 @@
                         Block with a section--xxxl wrapper
                     </p>
                 </div><!-- block xxs ends-->
+
             </div>
         </div><!--  hello world block ends -->
     </div><!--layout-generic-block ends-->
@@ -411,15 +421,15 @@
     <!-- /****************************************  Media blocks  *******************************/ -->
 
     <div class='section--xl' id='layout-media-block'>
-        <h2  class='h3'>
-            Media blocks
+        <h2 class='h3'>
+            06. Media blocks
         </h2>
         <p>
             Float an image to the left, with a clearfixed block of content to the right.
         </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -442,7 +452,7 @@
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <div class='media'>
@@ -466,11 +476,11 @@
     <!-- hmm TODO check the code somethings not right-->
     <div class='section--xl' id='layout-icon-blocks'>
         <h2  class='h3'>
-            Icon blocks
+           07. Icon blocks
         </h2>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -490,7 +500,7 @@
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <p>
@@ -513,11 +523,11 @@
 
     <div class='section--xl' id='layout-arrows'>
         <h2  class='h3'>
-            Arrows
+            08. Arrows
         </h2>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -550,7 +560,7 @@
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <div class='arrow--left xm block--xxs tb__blue'>
@@ -585,14 +595,14 @@
 
     <div class='section--xl' id='layout-inline-grid'>
         <h2>
-            Inline Grid
+            09. Inline Grid
         </h2>
         <p>
             Sets the child elements to take up full justified width of the parent.
         </p>
         <!--  code block ends -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
         </div><!--  code block ends -->
@@ -682,15 +692,15 @@
     <!-- /****************************************  Append vs Prepend  *******************************/ -->
 
     <div class='section--xl' id='layout-append'>
-        <h2  class='h3'>
-            Prepend vs Append
+        <h2 class='h3'>
+            10. Prepend vs Append
         </h2>
         <p>
             Place something before or after an element.
         </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -703,7 +713,7 @@
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             
@@ -713,32 +723,8 @@
         
         </div><!--  hello world block ends -->
     </div><!-- layout-append ends-->
-    <hr class='mx'>
-    <!-- /****************************************  Overflow helper ends  *******************************/ -->
-
-    <div class='section--xl' id='layout-append'>
-        <h2  class='h3'>
-            Overflow 
-        </h2>
-        <!--  code block starts -->
-        <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
-                code
-            </h4>
-            <pre>
-<code class='language-markup'>
-    code here
-</code>
-            </pre>
-        </div><!--  code block ends -->
-
-        <!--  hello world block starts -->
-        <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
-                hello world
-            </h4>
-        
-        </div><!--  hello world block ends -->
+   
+    
     </div><!-- layout-append ends-->
 </div><!--content-padding-->
 

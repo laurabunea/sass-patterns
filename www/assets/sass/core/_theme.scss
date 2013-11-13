@@ -9,8 +9,8 @@
  * Structure:
  *
  *      1. Warning Themes
- *		2. Text colours
- 		3. Theme blocks
+ *		  2. Text colours
+ *		  3. Theme blocks
  *
  *
  *
@@ -18,148 +18,126 @@
  *
  */
 
+/*
+base colours 
+*/
 
 html, 
 body {
-    background-color: $bg-color;
-    color:          $base-font-color;
+    background-color:   $bg-color;
+    color:              $base-font-color;
 }
 
 a {
-    color:          $base-link-color;
+    color:              $base-link-color;
     &:hover {
-        color:      $base-link-hover-color;
+        color:          $base-link-hover-color;
     }
 }
 
 hr {
-  background-color: $hr-colour;
-  color: $hr-colour;
+  background-color:     $hr-colour;
+  color:                $hr-colour;
 }
+
 
 /**
  * 2. Text colours
  * -----------------------------------------------------------------------------
  */
 
+.text-muted             { color:$text-muted; }
 
-.text_muted  {
-	color:$text-muted;
-}
+.text-success           { color: $text-success; }
 
-.text_success {
-  color: $text-success;
-}
+.text-warning           { color: $text-warning; }
 
-.text_warning {
-  color: $text-warning;
-}
-
-.text_danger {
-  color: $text-danger;
-}
+.text-danger            { color: $text-danger; }
 
 
 /**
- * 2. Theme blocks
+ * . Theme blocks --success warning or danger
  * -----------------------------------------------------------------------------
  */
 
-
- .theme__block_success {
-	background-color: $success-block-bg  ;
-	color: $success-block-text;
-	@extend %border;
-	border-color:$success-block-border;
+.tb__success {
+  @extend %border;
+  @include theme-block( $success-bg-color, $success-txt-color, $success-border-color );
 }
 
-.theme__block_warning {
-	background-color: $warning-block-bg;
-	color: $warning-block-text;
-	@extend %border;
-	border-color:$warning-block-border;
+.tb__warning {
+  @extend %border;
+  @include theme-block( $warning-bg-color, $warning-txt-color, $warning-border-color );
 }
 
-.theme__block_danger {
-	background-color: $danger-block-bg;
-	color:$danger-block-text;
-	@extend %border;
-	border-color:$danger-block-border;
-}
-
-.br--xs {@include vendor(border-radius, 2px 2px 2px 2px);}
-.br--xs {@include vendor(border-radius, 5px 5px 5px 5px);}
-.br--s {@include vendor(border-radius, 10px 10px 10px 10px);}
-//.br--l {@include vendor(border-radius, 50% 50% 50% 50%);}
-//.br--xl {@include vendor(border-radius, 50% 50% 50% 50%);}
-//.br--xxl {@include vendor(border-radius, 50% 50% 50% 50%);}
-
-/**
- * 2. 
- * -----------------------------------------------------------------------------
- */
- 
-
-.theme__block_600 {
-	background-color:#4D4D4D ;
-	color: #fff;
-	//border:1px solid #fff ;
+.tb__danger {
+  @extend %border;
+  @include theme-block( $danger-bg-color, $danger-txt-color, $danger-border-color );
 }
 
 
 /**
- * Main theme colours of your site
+ *  Theme block --primary, secondary, tertiary, quarternary
  * -----------------------------------------------------------------------------
  */
 
 .tb__primary {
+  @extend %border;
 	@include theme-block( $primary-bg-color, $primary-txt-color, $primary-border-color );
-	//box-shadow: 1px 1px 2px #FFFFFF inset, 1px 1px 3px 0 #D7D8CF;
-	@extend %border;
   border-radius: 10px;
 }
 
 .tb__secondary {
-	@include theme-block( $secondary-bg-color, $secondary-txt-color, $secondary-border-color );
 	@extend %border;
-
+  @include theme-block( $secondary-bg-color, $secondary-txt-color, $secondary-border-color );
 }
 
 .tb__tertiary {
+  @extend %border;
 	@include theme-block( $tertiary-bg-color, $tertiary-txt-color, $tertiary-border-color );
-	@extend %border;
-
 }
 
 .tb__quarternary {
+  @extend %border;
 	@include theme-block( $quarternary-bg-color, $quarternary-txt-color, $quarternary-border-color );
-	@extend %border;
-
 }
 
+
 /**
- * 
+ *  Theme block --green, pink, blue
  * -----------------------------------------------------------------------------
  */
 
-
 .tb__green {
+  @extend %border;
 	@include theme-block( $green-bg-color, $green-txt-color, $green-border-color );
-	@extend %border;
 }
 
 .tb__pink {
+  @extend %border;
 	@include theme-block( $pink-bg-color, $pink-txt-color, $pink-border-color );
-	@extend %border;
 }
 
 .tb__blue {
+  @extend %border;
 	@include theme-block( $blue-bg-color, $blue-txt-color, $blue-border-color );
-	@extend %border;
 }
 
 
 
+
+
+
+
+.br--xs {
+  @include vendor(border-radius, 2px 2px 2px 2px);
+}
+.br--xs {
+  @include vendor(border-radius, 5px 5px 5px 5px);
+}
+.br--s {
+  @include vendor(border-radius, 10px 10px 10px 10px);
+}
 /**
  * Button theming
  * -----------------------------------------------------------------------------
@@ -245,8 +223,6 @@ a.tb__badge_active > .badge {
 	background-color: $badge-active-bg;
 }
 
-
-
 .tb__header {
     color:$pg-header-txt;
     border-bottom:1px solid $pg-header-border;
@@ -254,11 +230,3 @@ a.tb__badge_active > .badge {
         color:$pg-header-span-txt;
     }
 }
-//::selection {
-//    @include theme(background-color);
-//    color: #fff;
-//}
-//::-moz-selection {
-//   @include theme(background-color);
-//   color: #fff;
-//}

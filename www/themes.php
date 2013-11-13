@@ -6,16 +6,14 @@
      <div class='page-header tb__header'>
         <h1>
             Themes
-            <span class='tiny'>
-                - 
-            </span>
+            
         </h1>
     </div>
 
     <p>
-        Text
+        Notes...
     </p>
-    <ul class='list--styled'>
+    <ul class='list--styled_decimal'>
         <li>
             <a href='#themes-blocks'>
                 Theme blocks
@@ -36,43 +34,56 @@
                 Tables
             </a>
         </li>
-        
     </ul><!--list unstyled ends-->
-    
+    <hr class='m'>
 	<!-- /****************************************  Block themes  *******************************/ -->
 
-    <div class='section--xl' id='theme-blocks'>
-        <h2>
-            Block themes 
+    <div class='section--l' id='theme-blocks'>
+        <h2 class='h3'>
+            Theme blocks
         </h2>
+        <p>
+            Use any of the available theme block classes to quickly create ....
+        </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
 <code class='language-markup'>
-
+    &lt;div class='tb__primary'&gt;
+        &lt;p&gt;Some text.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class='tb__secondary'&gt;
+       &lt;p&gt;Some text.&lt;/p&gt;
+    &lt;/div>
+    &lt;div class='tb__tertiary'&gt;
+        &lt;p&gt;Some text.&lt;/p&gt;
+    &lt;/div>
+    &lt;div class='tb__quarternary'&gt;
+        &lt;p&gt;Some text.&lt;/p&gt;
+    &lt;/div&gt;
 </code>
             </pre>
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
         	<div class='grid'>
-                <div class=' g--1-4 testbox-100-100 xm block--xs tb__primary'>
-                    <p>Some text.</p>`
-                </div>
-                <div class=' g--1-4 testbox-100-100 xm block--xs tb__secondary'>
-                   <p>Some text.</p>
-                </div>
-                <div class=' g--1-4 testbox-100-100 xm block--xs tb__tertiary'>
+                <div class='g--1-4 testbox-100-100 xm block--xs tb__primary'>
                     <p>Some text.</p>
                 </div>
-                <div class=' g--1-4 testbox-100-100 xm block--xs tb__quarternary'>
+                <div class='g--1-4 testbox-100-100 xm block--xs tb__secondary'>
+                   <p>Some text.</p>
+                </div>
+                <div class='g--1-4 testbox-100-100 xm block--xs tb__tertiary'>
+                    <p>Some text.</p>
+                </div>
+                <div class='g--1-4 testbox-100-100 xm block--xs tb__quarternary'>
                     <p>Some text.</p>
                 </div>
             </div>
@@ -80,29 +91,37 @@
 
         <!--  code block starts -->
         <div class='block--xs  tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
 <code class='language-markup'>
-code here
+&lt;div class='tb__success'&gt;
+   &lt;p&gt;Some text.&lt;/p&gt;
+&lt;/div>
+&lt;div class='tb__warning'&gt;
+    &lt;p&gt;Some text.&lt;/p&gt;
+&lt;/div>
+&lt;div class='tb__danger'&gt;
+    &lt;p&gt;Some text.&lt;/p&gt;
+&lt;/div&gt;
 </code>
             </pre>
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
         	<div class='grid'>
-                <div class='testbox-100-100 block--xs xm theme__block_success'>
+                <div class='testbox-100-100 block--xs xm tb__success'>
                     <p>Success</p>
                 </div>
-                <div class='testbox-100-100 block--xs xm theme__block_warning'>
+                <div class='testbox-100-100 block--xs xm tb__warning'>
                     <p>Success</p>
                 </div>
-                <div class='testbox-100-100 block--xs xm theme__block_danger'>
+                <div class='testbox-100-100 block--xs xm tb__danger'>
                     <p>Danger</p>
                 </div>
                 
@@ -121,29 +140,29 @@ code here
         </p>
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
 <code class='language-markup'>
-&lt;p class='text_muted'&gt; Some muted text &lt;/p&gt;
-&lt;p class='text_success'&gt; AHHHHHH DANGER a kitten is chasing me &lt;/p&gt;
-&lt;p class='text_warning'&gt; Warning! Something may happen to you &lt;/p&gt;
-&lt;p class='text_danger'&gt; Success, I am awesome &lt;/p&gt;
+&lt;p class='text-muted'&gt; Some muted text &lt;/p&gt;
+&lt;p class='text-success'&gt; AHHHHHH DANGER a kitten is chasing me &lt;/p&gt;
+&lt;p class='text-warning'&gt; Warning! Something may happen to you &lt;/p&gt;
+&lt;p class='text-danger'&gt; Success, I am awesome &lt;/p&gt;
 </code>
             </pre>
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <p class='text_muted'>Some muted text</p>
+            <p class='text-muted'>Some muted text</p>
 
-        	<p class='text_success'>AHHHHHH DANGER a kitten is chasing me</p>
-        	<p class='text_warning'>Warning! Something may happen to you</p>
-        	<p class='text_danger'>Success, I am awesome</p>
+        	<p class='text-success'>AHHHHHH DANGER a kitten is chasing me</p>
+        	<p class='text-warning'>Warning! Something may happen to you</p>
+        	<p class='text-danger'>Success, I am awesome</p>
         </div><!--  hello world block ends -->
     </div><!-- theme-blocks ends-->
     <hr class='mx'>
@@ -156,7 +175,7 @@ code here
         
         <!--  code block starts -->
         <div class='block--xs tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -170,7 +189,7 @@ code here
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <p class='xm'><a class='btn btn-primary '>I'm a primary button</a>
@@ -188,7 +207,7 @@ code here
         
         <!--  code block starts -->
         <div class='block--xs m tb__tertiary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
@@ -202,7 +221,7 @@ code here
 
         <!--  hello world block starts -->
         <div class='block--xs__stacked tb__secondary'>
-            <h4 class='tiny uppercase text_muted'>
+            <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <!-- On rows -->
