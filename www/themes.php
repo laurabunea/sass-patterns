@@ -46,7 +46,7 @@
             Use any of the available theme block classes to quickly create ....
         </p>
         <!--  code block starts -->
-        <div class='block--xs tb__tertiary'>
+        <div class='block block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -69,28 +69,28 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--xs__stacked tb__secondary'>
+        <div class='block__stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
         	<div class='grid'>
-                <div class='g--1-4 testbox-100-100 xm block--xs tb__primary'>
+                <div class='g--1-4 testbox-100-100 xm block block--s tb__primary'>
                     <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 xm block--xs tb__secondary'>
+                <div class='g--1-4 testbox-100-100 xm block block--s tb__secondary'>
                    <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 xm block--xs tb__tertiary'>
+                <div class='g--1-4 testbox-100-100 xm block block--s tb__tertiary'>
                     <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 xm block--xs tb__quarternary'>
+                <div class='g--1-4 testbox-100-100 xm block block--s tb__quarternary'>
                     <p>Some text.</p>
                 </div>
             </div>
         </div><!--  hello world block ends -->
 
         <!--  code block starts -->
-        <div class='block--xs  tb__tertiary'>
+        <div class='block block--s  tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -110,18 +110,18 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--xs__stacked tb__secondary'>
+        <div class='block__Stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
         	<div class='grid'>
-                <div class='testbox-100-100 block--xs xm tb__success'>
+                <div class='testbox-100-100 block block--s xm tb__success'>
                     <p>Success</p>
                 </div>
-                <div class='testbox-100-100 block--xs xm tb__warning'>
+                <div class='testbox-100-100 block block--s xm tb__warning'>
                     <p>Success</p>
                 </div>
-                <div class='testbox-100-100 block--xs xm tb__danger'>
+                <div class='testbox-100-100 block block--s xm tb__danger'>
                     <p>Danger</p>
                 </div>
                 
@@ -139,7 +139,7 @@
         	Convey meaning through color with a handful of emphasis utility classes.
         </p>
         <!--  code block starts -->
-        <div class='block--xs tb__tertiary'>
+        <div class='block block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -154,7 +154,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--xs__stacked tb__secondary'>
+        <div class='block__stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -174,7 +174,7 @@
         </h2>
         
         <!--  code block starts -->
-        <div class='block--xs tb__tertiary'>
+        <div class='block block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -188,7 +188,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--xs__stacked tb__secondary'>
+        <div class='block__stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -206,7 +206,7 @@
         </h2>
         
         <!--  code block starts -->
-        <div class='block--xs m tb__tertiary'>
+        <div class='block block--s m tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -220,7 +220,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--xs__stacked tb__secondary'>
+        <div class='block__stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

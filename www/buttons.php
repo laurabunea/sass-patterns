@@ -49,7 +49,7 @@
         </h2>
 
         <!-- code block starts -->
-        <div class='block--xs tb__tertiary'>
+        <div class='block block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -63,7 +63,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--xs__stacked tb__secondary'>
+        <div class='block__stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -91,7 +91,7 @@
             Stack a variation class to add some color
         </p>
         <!-- code block starts -->
-        <div class='block--xs tb__tertiary'>
+        <div class='block block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -104,7 +104,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--xs__stacked tb__secondary'>
+        <div class='block__stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -130,7 +130,7 @@
         </p>
 
         <!-- code block starts -->
-        <div class='block--xs tb__tertiary'>
+        <div class='block block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -143,7 +143,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--xs__stacked tb__secondary'>
+        <div class='block__stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -162,7 +162,7 @@
         </p>
 
         <!-- code block starts -->
-         <div class='block--xs tb__tertiary'>
+         <div class='block block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -175,7 +175,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--xs__stacked tb__secondary'>
+        <div class='block__stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -194,7 +194,7 @@
         </p>
 
         <!-- code block starts -->
-        <div class='block--xs tb__tertiary'>
+        <div class='block block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -207,7 +207,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--xs__stacked tb__secondary'>
+        <div class='block__stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -243,7 +243,7 @@
         </p>
 
         <!-- code block starts -->
-        <div class='block--xs tb__tertiary'>
+        <div class='block block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -262,7 +262,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--xs__stacked tb__secondary'>
+        <div class='block__stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -310,7 +310,7 @@
         </p>
 
         <!-- code block starts -->
-        <div class='block--xs tb__tertiary'>
+        <div class='block block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -326,7 +326,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--xs__stacked tb__secondary'>
+        <div class='block__stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -361,7 +361,7 @@
              buttons and make sure the padding's the same as your default button :)
         </p>
         <!-- code block starts -->
-        <div class='block--xs tb__tertiary'>
+        <div class='block block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -376,7 +376,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--xs__stacked tb__secondary'>
+        <div class='block__stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

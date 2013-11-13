@@ -64,7 +64,7 @@
 	</h3>
 
 	<!-- code block starts -->
-    <div class='block--xs tb__tertiary'>
+    <div class='block block--s tb__tertiary'>
         <h4 class='tiny uppercase text-muted'>
             code
         </h4>
@@ -102,7 +102,7 @@
         what you've done.
     </p>
     <!-- code block starts -->
-    <div class='block--xs tb__tertiary'>
+    <div class='block block--s tb__tertiary'>
         <h4 class='tiny uppercase text-muted'>
             code
         </h4>
@@ -138,7 +138,7 @@
     </p>
 
      <!-- code block starts -->
-    <div class='block--xs tb__tertiary'>
+    <div class='block block--s tb__tertiary'>
         <h4 class='tiny uppercase text-muted'>
             code
         </h4>

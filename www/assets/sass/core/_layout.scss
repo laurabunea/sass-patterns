@@ -6,15 +6,15 @@
  * 
  * Structure:
  *
- *      1. Clearfix
- *		2. Float Helpers
- *      3. Absolute positioning helpers
- *      4. Generic blocks
- *      5. Media blocks
- *      6. Inline Grid  
- *      7. Arrows  
- *      8. Inline Block 
- *       9. Icon block
+ *    
+ *		1. Inline block
+ *      2. Positioning - Absolute, Floating and Clearfixing 
+ *      3. Generic blocks
+ *      4. Media blocks
+ *      5. Inline Grid  
+ *      6. Arrows  
+ *      7. Inline Block 
+ *      8. Icon block
  *
  *
  *
@@ -23,18 +23,16 @@
  */
 
 /**
- * 1. Clearfix
- * -----------------------------------------------------------------------------
- *
+ * 1. Inline block
+ * ----------------------------------------------------------------------------
  */
 
-.clearfix{
-	@extend %clearfix;
+.inline-block {
+    @extend %inline-block;
 }
 
-
 /**
- * 2. Float helpers
+ * 2. Positioning - Absolute, Floating and Clearfixing 
  * ----------------------------------------------------------------------------
  */
 
@@ -46,132 +44,109 @@
 	float:right;
 }
 
-
-/**
- * 3. Absolute positioning helpers
- * ----------------------------------------------------------------------------
- */
+.clearfix{
+    @extend %clearfix;
+}
 
 .relative {
     position: relative;
 }
-.absolute{
-    @extend %absolute;
-}
-.absolute__bottom_left {
-	@extend %absolute;
-	bottom:0;
-	left:0;
-}
 
-.absolute__bottom_right {
-	@extend %absolute;
-	bottom:0;
-	right:0;
-}
+    .absolute{
+        @extend %absolute;
+    }
+    .absolute__bottom_left {
+    	@extend %absolute;
+    	bottom:0;
+    	left:0;
+    }
 
-.absolute__top_left {
-	@extend %absolute;
-	top:0;
-	left:0;
-}
+    .absolute__bottom_right {
+    	@extend %absolute;
+    	bottom:0;
+    	right:0;
+    }
 
-.absolute__top_right {
-	@extend %absolute;
-	top:0;
-	right:0;
-}
+    .absolute__top_left {
+    	@extend %absolute;
+    	top:0;
+    	left:0;
+    }
 
+    .absolute__top_right {
+    	@extend %absolute;
+    	top:0;
+    	right:0;
+    }
 
 
 /**
- * 4. Generic blocks
+ * 3. Generic blocks
  * ----------------------------------------------------------------------------
- <div class='block block--bleed block--mobile'>
-	Some content.
- </div>
+
  */
 
 /*
     making sure the first element has no margin on it 
 */
 
-.block--xxxs__stacked,
-.block--xxs__stacked,
-.block--xs__stacked,
-.block__stacked,
-.block--xl__stacked,
-.block--xxl__stacked,
-.block--xxxl__stacked,
-.block__stacked > :first-child, 
-.block--xl__stacked > :first-child,
-.block--xxl__stacked > :first-child,
-.block--xxxl__stacked > :first-child,
-.block--xs__stacked > :first-child,
-.block--xxs__stacked > :first-child,
-.block--xxxs__stacked > :first-child,
+.block__stacked > :first-child,
 .block > :first-child, 
-.block--xl > :first-child,
-.block--xxl > :first-child,
-.block--xxxl > :first-child,
-.block--xs > :first-child,
-.block--xxs > :first-child,
-.block--xxxs > :first-child,
-.section > :first-child, 
-.section--xl > :first-child,
-.section--xxl > :first-child,
-.section--xxxl > :first-child,
-.section--xs > :first-child,
-.section--xxs > :first-child {
+.section > :first-child {
     margin-top:0;
 }
 
 /* 
  adding a base margin-top to all block elements 
 */
-.block--xxxs,
-.block--xxs,
-.block--xs,
-.block,
-.block--xl,
-.block--xxl,
-.block--xxxl {
-    margin-top:$xm;
+%block {
+   margin-top:$xm;
 }
+/* 
+ removing a margin-top to all block elements 
+*/
 
-.block, 
 .block__stacked {
+   /*only use this id we don't want a top margin on it */
+   margin-top:0!important;
+}
+
+.block--xxl {
     @extend %block;
+    padding: $base-spacing-unit * 2.5 $base-spacing-unit * 5;
+    
 }
 
-.block--xxxl,
-.block--xxxl__stacked {
-     @extend %block--xxxl;
+.block--xl {
+    @extend %block;
+    padding: $base-spacing-unit * 2 $base-spacing-unit * 4;
+ 
 }
 
-.block--xxl,
-.block--xxl__stacked {
-     @extend %block--xxl;
+.block--l {
+    @extend %block;
+    padding: $base-spacing-unit * 1.5 $base-spacing-unit * 3;
+
 }
 
-.block--xl,
-.block--xl__stacked {
-    @extend %block--xl;
+.block-m {
+    @extend %block;
+    padding: $base-spacing-unit $base-spacing-unit * 2;
 }
 
-.block--xs,
-.block--xs__stacked {
-    @extend %block--xs;
+.block--s {
+    @extend %block;
+    padding: $base-spacing-unit / 1.5 $base-spacing-unit / 2;
 }
 
-.block--xxs,
-.block--xxs__stacked {
-    @extend %block--xxs;
+.block--xs {
+    @extend %block;
+    padding: $base-spacing-unit / 2 $base-spacing-unit / 4;
 }
 
-.block--xxxs, 
-.block--xxxs__stacked {
-    @extend %block--xxxs;
+.block--xxs {
+    @extend %block;
+    padding: $base-spacing-unit / 2.5 $base-spacing-unit / 5;
 }
 
 
@@ -357,9 +332,7 @@
 }
 
 
-.inline-block {
-    @extend %inline-block;
-}
+
 /**
  * Append vs Prepend
  * ----------------------------------------------------------------------------

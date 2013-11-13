@@ -43,35 +43,5 @@
 
 
 
-/*
-	block spacing 
-*/
 
-%block--xxxl {
-    padding: $base-spacing-unit * 2.5 $base-spacing-unit * 5;
-}
-
-%block--xxl {
-    padding: $base-spacing-unit * 2 $base-spacing-unit * 4;
-}
-
-%block--xl {
-    padding: $base-spacing-unit * 1.5 $base-spacing-unit * 3;
-}
-
-%block {
-    padding: $base-spacing-unit $base-spacing-unit * 2;
-}
-
-%block--xs {
-    padding: $base-spacing-unit / 1.5 $base-spacing-unit / 2;
-}
-
-%block--xxs {
-    padding: $base-spacing-unit / 2 $base-spacing-unit / 4;
-}
-
-%block--xxxs {
-    padding: $base-spacing-unit / 2.5 $base-spacing-unit / 5;
-}
 
