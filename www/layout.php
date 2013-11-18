@@ -11,7 +11,7 @@
             </span>
         </h1>
     </div>
-    <img src='assets/images/fred-top.png' alt='' class='absolute' style='top:-26px; right:72px;'/>
+    <img src='assets/images/fred-top.png' alt='' class='absolute fred-layout' />
 
     <p class='m'>
         Be consistent with vertical spacing. Avoid setting arbitrary margins on items. 
@@ -570,22 +570,22 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='arrow--left xm block block--xs tb__blue'>
+            <div class='arrow--left mt--xm block block--xs tb__blue'>
                 <p> ... </p>
                 <i class='arrow arrow-top'></i>
             </div>
 
-            <div class='arrow--right xm block block--xs tb__blue'>
+            <div class='arrow--right mt--xm  block block--xs tb__blue'>
                 <p> ... </p>
                 <i class='arrow arrow-top '></i>
             </div>
 
-            <div class='arrow--center xm block block--xs tb__blue'>
+            <div class='arrow--center mt--xm  block block--xs tb__blue'>
                 <p> ... </p>
                 <i class='arrow arrow-bottom '></i>
             </div>
 
-            <div class='arrow--side xm block block--xs tb__blue'>
+            <div class='arrow--side mt--xm  block block--xs tb__blue'>
                 <p> ... </p>
                 <i class='arrow arrow-left '></i>
             </div>

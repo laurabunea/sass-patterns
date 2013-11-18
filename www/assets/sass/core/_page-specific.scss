@@ -65,7 +65,6 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
     border-radius:10px;
 }
 
-
 .testbox {
     @include box-dimensions(150px, 150px);
     display:inline-block;
@@ -87,6 +86,17 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
     left:-138px; 
     top:0;
 }
+
+.fred-layout {
+    top:-26px; 
+    right:72px;
+}
+
+.fred-buttons-page {
+    right:30px; 
+    top:100px;
+}
+
 .specific-bird {
     top:10px;
     left:17px;

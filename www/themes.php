@@ -74,16 +74,16 @@
                 hello world
             </h4>
         	<div class='grid'>
-                <div class='g--1-4 testbox-100-100 xm block block--s tb__primary'>
+                <div class='g--1-4 testbox-100-100 mt--xm  block block--s tb__primary'>
                     <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 xm block block--s tb__secondary'>
+                <div class='g--1-4 testbox-100-100 mt--xm  block block--s tb__secondary'>
                    <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 xm block block--s tb__tertiary'>
+                <div class='g--1-4 testbox-100-100 mt--xm  block block--s tb__tertiary'>
                     <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 xm block block--s tb__quarternary'>
+                <div class='g--1-4 testbox-100-100 mt--xm  block block--s tb__quarternary'>
                     <p>Some text.</p>
                 </div>
             </div>
@@ -115,13 +115,13 @@
                 hello world
             </h4>
         	<div class='grid'>
-                <div class='testbox-100-100 block block--s xm tb__success'>
+                <div class='testbox-100-100 block block--s mt--xm  tb__success'>
                     <p>Success</p>
                 </div>
-                <div class='testbox-100-100 block block--s xm tb__warning'>
+                <div class='testbox-100-100 block block--s mt--xm  tb__warning'>
                     <p>Success</p>
                 </div>
-                <div class='testbox-100-100 block block--s xm tb__danger'>
+                <div class='testbox-100-100 block block--s mt--xm  tb__danger'>
                     <p>Danger</p>
                 </div>
                 
@@ -206,7 +206,7 @@
         </h2>
         
         <!--  code block starts -->
-        <div class='block block--s m tb__tertiary'>
+        <div class='block block--s mt--m  tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>

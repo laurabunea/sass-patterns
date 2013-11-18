@@ -16,7 +16,7 @@
         intro text
     </p>
 
-    <div class='page-header tb__header mxx'>
+    <div class='page-header tb__header mt--xxl'>
         <h1>
 
             Mixins
@@ -90,11 +90,11 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='img-rounded xm testbox-100-100 tb__green'>
+            <div class='img-rounded mt--xm  testbox-100-100 tb__green'>
             </div>
         
         </div><!--  hello world block ends -->
@@ -181,15 +181,15 @@
                 hello world
             </h4>
             <div class='grid'>
-                <div class='overlay--25 m testbox-100-100 block block--s tb__green'>
+                <div class='overlay--25 mt--m  testbox-100-100 block block--s tb__green'>
                     <p>25% opacity</p>
                 </div>
 
-                <div class='overlay--50 m testbox-100-100 block block--s tb__green'>
+                <div class='overlay--50 mt--m  testbox-100-100 block block--s tb__green'>
                     <p>50% opacity</p>
                 </div>
 
-                <div class='m testbox-100-100 block block--s tb__green'>
+                <div class='mt--m  testbox-100-100 block block--s tb__green'>
                     <p>Block with out an opacity class</p>
                 </div>
             </div>
@@ -235,7 +235,7 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <form class='xm'>
+            <form class='mt--xm '>
                 <input class='pink-input-text' type="text" name="fname" placeholder="First name">
             </form>
         
@@ -284,7 +284,7 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='xm tb__blue block block--s'>
+            <div class='mt--xm  tb__blue block block--s'>
                 <p>Some text</p>
             </div>
         
@@ -331,7 +331,7 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='xm tb__blue block block--s'>
+            <div class='mt--xm  tb__blue block block--s'>
                 <p>Some text</p>
             </div>
         

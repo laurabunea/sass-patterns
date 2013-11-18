@@ -13,6 +13,7 @@
             </span>
         </h1>
     </div>
+    
     <p class=''>
         There are a couple of things you should set up before you begin a project. These are:
     </p>
@@ -41,15 +42,18 @@
     </ul>
 
     <hr class='m'>
-    
-    <div class='section--l' id='FontFamilyAnchor'>
+
+    <div class='section--m' id='FontFamilyAnchor'>
         <h2 class='h3' >
             01. Base font family
         </h2>
         <p>
-            notes..
+            IE sucks! Certain combinations of weights don&rsquo;t work together when linked into the same font-family name. 
         </p>
-        
+        <p>
+            These additional family names each contain a single font, so they&rsquo;re guaranteed not to trigger bugs related 
+            to linking multiple weights and styles.
+        </p>
         
         <div class='block block--s tb__tertiary'>
                 <h4 class='tiny uppercase text-muted'>
@@ -61,17 +65,17 @@
     @include font($font-family, 400 , normal);
 }
 
-.font-family--italic {
-    @include font($font-family, 400 , italic);
-}
+    .font-family--italic {
+        @include font($font-family, 400 , italic);
+    }
 
-.font-family--bold {
-    @include font($font-family, 700 , normal);
-}
+    .font-family--bold {
+        @include font($font-family, 700 , normal);
+    }
 
-.font-family--bold-italic {
-    @include font($font-family, 700 , italic);
-}
+    .font-family--bold-italic {
+        @include font($font-family, 700 , italic);
+    }
 
 
 /* Secondary font family ..... etc*/
@@ -80,17 +84,17 @@
     @include font($font-family-secondary, 400 , normal);
 }
 
-.font-family--italic__secondary {
-    @include font($font-family-secondary, 400 , italic);
-}
+    .font-family--italic__secondary {
+        @include font($font-family-secondary, 400 , italic);
+    }
 
-.font-family--bold__secondary {
-    @include font($font-family-secondary, 700 , normal);
-}
+    .font-family--bold__secondary {
+        @include font($font-family-secondary, 700 , normal);
+    }
 
-.font-family--bold-italic__secondary {
-    @include font($font-family-secondary, 700 , italic);
-}
+    .font-family--bold-italic__secondary {
+        @include font($font-family-secondary, 700 , italic);
+    }
 */
 
 </code>
@@ -98,7 +102,7 @@
 
         </div>
     </div>
-    <div class='section--xl' id='FontStylesAnchor'>
+    <div class='section--l' id='FontStylesAnchor'>
         <h2 class='h3'>
             01. Base font styles
         </h2>
@@ -141,17 +145,17 @@ font-size:      100%;
         </div>
     </div><!--section ends-->
 
-    <div class='section--xl' id='FontSizesAnchor'>
+    <div class='section--l' id='FontSizesAnchor'>
         <h2 class='h3'>
             02. Base font sizes
         </h2>
         <p>
-            Sit down with the designer and establish distinguishable 
-            font sizes using the <a href='/text-heirarchy.php'>text heirarchy template
+            Before you begin a project you should sit down with the designer and establish the different 
+            font sizes. 
             </a>
         </p>
         <p>
-            <strong>Rule:</strong> Always set font-sizes in ems.
+            <strong>Fred's rule:</strong> Always set font-sizes in ems.
         </p>
 
         <div class='block block--s tb__tertiary'>
@@ -192,13 +196,15 @@ $font-size-xxxs:        11;     //.tiny
         </div>
     </div><!--section ends-->
 
-    <div class='section--xl' id='FontHeirarchyAnchor'>
+    <div class='section--l' id='FontHeirarchyAnchor'>
        <h2 class='h3'>
             03. Text Heirarchy
         </h2>
-       
+       <p>
+           Notes on Text Heirarchy ....
+       </p>
         <p class=''>
-            Notes... The best way to do this is sit down with the designer and go through the
+           The best way to do this is sit down with the designer and go through the
             <a href='/text-heirarchy.php'>
                 text heirarchy
             </a>
@@ -207,7 +213,7 @@ $font-size-xxxs:        11;     //.tiny
     </div><!--section ends-->
         
 
-    <div class='page-header tb__header mxx'>
+    <div class='page-header tb__header mt--xl'>
         <h1>
             Typography
             <span class='tiny'>
@@ -259,9 +265,9 @@ $font-size-xxxs:        11;     //.tiny
     </ol>
 
     <!-- /****************************************  Text sizes  *******************************/ -->
-    <!--<hr class='mx'>-->
+    <hr class='mx'>
     
-    <div class='section--xl' id='TypographyHelper1Anchor'>
+    <div class='section--m' id='TypographyHelper1Anchor'>
         <h2 class='h3'>
             01. Font sizes
         </h2>
@@ -319,7 +325,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- hello world block ends -->
 
         <!-- 2. Common Text sizes-->
-        <div class='section--xl'>
+        <div class='section--l'>
             <h3 class='h4'>
                 b) Common Text sizes
             </h3>
@@ -375,8 +381,8 @@ $font-size-xxxs:        11;     //.tiny
         </div>
 
         <!-- 3. sub headings-->
-        <div class='section--xl'>
-            <h3 class='m h4' >
+        <div class='section--l'>
+            <h3 class='mt--m  h4' >
                 c) Sub Headings
             </h3>
             <p>
@@ -392,7 +398,7 @@ $font-size-xxxs:        11;     //.tiny
 
 <!-- /****************************************  Sans/serif text  *******************************/ -->
     <hr class='mx'>
-    <div class='section--xl' id='TypographyHelper2Anchor'>
+    <div class='section--l' id='TypographyHelper2Anchor'>
         <h2 class='h3'>
             02. Sans vs Sans Serif
         </h2>
@@ -428,7 +434,7 @@ $font-size-xxxs:        11;     //.tiny
 
 <!-- /****************************************  Lower Case vs Upper Case  *******************************/ -->
     <hr class='mx'>
-    <div class='section--xl' id='TypographyHelper3Anchor'>
+    <div class='section--l' id='TypographyHelper3Anchor'>
 
         <h2 class='h3'>
             03. Lower vs Upper case
@@ -461,8 +467,9 @@ $font-size-xxxs:        11;     //.tiny
 
 
  <!-- /****************************************  Text allignment classes  *******************************/ -->
+    
     <hr class='mx'>
-    <div class='section--xl' id='TypographyHelper4Anchor'>
+    <div class='section--l' id='TypographyHelper4Anchor'>
 
         <h2 class='h3'>
             04. Text allignment classes
@@ -501,9 +508,11 @@ $font-size-xxxs:        11;     //.tiny
             </p>
         </div><!-- hello world block ends -->
     </div><!--  typo-text-align ends -->
+
 <!-- /****************************************  Txt overflow and ellipsis  *******************************/ -->
+    
     <hr class='mx'>
-    <div class='section--xl' id='TypographyHelper5Anchor'>
+    <div class='section--l' id='TypographyHelper5Anchor'>
         <h2 class='h3'>
             05. Text overflow and Ellipsis
         </h2>
@@ -544,7 +553,7 @@ $font-size-xxxs:        11;     //.tiny
     </div><!--typo-overflow ends-->
 <!-- /****************************************  List styles  *******************************/ -->
     <hr class='mx'>
-    <div class='section--xl' id='TypographyHelper6Anchor'>
+    <div class='section--l' id='TypographyHelper6Anchor'>
 
         <h2 class='h3'>
             06. List styles
@@ -575,7 +584,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block block--s tb__secondary'>
+            <div class='block__stacked block--s tb__secondary'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -590,7 +599,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- hello world block ends -->
         </div>
         
-        <div class='section--xl'>
+        <div class='section--l'>
             <h3 class='h4'>
                 b) Styled list
             </h3>
@@ -626,7 +635,7 @@ $font-size-xxxs:        11;     //.tiny
         </div>
 
         <!-- 3. Inline list -->
-        <div class='section--xl'>
+        <div class='section--l'>
             <h3 class='h4'>c) Inline list</h3>
             <!-- code block starts -->
             <div class='block block--s tb__tertiary'>
@@ -657,12 +666,15 @@ $font-size-xxxs:        11;     //.tiny
                     </li>
                 </ul>
             </div><!-- hello world block ends -->
-        </div><!-- section xl -->
+        </div><!-- section l -->
+        <!-- 3. Inline list -->
+        
+  
     </div><!-- typo-lists ends -->
 
          <!-- /****************************************  Hide text *******************************/ -->
     <hr class='mx'>
-    <div class='section--xl' id='TypographyHelper7Anchor'>
+    <div class='section--l' id='TypographyHelper7Anchor'>
 
         <h2 class='h3'>
             07. Hide text

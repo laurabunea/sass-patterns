@@ -94,7 +94,7 @@ body {
 
 h1, 
 .h1 {
-    @extend .m0--b;
+    @extend .mb--0;
     @extend .font-size-xxxl;                   
     line-height: 1;
     margin-top: px-to-em(24, $font-size-xxxl);              
@@ -102,7 +102,7 @@ h1,
 
 h2, 
 .h2 {
-    @extend .m0--b;
+    @extend .mb--0;
     @extend .font-size-xxl;                    
     line-height: 1.2;
     margin-top: px-to-em(24, $font-size-xxl);                  
@@ -110,7 +110,7 @@ h2,
 
 h3, 
 .h3 {
-    @extend .m0--b;
+    @extend .mb--0;
     @extend .font-size-xl;
     line-height: 1.2;
     margin-top: px-to-em(24, $font-size-xl);
@@ -118,7 +118,7 @@ h3,
 
 h4, 
 .h4 {
-    @extend .m0--b;
+    @extend .mb--0;
     @extend .font-size-m;
     line-height: 1.33333333;
     margin-top: px-to-em(20, $font-size-m);
@@ -126,7 +126,7 @@ h4,
 
 h5, 
 .h5 {
-    @extend .m0--b;
+    @extend .mb--0;
     @extend .font-size-s;
     line-height: 1.2;
     margin-top: px-to-em(12, $font-size-s);
@@ -134,7 +134,7 @@ h5,
 
 h6, 
 .h6 {
-    @extend .m0--b;
+    @extend .mb--0;
     @extend .font-size-xs;
     line-height: 1.2;
     margin-top: px-to-em(12, $font-size-xs);
@@ -149,7 +149,7 @@ h6,
 p, 
 .para, 
 li {
-    @extend .m0--b;
+    @extend .mb--0;
     @extend .font-size-s;
     line-height: px-to-em(21, $font-size-s); 
     margin-top: px-to-em(12, $font-size-s);              
@@ -272,7 +272,7 @@ p + p,
 
 //default list style in this case its circles
 %list--styled {
-    padding-left:$m;
+    padding-left:$bs--m;
     margin-top: .857142857em; //same as the margin top on p tags
     list-style: circle;
 }
@@ -285,7 +285,7 @@ p + p,
 .list--styled_decimal {
     @extend %list--styled;
     list-style: decimal-leading-zero;
-    padding-left:$mx;
+    padding-left:$bs--l;
 } 
 
 //alpha list

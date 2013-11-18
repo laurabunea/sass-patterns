@@ -2,7 +2,8 @@
     include 'header.php'; 
 ?> 
 
-<div class='content--padding clearfix tb__primary '>
+<div class='content--padding clearfix tb__primary relative'>
+    <img src='assets/images/fred-top-big.png' class='absolute fred-buttons-page' alt=''/>
     <div class='page-header tb__header'>
         <h1>
             Buttons
@@ -40,7 +41,7 @@
 
     </ul><!--list unstyled ends-->
     <!--<p>Make a button with <code>&lt;a class='btn'&gt;A button&lt;/a&gt;</code>. You can build your buttons out of a bunch of useful classnames.</p>-->
-
+    <hr>
     <!-- /****************************************  Button variations  *******************************/ -->
 
     <div class='section--xl' id='btn-variations'> 

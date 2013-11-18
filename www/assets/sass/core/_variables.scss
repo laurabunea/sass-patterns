@@ -82,38 +82,96 @@ $font-size-xxxs:                11;     //.tiny
 
 $base-spacing-unit:             1.5em; // 24px
 
-$xxxm :                         0.1em;
-$xxm :                          $base-spacing-unit / 3;     // 8px
-$xm :                           $base-spacing-unit / 1.5;   // 16px
-$m :                            $base-spacing-unit;         // 24px
-$mx :                           $base-spacing-unit * 1.5;   // 36px
-$mxx :                          $base-spacing-unit * 2;     // 48px
-$mxxx :                         $base-spacing-unit * 3;     // 72px
+$bs--0:                         0em;
+$bs--xxs:                       0.25em;
+$bs--xs:                        $base-spacing-unit / 3;     // 8px
+$bs--s:                         $base-spacing-unit / 1.5;   // 16px
+$bs--m:                         $base-spacing-unit;         // 24px
+$bs--l:                         $base-spacing-unit * 1.5;   // 36px
+$bs--xl:                        $base-spacing-unit * 2;     // 48px
+$bs--xxl:                       $base-spacing-unit * 3;     // 72px
 
-.m0     	                    { margin-top: 0; }
-.m0--b 		                    { margin-bottom: 0; }
-.xxxm                           { margin-top: $xxxm; }
-.xxm                            { margin-top: $xxm; }
-.xm                             { margin-top: $xm; }
-.m                              { margin-top: $m; }
-.mx                             { margin-top: $mx; }
-.mxx                            { margin-top: $mxx; }
-.mxxx                           { margin-top: $mxxx; }
 
-.xxm--b                         { margin-bottom: $xxm; }
-.xm--b                          { margin-bottom: $xm; }
-.m--b                           { margin-bottom: $m; }
-.mx--b                          { margin-bottom: $mx; }
-.mxx--b                         { margin-bottom: $mxx; }
+//MARGIN-RIGHT standard classses for desktop //default  
+.mr--0     { margin-right:$bs--0; }
+.mr--xxs   { margin-right:$bs--xxs; }
+.mr--xs    { margin-right:$bs--xs;}
+.mr--s     { margin-right:$bs--s;}
+.mr--m     { margin-right:$bs--m;}
+.mr--l     { margin-right:$bs--l;}
+.mr--xl    { margin-right:$bs--xl;}
+.mr--xxl   { margin-right:$bs--xxl;}
 
-.p0                             { padding-top: 0 !important; }
-.p0--b                          { padding-bottom: 0 !important; }
-.xxp 		                    { padding-top: $xxm; }
-.xp 		                    { padding-top: $xm; }
-.p 			                    { padding-top: $m; }
-.px 		                    { padding-top: $mx; }
-.pxx 		                    { padding-top: $mxx; }
+//MARGIN-LEFT standard classses for desktop //default  
+.ml--0     { margin-left:$bs--0; }
+.ml--xxs   { margin-left:$bs--xxs; }
+.ml--xs    { margin-left:$bs--xs;}
+.ml--s     { margin-left:$bs--s;}
+.ml--m     { margin-left:$bs--m;}
+.ml--l     { margin-left:$bs--l;}
+.ml--xl    { margin-left:$bs--xl;}
+.ml--xxl   { margin-left:$bs--xxl;}
 
+//MARGIN-TOP standard classses for desktop //default  
+.mt--0     { margin-top:$bs--0; }
+.mt--xxs   { margin-top:$bs--xxs; }
+.mt--xs    { margin-top:$bs--xs;}
+.mt--s     { margin-top:$bs--s;}
+.mt--m     { margin-top:$bs--m;}
+.mt--l     { margin-top:$bs--l;}
+.mt--xl    { margin-top:$bs--xl;}
+.mt--xxl   { margin-top:$bs--xxl;}
+
+//MARGIN-BOTTOM standard classses for desktop //default  
+.mb--0     { margin-bottom:$bs--0; }
+.mb--xxs   { margin-bottom:$bs--xxs; }
+.mb--xs    { margin-bottom:$bs--xs;}
+.mb--s     { margin-bottom:$bs--s;}
+.mb--m     { margin-bottom:$bs--m;}
+.mb--l     { margin-bottom:$bs--l;}
+.mb--xl    { margin-bottom:$bs--xl;}
+.mb--xxl   { margin-bottom:$bs--xxl;}
+
+
+//PADDING-RIGHT standard classses for desktop //default  
+.pr--0     { padding-right:$bs--0; }
+.pr--xxs   { padding-right:$bs--xxs; }
+.pr--xs    { padding-right:$bs--xs;}
+.pr--s     { padding-right:$bs--s;}
+.pr--m     { padding-right:$bs--m;}
+.pr--l     { padding-right:$bs--l;}
+.pr--xl    { padding-right:$bs--xl;}
+.pr--xxl   { padding-right:$bs--xxl;}
+
+//PADDING-LEFT standard classses for desktop //default 
+.pl--0     { padding-left:$bs--0; }
+.pl--xxs   { padding-left:$bs--xxs; }
+.pl--xs    { padding-left:$bs--xs;}
+.pl--s     { padding-left:$bs--s;}
+.pl--m     { padding-left:$bs--m;}
+.pl--l     { padding-left:$bs--l;}
+.pl--xl    { padding-left:$bs--xl;}
+.pl--xxl   { padding-left:$bs--xxl;}
+
+//PADDING-TOP standard classses for desktop //default 
+.pt--0     { padding-top:$bs--0; }
+.pt--xxs   { padding-top:$bs--xxs; }
+.pt--xs    { padding-top:$bs--xs;}
+.pt--s     { padding-top:$bs--s;}
+.pt--m     { padding-top:$bs--m;}
+.pt--l     { padding-top:$bs--l;}
+.pt--xl    { padding-top:$bs--xl;}
+.pt--xxl   { padding-top:$bs--xxl;}
+
+//PADDING-BOTTOM standard classses for desktop //default 
+.pb--0     { padding-bottom:$bs--0; }
+.pb--xxs   { padding-bottom:$bs--xxs; }
+.pb--xs    { padding-bottom:$bs--xs;}
+.pb--s     { padding-bottom:$bs--s;}
+.pb--m     { padding-bottom:$bs--m;}
+.pb--l     { padding-bottom:$bs--l;}
+.pb--xl    { padding-bottom:$bs--xl;}
+.pb--xxl   { padding-bottom:$bs--xxl;}
 
 
 /**
@@ -134,7 +192,7 @@ $hr-colour:                     #e5e5e5;
 $base-link-color:               #2F72BA;
 $base-link-hover-color:         darken($base-link-color, 15%);
 
-
+$list-block-color:              #ccc;
 // ...
 // -------------------------
 $sub-header:                    #999;

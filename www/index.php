@@ -7,7 +7,7 @@
     <img class='media__image' src='assets/images/fred.png' alt='Fred the friendly FED'/>
     <div class='media__body'>
         <!--TODO delete inline-->
-        <div class='arrow--side block tb__tertiary br--s' >
+        <div class='arrow--side block block--m tb__tertiary br--s' >
             <p style='color:white' class='h1 '>Hi I'm  F<span>R</span>ED the friendly FED.</p>
             <i class='arrow  arrow-left'></i>
         </div>

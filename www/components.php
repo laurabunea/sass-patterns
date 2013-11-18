@@ -14,7 +14,7 @@
     <p class='intro'>
         text here
     </p>
-    <ul class='list--styled'>
+    <ul class='list--styled_decimal'>
         <li>
             <a href='#components-bread-crumbs'>
                 Breadcrumbs
@@ -32,7 +32,7 @@
         </li>
     </ul><!--list unstyled ends-->
 
-
+    <hr>
     <!-- /****************************************  Breadcrumbs *******************************/ -->
     <div class='section--xl' id='components-bread-crumbs'>
         <h2  class='h3'>
@@ -40,7 +40,7 @@
         </h2>
         
         <!--  code block starts -->
-        <div class='block block--s m tb__tertiary'>
+        <div class='block block--s mt--m tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -126,7 +126,7 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='page-header tb__header mx'>
+            <div class='page-header tb__header mt--l mt--l'>
                 <h1>
                     H1 Heading 
                     <span class='tiny'>
@@ -134,7 +134,7 @@
                     </span>
                 </h1>
             </div>
-            <div class='page-header tb__header m'>
+            <div class='page-header tb__header mt--m'>
                 <h2>
                     H2 Heading 
                     <span class='tiny'>
@@ -142,7 +142,7 @@
                     </span>
                 </h2>
             </div>
-            <div class='page-header tb__header m'>
+            <div class='page-header tb__header mt--m'>
                 <h3>
                     H3 Heading 
                     <span class='tiny'>
@@ -150,7 +150,7 @@
                     </span>
                 </h3>
             </div>
-            <div class='page-header tb__header m'>
+            <div class='page-header tb__header mt--m'>
                 <h4>
                     H4 Heading 
                     <span class='tiny'>
@@ -158,7 +158,7 @@
                     </span>
                 </h4>
             </div>
-            <div class='page-header tb__header m'>
+            <div class='page-header tb__header mt--m'>
                 <h5>
                     H5 Heading 
                     <span class='tiny'>

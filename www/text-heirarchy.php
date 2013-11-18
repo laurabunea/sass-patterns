@@ -9,28 +9,28 @@
         </h1>
     </div>
 
-    <div class='section--xl'>
+    
     	
-    	<h1>
-    		H1 Heading
-    	</h1>
-    	<h2>
-    		H2 Heading
-    	</h2>
-    	<h3>
-    		H3 Heading
-    	</h3>
-    	<h4>
-    		H4 Heading
-    	</h4>
-    	<h5>
-    		H5 Heading
-    	</h5>
-        <h6>
-            H6 Heading
-        </h6>
-    <div>
-    <div class='section--xxl'>   
+	<h1>
+		H1 Heading
+	</h1>
+	<h2>
+		H2 Heading
+	</h2>
+	<h3>
+		H3 Heading
+	</h3>
+	<h4>
+		H4 Heading
+	</h4>
+	<h5>
+		H5 Heading
+	</h5>
+    <h6>
+        H6 Heading
+    </h6>
+
+    <div class='section--l'>   
     	<div class='page-header tb__header'>
         <h1>
             Text heirarchy

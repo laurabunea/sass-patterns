@@ -99,41 +99,32 @@
 /* 
  adding a base margin-top to all block elements 
 */
-%block {
-   margin-top:$xm;
+.block {
+   margin-top:$bs--xl;
 }
-
-/* 
- removing a margin-top to all block elements 
-*/
 
 .block__stacked {
    /*only use this id we don't want a top margin on it */
-   margin-top:0!important;
+   margin-top:0;
 }
 
     .block--xl {
-        @extend %block;
         padding: $base-spacing-unit * 2 $base-spacing-unit * 4; 
     }
 
     .block--l {
-        @extend %block;
         padding: $base-spacing-unit * 1.5 $base-spacing-unit * 3;
     }
 
     .block--m {
-        @extend %block;
         padding: $base-spacing-unit $base-spacing-unit * 2;
     }
 
     .block--s {
-        @extend %block;
         padding: $base-spacing-unit / 1.5 $base-spacing-unit / 2;
     }
 
     .block--xs {
-        @extend %block;
         padding: $base-spacing-unit / 2 $base-spacing-unit / 4;
     }
 
@@ -170,23 +161,23 @@
 
 
 .section--xl {
-    margin-top:$mxx;
+    margin-top:$bs--xl ;
 }
 
 .section--l {
-    margin-top:$mx;
+    margin-top:$bs--l;
 }
 
 .section--m {
-    margin-top:$m;
+    margin-top:$bs--m;
 }
 
 .section--s {
-    margin-top:$xm;
+    margin-top:$bs--s;
 }
 
 .section--xs {
-     margin-top:$xxm;
+     margin-top:$bs--xs;
 }
 
 
