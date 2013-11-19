@@ -35,10 +35,10 @@
             </a>
         </li>
     </ul><!--list unstyled ends-->
-    <hr class='m'>
+    <hr class='mt--l'>
 	<!-- /****************************************  Block themes  *******************************/ -->
 
-    <div class='section--l' id='theme-blocks'>
+    <div class='mt--l' id='theme-blocks'>
         <h2 class='h3'>
             Theme blocks
         </h2>
@@ -46,7 +46,7 @@
             Use any of the available theme block classes to quickly create ....
         </p>
         <!--  code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class=' block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -74,23 +74,23 @@
                 hello world
             </h4>
         	<div class='grid'>
-                <div class='g--1-4 testbox-100-100 mt--xm  block block--s tb__primary'>
+                <div class='g--1-4 testbox-100-100 mt--xm block--s tb__primary'>
                     <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 mt--xm  block block--s tb__secondary'>
+                <div class='g--1-4 testbox-100-100 mt--xm block--s tb__secondary'>
                    <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 mt--xm  block block--s tb__tertiary'>
+                <div class='g--1-4 testbox-100-100 mt--xm block--s tb__tertiary'>
                     <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 mt--xm  block block--s tb__quarternary'>
+                <div class='g--1-4 testbox-100-100 mt--xm block--s tb__quarternary'>
                     <p>Some text.</p>
                 </div>
             </div>
         </div><!--  hello world block ends -->
 
         <!--  code block starts -->
-        <div class='block block--s  tb__tertiary'>
+        <div class='block--s  tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -115,23 +115,23 @@
                 hello world
             </h4>
         	<div class='grid'>
-                <div class='testbox-100-100 block block--s mt--xm  tb__success'>
+                <div class='testbox-100-100 block--s mt--xm  tb__success'>
                     <p>Success</p>
                 </div>
-                <div class='testbox-100-100 block block--s mt--xm  tb__warning'>
+                <div class='testbox-100-100 block--s mt--xm  tb__warning'>
                     <p>Success</p>
                 </div>
-                <div class='testbox-100-100 block block--s mt--xm  tb__danger'>
+                <div class='testbox-100-100 block--s mt--xm  tb__danger'>
                     <p>Danger</p>
                 </div>
                 
             </div>
         </div><!--  hello world block ends -->
     </div><!-- theme-blocks ends-->
-    <hr class='mx'>
+    <hr class='mt--m'>
     <!-- /****************************************  Helpful Text colours  *******************************/ -->
 
-    <div class='section--xl' id='theme-blocks'>
+    <div class='mt--xl' id='theme-blocks'>
         <h2>
             Emphasis classes
         </h2>
@@ -139,7 +139,7 @@
         	Convey meaning through color with a handful of emphasis utility classes.
         </p>
         <!--  code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class=' block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -165,16 +165,16 @@
         	<p class='text-danger'>Success, I am awesome</p>
         </div><!--  hello world block ends -->
     </div><!-- theme-blocks ends-->
-    <hr class='mx'>
+    <hr class='mt--l'>
     <!-- /****************************************  Button colours  *******************************/ -->
 
-    <div class='section--xl' id='theme-blocks'>
+    <div class='mt--xl' id='theme-blocks'>
         <h2>
             Button themes
         </h2>
         
         <!--  code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class=' block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -199,14 +199,14 @@
     </div><!-- theme-blocks ends-->
 
     <!-- /****************************************  Tables  *******************************/ -->
-    <hr class='mx'>
-    <div class='section--xl' id='theme-blocks'>
+    <hr class='mt--l'>
+    <div class='mt--xl' id='theme-blocks'>
         <h2>
             Tables
         </h2>
         
         <!--  code block starts -->
-        <div class='block block--s mt--m  tb__tertiary'>
+        <div class=' block--s mt--m  tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>

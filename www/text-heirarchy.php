@@ -30,7 +30,7 @@
         H6 Heading
     </h6>
 
-    <div class='section--l'>   
+    <div class='mt--l'>   
     	<div class='page-header tb__header'>
         <h1>
             Text heirarchy

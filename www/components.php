@@ -34,13 +34,13 @@
 
     <hr>
     <!-- /****************************************  Breadcrumbs *******************************/ -->
-    <div class='section--xl' id='components-bread-crumbs'>
+    <div class='mt--xl' id='components-bread-crumbs'>
         <h2  class='h3'>
             Breadcrumbs
         </h2>
         
         <!--  code block starts -->
-        <div class='block block--s mt--m tb__tertiary'>
+        <div class='block--s mt--m tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -69,12 +69,12 @@
     </div><!-- components-bread-crumbs ends-->
 
     <!-- /****************************************  Badges  *******************************/ -->
-    <div class='section--xl' id='components-badges'>
+    <div class='mt--xl' id='components-badges'>
         <h2  class='h3'>
             Badges
         </h2>
         <!--  code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class='block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -98,12 +98,12 @@
 
 
     <!-- /****************************************  Page headers  *******************************/ -->
-    <div class='section--xl' id='components-pg-headers'>
+    <div class='mt--xl' id='components-pg-headers'>
         <h2  class='h3'>
             Page Headers
         </h2>
         <!--  code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class='block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>

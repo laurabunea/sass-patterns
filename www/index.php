@@ -7,7 +7,7 @@
     <img class='media__image' src='assets/images/fred.png' alt='Fred the friendly FED'/>
     <div class='media__body'>
         <!--TODO delete inline-->
-        <div class='arrow--side block block--m tb__tertiary br--s' >
+        <div class='arrow--side block--m tb__tertiary br--s' >
             <p style='color:white' class='h1 '>Hi I'm  F<span>R</span>ED the friendly FED.</p>
             <i class='arrow  arrow-left'></i>
         </div>
@@ -20,7 +20,7 @@
         Introduction on FRED here ...
     </p>
     
-    <hr class='m'/>
+    <hr class='mt--m'/>
 	
     <h3>
         Fred's friendly rules:
@@ -58,13 +58,13 @@
             Indent sub-components in CSS
         </li>
     </ul>
-    <hr class='mx'/>
+    <hr class='mt--l'/>
     <h3 id='namingConventionsAnchor'>
 		Fred's Naming Conventions
 	</h3>
 
 	<!-- code block starts -->
-    <div class='block block--s tb__tertiary'>
+    <div class=' block--s tb__tertiary'>
         <h4 class='tiny uppercase text-muted'>
             code
         </h4>
@@ -91,7 +91,7 @@
         </pre>
     </div><!-- code block ends -->
 
-    <hr class='mx'/>
+    <hr class='mt--l'/>
     <h3 id='commentStyleAnchor'>
         Fred's Commenting styles 
     </h3>
@@ -102,7 +102,7 @@
         what you've done.
     </p>
     <!-- code block starts -->
-    <div class='block block--s tb__tertiary'>
+    <div class='block--s tb__tertiary'>
         <h4 class='tiny uppercase text-muted'>
             code
         </h4>
@@ -138,7 +138,7 @@
     </p>
 
      <!-- code block starts -->
-    <div class='block block--s tb__tertiary'>
+    <div class='block--s tb__tertiary'>
         <h4 class='tiny uppercase text-muted'>
             code
         </h4>

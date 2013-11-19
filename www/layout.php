@@ -13,7 +13,7 @@
     </div>
     <img src='assets/images/fred-top.png' alt='' class='absolute fred-layout' />
 
-    <p class='m'>
+    <p class='mt--m'>
         Be consistent with vertical spacing. Avoid setting arbitrary margins on items. 
         Defer these to a variable, and use multiples of that variable to control your vertical spacing. 
         Our designs will often change right up til the end, so it's worth making stuff really easy to change.
@@ -83,12 +83,12 @@
     </ul><!--list unstyled ends-->
 
 
-    <hr class='m'>
+    <hr class='mt--m'>
     
 
     <!-- /****************************************  Inline Blocks  *******************************/ -->
 
-    <div class='section--xl' id='layout-inline-block'>
+    <div class='mt--xl' id='layout-inline-block'>
         <h2 class='h3'>
             01. Inline block 
         </h2>
@@ -96,7 +96,7 @@
             Displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box
         </p>
         <!--  code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class=' block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -110,10 +110,10 @@
         </div><!--  code block ends -->
 
     </div><!-- layout-clearfix ends-->
-    <hr class='mx'>
+    <hr class='mt--l'>
     <!-- /****************************************  Positioning  *******************************/ -->
 
-    <div class='section--xl' id='layout-positioning'>
+    <div class='mt--xl' id='layout-positioning'>
         <h2 class='h3'>
             02. Positioning - Absolute, Floating and Clearfixing
         </h2>
@@ -129,7 +129,7 @@
 
         </p>
         <!--  code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class=' block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4> 
@@ -197,7 +197,7 @@
             With CSS float, an element can be pushed to the left or right, allowing other elements to wrap around it.
         </p>
         <!--  code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class='block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -227,7 +227,7 @@
             What clearfix does is it forces content after the floats or the container containing the floats to render below it.
         </p>
         <!--  code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class='block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -253,21 +253,21 @@
 
         
     </div><!-- layout-positioning ends-->
-    <hr class='mx'>
+    <hr class='mt--l'>
     <!-- /****************************************  Generic blocks  *******************************/ -->
     
-    <div class='section--xl' id='layout-generic-block' >
+    <div class='mt--xl' id='layout-generic-block' >
         <h2 class='h3'>
             03. Generic blocks
         </h2>
         <!--  code block starts -->
-        <div class='block block--s tb__tertiary'> 
+        <div class=' block--s tb__tertiary'> 
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
 <code class="language-markup">
-&lt;div class='block block--xs'&gt;
+&lt;div class=' block--xs'&gt;
     xxs block
 &lt;/div&gt;
 </code>
@@ -281,31 +281,31 @@
             </h4> 
 
 
-            <div class='block block--xs tb__green '>
+            <div class=' block--xs tb__green '>
                 <p>
                     xs block
                 </p>
             </div><!-- block xs ends-->
 
-            <div class='block block--s tb__green'>
+            <div class=' block--s tb__green'>
                 <p>
                     s block
                 </p>
             </div><!-- block ends-->
 
-            <div class='block block--m tb__green'>
+            <div class='block--m tb__green'>
                 <p>
                     m block
                 </p>
             </div><!-- block ends-->
 
-            <div class='block block--l tb__green '>
+            <div class='block--l tb__green '>
                 <p>
                     l block
                 </p>
             </div><!-- block xl ends-->
 
-            <div class='block block--xl tb__green '>
+            <div class='block--xl tb__green '>
                 <p>
                     xl block
                 </p>
@@ -334,100 +334,11 @@
 
         </div><!--  hello world block ends -->
     </div><!--layout-generic-block ends-->
-    <hr class='mx'>
+    <hr class='mt--l'>
 
-    <!-- /****************************************  Section blocks  *******************************/ -->
-    
-    <div class='section--xl' id='layout-section-block' >
-        <h2 class='h3'>
-            04. Section blocks
-        </h2>
-        <p>
-            A handy little class to control the top margins of grouped elements 
-        </p>
-        <!--  code block starts -->
-        <div class='block block--s tb__tertiary'> 
-            <h4 class='tiny uppercase text-muted'>
-                code
-            </h4>
-            <pre>
-<code class="language-markup">
-&lt;div class='section--xs'&gt;
-    &lt;div class='block--xs'&gt;
-        ...
-    &lt;/div&gt;
-    &lt;div class='block--xs'&gt;
-        ...
-    &lt;/div&gt;
-&lt;/div&gt;
-</code>
-            </pre>
-        </div><!--  code block ends -->
-
-        <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__primary'>
-            <h4 class='tiny uppercase text-muted'>
-                hello world
-            </h4>
-            
-            <div class='section--xxs'>
-                <div class='block block--xs tb__green '>
-                    <p>
-                        Block with a section--xs wrapper
-                    </p>
-                </div><!-- block xxs ends-->
-            </div>
-            <div class='section--xs'>
-                <div class='block block--xs tb__pink '>
-                    <p>
-                        Block with a section--xs wrapper
-                    </p>
-                </div><!-- block xxs ends-->
-            </div>
-            <div class='section'>
-                <div class='block block--xs tb__blue '>
-                    <p>
-                        Block with a section wrapper
-                    </p>
-                </div><!-- block xxs ends-->
-            </div>
-            <div class='section--xl'>
-                <div class='block block--xs tb__green '>
-                    <p>
-                        Block with a section--xl wrapper
-                    </p>
-                </div><!-- block xxs ends-->
-            </div>
-             <div class='section--xxl'>
-                <div class='block block--xs tb__pink '>
-                    <p>
-                        Block with a section--xxl wrapper
-                    </p>
-                </div><!-- block xs ends-->
-                <div class='block block--xs tb__pink '>
-                    <p>
-                        Block with a section--xxl wrapper
-                    </p>
-                </div><!-- block xxs ends-->
-            </div>
-            <div class='section--xxxl'>
-                <p>
-                    I am a group of text 
-                </p>
-                <div class='block block--xs tb__blue '>
-                    <p>
-                        Block with a section--xxxl wrapper
-                    </p>
-                </div><!-- block xxs ends-->
-
-
-            </div>
-        </div><!--  hello world block ends -->
-    </div><!--layout-generic-block ends-->
-    <hr class='mx'>
     <!-- /****************************************  Media blocks  *******************************/ -->
 
-    <div class='section--xl' id='layout-media-block'>
+    <div class='mt--xl' id='layout-media-block'>
         <h2 class='h3'>
             05. Media blocks
         </h2>
@@ -435,7 +346,7 @@
             Float an image to the left, with a clearfixed block of content to the right.
         </p>
         <!--  code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class=' block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -478,15 +389,15 @@
 
         </div><!--  hello world block ends -->
     </div><!-- layout-media-block ends-->
-    <hr class='mx'>
+    <hr class='mt--l'>
     <!-- /****************************************  Icon blocks  *******************************/ -->
     <!-- hmm TODO check the code somethings not right-->
-    <div class='section--xl' id='layout-icon-blocks'>
+    <div class='mt--xl' id='layout-icon-blocks'>
         <h2  class='h3'>
            06. Icon blocks
         </h2>
         <!--  code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class=' block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -524,16 +435,16 @@
             
         </div><!--  hello world block ends -->
     </div><!-- layout-media-block ends-->
-    <hr class='mx'>
+    <hr class='mt--l'>
 
     <!-- /****************************************  Arrows  *******************************/ -->
 
-    <div class='section--xl' id='layout-arrows'>
+    <div class='mt--xl' id='layout-arrows'>
         <h2  class='h3'>
             07. Arrows
         </h2>
         <!--  code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class='block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -566,26 +477,26 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block block--s tb__secondary'>
+        <div class=' block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='arrow--left mt--xm block block--xs tb__blue'>
+            <div class='arrow--left mt--xm block--xs tb__blue'>
                 <p> ... </p>
                 <i class='arrow arrow-top'></i>
             </div>
 
-            <div class='arrow--right mt--xm  block block--xs tb__blue'>
+            <div class='arrow--right mt--xm block--xs tb__blue'>
                 <p> ... </p>
                 <i class='arrow arrow-top '></i>
             </div>
 
-            <div class='arrow--center mt--xm  block block--xs tb__blue'>
+            <div class='arrow--center mt--xm block--xs tb__blue'>
                 <p> ... </p>
                 <i class='arrow arrow-bottom '></i>
             </div>
 
-            <div class='arrow--side mt--xm  block block--xs tb__blue'>
+            <div class='arrow--side mt--xm block--xs tb__blue'>
                 <p> ... </p>
                 <i class='arrow arrow-left '></i>
             </div>
@@ -597,10 +508,10 @@
 
         </div><!--  hello world block ends -->
     </div><!-- layout-media-block ends-->
-    <hr class='mx'>
+    <hr class='mt--l'>
     <!-- /****************************************  Inline gird  *******************************/ -->
 
-    <div class='section--xl' id='layout-inline-grid'>
+    <div class='mt--xl' id='layout-inline-grid'>
         <h2>
             08. Inline Grid
         </h2>
@@ -608,7 +519,7 @@
             Sets the child elements to take up full justified width of the parent.
         </p>
         <!--  code block ends -->
-        <div class='block block--s tb__tertiary'>
+        <div class='block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -695,10 +606,10 @@
             </div>   
         </div><!--  hello world block ends -->
     </div><!-- layout-inline-grid ends -->
-    <hr class='mx'>
+    <hr class='mt--l'>
     <!-- /****************************************  Append vs Prepend  *******************************/ -->
 
-    <div class='section--xl' id='layout-append'>
+    <div class='mt--xl' id='layout-append'>
         <h2 class='h3'>
             09. Prepend vs Append
         </h2>
@@ -706,7 +617,7 @@
             Place something before or after an element.
         </p>
         <!--  code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class='block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>

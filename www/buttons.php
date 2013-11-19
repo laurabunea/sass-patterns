@@ -44,13 +44,13 @@
     <hr>
     <!-- /****************************************  Button variations  *******************************/ -->
 
-    <div class='section--xl' id='btn-variations'> 
+    <div class='mt--xl' id='btn-variations'> 
         <h2 class='h3' >
             01. Button variations
         </h2>
 
         <!-- code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class=' block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -92,7 +92,7 @@
             Stack a variation class to add some color
         </p>
         <!-- code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class=' block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -119,10 +119,10 @@
             </p>
         </div><!-- hello world block ends -->
     </div><!-- btn-variations ends -->
-    <hr class='mx'>
+    <hr class='mt--l'>
     <!-- /****************************************  Button modifiers  *******************************/ -->
 
-    <div class='section--xl' id='btn-modifier'>
+    <div class='mt--xl' id='btn-modifier'>
         <h2 class='h3' >
             02. Button modifiers
         </h2>
@@ -131,7 +131,7 @@
         </p>
 
         <!-- code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class='block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -163,7 +163,7 @@
         </p>
 
         <!-- code block starts -->
-         <div class='block block--s tb__tertiary'>
+         <div class=' block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -195,7 +195,7 @@
         </p>
 
         <!-- code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class='block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -228,10 +228,10 @@
         </div><!-- hello world block ends -->
         
     </div><!-- btn-modifier ends -->
-    <hr class='mx'>
+    <hr class='mt--l'>
     <!-- /****************************************  Buttons with icons  *******************************/ -->
 
-    <div class='section--xl' id='btn-icons'>
+    <div class='mt--xl' id='btn-icons'>
         
         <h2 class='h3' >
             03. Buttons with icons
@@ -244,7 +244,7 @@
         </p>
 
         <!-- code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class=' block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -311,7 +311,7 @@
         </p>
 
         <!-- code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class='block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -353,7 +353,7 @@
     
     <!-- /****************************************  Buttons with icons  *******************************/ -->
     
-    <div class='section--xl' id='btn-variations'> 
+    <div class='mt--xl' id='btn-variations'> 
         <h2 class='h3' >
             04. Submit buttons
         </h2>
@@ -362,7 +362,7 @@
              buttons and make sure the padding's the same as your default button :)
         </p>
         <!-- code block starts -->
-        <div class='block block--s tb__tertiary'>
+        <div class='block--s tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
