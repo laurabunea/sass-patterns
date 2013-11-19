@@ -103,7 +103,7 @@
     </div>
     <div class='mt--l' id='FontStylesAnchor'>
         <h2 class='h3'>
-            01. Base font styles
+            02. Base font styles
         </h2>
         <p>
             For our base we use the following font settings on the HTML and body 
@@ -146,7 +146,7 @@ font-size:      100%;
 
     <div class='mt--l' id='FontSizesAnchor'>
         <h2 class='h3'>
-            02. Base font sizes
+            03. Base font sizes
         </h2>
         <p>
             Before you begin a project you should sit down with the designer and establish the different 
@@ -197,7 +197,7 @@ $font-size-xxxs:        11;     //.tiny
 
     <div class='mt--l' id='FontHeirarchyAnchor'>
        <h2 class='h3'>
-            03. Text Heirarchy
+            04. Text Heirarchy
         </h2>
        <p>
            Notes on Text Heirarchy ....
@@ -264,9 +264,8 @@ $font-size-xxxs:        11;     //.tiny
     </ol>
 
     <!-- /****************************************  Text sizes  *******************************/ -->
-    <hr class='mt--l'>
     
-    <div class='mt--m' id='TypographyHelper1Anchor'>
+    <div class='mt--l' id='TypographyHelper1Anchor'>
         <h2 class='h3'>
             01. Font sizes
         </h2>

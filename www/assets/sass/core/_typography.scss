@@ -148,11 +148,11 @@ h6,
 
 p, 
 .para, 
-li {
+li,code {
     @extend .mb--0;
-    @extend .font-size-s;
-    line-height: px-to-em(21, $font-size-s); 
-    margin-top: px-to-em(12, $font-size-s);              
+    @extend .font-size-xs;
+    line-height: px-to-em(24, $font-size-xs); 
+    margin-top: px-to-em(12, $font-size-xs);              
 }
 
 strong, 
@@ -173,11 +173,11 @@ i {
 
 
 .intro { 
-    @extend .font-size-m;                    
+    @extend .font-size-s;                    
 }
 
 .small { 
-    @extend .font-size-xs;                     
+    @extend .font-size-xxs;                     
 }
 
 .tiny {

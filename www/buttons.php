@@ -41,7 +41,7 @@
 
     </ul><!--list unstyled ends-->
     <!--<p>Make a button with <code>&lt;a class='btn'&gt;A button&lt;/a&gt;</code>. You can build your buttons out of a bunch of useful classnames.</p>-->
-    <hr>
+  
     <!-- /****************************************  Button variations  *******************************/ -->
 
     <div class='mt--xl' id='btn-variations'> 

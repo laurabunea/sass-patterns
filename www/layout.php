@@ -13,16 +13,13 @@
     </div>
     <img src='assets/images/fred-top.png' alt='' class='absolute fred-layout' />
 
-    <p class='mt--m'>
+    <p>
         Be consistent with vertical spacing. Avoid setting arbitrary margins on items. 
         Defer these to a variable, and use multiples of that variable to control your vertical spacing. 
         Our designs will often change right up til the end, so it's worth making stuff really easy to change.
     </p>
-    <p>
-        
-    </p>
 
-    <div class='page-header tb__header mx'>
+    <div class='page-header tb__header mt--xl'>
         <h1>
             Layout
             <span class='tiny'>
@@ -81,9 +78,6 @@
         </li>
         
     </ul><!--list unstyled ends-->
-
-
-    <hr class='mt--m'>
     
 
     <!-- /****************************************  Inline Blocks  *******************************/ -->
@@ -113,7 +107,7 @@
     <hr class='mt--l'>
     <!-- /****************************************  Positioning  *******************************/ -->
 
-    <div class='mt--xl' id='layout-positioning'>
+    <div class='mt--l' id='layout-positioning'>
         <h2 class='h3'>
             02. Positioning - Absolute, Floating and Clearfixing
         </h2>
@@ -166,7 +160,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__primary'> 
+        <div class='block__stacked block--s tb__secondary'> 
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -192,50 +186,111 @@
         
         <!-- /********  Floating elements *************/ -->
         
-        <h3 class='h4 xm'>b) Floating elements</h3>
-        <p>
-            With CSS float, an element can be pushed to the left or right, allowing other elements to wrap around it.
-        </p>
-        <!--  code block starts -->
-        <div class='block--s tb__tertiary'>
-            <h4 class='tiny uppercase text-muted'>
-                code
-            </h4>
-            <pre>
+        <div class='mt--l'>
+            <h3 class='h4 '>b) Floating elements</h3>
+            <p>
+                With CSS float, an element can be pushed to the left or right, allowing other elements to wrap around it.
+            </p>
+            <!--  code block starts -->
+            <div class='block--s tb__tertiary'>
+                <h4 class='tiny uppercase text-muted'>
+                    code
+                </h4>
+                <pre>
 <code class="language-markup">
 &lt;img class='left' src='assets/images/yellow-bird.png' /&gt;
 &lt;img class='right' src='assets/images/blue-bird.png' /&gt;
 </code>
-            </pre>
-        </div><!--  code block ends -->
+                </pre>
+            </div><!--  code block ends -->
 
-        <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
-            <h4 class='tiny uppercase text-muted'>
-                hello world
-            </h4>
-            <div class='block__stacked block--s clearfix'> 
-                <img class='left' src='assets/images/yellow-bird.jpg' alt='i am an image'/>
-                <img class='right' src='assets/images/blue-bird.jpg' alt='i am an image'/>    
-            </div>
-        </div><!--  hello world block ends -->
-
+            <!--  hello world block starts -->
+            <div class='block__stacked block--s tb__secondary'>
+                <h4 class='tiny uppercase text-muted'>
+                    hello world
+                </h4>
+                <div class='block__stacked block--s clearfix'> 
+                    <img class='left' src='assets/images/yellow-bird.jpg' alt='i am an image'/>
+                    <img class='right' src='assets/images/blue-bird.jpg' alt='i am an image'/>    
+                </div>
+            </div><!--  hello world block ends -->
+        </div>
         <!-- /********  Clearfix *************/ -->
-        
-        <h3 class='h4 xm'>c) Clearfix</h3>
-        <p>
-            What clearfix does is it forces content after the floats or the container containing the floats to render below it.
-        </p>
-        <!--  code block starts -->
-        <div class='block--s tb__tertiary'>
-            <h4 class='tiny uppercase text-muted'>
-                code
-            </h4>
-            <pre>
+        <div class='mt--l'>
+            <h3 class='h4'>c) Clearfix</h3>
+            <p>
+                What clearfix does is it forces content after the floats or the container containing the floats to render below it.
+            </p>
+            <!--  code block starts -->
+            <div class='block--s tb__tertiary'>
+                <h4 class='tiny uppercase text-muted'>
+                    code
+                </h4>
+                <pre>
 <code class="language-markup">
 &lt;div class='clearfix'&gt; 
     ...  
 &lt;/div&gt;
+    </code>
+                </pre>
+            </div><!--  code block ends -->
+
+            <!--  hello world block starts -->
+            <div class='block__stacked block--s tb__secondary'>
+                <h4 class='tiny uppercase text-muted'>
+                    hello world
+                </h4>
+                <div class='block__stacked block--s clearfix'> 
+                    <img class='left' src='assets/images/yellow-bird.jpg' alt='i am an image'/>
+                    <img class='right' src='assets/images/blue-bird.jpg' alt='i am an image'/>    
+                </div>
+            </div><!--  hello world block ends -->
+        </div>
+        
+    </div><!-- layout-positioning ends-->
+    <hr class='mt--l'>
+    <!-- /****************************************  Building blocks  *******************************/ -->
+    
+    <div class='mt--l' id='layout-generic-block' >
+        <h2 class='h3'>
+            03. Building blocks
+        </h2>
+        <!--  code block starts -->
+        <div class=' block--s tb__tertiary'> 
+            <h4 class='tiny uppercase text-muted'>
+                code
+            </h4>
+            <pre>
+<code class="language-css">
+//margin-right 
+.mr--0     { margin-right:$bs--0; }
+.mr--xxxs  { margin-right:$bs--xxxs;}
+.mr--xxs   { margin-right:$bs--xxs; }
+.mr--xs    { margin-right:$bs--xs;}
+.mr--s     { margin-right:$bs--s;}
+.mr--m     { margin-right:$bs--m;}
+.mr--l     { margin-right:$bs--l;}
+.mr--xl    { margin-right:$bs--xl;}
+.mr--xxl   { margin-right:$bs--xxl;}
+.mr--xxxl  { margin-right:$bs--xxxl;}
+
+//margin-left 
+.ml--(block size here xs,s, etc)
+
+//margin-top 
+.mt--(block size here xs,s, etc)
+
+//margin-bottom 
+.mb--(block size here xs,s, etc)
+
+//padding-left 
+.pl--(block size here xs,s, etc)
+
+//padding-top 
+.pt--(block size here xs,s, etc)
+
+//padding-bottom 
+.pb--(block size here xs,s, etc)
 </code>
             </pre>
         </div><!--  code block ends -->
@@ -244,19 +299,59 @@
         <div class='block__stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
-            </h4>
-            <div class='block__stacked block--s clearfix'> 
-                <img class='left' src='assets/images/yellow-bird.jpg' alt='i am an image'/>
-                <img class='right' src='assets/images/blue-bird.jpg' alt='i am an image'/>    
-            </div>
-        </div><!--  hello world block ends -->
+            </h4> 
+            <div class='mt--xxxs block--xs tb__green '>
+                <p>
+                    block--xs with xxxs top margin (mt--xxxs)
+                </p>
+            </div><!-- block xs ends-->
+            <div class='mt--xxs block--xs tb__green '>
+                <p>
+                    block--xs with xxs top margin (mt--xxs)
+                </p>
+            </div><!-- block xs ends-->
+            <div class='mt--xs block--xs tb__green '>
+                <p>
+                    block--xs with xs top margin (mt--xs)
+                </p>
+            </div><!-- block xs ends-->
+            <div class='mt--s block--xs tb__green '>
+                <p>
+                    block--xs with with s top margin (mt--s)
+                </p>
+            </div><!-- block xs ends-->
 
-        
-    </div><!-- layout-positioning ends-->
+            <div class='mt--m block--xs tb__green '>
+                <p>
+                    block--xs with m top margin (mt--m)
+                </p>
+            </div><!-- block xs ends-->
+            <div class='mt--l block--xs tb__green '>
+                <p>
+                    block--xs with l top margin (mt--l)
+                </p>
+            </div><!-- block xs ends-->
+            <div class='mt--xl block--xs tb__green '>
+                <p>
+                    block--xs with xl top margin (mt--xl)
+                </p>
+            </div><!-- block xs ends-->
+            <div class='mt--xxl block--xs tb__green '>
+                <p>
+                    block--xs with xxl top margin (mt--xxl)
+                </p>
+            </div><!-- block xs ends-->
+            <div class='mt--xxxl block--xs tb__green '>
+                <p>
+                    block--xs with xxxl top margin (mt--xxxl)
+                </p>
+            </div><!-- block xs ends-->
+        </div><!--  hello world block ends -->
+    </div><!--layout-generic-block ends-->
     <hr class='mt--l'>
-    <!-- /****************************************  Generic blocks  *******************************/ -->
-    
-    <div class='mt--xl' id='layout-generic-block' >
+
+    <!-- /****************************************  generic blocks  *******************************/ -->
+    <div class='mt--l' id='layout-generic-block' >
         <h2 class='h3'>
             03. Generic blocks
         </h2>
@@ -267,47 +362,46 @@
             </h4>
             <pre>
 <code class="language-markup">
-&lt;div class=' block--xs'&gt;
-    xxs block
+&lt;div class='block--xs'&gt;
+    block--xs
 &lt;/div&gt;
 </code>
             </pre>
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__primary'>
+        <div class='block__stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
 
-
             <div class=' block--xs tb__green '>
                 <p>
-                    xs block
+                    block--xs
                 </p>
             </div><!-- block xs ends-->
 
             <div class=' block--s tb__green'>
                 <p>
-                    s block
+                    block--s
                 </p>
             </div><!-- block ends-->
 
             <div class='block--m tb__green'>
                 <p>
-                    m block
+                    block--m
                 </p>
             </div><!-- block ends-->
 
             <div class='block--l tb__green '>
                 <p>
-                    l block
+                    block--l
                 </p>
             </div><!-- block xl ends-->
 
             <div class='block--xl tb__green '>
                 <p>
-                    xl block
+                    block--xl
                 </p>
             </div><!-- block xl ends-->
 
@@ -334,11 +428,10 @@
 
         </div><!--  hello world block ends -->
     </div><!--layout-generic-block ends-->
-    <hr class='mt--l'>
 
     <!-- /****************************************  Media blocks  *******************************/ -->
 
-    <div class='mt--xl' id='layout-media-block'>
+    <div class='mt--l' id='layout-media-block'>
         <h2 class='h3'>
             05. Media blocks
         </h2>
@@ -376,14 +469,18 @@
             <div class='media'>
                 <img src='assets/images/green-bird.jpg' class='media__image'>
                 <div class='media__body'>
-                   Uncle Bully was pashing when the pearler packing a sad event occured. Oh no! I'm beached as, this carked it seabed is as stoked as a flat stick kumara. Mean while, in a waka, Rhys Darby and Cardigan Bay were up to no good with a bunch of random milks.
+                    <p class='mt--0'>
+                        Uncle Bully was pashing when the pearler packing a sad event occured. Oh no! I'm beached as, this carked it seabed is as stoked as a flat stick kumara. Mean while, in a waka, Rhys Darby and Cardigan Bay were up to no good with a bunch of random milks.
+                    </p>
                 </div>
             </div>
 
             <div class='media--rev'>
                 <img src='assets/images/green-bird.jpg' class='media__image'>
                 <div class='media__body'>
-                   I'd slam that clam, good afterble constanoon. The snarky force of his burning my Vogel's was on par with Hercules Morse, as big as a horse's good as mate.
+                   <p class=''>
+                    I'd slam that clam, good afterble constanoon. The snarky force of his burning my Vogel's was on par with Hercules Morse, as big as a horse's good as mate.
+                    </p>
                 </div>
             </div>
 
@@ -392,7 +489,7 @@
     <hr class='mt--l'>
     <!-- /****************************************  Icon blocks  *******************************/ -->
     <!-- hmm TODO check the code somethings not right-->
-    <div class='mt--xl' id='layout-icon-blocks'>
+    <div class='mt--l' id='layout-icon-blocks'>
         <h2  class='h3'>
            06. Icon blocks
         </h2>
@@ -439,7 +536,7 @@
 
     <!-- /****************************************  Arrows  *******************************/ -->
 
-    <div class='mt--xl' id='layout-arrows'>
+    <div class='mt--l' id='layout-arrows'>
         <h2  class='h3'>
             07. Arrows
         </h2>
@@ -454,20 +551,17 @@
     &lt;p&gt; ... &lt;/p&gt;
     &lt;i class='arrow arrow-top'&gt;&lt;/i&gt;
 &lt;/div&gt;
-</code>
-<code class='language-markup'>
+
 &lt;div class='arrow--right'&gt;
     &lt;p&gt; ... &lt;/p&gt;
     &lt;i class='arrow arrow-top'&gt;&lt;/i&gt;
 &lt;/div&gt;
-</code>
-<code class='language-markup'>
+
 &lt;div class='arrow--center'&gt;
     &lt;p&gt; ... &lt;/p&gt;
     &lt;i class='arrow arrow-bottom'&gt;&lt;/i&gt;
 &lt;/div&gt;
-</code>
-<code class='language-markup'>
+
 &lt;div class='arrow--side'&gt;
     &lt;p&gt; ... &lt;/p&gt;
     &lt;i class='arrow  arrow-left'&gt;&lt;/i&gt;
@@ -477,7 +571,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class=' block--s tb__secondary'>
+        <div class='block__stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -511,7 +605,7 @@
     <hr class='mt--l'>
     <!-- /****************************************  Inline gird  *******************************/ -->
 
-    <div class='mt--xl' id='layout-inline-grid'>
+    <div class='mt--l' id='layout-inline-grid'>
         <h2>
             08. Inline Grid
         </h2>
@@ -609,7 +703,7 @@
     <hr class='mt--l'>
     <!-- /****************************************  Append vs Prepend  *******************************/ -->
 
-    <div class='mt--xl' id='layout-append'>
+    <div class='mt--l' id='layout-append'>
         <h2 class='h3'>
             09. Prepend vs Append
         </h2>

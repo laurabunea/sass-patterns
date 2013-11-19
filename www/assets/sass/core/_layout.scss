@@ -9,7 +9,7 @@
  *    
  *		1. Inline block
  *      2. Positioning - Absolute, Floating and Clearfixing 
- *      3. Generic blocks
+ *      3. Generic blocks and spacing helpers
  *      4. Media blocks
  *      5. Inline Grid  
  *      6. Arrows  
@@ -55,6 +55,7 @@
     .absolute{
         @extend %absolute;
     }
+
     .absolute__bottom-left {
     	@extend %absolute;
     	bottom:0;
@@ -90,14 +91,152 @@
     making sure the first element has no margin on it 
 */
 
+%block {
+    & > :first-child {
+         margin-top:0;
+    }
+    @extend .clearfix;
+    margin-top:1em;//$bs--m;
+    padding: $bs--m $bs--xl;
+}
+
+.block__stacked {
+   /*only use this id we don't want a top margin on it */
+   margin-top:0!important;
+}
+
+    .block--xl {
+        @extend %block;
+        padding: $bs--xl $bs--xxxl; 
+    }
+
+    .block--l {
+        @extend %block;
+        padding: $bs--l $bs--xxl;
+    }
+
+    .block--m {
+        @extend %block;
+    }
+
+    .block--s {
+        @extend %block;
+        padding: $bs--s $bs--xs;
+    }
+
+    .block--xs {
+        @extend %block;
+        padding: $bs--xs $bs--xxxs;
+    }
+
+/**
+ * 3. Spacing helpers
+ * ----------------------------------------------------------------------------
+
+ */
+
+//MARGIN-RIGHT standard classses for desktop //default  
+.mr--0     { margin-right:$bs--0; }
+.mr--xxxs  { margin-right:$bs--xxxs;}
+.mr--xxs   { margin-right:$bs--xxs; }
+.mr--xs    { margin-right:$bs--xs;}
+.mr--s     { margin-right:$bs--s;}
+.mr--m     { margin-right:$bs--m;}
+.mr--l     { margin-right:$bs--l;}
+.mr--xl    { margin-right:$bs--xl;}
+.mr--xxl   { margin-right:$bs--xxl;}
+.mr--xxxl  { margin-right:$bs--xxxl;}
+
+//MARGIN-LEFT standard classses for desktop //default  
+.ml--0     { margin-left:$bs--0;}
+.ml--xxxs  { margin-left:$bs--xxxs;}
+.ml--xxs   { margin-left:$bs--xxs;}
+.ml--xs    { margin-left:$bs--xs;}
+.ml--s     { margin-left:$bs--s;}
+.ml--m     { margin-left:$bs--m;}
+.ml--l     { margin-left:$bs--l;}
+.ml--xl    { margin-left:$bs--xl;}
+.ml--xxl   { margin-left:$bs--xxl;}
+.ml--xxxl  { margin-left:$bs--xxxl;}
+
+//MARGIN-TOP standard classses for desktop //default  
+.mt--0     { margin-top:$bs--0; }
+.mt--xxxs  { margin-top:$bs--xxxs; }
+.mt--xxs   { margin-top:$bs--xxs; }
+.mt--xs    { margin-top:$bs--xs;}
+.mt--s     { margin-top:$bs--s;}
+.mt--m     { margin-top:$bs--m;}
+.mt--l     { margin-top:$bs--l;}
+.mt--xl    { margin-top:$bs--xl;}
+.mt--xxl   { margin-top:$bs--xxl;}
+.mt--xxxl  { margin-top:$bs--xxxl;}
+
+//MARGIN-BOTTOM standard classses for desktop //default  
+.mb--0     { margin-bottom:$bs--0;}
+.mb--xxxs  { margin-bottom:$bs--xxxs;}
+.mb--xxs   { margin-bottom:$bs--xxs;}
+.mb--xs    { margin-bottom:$bs--xs;}
+.mb--s     { margin-bottom:$bs--s;}
+.mb--m     { margin-bottom:$bs--m;}
+.mb--l     { margin-bottom:$bs--l;}
+.mb--xl    { margin-bottom:$bs--xl;}
+.mb--xxl   { margin-bottom:$bs--xxl;}
+.mb--xxxl  { margin-bottom:$bs--xxxl;}
+
+
+//PADDING-RIGHT standard classses for desktop //default  
+.pr--0     { padding-right:$bs--0; }
+.pr--xxxs  { padding-right:$bs--xxxs;}
+.pr--xxs   { padding-right:$bs--xxs; }
+.pr--xs    { padding-right:$bs--xs;}
+.pr--s     { padding-right:$bs--s;}
+.pr--m     { padding-right:$bs--m;}
+.pr--l     { padding-right:$bs--l;}
+.pr--xl    { padding-right:$bs--xl;}
+.pr--xxl   { padding-right:$bs--xxl;}
+.pr--xxxl  { padding-right:$bs--xxxl;}
+
+//PADDING-LEFT standard classses for desktop //default 
+.pl--0     { padding-left:$bs--0;}
+.pl--xxxs  { padding-left:$bs--xxxs;}
+.pl--xxs   { padding-left:$bs--xxs;}
+.pl--xs    { padding-left:$bs--xs;}
+.pl--s     { padding-left:$bs--s;}
+.pl--m     { padding-left:$bs--m;}
+.pl--l     { padding-left:$bs--l;}
+.pl--xl    { padding-left:$bs--xl;}
+.pl--xxl   { padding-left:$bs--xxl;}
+.pl--xxxl  { padding-left:$bs--xxxl;}
+
+//PADDING-TOP standard classses for desktop //default 
+.pt--0     { padding-top:$bs--0;}
+.pt--xxxs  { padding-top:$bs--xxxs;}
+.pt--xxs   { padding-top:$bs--xxs;}
+.pt--xs    { padding-top:$bs--xs;}
+.pt--s     { padding-top:$bs--s;}
+.pt--m     { padding-top:$bs--m;}
+.pt--l     { padding-top:$bs--l;}
+.pt--xl    { padding-top:$bs--xl;}
+.pt--xxl   { padding-top:$bs--xxl;}
+.pt--xxxl  { padding-top:$bs--xxxl;}
+
+//PADDING-BOTTOM standard classses for desktop //default 
+.pb--0     { padding-bottom:$bs--0;}
+.pb--xxxs  { padding-bottom:$bs--xxxs;}
+.pb--xxs   { padding-bottom:$bs--xxs;}
+.pb--xs    { padding-bottom:$bs--xs;}
+.pb--s     { padding-bottom:$bs--s;}
+.pb--m     { padding-bottom:$bs--m;}
+.pb--l     { padding-bottom:$bs--l;}
+.pb--xl    { padding-bottom:$bs--xl;}
+.pb--xxl   { padding-bottom:$bs--xxl;}
+.pb--xxxl  { padding-bottom:$bs--xxxl;}
 
 
 
-
-
-
-
-
+.overflow-hidden {
+    overflow: hidden;
+}
 
 
 
@@ -155,6 +294,8 @@
     text-align: justify;                /* [1] */
     font-size: 0;                       /* [2] */
     text-justify: distribute-all-lines; /* [3] */
+
+    //not sure if we need the last night as it stuffs up text align:center
 }
 
 	.grid > *{
@@ -176,6 +317,7 @@
         height: 0;
         width:100%;
     }
+
 /**
  * Vertical align these grid items in the middle!
  */
@@ -187,6 +329,9 @@
     }
     .g--1-2 {
         width: 50%;
+    }
+    .g--1-3 {
+        width: 33%;
     }
     .g--1-4 {
         width: 25%;
@@ -202,32 +347,8 @@
         width: 20%;
     }
 
-@media only screen and (max-width: 30em) {
-    .g-m--1-1{
-        width: 100%;
-    }
-    .g-m--1-2{
-        width: 50%;
-    }
-    .g-m--9-10{
-        width: 90%;
-    }
-    .g-m--1-10{
-        width: 10%;
-    }
-    .g-m--8-10{
-        width: 80%;
-    }
-    .g-m--2-10{
-        width: 20%;
-    }
-}
 
 
-
-.overflow-hidden {
-	overflow: hidden;
-}
 
 
 
