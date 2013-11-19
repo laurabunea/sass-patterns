@@ -122,7 +122,7 @@
     <hr class='mt--l'>
     <!-- /****************************************  Button modifiers  *******************************/ -->
 
-    <div class='mt--xl' id='btn-modifier'>
+    <div class='mt--l' id='btn-modifier'>
         <h2 class='h3' >
             02. Button modifiers
         </h2>
@@ -231,7 +231,7 @@
     <hr class='mt--l'>
     <!-- /****************************************  Buttons with icons  *******************************/ -->
 
-    <div class='mt--xl' id='btn-icons'>
+    <div class='mt--l' id='btn-icons'>
         
         <h2 class='h3' >
             03. Buttons with icons
@@ -352,8 +352,8 @@
     </div><!-- btn-icons ends -->
     
     <!-- /****************************************  Buttons with icons  *******************************/ -->
-    
-    <div class='mt--xl' id='btn-variations'> 
+    <hr class='mt--l'>
+    <div class='mt--l' id='btn-variations'> 
         <h2 class='h3' >
             04. Submit buttons
         </h2>

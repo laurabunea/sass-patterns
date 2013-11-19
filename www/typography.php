@@ -40,9 +40,9 @@
         </li>
     </ul>
 
-    <hr class='mt--m'>
+    
 
-    <div class='mt--m' id='FontFamilyAnchor'>
+    <div class='mt--l' id='FontFamilyAnchor'>
         <h2 class='h3' >
             01. Base font family
         </h2>

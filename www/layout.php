@@ -42,7 +42,7 @@
         </li>
         <li>
             <a href='#layout-generic-block'>
-                Generic blocks
+                Building blocks
             </a>
         </li>
          <li>
@@ -353,7 +353,7 @@
     <!-- /****************************************  generic blocks  *******************************/ -->
     <div class='mt--l' id='layout-generic-block' >
         <h2 class='h3'>
-            03. Generic blocks
+            03. Building blocks
         </h2>
         <!--  code block starts -->
         <div class=' block--s tb__tertiary'> 

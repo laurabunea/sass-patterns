@@ -41,6 +41,11 @@
                     </a>
                 </li>
                 <li>
+                    <a class='block__stacked block--s' href='/responsive.php'>
+                        Responsive
+                    </a>
+                </li>
+                <li>
                     <a class='block__stacked block--s' href='/mixins.php'>
                         Mixins
                     </a>
