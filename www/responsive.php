@@ -15,13 +15,23 @@
     </div>
     <ul class='list--styled_decimal'>   
         <li>
-            <a href='#FontFamilyAnchor'>
+            <a href='#'>
                 Building blocks 
             </a>
         </li>
         <li>
-            <a href='#FontFamilyAnchor'>
+            <a href='#'>
                 Visible classes 
+            </a>
+        </li>
+        <li>
+            <a href='#'>
+                Hidden classes 
+            </a>
+        </li>
+        <li>
+            <a href='#'>
+                Responsive images
             </a>
         </li>
     </ul>
@@ -240,6 +250,48 @@ $wide:                          75em;//Wide 1200px
                 </p>
             </div><!-- block xs ends-->
 
+        </div><!--  hello world block ends -->
+    </div><!--layout-generic-block ends-->
+
+    <div class='mt--l' id='' >
+        <h2 class='h3'>
+            05. Responsive images
+        </h2>
+        <p>
+            This applies max-width: 100%; and height: auto; to the image so that it scales nicely to 
+            the parent element.
+        </p>
+        <!--  code block starts -->
+        <div class=' block--s tb__tertiary'> 
+            <h4 class='tiny uppercase text-muted'>
+                scss 
+            </h4>
+            <pre>
+<code class="language-css">
+&lt;img src='...' class='img-responsive' alt='Responsive image'&gt;
+
+</code>
+            </pre>
+        </div><!--  code block ends -->
+
+        <!--  hello world block starts -->
+        <div class='block--stacked block--s tb__secondary'>
+            <h4 class='tiny uppercase text-muted'>
+                hello world
+            </h4> 
+          
+            
+            <div class='grid'>
+                <div class='grid__item g--40-100' >
+                    <img src='assets/images/fred.png' alt='' class='img--responsive' />
+                </div>
+                <div class='grid__item g--60-100'>
+                    <div class='arrow--side tb__blue block--m'>
+                        <p>Resize the browser so you can see me shrink </p>
+                        <i class='arrow arrow-left'></i>
+                    </div>
+                </div>
+            </div>
         </div><!--  hello world block ends -->
     </div><!--layout-generic-block ends-->
 </div>
