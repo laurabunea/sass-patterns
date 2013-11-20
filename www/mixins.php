@@ -114,14 +114,17 @@
             <pre>
 <code class='language-css'>
 .element{
-    background-color:#fff;
-
-    @include media(skinny-only){
-        background-color:pink;
+    @include media(wide){
+        background-color:#F92672;
     }
-
+    @include media(desktop-only){
+        background-color:#A6E22E;
+    }
+    @include media(skinny-only){
+        background-color:#4AA1C5;
+    }
     @include media(mobile-only){
-        background-color:blue;
+        background-color:#E6DB74;
     }
 }
 </code>
@@ -129,11 +132,11 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='element block__stacked block--s'>
+            <div class='element block--stacked block--s'>
                 resize the browser
             </div>
         </div><!--  hello world block ends -->
@@ -176,7 +179,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -231,7 +234,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -280,7 +283,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -327,7 +330,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

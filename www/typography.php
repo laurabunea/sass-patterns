@@ -299,7 +299,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             
             <h4 class='tiny uppercase text-muted'>
                 hello world
@@ -352,7 +352,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block__stacked block--s tb__secondary'>
+            <div class='block--stacked block--s tb__secondary'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -417,7 +417,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block starts -->
 
         <!-- hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -454,7 +454,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -491,7 +491,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -530,7 +530,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block starts -->
 
         <!-- hello world block starts -->
-        <div class='block__stacked block--s tb__secondary clearfix'>
+        <div class='block--stacked block--s tb__secondary clearfix'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -582,7 +582,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block__stacked block--s tb__secondary'>
+            <div class='block--stacked block--s tb__secondary'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -617,7 +617,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block__stacked block--s tb__secondary'>
+            <div class='block--stacked block--s tb__secondary'>
                 <h4 class='h tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -651,7 +651,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block__stacked block--s tb__secondary'>
+            <div class='block--stacked block--s tb__secondary'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -693,7 +693,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

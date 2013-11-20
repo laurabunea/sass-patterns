@@ -45,7 +45,6 @@
  * -----------------------------------------------------------------------------
  */
 
-
 @mixin media($breakpoint) {
     @if $breakpoint == "mobile-only" {
         @media only screen and (max-width: $mobile) {
@@ -65,10 +64,6 @@
            @content;
         } 
     
-    } @else if $breakpoint == "desktop-only" {
-        @media only screen and (min-width: $desktop) and (max-width: $desktop-max){
-           @content;
-        } 
      } @else if $breakpoint == "desktop-up" {
         @media only screen and (min-width: $desktop){
            @content;
@@ -84,20 +79,18 @@
 
 
 .element{
+    //default desktop 
+    background-color:#A6E22E;
 
     @include media(wide){
         background-color:#F92672;
-    }
-    @include media(desktop-only){
-        background-color:#A6E22E;
-    }
+    }    
     @include media(skinny-only){
         background-color:#4AA1C5;
     }
     @include media(mobile-only){
         background-color:#E6DB74;
     }
-
 }
 
 /**

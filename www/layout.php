@@ -160,7 +160,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'> 
+        <div class='block--stacked block--s tb__secondary'> 
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -205,11 +205,11 @@
             </div><!--  code block ends -->
 
             <!--  hello world block starts -->
-            <div class='block__stacked block--s tb__secondary'>
+            <div class='block--stacked block--s tb__secondary'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
-                <div class='block__stacked block--s clearfix'> 
+                <div class='block--stacked block--s clearfix'> 
                     <img class='left' src='assets/images/yellow-bird.jpg' alt='i am an image'/>
                     <img class='right' src='assets/images/blue-bird.jpg' alt='i am an image'/>    
                 </div>
@@ -236,11 +236,11 @@
             </div><!--  code block ends -->
 
             <!--  hello world block starts -->
-            <div class='block__stacked block--s tb__secondary'>
+            <div class='block--stacked block--s tb__secondary'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
-                <div class='block__stacked block--s clearfix'> 
+                <div class='block--stacked block--s clearfix'> 
                     <img class='left' src='assets/images/yellow-bird.jpg' alt='i am an image'/>
                     <img class='right' src='assets/images/blue-bird.jpg' alt='i am an image'/>    
                 </div>
@@ -299,7 +299,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
@@ -373,7 +373,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
@@ -465,7 +465,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -517,7 +517,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -574,7 +574,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -623,7 +623,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>  
+        <div class='block--stacked block--s tb__secondary'>  
             <div class='grid'>
                 <div class='g--1-1 tb__pink '>
                     &nbsp;
@@ -727,7 +727,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block__stacked block--s tb__secondary'>
+        <div class='block--stacked block--s tb__secondary'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

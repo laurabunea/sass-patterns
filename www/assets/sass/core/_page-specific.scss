@@ -4,10 +4,6 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 
 */
 
-%center-element {
-    margin-left:auto;
-    margin-right:auto;
-}
 
 .content,
 .navigation {
@@ -96,4 +92,11 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 .specific-bird {
     top:10px;
     left:17px;
+}
+//wtf setcion am i using this 
+//????
+.i {
+    @extend .inline-block;
+    vertical-align: middle;
+    font-style: normal;
 }

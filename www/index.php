@@ -6,7 +6,6 @@
 <div class='media'>
     <img class='media__image' src='assets/images/fred.png' alt='Fred the friendly FED'/>
     <div class='media__body'>
-        <!--TODO delete inline-->
         <div class='arrow--side block--m tb__tertiary br--s' >
             <p style='color:white' class='h1 '>Hi I'm  F<span>R</span>ED the friendly FED.</p>
             <i class='arrow  arrow-left'></i>
@@ -14,7 +13,7 @@
     </div>
 </div> 
 
-<div class='block--l block-s--s block-m--s mb--l tb__primary'>
+<div class='block--stacked block--l block-s--s block-m--s mb--l tb__primary'>
 	
     <p class='intro'>
         Introduction on FRED here ...
@@ -38,7 +37,6 @@
         <li>
             Don't do crazy SaSS nesting (3 levels at most)
         </li>
-
         <li>
             Limit nested blocks to 50 lines
         </li>

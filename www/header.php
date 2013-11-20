@@ -21,37 +21,37 @@
 
             <ul class='list--inline right'>
                 <li> 
-                    <a class='block__stacked block--s' href='/typography.php'>
+                    <a class='block--stacked block--s' href='/typography.php'>
                         Typography
                     </a>
                 </li>
                 <li>
-                    <a class='block__stacked block--s' href='/layout.php'>
+                    <a class='block--stacked block--s' href='/layout.php'>
                         Layout
                     </a>
                 </li>
                 <li>
-                    <a class='block__stacked block--s' href='/buttons.php'>
+                    <a class='block--stacked block--s' href='/buttons.php'>
                         Buttons
                     </a>
                 </li>
                 <li>
-                    <a class='block__stacked block--s' href='/themes.php'>
+                    <a class='block--stacked block--s' href='/themes.php'>
                         Themes
                     </a>
                 </li>
                 <li>
-                    <a class='block__stacked block--s' href='/responsive.php'>
+                    <a class='block--stacked block--s' href='/responsive.php'>
                         Responsive
                     </a>
                 </li>
                 <li>
-                    <a class='block__stacked block--s' href='/mixins.php'>
+                    <a class='block--stacked block--s' href='/mixins.php'>
                         Mixins
                     </a>
                 </li>
                 <li>
-                    <a class='block__stacked block--s' href='/components.php'>
+                    <a class='block--stacked block--s' href='/components.php'>
                         Components
                     </a>
                 </li>

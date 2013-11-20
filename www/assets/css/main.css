@@ -693,7 +693,7 @@ body {
 
 /* line 81, ../sass/core/_extend-classes.scss */
 .block,
-.block__stacked {
+.block--stacked {
   padding: 1.5em 3em;
 }
 
@@ -992,11 +992,11 @@ body {
 .block--xxxs__stacked,
 .block--xxs__stacked,
 .block--xs__stacked,
-.block__stacked,
+.block--stacked,
 .block--xl__stacked,
 .block--xxl__stacked,
 .block--xxxl__stacked,
-.block__stacked > :first-child,
+.block--stacked > :first-child,
 .block--xl__stacked > :first-child,
 .block--xxl__stacked > :first-child,
 .block--xxxl__stacked > :first-child,
