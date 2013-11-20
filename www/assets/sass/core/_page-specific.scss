@@ -16,11 +16,6 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
     width: 100%;
 }
 
-    .content--padding {
-        padding:2em 3em;
-        margin-bottom:3em;
-    }
-
 .navigation--wrapper {
     position:fixed;
     top:0;
@@ -89,22 +84,16 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 }
 
 .fred-layout {
-    top:-26px; 
+    top:-22px; 
     right:72px;
 }
 
 .fred-buttons-page {
     right:30px; 
-    top:192px;
+    top:196px;
 }
 
 .specific-bird {
     top:10px;
     left:17px;
-}
-@media all and (max-width: 800px) {
-    
-    .content--padding {
-        padding:1.5em;
-    }
 }

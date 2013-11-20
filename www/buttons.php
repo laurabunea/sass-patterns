@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?> 
 
-<div class='content--padding clearfix tb__primary relative'>
+<div class='block--l block-s--s block-m--s mb--l clearfix tb__primary relative'>
     <img src='assets/images/fred-top-big.png' class='absolute fred-buttons-page' alt=''/>
     <div class='page-header tb__header'>
         <h1>

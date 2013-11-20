@@ -3,7 +3,7 @@
 ?>
 
 
-<div class='content--padding tb__primary '>
+<div class='block--l block-s--s block-m--s mb--l tb__primary '>
     
     <div class='page-header tb__header'>
         <h1>

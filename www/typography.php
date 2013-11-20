@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?>
 
-<div class='content--padding tb__primary relative'>
+<div class='block--l block-s--m block-m--s tb__primary relative mb--l'>
     <img class='absolute fred' alt='Fred the fed' src='assets/images/fred-side.png'  />
     
     <div class='page-header tb__header'>
@@ -706,7 +706,6 @@ $font-size-xxxs:        11;     //.tiny
             
         </div><!-- hello world block ends -->
     </div><!--  typo-text-align ends -->
-
 
 </div><!--content ends-->
 

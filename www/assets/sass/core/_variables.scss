@@ -286,25 +286,19 @@ $table-border-color:                 #ddd; // table and cell border
 // Media queries breakpoints
 // --------------------------------------------------
 
-
-//$col-xxxs:                        Smart watch, google class, fridge, etc
-$col-xxs:                           17.5em;//shitdroid mobile 280px 
-$col-xs:                            30em;//Portrait regular mobiles//480px
-//$col-s:                           ;Large Mobile, landscape mobile
-$col-m:                             48em;//Skinny 768px
-$col-l:                             60em;//Desktop 960px 
-$col-xl:                            75em;//Wide 1200px
-//$col-xxl:                         ;TV 1080p
+$mobile:                            30em;//Portrait regular mobiles//480px
+$skinny:                             48em;//Skinny 768px
+$desktop:                             60em;//Desktop 960px 
+$wide:                            75em;//Wide 1200px
 
 
 /* So media queries don't overlap when required, provide a maximum */
 
-$col-xs-max:              ($col-m - 1);
+$skinny-min:              ($mobile + 1);
 
-$col-m-max:              ($col-l - 1);
+$skinny-max:              ($desktop - 1);
 
-$col-l-max:              ($col-xl - 1);
-
+$desktop-max:              ($wide - 1);
 
 
 // Form states and alerts
@@ -336,10 +330,10 @@ $grid-columns:              12;
 // Padding, to be divided by two and applied to the left and right of all columns
 $grid-gutter-width:         30px;
 // Point at which the navbar stops collapsing
-$grid-float-breakpoint:     $col-m;
+$grid-float-breakpoint:     $skinny;
 
-$container-wide:            $col-xl;
-$container-desktop:         $col-l;
+$container-wide:            $wide;
+$container-desktop:         $desktop;
 
 
 

@@ -56,25 +56,25 @@
         @extend %absolute;
     }
 
-    .absolute__bottom-left {
+    .absolute--bottom-left {
     	@extend %absolute;
     	bottom:0;
     	left:0;
     }
 
-    .absolute__bottom-right {
+    .absolute--bottom-right {
     	@extend %absolute;
     	bottom:0;
     	right:0;
     }
 
-    .absolute__top-left {
+    .absolute--top-left {
     	@extend %absolute;
     	top:0;
     	left:0;
     }
 
-    .absolute__top-right {
+    .absolute--top-right {
     	@extend %absolute;
     	top:0;
     	right:0;

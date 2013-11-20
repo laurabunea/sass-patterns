@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?>
 
-<div class='content--padding clearfix tb__primary relative'>
+<div class='block--l block-s--s block-m--s mb--l clearfix tb__primary relative'>
     <div class='page-header tb__header'>
         <h1>
             Layout
@@ -131,27 +131,27 @@
 <code class="language-markup">
 /* */
 &lt;div class='relative'&gt;
-    &nbsp;&lt;img class='absolute specific-absolute-class' src='assets/images/green-bird.jpg' /&gt; 
+    &nbsp;&lt;img class='absolute specific-positioned-class' src='assets/images/green-bird.jpg' /&gt; 
 &lt;/div&gt;
 
 /* Top right */
 &lt;div class='relative'&gt;
-    &nbsp;&lt;img class=&#39;absolute__top-right' src='assets/images/green-bird.jpg' /&gt; 
+    &nbsp;&lt;img class=&#39;absolute--top-right' src='assets/images/green-bird.jpg' /&gt; 
 &lt;/div&gt; 
 
 /* Top Left */
 &lt;div class='relative'&gt;
-    &nbsp;&lt;img class='absolute__top-left' src='assets/images/green-bird.jpg' /&gt; 
+    &nbsp;&lt;img class='absolute--top-left' src='assets/images/green-bird.jpg' /&gt; 
 &lt;/div&gt;   
 
 /* Bottom right */
 &lt;div class='relative'&gt;
-    &nbsp;&lt;img class='absolute__bottom-right' src='assets/images/green-bird.jpg' /&gt; 
+    &nbsp;&lt;img class='absolute--bottom-right' src='assets/images/green-bird.jpg' /&gt; 
 &lt;/div&gt; 
 
 /* Bottom left */
 &lt;div class='relative'&gt;
-    &nbsp;&lt;img class='absolute__bottom-left' src='assets/images/green-bird.jpg' /&gt; 
+    &nbsp;&lt;img class='absolute--bottom-left' src='assets/images/green-bird.jpg' /&gt; 
 &lt;/div&gt;
  
 </code>
@@ -169,16 +169,16 @@
                     <img class='absolute specific-bird' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
                 <div class='tb__secondary xxm relative testbox-100-100' >
-                    <img class='absolute__top-right' src='assets/images/green-bird.jpg' alt='i am an image'/>
+                    <img class='absolute--top-right' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
                 <div class='tb__secondary xxm relative testbox-100-100' >
-                    <img class='absolute__top-left' src='assets/images/green-bird.jpg' alt='i am an image'/>
+                    <img class='absolute--top-left' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
                 <div class='tb__secondary xxm relative testbox-100-100' >
-                    <img class='absolute__bottom-right' src='assets/images/green-bird.jpg' alt='i am an image'/>
+                    <img class='absolute--bottom-right' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
                 <div class='tb__secondary xxm relative testbox-100-100' >
-                    <img class='absolute__bottom-left' src='assets/images/green-bird.jpg' alt='i am an image'/>
+                    <img class='absolute--bottom-left' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
                  
             </div>
@@ -255,6 +255,9 @@
         <h2 class='h3'>
             03. Building blocks
         </h2>
+        <p>
+            like lego :) uses base spacing
+        </p>
         <!--  code block starts -->
         <div class=' block--s tb__tertiary'> 
             <h4 class='tiny uppercase text-muted'>
@@ -275,22 +278,22 @@
 .mr--xxxl  { margin-right:$bs--xxxl;}
 
 //margin-left 
-.ml--(block size here xs,s, etc)
+.ml--(block size here xs, s, m etc)
 
 //margin-top 
-.mt--(block size here xs,s, etc)
+.mt--(block size here xs, s, m etc)
 
 //margin-bottom 
-.mb--(block size here xs,s, etc)
+.mb--(block size here xs, s, m etc)
 
 //padding-left 
-.pl--(block size here xs,s, etc)
+.pl--(block size here xs, s, m etc)
 
 //padding-top 
-.pt--(block size here xs,s, etc)
+.pt--(block size here xs, s, m etc)
 
 //padding-bottom 
-.pb--(block size here xs,s, etc)
+.pb--(block size here xs, s, m etc)
 </code>
             </pre>
         </div><!--  code block ends -->
@@ -353,7 +356,7 @@
     <!-- /****************************************  generic blocks  *******************************/ -->
     <div class='mt--l' id='layout-generic-block' >
         <h2 class='h3'>
-            03. Building blocks
+            04. Section blocks
         </h2>
         <!--  code block starts -->
         <div class=' block--s tb__tertiary'> 

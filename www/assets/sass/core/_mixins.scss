@@ -48,33 +48,33 @@
 
 @mixin media($breakpoint) {
     @if $breakpoint == "mobile-only" {
-        @media only screen and (max-width: $col-xs) {
+        @media only screen and (max-width: $mobile) {
             @content;
         }
     } @else if $breakpoint == "skinny-down" {
-        @media only screen and (max-width: $col-m){
+        @media only screen and (max-width: $skinny){
            @content;
         } 
     
     } @else if $breakpoint == "skinny-only" {
-        @media only screen and ($col-m) and (max-width: $col-m-max){
+        @media only screen and (min-width: $skinny-min) and (max-width: $skinny){
            @content;
         } 
     } @else if $breakpoint == "skinny-up" {
-        @media only screen and (min-width: $col-m) {
+        @media only screen and (min-width: $skinny) {
            @content;
         } 
     
     } @else if $breakpoint == "desktop-only" {
-        @media only screen and (min-width: $col-l) and (max-width: $col-l-max){
+        @media only screen and (min-width: $desktop) and (max-width: $desktop-max){
            @content;
         } 
      } @else if $breakpoint == "desktop-up" {
-        @media only screen and (min-width: $col-l){
+        @media only screen and (min-width: $desktop){
            @content;
         }  
     } @else if $breakpoint == "wide" {
-        @media only screen and (min-width: $col-xl) {
+        @media only screen and (min-width: $wide) {
            @content;
         }  
     }
