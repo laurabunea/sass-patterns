@@ -1614,10 +1614,9 @@ body {
 /** a) Font families
  * ----------------------------------------------------------------------------
  *
- *
  */
 /* primary */
-/* line 48, ../sass/core/_typography.scss */
+/* line 46, ../sass/core/_typography.scss */
 .font-family, html,
 body {
   font-family: "Open Sans", sans-serif;
@@ -1625,7 +1624,7 @@ body {
   font-style: normal;
 }
 
-/* line 52, ../sass/core/_typography.scss */
+/* line 50, ../sass/core/_typography.scss */
 .font-family--italic, em,
 i {
   font-family: "Open Sans", sans-serif;
@@ -1633,7 +1632,7 @@ i {
   font-style: italic;
 }
 
-/* line 56, ../sass/core/_typography.scss */
+/* line 54, ../sass/core/_typography.scss */
 .font-family--bold, strong,
 b {
   font-family: "Open Sans", sans-serif;
@@ -1641,7 +1640,7 @@ b {
   font-style: normal;
 }
 
-/* line 60, ../sass/core/_typography.scss */
+/* line 58, ../sass/core/_typography.scss */
 .font-family--bold-italic {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -1654,42 +1653,42 @@ b {
  * NOTE: These can change per project depending on what font etc you use :) 
  *
  */
-/* line 96, ../sass/core/_typography.scss */
+/* line 94, ../sass/core/_typography.scss */
 h1,
 .h1 {
   line-height: 1;
   margin-top: 0.66667em;
 }
 
-/* line 104, ../sass/core/_typography.scss */
+/* line 102, ../sass/core/_typography.scss */
 h2,
 .h2 {
   line-height: 1.2;
   margin-top: 0.75em;
 }
 
-/* line 112, ../sass/core/_typography.scss */
+/* line 110, ../sass/core/_typography.scss */
 h3,
 .h3 {
   line-height: 1.2;
   margin-top: 1.09091em;
 }
 
-/* line 120, ../sass/core/_typography.scss */
+/* line 118, ../sass/core/_typography.scss */
 h4,
 .h4 {
   line-height: 1.33333333;
   margin-top: 1.11111em;
 }
 
-/* line 128, ../sass/core/_typography.scss */
+/* line 126, ../sass/core/_typography.scss */
 h5,
 .h5 {
   line-height: 1.2;
   margin-top: 0.75em;
 }
 
-/* line 136, ../sass/core/_typography.scss */
+/* line 134, ../sass/core/_typography.scss */
 h6,
 .h6 {
   line-height: 1.2;
@@ -1700,7 +1699,7 @@ h6,
  *  
  * ----------------------------------------------------------------------------
  */
-/* line 151, ../sass/core/_typography.scss */
+/* line 149, ../sass/core/_typography.scss */
 p,
 .para,
 li, code {
@@ -1716,7 +1715,7 @@ li, code {
  * 4. Typographic relationships (nawww, aren't they so good together?)
  * ----------------------------------------------------------------------------
  */
-/* line 195, ../sass/core/_typography.scss */
+/* line 193, ../sass/core/_typography.scss */
 h4 + h6,
 h4 + p,
 h5 + p {
@@ -1724,7 +1723,7 @@ h5 + p {
   /* 4px @ 14px */
 }
 
-/* line 202, ../sass/core/_typography.scss */
+/* line 200, ../sass/core/_typography.scss */
 p + p,
 .list--styled li + li,
 .list--styled_decimal li + li,
@@ -1737,7 +1736,7 @@ p + p,
  * 5. hr
  * ----------------------------------------------------------------------------
  */
-/* line 212, ../sass/core/_typography.scss */
+/* line 210, ../sass/core/_typography.scss */
 hr {
   border: none;
   height: 1px;
@@ -1747,12 +1746,12 @@ hr {
  *  6. Lowercase vs Uppercase
  * ----------------------------------------------------------------------------
  */
-/* line 223, ../sass/core/_typography.scss */
+/* line 221, ../sass/core/_typography.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 226, ../sass/core/_typography.scss */
+/* line 224, ../sass/core/_typography.scss */
 .lowercase {
   text-transform: lowercase;
 }
@@ -1761,17 +1760,17 @@ hr {
  * 7. Text Allignment classes
  * ----------------------------------------------------------------------------
  */
-/* line 236, ../sass/core/_typography.scss */
+/* line 234, ../sass/core/_typography.scss */
 .text-align--left {
   text-align: left;
 }
 
-/* line 239, ../sass/core/_typography.scss */
+/* line 237, ../sass/core/_typography.scss */
 .text-align--right {
   text-align: right;
 }
 
-/* line 242, ../sass/core/_typography.scss */
+/* line 240, ../sass/core/_typography.scss */
 .text-align--center {
   text-align: center;
 }
@@ -1780,38 +1779,38 @@ hr {
  * 8. List styles
  * ----------------------------------------------------------------------------
  */
-/* line 252, ../sass/core/_typography.scss */
+/* line 250, ../sass/core/_typography.scss */
 .list--unstyled, .list--inline {
   list-style: none;
   padding-left: 0;
   margin: 0 0 0 0;
 }
 
-/* line 258, ../sass/core/_typography.scss */
+/* line 256, ../sass/core/_typography.scss */
 .list--unstyled > li, .list--inline > li {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 268, ../sass/core/_typography.scss */
+/* line 266, ../sass/core/_typography.scss */
 .list--inline > li {
   margin: 0;
 }
 
-/* line 274, ../sass/core/_typography.scss */
+/* line 272, ../sass/core/_typography.scss */
 .list--styled, .list--styled_decimal, .list--styled_alpha {
   padding-left: 1.5em;
   margin-top: .857142857em;
   list-style: circle;
 }
 
-/* line 285, ../sass/core/_typography.scss */
+/* line 283, ../sass/core/_typography.scss */
 .list--styled_decimal {
   list-style: decimal-leading-zero;
   padding-left: 2.25em;
 }
 
-/* line 292, ../sass/core/_typography.scss */
+/* line 290, ../sass/core/_typography.scss */
 .list--styled_alpha {
   list-style: lower-alpha;
 }
@@ -1820,7 +1819,7 @@ hr {
  * 9. text overflow helper class
  * ----------------------------------------------------------------------------
  */
-/* line 302, ../sass/core/_typography.scss */
+/* line 300, ../sass/core/_typography.scss */
 .text--overflow {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1828,7 +1827,7 @@ hr {
   width: 100%;
 }
 
-/* line 310, ../sass/core/_typography.scss */
+/* line 308, ../sass/core/_typography.scss */
 .text--nowrap {
   white-space: nowrap;
 }
@@ -1841,7 +1840,7 @@ hr {
  * these properties right here. Maybe consider scoping this to a class for
  * chrome/mac osx only at some point?
  */
-/* line 323, ../sass/core/_typography.scss */
+/* line 321, ../sass/core/_typography.scss */
 html,
 body {
   -webkit-font-smoothing: antialiased;
@@ -1852,7 +1851,7 @@ body {
  * 11. hide text
  * ----------------------------------------------------------------------------
  */
-/* line 333, ../sass/core/_typography.scss */
+/* line 331, ../sass/core/_typography.scss */
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -1870,12 +1869,12 @@ body {
  *
  * 
  */
-/* line 349, ../sass/core/_typography.scss */
+/* line 347, ../sass/core/_typography.scss */
 .sans {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 353, ../sass/core/_typography.scss */
+/* line 351, ../sass/core/_typography.scss */
 .serif {
   font-family: "georgia", serif;
 }
@@ -3619,6 +3618,66 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
  * Show hide on viewports helper classes
  * ----------------------------------------------------------------------------
  */
+/* line 528, ../sass/core/_responsive.scss */
+.hidden-mobile, .hidden-skinny, .hidden-wide {
+  display: block !important;
+}
+
+/* line 529, ../sass/core/_responsive.scss */
+.visible-mobile, .visible-skinny, .visible-wide {
+  display: none !important;
+}
+
+/**
+ * 1. Visible classes
+ * -----------------------------------------------------------------------------
+ */
+@media only screen and (max-width: 30em) {
+  /* line 536, ../sass/core/_responsive.scss */
+  .visible-mobile {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 31em) and (max-width: 48em) {
+  /* line 544, ../sass/core/_responsive.scss */
+  .visible-skinny {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  /* line 556, ../sass/core/_responsive.scss */
+  .visible-wide {
+    display: block !important;
+  }
+}
+
+/**
+ * 1. hidden classes
+ * -----------------------------------------------------------------------------
+ */
+@media only screen and (max-width: 30em) {
+  /* line 568, ../sass/core/_responsive.scss */
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 31em) and (max-width: 48em) {
+  /* line 576, ../sass/core/_responsive.scss */
+  .hidden-skinny {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  /* line 588, ../sass/core/_responsive.scss */
+  .hidden-wide {
+    display: none !important;
+  }
+}
+
 /**
  * Buttons
  * -----------------------------------------------------------------------------

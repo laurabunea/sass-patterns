@@ -520,5 +520,75 @@ $bp-m:     600px;
        // .m-text-align--center {
        //     text-align: center;
        // }
+@include media('mobile-only') {}
+@include media('skinny-only') {}
+@include media('mobile-only') {}
+@include media('wide') {}
 
+%visible    {display: block !important;}
+%hidden     {display: none !important;}
 
+/**
+ * 1. Visible classes
+ * -----------------------------------------------------------------------------
+ */
+
+.visible-mobile {
+    @extend %hidden;
+    @include media('mobile-only') {
+        //@extend %visible;
+        display: block !important;
+    }
+}
+
+.visible-skinny {
+    @extend %hidden;
+    @include media('skinny-only') {
+        //@extend %visible;
+        display: block !important;
+    }
+}
+
+.visible-desktop {
+    //??
+}
+
+.visible-wide {
+    @extend %hidden;
+    @include media('wide') {
+        //@extend %visible;
+        display: block !important;
+    }
+}
+
+/**
+ * 1. hidden classes
+ * -----------------------------------------------------------------------------
+ */
+.hidden-mobile {
+    @extend %visible;
+    @include media('mobile-only') {
+        //@extend %hidden;
+        display: none !important;
+    }
+}
+
+.hidden-skinny {
+    @extend %visible;
+    @include media('skinny-only') {
+        //@extend %hidden;
+        display: none !important;
+    }
+}
+
+.hidden-desktop {
+    //??
+}
+
+.hidden-wide {
+    @extend %visible;
+    @include media('wide') {
+        //@extend %hidden;
+        display: none !important;
+    }
+}
