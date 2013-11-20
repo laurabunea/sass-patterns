@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?>
 <!--Responsive page starts-->
-<div class='block--l block-s--s block-m--s mb--l tb__primary relative'>
+<div class='block--l block-s--m block-m--s mb--l tb__primary relative'>
     <img alt='fred the helpful fed' src='assets/images/fred-side.png' class='absolute fred' />
     
     <div class='page-header tb__header'>

@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?>
 
-<div class='block--l block-s--s block-m--s mb--l clearfix tb__primary relative'>
+<div class='block--l block-s--m block-m--s mb--l clearfix tb__primary relative'>
     <div class='page-header tb__header'>
         <h1>
             Layout
