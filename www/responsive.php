@@ -1,7 +1,7 @@
 <?php 
     include 'header.php'; 
 ?>
-
+<!--Responsive page starts-->
 <div class='block--l block-s--s block-m--s mb--l tb__primary relative'>
     <img alt='fred the helpful fed' src='assets/images/fred-side.png' class='absolute fred' />
     
@@ -13,29 +13,33 @@
             </span>
         </h1>
     </div>
+
+    <!--Responsive Helper navigation -->
     <ul class='list--styled_decimal'>   
         <li>
-            <a href='#'>
+            <a href='#responsiveAnchor1'>
                 Building blocks 
             </a>
         </li>
         <li>
-            <a href='#'>
+            <a href='#responsiveAnchor2'>
                 Visible classes 
             </a>
         </li>
         <li>
-            <a href='#'>
+            <a href='#responsiveAnchor3'>
                 Hidden classes 
             </a>
         </li>
         <li>
-            <a href='#'>
+            <a href='#responsiveAnchor4'>
                 Responsive images
             </a>
         </li>
-    </ul>
-    <div class='mt--l' id='' >
+    </ul><!--Responsive Helper navigation ends-->
+
+    <!--Building blocks section starts-->
+    <div class='mt--l' id='responsiveAnchor1' >
         <h2 class='h3'>
             01. Building blocks
         </h2>
@@ -138,7 +142,7 @@ $wide:                          75em;//Wide 1200px
                     <strong>skinny:</strong>     block-s--s<br />
                     <strong>wide:</strong>       block-w--l
                 </p>
-            </div><!-- block xs ends-->
+            </div>
             <p>Example two</p>
             <div class='mt-m--xs mt-s--s mt--m mt-w--l block--s tb__green '>
                 <p>
@@ -147,12 +151,15 @@ $wide:                          75em;//Wide 1200px
                     <strong>desktop:</strong> mt--m<br />
                     <strong>wide:</strong> mt-w--l
                 </p>
-            </div><!-- block xs ends-->
+            </div>
             
         </div><!--  hello world block ends -->
-    </div><!--layout-generic-block ends-->
+    </div><!--Building blocks section ends-->
     
-    <div class='mt--l' id='' >
+    <hr class='mt--l' />
+    
+    <!--Visible section starts-->
+    <div class='mt--l' id='responsiveAnchor2' >
         <h2 class='h3'>
             02. Visible classes
         </h2>
@@ -181,28 +188,33 @@ $wide:                          75em;//Wide 1200px
                 <p>
                     normal block always show this 
                 </p>
-            </div><!-- block xs ends-->
+            </div>
+
             <div class='block--s tb__pink visible-mobile'>
                 <p>
                     show this block on mobile
                 </p>
-            </div><!-- block xs ends-->
+            </div>
 
             <div class='block--s tb__blue visible-skinny'>
                 <p>
                     show this block on skinny
                 </p>
-            </div><!-- block xs ends-->
+            </div>
 
             <div class='block--s tb__green visible-wide'>
                 <p>
                     show this block on wide
                 </p>
-            </div><!-- block xs ends-->
+            </div>
 
         </div><!--  hello world block ends -->
-    </div><!--layout-generic-block ends-->
-    <div class='mt--l' id='' >
+    </div><!--Visible section ends-->
+    
+    <hr class='mt--l' />
+    
+    <!--Hidden section starts-->
+    <div class='mt--l' id='responsiveAnchor3' >
         <h2 class='h3'>
             03. Hidden classes
         </h2>
@@ -231,31 +243,35 @@ $wide:                          75em;//Wide 1200px
                 <p>
                     normal block always how this 
                 </p>
-            </div><!-- block xs ends-->
+            </div>
+
             <div class='block--s tb__pink hidden-mobile'>
                 <p>
                     hide this block on mobile 
                 </p>
-            </div><!-- block xs ends-->
+            </div>
 
             <div class='block--s tb__green hidden-skinny'>
                 <p>
                     hide this block on skinny
                 </p>
-            </div><!-- block xs ends-->
+            </div>
 
             <div class='block--s tb__blue hidden-wide'>
                 <p>
                     hide this block on wide
                 </p>
-            </div><!-- block xs ends-->
+            </div>
 
         </div><!--  hello world block ends -->
-    </div><!--layout-generic-block ends-->
+    </div><!--Hidden section ends-->
+    
+    <hr class='mt--l' />
 
-    <div class='mt--l' id='' >
+    <!--Responsive image section starts-->
+    <div class='mt--l' id='responsiveAnchor4' >
         <h2 class='h3'>
-            05. Responsive images
+            04. Responsive images
         </h2>
         <p>
             This applies max-width: 100%; and height: auto; to the image so that it scales nicely to 
@@ -293,5 +309,5 @@ $wide:                          75em;//Wide 1200px
                 </div>
             </div>
         </div><!--  hello world block ends -->
-    </div><!--layout-generic-block ends-->
-</div>
+    </div><!--Responsive image section starts-->
+</div><!--Responsive page ends-->
