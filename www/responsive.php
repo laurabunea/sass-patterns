@@ -298,10 +298,10 @@ $wide:                          75em;//Wide 1200px
           
             
             <div class='grid'>
-                <div class='grid__item g--40-100' >
+                <div class='grid__item g--40' >
                     <img src='assets/images/fred.png' alt='' class='img--responsive' />
                 </div>
-                <div class='grid__item g--60-100'>
+                <div class='grid__item g--60'>
                     <div class='arrow--side tb__blue block--m'>
                         <p>Resize the browser so you can see me shrink </p>
                         <i class='arrow arrow-left'></i>

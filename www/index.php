@@ -13,7 +13,7 @@
     </div>
 </div> 
 
-<div class='block--stacked block--l block-s--s block-m--s mb--l tb__primary'>
+<div class='block--stacked block--l block-s--m block-m--s mb--l tb__primary'>
 	
     <p class='intro'>
         Introduction on FRED here ...
