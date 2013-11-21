@@ -1056,12 +1056,17 @@ ol {
 }
 
 /* line 242, ../sass/core/_layout.scss */
-.mt--xs {
+.mt--xs, p + p,
+.list--styled li + li,
+.list--styled-decimal li + li,
+.list--styled-alpha li + li {
   margin-top: 0.75em;
 }
 
 /* line 243, ../sass/core/_layout.scss */
-.mt--s {
+.mt--s, h4 + h6
+h4 + p,
+h5 + p {
   margin-top: 1em;
 }
 
@@ -3150,21 +3155,6 @@ li, code {
  * 4. Typographic relationships (nawww, aren't they so good together?)
  * ----------------------------------------------------------------------------
  */
-/* line 227, ../sass/core/_typography.scss */
-h4 + h6,
-h4 + p,
-h5 + p {
-  margin-top: 0.03571emem;
-}
-
-/* line 234, ../sass/core/_typography.scss */
-p + p,
-.list--styled li + li,
-.list--styled-decimal li + li,
-.list--styled-alpha li + li {
-  margin-top: 0.03571emem;
-}
-
 /**
  * 5. hr
  * ----------------------------------------------------------------------------

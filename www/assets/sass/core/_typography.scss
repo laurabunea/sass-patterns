@@ -222,17 +222,17 @@ i {
  * ----------------------------------------------------------------------------
  */
 
-h4 + h6,
+h4 + h6
 h4 + p,
 h5 + p {
-    margin-top: px-to-em($bs--xxs, $font-size-xs);               
+    @extend .mt--s;              
 }
 
 p + p, 
 .list--styled li + li, 
 .list--styled-decimal li + li, 
 .list--styled-alpha li + li,{
-    margin-top: px-to-em($bs--xxs, $font-size-xs);                           
+    @extend .mt--xs;                  
 }
 
 
