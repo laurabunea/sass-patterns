@@ -625,59 +625,94 @@
         <!--  hello world block starts -->
         <div class='block--stacked block--s tb__secondary'>  
             <div class='grid'>
-                <div class='g--1-1 tb__pink '>
-                    &nbsp;
+                <div class='grid__item g--1-1  '>
+                   <div class='tb__pink block--s'>
+                        <p>
+                            full width
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <br />
-
+            <p>Example one:</p>
             <div class='grid'>
-                <div class='g--1-2 tb__pink' >
-                    &nbsp;
+                <div class='grid__item g--1-2' >
+                    <div class='tb__blue block--s'>
+                        <p>
+                            1/2
+                        </p>
+                    </div>
                 </div>
-                <div class='g--1-2 tb__pink'>
-                    &nbsp;
+                <div class='grid__item g--1-2 '>
+                    <div class='tb__blue block--s'>
+                        <p>
+                            1/2
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <br />
-
+            <p>Example two:</p>
             <div class='grid'>
-                <div class=' g--1-4 tb__pink'>
-                    &nbsp;
+                <div class='grid__item g--1-4 '>
+                    <div class='tb__green block--s'>
+                        <p>
+                            1/4
+                        </p>
+                    </div>
                 </div>
-                <div class=' g--1-4 tb__pink'>
-                    &nbsp;
+                <div class='grid__item g--1-4 '>
+                    <div class='tb__green block--s'>
+                        <p>
+                            1/4
+                        </p>
+                    </div>
                 </div>
-                <div class=' g--1-4 tb__pink'>
-                    &nbsp;
+                <div class='grid__item g--1-4 '>
+                    <div class='tb__green block--s'>
+                        <p>
+                            1/4
+                        </p>
+                    </div>
                 </div>
-                <div class=' g--1-4 tb__pink'>
-                    &nbsp;
+                <div class='grid__item g--1-4 '>
+                    <div class='tb__green block--s'>
+                        <p>
+                            1/4
+                        </p>
+                    </div>
                 </div>
             </div>
-
-            <br />
-
+            <p>Example three:</p>
             <div class='grid'>
-                <div class=' g--1-4 tb__pink'>
-                    &nbsp;
+                <div class='grid__item g--60'>
+                    <div class='tb__secondary block--s'>
+                        <p>
+                            60%
+                        </p>
+                    </div>
                 </div>
-                <div class=' g--1-4  tb__pink'>
-                    &nbsp;
+                <div class='grid__item g--40'>
+                    <div class='tb__secondary block--s'>
+                        <p>
+                            40%
+                        </p>
+                    </div>
                 </div>
-                <div class=' g--1-4  tb__pink'>
-                    &nbsp;
+            </div>
+            <p>Example four:</p>
+            <div class='grid'>
+                <div class='grid__item g--80 '>
+                    <div class='tb__tertiary block--s'>
+                        <p>
+                            80%
+                        </p>
+                    </div>
                 </div>
-                <div class=' g--1-4 tb__pink'>
-                    &nbsp;
-                </div>
-                <div class=' g--1-4 tb__pink'>
-                    &nbsp;
-                </div>
-                <div class=' g--1-4 tb__pink'>
-                    &nbsp;
+                <div class='grid__item g--20'>
+                    <div class='tb__tertiary block--s'>
+                        <p>
+                            20%
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -688,17 +723,33 @@
             </p>
 
             <div class='grid grid--middle'>
-                <div class=' g--1-4 tb__pink'>
-                    &nbsp;
+                <div class=' g--1-4'>
+                    <div class='tb__green block--s'>
+                        <p>
+                            1/4
+                        </p>
+                    </div>
                 </div>
-                <div class=' g--1-4 tb__pink'>
-                    &nbsp;
+                <div class=' g--1-4'>
+                    <div class='tb__green block--s'>
+                        <p>
+                            1/4
+                        </p>
+                    </div>
                 </div>
-                <div class=' g--1-4 tb__pink'>
-                    &nbsp;
+                <div class=' g--1-4'>
+                    <div class='tb__green block--s'>
+                        <p>
+                            1/4
+                        </p>
+                    </div>
                 </div>
-                <div class=' g--1-4 tb__pink'>
-                    &nbsp;
+                <div class=' g--1-4 '>
+                   <div class='tb__green block--s'>
+                        <p>
+                            1/4
+                        </p>
+                    </div>
                 </div>
             </div>   
         </div><!--  hello world block ends -->
