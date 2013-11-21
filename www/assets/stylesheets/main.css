@@ -853,161 +853,244 @@ ol {
 }
 
 /**
+ * 3. Responsive blocks
+ * ----------------------------------------------------------------------------
+
+ */
+@media only screen and (min-width: 75em) {
+  /* line 141, ../sass/core/_layout.scss */
+  .block-w--xl {
+    padding: 3em 6em;
+  }
+
+  /* line 145, ../sass/core/_layout.scss */
+  .block-w--l {
+    padding: 2.25em 4.5em;
+  }
+
+  /* line 149, ../sass/core/_layout.scss */
+  .block-w--m {
+    padding: 1.5em 3em;
+  }
+
+  /* line 153, ../sass/core/_layout.scss */
+  .block-w--s {
+    padding: 1em 0.75em;
+  }
+
+  /* line 157, ../sass/core/_layout.scss */
+  .block-w--xs {
+    padding: 0.75em 0.375em;
+  }
+}
+@media only screen and (min-width: 31em) and (max-width: 48em) {
+  /* line 164, ../sass/core/_layout.scss */
+  .block-s--xl {
+    padding: 3em 6em;
+  }
+
+  /* line 168, ../sass/core/_layout.scss */
+  .block-s--l {
+    padding: 2.25em 4.5em;
+  }
+
+  /* line 172, ../sass/core/_layout.scss */
+  .block-s--m {
+    padding: 1.5em 3em;
+  }
+
+  /* line 176, ../sass/core/_layout.scss */
+  .block-s--s {
+    padding: 1em 0.75em;
+  }
+
+  /* line 180, ../sass/core/_layout.scss */
+  .block-s--xs {
+    padding: 0.75em 0.375em;
+  }
+}
+@media only screen and (max-width: 30em) {
+  /* line 186, ../sass/core/_layout.scss */
+  .block-m--xl {
+    padding: 3em 6em;
+  }
+
+  /* line 190, ../sass/core/_layout.scss */
+  .block-m--l {
+    padding: 2.25em 4.5em;
+  }
+
+  /* line 194, ../sass/core/_layout.scss */
+  .block-m--m {
+    padding: 1.5em 3em;
+  }
+
+  /* line 198, ../sass/core/_layout.scss */
+  .block-m--s {
+    padding: 1em 0.75em;
+  }
+
+  /* line 202, ../sass/core/_layout.scss */
+  .block-m--xs {
+    padding: 0.75em 0.375em;
+  }
+}
+/**
  * 3. Spacing helpers
  * ----------------------------------------------------------------------------
 
  */
-/* line 139, ../sass/core/_layout.scss */
+/* line 215, ../sass/core/_layout.scss */
 .mr--0 {
   margin-right: 0em;
 }
 
-/* line 140, ../sass/core/_layout.scss */
+/* line 216, ../sass/core/_layout.scss */
 .mr--xxxs {
   margin-right: 0.375em;
 }
 
-/* line 141, ../sass/core/_layout.scss */
+/* line 217, ../sass/core/_layout.scss */
 .mr--xxs {
   margin-right: 0.5em;
 }
 
-/* line 142, ../sass/core/_layout.scss */
+/* line 218, ../sass/core/_layout.scss */
 .mr--xs {
   margin-right: 0.75em;
 }
 
-/* line 143, ../sass/core/_layout.scss */
+/* line 219, ../sass/core/_layout.scss */
 .mr--s {
   margin-right: 1em;
 }
 
-/* line 144, ../sass/core/_layout.scss */
+/* line 220, ../sass/core/_layout.scss */
 .mr--m {
   margin-right: 1.5em;
 }
 
-/* line 145, ../sass/core/_layout.scss */
+/* line 221, ../sass/core/_layout.scss */
 .mr--l {
   margin-right: 2.25em;
 }
 
-/* line 146, ../sass/core/_layout.scss */
+/* line 222, ../sass/core/_layout.scss */
 .mr--xl {
   margin-right: 3em;
 }
 
-/* line 147, ../sass/core/_layout.scss */
+/* line 223, ../sass/core/_layout.scss */
 .mr--xxl {
   margin-right: 4.5em;
 }
 
-/* line 148, ../sass/core/_layout.scss */
+/* line 224, ../sass/core/_layout.scss */
 .mr--xxxl {
   margin-right: 6em;
 }
 
-/* line 151, ../sass/core/_layout.scss */
+/* line 227, ../sass/core/_layout.scss */
 .ml--0 {
   margin-left: 0em;
 }
 
-/* line 152, ../sass/core/_layout.scss */
+/* line 228, ../sass/core/_layout.scss */
 .ml--xxxs {
   margin-left: 0.375em;
 }
 
-/* line 153, ../sass/core/_layout.scss */
+/* line 229, ../sass/core/_layout.scss */
 .ml--xxs {
   margin-left: 0.5em;
 }
 
-/* line 154, ../sass/core/_layout.scss */
+/* line 230, ../sass/core/_layout.scss */
 .ml--xs {
   margin-left: 0.75em;
 }
 
-/* line 155, ../sass/core/_layout.scss */
+/* line 231, ../sass/core/_layout.scss */
 .ml--s {
   margin-left: 1em;
 }
 
-/* line 156, ../sass/core/_layout.scss */
+/* line 232, ../sass/core/_layout.scss */
 .ml--m {
   margin-left: 1.5em;
 }
 
-/* line 157, ../sass/core/_layout.scss */
+/* line 233, ../sass/core/_layout.scss */
 .ml--l {
   margin-left: 2.25em;
 }
 
-/* line 158, ../sass/core/_layout.scss */
+/* line 234, ../sass/core/_layout.scss */
 .ml--xl {
   margin-left: 3em;
 }
 
-/* line 159, ../sass/core/_layout.scss */
+/* line 235, ../sass/core/_layout.scss */
 .ml--xxl {
   margin-left: 4.5em;
 }
 
-/* line 160, ../sass/core/_layout.scss */
+/* line 236, ../sass/core/_layout.scss */
 .ml--xxxl {
   margin-left: 6em;
 }
 
-/* line 163, ../sass/core/_layout.scss */
+/* line 239, ../sass/core/_layout.scss */
 .mt--0 {
   margin-top: 0em;
 }
 
-/* line 164, ../sass/core/_layout.scss */
+/* line 240, ../sass/core/_layout.scss */
 .mt--xxxs {
   margin-top: 0.375em;
 }
 
-/* line 165, ../sass/core/_layout.scss */
+/* line 241, ../sass/core/_layout.scss */
 .mt--xxs {
   margin-top: 0.5em;
 }
 
-/* line 166, ../sass/core/_layout.scss */
+/* line 242, ../sass/core/_layout.scss */
 .mt--xs {
   margin-top: 0.75em;
 }
 
-/* line 167, ../sass/core/_layout.scss */
+/* line 243, ../sass/core/_layout.scss */
 .mt--s {
   margin-top: 1em;
 }
 
-/* line 168, ../sass/core/_layout.scss */
+/* line 244, ../sass/core/_layout.scss */
 .mt--m, dl {
   margin-top: 1.5em;
 }
 
-/* line 169, ../sass/core/_layout.scss */
+/* line 245, ../sass/core/_layout.scss */
 .mt--l {
   margin-top: 2.25em;
 }
 
-/* line 170, ../sass/core/_layout.scss */
+/* line 246, ../sass/core/_layout.scss */
 .mt--xl {
   margin-top: 3em;
 }
 
-/* line 171, ../sass/core/_layout.scss */
+/* line 247, ../sass/core/_layout.scss */
 .mt--xxl {
   margin-top: 4.5em;
 }
 
-/* line 172, ../sass/core/_layout.scss */
+/* line 248, ../sass/core/_layout.scss */
 .mt--xxxl {
   margin-top: 6em;
 }
 
-/* line 175, ../sass/core/_layout.scss */
+/* line 251, ../sass/core/_layout.scss */
 .mb--0, h1,
 .h1, h2,
 .h2, h3,
@@ -1020,252 +1103,1379 @@ li, code {
   margin-bottom: 0em;
 }
 
-/* line 176, ../sass/core/_layout.scss */
+/* line 252, ../sass/core/_layout.scss */
 .mb--xxxs {
   margin-bottom: 0.375em;
 }
 
-/* line 177, ../sass/core/_layout.scss */
+/* line 253, ../sass/core/_layout.scss */
 .mb--xxs {
   margin-bottom: 0.5em;
 }
 
-/* line 178, ../sass/core/_layout.scss */
+/* line 254, ../sass/core/_layout.scss */
 .mb--xs {
   margin-bottom: 0.75em;
 }
 
-/* line 179, ../sass/core/_layout.scss */
+/* line 255, ../sass/core/_layout.scss */
 .mb--s {
   margin-bottom: 1em;
 }
 
-/* line 180, ../sass/core/_layout.scss */
+/* line 256, ../sass/core/_layout.scss */
 .mb--m {
   margin-bottom: 1.5em;
 }
 
-/* line 181, ../sass/core/_layout.scss */
+/* line 257, ../sass/core/_layout.scss */
 .mb--l {
   margin-bottom: 2.25em;
 }
 
-/* line 182, ../sass/core/_layout.scss */
+/* line 258, ../sass/core/_layout.scss */
 .mb--xl {
   margin-bottom: 3em;
 }
 
-/* line 183, ../sass/core/_layout.scss */
+/* line 259, ../sass/core/_layout.scss */
 .mb--xxl {
   margin-bottom: 4.5em;
 }
 
-/* line 184, ../sass/core/_layout.scss */
+/* line 260, ../sass/core/_layout.scss */
 .mb--xxxl {
   margin-bottom: 6em;
 }
 
-/* line 188, ../sass/core/_layout.scss */
+/* line 264, ../sass/core/_layout.scss */
 .pr--0 {
   padding-right: 0em;
 }
 
-/* line 189, ../sass/core/_layout.scss */
+/* line 265, ../sass/core/_layout.scss */
 .pr--xxxs {
   padding-right: 0.375em;
 }
 
-/* line 190, ../sass/core/_layout.scss */
+/* line 266, ../sass/core/_layout.scss */
 .pr--xxs {
   padding-right: 0.5em;
 }
 
-/* line 191, ../sass/core/_layout.scss */
+/* line 267, ../sass/core/_layout.scss */
 .pr--xs {
   padding-right: 0.75em;
 }
 
-/* line 192, ../sass/core/_layout.scss */
+/* line 268, ../sass/core/_layout.scss */
 .pr--s {
   padding-right: 1em;
 }
 
-/* line 193, ../sass/core/_layout.scss */
+/* line 269, ../sass/core/_layout.scss */
 .pr--m {
   padding-right: 1.5em;
 }
 
-/* line 194, ../sass/core/_layout.scss */
+/* line 270, ../sass/core/_layout.scss */
 .pr--l {
   padding-right: 2.25em;
 }
 
-/* line 195, ../sass/core/_layout.scss */
+/* line 271, ../sass/core/_layout.scss */
 .pr--xl {
   padding-right: 3em;
 }
 
-/* line 196, ../sass/core/_layout.scss */
+/* line 272, ../sass/core/_layout.scss */
 .pr--xxl {
   padding-right: 4.5em;
 }
 
-/* line 197, ../sass/core/_layout.scss */
+/* line 273, ../sass/core/_layout.scss */
 .pr--xxxl {
   padding-right: 6em;
 }
 
-/* line 200, ../sass/core/_layout.scss */
+/* line 276, ../sass/core/_layout.scss */
 .pl--0 {
   padding-left: 0em;
 }
 
-/* line 201, ../sass/core/_layout.scss */
+/* line 277, ../sass/core/_layout.scss */
 .pl--xxxs {
   padding-left: 0.375em;
 }
 
-/* line 202, ../sass/core/_layout.scss */
+/* line 278, ../sass/core/_layout.scss */
 .pl--xxs {
   padding-left: 0.5em;
 }
 
-/* line 203, ../sass/core/_layout.scss */
+/* line 279, ../sass/core/_layout.scss */
 .pl--xs {
   padding-left: 0.75em;
 }
 
-/* line 204, ../sass/core/_layout.scss */
+/* line 280, ../sass/core/_layout.scss */
 .pl--s {
   padding-left: 1em;
 }
 
-/* line 205, ../sass/core/_layout.scss */
+/* line 281, ../sass/core/_layout.scss */
 .pl--m {
   padding-left: 1.5em;
 }
 
-/* line 206, ../sass/core/_layout.scss */
+/* line 282, ../sass/core/_layout.scss */
 .pl--l {
   padding-left: 2.25em;
 }
 
-/* line 207, ../sass/core/_layout.scss */
+/* line 283, ../sass/core/_layout.scss */
 .pl--xl {
   padding-left: 3em;
 }
 
-/* line 208, ../sass/core/_layout.scss */
+/* line 284, ../sass/core/_layout.scss */
 .pl--xxl {
   padding-left: 4.5em;
 }
 
-/* line 209, ../sass/core/_layout.scss */
+/* line 285, ../sass/core/_layout.scss */
 .pl--xxxl {
   padding-left: 6em;
 }
 
-/* line 212, ../sass/core/_layout.scss */
+/* line 288, ../sass/core/_layout.scss */
 .pt--0 {
   padding-top: 0em;
 }
 
-/* line 213, ../sass/core/_layout.scss */
+/* line 289, ../sass/core/_layout.scss */
 .pt--xxxs {
   padding-top: 0.375em;
 }
 
-/* line 214, ../sass/core/_layout.scss */
+/* line 290, ../sass/core/_layout.scss */
 .pt--xxs {
   padding-top: 0.5em;
 }
 
-/* line 215, ../sass/core/_layout.scss */
+/* line 291, ../sass/core/_layout.scss */
 .pt--xs {
   padding-top: 0.75em;
 }
 
-/* line 216, ../sass/core/_layout.scss */
+/* line 292, ../sass/core/_layout.scss */
 .pt--s {
   padding-top: 1em;
 }
 
-/* line 217, ../sass/core/_layout.scss */
+/* line 293, ../sass/core/_layout.scss */
 .pt--m {
   padding-top: 1.5em;
 }
 
-/* line 218, ../sass/core/_layout.scss */
+/* line 294, ../sass/core/_layout.scss */
 .pt--l {
   padding-top: 2.25em;
 }
 
-/* line 219, ../sass/core/_layout.scss */
+/* line 295, ../sass/core/_layout.scss */
 .pt--xl {
   padding-top: 3em;
 }
 
-/* line 220, ../sass/core/_layout.scss */
+/* line 296, ../sass/core/_layout.scss */
 .pt--xxl {
   padding-top: 4.5em;
 }
 
-/* line 221, ../sass/core/_layout.scss */
+/* line 297, ../sass/core/_layout.scss */
 .pt--xxxl {
   padding-top: 6em;
 }
 
-/* line 224, ../sass/core/_layout.scss */
+/* line 300, ../sass/core/_layout.scss */
 .pb--0 {
   padding-bottom: 0em;
 }
 
-/* line 225, ../sass/core/_layout.scss */
+/* line 301, ../sass/core/_layout.scss */
 .pb--xxxs {
   padding-bottom: 0.375em;
 }
 
-/* line 226, ../sass/core/_layout.scss */
+/* line 302, ../sass/core/_layout.scss */
 .pb--xxs {
   padding-bottom: 0.5em;
 }
 
-/* line 227, ../sass/core/_layout.scss */
+/* line 303, ../sass/core/_layout.scss */
 .pb--xs {
   padding-bottom: 0.75em;
 }
 
-/* line 228, ../sass/core/_layout.scss */
+/* line 304, ../sass/core/_layout.scss */
 .pb--s {
   padding-bottom: 1em;
 }
 
-/* line 229, ../sass/core/_layout.scss */
+/* line 305, ../sass/core/_layout.scss */
 .pb--m {
   padding-bottom: 1.5em;
 }
 
-/* line 230, ../sass/core/_layout.scss */
+/* line 306, ../sass/core/_layout.scss */
 .pb--l {
   padding-bottom: 2.25em;
 }
 
-/* line 231, ../sass/core/_layout.scss */
+/* line 307, ../sass/core/_layout.scss */
 .pb--xl {
   padding-bottom: 3em;
 }
 
-/* line 232, ../sass/core/_layout.scss */
+/* line 308, ../sass/core/_layout.scss */
 .pb--xxl {
   padding-bottom: 4.5em;
 }
 
-/* line 233, ../sass/core/_layout.scss */
+/* line 309, ../sass/core/_layout.scss */
 .pb--xxxl {
   padding-bottom: 6em;
 }
 
-/* line 237, ../sass/core/_layout.scss */
+/**
+ * Grid - Padding classes that relate to the grid breakpoints 
+ * ----------------------------------------------------------------------------
+ */
+@media only screen and (min-width: 75em) {
+  /* line 320, ../sass/core/_layout.scss */
+  .mr-w--0 {
+    margin-right: 0em;
+  }
+
+  /* line 321, ../sass/core/_layout.scss */
+  .mr-w--xxs {
+    margin-right: 0.5em;
+  }
+
+  /* line 322, ../sass/core/_layout.scss */
+  .mr-w--xs {
+    margin-right: 0.75em;
+  }
+
+  /* line 323, ../sass/core/_layout.scss */
+  .mr-w--s {
+    margin-right: 1em;
+  }
+
+  /* line 324, ../sass/core/_layout.scss */
+  .mr-w--m {
+    margin-right: 1.5em;
+  }
+
+  /* line 325, ../sass/core/_layout.scss */
+  .mr-w--l {
+    margin-right: 2.25em;
+  }
+
+  /* line 326, ../sass/core/_layout.scss */
+  .mr-w--xl {
+    margin-right: 3em;
+  }
+
+  /* line 327, ../sass/core/_layout.scss */
+  .mr-w--xxl {
+    margin-right: 4.5em;
+  }
+
+  /* line 331, ../sass/core/_layout.scss */
+  .ml-w--0 {
+    margin-left: 0em;
+  }
+
+  /* line 332, ../sass/core/_layout.scss */
+  .ml-w--xxs {
+    margin-left: 0.5em;
+  }
+
+  /* line 333, ../sass/core/_layout.scss */
+  .ml-w--xs {
+    margin-left: 0.75em;
+  }
+
+  /* line 334, ../sass/core/_layout.scss */
+  .ml-w--s {
+    margin-left: 1em;
+  }
+
+  /* line 335, ../sass/core/_layout.scss */
+  .ml-w--m {
+    margin-left: 1.5em;
+  }
+
+  /* line 336, ../sass/core/_layout.scss */
+  .ml-w--l {
+    margin-left: 2.25em;
+  }
+
+  /* line 337, ../sass/core/_layout.scss */
+  .ml-w--xl {
+    margin-left: 3em;
+  }
+
+  /* line 338, ../sass/core/_layout.scss */
+  .ml-w--xxl {
+    margin-left: 4.5em;
+  }
+
+  /* line 341, ../sass/core/_layout.scss */
+  .mt-w--0 {
+    margin-top: 0em;
+  }
+
+  /* line 342, ../sass/core/_layout.scss */
+  .mt-w--xxs {
+    margin-top: 0.5em;
+  }
+
+  /* line 343, ../sass/core/_layout.scss */
+  .mt-w--xs {
+    margin-top: 0.75em;
+  }
+
+  /* line 344, ../sass/core/_layout.scss */
+  .mt-w--s {
+    margin-top: 1em;
+  }
+
+  /* line 345, ../sass/core/_layout.scss */
+  .mt-w--m {
+    margin-top: 1.5em;
+  }
+
+  /* line 346, ../sass/core/_layout.scss */
+  .mt-w--l {
+    margin-top: 2.25em;
+  }
+
+  /* line 347, ../sass/core/_layout.scss */
+  .mt-w--xl {
+    margin-top: 3em;
+  }
+
+  /* line 348, ../sass/core/_layout.scss */
+  .mt-w--xxl {
+    margin-top: 4.5em;
+  }
+
+  /* line 351, ../sass/core/_layout.scss */
+  .mb-w--0 {
+    margin-bottom: 0em;
+  }
+
+  /* line 352, ../sass/core/_layout.scss */
+  .mb-w--xxs {
+    margin-bottom: 0.5em;
+  }
+
+  /* line 353, ../sass/core/_layout.scss */
+  .mb-w--xs {
+    margin-bottom: 0.75em;
+  }
+
+  /* line 354, ../sass/core/_layout.scss */
+  .mb-w--s {
+    margin-bottom: 1em;
+  }
+
+  /* line 355, ../sass/core/_layout.scss */
+  .mb-w--m {
+    margin-bottom: 1.5em;
+  }
+
+  /* line 356, ../sass/core/_layout.scss */
+  .mb-w--l {
+    margin-bottom: 2.25em;
+  }
+
+  /* line 357, ../sass/core/_layout.scss */
+  .mb-w--xl {
+    margin-bottom: 3em;
+  }
+
+  /* line 358, ../sass/core/_layout.scss */
+  .mb-w--xxl {
+    margin-bottom: 4.5em;
+  }
+
+  /* line 361, ../sass/core/_layout.scss */
+  .pr-w--0 {
+    padding-right: 0em;
+  }
+
+  /* line 362, ../sass/core/_layout.scss */
+  .pr-w--xxs {
+    padding-right: 0.5em;
+  }
+
+  /* line 363, ../sass/core/_layout.scss */
+  .pr-w--xs {
+    padding-right: 0.75em;
+  }
+
+  /* line 364, ../sass/core/_layout.scss */
+  .pr-w--s {
+    padding-right: 1em;
+  }
+
+  /* line 365, ../sass/core/_layout.scss */
+  .pr-w--m {
+    padding-right: 1.5em;
+  }
+
+  /* line 366, ../sass/core/_layout.scss */
+  .pr-w--l {
+    padding-right: 2.25em;
+  }
+
+  /* line 367, ../sass/core/_layout.scss */
+  .pr-w--xl {
+    padding-right: 3em;
+  }
+
+  /* line 368, ../sass/core/_layout.scss */
+  .pr-w--xxl {
+    padding-right: 4.5em;
+  }
+
+  /* line 371, ../sass/core/_layout.scss */
+  .pl-w--0 {
+    padding-left: 0em;
+  }
+
+  /* line 372, ../sass/core/_layout.scss */
+  .pl-w--xxs {
+    padding-left: 0.5em;
+  }
+
+  /* line 373, ../sass/core/_layout.scss */
+  .pl-w--xs {
+    padding-left: 0.75em;
+  }
+
+  /* line 374, ../sass/core/_layout.scss */
+  .pl-w--s {
+    padding-left: 1em;
+  }
+
+  /* line 375, ../sass/core/_layout.scss */
+  .pl-w--m {
+    padding-left: 1.5em;
+  }
+
+  /* line 376, ../sass/core/_layout.scss */
+  .pl-w--l {
+    padding-left: 2.25em;
+  }
+
+  /* line 377, ../sass/core/_layout.scss */
+  .pl-w--xl {
+    padding-left: 3em;
+  }
+
+  /* line 378, ../sass/core/_layout.scss */
+  .pl-w--xxl {
+    padding-left: 4.5em;
+  }
+
+  /* line 381, ../sass/core/_layout.scss */
+  .pt-w--0 {
+    padding-top: 0em;
+  }
+
+  /* line 382, ../sass/core/_layout.scss */
+  .pt-w--xxs {
+    padding-top: 0.5em;
+  }
+
+  /* line 383, ../sass/core/_layout.scss */
+  .pt-w--xs {
+    padding-top: 0.75em;
+  }
+
+  /* line 384, ../sass/core/_layout.scss */
+  .pt-w--s {
+    padding-top: 1em;
+  }
+
+  /* line 385, ../sass/core/_layout.scss */
+  .pt-w--m {
+    padding-top: 1.5em;
+  }
+
+  /* line 386, ../sass/core/_layout.scss */
+  .pt-w--l {
+    padding-top: 2.25em;
+  }
+
+  /* line 387, ../sass/core/_layout.scss */
+  .pt-w--xl {
+    padding-top: 3em;
+  }
+
+  /* line 388, ../sass/core/_layout.scss */
+  .pt-w--xxl {
+    padding-top: 4.5em;
+  }
+
+  /* line 391, ../sass/core/_layout.scss */
+  .pb-w--0 {
+    padding-bottom: 0em;
+  }
+
+  /* line 392, ../sass/core/_layout.scss */
+  .pb-w--xxs {
+    padding-bottom: 0.5em;
+  }
+
+  /* line 393, ../sass/core/_layout.scss */
+  .pb-w--xs {
+    padding-bottom: 0.75em;
+  }
+
+  /* line 394, ../sass/core/_layout.scss */
+  .pb-w--s {
+    padding-bottom: 1em;
+  }
+
+  /* line 395, ../sass/core/_layout.scss */
+  .pb-w--m {
+    padding-bottom: 1.5em;
+  }
+
+  /* line 396, ../sass/core/_layout.scss */
+  .pb-w--l {
+    padding-bottom: 2.25em;
+  }
+
+  /* line 397, ../sass/core/_layout.scss */
+  .pb-w--xl {
+    padding-bottom: 3em;
+  }
+
+  /* line 398, ../sass/core/_layout.scss */
+  .pb-w--xxl {
+    padding-bottom: 4.5em;
+  }
+}
+@media only screen and (min-width: 31em) and (max-width: 48em) {
+  /* line 405, ../sass/core/_layout.scss */
+  .mr-s--0 {
+    margin-right: 0em;
+  }
+
+  /* line 406, ../sass/core/_layout.scss */
+  .mr-s--xxxs {
+    margin-right: 0.375em;
+  }
+
+  /* line 407, ../sass/core/_layout.scss */
+  .mr-s--xxs {
+    margin-right: 0.5em;
+  }
+
+  /* line 408, ../sass/core/_layout.scss */
+  .mr-s--xs {
+    margin-right: 0.75em;
+  }
+
+  /* line 409, ../sass/core/_layout.scss */
+  .mr-s--s {
+    margin-right: 1em;
+  }
+
+  /* line 410, ../sass/core/_layout.scss */
+  .mr-s--m {
+    margin-right: 1.5em;
+  }
+
+  /* line 411, ../sass/core/_layout.scss */
+  .mr-s--l {
+    margin-right: 2.25em;
+  }
+
+  /* line 412, ../sass/core/_layout.scss */
+  .mr-s--xl {
+    margin-right: 3em;
+  }
+
+  /* line 413, ../sass/core/_layout.scss */
+  .mr-s--xxl {
+    margin-right: 4.5em;
+  }
+
+  /* line 414, ../sass/core/_layout.scss */
+  .mr-s--xxxl {
+    margin-right: 6em;
+  }
+
+  /* line 418, ../sass/core/_layout.scss */
+  .ml-s--0 {
+    margin-left: 0em;
+  }
+
+  /* line 419, ../sass/core/_layout.scss */
+  .ml-s--xxxs {
+    margin-left: 0.375em;
+  }
+
+  /* line 420, ../sass/core/_layout.scss */
+  .ml-s--xxs {
+    margin-left: 0.5em;
+  }
+
+  /* line 421, ../sass/core/_layout.scss */
+  .ml-s--xs {
+    margin-left: 0.75em;
+  }
+
+  /* line 422, ../sass/core/_layout.scss */
+  .ml-s--s {
+    margin-left: 1em;
+  }
+
+  /* line 423, ../sass/core/_layout.scss */
+  .ml-s--m {
+    margin-left: 1.5em;
+  }
+
+  /* line 424, ../sass/core/_layout.scss */
+  .ml-s--l {
+    margin-left: 2.25em;
+  }
+
+  /* line 425, ../sass/core/_layout.scss */
+  .ml-s--xl {
+    margin-left: 3em;
+  }
+
+  /* line 426, ../sass/core/_layout.scss */
+  .ml-s--xxl {
+    margin-left: 4.5em;
+  }
+
+  /* line 427, ../sass/core/_layout.scss */
+  .ml-s--xxxl {
+    margin-left: 6em;
+  }
+
+  /* line 430, ../sass/core/_layout.scss */
+  .mt-s--0 {
+    margin-top: 0em;
+  }
+
+  /* line 431, ../sass/core/_layout.scss */
+  .mt-s--xxxs {
+    margin-top: 0.375em;
+  }
+
+  /* line 432, ../sass/core/_layout.scss */
+  .mt-s--xxs {
+    margin-top: 0.5em;
+  }
+
+  /* line 433, ../sass/core/_layout.scss */
+  .mt-s--xs {
+    margin-top: 0.75em;
+  }
+
+  /* line 434, ../sass/core/_layout.scss */
+  .mt-s--s {
+    margin-top: 1em;
+  }
+
+  /* line 435, ../sass/core/_layout.scss */
+  .mt-s--m {
+    margin-top: 1.5em;
+  }
+
+  /* line 436, ../sass/core/_layout.scss */
+  .mt-s--l {
+    margin-top: 2.25em;
+  }
+
+  /* line 437, ../sass/core/_layout.scss */
+  .mt-s--xl {
+    margin-top: 3em;
+  }
+
+  /* line 438, ../sass/core/_layout.scss */
+  .mt-s--xxl {
+    margin-top: 4.5em;
+  }
+
+  /* line 439, ../sass/core/_layout.scss */
+  .mt-s--xxxl {
+    margin-top: 6em;
+  }
+
+  /* line 442, ../sass/core/_layout.scss */
+  .mb-s--0 {
+    margin-bottom: 0em;
+  }
+
+  /* line 443, ../sass/core/_layout.scss */
+  .mb-s--xxxs {
+    margin-bottom: 0.375em;
+  }
+
+  /* line 444, ../sass/core/_layout.scss */
+  .mb-s--xxs {
+    margin-bottom: 0.5em;
+  }
+
+  /* line 445, ../sass/core/_layout.scss */
+  .mb-s--xs {
+    margin-bottom: 0.75em;
+  }
+
+  /* line 446, ../sass/core/_layout.scss */
+  .mb-s--s {
+    margin-bottom: 1em;
+  }
+
+  /* line 447, ../sass/core/_layout.scss */
+  .mb-s--m {
+    margin-bottom: 1.5em;
+  }
+
+  /* line 448, ../sass/core/_layout.scss */
+  .mb-s--l {
+    margin-bottom: 2.25em;
+  }
+
+  /* line 449, ../sass/core/_layout.scss */
+  .mb-s--xl {
+    margin-bottom: 3em;
+  }
+
+  /* line 450, ../sass/core/_layout.scss */
+  .mb-s--xxl {
+    margin-bottom: 4.5em;
+  }
+
+  /* line 451, ../sass/core/_layout.scss */
+  .mb-s--xxxl {
+    margin-bottom: 6em;
+  }
+
+  /* line 454, ../sass/core/_layout.scss */
+  .pr-s--0 {
+    padding-right: 0em;
+  }
+
+  /* line 455, ../sass/core/_layout.scss */
+  .pr-s--xxxs {
+    padding-right: 0.375em;
+  }
+
+  /* line 456, ../sass/core/_layout.scss */
+  .pr-s--xxs {
+    padding-right: 0.5em;
+  }
+
+  /* line 457, ../sass/core/_layout.scss */
+  .pr-s--xs {
+    padding-right: 0.75em;
+  }
+
+  /* line 458, ../sass/core/_layout.scss */
+  .pr-s--s {
+    padding-right: 1em;
+  }
+
+  /* line 459, ../sass/core/_layout.scss */
+  .pr-s--m {
+    padding-right: 1.5em;
+  }
+
+  /* line 460, ../sass/core/_layout.scss */
+  .pr-s--l {
+    padding-right: 2.25em;
+  }
+
+  /* line 461, ../sass/core/_layout.scss */
+  .pr-s--xl {
+    padding-right: 3em;
+  }
+
+  /* line 462, ../sass/core/_layout.scss */
+  .pr-s--xxl {
+    padding-right: 4.5em;
+  }
+
+  /* line 463, ../sass/core/_layout.scss */
+  .pr-s--xxxl {
+    padding-right: 6em;
+  }
+
+  /* line 466, ../sass/core/_layout.scss */
+  .pl-s--0 {
+    padding-left: 0em;
+  }
+
+  /* line 467, ../sass/core/_layout.scss */
+  .pl-s--xxxs {
+    padding-left: 0.375em;
+  }
+
+  /* line 468, ../sass/core/_layout.scss */
+  .pl-s--xxs {
+    padding-left: 0.5em;
+  }
+
+  /* line 469, ../sass/core/_layout.scss */
+  .pl-s--xs {
+    padding-left: 0.75em;
+  }
+
+  /* line 470, ../sass/core/_layout.scss */
+  .pl-s--s {
+    padding-left: 1em;
+  }
+
+  /* line 471, ../sass/core/_layout.scss */
+  .pl-s--m {
+    padding-left: 1.5em;
+  }
+
+  /* line 472, ../sass/core/_layout.scss */
+  .pl-s--l {
+    padding-left: 2.25em;
+  }
+
+  /* line 473, ../sass/core/_layout.scss */
+  .pl-s--xl {
+    padding-left: 3em;
+  }
+
+  /* line 474, ../sass/core/_layout.scss */
+  .pl-s--xxl {
+    padding-left: 4.5em;
+  }
+
+  /* line 475, ../sass/core/_layout.scss */
+  .pl-s--xxxl {
+    padding-left: 6em;
+  }
+
+  /* line 478, ../sass/core/_layout.scss */
+  .pt-s--0 {
+    padding-top: 0em;
+  }
+
+  /* line 479, ../sass/core/_layout.scss */
+  .pt-s--xxs {
+    padding-top: 0.375em;
+  }
+
+  /* line 480, ../sass/core/_layout.scss */
+  .pt-s--xxs {
+    padding-top: 0.5em;
+  }
+
+  /* line 481, ../sass/core/_layout.scss */
+  .pt-s--xs {
+    padding-top: 0.75em;
+  }
+
+  /* line 482, ../sass/core/_layout.scss */
+  .pt-s--s {
+    padding-top: 1em;
+  }
+
+  /* line 483, ../sass/core/_layout.scss */
+  .pt-s--m {
+    padding-top: 1.5em;
+  }
+
+  /* line 484, ../sass/core/_layout.scss */
+  .pt-s--l {
+    padding-top: 2.25em;
+  }
+
+  /* line 485, ../sass/core/_layout.scss */
+  .pt-s--xl {
+    padding-top: 3em;
+  }
+
+  /* line 486, ../sass/core/_layout.scss */
+  .pt-s--xxl {
+    padding-top: 4.5em;
+  }
+
+  /* line 487, ../sass/core/_layout.scss */
+  .pt-s--xxxl {
+    padding-top: 6em;
+  }
+
+  /* line 490, ../sass/core/_layout.scss */
+  .pb-s--0 {
+    padding-bottom: 0em;
+  }
+
+  /* line 491, ../sass/core/_layout.scss */
+  .pb-s--xxxs {
+    padding-bottom: 0.375em;
+  }
+
+  /* line 492, ../sass/core/_layout.scss */
+  .pb-s--xxs {
+    padding-bottom: 0.5em;
+  }
+
+  /* line 493, ../sass/core/_layout.scss */
+  .pb-s--xs {
+    padding-bottom: 0.75em;
+  }
+
+  /* line 494, ../sass/core/_layout.scss */
+  .pb-s--s {
+    padding-bottom: 1em;
+  }
+
+  /* line 495, ../sass/core/_layout.scss */
+  .pb-s--m {
+    padding-bottom: 1.5em;
+  }
+
+  /* line 496, ../sass/core/_layout.scss */
+  .pb-s--l {
+    padding-bottom: 2.25em;
+  }
+
+  /* line 497, ../sass/core/_layout.scss */
+  .pb-s--xl {
+    padding-bottom: 3em;
+  }
+
+  /* line 498, ../sass/core/_layout.scss */
+  .pb-s--xxl {
+    padding-bottom: 4.5em;
+  }
+
+  /* line 499, ../sass/core/_layout.scss */
+  .pb-s--xxxl {
+    padding-bottom: 6em;
+  }
+}
+@media only screen and (max-width: 30em) {
+  /* line 507, ../sass/core/_layout.scss */
+  .mr-m--0 {
+    margin-right: 0em;
+  }
+
+  /* line 508, ../sass/core/_layout.scss */
+  .mr-m--xxs {
+    margin-right: 0.375em;
+  }
+
+  /* line 509, ../sass/core/_layout.scss */
+  .mr-m--xxs {
+    margin-right: 0.5em;
+  }
+
+  /* line 510, ../sass/core/_layout.scss */
+  .mr-m--xs {
+    margin-right: 0.75em;
+  }
+
+  /* line 511, ../sass/core/_layout.scss */
+  .mr-m--s {
+    margin-right: 1em;
+  }
+
+  /* line 512, ../sass/core/_layout.scss */
+  .mr-m--m {
+    margin-right: 1.5em;
+  }
+
+  /* line 513, ../sass/core/_layout.scss */
+  .mr-m--l {
+    margin-right: 2.25em;
+  }
+
+  /* line 514, ../sass/core/_layout.scss */
+  .mr-m--xl {
+    margin-right: 3em;
+  }
+
+  /* line 515, ../sass/core/_layout.scss */
+  .mr-m--xxl {
+    margin-right: 4.5em;
+  }
+
+  /* line 516, ../sass/core/_layout.scss */
+  .mr-m--xxxl {
+    margin-right: 6em;
+  }
+
+  /* line 520, ../sass/core/_layout.scss */
+  .ml-m--0 {
+    margin-left: 0em;
+  }
+
+  /* line 521, ../sass/core/_layout.scss */
+  .ml-m--xxs {
+    margin-left: 0.375em;
+  }
+
+  /* line 522, ../sass/core/_layout.scss */
+  .ml-m--xxs {
+    margin-left: 0.5em;
+  }
+
+  /* line 523, ../sass/core/_layout.scss */
+  .ml-m--xs {
+    margin-left: 0.75em;
+  }
+
+  /* line 524, ../sass/core/_layout.scss */
+  .ml-m--s {
+    margin-left: 1em;
+  }
+
+  /* line 525, ../sass/core/_layout.scss */
+  .ml-m--m {
+    margin-left: 1.5em;
+  }
+
+  /* line 526, ../sass/core/_layout.scss */
+  .ml-m--l {
+    margin-left: 2.25em;
+  }
+
+  /* line 527, ../sass/core/_layout.scss */
+  .ml-m--xl {
+    margin-left: 3em;
+  }
+
+  /* line 528, ../sass/core/_layout.scss */
+  .ml-m--xxl {
+    margin-left: 4.5em;
+  }
+
+  /* line 529, ../sass/core/_layout.scss */
+  .ml-m--xxl {
+    margin-left: 6em;
+  }
+
+  /* line 532, ../sass/core/_layout.scss */
+  .mt-m--0 {
+    margin-top: 0em;
+  }
+
+  /* line 533, ../sass/core/_layout.scss */
+  .mt-m--xxxs {
+    margin-top: 0.375em;
+  }
+
+  /* line 534, ../sass/core/_layout.scss */
+  .mt-m--xxs {
+    margin-top: 0.5em;
+  }
+
+  /* line 535, ../sass/core/_layout.scss */
+  .mt-m--xs {
+    margin-top: 0.75em;
+  }
+
+  /* line 536, ../sass/core/_layout.scss */
+  .mt-m--s {
+    margin-top: 1em;
+  }
+
+  /* line 537, ../sass/core/_layout.scss */
+  .mt-m--m {
+    margin-top: 1.5em;
+  }
+
+  /* line 538, ../sass/core/_layout.scss */
+  .mt-m--l {
+    margin-top: 2.25em;
+  }
+
+  /* line 539, ../sass/core/_layout.scss */
+  .mt-m--xl {
+    margin-top: 3em;
+  }
+
+  /* line 540, ../sass/core/_layout.scss */
+  .mt-m--xxl {
+    margin-top: 4.5em;
+  }
+
+  /* line 541, ../sass/core/_layout.scss */
+  .mt-m--xxxl {
+    margin-top: 6em;
+  }
+
+  /* line 544, ../sass/core/_layout.scss */
+  .mb-m--0 {
+    margin-bottom: 0em;
+  }
+
+  /* line 545, ../sass/core/_layout.scss */
+  .mb-m--xxs {
+    margin-bottom: 0.375em;
+  }
+
+  /* line 546, ../sass/core/_layout.scss */
+  .mb-m--xxs {
+    margin-bottom: 0.5em;
+  }
+
+  /* line 547, ../sass/core/_layout.scss */
+  .mb-m--xs {
+    margin-bottom: 0.75em;
+  }
+
+  /* line 548, ../sass/core/_layout.scss */
+  .mb-m--s {
+    margin-bottom: 1em;
+  }
+
+  /* line 549, ../sass/core/_layout.scss */
+  .mb-m--m {
+    margin-bottom: 1.5em;
+  }
+
+  /* line 550, ../sass/core/_layout.scss */
+  .mb-m--l {
+    margin-bottom: 2.25em;
+  }
+
+  /* line 551, ../sass/core/_layout.scss */
+  .mb-m--xl {
+    margin-bottom: 3em;
+  }
+
+  /* line 552, ../sass/core/_layout.scss */
+  .mb-m--xxl {
+    margin-bottom: 4.5em;
+  }
+
+  /* line 553, ../sass/core/_layout.scss */
+  .mb-m--xxxl {
+    margin-bottom: 6em;
+  }
+
+  /* line 556, ../sass/core/_layout.scss */
+  .pr-m--0 {
+    padding-right: 0em;
+  }
+
+  /* line 557, ../sass/core/_layout.scss */
+  .pr-m--xxs {
+    padding-right: 0.375em;
+  }
+
+  /* line 558, ../sass/core/_layout.scss */
+  .pr-m--xxs {
+    padding-right: 0.5em;
+  }
+
+  /* line 559, ../sass/core/_layout.scss */
+  .pr-m--xs {
+    padding-right: 0.75em;
+  }
+
+  /* line 560, ../sass/core/_layout.scss */
+  .pr-m--s {
+    padding-right: 1em;
+  }
+
+  /* line 561, ../sass/core/_layout.scss */
+  .pr-m--m {
+    padding-right: 1.5em;
+  }
+
+  /* line 562, ../sass/core/_layout.scss */
+  .pr-m--l {
+    padding-right: 2.25em;
+  }
+
+  /* line 563, ../sass/core/_layout.scss */
+  .pr-m--xl {
+    padding-right: 3em;
+  }
+
+  /* line 564, ../sass/core/_layout.scss */
+  .pr-m--xxl {
+    padding-right: 4.5em;
+  }
+
+  /* line 565, ../sass/core/_layout.scss */
+  .pr-m--xxxl {
+    padding-right: 6em;
+  }
+
+  /* line 568, ../sass/core/_layout.scss */
+  .pl-m--0 {
+    padding-left: 0em;
+  }
+
+  /* line 569, ../sass/core/_layout.scss */
+  .pl-m--xxxs {
+    padding-left: 0.375em;
+  }
+
+  /* line 570, ../sass/core/_layout.scss */
+  .pl-m--xxs {
+    padding-left: 0.5em;
+  }
+
+  /* line 571, ../sass/core/_layout.scss */
+  .pl-m--xs {
+    padding-left: 0.75em;
+  }
+
+  /* line 572, ../sass/core/_layout.scss */
+  .pl-m--s {
+    padding-left: 1em;
+  }
+
+  /* line 573, ../sass/core/_layout.scss */
+  .pl-m--m {
+    padding-left: 1.5em;
+  }
+
+  /* line 574, ../sass/core/_layout.scss */
+  .pl-m--l {
+    padding-left: 2.25em;
+  }
+
+  /* line 575, ../sass/core/_layout.scss */
+  .pl-m--xl {
+    padding-left: 3em;
+  }
+
+  /* line 576, ../sass/core/_layout.scss */
+  .pl-m--xxl {
+    padding-left: 4.5em;
+  }
+
+  /* line 577, ../sass/core/_layout.scss */
+  .pl-m--xxxl {
+    padding-left: 6em;
+  }
+
+  /* line 580, ../sass/core/_layout.scss */
+  .pt-m--0 {
+    padding-top: 0em;
+  }
+
+  /* line 581, ../sass/core/_layout.scss */
+  .pt-m--xxxs {
+    padding-top: 0.375em;
+  }
+
+  /* line 582, ../sass/core/_layout.scss */
+  .pt-m--xxs {
+    padding-top: 0.5em;
+  }
+
+  /* line 583, ../sass/core/_layout.scss */
+  .pt-m--xs {
+    padding-top: 0.75em;
+  }
+
+  /* line 584, ../sass/core/_layout.scss */
+  .pt-m--s {
+    padding-top: 1em;
+  }
+
+  /* line 585, ../sass/core/_layout.scss */
+  .pt-m--m {
+    padding-top: 1.5em;
+  }
+
+  /* line 586, ../sass/core/_layout.scss */
+  .pt-m--l {
+    padding-top: 2.25em;
+  }
+
+  /* line 587, ../sass/core/_layout.scss */
+  .pt-m--xl {
+    padding-top: 3em;
+  }
+
+  /* line 588, ../sass/core/_layout.scss */
+  .pt-m--xxl {
+    padding-top: 4.5em;
+  }
+
+  /* line 589, ../sass/core/_layout.scss */
+  .pt-m--xxxl {
+    padding-top: 6em;
+  }
+
+  /* line 592, ../sass/core/_layout.scss */
+  .pb-m--0 {
+    padding-bottom: 0em;
+  }
+
+  /* line 593, ../sass/core/_layout.scss */
+  .pb-m--xxxs {
+    padding-bottom: 0.375em;
+  }
+
+  /* line 594, ../sass/core/_layout.scss */
+  .pb-m--xxs {
+    padding-bottom: 0.5em;
+  }
+
+  /* line 595, ../sass/core/_layout.scss */
+  .pb-m--xs {
+    padding-bottom: 0.75em;
+  }
+
+  /* line 596, ../sass/core/_layout.scss */
+  .pb-m--s {
+    padding-bottom: 1em;
+  }
+
+  /* line 597, ../sass/core/_layout.scss */
+  .pb-m--m {
+    padding-bottom: 1.5em;
+  }
+
+  /* line 598, ../sass/core/_layout.scss */
+  .pb-m--l {
+    padding-bottom: 2.25em;
+  }
+
+  /* line 599, ../sass/core/_layout.scss */
+  .pb-m--xl {
+    padding-bottom: 3em;
+  }
+
+  /* line 600, ../sass/core/_layout.scss */
+  .pb-m--xxl {
+    padding-bottom: 4.5em;
+  }
+
+  /* line 601, ../sass/core/_layout.scss */
+  .pb-m--xxxl {
+    padding-bottom: 6em;
+  }
+}
+/* line 606, ../sass/core/_layout.scss */
 .overflow-hidden, .media__body, .media--rev > .media__body {
   overflow: hidden;
 }
@@ -1280,23 +2490,23 @@ li, code {
 	</div>
  </div>
  */
-/* line 253, ../sass/core/_layout.scss */
+/* line 622, ../sass/core/_layout.scss */
 .media {
   margin-top: 1.5em;
 }
 
-/* line 258, ../sass/core/_layout.scss */
+/* line 627, ../sass/core/_layout.scss */
 .media__image {
   float: left;
   margin-right: 1.5em;
 }
 
-/* line 267, ../sass/core/_layout.scss */
+/* line 636, ../sass/core/_layout.scss */
 .media--rev {
   margin-top: 1.5em;
 }
 
-/* line 272, ../sass/core/_layout.scss */
+/* line 641, ../sass/core/_layout.scss */
 .media--rev > .media__image {
   float: right;
   margin-left: 1.5em;
@@ -1311,7 +2521,7 @@ li, code {
  * [3] A fix for Internet Explorer 8/9
  * 
  */
-/* line 293, ../sass/core/_layout.scss */
+/* line 662, ../sass/core/_layout.scss */
 .grid {
   text-align: justify;
   /* [1] */
@@ -1321,14 +2531,14 @@ li, code {
   /* [3] */
 }
 
-/* line 305, ../sass/core/_layout.scss */
+/* line 674, ../sass/core/_layout.scss */
 .grid__item, .grid > * {
   font-size: 14px;
   text-align: left;
   vertical-align: top;
 }
 
-/* line 314, ../sass/core/_layout.scss */
+/* line 683, ../sass/core/_layout.scss */
 .grid:after,
 .grid__break {
   content: '';
@@ -1339,56 +2549,184 @@ li, code {
 /**
  * Vertical align these grid items in the middle!
  */
-/* line 324, ../sass/core/_layout.scss */
+/* line 693, ../sass/core/_layout.scss */
 .grid--middle > .grid__item, .grid.grid--middle > * {
   vertical-align: middle;
 }
 
-/* line 327, ../sass/core/_layout.scss */
+/* line 696, ../sass/core/_layout.scss */
 .g--1-1 {
   width: 100%;
 }
 
-/* line 330, ../sass/core/_layout.scss */
+/* line 699, ../sass/core/_layout.scss */
 .g--1-2 {
   width: 50%;
 }
 
-/* line 333, ../sass/core/_layout.scss */
+/* line 702, ../sass/core/_layout.scss */
 .g--1-3 {
   width: 33%;
 }
 
-/* line 336, ../sass/core/_layout.scss */
+/* line 705, ../sass/core/_layout.scss */
 .g--1-4 {
   width: 25%;
 }
 
-/* line 339, ../sass/core/_layout.scss */
+/* line 708, ../sass/core/_layout.scss */
 .g--3-4 {
   width: 75%;
 }
 
-/* line 344, ../sass/core/_layout.scss */
+/* line 713, ../sass/core/_layout.scss */
 .g--60 {
   width: 60%;
 }
 
-/* line 347, ../sass/core/_layout.scss */
+/* line 716, ../sass/core/_layout.scss */
 .g--40 {
   width: 40%;
 }
 
-/* line 350, ../sass/core/_layout.scss */
+/* line 719, ../sass/core/_layout.scss */
 .g--80 {
   width: 80%;
 }
 
-/* line 353, ../sass/core/_layout.scss */
+/* line 722, ../sass/core/_layout.scss */
 .g--20 {
   width: 20%;
 }
 
+/**
+ * Grid - this is used with the inline grid in interim.scss .grid and .grid__item etc
+ * I changed the names so they relate to the breakpoints above 
+ * ----------------------------------------------------------------------------
+ */
+@media only screen and (min-width: 75em) {
+  /* line 742, ../sass/core/_layout.scss */
+  .g-w--1-1 {
+    width: 100%;
+  }
+
+  /* line 745, ../sass/core/_layout.scss */
+  .g-w--1-2 {
+    width: 50%;
+  }
+
+  /* line 748, ../sass/core/_layout.scss */
+  .g-w--1-4 {
+    width: 25%;
+  }
+
+  /* line 751, ../sass/core/_layout.scss */
+  .g-w--1-3 {
+    width: 33%;
+  }
+
+  /* line 756, ../sass/core/_layout.scss */
+  .g-w--60 {
+    width: 60%;
+  }
+
+  /* line 759, ../sass/core/_layout.scss */
+  .g-w--40 {
+    width: 40%;
+  }
+
+  /* line 762, ../sass/core/_layout.scss */
+  .g-w--80 {
+    width: 80%;
+  }
+
+  /* line 765, ../sass/core/_layout.scss */
+  .g-w--20 {
+    width: 20%;
+  }
+}
+@media only screen and (min-width: 31em) and (max-width: 48em) {
+  /* line 774, ../sass/core/_layout.scss */
+  .g-s--1-1 {
+    width: 100%;
+  }
+
+  /* line 777, ../sass/core/_layout.scss */
+  .g-s--1-2 {
+    width: 50%;
+  }
+
+  /* line 780, ../sass/core/_layout.scss */
+  .g-s--1-4 {
+    width: 25%;
+  }
+
+  /* line 783, ../sass/core/_layout.scss */
+  .g-s--1-3 {
+    width: 33%;
+  }
+
+  /* line 788, ../sass/core/_layout.scss */
+  .g-s--60 {
+    width: 60%;
+  }
+
+  /* line 791, ../sass/core/_layout.scss */
+  .g-s--40 {
+    width: 40%;
+  }
+
+  /* line 794, ../sass/core/_layout.scss */
+  .g-s--80 {
+    width: 80%;
+  }
+
+  /* line 797, ../sass/core/_layout.scss */
+  .g-s--20 {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 30em) {
+  /* line 806, ../sass/core/_layout.scss */
+  .g-m--1-1 {
+    width: 100%;
+  }
+
+  /* line 809, ../sass/core/_layout.scss */
+  .g-m--1-2 {
+    width: 50%;
+  }
+
+  /* line 812, ../sass/core/_layout.scss */
+  .g-m--1-4 {
+    width: 25%;
+  }
+
+  /* line 815, ../sass/core/_layout.scss */
+  .g-m--1-3 {
+    width: 33%;
+  }
+
+  /* line 820, ../sass/core/_layout.scss */
+  .g-m--60 {
+    width: 60%;
+  }
+
+  /* line 823, ../sass/core/_layout.scss */
+  .g-m--40 {
+    width: 40%;
+  }
+
+  /* line 826, ../sass/core/_layout.scss */
+  .g-m--80 {
+    width: 80%;
+  }
+
+  /* line 829, ../sass/core/_layout.scss */
+  .g-m--20 {
+    width: 20%;
+  }
+}
 /**
  * Append vs Prepend
  * ----------------------------------------------------------------------------
@@ -1397,7 +2735,7 @@ li, code {
  * Place something before an element
  * ----------------------------------------------------------------------------
  */
-/* line 372, ../sass/core/_layout.scss */
+/* line 846, ../sass/core/_layout.scss */
 .prepend:before {
   content: attr(data-prepend);
   display: inline-block;
@@ -1407,7 +2745,7 @@ li, code {
  * Place something after an element
  * ----------------------------------------------------------------------------
  */
-/* line 383, ../sass/core/_layout.scss */
+/* line 857, ../sass/core/_layout.scss */
 .append:after {
   content: attr(data-append);
   display: inline-block;
@@ -1427,7 +2765,7 @@ li, code {
  * </div>
  *
  */
-/* line 406, ../sass/core/_layout.scss */
+/* line 880, ../sass/core/_layout.scss */
 .arrow {
   /*i,span*/
   position: absolute;
@@ -1438,35 +2776,35 @@ li, code {
   border-width: .4em;
 }
 
-/* line 416, ../sass/core/_layout.scss */
+/* line 890, ../sass/core/_layout.scss */
 .arrow-top {
   border-top-width: 0;
   border-bottom-color: inherit;
   top: -0.4em;
 }
 
-/* line 422, ../sass/core/_layout.scss */
+/* line 896, ../sass/core/_layout.scss */
 .arrow-bottom {
   border-bottom-width: 0;
   border-top-color: inherit;
   bottom: -0.4em;
 }
 
-/* line 428, ../sass/core/_layout.scss */
+/* line 902, ../sass/core/_layout.scss */
 .arrow-left {
   border-left-width: 0;
   border-right-color: inherit;
   left: -0.4em;
 }
 
-/* line 434, ../sass/core/_layout.scss */
+/* line 908, ../sass/core/_layout.scss */
 .arrow-right {
   border-right-width: 0;
   border-left-color: inherit;
   right: -0.4em;
 }
 
-/* line 443, ../sass/core/_layout.scss */
+/* line 917, ../sass/core/_layout.scss */
 .arrow--left,
 .arrow--right,
 .arrow--side,
@@ -1475,7 +2813,7 @@ li, code {
   position: relative;
 }
 
-/* line 447, ../sass/core/_layout.scss */
+/* line 921, ../sass/core/_layout.scss */
 .arrow--center .arrow {
   left: 0;
   right: 0;
@@ -1483,17 +2821,17 @@ li, code {
   margin-right: auto;
 }
 
-/* line 454, ../sass/core/_layout.scss */
+/* line 928, ../sass/core/_layout.scss */
 .arrow--left .arrow {
   left: 1.5em;
 }
 
-/* line 458, ../sass/core/_layout.scss */
+/* line 932, ../sass/core/_layout.scss */
 .arrow--right .arrow {
   right: 1.5em;
 }
 
-/* line 462, ../sass/core/_layout.scss */
+/* line 936, ../sass/core/_layout.scss */
 .arrow--side .arrow {
   top: 1.5em;
 }
@@ -1502,27 +2840,102 @@ li, code {
  * Icon block 
  * ----------------------------------------------------------------------------
  */
-/* line 472, ../sass/core/_layout.scss */
+/* line 946, ../sass/core/_layout.scss */
 .icon-text,
 .icon-text--rev {
   /* a, div, etc */
   display: inline-block;
 }
 
-/* line 477, ../sass/core/_layout.scss */
+/* line 951, ../sass/core/_layout.scss */
 .i {
   overflow: hidden;
   /* for IE6 */
   vertical-align: middle;
   /* SMACSS line-height: 0; ? */
 }
-/* line 482, ../sass/core/_layout.scss */
+/* line 956, ../sass/core/_layout.scss */
 .icon-text .i, .btn--icon .i {
   margin-right: 0.5em;
 }
-/* line 487, ../sass/core/_layout.scss */
+/* line 961, ../sass/core/_layout.scss */
 .icon-text--rev .i, .btn--icon-rev .i {
   margin-left: 0.5em;
+}
+
+/**
+*  Responsive images
+* -----------------------------------------------------------------------------
+*/
+/**
+ * Responsive images <img src="..." class="img--responsive" alt="Responsive image">
+
+ * ----------------------------------------------------------------------------
+ */
+/* line 977, ../sass/core/_layout.scss */
+.img--responsive {
+  height: auto;
+  max-width: 100%;
+}
+
+/* line 984, ../sass/core/_layout.scss */
+.hidden-mobile, .hidden-skinny, .hidden-wide {
+  display: block !important;
+}
+
+/* line 985, ../sass/core/_layout.scss */
+.visible-mobile, .visible-skinny, .visible-wide {
+  display: none !important;
+}
+
+/**
+ * 1. Visible classes
+ * -----------------------------------------------------------------------------
+ */
+@media only screen and (max-width: 30em) {
+  /* line 992, ../sass/core/_layout.scss */
+  .visible-mobile {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 31em) and (max-width: 48em) {
+  /* line 1000, ../sass/core/_layout.scss */
+  .visible-skinny {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  /* line 1012, ../sass/core/_layout.scss */
+  .visible-wide {
+    display: block !important;
+  }
+}
+
+/**
+ * 1. hidden classes
+ * -----------------------------------------------------------------------------
+ */
+@media only screen and (max-width: 30em) {
+  /* line 1024, ../sass/core/_layout.scss */
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 31em) and (max-width: 48em) {
+  /* line 1032, ../sass/core/_layout.scss */
+  .hidden-skinny {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  /* line 1044, ../sass/core/_layout.scss */
+  .hidden-wide {
+    display: none !important;
+  }
 }
 
 /**
@@ -2337,1462 +3750,6 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   width: 40px;
   height: 40px;
   display: inline-block;
-}
-
-/**
- *
- * Responsive helpers
- *
- * ----------------------------------------------------------------------------
- * 
- * Structure:
- *
- *      1. Responsive images
- *
- *
- *
- * ----------------------------------------------------------------------------
- *
- */
-/**
- * 1. Responsive images
- * -----------------------------------------------------------------------------
- */
-/**
- * Responsive images <img src="..." class="img--responsive" alt="Responsive image">
-
- * ----------------------------------------------------------------------------
- */
-/* line 29, ../sass/core/_responsive.scss */
-.img--responsive {
-  height: auto;
-  max-width: 100%;
-}
-
-/*http://getbootstrap.com/css/#responsive-utilities*/
-/**
-     * breakpoints
-     * ----------------------------------------------------------------------------
-*/
-/* line 47, ../sass/core/_responsive.scss */
-.kb-gird-section {
-  max-width: 1016px;
-  background-color: #FFFFFF;
-}
-@media only screen and (max-width: 30em) {
-  /* line 47, ../sass/core/_responsive.scss */
-  .kb-gird-section {
-    max-width: 600px;
-  }
-}
-@media only screen and (min-width: 31em) and (max-width: 48em) {
-  /* line 47, ../sass/core/_responsive.scss */
-  .kb-gird-section {
-    max-width: 736px;
-  }
-}
-@media only screen and (min-width: 75em) {
-  /* line 47, ../sass/core/_responsive.scss */
-  .kb-gird-section {
-    max-width: 1252px;
-  }
-}
-
-/**
- * Grid - this is used with the inline grid in interim.scss .grid and .grid__item etc
- * I changed the names so they relate to the breakpoints above 
- * ----------------------------------------------------------------------------
- */
-@media only screen and (min-width: 75em) {
-  /* line 78, ../sass/core/_responsive.scss */
-  .g-w--1-1 {
-    width: 100%;
-  }
-
-  /* line 81, ../sass/core/_responsive.scss */
-  .g-w--1-2 {
-    width: 50%;
-  }
-
-  /* line 84, ../sass/core/_responsive.scss */
-  .g-w--1-4 {
-    width: 25%;
-  }
-
-  /* line 87, ../sass/core/_responsive.scss */
-  .g-w--1-3 {
-    width: 33%;
-  }
-
-  /* line 92, ../sass/core/_responsive.scss */
-  .g-w--60 {
-    width: 60%;
-  }
-
-  /* line 95, ../sass/core/_responsive.scss */
-  .g-w--40 {
-    width: 40%;
-  }
-
-  /* line 98, ../sass/core/_responsive.scss */
-  .g-w--80 {
-    width: 80%;
-  }
-
-  /* line 101, ../sass/core/_responsive.scss */
-  .g-w--20 {
-    width: 20%;
-  }
-}
-@media only screen and (min-width: 31em) and (max-width: 48em) {
-  /* line 110, ../sass/core/_responsive.scss */
-  .g-s--1-1 {
-    width: 100%;
-  }
-
-  /* line 113, ../sass/core/_responsive.scss */
-  .g-s--1-2 {
-    width: 50%;
-  }
-
-  /* line 116, ../sass/core/_responsive.scss */
-  .g-s--1-4 {
-    width: 25%;
-  }
-
-  /* line 119, ../sass/core/_responsive.scss */
-  .g-s--1-3 {
-    width: 33%;
-  }
-
-  /* line 124, ../sass/core/_responsive.scss */
-  .g-s--60 {
-    width: 60%;
-  }
-
-  /* line 127, ../sass/core/_responsive.scss */
-  .g-s--40 {
-    width: 40%;
-  }
-
-  /* line 130, ../sass/core/_responsive.scss */
-  .g-s--80 {
-    width: 80%;
-  }
-
-  /* line 133, ../sass/core/_responsive.scss */
-  .g-s--20 {
-    width: 20%;
-  }
-}
-@media only screen and (max-width: 30em) {
-  /* line 142, ../sass/core/_responsive.scss */
-  .g-m--1-1 {
-    width: 100%;
-  }
-
-  /* line 145, ../sass/core/_responsive.scss */
-  .g-m--1-2 {
-    width: 50%;
-  }
-
-  /* line 148, ../sass/core/_responsive.scss */
-  .g-m--1-4 {
-    width: 25%;
-  }
-
-  /* line 151, ../sass/core/_responsive.scss */
-  .g-m--1-3 {
-    width: 33%;
-  }
-
-  /* line 156, ../sass/core/_responsive.scss */
-  .g-m--60 {
-    width: 60%;
-  }
-
-  /* line 159, ../sass/core/_responsive.scss */
-  .g-m--40 {
-    width: 40%;
-  }
-
-  /* line 162, ../sass/core/_responsive.scss */
-  .g-m--80 {
-    width: 80%;
-  }
-
-  /* line 165, ../sass/core/_responsive.scss */
-  .g-m--20 {
-    width: 20%;
-  }
-}
-/**
- * Grid - Padding classes that relate to the grid breakpoints 
- * ----------------------------------------------------------------------------
- */
-@media only screen and (min-width: 75em) {
-  /* line 179, ../sass/core/_responsive.scss */
-  .mr-w--0 {
-    margin-right: 0em;
-  }
-
-  /* line 180, ../sass/core/_responsive.scss */
-  .mr-w--xxs {
-    margin-right: 0.5em;
-  }
-
-  /* line 181, ../sass/core/_responsive.scss */
-  .mr-w--xs {
-    margin-right: 0.75em;
-  }
-
-  /* line 182, ../sass/core/_responsive.scss */
-  .mr-w--s {
-    margin-right: 1em;
-  }
-
-  /* line 183, ../sass/core/_responsive.scss */
-  .mr-w--m {
-    margin-right: 1.5em;
-  }
-
-  /* line 184, ../sass/core/_responsive.scss */
-  .mr-w--l {
-    margin-right: 2.25em;
-  }
-
-  /* line 185, ../sass/core/_responsive.scss */
-  .mr-w--xl {
-    margin-right: 3em;
-  }
-
-  /* line 186, ../sass/core/_responsive.scss */
-  .mr-w--xxl {
-    margin-right: 4.5em;
-  }
-
-  /* line 190, ../sass/core/_responsive.scss */
-  .ml-w--0 {
-    margin-left: 0em;
-  }
-
-  /* line 191, ../sass/core/_responsive.scss */
-  .ml-w--xxs {
-    margin-left: 0.5em;
-  }
-
-  /* line 192, ../sass/core/_responsive.scss */
-  .ml-w--xs {
-    margin-left: 0.75em;
-  }
-
-  /* line 193, ../sass/core/_responsive.scss */
-  .ml-w--s {
-    margin-left: 1em;
-  }
-
-  /* line 194, ../sass/core/_responsive.scss */
-  .ml-w--m {
-    margin-left: 1.5em;
-  }
-
-  /* line 195, ../sass/core/_responsive.scss */
-  .ml-w--l {
-    margin-left: 2.25em;
-  }
-
-  /* line 196, ../sass/core/_responsive.scss */
-  .ml-w--xl {
-    margin-left: 3em;
-  }
-
-  /* line 197, ../sass/core/_responsive.scss */
-  .ml-w--xxl {
-    margin-left: 4.5em;
-  }
-
-  /* line 200, ../sass/core/_responsive.scss */
-  .mt-w--0 {
-    margin-top: 0em;
-  }
-
-  /* line 201, ../sass/core/_responsive.scss */
-  .mt-w--xxs {
-    margin-top: 0.5em;
-  }
-
-  /* line 202, ../sass/core/_responsive.scss */
-  .mt-w--xs {
-    margin-top: 0.75em;
-  }
-
-  /* line 203, ../sass/core/_responsive.scss */
-  .mt-w--s {
-    margin-top: 1em;
-  }
-
-  /* line 204, ../sass/core/_responsive.scss */
-  .mt-w--m {
-    margin-top: 1.5em;
-  }
-
-  /* line 205, ../sass/core/_responsive.scss */
-  .mt-w--l {
-    margin-top: 2.25em;
-  }
-
-  /* line 206, ../sass/core/_responsive.scss */
-  .mt-w--xl {
-    margin-top: 3em;
-  }
-
-  /* line 207, ../sass/core/_responsive.scss */
-  .mt-w--xxl {
-    margin-top: 4.5em;
-  }
-
-  /* line 210, ../sass/core/_responsive.scss */
-  .mb-w--0 {
-    margin-bottom: 0em;
-  }
-
-  /* line 211, ../sass/core/_responsive.scss */
-  .mb-w--xxs {
-    margin-bottom: 0.5em;
-  }
-
-  /* line 212, ../sass/core/_responsive.scss */
-  .mb-w--xs {
-    margin-bottom: 0.75em;
-  }
-
-  /* line 213, ../sass/core/_responsive.scss */
-  .mb-w--s {
-    margin-bottom: 1em;
-  }
-
-  /* line 214, ../sass/core/_responsive.scss */
-  .mb-w--m {
-    margin-bottom: 1.5em;
-  }
-
-  /* line 215, ../sass/core/_responsive.scss */
-  .mb-w--l {
-    margin-bottom: 2.25em;
-  }
-
-  /* line 216, ../sass/core/_responsive.scss */
-  .mb-w--xl {
-    margin-bottom: 3em;
-  }
-
-  /* line 217, ../sass/core/_responsive.scss */
-  .mb-w--xxl {
-    margin-bottom: 4.5em;
-  }
-
-  /* line 220, ../sass/core/_responsive.scss */
-  .pr-w--0 {
-    padding-right: 0em;
-  }
-
-  /* line 221, ../sass/core/_responsive.scss */
-  .pr-w--xxs {
-    padding-right: 0.5em;
-  }
-
-  /* line 222, ../sass/core/_responsive.scss */
-  .pr-w--xs {
-    padding-right: 0.75em;
-  }
-
-  /* line 223, ../sass/core/_responsive.scss */
-  .pr-w--s {
-    padding-right: 1em;
-  }
-
-  /* line 224, ../sass/core/_responsive.scss */
-  .pr-w--m {
-    padding-right: 1.5em;
-  }
-
-  /* line 225, ../sass/core/_responsive.scss */
-  .pr-w--l {
-    padding-right: 2.25em;
-  }
-
-  /* line 226, ../sass/core/_responsive.scss */
-  .pr-w--xl {
-    padding-right: 3em;
-  }
-
-  /* line 227, ../sass/core/_responsive.scss */
-  .pr-w--xxl {
-    padding-right: 4.5em;
-  }
-
-  /* line 230, ../sass/core/_responsive.scss */
-  .pl-w--0 {
-    padding-left: 0em;
-  }
-
-  /* line 231, ../sass/core/_responsive.scss */
-  .pl-w--xxs {
-    padding-left: 0.5em;
-  }
-
-  /* line 232, ../sass/core/_responsive.scss */
-  .pl-w--xs {
-    padding-left: 0.75em;
-  }
-
-  /* line 233, ../sass/core/_responsive.scss */
-  .pl-w--s {
-    padding-left: 1em;
-  }
-
-  /* line 234, ../sass/core/_responsive.scss */
-  .pl-w--m {
-    padding-left: 1.5em;
-  }
-
-  /* line 235, ../sass/core/_responsive.scss */
-  .pl-w--l {
-    padding-left: 2.25em;
-  }
-
-  /* line 236, ../sass/core/_responsive.scss */
-  .pl-w--xl {
-    padding-left: 3em;
-  }
-
-  /* line 237, ../sass/core/_responsive.scss */
-  .pl-w--xxl {
-    padding-left: 4.5em;
-  }
-
-  /* line 240, ../sass/core/_responsive.scss */
-  .pt-w--0 {
-    padding-top: 0em;
-  }
-
-  /* line 241, ../sass/core/_responsive.scss */
-  .pt-w--xxs {
-    padding-top: 0.5em;
-  }
-
-  /* line 242, ../sass/core/_responsive.scss */
-  .pt-w--xs {
-    padding-top: 0.75em;
-  }
-
-  /* line 243, ../sass/core/_responsive.scss */
-  .pt-w--s {
-    padding-top: 1em;
-  }
-
-  /* line 244, ../sass/core/_responsive.scss */
-  .pt-w--m {
-    padding-top: 1.5em;
-  }
-
-  /* line 245, ../sass/core/_responsive.scss */
-  .pt-w--l {
-    padding-top: 2.25em;
-  }
-
-  /* line 246, ../sass/core/_responsive.scss */
-  .pt-w--xl {
-    padding-top: 3em;
-  }
-
-  /* line 247, ../sass/core/_responsive.scss */
-  .pt-w--xxl {
-    padding-top: 4.5em;
-  }
-
-  /* line 250, ../sass/core/_responsive.scss */
-  .pb-w--0 {
-    padding-bottom: 0em;
-  }
-
-  /* line 251, ../sass/core/_responsive.scss */
-  .pb-w--xxs {
-    padding-bottom: 0.5em;
-  }
-
-  /* line 252, ../sass/core/_responsive.scss */
-  .pb-w--xs {
-    padding-bottom: 0.75em;
-  }
-
-  /* line 253, ../sass/core/_responsive.scss */
-  .pb-w--s {
-    padding-bottom: 1em;
-  }
-
-  /* line 254, ../sass/core/_responsive.scss */
-  .pb-w--m {
-    padding-bottom: 1.5em;
-  }
-
-  /* line 255, ../sass/core/_responsive.scss */
-  .pb-w--l {
-    padding-bottom: 2.25em;
-  }
-
-  /* line 256, ../sass/core/_responsive.scss */
-  .pb-w--xl {
-    padding-bottom: 3em;
-  }
-
-  /* line 257, ../sass/core/_responsive.scss */
-  .pb-w--xxl {
-    padding-bottom: 4.5em;
-  }
-}
-@media only screen and (min-width: 31em) and (max-width: 48em) {
-  /* line 264, ../sass/core/_responsive.scss */
-  .mr-s--0 {
-    margin-right: 0em;
-  }
-
-  /* line 265, ../sass/core/_responsive.scss */
-  .mr-s--xxxs {
-    margin-right: 0.375em;
-  }
-
-  /* line 266, ../sass/core/_responsive.scss */
-  .mr-s--xxs {
-    margin-right: 0.5em;
-  }
-
-  /* line 267, ../sass/core/_responsive.scss */
-  .mr-s--xs {
-    margin-right: 0.75em;
-  }
-
-  /* line 268, ../sass/core/_responsive.scss */
-  .mr-s--s {
-    margin-right: 1em;
-  }
-
-  /* line 269, ../sass/core/_responsive.scss */
-  .mr-s--m {
-    margin-right: 1.5em;
-  }
-
-  /* line 270, ../sass/core/_responsive.scss */
-  .mr-s--l {
-    margin-right: 2.25em;
-  }
-
-  /* line 271, ../sass/core/_responsive.scss */
-  .mr-s--xl {
-    margin-right: 3em;
-  }
-
-  /* line 272, ../sass/core/_responsive.scss */
-  .mr-s--xxl {
-    margin-right: 4.5em;
-  }
-
-  /* line 273, ../sass/core/_responsive.scss */
-  .mr-s--xxxl {
-    margin-right: 6em;
-  }
-
-  /* line 277, ../sass/core/_responsive.scss */
-  .ml-s--0 {
-    margin-left: 0em;
-  }
-
-  /* line 278, ../sass/core/_responsive.scss */
-  .ml-s--xxxs {
-    margin-left: 0.375em;
-  }
-
-  /* line 279, ../sass/core/_responsive.scss */
-  .ml-s--xxs {
-    margin-left: 0.5em;
-  }
-
-  /* line 280, ../sass/core/_responsive.scss */
-  .ml-s--xs {
-    margin-left: 0.75em;
-  }
-
-  /* line 281, ../sass/core/_responsive.scss */
-  .ml-s--s {
-    margin-left: 1em;
-  }
-
-  /* line 282, ../sass/core/_responsive.scss */
-  .ml-s--m {
-    margin-left: 1.5em;
-  }
-
-  /* line 283, ../sass/core/_responsive.scss */
-  .ml-s--l {
-    margin-left: 2.25em;
-  }
-
-  /* line 284, ../sass/core/_responsive.scss */
-  .ml-s--xl {
-    margin-left: 3em;
-  }
-
-  /* line 285, ../sass/core/_responsive.scss */
-  .ml-s--xxl {
-    margin-left: 4.5em;
-  }
-
-  /* line 286, ../sass/core/_responsive.scss */
-  .ml-s--xxxl {
-    margin-left: 6em;
-  }
-
-  /* line 289, ../sass/core/_responsive.scss */
-  .mt-s--0 {
-    margin-top: 0em;
-  }
-
-  /* line 290, ../sass/core/_responsive.scss */
-  .mt-s--xxxs {
-    margin-top: 0.375em;
-  }
-
-  /* line 291, ../sass/core/_responsive.scss */
-  .mt-s--xxs {
-    margin-top: 0.5em;
-  }
-
-  /* line 292, ../sass/core/_responsive.scss */
-  .mt-s--xs {
-    margin-top: 0.75em;
-  }
-
-  /* line 293, ../sass/core/_responsive.scss */
-  .mt-s--s {
-    margin-top: 1em;
-  }
-
-  /* line 294, ../sass/core/_responsive.scss */
-  .mt-s--m {
-    margin-top: 1.5em;
-  }
-
-  /* line 295, ../sass/core/_responsive.scss */
-  .mt-s--l {
-    margin-top: 2.25em;
-  }
-
-  /* line 296, ../sass/core/_responsive.scss */
-  .mt-s--xl {
-    margin-top: 3em;
-  }
-
-  /* line 297, ../sass/core/_responsive.scss */
-  .mt-s--xxl {
-    margin-top: 4.5em;
-  }
-
-  /* line 298, ../sass/core/_responsive.scss */
-  .mt-s--xxxl {
-    margin-top: 6em;
-  }
-
-  /* line 301, ../sass/core/_responsive.scss */
-  .mb-s--0 {
-    margin-bottom: 0em;
-  }
-
-  /* line 302, ../sass/core/_responsive.scss */
-  .mb-s--xxxs {
-    margin-bottom: 0.375em;
-  }
-
-  /* line 303, ../sass/core/_responsive.scss */
-  .mb-s--xxs {
-    margin-bottom: 0.5em;
-  }
-
-  /* line 304, ../sass/core/_responsive.scss */
-  .mb-s--xs {
-    margin-bottom: 0.75em;
-  }
-
-  /* line 305, ../sass/core/_responsive.scss */
-  .mb-s--s {
-    margin-bottom: 1em;
-  }
-
-  /* line 306, ../sass/core/_responsive.scss */
-  .mb-s--m {
-    margin-bottom: 1.5em;
-  }
-
-  /* line 307, ../sass/core/_responsive.scss */
-  .mb-s--l {
-    margin-bottom: 2.25em;
-  }
-
-  /* line 308, ../sass/core/_responsive.scss */
-  .mb-s--xl {
-    margin-bottom: 3em;
-  }
-
-  /* line 309, ../sass/core/_responsive.scss */
-  .mb-s--xxl {
-    margin-bottom: 4.5em;
-  }
-
-  /* line 310, ../sass/core/_responsive.scss */
-  .mb-s--xxxl {
-    margin-bottom: 6em;
-  }
-
-  /* line 313, ../sass/core/_responsive.scss */
-  .pr-s--0 {
-    padding-right: 0em;
-  }
-
-  /* line 314, ../sass/core/_responsive.scss */
-  .pr-s--xxxs {
-    padding-right: 0.375em;
-  }
-
-  /* line 315, ../sass/core/_responsive.scss */
-  .pr-s--xxs {
-    padding-right: 0.5em;
-  }
-
-  /* line 316, ../sass/core/_responsive.scss */
-  .pr-s--xs {
-    padding-right: 0.75em;
-  }
-
-  /* line 317, ../sass/core/_responsive.scss */
-  .pr-s--s {
-    padding-right: 1em;
-  }
-
-  /* line 318, ../sass/core/_responsive.scss */
-  .pr-s--m {
-    padding-right: 1.5em;
-  }
-
-  /* line 319, ../sass/core/_responsive.scss */
-  .pr-s--l {
-    padding-right: 2.25em;
-  }
-
-  /* line 320, ../sass/core/_responsive.scss */
-  .pr-s--xl {
-    padding-right: 3em;
-  }
-
-  /* line 321, ../sass/core/_responsive.scss */
-  .pr-s--xxl {
-    padding-right: 4.5em;
-  }
-
-  /* line 322, ../sass/core/_responsive.scss */
-  .pr-s--xxxl {
-    padding-right: 6em;
-  }
-
-  /* line 325, ../sass/core/_responsive.scss */
-  .pl-s--0 {
-    padding-left: 0em;
-  }
-
-  /* line 326, ../sass/core/_responsive.scss */
-  .pl-s--xxxs {
-    padding-left: 0.375em;
-  }
-
-  /* line 327, ../sass/core/_responsive.scss */
-  .pl-s--xxs {
-    padding-left: 0.5em;
-  }
-
-  /* line 328, ../sass/core/_responsive.scss */
-  .pl-s--xs {
-    padding-left: 0.75em;
-  }
-
-  /* line 329, ../sass/core/_responsive.scss */
-  .pl-s--s {
-    padding-left: 1em;
-  }
-
-  /* line 330, ../sass/core/_responsive.scss */
-  .pl-s--m {
-    padding-left: 1.5em;
-  }
-
-  /* line 331, ../sass/core/_responsive.scss */
-  .pl-s--l {
-    padding-left: 2.25em;
-  }
-
-  /* line 332, ../sass/core/_responsive.scss */
-  .pl-s--xl {
-    padding-left: 3em;
-  }
-
-  /* line 333, ../sass/core/_responsive.scss */
-  .pl-s--xxl {
-    padding-left: 4.5em;
-  }
-
-  /* line 334, ../sass/core/_responsive.scss */
-  .pl-s--xxxl {
-    padding-left: 6em;
-  }
-
-  /* line 337, ../sass/core/_responsive.scss */
-  .pt-s--0 {
-    padding-top: 0em;
-  }
-
-  /* line 338, ../sass/core/_responsive.scss */
-  .pt-s--xxs {
-    padding-top: 0.375em;
-  }
-
-  /* line 339, ../sass/core/_responsive.scss */
-  .pt-s--xxs {
-    padding-top: 0.5em;
-  }
-
-  /* line 340, ../sass/core/_responsive.scss */
-  .pt-s--xs {
-    padding-top: 0.75em;
-  }
-
-  /* line 341, ../sass/core/_responsive.scss */
-  .pt-s--s {
-    padding-top: 1em;
-  }
-
-  /* line 342, ../sass/core/_responsive.scss */
-  .pt-s--m {
-    padding-top: 1.5em;
-  }
-
-  /* line 343, ../sass/core/_responsive.scss */
-  .pt-s--l {
-    padding-top: 2.25em;
-  }
-
-  /* line 344, ../sass/core/_responsive.scss */
-  .pt-s--xl {
-    padding-top: 3em;
-  }
-
-  /* line 345, ../sass/core/_responsive.scss */
-  .pt-s--xxl {
-    padding-top: 4.5em;
-  }
-
-  /* line 346, ../sass/core/_responsive.scss */
-  .pt-s--xxxl {
-    padding-top: 6em;
-  }
-
-  /* line 349, ../sass/core/_responsive.scss */
-  .pb-s--0 {
-    padding-bottom: 0em;
-  }
-
-  /* line 350, ../sass/core/_responsive.scss */
-  .pb-s--xxxs {
-    padding-bottom: 0.375em;
-  }
-
-  /* line 351, ../sass/core/_responsive.scss */
-  .pb-s--xxs {
-    padding-bottom: 0.5em;
-  }
-
-  /* line 352, ../sass/core/_responsive.scss */
-  .pb-s--xs {
-    padding-bottom: 0.75em;
-  }
-
-  /* line 353, ../sass/core/_responsive.scss */
-  .pb-s--s {
-    padding-bottom: 1em;
-  }
-
-  /* line 354, ../sass/core/_responsive.scss */
-  .pb-s--m {
-    padding-bottom: 1.5em;
-  }
-
-  /* line 355, ../sass/core/_responsive.scss */
-  .pb-s--l {
-    padding-bottom: 2.25em;
-  }
-
-  /* line 356, ../sass/core/_responsive.scss */
-  .pb-s--xl {
-    padding-bottom: 3em;
-  }
-
-  /* line 357, ../sass/core/_responsive.scss */
-  .pb-s--xxl {
-    padding-bottom: 4.5em;
-  }
-
-  /* line 358, ../sass/core/_responsive.scss */
-  .pb-s--xxxl {
-    padding-bottom: 6em;
-  }
-}
-@media only screen and (max-width: 30em) {
-  /* line 366, ../sass/core/_responsive.scss */
-  .mr-m--0 {
-    margin-right: 0em;
-  }
-
-  /* line 367, ../sass/core/_responsive.scss */
-  .mr-m--xxs {
-    margin-right: 0.375em;
-  }
-
-  /* line 368, ../sass/core/_responsive.scss */
-  .mr-m--xxs {
-    margin-right: 0.5em;
-  }
-
-  /* line 369, ../sass/core/_responsive.scss */
-  .mr-m--xs {
-    margin-right: 0.75em;
-  }
-
-  /* line 370, ../sass/core/_responsive.scss */
-  .mr-m--s {
-    margin-right: 1em;
-  }
-
-  /* line 371, ../sass/core/_responsive.scss */
-  .mr-m--m {
-    margin-right: 1.5em;
-  }
-
-  /* line 372, ../sass/core/_responsive.scss */
-  .mr-m--l {
-    margin-right: 2.25em;
-  }
-
-  /* line 373, ../sass/core/_responsive.scss */
-  .mr-m--xl {
-    margin-right: 3em;
-  }
-
-  /* line 374, ../sass/core/_responsive.scss */
-  .mr-m--xxl {
-    margin-right: 4.5em;
-  }
-
-  /* line 375, ../sass/core/_responsive.scss */
-  .mr-m--xxxl {
-    margin-right: 6em;
-  }
-
-  /* line 379, ../sass/core/_responsive.scss */
-  .ml-m--0 {
-    margin-left: 0em;
-  }
-
-  /* line 380, ../sass/core/_responsive.scss */
-  .ml-m--xxs {
-    margin-left: 0.375em;
-  }
-
-  /* line 381, ../sass/core/_responsive.scss */
-  .ml-m--xxs {
-    margin-left: 0.5em;
-  }
-
-  /* line 382, ../sass/core/_responsive.scss */
-  .ml-m--xs {
-    margin-left: 0.75em;
-  }
-
-  /* line 383, ../sass/core/_responsive.scss */
-  .ml-m--s {
-    margin-left: 1em;
-  }
-
-  /* line 384, ../sass/core/_responsive.scss */
-  .ml-m--m {
-    margin-left: 1.5em;
-  }
-
-  /* line 385, ../sass/core/_responsive.scss */
-  .ml-m--l {
-    margin-left: 2.25em;
-  }
-
-  /* line 386, ../sass/core/_responsive.scss */
-  .ml-m--xl {
-    margin-left: 3em;
-  }
-
-  /* line 387, ../sass/core/_responsive.scss */
-  .ml-m--xxl {
-    margin-left: 4.5em;
-  }
-
-  /* line 388, ../sass/core/_responsive.scss */
-  .ml-m--xxl {
-    margin-left: 6em;
-  }
-
-  /* line 391, ../sass/core/_responsive.scss */
-  .mt-m--0 {
-    margin-top: 0em;
-  }
-
-  /* line 392, ../sass/core/_responsive.scss */
-  .mt-m--xxxs {
-    margin-top: 0.375em;
-  }
-
-  /* line 393, ../sass/core/_responsive.scss */
-  .mt-m--xxs {
-    margin-top: 0.5em;
-  }
-
-  /* line 394, ../sass/core/_responsive.scss */
-  .mt-m--xs {
-    margin-top: 0.75em;
-  }
-
-  /* line 395, ../sass/core/_responsive.scss */
-  .mt-m--s {
-    margin-top: 1em;
-  }
-
-  /* line 396, ../sass/core/_responsive.scss */
-  .mt-m--m {
-    margin-top: 1.5em;
-  }
-
-  /* line 397, ../sass/core/_responsive.scss */
-  .mt-m--l {
-    margin-top: 2.25em;
-  }
-
-  /* line 398, ../sass/core/_responsive.scss */
-  .mt-m--xl {
-    margin-top: 3em;
-  }
-
-  /* line 399, ../sass/core/_responsive.scss */
-  .mt-m--xxl {
-    margin-top: 4.5em;
-  }
-
-  /* line 400, ../sass/core/_responsive.scss */
-  .mt-m--xxxl {
-    margin-top: 6em;
-  }
-
-  /* line 403, ../sass/core/_responsive.scss */
-  .mb-m--0 {
-    margin-bottom: 0em;
-  }
-
-  /* line 404, ../sass/core/_responsive.scss */
-  .mb-m--xxs {
-    margin-bottom: 0.375em;
-  }
-
-  /* line 405, ../sass/core/_responsive.scss */
-  .mb-m--xxs {
-    margin-bottom: 0.5em;
-  }
-
-  /* line 406, ../sass/core/_responsive.scss */
-  .mb-m--xs {
-    margin-bottom: 0.75em;
-  }
-
-  /* line 407, ../sass/core/_responsive.scss */
-  .mb-m--s {
-    margin-bottom: 1em;
-  }
-
-  /* line 408, ../sass/core/_responsive.scss */
-  .mb-m--m {
-    margin-bottom: 1.5em;
-  }
-
-  /* line 409, ../sass/core/_responsive.scss */
-  .mb-m--l {
-    margin-bottom: 2.25em;
-  }
-
-  /* line 410, ../sass/core/_responsive.scss */
-  .mb-m--xl {
-    margin-bottom: 3em;
-  }
-
-  /* line 411, ../sass/core/_responsive.scss */
-  .mb-m--xxl {
-    margin-bottom: 4.5em;
-  }
-
-  /* line 412, ../sass/core/_responsive.scss */
-  .mb-m--xxxl {
-    margin-bottom: 6em;
-  }
-
-  /* line 415, ../sass/core/_responsive.scss */
-  .pr-m--0 {
-    padding-right: 0em;
-  }
-
-  /* line 416, ../sass/core/_responsive.scss */
-  .pr-m--xxs {
-    padding-right: 0.375em;
-  }
-
-  /* line 417, ../sass/core/_responsive.scss */
-  .pr-m--xxs {
-    padding-right: 0.5em;
-  }
-
-  /* line 418, ../sass/core/_responsive.scss */
-  .pr-m--xs {
-    padding-right: 0.75em;
-  }
-
-  /* line 419, ../sass/core/_responsive.scss */
-  .pr-m--s {
-    padding-right: 1em;
-  }
-
-  /* line 420, ../sass/core/_responsive.scss */
-  .pr-m--m {
-    padding-right: 1.5em;
-  }
-
-  /* line 421, ../sass/core/_responsive.scss */
-  .pr-m--l {
-    padding-right: 2.25em;
-  }
-
-  /* line 422, ../sass/core/_responsive.scss */
-  .pr-m--xl {
-    padding-right: 3em;
-  }
-
-  /* line 423, ../sass/core/_responsive.scss */
-  .pr-m--xxl {
-    padding-right: 4.5em;
-  }
-
-  /* line 424, ../sass/core/_responsive.scss */
-  .pr-m--xxxl {
-    padding-right: 6em;
-  }
-
-  /* line 427, ../sass/core/_responsive.scss */
-  .pl-m--0 {
-    padding-left: 0em;
-  }
-
-  /* line 428, ../sass/core/_responsive.scss */
-  .pl-m--xxxs {
-    padding-left: 0.375em;
-  }
-
-  /* line 429, ../sass/core/_responsive.scss */
-  .pl-m--xxs {
-    padding-left: 0.5em;
-  }
-
-  /* line 430, ../sass/core/_responsive.scss */
-  .pl-m--xs {
-    padding-left: 0.75em;
-  }
-
-  /* line 431, ../sass/core/_responsive.scss */
-  .pl-m--s {
-    padding-left: 1em;
-  }
-
-  /* line 432, ../sass/core/_responsive.scss */
-  .pl-m--m {
-    padding-left: 1.5em;
-  }
-
-  /* line 433, ../sass/core/_responsive.scss */
-  .pl-m--l {
-    padding-left: 2.25em;
-  }
-
-  /* line 434, ../sass/core/_responsive.scss */
-  .pl-m--xl {
-    padding-left: 3em;
-  }
-
-  /* line 435, ../sass/core/_responsive.scss */
-  .pl-m--xxl {
-    padding-left: 4.5em;
-  }
-
-  /* line 436, ../sass/core/_responsive.scss */
-  .pl-m--xxxl {
-    padding-left: 6em;
-  }
-
-  /* line 439, ../sass/core/_responsive.scss */
-  .pt-m--0 {
-    padding-top: 0em;
-  }
-
-  /* line 440, ../sass/core/_responsive.scss */
-  .pt-m--xxxs {
-    padding-top: 0.375em;
-  }
-
-  /* line 441, ../sass/core/_responsive.scss */
-  .pt-m--xxs {
-    padding-top: 0.5em;
-  }
-
-  /* line 442, ../sass/core/_responsive.scss */
-  .pt-m--xs {
-    padding-top: 0.75em;
-  }
-
-  /* line 443, ../sass/core/_responsive.scss */
-  .pt-m--s {
-    padding-top: 1em;
-  }
-
-  /* line 444, ../sass/core/_responsive.scss */
-  .pt-m--m {
-    padding-top: 1.5em;
-  }
-
-  /* line 445, ../sass/core/_responsive.scss */
-  .pt-m--l {
-    padding-top: 2.25em;
-  }
-
-  /* line 446, ../sass/core/_responsive.scss */
-  .pt-m--xl {
-    padding-top: 3em;
-  }
-
-  /* line 447, ../sass/core/_responsive.scss */
-  .pt-m--xxl {
-    padding-top: 4.5em;
-  }
-
-  /* line 448, ../sass/core/_responsive.scss */
-  .pt-m--xxxl {
-    padding-top: 6em;
-  }
-
-  /* line 451, ../sass/core/_responsive.scss */
-  .pb-m--0 {
-    padding-bottom: 0em;
-  }
-
-  /* line 452, ../sass/core/_responsive.scss */
-  .pb-m--xxxs {
-    padding-bottom: 0.375em;
-  }
-
-  /* line 453, ../sass/core/_responsive.scss */
-  .pb-m--xxs {
-    padding-bottom: 0.5em;
-  }
-
-  /* line 454, ../sass/core/_responsive.scss */
-  .pb-m--xs {
-    padding-bottom: 0.75em;
-  }
-
-  /* line 455, ../sass/core/_responsive.scss */
-  .pb-m--s {
-    padding-bottom: 1em;
-  }
-
-  /* line 456, ../sass/core/_responsive.scss */
-  .pb-m--m {
-    padding-bottom: 1.5em;
-  }
-
-  /* line 457, ../sass/core/_responsive.scss */
-  .pb-m--l {
-    padding-bottom: 2.25em;
-  }
-
-  /* line 458, ../sass/core/_responsive.scss */
-  .pb-m--xl {
-    padding-bottom: 3em;
-  }
-
-  /* line 459, ../sass/core/_responsive.scss */
-  .pb-m--xxl {
-    padding-bottom: 4.5em;
-  }
-
-  /* line 460, ../sass/core/_responsive.scss */
-  .pb-m--xxxl {
-    padding-bottom: 6em;
-  }
-}
-@media only screen and (min-width: 75em) {
-  /* line 466, ../sass/core/_responsive.scss */
-  .block-w--xl {
-    padding: 3em 6em;
-  }
-
-  /* line 470, ../sass/core/_responsive.scss */
-  .block-w--l {
-    padding: 2.25em 4.5em;
-  }
-
-  /* line 474, ../sass/core/_responsive.scss */
-  .block-w--m {
-    padding: 1.5em 3em;
-  }
-
-  /* line 478, ../sass/core/_responsive.scss */
-  .block-w--s {
-    padding: 1em 0.75em;
-  }
-
-  /* line 482, ../sass/core/_responsive.scss */
-  .block-w--xs {
-    padding: 0.75em 0.375em;
-  }
-}
-@media only screen and (min-width: 31em) and (max-width: 48em) {
-  /* line 489, ../sass/core/_responsive.scss */
-  .block-s--xl {
-    padding: 3em 6em;
-  }
-
-  /* line 493, ../sass/core/_responsive.scss */
-  .block-s--l {
-    padding: 2.25em 4.5em;
-  }
-
-  /* line 497, ../sass/core/_responsive.scss */
-  .block-s--m {
-    padding: 1.5em 3em;
-  }
-
-  /* line 501, ../sass/core/_responsive.scss */
-  .block-s--s {
-    padding: 1em 0.75em;
-  }
-
-  /* line 505, ../sass/core/_responsive.scss */
-  .block-s--xs {
-    padding: 0.75em 0.375em;
-  }
-}
-@media only screen and (max-width: 30em) {
-  /* line 511, ../sass/core/_responsive.scss */
-  .block-m--xl {
-    padding: 3em 6em;
-  }
-
-  /* line 515, ../sass/core/_responsive.scss */
-  .block-m--l {
-    padding: 2.25em 4.5em;
-  }
-
-  /* line 519, ../sass/core/_responsive.scss */
-  .block-m--m {
-    padding: 1.5em 3em;
-  }
-
-  /* line 523, ../sass/core/_responsive.scss */
-  .block-m--s {
-    padding: 1em 0.75em;
-  }
-
-  /* line 527, ../sass/core/_responsive.scss */
-  .block-m--xs {
-    padding: 0.75em 0.375em;
-  }
-}
-/**
- * Show hide on viewports helper classes
- * ----------------------------------------------------------------------------
- */
-/* line 576, ../sass/core/_responsive.scss */
-.hidden-mobile, .hidden-skinny, .hidden-wide {
-  display: block !important;
-}
-
-/* line 577, ../sass/core/_responsive.scss */
-.visible-mobile, .visible-skinny, .visible-wide {
-  display: none !important;
-}
-
-/**
- * 1. Visible classes
- * -----------------------------------------------------------------------------
- */
-@media only screen and (max-width: 30em) {
-  /* line 584, ../sass/core/_responsive.scss */
-  .visible-mobile {
-    display: block !important;
-  }
-}
-
-@media only screen and (min-width: 31em) and (max-width: 48em) {
-  /* line 592, ../sass/core/_responsive.scss */
-  .visible-skinny {
-    display: block !important;
-  }
-}
-
-@media only screen and (min-width: 75em) {
-  /* line 604, ../sass/core/_responsive.scss */
-  .visible-wide {
-    display: block !important;
-  }
-}
-
-/**
- * 1. hidden classes
- * -----------------------------------------------------------------------------
- */
-@media only screen and (max-width: 30em) {
-  /* line 616, ../sass/core/_responsive.scss */
-  .hidden-mobile {
-    display: none !important;
-  }
-}
-
-@media only screen and (min-width: 31em) and (max-width: 48em) {
-  /* line 624, ../sass/core/_responsive.scss */
-  .hidden-skinny {
-    display: none !important;
-  }
-}
-
-@media only screen and (min-width: 75em) {
-  /* line 636, ../sass/core/_responsive.scss */
-  .hidden-wide {
-    display: none !important;
-  }
 }
 
 /**

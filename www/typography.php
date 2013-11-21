@@ -133,10 +133,12 @@
 
 html,
 body {
-@extend .font-family;
-@extend %fix-webkit-font-rendering;
-line-height:    $base-line-height;
-font-size:      100%;
+    @extend %fix-webkit-font-rendering;
+    line-height:    $base-line-height;
+    font-size:      100%;
+}
+body {
+    @extend .font-primary;
 }
 </code>
 </pre>
