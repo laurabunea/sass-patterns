@@ -368,4 +368,51 @@ p + p,
     font-family:$serif-stack;
 }
 
-//add dt and dd 
+
+/**
+ * 13. Description lists
+ * ----------------------------------------------------------------------------
+ * Defaults to being stacked without any of the below styles applied, until the
+ * 
+ */
+
+dl {
+    @extend .mt--m;
+}
+    dt,
+    dd {
+        line-height: $line-height-xs;
+    }
+    dt {
+        font-weight: bold;
+    }
+    dd {
+      margin-left: 0; // Undo browser default
+    }
+
+
+/**
+ * 13. Horizontal description lists
+ * ----------------------------------------------------------------------------
+ * Defaults to being stacked without any of the below styles applied, until the
+ * 
+ */
+
+//TODO finish this ;)
+//@include media('skinny-only') { {
+//    .dl-horizontal {
+//        dt {
+//            @extend %text-overflow;
+//            float: left;
+//            width: (@component-offset-horizontal - 20);
+//            clear: left;
+//            text-align: right;
+//
+//        }
+//        dd {
+//            @extend %clearfix; // Clear the floated `dt` if an empty `dd` is present
+//           margin-left: @component-offset-horizontal;
+//            
+//       }
+// }
+//}
