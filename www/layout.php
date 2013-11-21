@@ -970,8 +970,7 @@ $wide:                          75em;//Wide 1200px
         </div><!--  hello world block ends -->
     </div><!-- layout-append ends-->
    
-    
-    </div><!-- layout-append ends-->
+    <hr class='mt--l' />
 
     <!--Responsive image section starts-->
     <div class='mt--l' id='responsiveAnchor4' >
