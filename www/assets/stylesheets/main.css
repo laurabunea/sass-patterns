@@ -1041,7 +1041,7 @@ li, code {
 }
 
 /* line 168, ../sass/core/_layout.scss */
-.mt--m {
+.mt--m, dl {
   margin-top: 1.5em;
 }
 
@@ -1622,90 +1622,153 @@ body {
  *
  */
 /* primary */
-/* line 49, ../sass/core/_typography.scss */
+/* line 51, ../sass/core/_typography.scss */
 .font-primary, body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-/* line 53, ../sass/core/_typography.scss */
+/* line 55, ../sass/core/_typography.scss */
 .font-primary--italic, .ie8 em, .ie8
 i {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
-/* line 55, ../sass/core/_typography.scss */
+/* line 57, ../sass/core/_typography.scss */
 .ie8 .font-primary--italic, .ie8 em, .ie8 i {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 60, ../sass/core/_typography.scss */
+/* line 62, ../sass/core/_typography.scss */
 .font-primary--bold, .ie8 strong, .ie8
 b {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-/* line 62, ../sass/core/_typography.scss */
+/* line 64, ../sass/core/_typography.scss */
 .ie8 .font-primary--bold, .ie8 strong, .ie8 b {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 67, ../sass/core/_typography.scss */
+/* line 69, ../sass/core/_typography.scss */
 .font-primary--bold-italic {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-style: italic;
 }
-/* line 69, ../sass/core/_typography.scss */
+/* line 71, ../sass/core/_typography.scss */
 .ie8 .font-primary--bold-italic {
   font-family: "Open Sans", sans-serif;
 }
 
 /* Secondary font family ..... etc*/
+/** 2. Font sizes
+ * ----------------------------------------------------------------------------
+ * 
+ *
+ */
+/* line 101, ../sass/core/_typography.scss */
+.font-size-xxxxl, .h0 {
+  font-size: 4.5em;
+}
+
+/* line 102, ../sass/core/_typography.scss */
+.font-size-xxxl, h1,
+.h1 {
+  font-size: 2.25em;
+}
+
+/* line 103, ../sass/core/_typography.scss */
+.font-size-xxl, h2,
+.h2 {
+  font-size: 2em;
+}
+
+/* line 104, ../sass/core/_typography.scss */
+.font-size-xl, h3,
+.h3 {
+  font-size: 1.375em;
+}
+
+/* line 105, ../sass/core/_typography.scss */
+.font-size-l {
+  font-size: 1.25em;
+}
+
+/* line 106, ../sass/core/_typography.scss */
+.font-size-m, h4,
+.h4 {
+  font-size: 1.125em;
+}
+
+/* line 107, ../sass/core/_typography.scss */
+.font-size-s, h5,
+.h5, .intro {
+  font-size: 1em;
+}
+
+/* line 108, ../sass/core/_typography.scss */
+.font-size-xs, h6,
+.h6, p,
+.text,
+li, code {
+  font-size: 0.875em;
+}
+
+/* line 109, ../sass/core/_typography.scss */
+.font-size-xxs, .small {
+  font-size: 0.75em;
+}
+
+/* line 110, ../sass/core/_typography.scss */
+.font-size-xxxs, .tiny {
+  font-size: 0.6875em;
+}
+
 /** 2. Header styles
  * ----------------------------------------------------------------------------
  * NOTE: These can change per project depending on what font etc you use :) 
  *
  */
-/* line 106, ../sass/core/_typography.scss */
+/* line 124, ../sass/core/_typography.scss */
 h1,
 .h1 {
   line-height: 1;
   margin-top: 0.04167emem;
 }
 
-/* line 114, ../sass/core/_typography.scss */
+/* line 132, ../sass/core/_typography.scss */
 h2,
 .h2 {
   line-height: 1.2;
   margin-top: 0.04688emem;
 }
 
-/* line 122, ../sass/core/_typography.scss */
+/* line 140, ../sass/core/_typography.scss */
 h3,
 .h3 {
   line-height: 1.2;
   margin-top: 0.06818emem;
 }
 
-/* line 130, ../sass/core/_typography.scss */
+/* line 148, ../sass/core/_typography.scss */
 h4,
 .h4 {
   line-height: 1.2;
   margin-top: 0.08333emem;
 }
 
-/* line 138, ../sass/core/_typography.scss */
+/* line 156, ../sass/core/_typography.scss */
 h5,
 .h5 {
   line-height: 1.2;
   margin-top: 0.04688emem;
 }
 
-/* line 146, ../sass/core/_typography.scss */
+/* line 164, ../sass/core/_typography.scss */
 h6,
 .h6 {
   line-height: 1.5;
@@ -1716,7 +1779,7 @@ h6,
  *  
  * ----------------------------------------------------------------------------
  */
-/* line 161, ../sass/core/_typography.scss */
+/* line 179, ../sass/core/_typography.scss */
 p,
 .text,
 li, code {
@@ -1732,14 +1795,14 @@ li, code {
  * 4. Typographic relationships (nawww, aren't they so good together?)
  * ----------------------------------------------------------------------------
  */
-/* line 209, ../sass/core/_typography.scss */
+/* line 227, ../sass/core/_typography.scss */
 h4 + h6,
 h4 + p,
 h5 + p {
   margin-top: 0.03571emem;
 }
 
-/* line 216, ../sass/core/_typography.scss */
+/* line 234, ../sass/core/_typography.scss */
 p + p,
 .list--styled li + li,
 .list--styled-decimal li + li,
@@ -1751,7 +1814,7 @@ p + p,
  * 5. hr
  * ----------------------------------------------------------------------------
  */
-/* line 226, ../sass/core/_typography.scss */
+/* line 244, ../sass/core/_typography.scss */
 hr {
   border: none;
   height: 1px;
@@ -1761,12 +1824,12 @@ hr {
  *  6. Lowercase vs Uppercase
  * ----------------------------------------------------------------------------
  */
-/* line 237, ../sass/core/_typography.scss */
+/* line 255, ../sass/core/_typography.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 240, ../sass/core/_typography.scss */
+/* line 258, ../sass/core/_typography.scss */
 .lowercase {
   text-transform: lowercase;
 }
@@ -1775,17 +1838,17 @@ hr {
  * 7. Text Allignment classes
  * ----------------------------------------------------------------------------
  */
-/* line 250, ../sass/core/_typography.scss */
+/* line 268, ../sass/core/_typography.scss */
 .text-align--left {
   text-align: left;
 }
 
-/* line 253, ../sass/core/_typography.scss */
+/* line 271, ../sass/core/_typography.scss */
 .text-align--right {
   text-align: right;
 }
 
-/* line 256, ../sass/core/_typography.scss */
+/* line 274, ../sass/core/_typography.scss */
 .text-align--center {
   text-align: center;
 }
@@ -1794,38 +1857,38 @@ hr {
  * 8. List styles
  * ----------------------------------------------------------------------------
  */
-/* line 266, ../sass/core/_typography.scss */
+/* line 284, ../sass/core/_typography.scss */
 .list--unstyled, .list--inline {
   list-style: none;
   padding-left: 0;
   margin: 0 0 0 0;
 }
 
-/* line 272, ../sass/core/_typography.scss */
+/* line 290, ../sass/core/_typography.scss */
 .list--unstyled > li, .list--inline > li {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 282, ../sass/core/_typography.scss */
+/* line 300, ../sass/core/_typography.scss */
 .list--inline > li {
   margin: 0;
 }
 
-/* line 288, ../sass/core/_typography.scss */
+/* line 306, ../sass/core/_typography.scss */
 .list--styled, .list--styled-decimal, .list--styled-alpha {
   padding-left: 1.5em;
   margin-top: .857142857em;
   list-style: circle;
 }
 
-/* line 299, ../sass/core/_typography.scss */
+/* line 317, ../sass/core/_typography.scss */
 .list--styled-decimal {
   list-style: decimal-leading-zero;
   padding-left: 2.25em;
 }
 
-/* line 306, ../sass/core/_typography.scss */
+/* line 324, ../sass/core/_typography.scss */
 .list--styled-alpha {
   list-style: lower-alpha;
 }
@@ -1834,7 +1897,7 @@ hr {
  * 9. text overflow helper class
  * ----------------------------------------------------------------------------
  */
-/* line 316, ../sass/core/_typography.scss */
+/* line 334, ../sass/core/_typography.scss */
 .text--overflow {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1842,7 +1905,7 @@ hr {
   width: 100%;
 }
 
-/* line 324, ../sass/core/_typography.scss */
+/* line 342, ../sass/core/_typography.scss */
 .text--nowrap {
   white-space: nowrap;
 }
@@ -1855,7 +1918,7 @@ hr {
  * these properties right here. Maybe consider scoping this to a class for
  * chrome/mac osx only at some point?
  */
-/* line 337, ../sass/core/_typography.scss */
+/* line 355, ../sass/core/_typography.scss */
 html,
 body {
   -webkit-font-smoothing: antialiased;
@@ -1866,7 +1929,7 @@ body {
  * 11. hide text
  * ----------------------------------------------------------------------------
  */
-/* line 347, ../sass/core/_typography.scss */
+/* line 365, ../sass/core/_typography.scss */
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -1884,16 +1947,44 @@ body {
  *
  * 
  */
-/* line 363, ../sass/core/_typography.scss */
+/* line 381, ../sass/core/_typography.scss */
 .sans {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 367, ../sass/core/_typography.scss */
+/* line 385, ../sass/core/_typography.scss */
 .serif {
   font-family: "georgia", serif;
 }
 
+/**
+ * 13. Description lists
+ * ----------------------------------------------------------------------------
+ * Defaults to being stacked without any of the below styles applied, until the
+ * 
+ */
+/* line 401, ../sass/core/_typography.scss */
+dt,
+dd {
+  line-height: 1.5;
+}
+
+/* line 404, ../sass/core/_typography.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 407, ../sass/core/_typography.scss */
+dd {
+  margin-left: 0;
+}
+
+/**
+ * 13. Horizontal description lists
+ * ----------------------------------------------------------------------------
+ * Defaults to being stacked without any of the below styles applied, until the
+ * 
+ */
 /**
  *
  * Themes 
