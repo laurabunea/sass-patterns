@@ -480,64 +480,6 @@ ol {
  * Typography - Font sizes 
  * -----------------------------------------------------------------------------
  */
-/* line 70, ../sass/core/_variables.scss */
-.font-size-xxxxl, .h0 {
-  font-size: 4.5em;
-}
-
-/* line 71, ../sass/core/_variables.scss */
-.font-size-xxxl, h1,
-.h1 {
-  font-size: 2.25em;
-}
-
-/* line 72, ../sass/core/_variables.scss */
-.font-size-xxl, h2,
-.h2 {
-  font-size: 2em;
-}
-
-/* line 73, ../sass/core/_variables.scss */
-.font-size-xl, h3,
-.h3 {
-  font-size: 1.375em;
-}
-
-/* line 74, ../sass/core/_variables.scss */
-.font-size-l {
-  font-size: 1.25em;
-}
-
-/* line 75, ../sass/core/_variables.scss */
-.font-size-m, h4,
-.h4 {
-  font-size: 1.125em;
-}
-
-/* line 76, ../sass/core/_variables.scss */
-.font-size-s, h5,
-.h5, .intro {
-  font-size: 1em;
-}
-
-/* line 77, ../sass/core/_variables.scss */
-.font-size-xs, h6,
-.h6, p,
-.text,
-li, code {
-  font-size: 0.875em;
-}
-
-/* line 78, ../sass/core/_variables.scss */
-.font-size-xxs, .small {
-  font-size: 0.75em;
-}
-
-/* line 79, ../sass/core/_variables.scss */
-.font-size-xxxs, .tiny {
-  font-size: 0.6875em;
-}
-
 /**
  * Typography - Line height 
  * -----------------------------------------------------------------------------
