@@ -30,12 +30,15 @@
 
 html,
 body {
-    @extend .font-family;
     @extend %fix-webkit-font-rendering;
     line-height:    $base-line-height;
     font-size:      100%;
 }
 
+body {
+    //sets the media query elements to the html hence why we only declare it the body 
+    @extend .font-primary;
+}
 
 /** a) Font families
  * ----------------------------------------------------------------------------
@@ -43,39 +46,48 @@ body {
  */
 /* primary */
 
-.font-family {
-    @include font($font-family, 400 , normal);
+.font-primary {
+    @include font($font-primary, 400 , normal);
 }
 
-    .font-family--italic {
-        @include font($font-family, 400 , italic);
+    .font-primary--italic {
+        @include font($font-primary, 400 , italic);
+        .ie8 & {
+            font-family:$font-primary-italic;
+        }
     }
 
-    .font-family--bold {
-        @include font($font-family, 700 , normal);
+    .font-primary--bold {
+        @include font($font-primary, 700 , normal);
+        .ie8 & {
+            font-family:$font-primary-bold;
+        }
     }
 
-    .font-family--bold-italic {
-        @include font($font-family, 700 , italic);
+    .font-primary--bold-italic {
+        @include font($font-primary, 700 , italic);
+        .ie8 & {
+            font-family:$font-primary-bold-italic;
+        }
     }
 
 
 /* Secondary font family ..... etc*/
 
-//.font-family__secondary {
-//    @include font($font-family-secondary, 400 , normal);
+//.font-secondary {
+//    @include font($font-secondary, 400 , normal);
 //}
 
-//    .font-family--italic__secondary {
-//        @include font($font-family-secondary, 400 , italic);
+//    .font-secondary--italic {
+//        @include font($font-secondary, 400 , italic);
 //    }
 
-//    .font-family--bold__secondary {
-//        @include font($font-family-secondary, 700 , normal);
+//    .font-secondary--bold {
+//        @include font($font-secondary, 700 , normal);
 //    }
 
-//    .font-family--bold-italic__secondary {
-//        @include font($font-family-secondary, 700 , italic);
+//    .font-secondary--bold-italic {
+//        @include font($font-secondary, 700 , italic);
 //    }
 
 
@@ -94,48 +106,48 @@ h1,
 .h1 {
     @extend .mb--0;
     @extend .font-size-xxxl;                   
-    line-height: 1;
-    margin-top: px-to-em(24, $font-size-xxxl);              
+    @extend .line-height-xxxl;
+    margin-top: px-to-em($bs--m, $font-size-xxxl);              
 }
 
 h2, 
 .h2 {
     @extend .mb--0;
     @extend .font-size-xxl;                    
-    line-height: 1.2;
-    margin-top: px-to-em(24, $font-size-xxl);                  
+    @extend .line-height-xxl;
+    margin-top: px-to-em($bs--m, $font-size-xxl);                  
 }
 
 h3, 
 .h3 {
     @extend .mb--0;
     @extend .font-size-xl;
-    line-height: 1.2;
-    margin-top: px-to-em(24, $font-size-xl);
+    @extend .line-height-xl;
+    margin-top: px-to-em($bs--m, $font-size-xl);
 }
 
 h4, 
 .h4 {
     @extend .mb--0;
     @extend .font-size-m;
-    line-height: 1.33333333;
-    margin-top: px-to-em(20, $font-size-m);
+    @extend .line-height-m;
+    margin-top: px-to-em($bs--m, $font-size-m);
 }
 
 h5, 
 .h5 {
     @extend .mb--0;
     @extend .font-size-s;
-    line-height: 1.2;
-    margin-top: px-to-em(12, $font-size-s);
+    @extend .line-height-s;
+    margin-top: px-to-em($bs--xs, $font-size-s);
 }
 
 h6, 
 .h6 {
     @extend .mb--0;
     @extend .font-size-xs;
-    line-height: 1.2;
-    margin-top: px-to-em(12, $font-size-xs);
+    @extend .line-height-xs;
+    margin-top: px-to-em($bs--xs, $font-size-xs);
 }
 
 
@@ -145,22 +157,26 @@ h6,
  */
 
 p, 
-.para, 
+.text, 
 li,code {
     @extend .mb--0;
     @extend .font-size-xs;
-    line-height: px-to-em(24, $font-size-xs); 
-    margin-top: px-to-em(12, $font-size-xs);              
+    @extend .line-height-xs; 
+    margin-top: px-to-em($bs--xs, $font-size-xs);              
 }
 
 strong, 
 b {
-    @extend .font-family--bold;
+    .ie8 & {
+        @extend .font-primary--bold;
+    }
 }
 
 em, 
 i {
-    @extend .font-family--italic;
+    .ie8 & {
+        @extend .font-primary--italic;
+    }
 }
 
 
@@ -191,14 +207,14 @@ i {
 h4 + h6,
 h4 + p,
 h5 + p {
-    margin-top: .285714286em;               /* 4px @ 14px */
+    margin-top: px-to-em($bs--xxs, $font-size-xs);               
 }
 
 p + p, 
 .list--styled li + li, 
-.list--styled_decimal li + li, 
-.list--styled_alpha li + li,{
-    margin-top: .571428571em;               /* 8px @ 14px */               
+.list--styled-decimal li + li, 
+.list--styled-alpha li + li,{
+    margin-top: px-to-em($bs--xxs, $font-size-xs);                           
 }
 
 
@@ -280,14 +296,14 @@ p + p,
 }
 
 //decimal list
-.list--styled_decimal {
+.list--styled-decimal {
     @extend %list--styled;
     list-style: decimal-leading-zero;
     padding-left:$bs--l;
 } 
 
 //alpha list
-.list--styled_alpha {
+.list--styled-alpha {
     @extend %list--styled;
     list-style: lower-alpha;
 }
@@ -352,3 +368,4 @@ p + p,
     font-family:$serif-stack;
 }
 
+//add dt and dd 

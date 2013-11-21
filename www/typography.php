@@ -17,7 +17,7 @@
         There are a couple of things you should set up before you begin a project. These are:
     </p>
 
-    <ul class='list--styled_decimal'>   
+    <ul class='list--styled-decimal'>   
         <li>
             <a href='#FontFamilyAnchor'>
                 Base font family 
@@ -225,7 +225,7 @@ $font-size-xxxs:        11;     //.tiny
        Helper classes blah blah blah  
     </p>
 
-    <ol class='list--styled_decimal'>
+    <ol class='list--styled-decimal'>
         <li>
             <a href='#TypographyHelper1Anchor'>
                 Font sizes

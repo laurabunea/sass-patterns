@@ -13,7 +13,7 @@
     <p>
         Notes...
     </p>
-    <ul class='list--styled_decimal'>
+    <ul class='list--styled-decimal'>
         <li>
             <a href='#themes-blocks'>
                 Theme blocks

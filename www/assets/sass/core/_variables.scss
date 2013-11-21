@@ -33,11 +33,16 @@
 $sans-serif-stack:              'Open Sans', sans-serif;
 $serif-stack:                   "georgia", serif;
 
-$font-family:                   $sans-serif-stack; //primary
-//$font-family-secondary:;      
-//$font-family-tertiary:;          
+$font-primary:                   $sans-serif-stack; //primary        
+$font-primary-italic:            $sans-serif-stack;
+$font-primary-bold:              $sans-serif-stack;
+$font-primary-bold-italic:       $sans-serif-stack;
 
-
+//$font-secondary:; 
+//$font-secondary-italic:;
+//$font-secondary-bold::
+//$font-secondary-bold-italic;;     
+//$font-tertiary:; ...
 /**
  * Typography - Line height
  * -----------------------------------------------------------------------------
@@ -72,6 +77,24 @@ $font-size-xxxs:                11;     //.tiny
 .font-size-xs                   { font-size: px-to-em($font-size-xs);}
 .font-size-xxs                  { font-size: px-to-em($font-size-xxs);}
 .font-size-xxxs                 { font-size: px-to-em($font-size-xxxs);}
+
+
+/**
+ * Typography - Line height 
+ * -----------------------------------------------------------------------------
+ */
+
+$line-height-xxxxl:               1;     //h0
+$line-height-xxxl:                1;     //h1
+$line-height-xxl:                 1.2;     //h2
+$line-height-xl:                  1.2;     //h3
+$line-height-l:                   1.33333333;     //h4
+$line-height-m:                   1.2;    //h5
+$line-height-s:                   1.2;     //h6 & .intro
+$line-height-xs:                  1.5;     //p
+$line-height-xxs:                 1.4;     //.small
+$line-height-xxxs:                1.4;     //.tiny
+
 
 /**
  * Layout - Spacing: she's a fickle mistress.

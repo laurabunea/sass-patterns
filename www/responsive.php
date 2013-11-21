@@ -15,7 +15,7 @@
     </div>
 
     <!--Responsive Helper navigation -->
-    <ul class='list--styled_decimal'>   
+    <ul class='list--styled-decimal'>   
         <li>
             <a href='#responsiveAnchor1'>
                 Building blocks 
@@ -34,6 +34,11 @@
         <li>
             <a href='#responsiveAnchor4'>
                 Responsive images
+            </a>
+        </li>
+        <li>
+            <a href='#responsiveAnchor5'>
+                Inline grid
             </a>
         </li>
     </ul><!--Responsive Helper navigation ends-->
@@ -310,4 +315,67 @@ $wide:                          75em;//Wide 1200px
             </div>
         </div><!--  hello world block ends -->
     </div><!--Responsive image section starts-->
+
+    <!--Inline grid  section starts-->
+    <div class='mt--l' id='responsiveAnchor4' >
+        <h2 class='h3'>
+            05. Inline Grid
+        </h2>
+        <p>
+          
+        </p>
+        <!--  code block starts -->
+        <div class=' block--s tb__tertiary'> 
+            <h4 class='tiny uppercase text-muted'>
+                scss 
+            </h4>
+            <pre>
+<code class="language-css">
+
+</code>
+            </pre>
+        </div><!--  code block ends -->
+
+        <!--  hello world block starts -->
+        <div class='block--stacked block--s tb__secondary'>
+            <h4 class='tiny uppercase text-muted'>
+                hello world
+            </h4> 
+          
+            
+            <div class='grid'>
+                <div class='grid__item g--1-4 g-s--1-2 g-m--1-1 g-w--60'>
+                   <div class='tb__pink block--s'>
+                        <p>
+                            1<!--<strong>Desktop:</strong> 1/4 <br />
+                            <strong>Skinny:</strong> 1/2 <br />
+                           <strong>mobile:</strong> full width<br />
+                           <strong>wide:</strong> 60/40-->
+                       </p>
+                    </div>
+                </div>
+                <div class='grid__item g--1-4 g-s--1-2 g-m--1-1 g-w--40'>
+                   <div class='tb__pink block--s'>
+                        <p>
+                            1
+                        </p>
+                    </div>
+                </div>
+                <div class='grid__item g--1-4 g-s--1-2 g-m--1-1 g-w--60'>
+                   <div class='tb__pink block--s'>
+                        <p>
+                            1
+                        </p>
+                    </div>
+                </div>
+                <div class='grid__item g--1-4 g-s--1-2 g-m--1-1 g-w--40'>
+                   <div class='tb__pink block--s'>
+                        <p>
+                            1
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div><!--  hello world block ends -->
+    </div><!--Inline grid section starts-->
 </div><!--Responsive page ends-->

@@ -480,64 +480,68 @@ ol {
  * Typography - Font sizes 
  * -----------------------------------------------------------------------------
  */
-/* line 65, ../sass/core/_variables.scss */
+/* line 70, ../sass/core/_variables.scss */
 .font-size-xxxxl, .h0 {
   font-size: 4.5em;
 }
 
-/* line 66, ../sass/core/_variables.scss */
+/* line 71, ../sass/core/_variables.scss */
 .font-size-xxxl, h1,
 .h1 {
   font-size: 2.25em;
 }
 
-/* line 67, ../sass/core/_variables.scss */
+/* line 72, ../sass/core/_variables.scss */
 .font-size-xxl, h2,
 .h2 {
   font-size: 2em;
 }
 
-/* line 68, ../sass/core/_variables.scss */
+/* line 73, ../sass/core/_variables.scss */
 .font-size-xl, h3,
 .h3 {
   font-size: 1.375em;
 }
 
-/* line 69, ../sass/core/_variables.scss */
+/* line 74, ../sass/core/_variables.scss */
 .font-size-l {
   font-size: 1.25em;
 }
 
-/* line 70, ../sass/core/_variables.scss */
+/* line 75, ../sass/core/_variables.scss */
 .font-size-m, h4,
 .h4 {
   font-size: 1.125em;
 }
 
-/* line 71, ../sass/core/_variables.scss */
+/* line 76, ../sass/core/_variables.scss */
 .font-size-s, h5,
 .h5, .intro {
   font-size: 1em;
 }
 
-/* line 72, ../sass/core/_variables.scss */
+/* line 77, ../sass/core/_variables.scss */
 .font-size-xs, h6,
 .h6, p,
-.para,
+.text,
 li, code {
   font-size: 0.875em;
 }
 
-/* line 73, ../sass/core/_variables.scss */
+/* line 78, ../sass/core/_variables.scss */
 .font-size-xxs, .small {
   font-size: 0.75em;
 }
 
-/* line 74, ../sass/core/_variables.scss */
+/* line 79, ../sass/core/_variables.scss */
 .font-size-xxxs, .tiny {
   font-size: 0.6875em;
 }
 
+/**
+ * Typography - Line height 
+ * -----------------------------------------------------------------------------
+ */
 /**
  * Layout - Spacing: she's a fickle mistress.
  * -----------------------------------------------------------------------------
@@ -1069,7 +1073,7 @@ li, code {
 .h4, h5,
 .h5, h6,
 .h6, p,
-.para,
+.text,
 li, code {
   margin-bottom: 0em;
 }
@@ -1579,14 +1583,6 @@ li, code {
   margin-left: 0.5em;
 }
 
-/* line 493, ../sass/core/_layout.scss */
-.icon-placeholder {
-  background-image: url("/assets/images/icon-placeholder.png");
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-}
-
 /**
  *
  * Typography defaults
@@ -1626,35 +1622,46 @@ body {
  *
  */
 /* primary */
-/* line 46, ../sass/core/_typography.scss */
-.font-family, html,
-body {
+/* line 49, ../sass/core/_typography.scss */
+.font-primary, body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-/* line 50, ../sass/core/_typography.scss */
-.font-family--italic, em,
+/* line 53, ../sass/core/_typography.scss */
+.font-primary--italic, .ie8 em, .ie8
 i {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
+/* line 55, ../sass/core/_typography.scss */
+.ie8 .font-primary--italic, .ie8 em, .ie8 i {
+  font-family: "Open Sans", sans-serif;
+}
 
-/* line 54, ../sass/core/_typography.scss */
-.font-family--bold, strong,
+/* line 60, ../sass/core/_typography.scss */
+.font-primary--bold, .ie8 strong, .ie8
 b {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
+/* line 62, ../sass/core/_typography.scss */
+.ie8 .font-primary--bold, .ie8 strong, .ie8 b {
+  font-family: "Open Sans", sans-serif;
+}
 
-/* line 58, ../sass/core/_typography.scss */
-.font-family--bold-italic {
+/* line 67, ../sass/core/_typography.scss */
+.font-primary--bold-italic {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-style: italic;
+}
+/* line 69, ../sass/core/_typography.scss */
+.ie8 .font-primary--bold-italic {
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Secondary font family ..... etc*/
@@ -1663,58 +1670,51 @@ b {
  * NOTE: These can change per project depending on what font etc you use :) 
  *
  */
-/* line 94, ../sass/core/_typography.scss */
+/* line 106, ../sass/core/_typography.scss */
 h1,
 .h1 {
-  line-height: 1;
-  margin-top: 0.66667em;
+  margin-top: 0.04167emem;
 }
 
-/* line 102, ../sass/core/_typography.scss */
+/* line 114, ../sass/core/_typography.scss */
 h2,
 .h2 {
-  line-height: 1.2;
-  margin-top: 0.75em;
+  margin-top: 0.04688emem;
 }
 
-/* line 110, ../sass/core/_typography.scss */
+/* line 122, ../sass/core/_typography.scss */
 h3,
 .h3 {
-  line-height: 1.2;
-  margin-top: 1.09091em;
+  margin-top: 0.06818emem;
 }
 
-/* line 118, ../sass/core/_typography.scss */
+/* line 130, ../sass/core/_typography.scss */
 h4,
 .h4 {
-  line-height: 1.33333333;
-  margin-top: 1.11111em;
+  margin-top: 0.08333emem;
 }
 
-/* line 126, ../sass/core/_typography.scss */
+/* line 138, ../sass/core/_typography.scss */
 h5,
 .h5 {
-  line-height: 1.2;
-  margin-top: 0.75em;
+  margin-top: 0.04688emem;
 }
 
-/* line 134, ../sass/core/_typography.scss */
+/* line 146, ../sass/core/_typography.scss */
 h6,
 .h6 {
-  line-height: 1.2;
-  margin-top: 0.85714em;
+  margin-top: 0.05357emem;
 }
 
 /**
  *  
  * ----------------------------------------------------------------------------
  */
-/* line 149, ../sass/core/_typography.scss */
+/* line 161, ../sass/core/_typography.scss */
 p,
-.para,
+.text,
 li, code {
-  line-height: 1.71429em;
-  margin-top: 0.85714em;
+  margin-top: 0.05357emem;
 }
 
 /**
@@ -1725,28 +1725,26 @@ li, code {
  * 4. Typographic relationships (nawww, aren't they so good together?)
  * ----------------------------------------------------------------------------
  */
-/* line 193, ../sass/core/_typography.scss */
+/* line 209, ../sass/core/_typography.scss */
 h4 + h6,
 h4 + p,
 h5 + p {
-  margin-top: .285714286em;
-  /* 4px @ 14px */
+  margin-top: 0.03571emem;
 }
 
-/* line 200, ../sass/core/_typography.scss */
+/* line 216, ../sass/core/_typography.scss */
 p + p,
 .list--styled li + li,
-.list--styled_decimal li + li,
-.list--styled_alpha li + li {
-  margin-top: .571428571em;
-  /* 8px @ 14px */
+.list--styled-decimal li + li,
+.list--styled-alpha li + li {
+  margin-top: 0.03571emem;
 }
 
 /**
  * 5. hr
  * ----------------------------------------------------------------------------
  */
-/* line 210, ../sass/core/_typography.scss */
+/* line 226, ../sass/core/_typography.scss */
 hr {
   border: none;
   height: 1px;
@@ -1756,12 +1754,12 @@ hr {
  *  6. Lowercase vs Uppercase
  * ----------------------------------------------------------------------------
  */
-/* line 221, ../sass/core/_typography.scss */
+/* line 237, ../sass/core/_typography.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 224, ../sass/core/_typography.scss */
+/* line 240, ../sass/core/_typography.scss */
 .lowercase {
   text-transform: lowercase;
 }
@@ -1770,17 +1768,17 @@ hr {
  * 7. Text Allignment classes
  * ----------------------------------------------------------------------------
  */
-/* line 234, ../sass/core/_typography.scss */
+/* line 250, ../sass/core/_typography.scss */
 .text-align--left {
   text-align: left;
 }
 
-/* line 237, ../sass/core/_typography.scss */
+/* line 253, ../sass/core/_typography.scss */
 .text-align--right {
   text-align: right;
 }
 
-/* line 240, ../sass/core/_typography.scss */
+/* line 256, ../sass/core/_typography.scss */
 .text-align--center {
   text-align: center;
 }
@@ -1789,39 +1787,39 @@ hr {
  * 8. List styles
  * ----------------------------------------------------------------------------
  */
-/* line 250, ../sass/core/_typography.scss */
+/* line 266, ../sass/core/_typography.scss */
 .list--unstyled, .list--inline {
   list-style: none;
   padding-left: 0;
   margin: 0 0 0 0;
 }
 
-/* line 256, ../sass/core/_typography.scss */
+/* line 272, ../sass/core/_typography.scss */
 .list--unstyled > li, .list--inline > li {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 266, ../sass/core/_typography.scss */
+/* line 282, ../sass/core/_typography.scss */
 .list--inline > li {
   margin: 0;
 }
 
-/* line 272, ../sass/core/_typography.scss */
-.list--styled, .list--styled_decimal, .list--styled_alpha {
+/* line 288, ../sass/core/_typography.scss */
+.list--styled, .list--styled-decimal, .list--styled-alpha {
   padding-left: 1.5em;
   margin-top: .857142857em;
   list-style: circle;
 }
 
-/* line 283, ../sass/core/_typography.scss */
-.list--styled_decimal {
+/* line 299, ../sass/core/_typography.scss */
+.list--styled-decimal {
   list-style: decimal-leading-zero;
   padding-left: 2.25em;
 }
 
-/* line 290, ../sass/core/_typography.scss */
-.list--styled_alpha {
+/* line 306, ../sass/core/_typography.scss */
+.list--styled-alpha {
   list-style: lower-alpha;
 }
 
@@ -1829,7 +1827,7 @@ hr {
  * 9. text overflow helper class
  * ----------------------------------------------------------------------------
  */
-/* line 300, ../sass/core/_typography.scss */
+/* line 316, ../sass/core/_typography.scss */
 .text--overflow {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1837,7 +1835,7 @@ hr {
   width: 100%;
 }
 
-/* line 308, ../sass/core/_typography.scss */
+/* line 324, ../sass/core/_typography.scss */
 .text--nowrap {
   white-space: nowrap;
 }
@@ -1850,7 +1848,7 @@ hr {
  * these properties right here. Maybe consider scoping this to a class for
  * chrome/mac osx only at some point?
  */
-/* line 321, ../sass/core/_typography.scss */
+/* line 337, ../sass/core/_typography.scss */
 html,
 body {
   -webkit-font-smoothing: antialiased;
@@ -1861,7 +1859,7 @@ body {
  * 11. hide text
  * ----------------------------------------------------------------------------
  */
-/* line 331, ../sass/core/_typography.scss */
+/* line 347, ../sass/core/_typography.scss */
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -1879,12 +1877,12 @@ body {
  *
  * 
  */
-/* line 347, ../sass/core/_typography.scss */
+/* line 363, ../sass/core/_typography.scss */
 .sans {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 351, ../sass/core/_typography.scss */
+/* line 367, ../sass/core/_typography.scss */
 .serif {
   font-family: "georgia", serif;
 }
@@ -2291,6 +2289,14 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 .i {
   vertical-align: middle;
   font-style: normal;
+}
+
+/* line 105, ../sass/core/_page-specific.scss */
+.icon-placeholder {
+  background-image: url("/assets/images/icon-placeholder.png");
+  width: 40px;
+  height: 40px;
+  display: inline-block;
 }
 
 /**

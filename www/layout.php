@@ -28,7 +28,7 @@
         </h1>
     </div>
 
-    <ul class='list--styled_decimal'>
+    <ul class='list--styled-decimal'>
 
         <li>
             <a href='#layout-inline-block'>
