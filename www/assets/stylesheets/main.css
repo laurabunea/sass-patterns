@@ -3233,7 +3233,7 @@ hr {
 /* line 306, ../sass/core/_typography.scss */
 .list--styled, .list--styled-decimal, .list--styled-alpha {
   padding-left: 1.5em;
-  margin-top: .857142857em;
+  margin-top: 0.75em;
   list-style: circle;
 }
 

@@ -305,7 +305,7 @@ p + p,
 //default list style in this case its circles
 %list--styled {
     padding-left:$bs--m;
-    margin-top: .857142857em; //same as the margin top on p tags
+    margin-top: $bs--xs; //same as the margin top on p tags
     list-style: circle;
 }
 
