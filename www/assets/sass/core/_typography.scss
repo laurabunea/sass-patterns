@@ -40,6 +40,8 @@ body {
     @extend .font-primary;
 }
 
+
+
 /** a) Font families
  * ----------------------------------------------------------------------------
  *
@@ -90,6 +92,22 @@ body {
 //        @include font($font-secondary, 700 , italic);
 //    }
 
+/** 2. Font sizes
+ * ----------------------------------------------------------------------------
+ * 
+ *
+ */
+
+.font-size-xxxxl                { font-size: px-to-em($font-size-xxxxl);}
+.font-size-xxxl                 { font-size: px-to-em($font-size-xxxl);}
+.font-size-xxl                  { font-size: px-to-em($font-size-xxl);}
+.font-size-xl                   { font-size: px-to-em($font-size-xl);}
+.font-size-l                    { font-size: px-to-em($font-size-l);}
+.font-size-m                    { font-size: px-to-em($font-size-m);}
+.font-size-s                    { font-size: px-to-em($font-size-s);}
+.font-size-xs                   { font-size: px-to-em($font-size-xs);}
+.font-size-xxs                  { font-size: px-to-em($font-size-xxs);}
+.font-size-xxxs                 { font-size: px-to-em($font-size-xxxs);}
 
 
 /** 2. Header styles
