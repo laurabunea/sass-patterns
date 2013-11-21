@@ -1673,36 +1673,42 @@ b {
 /* line 106, ../sass/core/_typography.scss */
 h1,
 .h1 {
+  line-height: 1;
   margin-top: 0.04167emem;
 }
 
 /* line 114, ../sass/core/_typography.scss */
 h2,
 .h2 {
+  line-height: 1.2;
   margin-top: 0.04688emem;
 }
 
 /* line 122, ../sass/core/_typography.scss */
 h3,
 .h3 {
+  line-height: 1.2;
   margin-top: 0.06818emem;
 }
 
 /* line 130, ../sass/core/_typography.scss */
 h4,
 .h4 {
+  line-height: 1.2;
   margin-top: 0.08333emem;
 }
 
 /* line 138, ../sass/core/_typography.scss */
 h5,
 .h5 {
+  line-height: 1.2;
   margin-top: 0.04688emem;
 }
 
 /* line 146, ../sass/core/_typography.scss */
 h6,
 .h6 {
+  line-height: 1.5;
   margin-top: 0.05357emem;
 }
 
@@ -1714,6 +1720,7 @@ h6,
 p,
 .text,
 li, code {
+  line-height: 1.5;
   margin-top: 0.05357emem;
 }
 

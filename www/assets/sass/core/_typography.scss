@@ -106,7 +106,7 @@ h1,
 .h1 {
     @extend .mb--0;
     @extend .font-size-xxxl;                   
-    @extend .line-height-xxxl;
+    line-height: $line-height-xxxl;
     margin-top: px-to-em($bs--m, $font-size-xxxl);              
 }
 
@@ -114,7 +114,7 @@ h2,
 .h2 {
     @extend .mb--0;
     @extend .font-size-xxl;                    
-    @extend .line-height-xxl;
+    line-height: $line-height-xxl;
     margin-top: px-to-em($bs--m, $font-size-xxl);                  
 }
 
@@ -122,7 +122,7 @@ h3,
 .h3 {
     @extend .mb--0;
     @extend .font-size-xl;
-    @extend .line-height-xl;
+    line-height: $line-height-xl;
     margin-top: px-to-em($bs--m, $font-size-xl);
 }
 
@@ -130,7 +130,7 @@ h4,
 .h4 {
     @extend .mb--0;
     @extend .font-size-m;
-    @extend .line-height-m;
+    line-height: $line-height-m;
     margin-top: px-to-em($bs--m, $font-size-m);
 }
 
@@ -138,7 +138,7 @@ h5,
 .h5 {
     @extend .mb--0;
     @extend .font-size-s;
-    @extend .line-height-s;
+    line-height: $line-height-s;
     margin-top: px-to-em($bs--xs, $font-size-s);
 }
 
@@ -146,7 +146,7 @@ h6,
 .h6 {
     @extend .mb--0;
     @extend .font-size-xs;
-    @extend .line-height-xs;
+    line-height: $line-height-xs;
     margin-top: px-to-em($bs--xs, $font-size-xs);
 }
 
@@ -161,7 +161,7 @@ p,
 li,code {
     @extend .mb--0;
     @extend .font-size-xs;
-    @extend .line-height-xs; 
+    line-height: $line-height-xs; 
     margin-top: px-to-em($bs--xs, $font-size-xs);              
 }
 
