@@ -11,7 +11,7 @@
 
     <body>
     <!-- Top Navigation Bar - this holds the parent categories -->
-    <div class='navigation--wrapper tb__quarternary '>
+    <div class='navigation--wrapper qt-block '>
         <div class='navigation clearfix '>
             <h1 class='uppercase left logo' >
                 <a href='/' class='m--xxs'>

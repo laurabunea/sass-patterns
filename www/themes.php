@@ -2,8 +2,8 @@
     include 'header.php'; 
 ?>
 
-<div class='block--l block-small--s mb--l clearfix tb__primary '>
-     <div class='page-header tb__header'>
+<div class='block--l block-small--s mb--l clearfix pt-block '>
+     <div class='page-header pt-page-header'>
         <h1>
             Themes
             
@@ -46,22 +46,22 @@
             Use any of the available theme block classes to quickly create ....
         </p>
         <!--  code block starts -->
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
 <code class='language-markup'>
-    &lt;div class='tb__primary'&gt;
+    &lt;div class='pt-block'&gt;
         &lt;p&gt;Some text.&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class='tb__secondary'&gt;
+    &lt;div class='st-block'&gt;
        &lt;p&gt;Some text.&lt;/p&gt;
     &lt;/div>
-    &lt;div class='tb__tertiary'&gt;
+    &lt;div class='tt-block'&gt;
         &lt;p&gt;Some text.&lt;/p&gt;
     &lt;/div>
-    &lt;div class='tb__quarternary'&gt;
+    &lt;div class='qt-block'&gt;
         &lt;p&gt;Some text.&lt;/p&gt;
     &lt;/div&gt;
 </code>
@@ -69,40 +69,40 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
         	<div class='grid'>
-                <div class='g--1-4 testbox-100-100 m--xm block--s tb__primary'>
+                <div class='g--1-4 testbox-100-100 m--xm block--s pt-block'>
                     <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 m--xm block--s tb__secondary'>
+                <div class='g--1-4 testbox-100-100 m--xm block--s st-block'>
                    <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 m--xm block--s tb__tertiary'>
+                <div class='g--1-4 testbox-100-100 m--xm block--s tt-block'>
                     <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 m--xm block--s tb__quarternary'>
+                <div class='g--1-4 testbox-100-100 m--xm block--s qt-block'>
                     <p>Some text.</p>
                 </div>
             </div>
         </div><!--  hello world block ends -->
 
         <!--  code block starts -->
-        <div class='block--s  tb__tertiary'>
+        <div class='block--s  tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
 <code class='language-markup'>
-&lt;div class='tb__success'&gt;
+&lt;div class='success-block'&gt;
    &lt;p&gt;Some text.&lt;/p&gt;
 &lt;/div>
-&lt;div class='tb__warning'&gt;
+&lt;div class='warning-block'&gt;
     &lt;p&gt;Some text.&lt;/p&gt;
 &lt;/div>
-&lt;div class='tb__danger'&gt;
+&lt;div class='danger-block'&gt;
     &lt;p&gt;Some text.&lt;/p&gt;
 &lt;/div&gt;
 </code>
@@ -110,18 +110,18 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
         	<div class='grid'>
-                <div class='testbox-100-100 block--s m--xm  tb__success'>
+                <div class='testbox-100-100 block--s m--xm  success-block'>
                     <p>Success</p>
                 </div>
-                <div class='testbox-100-100 block--s m--xm  tb__warning'>
+                <div class='testbox-100-100 block--s m--xm  warning-block'>
                     <p>Success</p>
                 </div>
-                <div class='testbox-100-100 block--s m--xm  tb__danger'>
+                <div class='testbox-100-100 block--s m--xm  danger-block'>
                     <p>Danger</p>
                 </div>
                 
@@ -139,7 +139,7 @@
         	Convey meaning through color with a handful of emphasis utility classes.
         </p>
         <!--  code block starts -->
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -154,7 +154,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -174,7 +174,7 @@
         </h2>
         
         <!--  code block starts -->
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -188,7 +188,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -206,7 +206,7 @@
         </h2>
         
         <!--  code block starts -->
-        <div class=' block--s m--m  tb__tertiary'>
+        <div class=' block--s m--m  tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -220,7 +220,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

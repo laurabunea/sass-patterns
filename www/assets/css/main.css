@@ -629,7 +629,7 @@ ol {
 }
 
 /* line 27, ../sass/core/_extend-classes.scss */
-.tb__success, .theme__block_warning, .theme__block_danger, .tb__primary, .tb__secondary, .tb__tertiary, .tb__quarternary, .tb__green, .tb__pink, .tb__blue {
+.success-block, .theme__block_warning, .theme__block_danger, .pt-block, .st-block, .tt-block, .qt-block, .green-block, .pink-block, .blue-block {
   border-width: 1px;
   border-style: solid;
 }
@@ -1673,7 +1673,7 @@ body {
  * -----------------------------------------------------------------------------
  */
 /* line 56, ../sass/core/_theme.scss */
-.tb__success {
+.success-block {
   background-color: #c5ffc6;
   color: #468847;
   border-color: #468847;
@@ -1708,7 +1708,7 @@ body {
  * -----------------------------------------------------------------------------
  */
 /* line 97, ../sass/core/_theme.scss */
-.tb__primary {
+.pt-block {
   background-color: #fafafa;
   color: #2e2f2b;
   border-color: #fafafa;
@@ -1716,21 +1716,21 @@ body {
 }
 
 /* line 103, ../sass/core/_theme.scss */
-.tb__secondary {
+.st-block {
   background-color: #f2f2f2;
   color: #2e2f2b;
   border-color: #e6e6e6;
 }
 
 /* line 109, ../sass/core/_theme.scss */
-.tb__tertiary {
+.tt-block {
   background-color: #2e2f2b;
   color: white;
   border-color: #2e2f2b;
 }
 
 /* line 115, ../sass/core/_theme.scss */
-.tb__quarternary {
+.qt-block {
   background-color: #4d4d4d;
   color: white;
   border-color: #4d4d4d;
@@ -1741,21 +1741,21 @@ body {
  * -----------------------------------------------------------------------------
  */
 /* line 127, ../sass/core/_theme.scss */
-.tb__green {
+.green-block {
   background-color: #a6e22e;
   color: #2e2f2b;
   border-color: #a6e22e;
 }
 
 /* line 132, ../sass/core/_theme.scss */
-.tb__pink {
+.pink-block {
   background-color: #f92672;
   color: #2e2f2b;
   border-color: #f92672;
 }
 
 /* line 137, ../sass/core/_theme.scss */
-.tb__blue {
+.blue-block {
   background-color: #4aa1c5;
   color: white;
   border-color: #4aa1c5;
@@ -1835,38 +1835,38 @@ body {
 }
 
 /* line 205, ../sass/core/_theme.scss */
-.tb__breadrumbs {
+.pt-breadrumbs {
   background-color: #cccccc;
 }
 /* line 208, ../sass/core/_theme.scss */
-.tb__breadrumbs > li + li:before {
+.pt-breadrumbs > li + li:before {
   color: #666666;
 }
 /* line 212, ../sass/core/_theme.scss */
-.tb__breadrumbs > .active {
+.pt-breadrumbs > .active {
   color: #555555;
 }
 
 /* line 217, ../sass/core/_theme.scss */
-.tb__badge {
+.pt-badge {
   color: white;
   background-color: red;
   border-radius: 10px;
 }
 
 /* line 224, ../sass/core/_theme.scss */
-a.tb__badge_active > .badge {
+a.pt-badge_active > .badge {
   color: #efefef;
   background-color: blue;
 }
 
 /* line 231, ../sass/core/_theme.scss */
-.tb__header {
+.pt-page-header {
   color: #2e2f2b;
   border-bottom: 1px solid #e6e6e6;
 }
 /* line 234, ../sass/core/_theme.scss */
-.tb__header span {
+.pt-page-header span {
   color: #999999;
 }
 

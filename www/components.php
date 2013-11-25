@@ -3,9 +3,9 @@
 ?>
 
 
-<div class='block--l block-small--s mb--l tb__primary '>
+<div class='block--l block-small--s mb--l pt-block '>
     
-    <div class='page-header tb__header'>
+    <div class='page-header pt-page-header'>
         <h1>
             Components   
         </h1>
@@ -40,7 +40,7 @@
         </h2>
         
         <!--  code block starts -->
-        <div class='block--s m--m tb__tertiary'>
+        <div class='block--s m--m tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -56,11 +56,11 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <ol class='breadcrumbs tb__breadrumbs block--xxs xm'>
+            <ol class='breadcrumbs pt-breadrumbs block--xxs xm'>
                 <li><a href='#'>Home</a></li>
                 <li><a href='#'>Page</a></li>
                 <li class='#'>Sub page</li>
@@ -74,23 +74,23 @@
             Badges
         </h2>
         <!--  code block starts -->
-        <div class='block--s tb__tertiary'>
+        <div class='block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
 <code class='language-markup'>
-&lt;a href='#'&gt; Inbox &lt;span class='tb__badge badge tiny'&gt;42&lt;/span&gt;&lt;/a&gt;
+&lt;a href='#'&gt; Inbox &lt;span class='pt-badge badge tiny'&gt;42&lt;/span&gt;&lt;/a&gt;
 </code>
             </pre>
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class=' block--stacked block--s tb__secondary'>
+        <div class=' block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <p><a class='xm' href='#'>Inbox <span class='tb__badge badge tiny'>42</span></a></p>
+            <p><a class='xm' href='#'>Inbox <span class='pt-badge badge tiny'>42</span></a></p>
 
 
         </div><!--  hello world block ends -->
@@ -103,13 +103,13 @@
             Page Headers
         </h2>
         <!--  code block starts -->
-        <div class='block--s tb__tertiary'>
+        <div class='block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
 <code class='language-markup'>
-&lt;div class='page-header tb__header'&gt;
+&lt;div class='page-header pt-page-header'&gt;
     &lt;h5&gt;
         H5 Heading
         &lt;span class='tiny'&gt;
@@ -122,11 +122,11 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='page-header tb__header m--l'>
+            <div class='page-header pt-page-header m--l'>
                 <h1>
                     H1 Heading 
                     <span class='tiny'>
@@ -134,7 +134,7 @@
                     </span>
                 </h1>
             </div>
-            <div class='page-header tb__header m--m'>
+            <div class='page-header pt-page-header m--m'>
                 <h2>
                     H2 Heading 
                     <span class='tiny'>
@@ -142,7 +142,7 @@
                     </span>
                 </h2>
             </div>
-            <div class='page-header tb__header m--m'>
+            <div class='page-header pt-page-header m--m'>
                 <h3>
                     H3 Heading 
                     <span class='tiny'>
@@ -150,7 +150,7 @@
                     </span>
                 </h3>
             </div>
-            <div class='page-header tb__header m--m'>
+            <div class='page-header pt-page-header m--m'>
                 <h4>
                     H4 Heading 
                     <span class='tiny'>
@@ -158,7 +158,7 @@
                     </span>
                 </h4>
             </div>
-            <div class='page-header tb__header m--m'>
+            <div class='page-header pt-page-header m--m'>
                 <h5>
                     H5 Heading 
                     <span class='tiny'>

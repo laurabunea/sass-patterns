@@ -2,8 +2,8 @@
     include 'header.php'; 
 ?>
 
-<div class='block--l block-small--s mb--l clearfix tb__primary'>
-    <div class='page-header tb__header'>
+<div class='block--l block-small--s mb--l clearfix pt-block'>
+    <div class='page-header pt-page-header'>
         <h1>
             Heading sizes
         </h1>
@@ -31,7 +31,7 @@
     </h6>
 
     <div class='m--l'>   
-    	<div class='page-header tb__header'>
+    	<div class='page-header pt-page-header'>
         <h1>
             Text heirarchy
         </h1>

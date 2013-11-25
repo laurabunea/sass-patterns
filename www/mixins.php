@@ -2,8 +2,8 @@
     include 'header.php'; 
 ?>
 
-<div class='block--l block-small--s mb--l clearfix tb__primary'>
-    <div class='page-header tb__header'>
+<div class='block--l block-small--s mb--l clearfix pt-block'>
+    <div class='page-header pt-page-header'>
         <h1>
             Mixins
             <span class='tiny'>
@@ -16,7 +16,7 @@
         intro text
     </p>
 
-    <div class='page-header tb__header m--xxl'>
+    <div class='page-header pt-page-header m--xxl'>
         <h1>
 
             Mixins
@@ -67,7 +67,7 @@
 
         <p>This mixin takes the hassle out of defining one css-attribute in all vendor-specific prefixes (-moz, -webkit, -o, -ms).</p>
         <!--  code block starts -->
-        <div class='block--s tb__tertiary'>
+        <div class='block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
@@ -90,11 +90,11 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='img-rounded m--xm  testbox-100-100 tb__green'>
+            <div class='img-rounded m--xm  testbox-100-100 green-block'>
             </div>
         
         </div><!--  hello world block ends -->
@@ -107,7 +107,7 @@
             02. Media break point 
         </h2>
         <!--  code block starts -->
-        <div class='block--s tb__tertiary'>
+        <div class='block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
@@ -132,7 +132,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -149,7 +149,7 @@
            03. Opacity 
         </h2>
         <!--  code block starts -->
-        <div class='block--s tb__tertiary'>
+        <div class='block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
@@ -179,20 +179,20 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <div class='grid'>
-                <div class='overlay--25 m--m  testbox-100-100 block--s tb__green'>
+                <div class='overlay--25 m--m  testbox-100-100 block--s green-block'>
                     <p>25% opacity</p>
                 </div>
 
-                <div class='overlay--50 m--m  testbox-100-100 block--s tb__green'>
+                <div class='overlay--50 m--m  testbox-100-100 block--s green-block'>
                     <p>50% opacity</p>
                 </div>
 
-                <div class='m--m  testbox-100-100 block--s tb__green'>
+                <div class='m--m  testbox-100-100 block--s green-block'>
                     <p>Block with out an opacity class</p>
                 </div>
             </div>
@@ -209,7 +209,7 @@
 
         <p>This mixin takes the hassle out of defining placeholder prefixes (:-moz-placeholder, ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder).</p>
         
-        <div class='block--s tb__tertiary'>
+        <div class='block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
@@ -234,7 +234,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -258,13 +258,13 @@
             <span style='color:red;font-weight:bold'>QUESTION:</span> For now it the border elements are just extending the border selecter - should we pass in the border width and style as well or have a seperate border mixin .... Thoughts people 
         </p>
         
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
             <pre>
 <code class='language-css'>
-   .tb__blue {
+   .blue-block {
         /* @include theme-block($bg-color, $txt-color, $border-color);*/
         @include theme-block( #4AA1C5, #fff, #4AA1C5 );
     }
@@ -275,7 +275,7 @@
             </h4>
             <pre>
 <code class='language-markup'>
-&lt;div class='tb__blue'&gt;
+&lt;div class='blue-block'&gt;
     &lt;p&gt; Some text &lt;/p&gt;
 &lt;/div&gt;  
 </code>
@@ -283,11 +283,11 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='m--xm  tb__blue block--s'>
+            <div class='m--xm  blue-block block--s'>
                 <p>Some text</p>
             </div>
         
@@ -306,7 +306,7 @@
             Apply contextual and semantic states to individual form controls. 
         </p>
         
-        <div class='block--s tb__tertiary'>
+        <div class='block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
@@ -322,7 +322,7 @@
             </h4>
             <pre>
 <code class='language-markup'>
-&lt;div class='tb__blue'&gt;
+&lt;div class='blue-block'&gt;
     &lt;p&gt; Some text &lt;/p&gt;
 &lt;/div&gt;  
 </code>
@@ -330,11 +330,11 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='m--xm  tb__blue block--s'>
+            <div class='m--xm  blue-block block--s'>
                 <p>Some text</p>
             </div>
         

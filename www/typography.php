@@ -2,10 +2,10 @@
     include 'header.php'; 
 ?>
 
-<div class='block--l block-small--s tb__primary relative mb--l'>
+<div class='block--l block-small--s pt-block relative mb--l'>
     <img class='absolute fred' alt='Fred the fed' src='assets/images/fred-side.png'  />
     
-    <div class='page-header tb__header'>
+    <div class='page-header pt-page-header'>
         <h1>
             Typography
             <span class='tiny'>
@@ -54,7 +54,7 @@
             to linking multiple weights and styles.
         </p>
         
-        <div class='block--s tb__tertiary'>
+        <div class='block--s tt-block'>
                 <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
@@ -120,7 +120,7 @@
         </p>
         
         
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
                 <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
@@ -159,7 +159,7 @@ body {
             <strong>Fred's rule:</strong> Always set font-sizes in ems.
         </p>
 
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
                 <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
@@ -214,7 +214,7 @@ $font-size-xxxs:        11;     //.tiny
     </div>
         
 
-    <div class='page-header tb__header m--xl'>
+    <div class='page-header pt-page-header m--xl'>
         <h1>
             Typography
             <span class='tiny'>
@@ -285,7 +285,7 @@ $font-size-xxxs:        11;     //.tiny
         </p>
 
         <!-- code block starts -->
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -301,7 +301,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             
             <h4 class='tiny uppercase text-muted'>
                 hello world
@@ -333,7 +333,7 @@ $font-size-xxxs:        11;     //.tiny
                 Notes
             </p>
             <!-- code block starts -->
-            <div class=' block--s tb__tertiary'>
+            <div class=' block--s tt-block'>
                 <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
@@ -354,7 +354,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block--stacked block--s tb__secondary'>
+            <div class='block--stacked block--s st-block'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -406,7 +406,7 @@ $font-size-xxxs:        11;     //.tiny
             Notes 
         </p>
         <!--  code block starts -->
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -419,7 +419,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block starts -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -443,7 +443,7 @@ $font-size-xxxs:        11;     //.tiny
             Notes 
         </p>
         <!-- code block starts -->
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -456,7 +456,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -479,7 +479,7 @@ $font-size-xxxs:        11;     //.tiny
             Notes
         </p>
         <!-- code block starts -->
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -493,7 +493,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -520,7 +520,7 @@ $font-size-xxxs:        11;     //.tiny
             Notes 
         </p>
         <!--  code block starts -->
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -532,18 +532,18 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block starts -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s tb__secondary clearfix'>
+        <div class='block--stacked block--s st-block clearfix'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class=' block--s tb__secondary testbox-100-100 push_left left' >
+            <div class=' block--s st-block testbox-100-100 push_left left' >
                 <p class='text--overflow'>
                     Hello I'm a text with an ellipsis
                 </p>
 
                 
             </div>
-            <div class=' block--s tb__secondary testbox-100-100 right' >
+            <div class=' block--s st-block testbox-100-100 right' >
              
                 <p class='text--nowrap'>
                     I'm text that doesn't wrap
@@ -569,7 +569,7 @@ $font-size-xxxs:        11;     //.tiny
             </h3>
 
             <!-- code block ends -->
-            <div class=' block--s tb__tertiary'>
+            <div class=' block--s tt-block'>
                 <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
@@ -584,7 +584,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block--stacked block--s tb__secondary'>
+            <div class='block--stacked block--s st-block'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -604,7 +604,7 @@ $font-size-xxxs:        11;     //.tiny
                 b) Styled list
             </h3>
             <!-- code block starts -->
-            <div class=' block--s tb__tertiary'>
+            <div class=' block--s tt-block'>
                 <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
@@ -619,7 +619,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block--stacked block--s tb__secondary'>
+            <div class='block--stacked block--s st-block'>
                 <h4 class='h tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -638,7 +638,7 @@ $font-size-xxxs:        11;     //.tiny
         <div class='m--l'>
             <h3 class='h4'>c) Inline list</h3>
             <!-- code block starts -->
-            <div class=' block--s tb__tertiary'>
+            <div class=' block--s tt-block'>
                 <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
@@ -653,7 +653,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block--stacked block--s tb__secondary'>
+            <div class='block--stacked block--s st-block'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -682,7 +682,7 @@ $font-size-xxxs:        11;     //.tiny
             Notes
         </p>
         <!-- code block starts -->
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -695,7 +695,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

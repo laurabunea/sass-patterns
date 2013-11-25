@@ -2,9 +2,9 @@
     include 'header.php'; 
 ?> 
 
-<div class='block--l block-small--s mb--l clearfix tb__primary relative'>
+<div class='block--l block-small--s mb--l clearfix pt-block relative'>
     <img src='assets/images/fred-top-big.png' class='absolute fred-buttons-page' alt=''/>
-    <div class='page-header tb__header'>
+    <div class='page-header pt-page-header'>
         <h1>
             Buttons
             <span class='tiny'>
@@ -50,7 +50,7 @@
         </h2>
 
         <!-- code block starts -->
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -64,7 +64,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -92,7 +92,7 @@
             Stack a variation class to add some color
         </p>
         <!-- code block starts -->
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -105,7 +105,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -131,7 +131,7 @@
         </p>
 
         <!-- code block starts -->
-        <div class='block--s tb__tertiary'>
+        <div class='block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -144,7 +144,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -163,7 +163,7 @@
         </p>
 
         <!-- code block starts -->
-         <div class=' block--s tb__tertiary'>
+         <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -176,7 +176,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -195,7 +195,7 @@
         </p>
 
         <!-- code block starts -->
-        <div class='block--s tb__tertiary'>
+        <div class='block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -208,7 +208,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -244,7 +244,7 @@
         </p>
 
         <!-- code block starts -->
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -263,7 +263,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -311,7 +311,7 @@
         </p>
 
         <!-- code block starts -->
-        <div class='block--s tb__tertiary'>
+        <div class='block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -327,7 +327,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -362,7 +362,7 @@
              buttons and make sure the padding's the same as your default button :)
         </p>
         <!-- code block starts -->
-        <div class='block--s tb__tertiary'>
+        <div class='block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -377,7 +377,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

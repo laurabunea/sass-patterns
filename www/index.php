@@ -6,14 +6,14 @@
 <div class='media'>
     <img class='media__image' src='assets/images/fred.png' alt='Fred the friendly FED'/>
     <div class='media__body'>
-        <div class='arrow--side block--s tb__tertiary br--s' >
+        <div class='arrow--side block--s tt-block br--s' >
             <p class='h1 '>Hi I'm F<span>R</span>ED the friendly FED.</p>
             <i class='arrow  arrow-left'></i>
         </div>
     </div>
 </div> 
 
-<div class='block--stacked block--l block-small--s mb--l tb__primary'>
+<div class='block--stacked block--l block-small--s mb--l pt-block'>
 	
     <p class='intro'>
         Introduction on FRED here ...
@@ -62,7 +62,7 @@
 	</h3>
 
 	<!-- code block starts -->
-    <div class=' block--s tb__tertiary'>
+    <div class=' block--s tt-block'>
         <h4 class='tiny uppercase text-muted'>
             code
         </h4>
@@ -100,7 +100,7 @@
         what you've done.
     </p>
     <!-- code block starts -->
-    <div class='block--s tb__tertiary'>
+    <div class='block--s tt-block'>
         <h4 class='tiny uppercase text-muted'>
             code
         </h4>
@@ -136,7 +136,7 @@
     </p>
 
      <!-- code block starts -->
-    <div class='block--s tb__tertiary'>
+    <div class='block--s tt-block'>
         <h4 class='tiny uppercase text-muted'>
             code
         </h4>

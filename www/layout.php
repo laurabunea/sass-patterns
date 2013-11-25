@@ -2,8 +2,8 @@
     include 'header.php'; 
 ?>
 
-<div class='block--l block-small--s mb--l clearfix tb__primary relative'>
-    <div class='page-header tb__header'>
+<div class='block--l block-small--s mb--l clearfix pt-block relative'>
+    <div class='page-header pt-page-header'>
         <h1>
             Layout
             <span class='tiny'>
@@ -19,7 +19,7 @@
         Our designs will often change right up til the end, so it's worth making stuff really easy to change.
     </p>
 
-    <div class='page-header tb__header m--xl'>
+    <div class='page-header pt-page-header m--xl'>
         <h1>
             Layout
             <span class='tiny'>
@@ -90,7 +90,7 @@
             Displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box
         </p>
         <!--  code block starts -->
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -123,7 +123,7 @@
 
         </p>
         <!--  code block starts -->
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4> 
@@ -160,24 +160,24 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'> 
+        <div class='block--stacked block--s st-block'> 
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <div class='grid '>
-                <div class='tb__secondary xxm relative testbox-100-100' >
+                <div class='st-block xxm relative testbox-100-100' >
                     <img class='absolute specific-bird' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
-                <div class='tb__secondary xxm relative testbox-100-100' >
+                <div class='st-block xxm relative testbox-100-100' >
                     <img class='absolute--top-right' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
-                <div class='tb__secondary xxm relative testbox-100-100' >
+                <div class='st-block xxm relative testbox-100-100' >
                     <img class='absolute--top-left' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
-                <div class='tb__secondary xxm relative testbox-100-100' >
+                <div class='st-block xxm relative testbox-100-100' >
                     <img class='absolute--bottom-right' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
-                <div class='tb__secondary xxm relative testbox-100-100' >
+                <div class='st-block xxm relative testbox-100-100' >
                     <img class='absolute--bottom-left' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
                  
@@ -192,7 +192,7 @@
                 With CSS float, an element can be pushed to the left or right, allowing other elements to wrap around it.
             </p>
             <!--  code block starts -->
-            <div class='block--s tb__tertiary'>
+            <div class='block--s tt-block'>
                 <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
@@ -205,7 +205,7 @@
             </div><!--  code block ends -->
 
             <!--  hello world block starts -->
-            <div class='block--stacked block--s tb__secondary'>
+            <div class='block--stacked block--s st-block'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -222,7 +222,7 @@
                 What clearfix does is it forces content after the floats or the container containing the floats to render below it.
             </p>
             <!--  code block starts -->
-            <div class='block--s tb__tertiary'>
+            <div class='block--s tt-block'>
                 <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
@@ -236,7 +236,7 @@
             </div><!--  code block ends -->
 
             <!--  hello world block starts -->
-            <div class='block--stacked block--s tb__secondary'>
+            <div class='block--stacked block--s st-block'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -259,7 +259,7 @@
             like lego :) uses base spacing
         </p>
         <!--  code block starts -->
-        <div class=' block--s tb__tertiary'> 
+        <div class=' block--s tt-block'> 
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -299,52 +299,52 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
-            <div class='m--xxxs block--xs tb__green '>
+            <div class='m--xxxs block--xs green-block '>
                 <p>
                     block--xs with xxxs top margin (m--xxxs)
                 </p>
             </div><!-- block xs ends-->
-            <div class='m--xxs block--xs tb__green '>
+            <div class='m--xxs block--xs green-block '>
                 <p>
                     block--xs with xxs top margin (m--xxs)
                 </p>
             </div><!-- block xs ends-->
-            <div class='m--xs block--xs tb__green '>
+            <div class='m--xs block--xs green-block '>
                 <p>
                     block--xs with xs top margin (m--xs)
                 </p>
             </div><!-- block xs ends-->
-            <div class='m--s block--xs tb__green '>
+            <div class='m--s block--xs green-block '>
                 <p>
                     block--xs with with s top margin (m--s)
                 </p>
             </div><!-- block xs ends-->
 
-            <div class='m--m block--xs tb__green '>
+            <div class='m--m block--xs green-block '>
                 <p>
                     block--xs with m top margin (m--m)
                 </p>
             </div><!-- block xs ends-->
-            <div class='m--l block--xs tb__green '>
+            <div class='m--l block--xs green-block '>
                 <p>
                     block--xs with l top margin (m--l)
                 </p>
             </div><!-- block xs ends-->
-            <div class='m--xl block--xs tb__green '>
+            <div class='m--xl block--xs green-block '>
                 <p>
                     block--xs with xl top margin (m--xl)
                 </p>
             </div><!-- block xs ends-->
-            <div class='m--xxl block--xs tb__green '>
+            <div class='m--xxl block--xs green-block '>
                 <p>
                     block--xs with xxl top margin (m--xxl)
                 </p>
             </div><!-- block xs ends-->
-            <div class='m--xxxl block--xs tb__green '>
+            <div class='m--xxxl block--xs green-block '>
                 <p>
                     block--xs with xxxl top margin (m--xxxl)
                 </p>
@@ -359,7 +359,7 @@
             04. Section blocks
         </h2>
         <!--  code block starts -->
-        <div class=' block--s tb__tertiary'> 
+        <div class=' block--s tt-block'> 
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -373,36 +373,36 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
 
-            <div class=' block--xs tb__green '>
+            <div class=' block--xs green-block '>
                 <p>
                     block--xs
                 </p>
             </div><!-- block xs ends-->
 
-            <div class=' block--s tb__green'>
+            <div class=' block--s green-block'>
                 <p>
                     block--s
                 </p>
             </div><!-- block ends-->
 
-            <div class='block--m tb__green'>
+            <div class='block--m green-block'>
                 <p>
                     block--m
                 </p>
             </div><!-- block ends-->
 
-            <div class='block--l tb__green '>
+            <div class='block--l green-block '>
                 <p>
                     block--l
                 </p>
             </div><!-- block xl ends-->
 
-            <div class='block--xl tb__green '>
+            <div class='block--xl green-block '>
                 <p>
                     block--xl
                 </p>
@@ -411,19 +411,19 @@
 
 
 
-            <!--<div class='block--tight tb__green '>
+            <!--<div class='block--tight green-block '>
                 <p>
                     I am a tight block
                 </p>
             </div>
 
-            <div class='block--bleed tb__green'>
+            <div class='block--bleed green-block'>
                 <p>
                     I am a block
                 </p>
             </div>
 
-            <div class='block--bleed_padding tb__green'>
+            <div class='block--bleed_padding green-block'>
                 <p>
                     I am a block
                 </p>
@@ -440,7 +440,7 @@
             The only difference is that they ...
         </p>
         <!--  code block starts -->
-        <div class=' block--s tb__tertiary'> 
+        <div class=' block--s tt-block'> 
             <h4 class='tiny uppercase text-muted'>
                 scss 
             </h4>
@@ -494,7 +494,7 @@ $wide:                          75em;//Wide 1200px
 // Example one
 // -------------------------------------------------- 
 
-&lt;div class='block--m block-m--xs block-s--s block-xlarge--l tb__green '&gt;
+&lt;div class='block--m block-m--xs block-s--s block-xlarge--l green-block '&gt;
     &lt;p&gt;
         &lt;strong>desktop:&lt;/strong&gt;    block--m
         &lt;strong>mobile:&lt;/strong&gt;     block-m--xs
@@ -505,7 +505,7 @@ $wide:                          75em;//Wide 1200px
 
 // Example two
 // -------------------------------------------------- 
-&lt;div class='m-m--xs m-s--s m--m m-w--l block--s tb__green '&gt;
+&lt;div class='m-m--xs m-s--s m--m m-w--l block--s green-block '&gt;
     &lt;p&gt;
         &lt;strong>mobile:&lt;/strong&gt; m-small--xs
         &lt;strong>skinny:&lt;/strong&gt; m-medium--s
@@ -519,12 +519,12 @@ $wide:                          75em;//Wide 1200px
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
             <p>Example one</p>
-            <div class='block--m block-m--xs block-s--s block-xlarge--l tb__green '>
+            <div class='block--m block-m--xs block-s--s block-xlarge--l green-block '>
                 <p>
                     <strong>desktop:</strong>    block--m<br />
                     <strong>mobile:</strong>     block-m--xs<br />
@@ -533,7 +533,7 @@ $wide:                          75em;//Wide 1200px
                 </p>
             </div>
             <p>Example two</p>
-            <div class='m-small--xs m-medium--s m--m m-large--l block--s tb__green '>
+            <div class='m-small--xs m-medium--s m--m m-large--l block--s green-block '>
                 <p>
                     <strong>mobile:</strong> m-small--xs<br />
                     <strong>skinny:</strong> m-medium--s<br />
@@ -555,7 +555,7 @@ $wide:                          75em;//Wide 1200px
             Float an image to the left, with a clearfixed block of content to the right.
         </p>
         <!--  code block starts -->
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -578,7 +578,7 @@ $wide:                          75em;//Wide 1200px
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -610,7 +610,7 @@ $wide:                          75em;//Wide 1200px
            06. Icon blocks
         </h2>
         <!--  code block starts -->
-        <div class=' block--s tb__tertiary'>
+        <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -630,7 +630,7 @@ $wide:                          75em;//Wide 1200px
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -657,7 +657,7 @@ $wide:                          75em;//Wide 1200px
             07. Arrows
         </h2>
         <!--  code block starts -->
-        <div class='block--s tb__tertiary'>
+        <div class='block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -687,31 +687,31 @@ $wide:                          75em;//Wide 1200px
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='arrow--left m--xm block--xs tb__blue'>
+            <div class='arrow--left m--xm block--xs blue-block'>
                 <p> ... </p>
                 <i class='arrow arrow-top'></i>
             </div>
 
-            <div class='arrow--right m--xm block--xs tb__blue'>
+            <div class='arrow--right m--xm block--xs blue-block'>
                 <p> ... </p>
                 <i class='arrow arrow-top '></i>
             </div>
 
-            <div class='arrow--center m--xm block--xs tb__blue'>
+            <div class='arrow--center m--xm block--xs blue-block'>
                 <p> ... </p>
                 <i class='arrow arrow-bottom '></i>
             </div>
 
-            <div class='arrow--side m--xm block--xs tb__blue'>
+            <div class='arrow--side m--xm block--xs blue-block'>
                 <p> ... </p>
                 <i class='arrow arrow-left '></i>
             </div>
 
-            <!--<div class='arrow xm arrow--side block--xxs tb__blue'>
+            <!--<div class='arrow xm arrow--side block--xxs blue-block'>
                 <p> ... </p>
                 <i class='arrow arrow-right'></i>
             </div>-->
@@ -729,17 +729,17 @@ $wide:                          75em;//Wide 1200px
             Sets the child elements to take up full justified width of the parent.
         </p>
         <!--  code block ends -->
-        <div class='block--s tb__tertiary'>
+        <div class='block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>  
+        <div class='block--stacked block--s st-block'>  
             <div class='grid'>
                 <div class='grid__item g--1-1  '>
-                   <div class='tb__pink block--s'>
+                   <div class='pink-block block--s'>
                         <p>
                             full width
                         </p>
@@ -749,14 +749,14 @@ $wide:                          75em;//Wide 1200px
             <p>Example one:</p>
             <div class='grid'>
                 <div class='grid__item g--1-2' >
-                    <div class='tb__blue block--s'>
+                    <div class='blue-block block--s'>
                         <p>
                             1/2
                         </p>
                     </div>
                 </div>
                 <div class='grid__item g--1-2 '>
-                    <div class='tb__blue block--s'>
+                    <div class='blue-block block--s'>
                         <p>
                             1/2
                         </p>
@@ -766,28 +766,28 @@ $wide:                          75em;//Wide 1200px
             <p>Example two:</p>
             <div class='grid'>
                 <div class='grid__item g--1-4 '>
-                    <div class='tb__green block--s'>
+                    <div class='green-block block--s'>
                         <p>
                             1/4
                         </p>
                     </div>
                 </div>
                 <div class='grid__item g--1-4 '>
-                    <div class='tb__green block--s'>
+                    <div class='green-block block--s'>
                         <p>
                             1/4
                         </p>
                     </div>
                 </div>
                 <div class='grid__item g--1-4 '>
-                    <div class='tb__green block--s'>
+                    <div class='green-block block--s'>
                         <p>
                             1/4
                         </p>
                     </div>
                 </div>
                 <div class='grid__item g--1-4 '>
-                    <div class='tb__green block--s'>
+                    <div class='green-block block--s'>
                         <p>
                             1/4
                         </p>
@@ -797,14 +797,14 @@ $wide:                          75em;//Wide 1200px
             <p>Example three:</p>
             <div class='grid'>
                 <div class='grid__item g--60'>
-                    <div class='tb__secondary block--s'>
+                    <div class='st-block block--s'>
                         <p>
                             60%
                         </p>
                     </div>
                 </div>
                 <div class='grid__item g--40'>
-                    <div class='tb__secondary block--s'>
+                    <div class='st-block block--s'>
                         <p>
                             40%
                         </p>
@@ -814,14 +814,14 @@ $wide:                          75em;//Wide 1200px
             <p>Example four:</p>
             <div class='grid'>
                 <div class='grid__item g--80 '>
-                    <div class='tb__tertiary block--s'>
+                    <div class='tt-block block--s'>
                         <p>
                             80%
                         </p>
                     </div>
                 </div>
                 <div class='grid__item g--20'>
-                    <div class='tb__tertiary block--s'>
+                    <div class='tt-block block--s'>
                         <p>
                             20%
                         </p>
@@ -837,28 +837,28 @@ $wide:                          75em;//Wide 1200px
 
             <div class='grid grid--middle'>
                 <div class=' g--1-4'>
-                    <div class='tb__green block--s'>
+                    <div class='green-block block--s'>
                         <p>
                             1/4
                         </p>
                     </div>
                 </div>
                 <div class=' g--1-4'>
-                    <div class='tb__green block--s'>
+                    <div class='green-block block--s'>
                         <p>
                             1/4
                         </p>
                     </div>
                 </div>
                 <div class=' g--1-4'>
-                    <div class='tb__green block--s'>
+                    <div class='green-block block--s'>
                         <p>
                             1/4
                         </p>
                     </div>
                 </div>
                 <div class=' g--1-4 '>
-                   <div class='tb__green block--s'>
+                   <div class='green-block block--s'>
                         <p>
                             1/4
                         </p>
@@ -878,7 +878,7 @@ $wide:                          75em;//Wide 1200px
           
         </p>
         <!--  code block starts -->
-        <div class=' block--s tb__tertiary'> 
+        <div class=' block--s tt-block'> 
             <h4 class='tiny uppercase text-muted'>
                 scss 
             </h4>
@@ -890,7 +890,7 @@ $wide:                          75em;//Wide 1200px
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
@@ -898,7 +898,7 @@ $wide:                          75em;//Wide 1200px
             
             <div class='grid'>
                 <div class='grid__item g--1-4 g-s--1-2 g-m--1-1 g-w--60'>
-                   <div class='tb__pink block--s'>
+                   <div class='pink-block block--s'>
                         <p>
                             1<!--<strong>Desktop:</strong> 1/4 <br />
                             <strong>Skinny:</strong> 1/2 <br />
@@ -908,21 +908,21 @@ $wide:                          75em;//Wide 1200px
                     </div>
                 </div>
                 <div class='grid__item g--1-4 g-s--1-2 g-m--1-1 g-w--40'>
-                   <div class='tb__pink block--s'>
+                   <div class='pink-block block--s'>
                         <p>
                             1
                         </p>
                     </div>
                 </div>
                 <div class='grid__item g--1-4 g-s--1-2 g-m--1-1 g-w--60'>
-                   <div class='tb__pink block--s'>
+                   <div class='pink-block block--s'>
                         <p>
                             1
                         </p>
                     </div>
                 </div>
                 <div class='grid__item g--1-4 g-s--1-2 g-m--1-1 g-w--40'>
-                   <div class='tb__pink block--s'>
+                   <div class='pink-block block--s'>
                         <p>
                             1
                         </p>
@@ -942,7 +942,7 @@ $wide:                          75em;//Wide 1200px
             Place something before or after an element.
         </p>
         <!--  code block starts -->
-        <div class='block--s tb__tertiary'>
+        <div class='block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -955,7 +955,7 @@ $wide:                          75em;//Wide 1200px
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -979,7 +979,7 @@ $wide:                          75em;//Wide 1200px
             the parent element.
         </p>
         <!--  code block starts -->
-        <div class=' block--s tb__tertiary'> 
+        <div class=' block--s tt-block'> 
             <h4 class='tiny uppercase text-muted'>
                 scss 
             </h4>
@@ -992,7 +992,7 @@ $wide:                          75em;//Wide 1200px
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
@@ -1003,7 +1003,7 @@ $wide:                          75em;//Wide 1200px
                     <img src='assets/images/fred.png' alt='' class='img--responsive' />
                 </div>
                 <div class='grid__item g--60'>
-                    <div class='arrow--side tb__blue block--m'>
+                    <div class='arrow--side blue-block block--m'>
                         <p>Resize the browser so you can see me shrink </p>
                         <i class='arrow arrow-left'></i>
                     </div>
@@ -1022,7 +1022,7 @@ $wide:                          75em;//Wide 1200px
             Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation.
         </p>
         <!--  code block starts -->
-        <div class=' block--s tb__tertiary'> 
+        <div class=' block--s tt-block'> 
             <h4 class='tiny uppercase text-muted'>
                 scss 
             </h4>
@@ -1034,29 +1034,29 @@ $wide:                          75em;//Wide 1200px
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
-          <div class='block--s tb__quarternary '>
+          <div class='block--s qt-block '>
                 <p>
                     normal block always how this 
                 </p>
             </div>
 
-            <div class='block--s tb__pink hidden-mobile'>
+            <div class='block--s pink-block hidden-mobile'>
                 <p>
                     hide this block on mobile 
                 </p>
             </div>
 
-            <div class='block--s tb__green hidden-skinny'>
+            <div class='block--s green-block hidden-skinny'>
                 <p>
                     hide this block on skinny
                 </p>
             </div>
 
-            <div class='block--s tb__blue hidden-wide'>
+            <div class='block--s blue-block hidden-wide'>
                 <p>
                     hide this block on wide
                 </p>
@@ -1077,7 +1077,7 @@ $wide:                          75em;//Wide 1200px
             Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation.
         </p>
         <!--  code block starts -->
-        <div class=' block--s tb__tertiary'> 
+        <div class=' block--s tt-block'> 
             <h4 class='tiny uppercase text-muted'>
                 scss 
             </h4>
@@ -1089,29 +1089,29 @@ $wide:                          75em;//Wide 1200px
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s tb__secondary'>
+        <div class='block--stacked block--s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
-          <div class='block--s tb__quarternary '>
+          <div class='block--s qt-block '>
                 <p>
                     normal block always show this 
                 </p>
             </div>
 
-            <div class='block--s tb__pink visible-mobile'>
+            <div class='block--s pink-block visible-mobile'>
                 <p>
                     show this block on mobile
                 </p>
             </div>
 
-            <div class='block--s tb__blue visible-skinny'>
+            <div class='block--s blue-block visible-skinny'>
                 <p>
                     show this block on skinny
                 </p>
             </div>
 
-            <div class='block--s tb__green visible-wide'>
+            <div class='block--s green-block visible-wide'>
                 <p>
                     show this block on wide
                 </p>

@@ -3,8 +3,8 @@
 ?>
 
 
-<div class='block--l block-small--s mb--l clearfix tb__primary'>
-    <div class='page-header tb__header'>
+<div class='block--l block-small--s mb--l clearfix pt-block'>
+    <div class='page-header pt-page-header'>
         <h1>
             Forms 
         </h1>

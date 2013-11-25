@@ -5,11 +5,6 @@
  */
 
 
-// ...
-// -------------------------
-$sub-header:                    #999;
-
-
 // Grays
 // -------------------------
 
@@ -20,9 +15,36 @@ $gray-light:                    lighten(#000, 60%);   // #999
 $gray-lighter:                  lighten(#000, 93.5%); // #eee
 
 
+/**
+ * . Base colours for your site
+ * -----------------------------------------------------------------------------
+ */
 
-// Block theme colours - warning
-// -------------------------------
+
+html, 
+body {
+    background-color:   $bg-color;
+    color:              $base-font-color;
+}
+
+a {
+    color:              $base-link-color;
+    &:hover {
+        color:          $base-link-hover-color;
+    }
+}
+
+hr {
+  background-color:     $hr-colour;
+  color:                $hr-colour;
+}
+
+
+/**
+ * Theme blocks -- success warning or danger
+ * -----------------------------------------------------------------------------
+ */
+
 
 $success-bg-color:              #C5FFC6;
 $success-txt-color:             #468847;
@@ -37,30 +59,77 @@ $danger-txt-color:              #B94A48;
 $danger-border-color:           $danger-txt-color;
 
 
-// Block theme colours - primary, secondary, tertiary
-// -------------------------------
+.success-block {
+  @extend %border;
+  @include theme-block( $success-bg-color, $success-txt-color, $success-border-color );
+}
+
+.warning-block {
+  @extend %border;
+  @include theme-block( $warning-bg-color, $warning-txt-color, $warning-border-color );
+}
+
+.danger-block {
+  @extend %border;
+  @include theme-block( $danger-bg-color, $danger-txt-color, $danger-border-color );
+}
 
 
+/**
+ *  Theme block -- primary, secondary, tertiary, quarternary
+ * -----------------------------------------------------------------------------
+ */
+
+//primary 
 $primary-bg-color:              #fff;
 $primary-txt-color:             $base-font-color; 
 $primary-border-color:          $primary-bg-color;
 
+//secondary 
 $secondary-bg-color:            #f2f2f2;
 $secondary-txt-color:           $base-font-color ; 
 $secondary-border-color:        #E6E6E6;
 
+//tertiary 
 $tertiary-bg-color:             #2E2F2B;
 $tertiary-txt-color:            #fff; 
 $tertiary-border-color:         $tertiary-bg-color;
 
+//quarternary 
 $quarternary-bg-color:          #4D4D4D;
 $quarternary-txt-color:         #fff; 
 $quarternary-border-color:      $quarternary-bg-color;
 
+//primary theme block
+.pt-block {
+  @extend %border;
+    @include theme-block( $primary-bg-color, $primary-txt-color, $primary-border-color );
+    @extend .radius--m;
+}
+
+//Secondary theme block
+.st-block {
+    @extend %border;
+  @include theme-block( $secondary-bg-color, $secondary-txt-color, $secondary-border-color );
+}
+
+//Tertiary theme block
+.tt-block {
+  @extend %border;
+    @include theme-block( $tertiary-bg-color, $tertiary-txt-color, $tertiary-border-color );
+}
+
+//quarternary theme block
+.qt-block {
+  @extend %border;
+    @include theme-block( $quarternary-bg-color, $quarternary-txt-color, $quarternary-border-color );
+}
 
 
-// Block theme colours - other block theme colours
-// -------------------------------
+/**
+ *  Theme block --green, pink, blue
+ * -----------------------------------------------------------------------------
+ */
 
 //green theme box
 $green-bg-color:                #A6E22E;
@@ -78,9 +147,95 @@ $blue-txt-color:                #fff;
 $blue-border-color:             $blue-bg-color;
 
 
+.green-block {
+  @extend %border;
+    @include theme-block( $green-bg-color, $green-txt-color, $green-border-color );
+}
+
+.pink-block {
+  @extend %border;
+    @include theme-block( $pink-bg-color, $pink-txt-color, $pink-border-color );
+}
+
+.blue-block {
+  @extend %border;
+    @include theme-block( $blue-bg-color, $blue-txt-color, $blue-border-color );
+}
+
 
 /**
- * 4. Button themes
+ * breadcrumbs
+ * -----------------------------------------------------------------------------
+ */
+
+//primary theme
+$pt-breadcrumb-active-txt:        #555;
+$pt-breadcrumb-txt:               #666;
+$pt-breadcrumb-bg:                #ccc;
+
+
+.pt-breadrumbs {
+  background-color: $pt-breadcrumb-bg;
+  > li {
+    &+li:before {
+      color: $pt-breadcrumb-txt;
+    }
+  }
+  > .active {
+    color: $pt-breadcrumb-active-txt;
+  }
+}
+
+
+
+/**
+ * Badges
+ * -----------------------------------------------------------------------------
+ */
+
+//primary theme
+$pt-badge-txt:                    #fff;
+$pt-badge-bg:                     red;
+$pt-badge-radius:                 10px;
+$pt-badge-active-txt:             #efefef;
+$pt-badge-active-bg:              blue;
+
+
+.pt-badge {
+    color: $pt-badge-txt;
+    background-color: $pt-badge-bg;
+    border-radius: $pt-badge-radius;
+}
+
+// Account for counters in navs
+a.pt-badge_active > .badge {
+    color: $pt-badge-active-txt;
+    background-color: $pt-badge-active-bg;
+}
+
+
+
+/**
+ * Page header
+ * -----------------------------------------------------------------------------
+ */
+
+//primary theme
+$pt-page-header-border:             #E6E6E6;
+$pt-page-header-txt:                #343434;
+$pt-page-header-span-txt:           slategray;
+
+
+.pt-page-header {
+    color:$pt-page-header-txt;
+    border-bottom:1px solid $pt-page-header-border;
+    span {
+        color:$pt-page-header-span-txt;
+    }
+}
+
+/**
+ * Buttons
  * -----------------------------------------------------------------------------
  */
 
@@ -122,202 +277,6 @@ $negative-btn-border:          #444;
 $negative-btn-hover-bg:        #d8281f;
 $negative-btn-hover-txt:       $negative-btn-txt;
 
-
-// Breadcrumbs
-// -------------------------
-
-$breadcrumb-active-txt:        #555;
-$breadcrumb-txt:               #666;
-$breadcrumb-bg:                #ccc;
-
-
-// Badges
-// -------------------------
-
-$badge-txt:                    #fff;
-$badge-bg:                     red;
-$badge-radius:                 10px;
-$badge-active-txt:             #efefef;
-$badge-active-bg:              blue;
-
-
-// Page header
-// -------------------------
-
-$pg-header-border:             #E6E6E6;
-$pg-header-txt:                #343434;
-$pg-header-span-txt:           slategray;
-
-
-// Form states and alerts
-// -------------------------
-
-$state-warning-text:             #c09853;
-$state-warning-bg:               #fcf8e3;
-//$state-warning-border:           darken(spin($state-warning-bg, -10), 3%);
-
-$state-danger-text:              #b94a48;
-$state-danger-bg:                #f2dede;
-//$state-danger-border:            darken(spin($state-danger-bg, -10), 3%);
-
-$state-success-text:             #468847;
-$state-success-bg:               #dff0d8;
-//$state-success-border:           darken(spin($state-success-bg, -10), 5%);
-
-$state-info-text:                #3a87ad;
-$state-info-bg:                  #d9edf7;
-//$state-info-border:              darken(spin($state-info-bg, -10), 7%);
-
-
-
-
-
-/**
- *
- * Themes 
- *
- *  This file controls all of the colours / themes for the site! 
- *
- * ----------------------------------------------------------------------------
- * 
- * Structure:
- *
- *      1. Warning Themes
- *        2. Text colours
- *        3. Theme blocks
- *
- *
- *
- * ----------------------------------------------------------------------------
- *
- */
-
-/*
-base colours 
-*/
-
-html, 
-body {
-    background-color:   $bg-color;
-    color:              $base-font-color;
-}
-
-a {
-    color:              $base-link-color;
-    &:hover {
-        color:          $base-link-hover-color;
-    }
-}
-
-hr {
-  background-color:     $hr-colour;
-  color:                $hr-colour;
-}
-
-
-/**
- * 2. Text colours
- * -----------------------------------------------------------------------------
- */
-
-.text-muted             { color:$text-muted; }
-
-.text-success           { color: $text-success; }
-
-.text-warning           { color: $text-warning; }
-
-.text-danger            { color: $text-danger; }
-
-
-/**
- * . Theme blocks --success warning or danger
- * -----------------------------------------------------------------------------
- */
-
-.tb__success {
-  @extend %border;
-  @include theme-block( $success-bg-color, $success-txt-color, $success-border-color );
-}
-
-.tb__warning {
-  @extend %border;
-  @include theme-block( $warning-bg-color, $warning-txt-color, $warning-border-color );
-}
-
-.tb__danger {
-  @extend %border;
-  @include theme-block( $danger-bg-color, $danger-txt-color, $danger-border-color );
-}
-
-
-/**
- *  Theme block --primary, secondary, tertiary, quarternary
- * -----------------------------------------------------------------------------
- */
-
-.tb__primary {
-  @extend %border;
-    @include theme-block( $primary-bg-color, $primary-txt-color, $primary-border-color );
-  border-radius: 10px;
-}
-
-.tb__secondary {
-    @extend %border;
-  @include theme-block( $secondary-bg-color, $secondary-txt-color, $secondary-border-color );
-}
-
-.tb__tertiary {
-  @extend %border;
-    @include theme-block( $tertiary-bg-color, $tertiary-txt-color, $tertiary-border-color );
-}
-
-.tb__quarternary {
-  @extend %border;
-    @include theme-block( $quarternary-bg-color, $quarternary-txt-color, $quarternary-border-color );
-}
-
-
-/**
- *  Theme block --green, pink, blue
- * -----------------------------------------------------------------------------
- */
-
-.tb__green {
-  @extend %border;
-    @include theme-block( $green-bg-color, $green-txt-color, $green-border-color );
-}
-
-.tb__pink {
-  @extend %border;
-    @include theme-block( $pink-bg-color, $pink-txt-color, $pink-border-color );
-}
-
-.tb__blue {
-  @extend %border;
-    @include theme-block( $blue-bg-color, $blue-txt-color, $blue-border-color );
-}
-
-
-
-
-
-
-
-.br--xs {
-  @include vendor(border-radius, 2px 2px 2px 2px);
-}
-.br--xs {
-  @include vendor(border-radius, 5px 5px 5px 5px);
-}
-.br--s {
-  @include vendor(border-radius, 10px 10px 10px 10px);
-}
-/**
- * Button theming
- * -----------------------------------------------------------------------------
- */
-
-
 .btn-primary {
     
     @include theme-block($primary-btn-bg, $primary-btn-txt, $primary-btn-border);  
@@ -343,8 +302,6 @@ hr {
     }
 }
 
-
-
 .btn-positive {
     @include theme-block($positive-btn-bg, $positive-btn-txt, $positive-btn-border);
     &:hover {
@@ -361,8 +318,6 @@ hr {
     }
 }
 
-
-
 /**
  * A common active state makes us look pro as, bro!
  */
@@ -373,35 +328,21 @@ hr {
 }
 
 
-.tb__breadrumbs {
-  background-color: $breadcrumb-bg;
-  > li {
-    &+li:before {
-      color: $breadcrumb-txt;
-    }
-  }
-  > .active {
-    color: $breadcrumb-active-txt;
-  }
-}
+// Form states and alerts
+// -------------------------
 
-.tb__badge {
-    color: $badge-txt;
-    background-color: $badge-bg;
-    border-radius: $badge-radius;
-}
+$state-warning-text:             #c09853;
+$state-warning-bg:               #fcf8e3;
+//$state-warning-border:           darken(spin($state-warning-bg, -10), 3%);
 
-// Account for counters in navs
-a.tb__badge_active > .badge {
-    color: $badge-active-txt;
-    background-color: $badge-active-bg;
-}
+$state-danger-text:              #b94a48;
+$state-danger-bg:                #f2dede;
+//$state-danger-border:            darken(spin($state-danger-bg, -10), 3%);
 
-.tb__header {
-    color:$pg-header-txt;
-    border-bottom:1px solid $pg-header-border;
-    span {
-        color:$pg-header-span-txt;
-    }
-}
+$state-success-text:             #468847;
+$state-success-bg:               #dff0d8;
+//$state-success-border:           darken(spin($state-success-bg, -10), 5%);
 
+$state-info-text:                #3a87ad;
+$state-info-bg:                  #d9edf7;
+//$state-info-border:              darken(spin($state-info-bg, -10), 7%);
