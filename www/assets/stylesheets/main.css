@@ -1,2488 +1,1129 @@
 @charset "UTF-8";
-/* ------------------------------------------------------------------- *
- |  TYPE:           Main stylesheet
- |  AUTHOR(S):
- |  DATE CREATED:   DD/MM/YYYY
- |  DATE UPDATED:   DD/MM/YYYY
- |  DESCRIPTION:
- |
- |	STRUCTURE:
- |		1. CORE
- |		2. HELPER FUNCTIONS & MIXINS
- |		3. GLOBAL STYLES
- |		4. LAYOUTS
- |		5. UI ELEMENTS
- |		6. PAGE/SECTION SPECIFIC STYLES
- |		7. PRINT
- |
- * ------------------------------------------------------------------- */
-/* normalize.css v2.1.3 | MIT License | git.io/normalize */
-/* ==========================================================================
-   HTML5 display definitions
-   ========================================================================== */
-/* line 9, ../sass/core/_reset.scss */
-html {
-  height: 100%;
+@import url(../../../bower_components/fred/normalize-css/normalize.css);
+/* line 29, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.overlay--75 {
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
 
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-/* line 27, ../sass/core/_reset.scss */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-
-/**
- * Correct `inline-block` display not defined in IE 8/9.
- */
-/* line 37, ../sass/core/_reset.scss */
-audio,
-canvas,
-video {
-  display: inline-block;
-}
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-/* line 46, ../sass/core/_reset.scss */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Address `[hidden]` styling not present in IE 8/9.
- * Hide the `template` element in IE, Safari, and Firefox < 22.
- */
-/* line 57, ../sass/core/_reset.scss */
-[hidden],
-template {
-  display: none;
-}
-
-/* ==========================================================================
-   Base
-   ========================================================================== */
-/**
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-/* line 70, ../sass/core/_reset.scss */
-html {
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
-
-/**
- * Remove default margin.
- */
-/* line 80, ../sass/core/_reset.scss */
-body {
-  margin: 0;
-}
-
-/* ==========================================================================
-   Links
-   ========================================================================== */
-/**
- * Remove the gray background color from active links in IE 10.
- */
-/* line 92, ../sass/core/_reset.scss */
-a {
-  background: transparent;
-  text-decoration: none;
-}
-
-/* line 96, ../sass/core/_reset.scss */
-a:hover {
-  cursor: pointer;
-}
-
-/**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-/* line 104, ../sass/core/_reset.scss */
-a:focus {
-  outline: thin dotted;
-}
-
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-/* line 113, ../sass/core/_reset.scss */
-a:active,
-a:hover {
-  outline: 0;
-}
-
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
- */
-/**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
- */
-/* line 135, ../sass/core/_reset.scss */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 144, ../sass/core/_reset.scss */
-b,
-strong {
-  font-weight: bold;
-}
-
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-/* line 152, ../sass/core/_reset.scss */
-dfn {
-  font-style: italic;
-}
-
-/**
- * Address differences between Firefox and other browsers.
- */
-/* line 160, ../sass/core/_reset.scss */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-
-/**
- * Address styling not present in IE 8/9.
- */
-/* line 170, ../sass/core/_reset.scss */
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-/**
- * Correct font family set oddly in Safari 5 and Chrome.
- */
-/* line 182, ../sass/core/_reset.scss */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
-
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
-/* line 191, ../sass/core/_reset.scss */
-pre {
-  white-space: pre-wrap;
-  width: 99%;
-  overflow: auto;
-  padding: 0;
-  margin: 0;
-}
-
-/**
- * Set consistent quote types.
- */
-/* line 203, ../sass/core/_reset.scss */
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
-}
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-/* line 211, ../sass/core/_reset.scss */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-/* line 220, ../sass/core/_reset.scss */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-/* line 227, ../sass/core/_reset.scss */
-sup {
-  top: -0.5em;
-}
-
-/* line 231, ../sass/core/_reset.scss */
-sub {
-  bottom: -0.25em;
-}
-
-/* ==========================================================================
-   Embedded content
-   ========================================================================== */
-/**
- * Remove border when inside `a` element in IE 8/9.
- */
-/* line 243, ../sass/core/_reset.scss */
-img {
-  border: 0;
-}
-
-/**
- * Correct overflow displayed oddly in IE 9.
- */
-/* line 251, ../sass/core/_reset.scss */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* ==========================================================================
-   Figures
-   ========================================================================== */
-/**
- * Address margin not present in IE 8/9 and Safari 5.
- */
-/* line 263, ../sass/core/_reset.scss */
-figure {
-  margin: 0;
-}
-
-/* ==========================================================================
-   Forms
-   ========================================================================== */
-/**
- * Define consistent border, margin, and padding.
- */
-/* line 275, ../sass/core/_reset.scss */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-/**
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-/* line 286, ../sass/core/_reset.scss */
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * 1. Correct font family not being inherited in all browsers.
- * 2. Correct font size not being inherited in all browsers.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 300, ../sass/core/_reset.scss */
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 2 */
-  margin: 0;
-  /* 3 */
-}
-
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-/* line 312, ../sass/core/_reset.scss */
-button,
-input {
-  line-height: normal;
-}
-
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
- * Correct `select` style inheritance in Firefox 4+ and Opera.
- */
-/* line 324, ../sass/core/_reset.scss */
-button,
-select {
-  text-transform: none;
-}
-
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-/* line 339, ../sass/core/_reset.scss */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */
-}
-
-/**
- * Re-set default cursor for disabled elements.
- */
-/* line 349, ../sass/core/_reset.scss */
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
-/**
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
-/* line 359, ../sass/core/_reset.scss */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
-/* line 370, ../sass/core/_reset.scss */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  /* 2 */
-  box-sizing: content-box;
-}
-
-/**
- * Remove inner padding and search cancel button in Safari 5 and Chrome
- * on OS X.
- */
-/* line 383, ../sass/core/_reset.scss */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * Remove inner padding and border in Firefox 4+.
- */
-/* line 392, ../sass/core/_reset.scss */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/**
- * 1. Remove default vertical scrollbar in IE 8/9.
- * 2. Improve readability and alignment in all browsers.
- */
-/* line 402, ../sass/core/_reset.scss */
-textarea {
-  overflow: auto;
-  /* 1 */
-  vertical-align: top;
-  /* 2 */
-}
-
-/* ==========================================================================
-   Tables
-   ========================================================================== */
-/**
- * Remove most spacing between table cells.
- */
-/* line 415, ../sass/core/_reset.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 421, ../sass/core/_reset.scss */
-ul,
-ol {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-/**
- *
- * SASS Variables 
- *
- * ----------------------------------------------------------------------------
- * 
- * Structure:
- *		
- *      1. Typography - Font familys 
- *		2. Typography - Line height
- *      3. Typography - Font sizes 
- *      4. Layout - Spacing
- *      5. TODO
- *      6. 
- *      7.
- *      8.
- *
- *
- *
- * ----------------------------------------------------------------------------
- *
- */
-/**
- * Typography - Font familys 
- * -----------------------------------------------------------------------------
- */
-/**
- * Typography - Line height
- * -----------------------------------------------------------------------------
- */
-/**
- * Typography - Font sizes 
- * -----------------------------------------------------------------------------
- */
-/**
- * Typography - Line height 
- * -----------------------------------------------------------------------------
- */
-/**
- * Layout - Spacing: she's a fickle mistress.
- * -----------------------------------------------------------------------------
- */
-/**
- * Colours /Themes
- * -----------------------------------------------------------------------------
- */
-/**
- * 4. Button themes
- * -----------------------------------------------------------------------------
- */
-/* So media queries don't overlap when required, provide a maximum */
-/**
- *
- * Extends - Common patterns that can be re used and then compiled together for nice pretty code
- *
- * ----------------------------------------------------------------------------
- * 
- *
- */
-/* line 9, ../sass/core/_extend-classes.scss */
-.content,
-.navigation {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 14, ../sass/core/_extend-classes.scss */
-.absolute, .absolute--bottom-left, .absolute--bottom-right, .absolute--top-left, .absolute--top-right {
-  position: absolute;
-}
-
-/* line 18, ../sass/core/_extend-classes.scss */
-.inline-block, .grid__item, .grid > *, .grid:after,
-.grid__break, .list--inline > li, .text--overflow, .i, .btn, .arrow, .icon-text,
-.icon-text--rev, .breadcrumbs > li, .badge {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-
-/* line 25, ../sass/core/_extend-classes.scss */
-.tb__success, .tb__warning, .tb__danger, .tb__primary, .tb__secondary, .tb__tertiary, .tb__quarternary, .tb__green, .tb__pink, .tb__blue {
-  border-width: 1px;
-  border-style: solid;
-}
-
-/* line 30, ../sass/core/_extend-classes.scss */
-.clearfix, .block--xl, .block--l, .block--m, .block--s, .block--xs, .media, .media--rev, .list--inline {
-  /**
-   * For IE 6/7 only
-   * Include this rule to trigger hasLayout and contain floats.
-   */
-  *zoom: 1;
-}
-/* line 32, ../sass/core/_extend-classes.scss */
-.clearfix:before, .block--xl:before, .block--l:before, .block--m:before, .block--s:before, .block--xs:before, .media:before, .media--rev:before, .list--inline:before, .clearfix:after, .block--xl:after, .block--l:after, .block--m:after, .block--s:after, .block--xs:after, .media:after, .media--rev:after, .list--inline:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-/* line 37, ../sass/core/_extend-classes.scss */
-.clearfix:after, .block--xl:after, .block--l:after, .block--m:after, .block--s:after, .block--xs:after, .media:after, .media--rev:after, .list--inline:after {
-  clear: both;
-}
-
-/**
- *
- * Mixin helpers
- *
- * ----------------------------------------------------------------------------
- * 
- * Structure:
- *
- *      1. Vendor
- *      2. Media breakpoint
- *      3. Opacity
- *      4. Placeholder
-        5. Theme mixin
- *
- *
- * ----------------------------------------------------------------------------
- *
- */
-/**
- * 1. Vendor
- * -----------------------------------------------------------------------------
- */
-/**
- * A lightweight way of vendor-prefixing things:
- *
- * @include vendor(transition, opacity 0.3s ease-out, margin-top 5s linear);
- */
-/* line 40, ../sass/core/_mixins.scss */
-.img-rounded {
-  -webkit-border-radius: 50% 50% 50% 50%;
-  -moz-border-radius: 50% 50% 50% 50%;
-  -ms-border-radius: 50% 50% 50% 50%;
-  -o-border-radius: 50% 50% 50% 50%;
-  border-radius: 50% 50% 50% 50%;
-}
-
-/**
- * 2. Break point
- * -----------------------------------------------------------------------------
- */
-/* line 81, ../sass/core/_mixins.scss */
-.element {
-  background-color: #A6E22E;
-}
-@media only screen and (min-width: 75em) {
-  /* line 81, ../sass/core/_mixins.scss */
-  .element {
-    background-color: #F92672;
-  }
-}
-@media only screen and (min-width: 31em) and (max-width: 48em) {
-  /* line 81, ../sass/core/_mixins.scss */
-  .element {
-    background-color: #4AA1C5;
-  }
-}
-@media only screen and (max-width: 30em) {
-  /* line 81, ../sass/core/_mixins.scss */
-  .element {
-    background-color: #E6DB74;
-  }
-}
-
-/**
- * 3. Opacity mixin
- * -----------------------------------------------------------------------------
- */
-/* line 107, ../sass/core/_mixins.scss */
+/* line 30, ../../../bower_components/fred/scss/helpers/_mixins.scss */
 .overlay--50 {
   opacity: 0.5;
   filter: alpha(opacity=50);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
 
-/* line 111, ../sass/core/_mixins.scss */
+/* line 31, ../../../bower_components/fred/scss/helpers/_mixins.scss */
 .overlay--25 {
   opacity: 0.25;
   filter: alpha(opacity=25);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
 
-/**
- * 4. Placeholder mixin
- * -----------------------------------------------------------------------------
- */
-/* line 137, ../sass/core/_mixins.scss */
-.pink-input-text {
-  /* @include placeholder($color);*/
-}
-/* line 123, ../sass/core/_mixins.scss */
-.pink-input-text::-webkit-input-placeholder {
-  /* WebKit browsers */
-  color: #f92672;
-}
-/* line 126, ../sass/core/_mixins.scss */
-.pink-input-text:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #f92672;
-}
-/* line 129, ../sass/core/_mixins.scss */
-.pink-input-text::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #f92672;
-}
-/* line 132, ../sass/core/_mixins.scss */
-.pink-input-text:-ms-input-placeholder {
-  /* Internet Explorer 10+ */
-  color: #f92672;
+/* line 9, ../../../bower_components/fred/scss/objects/_core.scss */
+.content,
+.navigation {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /**
- * 5. Simple theme mixins
- * -----------------------------------------------------------------------------
- */
-@media print {
-  /* line 7, ../sass/core/_print.scss */
-  * {
-    text-shadow: none !important;
-    color: #000 !important;
-    background: transparent !important;
-    box-shadow: none !important;
-  }
-
-  /* line 15, ../sass/core/_print.scss */
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  /* line 19, ../sass/core/_print.scss */
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  /* line 23, ../sass/core/_print.scss */
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /* line 29, ../sass/core/_print.scss */
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
-
-  /* line 34, ../sass/core/_print.scss */
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /* line 39, ../sass/core/_print.scss */
-  thead {
-    display: table-header-group;
-  }
-
-  /* line 44, ../sass/core/_print.scss */
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  /* line 48, ../sass/core/_print.scss */
-  img {
-    max-width: 100% !important;
-  }
-
-  @page {
-    margin: 0.5cm;
-}
-
-  /* line 58, ../sass/core/_print.scss */
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  /* line 64, ../sass/core/_print.scss */
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-/**
- *
- * Layout helpers
- *
- * ----------------------------------------------------------------------------
- * 
- * Structure:
- *
- *    
- *		1. Inline block
- *      2. Positioning - Absolute, Floating and Clearfixing 
- *      3. Generic blocks and spacing helpers
- *      4. Media blocks
- *      5. Inline Grid  
- *      6. Arrows  
- *      7. Inline Block 
- *      8. Icon block
- *
- *
- *
- * ----------------------------------------------------------------------------
- *
- */
-/**
- * 1. Inline block
+ * Positioning - Absolute, Floating and Clearfixing
  * ----------------------------------------------------------------------------
  */
-/**
- * 2. Positioning - Absolute, Floating and Clearfixing 
- * ----------------------------------------------------------------------------
- */
-/* line 39, ../sass/core/_layout.scss */
-.left {
-  float: left;
-}
-
-/* line 43, ../sass/core/_layout.scss */
-.right {
-  float: right;
-}
-
-/* line 51, ../sass/core/_layout.scss */
+/* line 19, ../../../bower_components/fred/scss/objects/_core.scss */
 .relative {
   position: relative;
 }
 
-/* line 59, ../sass/core/_layout.scss */
+/* line 20, ../../../bower_components/fred/scss/objects/_core.scss */
+.absolute, .absolute--bottom-left, .absolute--bottom-right, .absolute--top-left, .absolute--top-right {
+  position: absolute;
+}
+
+/* line 25, ../../../bower_components/fred/scss/objects/_core.scss */
+.left {
+  float: left;
+}
+
+/* line 26, ../../../bower_components/fred/scss/objects/_core.scss */
+.right {
+  float: right;
+}
+
+/* line 29, ../../../bower_components/fred/scss/objects/_core.scss */
 .absolute--bottom-left {
   bottom: 0;
   left: 0;
 }
 
-/* line 65, ../sass/core/_layout.scss */
+/* line 35, ../../../bower_components/fred/scss/objects/_core.scss */
 .absolute--bottom-right {
   bottom: 0;
   right: 0;
 }
 
-/* line 71, ../sass/core/_layout.scss */
+/* line 41, ../../../bower_components/fred/scss/objects/_core.scss */
 .absolute--top-left {
   top: 0;
   left: 0;
 }
 
-/* line 77, ../sass/core/_layout.scss */
+/* line 47, ../../../bower_components/fred/scss/objects/_core.scss */
 .absolute--top-right {
   top: 0;
   right: 0;
 }
 
 /**
+ * Inline block
+ * ----------------------------------------------------------------------------
+ * zoom fix for IE6/7 so they correctly display inline-block elements
+ * (forces hasLayout)
+ */
+/* line 60, ../../../bower_components/fred/scss/objects/_core.scss */
+.inline-block, .grid__item, .grid > *, .grid:after,
+.grid__break, .text--overflow, .list--inline > li, .btn, .i, .icon-text,
+.icon-text--rev, .arrow, .badge, .breadcrumbs > li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 68, ../../../bower_components/fred/scss/objects/_core.scss */
+.tb__success, .tb__warning, .tb__danger, .tb__primary, .tb__secondary, .tb__tertiary, .tb__quarternary, .tb__green, .tb__pink, .tb__blue {
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* line 73, ../../../bower_components/fred/scss/objects/_core.scss */
+.clearfix, .block--xxxs,
+.block--xxs,
+.block--xs,
+.block--s,
+.block--m,
+.block--l,
+.block--xl,
+.block--xxl,
+.block--xxxl, .list--inline, .media, .media--rev, .grid-float {
+  /**
+   * For IE 6/7 only
+   * Include this rule to trigger hasLayout and contain floats.
+   */
+  *zoom: 1;
+}
+
+/* line 81, ../../../bower_components/fred/scss/objects/_core.scss */
+.clearfix:before, .block--xxxs:before,
+.block--xxs:before,
+.block--xs:before,
+.block--s:before,
+.block--m:before,
+.block--l:before,
+.block--xl:before,
+.block--xxl:before,
+.block--xxxl:before, .list--inline:before, .media:before, .media--rev:before, .grid-float:before {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 86, ../../../bower_components/fred/scss/objects/_core.scss */
+.clearfix:after, .block--xxxs:after,
+.block--xxs:after,
+.block--xs:after,
+.block--s:after,
+.block--m:after,
+.block--l:after,
+.block--xl:after,
+.block--xxl:after,
+.block--xxxl:after, .list--inline:after, .media:after, .media--rev:after, .grid-float:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+  clear: both;
+}
+
+/* line 96, ../../../bower_components/fred/scss/objects/_core.scss */
+.overflow-hidden, .media__body, .media--rev > .media__body {
+  overflow: hidden;
+}
+
+/**
+ * Fix webkit bug
+ * ----------------------------------------------------------------------------
+ *
+ * Since v22, Chrome makes fat sausage horrible web typography. Fix it with
+ * these properties right here. Maybe consider scoping this to a class for
+ * chrome/mac osx only at some point?
+ */
+/* line 108, ../../../bower_components/fred/scss/objects/_core.scss */
+.antialiased, html,
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+/* line 111, ../../../bower_components/fred/scss/objects/_core.scss */
+.isWindowsChrome .antialiased, .isWindowsChrome html,
+.isWindowsChrome body {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/**
+ * Hide an element, but make it visible to screen readers
+ * ----------------------------------------------------------------------------
+ */
+/* line 125, ../../../bower_components/fred/scss/objects/_core.scss */
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+/* line 133, ../../../bower_components/fred/scss/objects/_core.scss */
+.hide, .visible-mobile, .visible-skinny, .visible-wide {
+  display: none !important;
+}
+
+/* line 134, ../../../bower_components/fred/scss/objects/_core.scss */
+.show, .hidden-mobile, .hidden-skinny, .hidden-wide {
+  display: block !important;
+}
+
+/**
+ * 1. Visible classes
+ * -----------------------------------------------------------------------------
+ */
+@media only screen and (max-width: 30em) {
+  /* line 146, ../../../bower_components/fred/scss/objects/_core.scss */
+  .visible-mobile {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  /* line 153, ../../../bower_components/fred/scss/objects/_core.scss */
+  .visible-skinny {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  /* line 160, ../../../bower_components/fred/scss/objects/_core.scss */
+  .visible-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  /* line 166, ../../../bower_components/fred/scss/objects/_core.scss */
+  .visible-wide {
+    display: block !important;
+  }
+}
+
+/**
+ * 1. hidden classes
+ * -----------------------------------------------------------------------------
+ */
+@media only screen and (max-width: 30em) {
+  /* line 178, ../../../bower_components/fred/scss/objects/_core.scss */
+  .hidden-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  /* line 185, ../../../bower_components/fred/scss/objects/_core.scss */
+  .hidden-skinny {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  /* line 196, ../../../bower_components/fred/scss/objects/_core.scss */
+  .hidden-wide {
+    display: none !important;
+  }
+}
+
+/**
+ * Append and Prepend
+ * ----------------------------------------------------------------------------
+ */
+/**
+ * Place something before an element
+ */
+/* line 213, ../../../bower_components/fred/scss/objects/_core.scss */
+.prepend:before {
+  content: attr(data-prepend);
+  display: inline-block;
+}
+
+/**
+ * Place something after an element
+ */
+/* line 223, ../../../bower_components/fred/scss/objects/_core.scss */
+.append:after {
+  content: attr(data-append);
+  display: inline-block;
+}
+
+/**
+ * 6. Inline block grid
+ * -----------------------------------------------------------------------------
+ *
+ * [1] Sets the child elements to take up full justified width of the parent
+ * [2] Overcomes an issue where the :after element blows out the bottom.
+ * [3] A fix for Internet Explorer 8/9
+ *
+ */
+/* line 10, ../../../bower_components/fred/scss/objects/_grid.scss */
+.grid {
+  text-align: justify;
+  /* [1] */
+  font-size: 0;
+  /* [2] */
+}
+/* line 16, ../../../bower_components/fred/scss/objects/_grid.scss */
+.ie8 .grid {
+  text-justify: normal;
+}
+
+/* line 27, ../../../bower_components/fred/scss/objects/_grid.scss */
+.grid__item, .grid > * {
+  font-size: medium;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* line 35, ../../../bower_components/fred/scss/objects/_grid.scss */
+.grid:after,
+.grid__break {
+  content: '';
+  height: 0;
+  width: 100%;
+}
+
+/**
+ * Vertical align these grid items in the middle!
+ */
+/* line 45, ../../../bower_components/fred/scss/objects/_grid.scss */
+.grid--middle > .grid__item, .grid.grid--middle > * {
+  vertical-align: middle;
+}
+
+/* line 51, ../../../bower_components/fred/scss/objects/_grid.scss */
+.grid-float {
+  width: 100%;
+}
+
+/* line 56, ../../../bower_components/fred/scss/objects/_grid.scss */
+.grid-float > * {
+  float: left;
+}
+
+/* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+.column-10 {
+  width: 10%;
+}
+
+/* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+.column-20 {
+  width: 20%;
+}
+
+/* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+.column-30 {
+  width: 30%;
+}
+
+/* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+.column-40 {
+  width: 40%;
+}
+
+/* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+.column-50 {
+  width: 50%;
+}
+
+/* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+.column-60 {
+  width: 60%;
+}
+
+/* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+.column-70 {
+  width: 70%;
+}
+
+/* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+.column-80 {
+  width: 80%;
+}
+
+/* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+.column-90 {
+  width: 90%;
+}
+
+/* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+.column-25 {
+  width: 25%;
+}
+
+/* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+.column-50 {
+  width: 50%;
+}
+
+/* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+.column-75 {
+  width: 75%;
+}
+
+/* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+.column-33 {
+  width: 33.33333%;
+}
+
+/* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+.column-66 {
+  width: 66.66667%;
+}
+
+/* line 80, ../../../bower_components/fred/scss/objects/_grid.scss */
+.column {
+  width: 100%;
+}
+
+@media only screen {
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-small-25 {
+    width: 25%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-small-50 {
+    width: 50%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-small-75 {
+    width: 75%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-small-33 {
+    width: 33.33333%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-small-66 {
+    width: 66.66667%;
+  }
+
+  /* line 88, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-small {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 48em) {
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-medium-20 {
+    width: 20%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-medium-40 {
+    width: 40%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-medium-60 {
+    width: 60%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-medium-80 {
+    width: 80%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-medium-25 {
+    width: 25%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-medium-50 {
+    width: 50%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-medium-75 {
+    width: 75%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-medium-33 {
+    width: 33.33333%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-medium-66 {
+    width: 66.66667%;
+  }
+
+  /* line 97, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-medium {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 60em) {
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-large-14 {
+    width: 14.28571%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-large-28 {
+    width: 28.57143%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-large-42 {
+    width: 42.85714%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-large-57 {
+    width: 57.14286%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-large-71 {
+    width: 71.42857%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-large-85 {
+    width: 85.71429%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-large-25 {
+    width: 25%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-large-50 {
+    width: 50%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-large-75 {
+    width: 75%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-large-33 {
+    width: 33.33333%;
+  }
+
+  /* line 68, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-large-66 {
+    width: 66.66667%;
+  }
+
+  /* line 106, ../../../bower_components/fred/scss/objects/_grid.scss */
+  .column-large {
+    width: 100%;
+  }
+}
+/**
  * 3. Generic blocks
  * ----------------------------------------------------------------------------
-
  */
-/*
-    making sure the first element has no margin on it 
-*/
-/* line 94, ../sass/core/_layout.scss */
-.block--xl, .block--l, .block--m, .block--s, .block--xs {
-  margin-top: 1em;
-  padding: 1.5em 3em;
-}
-/* line 95, ../sass/core/_layout.scss */
-.block--xl > :first-child, .block--l > :first-child, .block--m > :first-child, .block--s > :first-child, .block--xs > :first-child {
-  margin-top: 0;
-}
-
-/* line 103, ../sass/core/_layout.scss */
+/* line 9, ../../../bower_components/fred/scss/objects/_blocks.scss */
 .block--stacked {
-  /*only use this id we don't want a top margin on it */
   margin-top: 0!important;
 }
 
-/* line 108, ../sass/core/_layout.scss */
-.block--xl {
-  padding: 3em 6em;
+/* line 24, ../../../bower_components/fred/scss/objects/_blocks.scss */
+.block--xxxs > :first-child,
+.block--xxs > :first-child,
+.block--xs > :first-child,
+.block--s > :first-child,
+.block--m > :first-child,
+.block--l > :first-child,
+.block--xl > :first-child,
+.block--xxl > :first-child,
+.block--xxxl > :first-child {
+  margin-top: 0;
 }
 
-/* line 113, ../sass/core/_layout.scss */
-.block--l {
-  padding: 2.25em 4.5em;
-}
-
-/* line 122, ../sass/core/_layout.scss */
-.block--s {
-  padding: 1em 0.75em;
-}
-
-/* line 127, ../sass/core/_layout.scss */
-.block--xs {
-  padding: 0.75em 0.375em;
-}
-
-/**
- * 3. Responsive blocks
- * ----------------------------------------------------------------------------
-
- */
-@media only screen and (min-width: 75em) {
-  /* line 141, ../sass/core/_layout.scss */
-  .block-w--xl {
-    padding: 3em 6em;
-  }
-
-  /* line 145, ../sass/core/_layout.scss */
-  .block-w--l {
-    padding: 2.25em 4.5em;
-  }
-
-  /* line 149, ../sass/core/_layout.scss */
-  .block-w--m {
-    padding: 1.5em 3em;
-  }
-
-  /* line 153, ../sass/core/_layout.scss */
-  .block-w--s {
-    padding: 1em 0.75em;
-  }
-
-  /* line 157, ../sass/core/_layout.scss */
-  .block-w--xs {
-    padding: 0.75em 0.375em;
-  }
-}
-@media only screen and (min-width: 31em) and (max-width: 48em) {
-  /* line 164, ../sass/core/_layout.scss */
-  .block-s--xl {
-    padding: 3em 6em;
-  }
-
-  /* line 168, ../sass/core/_layout.scss */
-  .block-s--l {
-    padding: 2.25em 4.5em;
-  }
-
-  /* line 172, ../sass/core/_layout.scss */
-  .block-s--m {
-    padding: 1.5em 3em;
-  }
-
-  /* line 176, ../sass/core/_layout.scss */
-  .block-s--s {
-    padding: 1em 0.75em;
-  }
-
-  /* line 180, ../sass/core/_layout.scss */
-  .block-s--xs {
-    padding: 0.75em 0.375em;
-  }
-}
-@media only screen and (max-width: 30em) {
-  /* line 186, ../sass/core/_layout.scss */
-  .block-m--xl {
-    padding: 3em 6em;
-  }
-
-  /* line 190, ../sass/core/_layout.scss */
-  .block-m--l {
-    padding: 2.25em 4.5em;
-  }
-
-  /* line 194, ../sass/core/_layout.scss */
-  .block-m--m {
-    padding: 1.5em 3em;
-  }
-
-  /* line 198, ../sass/core/_layout.scss */
-  .block-m--s {
-    padding: 1em 0.75em;
-  }
-
-  /* line 202, ../sass/core/_layout.scss */
-  .block-m--xs {
-    padding: 0.75em 0.375em;
-  }
-}
-/**
- * 3. Spacing helpers
- * ----------------------------------------------------------------------------
-
- */
-/* line 215, ../sass/core/_layout.scss */
-.mr--0 {
-  margin-right: 0em;
-}
-
-/* line 216, ../sass/core/_layout.scss */
-.mr--xxxs {
-  margin-right: 0.375em;
-}
-
-/* line 217, ../sass/core/_layout.scss */
-.mr--xxs {
-  margin-right: 0.5em;
-}
-
-/* line 218, ../sass/core/_layout.scss */
-.mr--xs {
-  margin-right: 0.75em;
-}
-
-/* line 219, ../sass/core/_layout.scss */
-.mr--s {
-  margin-right: 1em;
-}
-
-/* line 220, ../sass/core/_layout.scss */
-.mr--m {
-  margin-right: 1.5em;
-}
-
-/* line 221, ../sass/core/_layout.scss */
-.mr--l {
-  margin-right: 2.25em;
-}
-
-/* line 222, ../sass/core/_layout.scss */
-.mr--xl {
-  margin-right: 3em;
-}
-
-/* line 223, ../sass/core/_layout.scss */
-.mr--xxl {
-  margin-right: 4.5em;
-}
-
-/* line 224, ../sass/core/_layout.scss */
-.mr--xxxl {
-  margin-right: 6em;
-}
-
-/* line 227, ../sass/core/_layout.scss */
-.ml--0 {
-  margin-left: 0em;
-}
-
-/* line 228, ../sass/core/_layout.scss */
-.ml--xxxs {
-  margin-left: 0.375em;
-}
-
-/* line 229, ../sass/core/_layout.scss */
-.ml--xxs {
-  margin-left: 0.5em;
-}
-
-/* line 230, ../sass/core/_layout.scss */
-.ml--xs {
-  margin-left: 0.75em;
-}
-
-/* line 231, ../sass/core/_layout.scss */
-.ml--s {
-  margin-left: 1em;
-}
-
-/* line 232, ../sass/core/_layout.scss */
-.ml--m {
-  margin-left: 1.5em;
-}
-
-/* line 233, ../sass/core/_layout.scss */
-.ml--l {
-  margin-left: 2.25em;
-}
-
-/* line 234, ../sass/core/_layout.scss */
-.ml--xl {
-  margin-left: 3em;
-}
-
-/* line 235, ../sass/core/_layout.scss */
-.ml--xxl {
-  margin-left: 4.5em;
-}
-
-/* line 236, ../sass/core/_layout.scss */
-.ml--xxxl {
-  margin-left: 6em;
-}
-
-/* line 239, ../sass/core/_layout.scss */
-.mt--0 {
-  margin-top: 0em;
-}
-
-/* line 240, ../sass/core/_layout.scss */
-.mt--xxxs {
-  margin-top: 0.375em;
-}
-
-/* line 241, ../sass/core/_layout.scss */
-.mt--xxs {
-  margin-top: 0.5em;
-}
-
-/* line 242, ../sass/core/_layout.scss */
-.mt--xs, p + p,
-.list--styled li + li,
-.list--styled-decimal li + li,
-.list--styled-alpha li + li {
-  margin-top: 0.75em;
-}
-
-/* line 243, ../sass/core/_layout.scss */
-.mt--s, h4 + h6
-h4 + p,
-h5 + p {
+/* line 31, ../../../bower_components/fred/scss/objects/_blocks.scss */
+.block--xxxs,
+.block--xxs,
+.block--xs,
+.block--s,
+.block--m,
+.block--l,
+.block--xl,
+.block--xxl,
+.block--xxxl {
   margin-top: 1em;
 }
 
-/* line 244, ../sass/core/_layout.scss */
-.mt--m, dl {
-  margin-top: 1.5em;
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.block--0 {
+  padding: 0.375em 0.375em;
 }
 
-/* line 245, ../sass/core/_layout.scss */
-.mt--l {
-  margin-top: 2.25em;
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.block--xxxs {
+  padding: 0.375em 0.5em;
 }
 
-/* line 246, ../sass/core/_layout.scss */
-.mt--xl {
-  margin-top: 3em;
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.block--xxs {
+  padding: 0.5em 0.75em;
 }
 
-/* line 247, ../sass/core/_layout.scss */
-.mt--xxl {
-  margin-top: 4.5em;
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.block--xs {
+  padding: 0.75em 1em;
 }
 
-/* line 248, ../sass/core/_layout.scss */
-.mt--xxxl {
-  margin-top: 6em;
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.block--s {
+  padding: 1.5em 1.5em;
 }
 
-/* line 251, ../sass/core/_layout.scss */
-.mb--0, h1,
-.h1, h2,
-.h2, h3,
-.h3, h4,
-.h4, h5,
-.h5, h6,
-.h6, p,
-.text,
-li, code {
-  margin-bottom: 0em;
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.block--m {
+  padding: 2.25em 2.25em;
 }
 
-/* line 252, ../sass/core/_layout.scss */
-.mb--xxxs {
-  margin-bottom: 0.375em;
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.block--l {
+  padding: 2.25em 3em;
 }
 
-/* line 253, ../sass/core/_layout.scss */
-.mb--xxs {
-  margin-bottom: 0.5em;
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.block--xl {
+  padding: 3em 4.5em;
 }
 
-/* line 254, ../sass/core/_layout.scss */
-.mb--xs {
-  margin-bottom: 0.75em;
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.block--xxl {
+  padding: 4.5em 6em;
 }
 
-/* line 255, ../sass/core/_layout.scss */
-.mb--s {
-  margin-bottom: 1em;
-}
-
-/* line 256, ../sass/core/_layout.scss */
-.mb--m {
-  margin-bottom: 1.5em;
-}
-
-/* line 257, ../sass/core/_layout.scss */
-.mb--l {
-  margin-bottom: 2.25em;
-}
-
-/* line 258, ../sass/core/_layout.scss */
-.mb--xl {
-  margin-bottom: 3em;
-}
-
-/* line 259, ../sass/core/_layout.scss */
-.mb--xxl {
-  margin-bottom: 4.5em;
-}
-
-/* line 260, ../sass/core/_layout.scss */
-.mb--xxxl {
-  margin-bottom: 6em;
-}
-
-/* line 264, ../sass/core/_layout.scss */
-.pr--0 {
-  padding-right: 0em;
-}
-
-/* line 265, ../sass/core/_layout.scss */
-.pr--xxxs {
-  padding-right: 0.375em;
-}
-
-/* line 266, ../sass/core/_layout.scss */
-.pr--xxs {
-  padding-right: 0.5em;
-}
-
-/* line 267, ../sass/core/_layout.scss */
-.pr--xs {
-  padding-right: 0.75em;
-}
-
-/* line 268, ../sass/core/_layout.scss */
-.pr--s {
-  padding-right: 1em;
-}
-
-/* line 269, ../sass/core/_layout.scss */
-.pr--m {
-  padding-right: 1.5em;
-}
-
-/* line 270, ../sass/core/_layout.scss */
-.pr--l {
-  padding-right: 2.25em;
-}
-
-/* line 271, ../sass/core/_layout.scss */
-.pr--xl {
-  padding-right: 3em;
-}
-
-/* line 272, ../sass/core/_layout.scss */
-.pr--xxl {
-  padding-right: 4.5em;
-}
-
-/* line 273, ../sass/core/_layout.scss */
-.pr--xxxl {
-  padding-right: 6em;
-}
-
-/* line 276, ../sass/core/_layout.scss */
-.pl--0 {
-  padding-left: 0em;
-}
-
-/* line 277, ../sass/core/_layout.scss */
-.pl--xxxs {
-  padding-left: 0.375em;
-}
-
-/* line 278, ../sass/core/_layout.scss */
-.pl--xxs {
-  padding-left: 0.5em;
-}
-
-/* line 279, ../sass/core/_layout.scss */
-.pl--xs {
-  padding-left: 0.75em;
-}
-
-/* line 280, ../sass/core/_layout.scss */
-.pl--s {
-  padding-left: 1em;
-}
-
-/* line 281, ../sass/core/_layout.scss */
-.pl--m {
-  padding-left: 1.5em;
-}
-
-/* line 282, ../sass/core/_layout.scss */
-.pl--l {
-  padding-left: 2.25em;
-}
-
-/* line 283, ../sass/core/_layout.scss */
-.pl--xl {
-  padding-left: 3em;
-}
-
-/* line 284, ../sass/core/_layout.scss */
-.pl--xxl {
-  padding-left: 4.5em;
-}
-
-/* line 285, ../sass/core/_layout.scss */
-.pl--xxxl {
-  padding-left: 6em;
-}
-
-/* line 288, ../sass/core/_layout.scss */
-.pt--0 {
-  padding-top: 0em;
-}
-
-/* line 289, ../sass/core/_layout.scss */
-.pt--xxxs {
-  padding-top: 0.375em;
-}
-
-/* line 290, ../sass/core/_layout.scss */
-.pt--xxs {
-  padding-top: 0.5em;
-}
-
-/* line 291, ../sass/core/_layout.scss */
-.pt--xs {
-  padding-top: 0.75em;
-}
-
-/* line 292, ../sass/core/_layout.scss */
-.pt--s {
-  padding-top: 1em;
-}
-
-/* line 293, ../sass/core/_layout.scss */
-.pt--m {
-  padding-top: 1.5em;
-}
-
-/* line 294, ../sass/core/_layout.scss */
-.pt--l {
-  padding-top: 2.25em;
-}
-
-/* line 295, ../sass/core/_layout.scss */
-.pt--xl {
-  padding-top: 3em;
-}
-
-/* line 296, ../sass/core/_layout.scss */
-.pt--xxl {
-  padding-top: 4.5em;
-}
-
-/* line 297, ../sass/core/_layout.scss */
-.pt--xxxl {
-  padding-top: 6em;
-}
-
-/* line 300, ../sass/core/_layout.scss */
-.pb--0 {
-  padding-bottom: 0em;
-}
-
-/* line 301, ../sass/core/_layout.scss */
-.pb--xxxs {
-  padding-bottom: 0.375em;
-}
-
-/* line 302, ../sass/core/_layout.scss */
-.pb--xxs {
-  padding-bottom: 0.5em;
-}
-
-/* line 303, ../sass/core/_layout.scss */
-.pb--xs {
-  padding-bottom: 0.75em;
-}
-
-/* line 304, ../sass/core/_layout.scss */
-.pb--s {
-  padding-bottom: 1em;
-}
-
-/* line 305, ../sass/core/_layout.scss */
-.pb--m {
-  padding-bottom: 1.5em;
-}
-
-/* line 306, ../sass/core/_layout.scss */
-.pb--l {
-  padding-bottom: 2.25em;
-}
-
-/* line 307, ../sass/core/_layout.scss */
-.pb--xl {
-  padding-bottom: 3em;
-}
-
-/* line 308, ../sass/core/_layout.scss */
-.pb--xxl {
-  padding-bottom: 4.5em;
-}
-
-/* line 309, ../sass/core/_layout.scss */
-.pb--xxxl {
-  padding-bottom: 6em;
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.block--xxxl {
+  padding: 4.5em 6em;
 }
 
 /**
- * Grid - Padding classes that relate to the grid breakpoints 
+ * Responsive blocks
  * ----------------------------------------------------------------------------
  */
-@media only screen and (min-width: 75em) {
-  /* line 320, ../sass/core/_layout.scss */
-  .mr-w--0 {
-    margin-right: 0em;
+@media only screen and (min-width: 48em) {
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-medium--0 {
+    padding: 0;
   }
 
-  /* line 321, ../sass/core/_layout.scss */
-  .mr-w--xxs {
-    margin-right: 0.5em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-medium--xxxs {
+    padding: 0.375em;
   }
 
-  /* line 322, ../sass/core/_layout.scss */
-  .mr-w--xs {
-    margin-right: 0.75em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-medium--xxs {
+    padding: 0.5em;
   }
 
-  /* line 323, ../sass/core/_layout.scss */
-  .mr-w--s {
-    margin-right: 1em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-medium--xs {
+    padding: 0.75em;
   }
 
-  /* line 324, ../sass/core/_layout.scss */
-  .mr-w--m {
-    margin-right: 1.5em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-medium--s {
+    padding: 1em;
   }
 
-  /* line 325, ../sass/core/_layout.scss */
-  .mr-w--l {
-    margin-right: 2.25em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-medium--m {
+    padding: 1.5em;
   }
 
-  /* line 326, ../sass/core/_layout.scss */
-  .mr-w--xl {
-    margin-right: 3em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-medium--l {
+    padding: 2.25em;
   }
 
-  /* line 327, ../sass/core/_layout.scss */
-  .mr-w--xxl {
-    margin-right: 4.5em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-medium--xl {
+    padding: 3em;
   }
 
-  /* line 331, ../sass/core/_layout.scss */
-  .ml-w--0 {
-    margin-left: 0em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-medium--xxl {
+    padding: 4.5em;
   }
 
-  /* line 332, ../sass/core/_layout.scss */
-  .ml-w--xxs {
-    margin-left: 0.5em;
-  }
-
-  /* line 333, ../sass/core/_layout.scss */
-  .ml-w--xs {
-    margin-left: 0.75em;
-  }
-
-  /* line 334, ../sass/core/_layout.scss */
-  .ml-w--s {
-    margin-left: 1em;
-  }
-
-  /* line 335, ../sass/core/_layout.scss */
-  .ml-w--m {
-    margin-left: 1.5em;
-  }
-
-  /* line 336, ../sass/core/_layout.scss */
-  .ml-w--l {
-    margin-left: 2.25em;
-  }
-
-  /* line 337, ../sass/core/_layout.scss */
-  .ml-w--xl {
-    margin-left: 3em;
-  }
-
-  /* line 338, ../sass/core/_layout.scss */
-  .ml-w--xxl {
-    margin-left: 4.5em;
-  }
-
-  /* line 341, ../sass/core/_layout.scss */
-  .mt-w--0 {
-    margin-top: 0em;
-  }
-
-  /* line 342, ../sass/core/_layout.scss */
-  .mt-w--xxs {
-    margin-top: 0.5em;
-  }
-
-  /* line 343, ../sass/core/_layout.scss */
-  .mt-w--xs {
-    margin-top: 0.75em;
-  }
-
-  /* line 344, ../sass/core/_layout.scss */
-  .mt-w--s {
-    margin-top: 1em;
-  }
-
-  /* line 345, ../sass/core/_layout.scss */
-  .mt-w--m {
-    margin-top: 1.5em;
-  }
-
-  /* line 346, ../sass/core/_layout.scss */
-  .mt-w--l {
-    margin-top: 2.25em;
-  }
-
-  /* line 347, ../sass/core/_layout.scss */
-  .mt-w--xl {
-    margin-top: 3em;
-  }
-
-  /* line 348, ../sass/core/_layout.scss */
-  .mt-w--xxl {
-    margin-top: 4.5em;
-  }
-
-  /* line 351, ../sass/core/_layout.scss */
-  .mb-w--0 {
-    margin-bottom: 0em;
-  }
-
-  /* line 352, ../sass/core/_layout.scss */
-  .mb-w--xxs {
-    margin-bottom: 0.5em;
-  }
-
-  /* line 353, ../sass/core/_layout.scss */
-  .mb-w--xs {
-    margin-bottom: 0.75em;
-  }
-
-  /* line 354, ../sass/core/_layout.scss */
-  .mb-w--s {
-    margin-bottom: 1em;
-  }
-
-  /* line 355, ../sass/core/_layout.scss */
-  .mb-w--m {
-    margin-bottom: 1.5em;
-  }
-
-  /* line 356, ../sass/core/_layout.scss */
-  .mb-w--l {
-    margin-bottom: 2.25em;
-  }
-
-  /* line 357, ../sass/core/_layout.scss */
-  .mb-w--xl {
-    margin-bottom: 3em;
-  }
-
-  /* line 358, ../sass/core/_layout.scss */
-  .mb-w--xxl {
-    margin-bottom: 4.5em;
-  }
-
-  /* line 361, ../sass/core/_layout.scss */
-  .pr-w--0 {
-    padding-right: 0em;
-  }
-
-  /* line 362, ../sass/core/_layout.scss */
-  .pr-w--xxs {
-    padding-right: 0.5em;
-  }
-
-  /* line 363, ../sass/core/_layout.scss */
-  .pr-w--xs {
-    padding-right: 0.75em;
-  }
-
-  /* line 364, ../sass/core/_layout.scss */
-  .pr-w--s {
-    padding-right: 1em;
-  }
-
-  /* line 365, ../sass/core/_layout.scss */
-  .pr-w--m {
-    padding-right: 1.5em;
-  }
-
-  /* line 366, ../sass/core/_layout.scss */
-  .pr-w--l {
-    padding-right: 2.25em;
-  }
-
-  /* line 367, ../sass/core/_layout.scss */
-  .pr-w--xl {
-    padding-right: 3em;
-  }
-
-  /* line 368, ../sass/core/_layout.scss */
-  .pr-w--xxl {
-    padding-right: 4.5em;
-  }
-
-  /* line 371, ../sass/core/_layout.scss */
-  .pl-w--0 {
-    padding-left: 0em;
-  }
-
-  /* line 372, ../sass/core/_layout.scss */
-  .pl-w--xxs {
-    padding-left: 0.5em;
-  }
-
-  /* line 373, ../sass/core/_layout.scss */
-  .pl-w--xs {
-    padding-left: 0.75em;
-  }
-
-  /* line 374, ../sass/core/_layout.scss */
-  .pl-w--s {
-    padding-left: 1em;
-  }
-
-  /* line 375, ../sass/core/_layout.scss */
-  .pl-w--m {
-    padding-left: 1.5em;
-  }
-
-  /* line 376, ../sass/core/_layout.scss */
-  .pl-w--l {
-    padding-left: 2.25em;
-  }
-
-  /* line 377, ../sass/core/_layout.scss */
-  .pl-w--xl {
-    padding-left: 3em;
-  }
-
-  /* line 378, ../sass/core/_layout.scss */
-  .pl-w--xxl {
-    padding-left: 4.5em;
-  }
-
-  /* line 381, ../sass/core/_layout.scss */
-  .pt-w--0 {
-    padding-top: 0em;
-  }
-
-  /* line 382, ../sass/core/_layout.scss */
-  .pt-w--xxs {
-    padding-top: 0.5em;
-  }
-
-  /* line 383, ../sass/core/_layout.scss */
-  .pt-w--xs {
-    padding-top: 0.75em;
-  }
-
-  /* line 384, ../sass/core/_layout.scss */
-  .pt-w--s {
-    padding-top: 1em;
-  }
-
-  /* line 385, ../sass/core/_layout.scss */
-  .pt-w--m {
-    padding-top: 1.5em;
-  }
-
-  /* line 386, ../sass/core/_layout.scss */
-  .pt-w--l {
-    padding-top: 2.25em;
-  }
-
-  /* line 387, ../sass/core/_layout.scss */
-  .pt-w--xl {
-    padding-top: 3em;
-  }
-
-  /* line 388, ../sass/core/_layout.scss */
-  .pt-w--xxl {
-    padding-top: 4.5em;
-  }
-
-  /* line 391, ../sass/core/_layout.scss */
-  .pb-w--0 {
-    padding-bottom: 0em;
-  }
-
-  /* line 392, ../sass/core/_layout.scss */
-  .pb-w--xxs {
-    padding-bottom: 0.5em;
-  }
-
-  /* line 393, ../sass/core/_layout.scss */
-  .pb-w--xs {
-    padding-bottom: 0.75em;
-  }
-
-  /* line 394, ../sass/core/_layout.scss */
-  .pb-w--s {
-    padding-bottom: 1em;
-  }
-
-  /* line 395, ../sass/core/_layout.scss */
-  .pb-w--m {
-    padding-bottom: 1.5em;
-  }
-
-  /* line 396, ../sass/core/_layout.scss */
-  .pb-w--l {
-    padding-bottom: 2.25em;
-  }
-
-  /* line 397, ../sass/core/_layout.scss */
-  .pb-w--xl {
-    padding-bottom: 3em;
-  }
-
-  /* line 398, ../sass/core/_layout.scss */
-  .pb-w--xxl {
-    padding-bottom: 4.5em;
-  }
-}
-@media only screen and (min-width: 31em) and (max-width: 48em) {
-  /* line 405, ../sass/core/_layout.scss */
-  .mr-s--0 {
-    margin-right: 0em;
-  }
-
-  /* line 406, ../sass/core/_layout.scss */
-  .mr-s--xxxs {
-    margin-right: 0.375em;
-  }
-
-  /* line 407, ../sass/core/_layout.scss */
-  .mr-s--xxs {
-    margin-right: 0.5em;
-  }
-
-  /* line 408, ../sass/core/_layout.scss */
-  .mr-s--xs {
-    margin-right: 0.75em;
-  }
-
-  /* line 409, ../sass/core/_layout.scss */
-  .mr-s--s {
-    margin-right: 1em;
-  }
-
-  /* line 410, ../sass/core/_layout.scss */
-  .mr-s--m {
-    margin-right: 1.5em;
-  }
-
-  /* line 411, ../sass/core/_layout.scss */
-  .mr-s--l {
-    margin-right: 2.25em;
-  }
-
-  /* line 412, ../sass/core/_layout.scss */
-  .mr-s--xl {
-    margin-right: 3em;
-  }
-
-  /* line 413, ../sass/core/_layout.scss */
-  .mr-s--xxl {
-    margin-right: 4.5em;
-  }
-
-  /* line 414, ../sass/core/_layout.scss */
-  .mr-s--xxxl {
-    margin-right: 6em;
-  }
-
-  /* line 418, ../sass/core/_layout.scss */
-  .ml-s--0 {
-    margin-left: 0em;
-  }
-
-  /* line 419, ../sass/core/_layout.scss */
-  .ml-s--xxxs {
-    margin-left: 0.375em;
-  }
-
-  /* line 420, ../sass/core/_layout.scss */
-  .ml-s--xxs {
-    margin-left: 0.5em;
-  }
-
-  /* line 421, ../sass/core/_layout.scss */
-  .ml-s--xs {
-    margin-left: 0.75em;
-  }
-
-  /* line 422, ../sass/core/_layout.scss */
-  .ml-s--s {
-    margin-left: 1em;
-  }
-
-  /* line 423, ../sass/core/_layout.scss */
-  .ml-s--m {
-    margin-left: 1.5em;
-  }
-
-  /* line 424, ../sass/core/_layout.scss */
-  .ml-s--l {
-    margin-left: 2.25em;
-  }
-
-  /* line 425, ../sass/core/_layout.scss */
-  .ml-s--xl {
-    margin-left: 3em;
-  }
-
-  /* line 426, ../sass/core/_layout.scss */
-  .ml-s--xxl {
-    margin-left: 4.5em;
-  }
-
-  /* line 427, ../sass/core/_layout.scss */
-  .ml-s--xxxl {
-    margin-left: 6em;
-  }
-
-  /* line 430, ../sass/core/_layout.scss */
-  .mt-s--0 {
-    margin-top: 0em;
-  }
-
-  /* line 431, ../sass/core/_layout.scss */
-  .mt-s--xxxs {
-    margin-top: 0.375em;
-  }
-
-  /* line 432, ../sass/core/_layout.scss */
-  .mt-s--xxs {
-    margin-top: 0.5em;
-  }
-
-  /* line 433, ../sass/core/_layout.scss */
-  .mt-s--xs {
-    margin-top: 0.75em;
-  }
-
-  /* line 434, ../sass/core/_layout.scss */
-  .mt-s--s {
-    margin-top: 1em;
-  }
-
-  /* line 435, ../sass/core/_layout.scss */
-  .mt-s--m {
-    margin-top: 1.5em;
-  }
-
-  /* line 436, ../sass/core/_layout.scss */
-  .mt-s--l {
-    margin-top: 2.25em;
-  }
-
-  /* line 437, ../sass/core/_layout.scss */
-  .mt-s--xl {
-    margin-top: 3em;
-  }
-
-  /* line 438, ../sass/core/_layout.scss */
-  .mt-s--xxl {
-    margin-top: 4.5em;
-  }
-
-  /* line 439, ../sass/core/_layout.scss */
-  .mt-s--xxxl {
-    margin-top: 6em;
-  }
-
-  /* line 442, ../sass/core/_layout.scss */
-  .mb-s--0 {
-    margin-bottom: 0em;
-  }
-
-  /* line 443, ../sass/core/_layout.scss */
-  .mb-s--xxxs {
-    margin-bottom: 0.375em;
-  }
-
-  /* line 444, ../sass/core/_layout.scss */
-  .mb-s--xxs {
-    margin-bottom: 0.5em;
-  }
-
-  /* line 445, ../sass/core/_layout.scss */
-  .mb-s--xs {
-    margin-bottom: 0.75em;
-  }
-
-  /* line 446, ../sass/core/_layout.scss */
-  .mb-s--s {
-    margin-bottom: 1em;
-  }
-
-  /* line 447, ../sass/core/_layout.scss */
-  .mb-s--m {
-    margin-bottom: 1.5em;
-  }
-
-  /* line 448, ../sass/core/_layout.scss */
-  .mb-s--l {
-    margin-bottom: 2.25em;
-  }
-
-  /* line 449, ../sass/core/_layout.scss */
-  .mb-s--xl {
-    margin-bottom: 3em;
-  }
-
-  /* line 450, ../sass/core/_layout.scss */
-  .mb-s--xxl {
-    margin-bottom: 4.5em;
-  }
-
-  /* line 451, ../sass/core/_layout.scss */
-  .mb-s--xxxl {
-    margin-bottom: 6em;
-  }
-
-  /* line 454, ../sass/core/_layout.scss */
-  .pr-s--0 {
-    padding-right: 0em;
-  }
-
-  /* line 455, ../sass/core/_layout.scss */
-  .pr-s--xxxs {
-    padding-right: 0.375em;
-  }
-
-  /* line 456, ../sass/core/_layout.scss */
-  .pr-s--xxs {
-    padding-right: 0.5em;
-  }
-
-  /* line 457, ../sass/core/_layout.scss */
-  .pr-s--xs {
-    padding-right: 0.75em;
-  }
-
-  /* line 458, ../sass/core/_layout.scss */
-  .pr-s--s {
-    padding-right: 1em;
-  }
-
-  /* line 459, ../sass/core/_layout.scss */
-  .pr-s--m {
-    padding-right: 1.5em;
-  }
-
-  /* line 460, ../sass/core/_layout.scss */
-  .pr-s--l {
-    padding-right: 2.25em;
-  }
-
-  /* line 461, ../sass/core/_layout.scss */
-  .pr-s--xl {
-    padding-right: 3em;
-  }
-
-  /* line 462, ../sass/core/_layout.scss */
-  .pr-s--xxl {
-    padding-right: 4.5em;
-  }
-
-  /* line 463, ../sass/core/_layout.scss */
-  .pr-s--xxxl {
-    padding-right: 6em;
-  }
-
-  /* line 466, ../sass/core/_layout.scss */
-  .pl-s--0 {
-    padding-left: 0em;
-  }
-
-  /* line 467, ../sass/core/_layout.scss */
-  .pl-s--xxxs {
-    padding-left: 0.375em;
-  }
-
-  /* line 468, ../sass/core/_layout.scss */
-  .pl-s--xxs {
-    padding-left: 0.5em;
-  }
-
-  /* line 469, ../sass/core/_layout.scss */
-  .pl-s--xs {
-    padding-left: 0.75em;
-  }
-
-  /* line 470, ../sass/core/_layout.scss */
-  .pl-s--s {
-    padding-left: 1em;
-  }
-
-  /* line 471, ../sass/core/_layout.scss */
-  .pl-s--m {
-    padding-left: 1.5em;
-  }
-
-  /* line 472, ../sass/core/_layout.scss */
-  .pl-s--l {
-    padding-left: 2.25em;
-  }
-
-  /* line 473, ../sass/core/_layout.scss */
-  .pl-s--xl {
-    padding-left: 3em;
-  }
-
-  /* line 474, ../sass/core/_layout.scss */
-  .pl-s--xxl {
-    padding-left: 4.5em;
-  }
-
-  /* line 475, ../sass/core/_layout.scss */
-  .pl-s--xxxl {
-    padding-left: 6em;
-  }
-
-  /* line 478, ../sass/core/_layout.scss */
-  .pt-s--0 {
-    padding-top: 0em;
-  }
-
-  /* line 479, ../sass/core/_layout.scss */
-  .pt-s--xxs {
-    padding-top: 0.375em;
-  }
-
-  /* line 480, ../sass/core/_layout.scss */
-  .pt-s--xxs {
-    padding-top: 0.5em;
-  }
-
-  /* line 481, ../sass/core/_layout.scss */
-  .pt-s--xs {
-    padding-top: 0.75em;
-  }
-
-  /* line 482, ../sass/core/_layout.scss */
-  .pt-s--s {
-    padding-top: 1em;
-  }
-
-  /* line 483, ../sass/core/_layout.scss */
-  .pt-s--m {
-    padding-top: 1.5em;
-  }
-
-  /* line 484, ../sass/core/_layout.scss */
-  .pt-s--l {
-    padding-top: 2.25em;
-  }
-
-  /* line 485, ../sass/core/_layout.scss */
-  .pt-s--xl {
-    padding-top: 3em;
-  }
-
-  /* line 486, ../sass/core/_layout.scss */
-  .pt-s--xxl {
-    padding-top: 4.5em;
-  }
-
-  /* line 487, ../sass/core/_layout.scss */
-  .pt-s--xxxl {
-    padding-top: 6em;
-  }
-
-  /* line 490, ../sass/core/_layout.scss */
-  .pb-s--0 {
-    padding-bottom: 0em;
-  }
-
-  /* line 491, ../sass/core/_layout.scss */
-  .pb-s--xxxs {
-    padding-bottom: 0.375em;
-  }
-
-  /* line 492, ../sass/core/_layout.scss */
-  .pb-s--xxs {
-    padding-bottom: 0.5em;
-  }
-
-  /* line 493, ../sass/core/_layout.scss */
-  .pb-s--xs {
-    padding-bottom: 0.75em;
-  }
-
-  /* line 494, ../sass/core/_layout.scss */
-  .pb-s--s {
-    padding-bottom: 1em;
-  }
-
-  /* line 495, ../sass/core/_layout.scss */
-  .pb-s--m {
-    padding-bottom: 1.5em;
-  }
-
-  /* line 496, ../sass/core/_layout.scss */
-  .pb-s--l {
-    padding-bottom: 2.25em;
-  }
-
-  /* line 497, ../sass/core/_layout.scss */
-  .pb-s--xl {
-    padding-bottom: 3em;
-  }
-
-  /* line 498, ../sass/core/_layout.scss */
-  .pb-s--xxl {
-    padding-bottom: 4.5em;
-  }
-
-  /* line 499, ../sass/core/_layout.scss */
-  .pb-s--xxxl {
-    padding-bottom: 6em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-medium--xxxl {
+    padding: 6em;
   }
 }
 @media only screen and (max-width: 30em) {
-  /* line 507, ../sass/core/_layout.scss */
-  .mr-m--0 {
-    margin-right: 0em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-small--0 {
+    padding: 0;
   }
 
-  /* line 508, ../sass/core/_layout.scss */
-  .mr-m--xxs {
-    margin-right: 0.375em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-small--xxxs {
+    padding: 0.375em;
   }
 
-  /* line 509, ../sass/core/_layout.scss */
-  .mr-m--xxs {
-    margin-right: 0.5em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-small--xxs {
+    padding: 0.5em;
   }
 
-  /* line 510, ../sass/core/_layout.scss */
-  .mr-m--xs {
-    margin-right: 0.75em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-small--xs {
+    padding: 0.75em;
   }
 
-  /* line 511, ../sass/core/_layout.scss */
-  .mr-m--s {
-    margin-right: 1em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-small--s {
+    padding: 1em;
   }
 
-  /* line 512, ../sass/core/_layout.scss */
-  .mr-m--m {
-    margin-right: 1.5em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-small--m {
+    padding: 1.5em;
   }
 
-  /* line 513, ../sass/core/_layout.scss */
-  .mr-m--l {
-    margin-right: 2.25em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-small--l {
+    padding: 2.25em;
   }
 
-  /* line 514, ../sass/core/_layout.scss */
-  .mr-m--xl {
-    margin-right: 3em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-small--xl {
+    padding: 3em;
   }
 
-  /* line 515, ../sass/core/_layout.scss */
-  .mr-m--xxl {
-    margin-right: 4.5em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-small--xxl {
+    padding: 4.5em;
   }
 
-  /* line 516, ../sass/core/_layout.scss */
-  .mr-m--xxxl {
-    margin-right: 6em;
-  }
-
-  /* line 520, ../sass/core/_layout.scss */
-  .ml-m--0 {
-    margin-left: 0em;
-  }
-
-  /* line 521, ../sass/core/_layout.scss */
-  .ml-m--xxs {
-    margin-left: 0.375em;
-  }
-
-  /* line 522, ../sass/core/_layout.scss */
-  .ml-m--xxs {
-    margin-left: 0.5em;
-  }
-
-  /* line 523, ../sass/core/_layout.scss */
-  .ml-m--xs {
-    margin-left: 0.75em;
-  }
-
-  /* line 524, ../sass/core/_layout.scss */
-  .ml-m--s {
-    margin-left: 1em;
-  }
-
-  /* line 525, ../sass/core/_layout.scss */
-  .ml-m--m {
-    margin-left: 1.5em;
-  }
-
-  /* line 526, ../sass/core/_layout.scss */
-  .ml-m--l {
-    margin-left: 2.25em;
-  }
-
-  /* line 527, ../sass/core/_layout.scss */
-  .ml-m--xl {
-    margin-left: 3em;
-  }
-
-  /* line 528, ../sass/core/_layout.scss */
-  .ml-m--xxl {
-    margin-left: 4.5em;
-  }
-
-  /* line 529, ../sass/core/_layout.scss */
-  .ml-m--xxl {
-    margin-left: 6em;
-  }
-
-  /* line 532, ../sass/core/_layout.scss */
-  .mt-m--0 {
-    margin-top: 0em;
-  }
-
-  /* line 533, ../sass/core/_layout.scss */
-  .mt-m--xxxs {
-    margin-top: 0.375em;
-  }
-
-  /* line 534, ../sass/core/_layout.scss */
-  .mt-m--xxs {
-    margin-top: 0.5em;
-  }
-
-  /* line 535, ../sass/core/_layout.scss */
-  .mt-m--xs {
-    margin-top: 0.75em;
-  }
-
-  /* line 536, ../sass/core/_layout.scss */
-  .mt-m--s {
-    margin-top: 1em;
-  }
-
-  /* line 537, ../sass/core/_layout.scss */
-  .mt-m--m {
-    margin-top: 1.5em;
-  }
-
-  /* line 538, ../sass/core/_layout.scss */
-  .mt-m--l {
-    margin-top: 2.25em;
-  }
-
-  /* line 539, ../sass/core/_layout.scss */
-  .mt-m--xl {
-    margin-top: 3em;
-  }
-
-  /* line 540, ../sass/core/_layout.scss */
-  .mt-m--xxl {
-    margin-top: 4.5em;
-  }
-
-  /* line 541, ../sass/core/_layout.scss */
-  .mt-m--xxxl {
-    margin-top: 6em;
-  }
-
-  /* line 544, ../sass/core/_layout.scss */
-  .mb-m--0 {
-    margin-bottom: 0em;
-  }
-
-  /* line 545, ../sass/core/_layout.scss */
-  .mb-m--xxs {
-    margin-bottom: 0.375em;
-  }
-
-  /* line 546, ../sass/core/_layout.scss */
-  .mb-m--xxs {
-    margin-bottom: 0.5em;
-  }
-
-  /* line 547, ../sass/core/_layout.scss */
-  .mb-m--xs {
-    margin-bottom: 0.75em;
-  }
-
-  /* line 548, ../sass/core/_layout.scss */
-  .mb-m--s {
-    margin-bottom: 1em;
-  }
-
-  /* line 549, ../sass/core/_layout.scss */
-  .mb-m--m {
-    margin-bottom: 1.5em;
-  }
-
-  /* line 550, ../sass/core/_layout.scss */
-  .mb-m--l {
-    margin-bottom: 2.25em;
-  }
-
-  /* line 551, ../sass/core/_layout.scss */
-  .mb-m--xl {
-    margin-bottom: 3em;
-  }
-
-  /* line 552, ../sass/core/_layout.scss */
-  .mb-m--xxl {
-    margin-bottom: 4.5em;
-  }
-
-  /* line 553, ../sass/core/_layout.scss */
-  .mb-m--xxxl {
-    margin-bottom: 6em;
-  }
-
-  /* line 556, ../sass/core/_layout.scss */
-  .pr-m--0 {
-    padding-right: 0em;
-  }
-
-  /* line 557, ../sass/core/_layout.scss */
-  .pr-m--xxs {
-    padding-right: 0.375em;
-  }
-
-  /* line 558, ../sass/core/_layout.scss */
-  .pr-m--xxs {
-    padding-right: 0.5em;
-  }
-
-  /* line 559, ../sass/core/_layout.scss */
-  .pr-m--xs {
-    padding-right: 0.75em;
-  }
-
-  /* line 560, ../sass/core/_layout.scss */
-  .pr-m--s {
-    padding-right: 1em;
-  }
-
-  /* line 561, ../sass/core/_layout.scss */
-  .pr-m--m {
-    padding-right: 1.5em;
-  }
-
-  /* line 562, ../sass/core/_layout.scss */
-  .pr-m--l {
-    padding-right: 2.25em;
-  }
-
-  /* line 563, ../sass/core/_layout.scss */
-  .pr-m--xl {
-    padding-right: 3em;
-  }
-
-  /* line 564, ../sass/core/_layout.scss */
-  .pr-m--xxl {
-    padding-right: 4.5em;
-  }
-
-  /* line 565, ../sass/core/_layout.scss */
-  .pr-m--xxxl {
-    padding-right: 6em;
-  }
-
-  /* line 568, ../sass/core/_layout.scss */
-  .pl-m--0 {
-    padding-left: 0em;
-  }
-
-  /* line 569, ../sass/core/_layout.scss */
-  .pl-m--xxxs {
-    padding-left: 0.375em;
-  }
-
-  /* line 570, ../sass/core/_layout.scss */
-  .pl-m--xxs {
-    padding-left: 0.5em;
-  }
-
-  /* line 571, ../sass/core/_layout.scss */
-  .pl-m--xs {
-    padding-left: 0.75em;
-  }
-
-  /* line 572, ../sass/core/_layout.scss */
-  .pl-m--s {
-    padding-left: 1em;
-  }
-
-  /* line 573, ../sass/core/_layout.scss */
-  .pl-m--m {
-    padding-left: 1.5em;
-  }
-
-  /* line 574, ../sass/core/_layout.scss */
-  .pl-m--l {
-    padding-left: 2.25em;
-  }
-
-  /* line 575, ../sass/core/_layout.scss */
-  .pl-m--xl {
-    padding-left: 3em;
-  }
-
-  /* line 576, ../sass/core/_layout.scss */
-  .pl-m--xxl {
-    padding-left: 4.5em;
-  }
-
-  /* line 577, ../sass/core/_layout.scss */
-  .pl-m--xxxl {
-    padding-left: 6em;
-  }
-
-  /* line 580, ../sass/core/_layout.scss */
-  .pt-m--0 {
-    padding-top: 0em;
-  }
-
-  /* line 581, ../sass/core/_layout.scss */
-  .pt-m--xxxs {
-    padding-top: 0.375em;
-  }
-
-  /* line 582, ../sass/core/_layout.scss */
-  .pt-m--xxs {
-    padding-top: 0.5em;
-  }
-
-  /* line 583, ../sass/core/_layout.scss */
-  .pt-m--xs {
-    padding-top: 0.75em;
-  }
-
-  /* line 584, ../sass/core/_layout.scss */
-  .pt-m--s {
-    padding-top: 1em;
-  }
-
-  /* line 585, ../sass/core/_layout.scss */
-  .pt-m--m {
-    padding-top: 1.5em;
-  }
-
-  /* line 586, ../sass/core/_layout.scss */
-  .pt-m--l {
-    padding-top: 2.25em;
-  }
-
-  /* line 587, ../sass/core/_layout.scss */
-  .pt-m--xl {
-    padding-top: 3em;
-  }
-
-  /* line 588, ../sass/core/_layout.scss */
-  .pt-m--xxl {
-    padding-top: 4.5em;
-  }
-
-  /* line 589, ../sass/core/_layout.scss */
-  .pt-m--xxxl {
-    padding-top: 6em;
-  }
-
-  /* line 592, ../sass/core/_layout.scss */
-  .pb-m--0 {
-    padding-bottom: 0em;
-  }
-
-  /* line 593, ../sass/core/_layout.scss */
-  .pb-m--xxxs {
-    padding-bottom: 0.375em;
-  }
-
-  /* line 594, ../sass/core/_layout.scss */
-  .pb-m--xxs {
-    padding-bottom: 0.5em;
-  }
-
-  /* line 595, ../sass/core/_layout.scss */
-  .pb-m--xs {
-    padding-bottom: 0.75em;
-  }
-
-  /* line 596, ../sass/core/_layout.scss */
-  .pb-m--s {
-    padding-bottom: 1em;
-  }
-
-  /* line 597, ../sass/core/_layout.scss */
-  .pb-m--m {
-    padding-bottom: 1.5em;
-  }
-
-  /* line 598, ../sass/core/_layout.scss */
-  .pb-m--l {
-    padding-bottom: 2.25em;
-  }
-
-  /* line 599, ../sass/core/_layout.scss */
-  .pb-m--xl {
-    padding-bottom: 3em;
-  }
-
-  /* line 600, ../sass/core/_layout.scss */
-  .pb-m--xxl {
-    padding-bottom: 4.5em;
-  }
-
-  /* line 601, ../sass/core/_layout.scss */
-  .pb-m--xxxl {
-    padding-bottom: 6em;
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .block-small--xxxl {
+    padding: 6em;
   }
 }
-/* line 606, ../sass/core/_layout.scss */
-.overflow-hidden, .media__body, .media--rev > .media__body {
+/**
+ * Antialias everything by default, and set the line-height.
+ */
+/* line 5, ../../../bower_components/fred/scss/objects/_typography.scss */
+html,
+body {
+  line-height: 1.42857;
+  font-size: 100%;
+}
+
+/**
+ * onMediaQuery sets the font-family on HTML, so declare your font-family
+ * on the body element instead.
+ */
+/**
+ * Font declarations
+ * ----------------------------------------------------------------------------
+ */
+/* line 25, ../../../bower_components/fred/scss/objects/_typography.scss */
+.font-primary, body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* line 29, ../../../bower_components/fred/scss/objects/_typography.scss */
+.font-primary--italic, .ie8 em, .ie8 i {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+/* line 31, ../../../bower_components/fred/scss/objects/_typography.scss */
+.ie8 .font-primary--italic, .ie8 em, .ie8 i {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 36, ../../../bower_components/fred/scss/objects/_typography.scss */
+.font-primary--bold, .ie8 strong, .ie8 b {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/* line 38, ../../../bower_components/fred/scss/objects/_typography.scss */
+.ie8 .font-primary--bold, .ie8 strong, .ie8 b {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 43, ../../../bower_components/fred/scss/objects/_typography.scss */
+.font-primary--bold-italic {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+/* line 45, ../../../bower_components/fred/scss/objects/_typography.scss */
+.ie8 .font-primary--bold-italic {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 50, ../../../bower_components/fred/scss/objects/_typography.scss */
+.sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 51, ../../../bower_components/fred/scss/objects/_typography.scss */
+.serif {
+  font-family: "georgia", serif;
+}
+
+/* line 53, ../../../bower_components/fred/scss/objects/_typography.scss */
+.font-size-xxxxl, .h0 {
+  font-size: 4.5em;
+}
+
+/* line 54, ../../../bower_components/fred/scss/objects/_typography.scss */
+.font-size-xxxl, h1, .h1 {
+  font-size: 2.25em;
+}
+
+/* line 55, ../../../bower_components/fred/scss/objects/_typography.scss */
+.font-size-xxl, h2, .h2 {
+  font-size: 2em;
+}
+
+/* line 56, ../../../bower_components/fred/scss/objects/_typography.scss */
+.font-size-xl, h3, .h3 {
+  font-size: 1.375em;
+}
+
+/* line 57, ../../../bower_components/fred/scss/objects/_typography.scss */
+.font-size-l {
+  font-size: 1.25em;
+}
+
+/* line 58, ../../../bower_components/fred/scss/objects/_typography.scss */
+.font-size-m, h4, .h4, .pullquote {
+  font-size: 1.125em;
+}
+
+/* line 59, ../../../bower_components/fred/scss/objects/_typography.scss */
+.font-size-s, h5, .h5, .intro {
+  font-size: 1em;
+}
+
+/* line 60, ../../../bower_components/fred/scss/objects/_typography.scss */
+.font-size-xs, h6, .h6, p, .text, li, code {
+  font-size: 0.875em;
+}
+
+/* line 61, ../../../bower_components/fred/scss/objects/_typography.scss */
+.font-size-xxs, .small, .caption {
+  font-size: 0.75em;
+}
+
+/* line 62, ../../../bower_components/fred/scss/objects/_typography.scss */
+.font-size-xxxs, .tiny {
+  font-size: 0.6875em;
+}
+
+/**
+ * Headings
+ * ----------------------------------------------------------------------------
+ */
+/** 2. Header styles
+ * ----------------------------------------------------------------------------
+ * NOTE: These can change per project depending on what font etc you use :)
+ *
+ */
+/* line 86, ../../../bower_components/fred/scss/objects/_typography.scss */
+h1, .h1 {
+  line-height: 1;
+  margin-top: 0.66667em;
+}
+
+/* line 93, ../../../bower_components/fred/scss/objects/_typography.scss */
+h2, .h2 {
+  line-height: 1.2;
+  margin-top: 0.75em;
+}
+
+/* line 99, ../../../bower_components/fred/scss/objects/_typography.scss */
+h3, .h3 {
+  line-height: 1.2;
+  margin-top: 1.09091em;
+}
+
+/* line 105, ../../../bower_components/fred/scss/objects/_typography.scss */
+h4, .h4 {
+  line-height: 1.2;
+  margin-top: 1.33333em;
+}
+
+/* line 111, ../../../bower_components/fred/scss/objects/_typography.scss */
+h5, .h5 {
+  line-height: 1.2;
+  margin-top: 0.75em;
+}
+
+/* line 117, ../../../bower_components/fred/scss/objects/_typography.scss */
+h6, .h6 {
+  line-height: 1.5;
+  margin-top: 0.85714em;
+}
+
+/* line 124, ../../../bower_components/fred/scss/objects/_typography.scss */
+p, .text, li, code {
+  line-height: 1.5;
+  margin-top: 0.85714em;
+}
+
+/**
+ *  3. Paragraph styles
+ * ----------------------------------------------------------------------------
+ */
+/* line 168, ../../../bower_components/fred/scss/objects/_typography.scss */
+.text-muted {
+  color: #999999;
+}
+
+/* line 172, ../../../bower_components/fred/scss/objects/_typography.scss */
+.text-warning {
+  color: #c09853;
+}
+
+/* line 176, ../../../bower_components/fred/scss/objects/_typography.scss */
+.text-success {
+  color: #468847;
+}
+
+/* line 179, ../../../bower_components/fred/scss/objects/_typography.scss */
+.text-danger {
+  color: #b94a48;
+}
+
+/**
+ * 5. hr
+ * ----------------------------------------------------------------------------
+ */
+/* line 189, ../../../bower_components/fred/scss/objects/_typography.scss */
+hr {
+  border: none;
+  height: 1px;
+}
+
+/**
+ * Text helpers
+ * ----------------------------------------------------------------------------
+ */
+/* line 199, ../../../bower_components/fred/scss/objects/_typography.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* line 200, ../../../bower_components/fred/scss/objects/_typography.scss */
+.lowercase {
+  text-transform: lowercase;
+}
+
+/* line 202, ../../../bower_components/fred/scss/objects/_typography.scss */
+.text-align--left {
+  text-align: left;
+}
+
+/* line 203, ../../../bower_components/fred/scss/objects/_typography.scss */
+.text-align--right {
+  text-align: right;
+}
+
+/* line 204, ../../../bower_components/fred/scss/objects/_typography.scss */
+.text-align--center {
+  text-align: center;
+}
+
+/* line 205, ../../../bower_components/fred/scss/objects/_typography.scss */
+.text--nowrap {
+  white-space: nowrap;
+}
+
+/* line 207, ../../../bower_components/fred/scss/objects/_typography.scss */
+.text--overflow {
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/**
+ * 8. List styles
+ * ----------------------------------------------------------------------------
+ */
+/* line 6, ../../../bower_components/fred/scss/objects/_lists.scss */
+.list-unstyled, .list--inline {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 0 0;
+}
+
+/* line 12, ../../../bower_components/fred/scss/objects/_lists.scss */
+.list-unstyled > li, .list--inline > li {
+  list-style: none;
+  margin-left: 0;
+}
+
+/* line 22, ../../../bower_components/fred/scss/objects/_lists.scss */
+.list--inline > li {
+  margin: 0;
+}
+
+/* line 28, ../../../bower_components/fred/scss/objects/_lists.scss */
+.list-styled, .list-styled--decimal, .list-styled--alpha {
+  padding-left: 1.5em;
+  margin-top: 0.75em;
+  list-style: circle;
+}
+
+/* line 39, ../../../bower_components/fred/scss/objects/_lists.scss */
+.list-styled--decimal {
+  list-style: decimal-leading-zero;
+  padding-left: 2.25em;
+}
+
+/* line 46, ../../../bower_components/fred/scss/objects/_lists.scss */
+.list-styled--alpha {
+  list-style: lower-alpha;
+}
+
+/**
+ * 13. Description lists
+ * ----------------------------------------------------------------------------
+ * Defaults to being stacked without any of the below styles applied, until the
+ *
+ */
+/* line 64, ../../../bower_components/fred/scss/objects/_lists.scss */
+dt,
+dd {
+  line-height: 1.5;
+}
+
+/* line 67, ../../../bower_components/fred/scss/objects/_lists.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 70, ../../../bower_components/fred/scss/objects/_lists.scss */
+dd {
+  margin-left: 0;
+}
+
+/**
+ * 13. Horizontal description lists
+ * ----------------------------------------------------------------------------
+ * Defaults to being stacked without any of the below styles applied, until the
+ *
+ */
+/**
+ * Icon block
+ * ----------------------------------------------------------------------------
+ */
+/* line 7, ../../../bower_components/fred/scss/objects/_icon-text.scss */
+.icon-text,
+.icon-text--rev {
+  /* a, div, etc */
+  display: inline-block;
+}
+
+/* line 12, ../../../bower_components/fred/scss/objects/_icon-text.scss */
+.i {
+  overflow: hidden;
+  /* for IE6 */
+  vertical-align: middle;
+  /* SMACSS line-height: 0; ? */
+}
+/* line 17, ../../../bower_components/fred/scss/objects/_icon-text.scss */
+.icon-text .i, .btn--icon .i {
+  margin-right: 0.5em;
+}
+/* line 22, ../../../bower_components/fred/scss/objects/_icon-text.scss */
+.icon-text--rev .i, .btn--icon-rev .i {
+  margin-left: 0.5em;
+}
+
+/* line 2, ../../../bower_components/fred/scss/objects/_radii.scss */
+.radius--xs {
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -ms-border-radius: 2px 2px 2px 2px;
+  -o-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+}
+
+/* line 5, ../../../bower_components/fred/scss/objects/_radii.scss */
+.radius--s {
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -ms-border-radius: 5px 5px 5px 5px;
+  -o-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+/* line 8, ../../../bower_components/fred/scss/objects/_radii.scss */
+.radius--m {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -ms-border-radius: 10px 10px 10px 10px;
+  -o-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/*
+    Responsive images
+    <img src="..." class="img--responsive" alt="Responsive image">
+*/
+/* line 6, ../../../bower_components/fred/scss/objects/_images.scss */
+.img--responsive {
+  height: auto;
+  max-width: 100%;
+}
+
+/* line 11, ../../../bower_components/fred/scss/objects/_images.scss */
+.img--round {
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  -ms-border-radius: 50% 50% 50% 50%;
+  -o-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
 }
 
 /**
@@ -2495,265 +1136,26 @@ li, code {
 	</div>
  </div>
  */
-/* line 622, ../sass/core/_layout.scss */
+/* line 11, ../../../bower_components/fred/scss/objects/_media.scss */
 .media {
   margin-top: 1.5em;
 }
 
-/* line 627, ../sass/core/_layout.scss */
+/* line 16, ../../../bower_components/fred/scss/objects/_media.scss */
 .media__image {
   float: left;
   margin-right: 1.5em;
 }
 
-/* line 636, ../sass/core/_layout.scss */
+/* line 25, ../../../bower_components/fred/scss/objects/_media.scss */
 .media--rev {
   margin-top: 1.5em;
 }
 
-/* line 641, ../sass/core/_layout.scss */
+/* line 30, ../../../bower_components/fred/scss/objects/_media.scss */
 .media--rev > .media__image {
   float: right;
   margin-left: 1.5em;
-}
-
-/**
- * 6. Inline block grid
- * -----------------------------------------------------------------------------
- *
- * [1] Sets the child elements to take up full justified width of the parent
- * [2] Overcomes an issue where the :after element blows out the bottom.
- * [3] A fix for Internet Explorer 8/9
- * 
- */
-/* line 662, ../sass/core/_layout.scss */
-.grid {
-  text-align: justify;
-  /* [1] */
-  font-size: 0;
-  /* [2] */
-  text-justify: distribute-all-lines;
-  /* [3] */
-}
-
-/* line 674, ../sass/core/_layout.scss */
-.grid__item, .grid > * {
-  font-size: 14px;
-  text-align: left;
-  vertical-align: top;
-}
-
-/* line 683, ../sass/core/_layout.scss */
-.grid:after,
-.grid__break {
-  content: '';
-  height: 0;
-  width: 100%;
-}
-
-/**
- * Vertical align these grid items in the middle!
- */
-/* line 693, ../sass/core/_layout.scss */
-.grid--middle > .grid__item, .grid.grid--middle > * {
-  vertical-align: middle;
-}
-
-/* line 696, ../sass/core/_layout.scss */
-.g--1-1 {
-  width: 100%;
-}
-
-/* line 699, ../sass/core/_layout.scss */
-.g--1-2 {
-  width: 50%;
-}
-
-/* line 702, ../sass/core/_layout.scss */
-.g--1-3 {
-  width: 33%;
-}
-
-/* line 705, ../sass/core/_layout.scss */
-.g--1-4 {
-  width: 25%;
-}
-
-/* line 708, ../sass/core/_layout.scss */
-.g--3-4 {
-  width: 75%;
-}
-
-/* line 713, ../sass/core/_layout.scss */
-.g--60 {
-  width: 60%;
-}
-
-/* line 716, ../sass/core/_layout.scss */
-.g--40 {
-  width: 40%;
-}
-
-/* line 719, ../sass/core/_layout.scss */
-.g--80 {
-  width: 80%;
-}
-
-/* line 722, ../sass/core/_layout.scss */
-.g--20 {
-  width: 20%;
-}
-
-/**
- * Grid - this is used with the inline grid in interim.scss .grid and .grid__item etc
- * I changed the names so they relate to the breakpoints above 
- * ----------------------------------------------------------------------------
- */
-@media only screen and (min-width: 75em) {
-  /* line 742, ../sass/core/_layout.scss */
-  .g-w--1-1 {
-    width: 100%;
-  }
-
-  /* line 745, ../sass/core/_layout.scss */
-  .g-w--1-2 {
-    width: 50%;
-  }
-
-  /* line 748, ../sass/core/_layout.scss */
-  .g-w--1-4 {
-    width: 25%;
-  }
-
-  /* line 751, ../sass/core/_layout.scss */
-  .g-w--1-3 {
-    width: 33%;
-  }
-
-  /* line 756, ../sass/core/_layout.scss */
-  .g-w--60 {
-    width: 60%;
-  }
-
-  /* line 759, ../sass/core/_layout.scss */
-  .g-w--40 {
-    width: 40%;
-  }
-
-  /* line 762, ../sass/core/_layout.scss */
-  .g-w--80 {
-    width: 80%;
-  }
-
-  /* line 765, ../sass/core/_layout.scss */
-  .g-w--20 {
-    width: 20%;
-  }
-}
-@media only screen and (min-width: 31em) and (max-width: 48em) {
-  /* line 774, ../sass/core/_layout.scss */
-  .g-s--1-1 {
-    width: 100%;
-  }
-
-  /* line 777, ../sass/core/_layout.scss */
-  .g-s--1-2 {
-    width: 50%;
-  }
-
-  /* line 780, ../sass/core/_layout.scss */
-  .g-s--1-4 {
-    width: 25%;
-  }
-
-  /* line 783, ../sass/core/_layout.scss */
-  .g-s--1-3 {
-    width: 33%;
-  }
-
-  /* line 788, ../sass/core/_layout.scss */
-  .g-s--60 {
-    width: 60%;
-  }
-
-  /* line 791, ../sass/core/_layout.scss */
-  .g-s--40 {
-    width: 40%;
-  }
-
-  /* line 794, ../sass/core/_layout.scss */
-  .g-s--80 {
-    width: 80%;
-  }
-
-  /* line 797, ../sass/core/_layout.scss */
-  .g-s--20 {
-    width: 20%;
-  }
-}
-@media only screen and (max-width: 30em) {
-  /* line 806, ../sass/core/_layout.scss */
-  .g-m--1-1 {
-    width: 100%;
-  }
-
-  /* line 809, ../sass/core/_layout.scss */
-  .g-m--1-2 {
-    width: 50%;
-  }
-
-  /* line 812, ../sass/core/_layout.scss */
-  .g-m--1-4 {
-    width: 25%;
-  }
-
-  /* line 815, ../sass/core/_layout.scss */
-  .g-m--1-3 {
-    width: 33%;
-  }
-
-  /* line 820, ../sass/core/_layout.scss */
-  .g-m--60 {
-    width: 60%;
-  }
-
-  /* line 823, ../sass/core/_layout.scss */
-  .g-m--40 {
-    width: 40%;
-  }
-
-  /* line 826, ../sass/core/_layout.scss */
-  .g-m--80 {
-    width: 80%;
-  }
-
-  /* line 829, ../sass/core/_layout.scss */
-  .g-m--20 {
-    width: 20%;
-  }
-}
-/**
- * Append vs Prepend
- * ----------------------------------------------------------------------------
- */
-/**
- * Place something before an element
- * ----------------------------------------------------------------------------
- */
-/* line 846, ../sass/core/_layout.scss */
-.prepend:before {
-  content: attr(data-prepend);
-  display: inline-block;
-}
-
-/**
- * Place something after an element
- * ----------------------------------------------------------------------------
- */
-/* line 857, ../sass/core/_layout.scss */
-.append:after {
-  content: attr(data-append);
-  display: inline-block;
 }
 
 /**
@@ -2770,7 +1172,7 @@ li, code {
  * </div>
  *
  */
-/* line 880, ../sass/core/_layout.scss */
+/* line 16, ../../../bower_components/fred/scss/objects/_arrows.scss */
 .arrow {
   /*i,span*/
   position: absolute;
@@ -2781,35 +1183,35 @@ li, code {
   border-width: .4em;
 }
 
-/* line 890, ../sass/core/_layout.scss */
+/* line 26, ../../../bower_components/fred/scss/objects/_arrows.scss */
 .arrow-top {
   border-top-width: 0;
   border-bottom-color: inherit;
   top: -0.4em;
 }
 
-/* line 896, ../sass/core/_layout.scss */
+/* line 32, ../../../bower_components/fred/scss/objects/_arrows.scss */
 .arrow-bottom {
   border-bottom-width: 0;
   border-top-color: inherit;
   bottom: -0.4em;
 }
 
-/* line 902, ../sass/core/_layout.scss */
+/* line 38, ../../../bower_components/fred/scss/objects/_arrows.scss */
 .arrow-left {
   border-left-width: 0;
   border-right-color: inherit;
   left: -0.4em;
 }
 
-/* line 908, ../sass/core/_layout.scss */
+/* line 44, ../../../bower_components/fred/scss/objects/_arrows.scss */
 .arrow-right {
   border-right-width: 0;
   border-left-color: inherit;
   right: -0.4em;
 }
 
-/* line 917, ../sass/core/_layout.scss */
+/* line 53, ../../../bower_components/fred/scss/objects/_arrows.scss */
 .arrow--left,
 .arrow--right,
 .arrow--side,
@@ -2818,7 +1220,7 @@ li, code {
   position: relative;
 }
 
-/* line 921, ../sass/core/_layout.scss */
+/* line 57, ../../../bower_components/fred/scss/objects/_arrows.scss */
 .arrow--center .arrow {
   left: 0;
   right: 0;
@@ -2826,920 +1228,52 @@ li, code {
   margin-right: auto;
 }
 
-/* line 928, ../sass/core/_layout.scss */
+/* line 64, ../../../bower_components/fred/scss/objects/_arrows.scss */
 .arrow--left .arrow {
   left: 1.5em;
 }
 
-/* line 932, ../sass/core/_layout.scss */
+/* line 68, ../../../bower_components/fred/scss/objects/_arrows.scss */
 .arrow--right .arrow {
   right: 1.5em;
 }
 
-/* line 936, ../sass/core/_layout.scss */
+/* line 72, ../../../bower_components/fred/scss/objects/_arrows.scss */
 .arrow--side .arrow {
   top: 1.5em;
 }
 
 /**
- * Icon block 
- * ----------------------------------------------------------------------------
- */
-/* line 946, ../sass/core/_layout.scss */
-.icon-text,
-.icon-text--rev {
-  /* a, div, etc */
-  display: inline-block;
-}
-
-/* line 951, ../sass/core/_layout.scss */
-.i {
-  overflow: hidden;
-  /* for IE6 */
-  vertical-align: middle;
-  /* SMACSS line-height: 0; ? */
-}
-/* line 956, ../sass/core/_layout.scss */
-.icon-text .i, .btn--icon .i {
-  margin-right: 0.5em;
-}
-/* line 961, ../sass/core/_layout.scss */
-.icon-text--rev .i, .btn--icon-rev .i {
-  margin-left: 0.5em;
-}
-
-/**
-*  Responsive images
-* -----------------------------------------------------------------------------
-*/
-/**
- * Responsive images <img src="..." class="img--responsive" alt="Responsive image">
-
- * ----------------------------------------------------------------------------
- */
-/* line 977, ../sass/core/_layout.scss */
-.img--responsive {
-  height: auto;
-  max-width: 100%;
-}
-
-/* line 984, ../sass/core/_layout.scss */
-.hidden-mobile, .hidden-skinny, .hidden-wide {
-  display: block !important;
-}
-
-/* line 985, ../sass/core/_layout.scss */
-.visible-mobile, .visible-skinny, .visible-wide {
-  display: none !important;
-}
-
-/**
- * 1. Visible classes
- * -----------------------------------------------------------------------------
- */
-@media only screen and (max-width: 30em) {
-  /* line 992, ../sass/core/_layout.scss */
-  .visible-mobile {
-    display: block !important;
-  }
-}
-
-@media only screen and (min-width: 31em) and (max-width: 48em) {
-  /* line 1000, ../sass/core/_layout.scss */
-  .visible-skinny {
-    display: block !important;
-  }
-}
-
-@media only screen and (min-width: 75em) {
-  /* line 1012, ../sass/core/_layout.scss */
-  .visible-wide {
-    display: block !important;
-  }
-}
-
-/**
- * 1. hidden classes
- * -----------------------------------------------------------------------------
- */
-@media only screen and (max-width: 30em) {
-  /* line 1024, ../sass/core/_layout.scss */
-  .hidden-mobile {
-    display: none !important;
-  }
-}
-
-@media only screen and (min-width: 31em) and (max-width: 48em) {
-  /* line 1032, ../sass/core/_layout.scss */
-  .hidden-skinny {
-    display: none !important;
-  }
-}
-
-@media only screen and (min-width: 75em) {
-  /* line 1044, ../sass/core/_layout.scss */
-  .hidden-wide {
-    display: none !important;
-  }
-}
-
-/**
- *
- * Typography defaults
- * -----------------------------------------------------------------------------
- *
- * Structure:
- *      1. Base typography styles
-            a. Font families
- *      2. Heading styles
- *      3. Paragraph styles
- *      4. Typographic relationships
- *      5. hr
- *      6. Lower vs Uppercase
- *		7. Text allignment
- *		8. List styles
- *      9. text overflow helper class
- *      10. Fix webkit font rendering
- *      11. hide text
- *      12. Sans vs serif
- *
+ * Badges
  * ----------------------------------------------------------------------------
  *
- */
-/** 1. Base styles
- * ----------------------------------------------------------------------------
+ * <span class='badge'>
+ *      3
+ * </span>
  *
  */
-/* line 32, ../sass/core/_typography.scss */
-html,
-body {
+/* line 10, ../../../bower_components/fred/scss/objects/_badge.scss */
+.badge {
+  min-width: .625em;
+  padding: .1875em .4375em;
   line-height: 1.42857;
-  font-size: 100%;
-}
-
-/** a) Font families
- * ----------------------------------------------------------------------------
- *
- */
-/* primary */
-/* line 51, ../sass/core/_typography.scss */
-.font-primary, body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* line 55, ../sass/core/_typography.scss */
-.font-primary--italic, .ie8 em, .ie8
-i {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-/* line 57, ../sass/core/_typography.scss */
-.ie8 .font-primary--italic, .ie8 em, .ie8 i {
-  font-family: "Open Sans", sans-serif;
-}
-
-/* line 62, ../sass/core/_typography.scss */
-.font-primary--bold, .ie8 strong, .ie8
-b {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-/* line 64, ../sass/core/_typography.scss */
-.ie8 .font-primary--bold, .ie8 strong, .ie8 b {
-  font-family: "Open Sans", sans-serif;
-}
-
-/* line 69, ../sass/core/_typography.scss */
-.font-primary--bold-italic {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-/* line 71, ../sass/core/_typography.scss */
-.ie8 .font-primary--bold-italic {
-  font-family: "Open Sans", sans-serif;
-}
-
-/* Secondary font family ..... etc*/
-/** 2. Font sizes
- * ----------------------------------------------------------------------------
- * 
- *
- */
-/* line 101, ../sass/core/_typography.scss */
-.font-size-xxxxl, .h0 {
-  font-size: 4.5em;
-}
-
-/* line 102, ../sass/core/_typography.scss */
-.font-size-xxxl, h1,
-.h1 {
-  font-size: 2.25em;
-}
-
-/* line 103, ../sass/core/_typography.scss */
-.font-size-xxl, h2,
-.h2 {
-  font-size: 2em;
-}
-
-/* line 104, ../sass/core/_typography.scss */
-.font-size-xl, h3,
-.h3 {
-  font-size: 1.375em;
-}
-
-/* line 105, ../sass/core/_typography.scss */
-.font-size-l {
-  font-size: 1.25em;
-}
-
-/* line 106, ../sass/core/_typography.scss */
-.font-size-m, h4,
-.h4 {
-  font-size: 1.125em;
-}
-
-/* line 107, ../sass/core/_typography.scss */
-.font-size-s, h5,
-.h5, .intro {
-  font-size: 1em;
-}
-
-/* line 108, ../sass/core/_typography.scss */
-.font-size-xs, h6,
-.h6, p,
-.text,
-li, code {
-  font-size: 0.875em;
-}
-
-/* line 109, ../sass/core/_typography.scss */
-.font-size-xxs, .small {
-  font-size: 0.75em;
-}
-
-/* line 110, ../sass/core/_typography.scss */
-.font-size-xxxs, .tiny {
-  font-size: 0.6875em;
-}
-
-/** 2. Header styles
- * ----------------------------------------------------------------------------
- * NOTE: These can change per project depending on what font etc you use :) 
- *
- */
-/* line 124, ../sass/core/_typography.scss */
-h1,
-.h1 {
-  line-height: 1;
-  margin-top: 0.04167emem;
-}
-
-/* line 132, ../sass/core/_typography.scss */
-h2,
-.h2 {
-  line-height: 1.2;
-  margin-top: 0.04688emem;
-}
-
-/* line 140, ../sass/core/_typography.scss */
-h3,
-.h3 {
-  line-height: 1.2;
-  margin-top: 0.06818emem;
-}
-
-/* line 148, ../sass/core/_typography.scss */
-h4,
-.h4 {
-  line-height: 1.2;
-  margin-top: 0.08333emem;
-}
-
-/* line 156, ../sass/core/_typography.scss */
-h5,
-.h5 {
-  line-height: 1.2;
-  margin-top: 0.04688emem;
-}
-
-/* line 164, ../sass/core/_typography.scss */
-h6,
-.h6 {
-  line-height: 1.5;
-  margin-top: 0.05357emem;
-}
-
-/**
- *  
- * ----------------------------------------------------------------------------
- */
-/* line 179, ../sass/core/_typography.scss */
-p,
-.text,
-li, code {
-  line-height: 1.5;
-  margin-top: 0.05357emem;
-}
-
-/**
- *  3. Paragraph styles
- * ----------------------------------------------------------------------------
- */
-/**
- * 4. Typographic relationships (nawww, aren't they so good together?)
- * ----------------------------------------------------------------------------
- */
-/**
- * 5. hr
- * ----------------------------------------------------------------------------
- */
-/* line 244, ../sass/core/_typography.scss */
-hr {
-  border: none;
-  height: 1px;
-}
-
-/**
- *  6. Lowercase vs Uppercase
- * ----------------------------------------------------------------------------
- */
-/* line 255, ../sass/core/_typography.scss */
-.uppercase {
-  text-transform: uppercase;
-}
-
-/* line 258, ../sass/core/_typography.scss */
-.lowercase {
-  text-transform: lowercase;
-}
-
-/**
- * 7. Text Allignment classes
- * ----------------------------------------------------------------------------
- */
-/* line 268, ../sass/core/_typography.scss */
-.text-align--left {
-  text-align: left;
-}
-
-/* line 271, ../sass/core/_typography.scss */
-.text-align--right {
-  text-align: right;
-}
-
-/* line 274, ../sass/core/_typography.scss */
-.text-align--center {
+  vertical-align: baseline;
+  white-space: nowrap;
   text-align: center;
-}
-
-/**
- * 8. List styles
- * ----------------------------------------------------------------------------
- */
-/* line 284, ../sass/core/_typography.scss */
-.list--unstyled, .list--inline {
-  list-style: none;
-  padding-left: 0;
-  margin: 0 0 0 0;
-}
-
-/* line 290, ../sass/core/_typography.scss */
-.list--unstyled > li, .list--inline > li {
-  list-style: none;
-  margin-left: 0;
-}
-
-/* line 300, ../sass/core/_typography.scss */
-.list--inline > li {
-  margin: 0;
-}
-
-/* line 306, ../sass/core/_typography.scss */
-.list--styled, .list--styled-decimal, .list--styled-alpha {
-  padding-left: 1.5em;
-  margin-top: 0.75em;
-  list-style: circle;
-}
-
-/* line 317, ../sass/core/_typography.scss */
-.list--styled-decimal {
-  list-style: decimal-leading-zero;
-  padding-left: 2.25em;
-}
-
-/* line 324, ../sass/core/_typography.scss */
-.list--styled-alpha {
-  list-style: lower-alpha;
-}
-
-/**
- * 9. text overflow helper class
- * ----------------------------------------------------------------------------
- */
-/* line 334, ../sass/core/_typography.scss */
-.text--overflow {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100%;
-}
-
-/* line 342, ../sass/core/_typography.scss */
-.text--nowrap {
-  white-space: nowrap;
-}
-
-/**
- * 10. Fix webkit bug
- * ----------------------------------------------------------------------------
- *
- * Since v22, Chrome makes fat sausage horrible web typography. Fix it with 
- * these properties right here. Maybe consider scoping this to a class for
- * chrome/mac osx only at some point?
- */
-/* line 355, ../sass/core/_typography.scss */
-html,
-body {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-/**
- * 11. hide text
- * ----------------------------------------------------------------------------
- */
-/* line 365, ../sass/core/_typography.scss */
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-}
-
-/**
- * 12. Sans vs serif
- * ----------------------------------------------------------------------------
- *
- * 
- */
-/* line 381, ../sass/core/_typography.scss */
-.sans {
-  font-family: "Open Sans", sans-serif;
-}
-
-/* line 385, ../sass/core/_typography.scss */
-.serif {
-  font-family: "georgia", serif;
-}
-
-/**
- * 13. Description lists
- * ----------------------------------------------------------------------------
- * Defaults to being stacked without any of the below styles applied, until the
- * 
- */
-/* line 401, ../sass/core/_typography.scss */
-dt,
-dd {
-  line-height: 1.5;
-}
-
-/* line 404, ../sass/core/_typography.scss */
-dt {
-  font-weight: bold;
-}
-
-/* line 407, ../sass/core/_typography.scss */
-dd {
-  margin-left: 0;
-}
-
-/**
- * 13. Horizontal description lists
- * ----------------------------------------------------------------------------
- * Defaults to being stacked without any of the below styles applied, until the
- * 
- */
-/**
- *
- * Themes 
- *
- *	This file controls all of the colours / themes for the site! 
- *
- * ----------------------------------------------------------------------------
- * 
- * Structure:
- *
- *      1. Warning Themes
- *		  2. Text colours
- *		  3. Theme blocks
- *
- *
- *
- * ----------------------------------------------------------------------------
- *
- */
-/*
-base colours 
-*/
-/* line 26, ../sass/core/_theme.scss */
-html,
-body {
-  background-color: #4d4d4d;
-  color: #2e2f2b;
-}
-
-/* line 31, ../sass/core/_theme.scss */
-a {
-  color: #2f72ba;
-}
-/* line 33, ../sass/core/_theme.scss */
-a:hover {
-  color: #204d7d;
-}
-
-/* line 38, ../sass/core/_theme.scss */
-hr {
-  background-color: #e5e5e5;
-  color: #e5e5e5;
-}
-
-/**
- * 2. Text colours
- * -----------------------------------------------------------------------------
- */
-/* line 49, ../sass/core/_theme.scss */
-.text-muted {
-  color: #999999;
-}
-
-/* line 51, ../sass/core/_theme.scss */
-.text-success {
-  color: #468847;
-}
-
-/* line 53, ../sass/core/_theme.scss */
-.text-warning {
-  color: #c09853;
-}
-
-/* line 55, ../sass/core/_theme.scss */
-.text-danger {
-  color: #b94a48;
-}
-
-/**
- * . Theme blocks --success warning or danger
- * -----------------------------------------------------------------------------
- */
-/* line 63, ../sass/core/_theme.scss */
-.tb__success {
-  background-color: #c5ffc6;
-  color: #468847;
-  border-color: #468847;
-}
-
-/* line 68, ../sass/core/_theme.scss */
-.tb__warning {
-  background-color: #ffffd2;
-  color: #dab26d;
-  border-color: #dab26d;
-}
-
-/* line 73, ../sass/core/_theme.scss */
-.tb__danger {
-  background-color: #ffc9c7;
-  color: #b94a48;
-  border-color: #b94a48;
-}
-
-/**
- *  Theme block --primary, secondary, tertiary, quarternary
- * -----------------------------------------------------------------------------
- */
-/* line 84, ../sass/core/_theme.scss */
-.tb__primary {
-  background-color: white;
-  color: #2e2f2b;
-  border-color: white;
-  border-radius: 10px;
-}
-
-/* line 90, ../sass/core/_theme.scss */
-.tb__secondary {
-  background-color: #f2f2f2;
-  color: #2e2f2b;
-  border-color: #e6e6e6;
-}
-
-/* line 95, ../sass/core/_theme.scss */
-.tb__tertiary {
-  background-color: #2e2f2b;
-  color: white;
-  border-color: #2e2f2b;
-}
-
-/* line 100, ../sass/core/_theme.scss */
-.tb__quarternary {
-  background-color: #4d4d4d;
-  color: white;
-  border-color: #4d4d4d;
-}
-
-/**
- *  Theme block --green, pink, blue
- * -----------------------------------------------------------------------------
- */
-/* line 111, ../sass/core/_theme.scss */
-.tb__green {
-  background-color: #a6e22e;
-  color: #2e2f2b;
-  border-color: #a6e22e;
-}
-
-/* line 116, ../sass/core/_theme.scss */
-.tb__pink {
-  background-color: #f92672;
-  color: #2e2f2b;
-  border-color: #f92672;
-}
-
-/* line 121, ../sass/core/_theme.scss */
-.tb__blue {
-  background-color: #4aa1c5;
-  color: white;
-  border-color: #4aa1c5;
-}
-
-/* line 132, ../sass/core/_theme.scss */
-.br--xs {
-  -webkit-border-radius: 2px 2px 2px 2px;
-  -moz-border-radius: 2px 2px 2px 2px;
-  -ms-border-radius: 2px 2px 2px 2px;
-  -o-border-radius: 2px 2px 2px 2px;
-  border-radius: 2px 2px 2px 2px;
-}
-
-/* line 135, ../sass/core/_theme.scss */
-.br--xs {
-  -webkit-border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  -ms-border-radius: 5px 5px 5px 5px;
-  -o-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-}
-
-/* line 138, ../sass/core/_theme.scss */
-.br--s {
-  -webkit-border-radius: 10px 10px 10px 10px;
-  -moz-border-radius: 10px 10px 10px 10px;
-  -ms-border-radius: 10px 10px 10px 10px;
-  -o-border-radius: 10px 10px 10px 10px;
-  border-radius: 10px 10px 10px 10px;
-}
-
-/**
- * Button theming
- * -----------------------------------------------------------------------------
- */
-/* line 147, ../sass/core/_theme.scss */
-.btn-primary {
-  background-color: #3cbe8a;
-  color: white;
-  border-color: #3cbe8a;
-}
-/* line 150, ../sass/core/_theme.scss */
-.btn-primary:hover {
-  background-color: #33a376;
-  color: white;
-}
-
-/* line 156, ../sass/core/_theme.scss */
-.btn-secondary {
-  background-color: #999999;
-  color: white;
-  border-color: #3cbe8a;
-}
-/* line 158, ../sass/core/_theme.scss */
-.btn-secondary:hover {
-  background-color: #777777;
-  color: white;
-}
-
-/* line 164, ../sass/core/_theme.scss */
-.btn-tertiary {
-  background-color: #dddddd;
-  color: white;
-  border-color: #444444;
-}
-/* line 166, ../sass/core/_theme.scss */
-.btn-tertiary:hover {
-  background-color: #cccccc;
-  color: #333333;
-}
-
-/* line 174, ../sass/core/_theme.scss */
-.btn-positive {
-  background-color: #3977b1;
-  color: white;
-  border-color: #3cbe8a;
-}
-/* line 176, ../sass/core/_theme.scss */
-.btn-positive:hover {
-  background-color: #306596;
-  color: white;
-}
-
-/* line 182, ../sass/core/_theme.scss */
-.btn-negative {
-  background-color: #eb3930;
-  color: white;
-  border-color: #444444;
-}
-/* line 184, ../sass/core/_theme.scss */
-.btn-negative:hover {
-  background-color: #d8281f;
-  color: white;
-}
-
-/**
- * A common active state makes us look pro as, bro!
- */
-/* line 196, ../sass/core/_theme.scss */
-.btn:active {
-  background-color: #333333;
-  color: white;
-}
-
-/* line 202, ../sass/core/_theme.scss */
-.tb__breadrumbs {
-  background-color: #cccccc;
-}
-/* line 205, ../sass/core/_theme.scss */
-.tb__breadrumbs > li + li:before {
-  color: #666666;
-}
-/* line 209, ../sass/core/_theme.scss */
-.tb__breadrumbs > .active {
-  color: #555555;
-}
-
-/* line 214, ../sass/core/_theme.scss */
-.tb__badge {
-  color: white;
-  background-color: red;
-  border-radius: 10px;
-}
-
-/* line 221, ../sass/core/_theme.scss */
-a.tb__badge_active > .badge {
-  color: #efefef;
-  background-color: blue;
-}
-
-/* line 226, ../sass/core/_theme.scss */
-.tb__header {
-  color: #343434;
-  border-bottom: 1px solid #e6e6e6;
-}
-/* line 229, ../sass/core/_theme.scss */
-.tb__header span {
-  color: slategrey;
-}
-
-/* 
-
-shame!!!! just some dirty styles to get a basic style. i WILL refacter to get the project started :) 
-
-*/
-/* line 9, ../sass/core/_page-specific.scss */
-.content,
-.navigation {
-  max-width: 760px;
-  width: 100%;
-}
-
-/* line 15, ../sass/core/_page-specific.scss */
-.navigation--wrapper {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 5;
-}
-
-/* line 22, ../sass/core/_page-specific.scss */
-.navigation a {
-  color: #fff;
-  text-decoration: none;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  display: inline-block;
-}
-
-/* line 28, ../sass/core/_page-specific.scss */
-.navigation a.active {
-  background-color: #2E2F2B;
-}
-
-/* line 31, ../sass/core/_page-specific.scss */
-.navigation a:hover {
-  color: #E6DB74;
-}
-
-/* line 36, ../sass/core/_page-specific.scss */
-.logo {
-  display: inline-block;
-  margin-top: 0.45em;
-  font-size: 1.8em;
-}
-/* line 40, ../sass/core/_page-specific.scss */
-.logo a {
-  color: #fff;
-}
-/* line 43, ../sass/core/_page-specific.scss */
-.logo a:hover {
-  color: #E6DB74;
-}
-/* line 49, ../sass/core/_page-specific.scss */
-.logo span {
-  color: #E6DB74;
-}
-
-/* line 56, ../sass/core/_page-specific.scss */
-.br--s {
-  border-radius: 10px;
-}
-
-/* line 60, ../sass/core/_page-specific.scss */
-.testbox {
-  height: 150px;
-  width: 150px;
-  display: inline-block;
-}
-
-/* line 65, ../sass/core/_page-specific.scss */
-.testbox-100-100 {
-  height: 100px;
-  width: 100px;
-}
-
-/* line 69, ../sass/core/_page-specific.scss */
-.testbox-400-100 {
-  height: 100px;
-  width: 300px;
-}
-
-/* line 72, ../sass/core/_page-specific.scss */
-.homepage {
-  background-color: #4D4D4D;
-  color: #fff;
-}
-
-/* line 77, ../sass/core/_page-specific.scss */
-.fred {
-  left: -138px;
-  top: 0;
-}
-
-/* line 82, ../sass/core/_page-specific.scss */
-.fred-layout {
-  top: -22px;
-  right: 72px;
-}
-
-/* line 87, ../sass/core/_page-specific.scss */
-.fred-buttons-page {
-  right: 30px;
-  top: 196px;
-}
-
-/* line 92, ../sass/core/_page-specific.scss */
-.specific-bird {
-  top: 10px;
-  left: 17px;
-}
-
-/* line 98, ../sass/core/_page-specific.scss */
-.i {
-  vertical-align: middle;
-  font-style: normal;
-}
-
-/* line 105, ../sass/core/_page-specific.scss */
-.icon-placeholder {
-  background-image: url("/assets/images/icon-placeholder.png");
-  width: 40px;
-  height: 40px;
-  display: inline-block;
+  background-color: #eee;
+  position: relative;
+  top: -1px;
+}
+/* line 25, ../../../bower_components/fred/scss/objects/_badge.scss */
+.badge:empty {
+  display: none;
+}
+
+/* Unicode space added since inline-block means non-collapsing white-space */
+/* line 5, ../../../bower_components/fred/scss/objects/_breadcrumbs.scss */
+.breadcrumbs > li + li:before {
+  content: "/\00a0";
+  padding: 0 5px;
 }
 
 /**
@@ -3758,7 +1292,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
  * 8. Basic cosmetics for default buttons. Change or override at will.
  * 9. Don’t allow buttons to have underlines; it kinda ruins the illusion.
  */
-/* line 19, ../sass/core/_buttons.scss */
+/* line 17, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn {
   /* [1] */
   vertical-align: middle;
@@ -3790,12 +1324,12 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   -o-border-radius: 0.375em;
   border-radius: 0.375em;
 }
-/* line 38, ../sass/core/_buttons.scss */
+/* line 36, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn, .btn:hover {
   text-decoration: none;
   /* [9] */
 }
-/* line 43, ../sass/core/_buttons.scss */
+/* line 41, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn:active, .btn:focus {
   outline: none;
 }
@@ -3812,7 +1346,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
         My small rounded button
     </a>
  */
-/* line 63, ../sass/core/_buttons.scss */
+/* line 61, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--large,
 .btn--icon-large,
 .btn--icon-large--rev,
@@ -3820,13 +1354,13 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   line-height: 3.5;
 }
 
-/* line 67, ../sass/core/_buttons.scss */
+/* line 65, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--large {
   padding-right: 3em;
   padding-left: 3em;
 }
 
-/* line 75, ../sass/core/_buttons.scss */
+/* line 73, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--small,
 .btn--icon-small,
 .btn--icon-small--rev,
@@ -3834,7 +1368,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   line-height: 2;
 }
 
-/* line 79, ../sass/core/_buttons.scss */
+/* line 77, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--small {
   padding-right: 0.75em;
   padding-left: 0.75em;
@@ -3844,7 +1378,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
  * Pill type buttons with (rounded) ends
  * ----------------------------------------------------------------------------
  */
-/* line 88, ../sass/core/_buttons.scss */
+/* line 86, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--soft {
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
@@ -3853,7 +1387,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   border-radius: 200px;
 }
 
-/* line 92, ../sass/core/_buttons.scss */
+/* line 90, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--hard {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -3865,7 +1399,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 /**
  * Block buttons stretch to the full width of their parent (handy!)
  */
-/* line 100, ../sass/core/_buttons.scss */
+/* line 98, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--block {
   display: block;
   text-align: center;
@@ -3875,7 +1409,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
  * Make a button behave like a block at mobile only (also handy)
  */
 @media only screen and (max-width: 37.5em) {
-  /* line 109, ../sass/core/_buttons.scss */
+  /* line 107, ../../../bower_components/fred/scss/objects/_buttons.scss */
   .btn--block-mobile {
     text-align: center;
     display: block;
@@ -3887,21 +1421,21 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
  * FireFox doesn't like line-heights on submit buttons. Stick a class on submit
  * buttons and make sure the padding's the same as your default button :)
  */
-/* line 121, ../sass/core/_buttons.scss */
+/* line 119, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--submit {
   line-height: 1;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
 }
 
-/* line 127, ../sass/core/_buttons.scss */
+/* line 125, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--submit-large {
   line-height: 1;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 
-/* line 133, ../sass/core/_buttons.scss */
+/* line 131, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--submit-small {
   line-height: 1;
   padding-top: 0.375em;
@@ -3922,7 +1456,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
         <i class='i sprite_icon_close'></i>
     </a>
  */
-/* line 156, ../sass/core/_buttons.scss */
+/* line 154, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--icon-only,
 .btn--icon-only--small,
 .btn--icon-only--large {
@@ -3930,78 +1464,78 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   min-width: 1em;
 }
 
-/* line 160, ../sass/core/_buttons.scss */
+/* line 158, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--icon-only {
   padding-left: 0.9375em;
   padding-right: 0.9375em;
 }
 
-/* line 165, ../sass/core/_buttons.scss */
+/* line 163, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--icon-only--small {
   padding-left: 0.6em;
   padding-right: 0.6em;
 }
 
-/* line 170, ../sass/core/_buttons.scss */
+/* line 168, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--icon-only--large {
   padding-left: 1.66667em;
   padding-right: 1.66667em;
 }
 
-/* line 176, ../sass/core/_buttons.scss */
+/* line 174, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--icon {
   padding-left: 0.75em;
 }
-/* line 178, ../sass/core/_buttons.scss */
+/* line 176, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--icon > .i {
   margin-right: 0.75em;
 }
 
-/* line 183, ../sass/core/_buttons.scss */
+/* line 181, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--icon--rev {
   padding-right: 0.75em;
 }
-/* line 185, ../sass/core/_buttons.scss */
+/* line 183, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--icon--rev > .i {
   margin-left: 0.75em;
 }
 
-/* line 190, ../sass/core/_buttons.scss */
+/* line 188, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--icon-large {
   padding-left: 1.5em;
   padding-right: 3em;
 }
-/* line 193, ../sass/core/_buttons.scss */
+/* line 191, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--icon-large > .i {
   margin-right: 0.75em;
 }
 
-/* line 198, ../sass/core/_buttons.scss */
+/* line 196, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--icon-large--rev {
   padding-left: 3em;
   padding-right: 1.5em;
 }
-/* line 201, ../sass/core/_buttons.scss */
+/* line 199, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--icon-large--rev > .i {
   margin-left: 0.75em;
 }
 
-/* line 206, ../sass/core/_buttons.scss */
+/* line 204, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--icon-small {
   padding-left: 0.5em;
   padding-right: 0.75em;
 }
-/* line 209, ../sass/core/_buttons.scss */
+/* line 207, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--icon-small > .i {
   margin-right: 0.375em;
 }
 
-/* line 214, ../sass/core/_buttons.scss */
+/* line 212, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--icon-small--rev {
   padding-left: 0.75em;
   padding-right: 0.375em;
 }
-/* line 217, ../sass/core/_buttons.scss */
+/* line 215, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--icon-small--rev > .i {
   margin-left: 0.75em;
 }
@@ -4015,7 +1549,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
  * Simple bounces
  * ----------------------------------------------------------------------------
  */
-/* line 234, ../sass/core/_buttons.scss */
+/* line 232, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--bounce,
 .btn--bob {
   position: relative;
@@ -4026,12 +1560,12 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   transition: bottom 100ms ease-out;
 }
 
-/* line 239, ../sass/core/_buttons.scss */
+/* line 237, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--bounce:active {
   bottom: -2px;
 }
 
-/* line 243, ../sass/core/_buttons.scss */
+/* line 241, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--bob:active {
   bottom: -1px;
 }
@@ -4039,7 +1573,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 /**
  * Bounce the icon to a side
  */
-/* line 253, ../sass/core/_buttons.scss */
+/* line 251, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--bounce-icon--right .i,
 .btn--bounce-icon--left .i,
 .btn--bounce-icon--bottom .i,
@@ -4057,7 +1591,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   transition-duration: 300ms;
 }
 
-/* line 259, ../sass/core/_buttons.scss */
+/* line 257, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--bounce-icon--right:hover .i {
   -webkit-transition-property: left;
   -moz-transition-property: left;
@@ -4067,7 +1601,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   left: .3125em;
 }
 
-/* line 264, ../sass/core/_buttons.scss */
+/* line 262, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--bounce-icon--left:hover .i {
   -webkit-transition-property: right;
   -moz-transition-property: right;
@@ -4077,7 +1611,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   right: .3125em;
 }
 
-/* line 269, ../sass/core/_buttons.scss */
+/* line 267, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--bounce-icon--bottom:hover .i {
   -webkit-transition-property: top;
   -moz-transition-property: top;
@@ -4087,7 +1621,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   top: .3125em;
 }
 
-/* line 274, ../sass/core/_buttons.scss */
+/* line 272, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--bounce-icon--top:hover .i {
   -webkit-transition-property: bottom;
   -moz-transition-property: bottom;
@@ -4101,12 +1635,12 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
  * Inset buttons on block level elements
  * ----------------------------------------------------------------------------
  */
-/* line 283, ../sass/core/_buttons.scss */
+/* line 281, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--inset {
   position: relative;
 }
 
-/* line 287, ../sass/core/_buttons.scss */
+/* line 285, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--inset:after {
   position: absolute;
   top: 0;
@@ -4126,28 +1660,28 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   border-style: solid;
 }
 
-/* line 301, ../sass/core/_buttons.scss */
+/* line 299, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--inset:hover:after {
   border-width: 4px;
   visibility: visible;
 }
 
-/* line 305, ../sass/core/_buttons.scss */
+/* line 303, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--inset-primary:after {
   border-color: #3977B1;
 }
 
-/* line 308, ../sass/core/_buttons.scss */
+/* line 306, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--inset-secondary:after {
   border-color: #eb3930;
 }
 
-/* line 311, ../sass/core/_buttons.scss */
+/* line 309, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--inset-large:hover:after {
   border-width: 8px;
 }
 
-/* line 314, ../sass/core/_buttons.scss */
+/* line 312, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--inset-small:hover:after {
   border-width: 1px;
 }
@@ -4156,85 +1690,998 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
  * Buttons that show a loading indicator when clicked
  * ----------------------------------------------------------------------------
  */
-/* line 322, ../sass/core/_buttons.scss */
+/* line 320, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--spinner {
   position: relative;
   cursor: default;
 }
 
-/* line 327, ../sass/core/_buttons.scss */
+/* line 325, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--spinner .btn--label {
   opacity: 0;
   visibility: hidden;
 }
 
-/* line 332, ../sass/core/_buttons.scss */
+/* line 330, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--spinner:after {
   position: absolute;
   top: 0;
   left: 0;
   display: inline-block;
-  content: url("an/image.png");
+  content: url("../images/spinner.png");
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 
-/* line 343, ../sass/core/_buttons.scss */
+/* line 341, ../../../bower_components/fred/scss/objects/_buttons.scss */
 .btn--spinner--text:after {
   content: attr(data-btn-loading-indicator);
 }
 
-/** 2. Sub Heading styles
- * ----------------------------------------------------------------------------
- *
- */
-/* line 11, ../sass/core/_components.scss */
-.breadcrumbs > li + li:before {
-  content: "/\00a0";
-  padding: 0 5px;
-}
-
-/* line 23, ../sass/core/_components.scss */
-.badge {
-  min-width: 10px;
-  padding: 3px 7px;
-  line-height: 1.42857;
-  vertical-align: baseline;
-  white-space: nowrap;
-  text-align: center;
-}
-/* line 32, ../sass/core/_components.scss */
-.badge:empty {
-  display: none;
-}
-
-/* line 38, ../sass/core/_components.scss */
-.badge {
-  position: relative;
-  top: -1px;
-}
-
-/* line 44, ../sass/core/_components.scss */
+/* line 1, ../../../bower_components/fred/scss/objects/_headings.scss */
 .page-header {
   padding-bottom: 0.5em;
 }
-/* line 46, ../sass/core/_components.scss */
+/* line 3, ../../../bower_components/fred/scss/objects/_headings.scss */
 .page-header > :first-child {
   margin-top: 0;
 }
-/* line 51, ../sass/core/_components.scss */
-.page-header .tiny {
+/* line 8, ../../../bower_components/fred/scss/objects/_headings.scss */
+.page-header > span {
   font-weight: normal;
 }
 
-/* line 57, ../sass/core/_components.scss */
+/**
+ *
+ * Form helpers
+ *
+ * ----------------------------------------------------------------------------
+ * 
+ * Structure:
+ *
+ *      1. ...
+ *		
+ *
+ *
+ * ----------------------------------------------------------------------------
+ *
+ */
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.m--0, h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, p:first-child, .text:first-child, li:first-child, code:first-child {
+  margin-top: 0;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.m--xxxs {
+  margin-top: 0.375em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.m--xxs {
+  margin-top: 0.5em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.m--xs {
+  margin-top: 0.75em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.m--s {
+  margin-top: 1em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.m--m, dl {
+  margin-top: 1.5em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.m--l {
+  margin-top: 2.25em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.m--xl {
+  margin-top: 3em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.m--xxl {
+  margin-top: 4.5em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.m--xxxl {
+  margin-top: 6em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mb--0, h1, h2, h3, h4, h5, h6, p, .text, li, code {
+  margin-bottom: 0;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mb--xxxs {
+  margin-bottom: 0.375em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mb--xxs {
+  margin-bottom: 0.5em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mb--xs {
+  margin-bottom: 0.75em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mb--s {
+  margin-bottom: 1em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mb--m {
+  margin-bottom: 1.5em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mb--l {
+  margin-bottom: 2.25em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mb--xl {
+  margin-bottom: 3em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mb--xxl {
+  margin-bottom: 4.5em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mb--xxxl {
+  margin-bottom: 6em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mr--0 {
+  margin-right: 0;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mr--xxxs {
+  margin-right: 0.375em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mr--xxs {
+  margin-right: 0.5em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mr--xs {
+  margin-right: 0.75em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mr--s {
+  margin-right: 1em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mr--m {
+  margin-right: 1.5em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mr--l {
+  margin-right: 2.25em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mr--xl {
+  margin-right: 3em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mr--xxl {
+  margin-right: 4.5em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.mr--xxxl {
+  margin-right: 6em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.ml--0 {
+  margin-left: 0;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.ml--xxxs {
+  margin-left: 0.375em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.ml--xxs {
+  margin-left: 0.5em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.ml--xs {
+  margin-left: 0.75em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.ml--s {
+  margin-left: 1em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.ml--m {
+  margin-left: 1.5em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.ml--l {
+  margin-left: 2.25em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.ml--xl {
+  margin-left: 3em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.ml--xxl {
+  margin-left: 4.5em;
+}
+
+/* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.ml--xxxl {
+  margin-left: 6em;
+}
+
+/**
+ * Responsive spacing elements
+ * ----------------------------------------------------------------------------
+ */
+@media only screen and (min-width: 75em) {
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-xlarge--0 {
+    margin-top: 0;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-xlarge--xxxs {
+    margin-top: 0.375em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-xlarge--xxs {
+    margin-top: 0.5em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-xlarge--xs {
+    margin-top: 0.75em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-xlarge--s {
+    margin-top: 1em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-xlarge--m {
+    margin-top: 1.5em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-xlarge--l {
+    margin-top: 2.25em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-xlarge--xl {
+    margin-top: 3em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-xlarge--xxl {
+    margin-top: 4.5em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-xlarge--xxxl {
+    margin-top: 6em;
+  }
+}
+@media only screen and (min-width: 48em) {
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-medium--0 {
+    margin-top: 0;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-medium--xxxs {
+    margin-top: 0.375em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-medium--xxs {
+    margin-top: 0.5em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-medium--xs {
+    margin-top: 0.75em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-medium--s {
+    margin-top: 1em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-medium--m {
+    margin-top: 1.5em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-medium--l {
+    margin-top: 2.25em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-medium--xl {
+    margin-top: 3em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-medium--xxl {
+    margin-top: 4.5em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-medium--xxxl {
+    margin-top: 6em;
+  }
+}
+@media only screen and (max-width: 30em) {
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-small--0 {
+    margin-top: 0;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-small--xxxs {
+    margin-top: 0.375em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-small--xxs {
+    margin-top: 0.5em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-small--xs {
+    margin-top: 0.75em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-small--s {
+    margin-top: 1em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-small--m {
+    margin-top: 1.5em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-small--l {
+    margin-top: 2.25em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-small--xl {
+    margin-top: 3em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-small--xxl {
+    margin-top: 4.5em;
+  }
+
+  /* line 112, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+  .m-small--xxxl {
+    margin-top: 6em;
+  }
+}
+/* line 1, ../../../bower_components/fred/scss/objects/_caret.scss */
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid #000;
+  border-right: 4px solid transparent;
+  border-bottom: 0 dotted;
+  border-left: 4px solid transparent;
+}
+
+/*
+
+    <button type="button" class="close" aria-hidden="true">×</button>
+*/
+/* line 6, ../../../bower_components/fred/scss/objects/_close.scss */
+.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+/* line 14, ../../../bower_components/fred/scss/objects/_close.scss */
+.close:after {
+  content: "\00d7";
+  display: inline-block;
+  font-size: 1.5em;
+  line-height: 1;
+  opacity: 0.2;
+}
+
+/* line 22, ../../../bower_components/fred/scss/objects/_close.scss */
+.close:hover:after {
+  opacity: 1;
+}
+
+/**
+ * Typographic relationships (nawww, aren't they so good together?)
+ * ----------------------------------------------------------------------------
+ */
+/* line 8, ../sass/_typography.scss */
+h4 + h6,
+h4 + p,
+h5 + p {
+  margin-top: 0.03571emem;
+}
+
+/* line 15, ../sass/_typography.scss */
+p + p,
+.list-styled li + li,
+.list-styled--decimal li + li,
+.list-styled-alpha li + li {
+  margin-top: 0.03571emem;
+}
+
+@media print {
+  /* line 7, ../sass/_print.scss */
+  * {
+    text-shadow: none !important;
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  /* line 15, ../sass/_print.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 19, ../sass/_print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 23, ../sass/_print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 29, ../sass/_print.scss */
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 34, ../sass/_print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 39, ../sass/_print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 44, ../sass/_print.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 48, ../sass/_print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 58, ../sass/_print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 64, ../sass/_print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/**
+ * Colours /Themes
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * 4. Button themes
+ * -----------------------------------------------------------------------------
+ */
+/**
+ *
+ * Themes 
+ *
+ *  This file controls all of the colours / themes for the site! 
+ *
+ * ----------------------------------------------------------------------------
+ * 
+ * Structure:
+ *
+ *      1. Warning Themes
+ *        2. Text colours
+ *        3. Theme blocks
+ *
+ *
+ *
+ * ----------------------------------------------------------------------------
+ *
+ */
+/*
+base colours 
+*/
+/* line 200, ../sass/_theme.scss */
+html,
+body {
+  background-color: #4d4d4d;
+  color: #2e2f2b;
+}
+
+/* line 205, ../sass/_theme.scss */
+a {
+  color: #2f72ba;
+}
+/* line 207, ../sass/_theme.scss */
+a:hover {
+  color: #204d7d;
+}
+
+/* line 212, ../sass/_theme.scss */
+hr {
+  background-color: #e5e5e5;
+  color: #e5e5e5;
+}
+
+/**
+ * 2. Text colours
+ * -----------------------------------------------------------------------------
+ */
+/* line 223, ../sass/_theme.scss */
+.text-muted {
+  color: #999999;
+}
+
+/* line 225, ../sass/_theme.scss */
+.text-success {
+  color: #468847;
+}
+
+/* line 227, ../sass/_theme.scss */
+.text-warning {
+  color: #c09853;
+}
+
+/* line 229, ../sass/_theme.scss */
+.text-danger {
+  color: #b94a48;
+}
+
+/**
+ * . Theme blocks --success warning or danger
+ * -----------------------------------------------------------------------------
+ */
+/* line 237, ../sass/_theme.scss */
+.tb__success {
+  background-color: #c5ffc6;
+  color: #468847;
+  border-color: #468847;
+}
+
+/* line 242, ../sass/_theme.scss */
+.tb__warning {
+  background-color: #ffffd2;
+  color: #dab26d;
+  border-color: #dab26d;
+}
+
+/* line 247, ../sass/_theme.scss */
+.tb__danger {
+  background-color: #ffc9c7;
+  color: #b94a48;
+  border-color: #b94a48;
+}
+
+/**
+ *  Theme block --primary, secondary, tertiary, quarternary
+ * -----------------------------------------------------------------------------
+ */
+/* line 258, ../sass/_theme.scss */
+.tb__primary {
+  background-color: white;
+  color: #2e2f2b;
+  border-color: white;
+  border-radius: 10px;
+}
+
+/* line 264, ../sass/_theme.scss */
+.tb__secondary {
+  background-color: #f2f2f2;
+  color: #2e2f2b;
+  border-color: #e6e6e6;
+}
+
+/* line 269, ../sass/_theme.scss */
+.tb__tertiary {
+  background-color: #2e2f2b;
+  color: white;
+  border-color: #2e2f2b;
+}
+
+/* line 274, ../sass/_theme.scss */
+.tb__quarternary {
+  background-color: #4d4d4d;
+  color: white;
+  border-color: #4d4d4d;
+}
+
+/**
+ *  Theme block --green, pink, blue
+ * -----------------------------------------------------------------------------
+ */
+/* line 285, ../sass/_theme.scss */
+.tb__green {
+  background-color: #a6e22e;
+  color: #2e2f2b;
+  border-color: #a6e22e;
+}
+
+/* line 290, ../sass/_theme.scss */
+.tb__pink {
+  background-color: #f92672;
+  color: #2e2f2b;
+  border-color: #f92672;
+}
+
+/* line 295, ../sass/_theme.scss */
+.tb__blue {
+  background-color: #4aa1c5;
+  color: white;
+  border-color: #4aa1c5;
+}
+
+/* line 306, ../sass/_theme.scss */
+.br--xs {
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -ms-border-radius: 2px 2px 2px 2px;
+  -o-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+}
+
+/* line 309, ../sass/_theme.scss */
+.br--xs {
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -ms-border-radius: 5px 5px 5px 5px;
+  -o-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+/* line 312, ../sass/_theme.scss */
+.br--s {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -ms-border-radius: 10px 10px 10px 10px;
+  -o-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/**
+ * Button theming
+ * -----------------------------------------------------------------------------
+ */
+/* line 321, ../sass/_theme.scss */
+.btn-primary {
+  background-color: #3cbe8a;
+  color: white;
+  border-color: #3cbe8a;
+}
+/* line 324, ../sass/_theme.scss */
+.btn-primary:hover {
+  background-color: #33a376;
+  color: white;
+}
+
+/* line 330, ../sass/_theme.scss */
+.btn-secondary {
+  background-color: #999999;
+  color: white;
+  border-color: #3cbe8a;
+}
+/* line 332, ../sass/_theme.scss */
+.btn-secondary:hover {
+  background-color: #777777;
+  color: white;
+}
+
+/* line 338, ../sass/_theme.scss */
+.btn-tertiary {
+  background-color: #dddddd;
+  color: white;
+  border-color: #444444;
+}
+/* line 340, ../sass/_theme.scss */
+.btn-tertiary:hover {
+  background-color: #cccccc;
+  color: #333333;
+}
+
+/* line 348, ../sass/_theme.scss */
+.btn-positive {
+  background-color: #3977b1;
+  color: white;
+  border-color: #3cbe8a;
+}
+/* line 350, ../sass/_theme.scss */
+.btn-positive:hover {
+  background-color: #306596;
+  color: white;
+}
+
+/* line 356, ../sass/_theme.scss */
+.btn-negative {
+  background-color: #eb3930;
+  color: white;
+  border-color: #444444;
+}
+/* line 358, ../sass/_theme.scss */
+.btn-negative:hover {
+  background-color: #d8281f;
+  color: white;
+}
+
+/**
+ * A common active state makes us look pro as, bro!
+ */
+/* line 370, ../sass/_theme.scss */
+.btn:active {
+  background-color: #333333;
+  color: white;
+}
+
+/* line 376, ../sass/_theme.scss */
+.tb__breadrumbs {
+  background-color: #cccccc;
+}
+/* line 379, ../sass/_theme.scss */
+.tb__breadrumbs > li + li:before {
+  color: #666666;
+}
+/* line 383, ../sass/_theme.scss */
+.tb__breadrumbs > .active {
+  color: #555555;
+}
+
+/* line 388, ../sass/_theme.scss */
+.tb__badge {
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+}
+
+/* line 395, ../sass/_theme.scss */
+a.tb__badge_active > .badge {
+  color: #efefef;
+  background-color: blue;
+}
+
+/* line 400, ../sass/_theme.scss */
 .tb__header {
   color: #343434;
   border-bottom: 1px solid #e6e6e6;
 }
-/* line 60, ../sass/core/_components.scss */
+/* line 403, ../sass/_theme.scss */
 .tb__header span {
   color: slategrey;
+}
+
+/* 
+
+shame!!!! just some dirty styles to get a basic style. i WILL refacter to get the project started :) 
+
+*/
+/* line 9, ../sass/_page-specific.scss */
+.content,
+.navigation {
+  max-width: 760px;
+  width: 100%;
+}
+
+/* line 15, ../sass/_page-specific.scss */
+.navigation--wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+/* line 22, ../sass/_page-specific.scss */
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+/* line 28, ../sass/_page-specific.scss */
+.navigation a.active {
+  background-color: #2E2F2B;
+}
+
+/* line 31, ../sass/_page-specific.scss */
+.navigation a:hover {
+  color: #E6DB74;
+}
+
+/* line 36, ../sass/_page-specific.scss */
+.logo {
+  display: inline-block;
+  margin-top: 0.45em;
+  font-size: 1.8em;
+}
+/* line 40, ../sass/_page-specific.scss */
+.logo a {
+  color: #fff;
+}
+/* line 43, ../sass/_page-specific.scss */
+.logo a:hover {
+  color: #E6DB74;
+}
+/* line 49, ../sass/_page-specific.scss */
+.logo span {
+  color: #E6DB74;
+}
+
+/* line 56, ../sass/_page-specific.scss */
+.br--s {
+  border-radius: 10px;
+}
+
+/* line 60, ../sass/_page-specific.scss */
+.testbox {
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+}
+
+/* line 65, ../sass/_page-specific.scss */
+.testbox-100-100 {
+  height: 100px;
+  width: 100px;
+}
+
+/* line 69, ../sass/_page-specific.scss */
+.testbox-400-100 {
+  height: 100px;
+  width: 300px;
+}
+
+/* line 72, ../sass/_page-specific.scss */
+.homepage {
+  background-color: #4D4D4D;
+  color: #fff;
+}
+
+/* line 77, ../sass/_page-specific.scss */
+.fred {
+  left: -138px;
+  top: 0;
+}
+
+/* line 82, ../sass/_page-specific.scss */
+.fred-layout {
+  top: -22px;
+  right: 72px;
+}
+
+/* line 87, ../sass/_page-specific.scss */
+.fred-buttons-page {
+  right: 30px;
+  top: 196px;
+}
+
+/* line 92, ../sass/_page-specific.scss */
+.specific-bird {
+  top: 10px;
+  left: 17px;
+}
+
+/* line 98, ../sass/_page-specific.scss */
+.i {
+  vertical-align: middle;
+  font-style: normal;
+}
+
+/* line 105, ../sass/_page-specific.scss */
+.icon-placeholder {
+  background-image: url("/assets/images/icon-placeholder.png");
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+/* line 114, ../sass/_page-specific.scss */
+.img-rounded {
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  -ms-border-radius: 50% 50% 50% 50%;
+  -o-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+}
+
+/* line 141, ../sass/_page-specific.scss */
+.pink-input-text {
+  /* @include placeholder($color);*/
+}
+/* line 84, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.pink-input-text:-moz-placeholder {
+  color: #f92672;
+}
+/* line 85, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.pink-input-text::-moz-placeholder {
+  color: #f92672;
+}
+/* line 86, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.pink-input-text:-ms-input-placeholder {
+  color: #f92672;
+}
+/* line 87, ../../../bower_components/fred/scss/helpers/_mixins.scss */
+.pink-input-text::-webkit-input-placeholder {
+  color: #f92672;
 }

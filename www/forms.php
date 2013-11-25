@@ -3,14 +3,14 @@
 ?>
 
 
-<div class='block--l block-s--m block-m--s mb--l clearfix tb__primary'>
+<div class='block--l block-medium--m block-small--s mb--l clearfix tb__primary'>
     <div class='page-header tb__header'>
         <h1>
             Forms 
         </h1>
     </div>
 
-    <ul class='list--styled'>
+    <ul class='list-styled'>
     <li>
         <a href='#layout-clearfix'>
             Clearfix

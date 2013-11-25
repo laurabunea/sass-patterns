@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?>
 
-<div class='block--l block-s--m block-m--s mb--l clearfix tb__primary '>
+<div class='block--l block-medium--m block-small--s mb--l clearfix tb__primary '>
      <div class='page-header tb__header'>
         <h1>
             Themes
@@ -13,7 +13,7 @@
     <p>
         Notes...
     </p>
-    <ul class='list--styled-decimal'>
+    <ul class='list-styled--decimal'>
         <li>
             <a href='#themes-blocks'>
                 Theme blocks
@@ -35,10 +35,10 @@
             </a>
         </li>
     </ul><!--list unstyled ends-->
-    <hr class='mt--l'>
+    <hr class='m--l'>
 	<!-- /****************************************  Block themes  *******************************/ -->
 
-    <div class='mt--l' id='theme-blocks'>
+    <div class='m--l' id='theme-blocks'>
         <h2 class='h3'>
             Theme blocks
         </h2>
@@ -74,16 +74,16 @@
                 hello world
             </h4>
         	<div class='grid'>
-                <div class='g--1-4 testbox-100-100 mt--xm block--s tb__primary'>
+                <div class='g--1-4 testbox-100-100 m--xm block--s tb__primary'>
                     <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 mt--xm block--s tb__secondary'>
+                <div class='g--1-4 testbox-100-100 m--xm block--s tb__secondary'>
                    <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 mt--xm block--s tb__tertiary'>
+                <div class='g--1-4 testbox-100-100 m--xm block--s tb__tertiary'>
                     <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 mt--xm block--s tb__quarternary'>
+                <div class='g--1-4 testbox-100-100 m--xm block--s tb__quarternary'>
                     <p>Some text.</p>
                 </div>
             </div>
@@ -115,23 +115,23 @@
                 hello world
             </h4>
         	<div class='grid'>
-                <div class='testbox-100-100 block--s mt--xm  tb__success'>
+                <div class='testbox-100-100 block--s m--xm  tb__success'>
                     <p>Success</p>
                 </div>
-                <div class='testbox-100-100 block--s mt--xm  tb__warning'>
+                <div class='testbox-100-100 block--s m--xm  tb__warning'>
                     <p>Success</p>
                 </div>
-                <div class='testbox-100-100 block--s mt--xm  tb__danger'>
+                <div class='testbox-100-100 block--s m--xm  tb__danger'>
                     <p>Danger</p>
                 </div>
                 
             </div>
         </div><!--  hello world block ends -->
     </div><!-- theme-blocks ends-->
-    <hr class='mt--m'>
+    <hr class='m--m'>
     <!-- /****************************************  Helpful Text colours  *******************************/ -->
 
-    <div class='mt--xl' id='theme-blocks'>
+    <div class='m--xl' id='theme-blocks'>
         <h2>
             Emphasis classes
         </h2>
@@ -165,10 +165,10 @@
         	<p class='text-danger'>Success, I am awesome</p>
         </div><!--  hello world block ends -->
     </div><!-- theme-blocks ends-->
-    <hr class='mt--l'>
+    <hr class='m--l'>
     <!-- /****************************************  Button colours  *******************************/ -->
 
-    <div class='mt--xl' id='theme-blocks'>
+    <div class='m--xl' id='theme-blocks'>
         <h2>
             Button themes
         </h2>
@@ -199,14 +199,14 @@
     </div><!-- theme-blocks ends-->
 
     <!-- /****************************************  Tables  *******************************/ -->
-    <hr class='mt--l'>
-    <div class='mt--xl' id='theme-blocks'>
+    <hr class='m--l'>
+    <div class='m--xl' id='theme-blocks'>
         <h2>
             Tables
         </h2>
         
         <!--  code block starts -->
-        <div class=' block--s mt--m  tb__tertiary'>
+        <div class=' block--s m--m  tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>

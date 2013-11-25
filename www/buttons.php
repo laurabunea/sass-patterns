@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?> 
 
-<div class='block--l block-s--m block-m--s mb--l clearfix tb__primary relative'>
+<div class='block--l block-medium--l block-small--s mb--l clearfix tb__primary relative'>
     <img src='assets/images/fred-top-big.png' class='absolute fred-buttons-page' alt=''/>
     <div class='page-header tb__header'>
         <h1>
@@ -16,7 +16,7 @@
         Notes...
     </p>
 
-    <ul class='list--styled-decimal'>
+    <ul class='list-styled--decimal'>
         <li>
             <a href='#btn-variations'>
                 Button variations
@@ -44,7 +44,7 @@
   
     <!-- /****************************************  Button variations  *******************************/ -->
 
-    <div class='mt--xl' id='btn-variations'> 
+    <div class='m--xl' id='btn-variations'> 
         <h2 class='h3' >
             01. Button variations
         </h2>
@@ -119,10 +119,10 @@
             </p>
         </div><!-- hello world block ends -->
     </div><!-- btn-variations ends -->
-    <hr class='mt--l'>
+    <hr class='m--l'>
     <!-- /****************************************  Button modifiers  *******************************/ -->
 
-    <div class='mt--l' id='btn-modifier'>
+    <div class='m--l' id='btn-modifier'>
         <h2 class='h3' >
             02. Button modifiers
         </h2>
@@ -228,10 +228,10 @@
         </div><!-- hello world block ends -->
         
     </div><!-- btn-modifier ends -->
-    <hr class='mt--l'>
+    <hr class='m--l'>
     <!-- /****************************************  Buttons with icons  *******************************/ -->
 
-    <div class='mt--l' id='btn-icons'>
+    <div class='m--l' id='btn-icons'>
         
         <h2 class='h3' >
             03. Buttons with icons
@@ -352,8 +352,8 @@
     </div><!-- btn-icons ends -->
     
     <!-- /****************************************  Buttons with icons  *******************************/ -->
-    <hr class='mt--l'>
-    <div class='mt--l' id='btn-variations'> 
+    <hr class='m--l'>
+    <div class='m--l' id='btn-variations'> 
         <h2 class='h3' >
             04. Submit buttons
         </h2>

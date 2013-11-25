@@ -1601,7 +1601,7 @@ p + p {
 }
 
 /* line 233, ../sass/core/_typography.scss */
-.list--styled {
+.list-styled {
   padding-left: 1.5em;
   margin-top: .857142857em;
   list-style: circle;

@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?>
 
-<div class='block--l block-s--m block-m--s mb--l clearfix tb__primary'>
+<div class='block--l block-medium--m block-small--s mb--l clearfix tb__primary'>
     <div class='page-header tb__header'>
         <h1>
             Mixins
@@ -16,7 +16,7 @@
         intro text
     </p>
 
-    <div class='page-header tb__header mt--xxl'>
+    <div class='page-header tb__header m--xxl'>
         <h1>
 
             Mixins
@@ -26,7 +26,7 @@
         </h1>
     </div>
 
-    <ul class='list--styled-decimal'>
+    <ul class='list-styled--decimal'>
         <li>
             <a href='#mixinAnchor1'>
                 Vendor
@@ -59,8 +59,8 @@
         </li>
     </ul><!--list unstyled ends-->
     <!-- /****************************************  Vendor block  *******************************/ -->
-    <hr class='mt--l'>
-    <div class='mt--xl' id='mixinAnchor1'>
+    <hr class='m--l'>
+    <div class='m--xl' id='mixinAnchor1'>
         <h2 class='h3'>
            01. Vendor 
         </h2>
@@ -94,15 +94,15 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='img-rounded mt--xm  testbox-100-100 tb__green'>
+            <div class='img-rounded m--xm  testbox-100-100 tb__green'>
             </div>
         
         </div><!--  hello world block ends -->
     </div><!-- mixin-vendor ends-->
-    <hr class='mt--l'>
+    <hr class='m--l'>
     <!-- /****************************************  Media break point block  *******************************/ -->
 
-    <div class='mt--xl' id='mixinAnchor2'>
+    <div class='m--xl' id='mixinAnchor2'>
         <h2 class='h3'>
             02. Media break point 
         </h2>
@@ -141,10 +141,10 @@
             </div>
         </div><!--  hello world block ends -->
     </div><!-- mixin-break-point ends-->
-    <hr class='mt--l'>
+    <hr class='m--l'>
     <!-- /****************************************  Opacity block  *******************************/ -->
 
-    <div class='mt--xl' id='mixinAnchor1'>
+    <div class='m--xl' id='mixinAnchor1'>
         <h2 class='h3'>
            03. Opacity 
         </h2>
@@ -184,24 +184,24 @@
                 hello world
             </h4>
             <div class='grid'>
-                <div class='overlay--25 mt--m  testbox-100-100 block--s tb__green'>
+                <div class='overlay--25 m--m  testbox-100-100 block--s tb__green'>
                     <p>25% opacity</p>
                 </div>
 
-                <div class='overlay--50 mt--m  testbox-100-100 block--s tb__green'>
+                <div class='overlay--50 m--m  testbox-100-100 block--s tb__green'>
                     <p>50% opacity</p>
                 </div>
 
-                <div class='mt--m  testbox-100-100 block--s tb__green'>
+                <div class='m--m  testbox-100-100 block--s tb__green'>
                     <p>Block with out an opacity class</p>
                 </div>
             </div>
         </div><!--  hello world block ends -->
     </div><!-- mixin-opacity ends-->
-    <hr class='mt--l'>
+    <hr class='m--l'>
     <!-- /****************************************  Placeholder  *******************************/ -->
 
-    <div class='mt--xl' id='mixinAnchor4'>
+    <div class='m--xl' id='mixinAnchor4'>
         <h2 class='h3'>
             04. Placeholder Mixin 
         </h2>
@@ -238,16 +238,16 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <form class='mt--xm '>
+            <form class='m--xm '>
                 <input class='pink-input-text' type="text" name="fname" placeholder="First name">
             </form>
         
         </div><!--  hello world block ends -->
     </div><!-- mixin-vendor ends-->
-    <hr class='mt--l'>
+    <hr class='m--l'>
     <!-- /****************************************  Theme mixin  *******************************/ -->
 
-    <div class='mt--xl' id='mixinAnchor5'>
+    <div class='m--xl' id='mixinAnchor5'>
         <h2 class='h3'>
             05. Theme Mixin 
         </h2>
@@ -287,7 +287,7 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='mt--xm  tb__blue block--s'>
+            <div class='m--xm  tb__blue block--s'>
                 <p>Some text</p>
             </div>
         
@@ -296,7 +296,7 @@
 
     <!-- /****************************************  Theme mixin  *******************************/ -->
 
-    <div class='mt--xl' id='mixinAnchor6'>
+    <div class='m--xl' id='mixinAnchor6'>
         <h2 class='h3'>
             06. Form validation
         </h2>
@@ -334,7 +334,7 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='mt--xm  tb__blue block--s'>
+            <div class='m--xm  tb__blue block--s'>
                 <p>Some text</p>
             </div>
         

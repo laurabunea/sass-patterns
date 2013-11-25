@@ -3,7 +3,7 @@
 ?>
 
 
-<div class='block--l block-s--m block-m--s mb--l tb__primary '>
+<div class='block--l block-medium--m block-small--s mb--l tb__primary '>
     
     <div class='page-header tb__header'>
         <h1>
@@ -14,7 +14,7 @@
     <p class='intro'>
         text here
     </p>
-    <ul class='list--styled-decimal'>
+    <ul class='list-styled--decimal'>
         <li>
             <a href='#components-bread-crumbs'>
                 Breadcrumbs
@@ -34,13 +34,13 @@
 
     <hr>
     <!-- /****************************************  Breadcrumbs *******************************/ -->
-    <div class='mt--xl' id='components-bread-crumbs'>
+    <div class='m--xl' id='components-bread-crumbs'>
         <h2  class='h3'>
             Breadcrumbs
         </h2>
         
         <!--  code block starts -->
-        <div class='block--s mt--m tb__tertiary'>
+        <div class='block--s m--m tb__tertiary'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -69,7 +69,7 @@
     </div><!-- components-bread-crumbs ends-->
 
     <!-- /****************************************  Badges  *******************************/ -->
-    <div class='mt--xl' id='components-badges'>
+    <div class='m--xl' id='components-badges'>
         <h2  class='h3'>
             Badges
         </h2>
@@ -98,7 +98,7 @@
 
 
     <!-- /****************************************  Page headers  *******************************/ -->
-    <div class='mt--xl' id='components-pg-headers'>
+    <div class='m--xl' id='components-pg-headers'>
         <h2  class='h3'>
             Page Headers
         </h2>
@@ -126,7 +126,7 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='page-header tb__header mt--l mt--l'>
+            <div class='page-header tb__header m--l'>
                 <h1>
                     H1 Heading 
                     <span class='tiny'>
@@ -134,7 +134,7 @@
                     </span>
                 </h1>
             </div>
-            <div class='page-header tb__header mt--m'>
+            <div class='page-header tb__header m--m'>
                 <h2>
                     H2 Heading 
                     <span class='tiny'>
@@ -142,7 +142,7 @@
                     </span>
                 </h2>
             </div>
-            <div class='page-header tb__header mt--m'>
+            <div class='page-header tb__header m--m'>
                 <h3>
                     H3 Heading 
                     <span class='tiny'>
@@ -150,7 +150,7 @@
                     </span>
                 </h3>
             </div>
-            <div class='page-header tb__header mt--m'>
+            <div class='page-header tb__header m--m'>
                 <h4>
                     H4 Heading 
                     <span class='tiny'>
@@ -158,7 +158,7 @@
                     </span>
                 </h4>
             </div>
-            <div class='page-header tb__header mt--m'>
+            <div class='page-header tb__header m--m'>
                 <h5>
                     H5 Heading 
                     <span class='tiny'>

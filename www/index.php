@@ -13,18 +13,18 @@
     </div>
 </div> 
 
-<div class='block--stacked block--l block-s--m block-m--s mb--l tb__primary'>
+<div class='block--stacked block--l block-medium--m block-small--s mb--l tb__primary'>
 	
     <p class='intro'>
         Introduction on FRED here ...
     </p>
     
-    <hr class='mt--m'/>
+    <hr class='m--m'/>
 	
     <h3>
         Fred's friendly rules:
     </h3>
-    <ul class='list--styled'>
+    <ul class='list-styled'>
         <li>
             Comment everything (that isn't obvious). You should write comments in the <a href='#commentStyleAnchor'>DocBlockr style</a>, and limit lines to 80 chars.
         </li>
@@ -56,7 +56,7 @@
             Indent sub-components in CSS
         </li>
     </ul>
-    <hr class='mt--l'/>
+    <hr class='m--l'/>
     <h3 id='namingConventionsAnchor'>
 		Fred's Naming Conventions
 	</h3>
@@ -89,7 +89,7 @@
         </pre>
     </div><!-- code block ends -->
 
-    <hr class='mt--l'/>
+    <hr class='m--l'/>
     <h3 id='commentStyleAnchor'>
         Fred's Commenting styles 
     </h3>
