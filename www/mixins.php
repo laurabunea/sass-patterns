@@ -16,7 +16,7 @@
         intro text
     </p>
 
-    <div class='page-header pt-page-header m--xxl'>
+    <div class='page-header pt-page-header m--xl'>
         <h1>
 
             Mixins
@@ -26,7 +26,7 @@
         </h1>
     </div>
 
-    <ul class='list-styled--decimal'>
+    <ul class='list-styled--decimal m--m'>
         <li>
             <a href='#mixinAnchor1'>
                 Vendor
@@ -57,10 +57,20 @@
                 Form validation
             </a>
         </li>
+        <li>
+            <a href='#mixinAnchor7'>
+                Spacer Mixin
+            </a>
+        </li>
+        <li>
+            <a href='#mixinAnchor7'>
+                Grid Mixin
+            </a>
+        </li>
     </ul><!--list unstyled ends-->
     <!-- /****************************************  Vendor block  *******************************/ -->
     <hr class='m--l'>
-    <div class='m--xl' id='mixinAnchor1'>
+    <div class='m--l' id='mixinAnchor1'>
         <h2 class='h3'>
            01. Vendor 
         </h2>
@@ -102,7 +112,7 @@
     <hr class='m--l'>
     <!-- /****************************************  Media break point block  *******************************/ -->
 
-    <div class='m--xl' id='mixinAnchor2'>
+    <div class='m--l' id='mixinAnchor2'>
         <h2 class='h3'>
             02. Media break point 
         </h2>
@@ -114,16 +124,16 @@
             <pre>
 <code class='language-css'>
 .element{
-    @include media(wide){
+    @include media(xlarge){
         background-color:#F92672;
     }
     @include media(desktop-only){
         background-color:#A6E22E;
     }
-    @include media(skinny-only){
+    @include media(medium-only){
         background-color:#4AA1C5;
     }
-    @include media(mobile-only){
+    @include media(small-only){
         background-color:#E6DB74;
     }
 }
@@ -144,7 +154,7 @@
     <hr class='m--l'>
     <!-- /****************************************  Opacity block  *******************************/ -->
 
-    <div class='m--xl' id='mixinAnchor1'>
+    <div class='m--l' id='mixinAnchor1'>
         <h2 class='h3'>
            03. Opacity 
         </h2>
@@ -201,7 +211,7 @@
     <hr class='m--l'>
     <!-- /****************************************  Placeholder  *******************************/ -->
 
-    <div class='m--xl' id='mixinAnchor4'>
+    <div class='m--l' id='mixinAnchor4'>
         <h2 class='h3'>
             04. Placeholder Mixin 
         </h2>
@@ -247,7 +257,7 @@
     <hr class='m--l'>
     <!-- /****************************************  Theme mixin  *******************************/ -->
 
-    <div class='m--xl' id='mixinAnchor5'>
+    <div class='m--l' id='mixinAnchor5'>
         <h2 class='h3'>
             05. Theme Mixin 
         </h2>
@@ -296,7 +306,7 @@
 
     <!-- /****************************************  Theme mixin  *******************************/ -->
 
-    <div class='m--xl' id='mixinAnchor6'>
+    <div class='m--l' id='mixinAnchor6'>
         <h2 class='h3'>
             06. Form validation
         </h2>
