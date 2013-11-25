@@ -1,0 +1,227 @@
+//
+// Extends
+// ----------------------------------------------------------------------------
+// Common patterns that can be re used and then compiled together for nice
+// pretty code.
+//
+//
+
+%center-element {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/**
+ * Positioning - Absolute, Floating and Clearfixing
+ * ----------------------------------------------------------------------------
+ */
+
+%relative   { position: relative; }
+%absolute   { position: absolute; }
+
+.absolute   { @extend %absolute; }
+.relative   { @extend %relative; }
+
+.left       { float:left; }
+.right      { float:right; }
+
+
+    .absolute--bottom-left {
+        @extend %absolute;
+        bottom:0;
+        left:0;
+    }
+
+    .absolute--bottom-right {
+        @extend %absolute;
+        bottom:0;
+        right:0;
+    }
+
+    .absolute--top-left {
+        @extend %absolute;
+        top:0;
+        left:0;
+    }
+
+    .absolute--top-right {
+        @extend %absolute;
+        top:0;
+        right:0;
+    }
+
+/**
+ * Inline block
+ * ----------------------------------------------------------------------------
+ * zoom fix for IE6/7 so they correctly display inline-block elements
+ * (forces hasLayout)
+ */
+
+%inline-block {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.inline-block { @extend %inline-block; }
+
+%border {
+	border-width: 1px;
+	border-style: solid;
+}
+
+%clearfix{
+	/**
+	 * For IE 6/7 only
+	 * Include this rule to trigger hasLayout and contain floats.
+	 */
+	*zoom: 1;
+}
+
+%clearfix:before {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+%clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+    clear: both;
+}
+
+
+
+
+.clearfix           { @extend %clearfix; }
+.overflow-hidden    { overflow: hidden; }
+
+
+/**
+ * Fix webkit bug
+ * ----------------------------------------------------------------------------
+ *
+ * Since v22, Chrome makes fat sausage horrible web typography. Fix it with
+ * these properties right here. Maybe consider scoping this to a class for
+ * chrome/mac osx only at some point?
+ */
+
+%fix-webkit-font-rendering {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    .isWindowsChrome & {
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+}
+
+.antialiased {
+    @extend %fix-webkit-font-rendering;
+}
+
+
+/**
+ * Hide an element, but make it visible to screen readers
+ * ----------------------------------------------------------------------------
+ */
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+}
+
+%hide { display: none !important; }
+%show { display: block !important; }
+
+.hide { @extend %hide; }
+.show { @extend %show; }
+
+%visible    {visibility: visible !important;}
+%hidden     {visibility: hidden !important;}
+
+/**
+ * 1. Visible classes
+ * -----------------------------------------------------------------------------
+ */
+.visible-mobile {
+    @extend %hide;
+    @include media('small') {
+        display: block !important;
+    }
+}
+
+.visible-skinny {
+    @extend %hide;
+    @include media('medium') {
+        display: block !important;
+    }
+}
+
+.visible-desktop {
+    @include media('medium-down') {
+        display: none;
+    }
+}
+
+.visible-wide {
+    @extend %hide;
+    @include media('xlarge') {
+        //@extend %visible;
+        display: block !important;
+    }
+}
+
+/**
+ * 1. hidden classes
+ * -----------------------------------------------------------------------------
+ */
+.hidden-mobile {
+    @extend %show;
+    @include media('small') {
+        display: none !important;
+    }
+}
+
+.hidden-skinny {
+    @extend %show;
+    @include media('medium') {
+        display: none !important;
+    }
+}
+
+.hidden-desktop {
+    //??
+}
+
+.hidden-wide {
+    @extend %show;
+    @include media('xlarge') {
+        display: none !important;
+    }
+}
+
+
+/**
+ * Append and Prepend
+ * ----------------------------------------------------------------------------
+ */
+
+/**
+ * Place something before an element
+ */
+.prepend{
+    &:before{
+        content: attr(data-prepend);
+        display: inline-block;
+    }
+}
+
+/**
+ * Place something after an element
+ */
+.append{
+    &:after{
+        content: attr(data-append);
+        display: inline-block;
+    }
+}

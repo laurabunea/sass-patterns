@@ -3,7 +3,7 @@
 ?>
 
 
-<div class='block--l block-medium--m block-small--s mb--l tb__primary '>
+<div class='block--l block-small--s mb--l tb__primary '>
     
     <div class='page-header tb__header'>
         <h1>

@@ -2,20 +2,10 @@
 // Fred core
 @import
     '../../../bower_components/fred/scss/fred.scss',
-    '../../../bower_components/fred/normalize-css/normalize.css',
-    'variables';
+    '../../../bower_components/fred/normalize-css/normalize.css';
 
-@import 'typography',
+@import 'variables',
+        'typography',
         'print',
         'theme',
         'page-specific';
-
-
-
-
-
-
-
-
-
-

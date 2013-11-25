@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?>
 
-<div class='block--l block-medium--m block-small--s tb__primary relative mb--l'>
+<div class='block--l block-small--s tb__primary relative mb--l'>
     <img class='absolute fred' alt='Fred the fed' src='assets/images/fred-side.png'  />
     
     <div class='page-header tb__header'>

@@ -1,0 +1,99 @@
+/**
+ * 8. List styles
+ * ----------------------------------------------------------------------------
+ */
+
+.list-unstyled {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 0 0;
+}
+
+    .list-unstyled > li {
+        list-style: none;
+        margin-left: 0;
+    }
+
+    .list--inline {
+        @extend .clearfix;
+        @extend .list-unstyled;
+    }
+
+    .list--inline > li {
+        @extend .inline-block;
+        margin: 0;
+    }
+
+//default list style in this case its circles
+%list-styled {
+    padding-left:$bs--m;
+    margin-top: $bs--xs; //same as the margin top on p tags
+    list-style: circle;
+}
+
+.list-styled {
+    @extend %list-styled;
+}
+
+    //decimal list
+    .list-styled--decimal {
+        @extend %list-styled;
+        list-style: decimal-leading-zero;
+        padding-left:$bs--l;
+    }
+
+    //alpha list
+    .list-styled--alpha {
+        @extend %list-styled;
+        list-style: lower-alpha;
+    }
+
+
+
+/**
+ * 13. Description lists
+ * ----------------------------------------------------------------------------
+ * Defaults to being stacked without any of the below styles applied, until the
+ *
+ */
+
+dl {
+    @extend .m--m;
+}
+    dt,
+    dd {
+        line-height: $line-height-xs;
+    }
+    dt {
+        font-weight: bold;
+    }
+    dd {
+      margin-left: 0; // Undo browser default
+    }
+
+
+/**
+ * 13. Horizontal description lists
+ * ----------------------------------------------------------------------------
+ * Defaults to being stacked without any of the below styles applied, until the
+ *
+ */
+
+//TODO finish this ;)
+//@include media('skinny-only') { {
+//    .dl-horizontal {
+//        dt {
+//            @extend %text-overflow;
+//            float: left;
+//            width: (@component-offset-horizontal - 20);
+//            clear: left;
+//            text-align: right;
+//
+//        }
+//        dd {
+//            @extend %clearfix; // Clear the floated `dt` if an empty `dd` is present
+//           margin-left: @component-offset-horizontal;
+//
+//       }
+// }
+//}

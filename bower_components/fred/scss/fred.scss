@@ -1,0 +1,26 @@
+// Fred core
+@import
+    'helpers/mixins',
+    'helpers/breakpoints',
+    'variables',
+    'objects/core';
+
+// Fred objects
+@import
+    'objects/grid',
+    'objects/blocks',
+    'objects/typography',
+    'objects/lists',
+    'objects/icon-text',
+    'objects/radii',
+    'objects/images',
+    'objects/media',
+    'objects/arrows',
+    'objects/badge',
+    'objects/breadcrumbs',
+    'objects/buttons',
+    'objects/headings',
+    'objects/forms',
+    'objects/spacing',
+    'objects/caret',
+    'objects/close';

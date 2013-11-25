@@ -1,0 +1,343 @@
+/**
+ * Buttons
+ * -----------------------------------------------------------------------------
+ *
+ * 1. Allow us to better style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Stop buttons wrapping and looking broken.
+ * 4. Make buttons inherit font styles.
+ * 5. Force all elements using buttons to appear clickable.
+ * 6. Normalise box model styles.
+ * 7. If the button’s text is 1em, and the button is (2.5 * font-size) tall, then
+ *    there is 1em of space above and below that text. We therefore apply 1em
+ *    of space to the left and right, as padding, to keep consistent spacing.
+ * 8. Basic cosmetics for default buttons. Change or override at will.
+ * 9. Don’t allow buttons to have underlines; it kinda ruins the illusion.
+ */
+.btn{
+    @extend .inline-block;                          /* [1] */
+    //@extend .user-select-none;
+    vertical-align: middle;                         /* [2] */
+    white-space: nowrap;                            /* [3] */
+    font-family: inherit;                           /* [4] */
+    cursor: pointer;                                /* [5] */
+    margin: inherit 0 0 0;                          /* [6] */
+    padding-top: 0;                                 /* [6] */
+    padding-bottom: 0;                              /* [6] */
+    line-height: 2.5;                               /* [7] */
+    padding-right: $base-spacing-unit;              /* [7] */
+    padding-left: $base-spacing-unit;               /* [7] */
+    border-width: 1px;
+    border-color: transparent;
+    border-style: solid;
+    @include vendor(border-radius, $base-spacing-unit/4);
+
+    &,
+    &:hover{
+        text-decoration:none;   /* [9] */
+    }
+
+    &:active,
+    &:focus{
+        outline:none;
+    }
+}
+
+/**
+ * Button modifiers
+ * ----------------------------------------------------------------------------
+ * E.g:
+    <a class='btn btn--large'>
+        My big button
+    </a>
+ * Or,
+    <a class='btn btn--small btn--soft'>
+        My small rounded button
+    </a>
+ */
+.btn--large,
+.btn--icon-large,
+.btn--icon-large--rev,
+.btn--icon-only--large {
+    line-height: 3.5;         
+}
+
+.btn--large {
+    padding-right: $base-spacing-unit * 2;          
+    padding-left: $base-spacing-unit * 2;  
+}
+
+.btn--small,
+.btn--icon-small,
+.btn--icon-small--rev,
+.btn--icon-only--small {
+    line-height: 2;   
+}
+
+.btn--small{
+    padding-right: $base-spacing-unit / 2;          
+    padding-left: $base-spacing-unit / 2;  
+}
+
+/**
+ * Pill type buttons with (rounded) ends
+ * ----------------------------------------------------------------------------
+ */
+.btn--soft {
+    @include vendor(border-radius, 200px);
+}
+
+.btn--hard {
+    @include vendor(border-radius, 0);
+}
+
+
+/**
+ * Block buttons stretch to the full width of their parent (handy!)
+ */
+.btn--block{
+    display: block;
+    text-align: center;
+}
+
+/**
+ * Make a button behave like a block at mobile only (also handy)
+ */
+@media only screen and (max-width:37.5em) {
+    .btn--block-mobile{
+        text-align: center;
+        display: block;
+    }
+}
+
+/**
+ * Submit buttons
+ * ----------------------------------------------------------------------------
+ * FireFox doesn't like line-heights on submit buttons. Stick a class on submit
+ * buttons and make sure the padding's the same as your default button :)
+ */
+.btn--submit{
+    line-height: 1;
+    padding-top: $base-spacing-unit / 2;
+    padding-bottom: $base-spacing-unit / 2;
+}
+
+.btn--submit-large{
+    line-height: 1;
+    padding-top: $base-spacing-unit;
+    padding-bottom: $base-spacing-unit;
+}
+
+.btn--submit-small{
+    line-height: 1;
+    padding-top: $base-spacing-unit / 4;
+    padding-bottom: $base-spacing-unit / 4;
+}
+
+
+/**
+ * Buttons with icons
+ * ----------------------------------------------------------------------------
+ * E.g:
+    <a class='btn btn--icon'>
+        <i class='i sprite_icon_edit'></i>
+        My big button
+    </a>
+ * Or,
+    <a class='btn btn--icon-large--rev'>
+        My small rounded button
+        <i class='i sprite_icon_close'></i>
+    </a>
+ */
+.btn--icon-only,
+.btn--icon-only--small,
+.btn--icon-only--large {
+    text-align: center;
+    min-width: 1em;
+}
+.btn--icon-only {
+    padding-left: $base-spacing-unit / 1.6;
+    padding-right: $base-spacing-unit / 1.6;
+}
+
+.btn--icon-only--small {
+    padding-left: $base-spacing-unit / 2.5;
+    padding-right: $base-spacing-unit / 2.5;
+}
+
+.btn--icon-only--large {
+    padding-left: $base-spacing-unit / .9;
+    padding-right: $base-spacing-unit / .9;
+}
+
+
+.btn--icon {
+    padding-left: $base-spacing-unit/2;
+    & > .i {
+        margin-right: $base-spacing-unit / 2;
+    } 
+}
+
+.btn--icon--rev {
+    padding-right: $base-spacing-unit/2;
+    & > .i {
+        margin-left: $base-spacing-unit / 2;
+    } 
+}
+
+.btn--icon-large{
+    padding-left: $base-spacing-unit;
+    padding-right: $base-spacing-unit * 2;
+    & > .i {
+        margin-right: $base-spacing-unit / 2;
+    } 
+}
+
+.btn--icon-large--rev{
+    padding-left: $base-spacing-unit * 2;
+    padding-right: $base-spacing-unit;
+    & > .i {
+        margin-left: $base-spacing-unit / 2;
+    } 
+}
+
+.btn--icon-small{
+    padding-left: $base-spacing-unit / 3;
+    padding-right: $base-spacing-unit / 2; 
+    & > .i {
+        margin-right: $base-spacing-unit / 4;
+    }
+}
+
+.btn--icon-small--rev{
+    padding-left: $base-spacing-unit / 2;
+    padding-right: $base-spacing-unit / 4;
+    & > .i {
+        margin-left: $base-spacing-unit / 2;
+    }
+}
+
+
+/**
+ * ----------------------------------------------------------------------------
+ * Button behaviors
+ * ----------------------------------------------------------------------------
+ */
+
+/**
+ * Simple bounces
+ * ----------------------------------------------------------------------------
+ */
+.btn--bounce,
+.btn--bob{
+    position: relative;
+    @include vendor(transition, bottom 100ms ease-out);
+}
+
+    .btn--bounce:active {
+        bottom: -2px;
+    }
+
+    .btn--bob:active {
+        bottom: -1px;
+    }
+
+/**
+ * Bounce the icon to a side
+ */
+.btn--bounce-icon--right .i,
+.btn--bounce-icon--left .i,
+.btn--bounce-icon--bottom .i,
+.btn--bounce-icon--top .i {
+    position: relative;
+    @include vendor(transition-timing-function, cubic-bezier(0.165, 0.840, 0.440, 1.000));
+    @include vendor(transition-duration, 300ms);
+}
+
+    .btn--bounce-icon--right:hover .i {
+        @include vendor(transition-property, left);
+        left: .3125em;
+    }
+
+    .btn--bounce-icon--left:hover .i {
+        @include vendor(transition-property, right);
+        right: .3125em;
+    }
+
+    .btn--bounce-icon--bottom:hover .i {
+        @include vendor(transition-property, top);
+        top: .3125em;
+    }
+
+    .btn--bounce-icon--top:hover .i {
+        @include vendor(transition-property, bottom);
+        bottom: .3125em;
+    }
+
+/**
+ * Inset buttons on block level elements
+ * ----------------------------------------------------------------------------
+ */
+.btn--inset {
+    position: relative;
+
+}
+    .btn--inset:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        visibility: hidden;
+        @include vendor(transition, border-width 100ms ease-out, visibility 100ms);
+        content: " ";
+        display: block;
+        border-width: 0;
+        border-color: inherit;
+        border-style: solid;
+    }
+    .btn--inset:hover:after {
+        border-width: 4px;
+        visibility: visible;
+    }
+    .btn--inset-primary:after {
+        border-color: #3977B1;
+    }
+    .btn--inset-secondary:after {
+        border-color: #eb3930;
+    }
+    .btn--inset-large:hover:after {
+        border-width: 8px;
+    }
+    .btn--inset-small:hover:after {
+        border-width: 1px;
+    }
+
+/**
+ * Buttons that show a loading indicator when clicked
+ * ----------------------------------------------------------------------------
+ */
+.btn--spinner {
+    position: relative;
+    cursor: default;
+}
+
+    .btn--spinner .btn--label {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .btn--spinner:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        content: url('../images/spinner.png');
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .btn--spinner--text:after {
+        content: attr(data-btn-loading-indicator);
+    }

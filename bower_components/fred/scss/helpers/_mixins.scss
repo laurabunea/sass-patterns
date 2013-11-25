@@ -1,0 +1,115 @@
+// -----------------------------------------------------------------------------
+// Mixins
+// -----------------------------------------------------------------------------
+
+
+// Vendor
+// A lightweight way of vendor-prefixing things:
+// @include vendor(transition, opacity 0.3s ease-out, margin-top 5s linear);
+
+@mixin vendor($property, $value...){
+    -webkit-#{$property}:$value;
+       -moz-#{$property}:$value;
+        -ms-#{$property}:$value;
+         -o-#{$property}:$value;
+            #{$property}:$value;
+}
+
+
+// Opacity
+// ----------------------------------------------------------------------------
+
+@mixin opacity($value) {
+    $ieOpacity: 100 * $value;
+    opacity: $value;
+    filter: alpha(opacity=#{$ieOpacity});
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{50})";
+}
+
+.overlay--75    { @include opacity(0.75); }
+.overlay--50    { @include opacity(0.5); }
+.overlay--25    { @include opacity(0.25);}
+
+
+// Simple theme mixins
+// ----------------------------------------------------------------------------
+
+@mixin theme-block($bg-color, $txt-color, $border-color){
+    background-color:$bg-color;
+    color:$txt-color;
+    border-color:$border-color;
+}
+
+
+// Sizing shortcuts
+@mixin box-dimensions($height, $width){
+    height: $height;
+    width:  $width;
+}
+
+@mixin square($size){
+    height: $size;
+    width:  $size;
+}
+
+// Box sizing
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+
+
+// Mixins for forms
+// ----------------------------------------------------------------------------
+
+// Webkit-style focus
+@mixin tab-focus() {
+  // Default
+  outline: thin dotted #333;
+  // Webkit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+
+// Normalise the approach to CSS placeholders.
+// ----------------------------------------------------------------------------
+// 1. Firefox 4-18
+// 2. Firefox 19+
+// 3. Internet Explorer 10+
+// 4. Safari and Chrome
+
+@mixin placeholder($color: $input-color-placeholder) {
+  &:-moz-placeholder            { color: $color; } //[1]
+  &::-moz-placeholder           { color: $color; } //[2]
+  &:-ms-input-placeholder       { color: $color; } //[3]
+  &::-webkit-input-placeholder  { color: $color; } //[4]
+}
+
+@mixin font($font-family, $font-weight , $font-style) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+
+// Translate pixels to ems, given a base size.
+// By default, assume the base size is 16px (body font size)
+@function px-to-em($size, $context: 16) {
+    @return #{($size / $context)}em;
+}
+
+@function pxem($size, $context: 16) {
+    @return #{($size / $context)}em;
+}
+
+// Spacing helpers
+// ----------------------------------------------------------------------------
+@mixin sizer($class, $prefixes, $property, $array) {
+    $index:1;
+    @each $prefix in $prefixes {
+        .#{$class + $prefix} { #{$property}: nth($array, $index)  }
+        $index: $index + 1;
+    }
+}

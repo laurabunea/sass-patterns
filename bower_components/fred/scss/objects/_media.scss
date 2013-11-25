@@ -1,0 +1,38 @@
+/**
+ * 5. Float an image to the left, with a clearfixed block of content to the right.
+ * ----------------------------------------------------------------------------
+ <div class='media'>
+	<img src='/some/image.png' class='media__image'>
+	<div class='media__body'>
+       The text!
+	</div>
+ </div>
+ */
+.media {
+    @extend .clearfix;
+    margin-top: $base-spacing-unit;
+}
+
+    .media__image{
+        float: left;
+        margin-right:$base-spacing-unit;
+    }
+
+    .media__body{
+        @extend .overflow-hidden;
+    }
+
+.media--rev {
+    @extend .clearfix;
+    margin-top: $base-spacing-unit;
+}
+
+    .media--rev > .media__image{
+        float: right;
+        margin-left:$base-spacing-unit;
+    }
+
+    .media--rev > .media__body{
+        @extend .overflow-hidden;
+    }
+

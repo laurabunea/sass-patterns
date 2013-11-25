@@ -1,0 +1,13 @@
+/*
+    Responsive images
+    <img src="..." class="img--responsive" alt="Responsive image">
+*/
+
+.img--responsive {
+    height: auto;
+    max-width: 100%;
+}
+
+.img--round {
+    @include vendor(border-radius, 50% 50% 50% 50%);
+}

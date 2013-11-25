@@ -6,14 +6,14 @@
 <div class='media'>
     <img class='media__image' src='assets/images/fred.png' alt='Fred the friendly FED'/>
     <div class='media__body'>
-        <div class='arrow--side block--m tb__tertiary br--s' >
-            <p style='color:white' class='h1 '>Hi I'm  F<span>R</span>ED the friendly FED.</p>
+        <div class='arrow--side block--s tb__tertiary br--s' >
+            <p class='h1 '>Hi I'm F<span>R</span>ED the friendly FED.</p>
             <i class='arrow  arrow-left'></i>
         </div>
     </div>
 </div> 
 
-<div class='block--stacked block--l block-medium--m block-small--s mb--l tb__primary'>
+<div class='block--stacked block--l block-small--s mb--l tb__primary'>
 	
     <p class='intro'>
         Introduction on FRED here ...

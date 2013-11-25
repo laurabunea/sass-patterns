@@ -13,8 +13,8 @@
     <!-- Top Navigation Bar - this holds the parent categories -->
     <div class='navigation--wrapper tb__quarternary '>
         <div class='navigation clearfix '>
-            <h1 class='uppercase left logo m--s' >
-                <a href='/'>
+            <h1 class='uppercase left logo' >
+                <a href='/' class='m--xxs'>
                     F<span>r</span>ed
                 </a>
             </h1>
@@ -53,4 +53,4 @@
             </ul><!--list inline ends-->
         </div><!--navigation top ends-->
     </div><!--navigation wrapper ends-->
-    <div class='content m--xxl'>
+    <div class='content m--xxxl'>
