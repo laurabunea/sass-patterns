@@ -86,7 +86,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 
 .fred-buttons-page {
     right:30px; 
-    top:196px;
+    top:191px;
 }
 
 .specific-bird {
@@ -141,4 +141,15 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 .pink-input-text {
     /* @include placeholder($color);*/
     @include placeholder(#F92672);
+}
+
+h1 .tiny {
+    font-weight:normal;
+}
+
+.mw--80 {
+    max-width:80%;
+}
+.mw--70 {
+    max-width:70%;
 }

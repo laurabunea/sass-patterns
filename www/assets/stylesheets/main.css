@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(../../../bower_components/fred/normalize-css/normalize.css);
 /* line 29, ../../../bower_components/fred/scss/helpers/_mixins.scss */
 .overlay--75 {
@@ -555,7 +554,7 @@ body {
  */
 /* line 9, ../../../bower_components/fred/scss/objects/_blocks.scss */
 .block--stacked {
-  margin-top: 0!important;
+  margin-top: 0 !important;
 }
 
 /* line 24, ../../../bower_components/fred/scss/objects/_blocks.scss */
@@ -1187,28 +1186,28 @@ dd {
 .arrow-top {
   border-top-width: 0;
   border-bottom-color: inherit;
-  top: -0.4em;
+  top: -.4em;
 }
 
 /* line 32, ../../../bower_components/fred/scss/objects/_arrows.scss */
 .arrow-bottom {
   border-bottom-width: 0;
   border-top-color: inherit;
-  bottom: -0.4em;
+  bottom: -.4em;
 }
 
 /* line 38, ../../../bower_components/fred/scss/objects/_arrows.scss */
 .arrow-left {
   border-left-width: 0;
   border-right-color: inherit;
-  left: -0.4em;
+  left: -.4em;
 }
 
 /* line 44, ../../../bower_components/fred/scss/objects/_arrows.scss */
 .arrow-right {
   border-right-width: 0;
   border-left-color: inherit;
-  right: -0.4em;
+  right: -.4em;
 }
 
 /* line 53, ../../../bower_components/fred/scss/objects/_arrows.scss */
@@ -2244,23 +2243,23 @@ p + p,
  * . Base colours for your site
  * -----------------------------------------------------------------------------
  */
-/* line 28, ../sass/_theme.scss */
+/* line 25, ../sass/_theme.scss */
 html,
 body {
   background-color: #4d4d4d;
   color: #2e2f2b;
 }
 
-/* line 33, ../sass/_theme.scss */
+/* line 30, ../sass/_theme.scss */
 a {
   color: #2f72ba;
 }
-/* line 35, ../sass/_theme.scss */
+/* line 32, ../sass/_theme.scss */
 a:hover {
   color: #204d7d;
 }
 
-/* line 40, ../sass/_theme.scss */
+/* line 37, ../sass/_theme.scss */
 hr {
   background-color: #e5e5e5;
   color: #e5e5e5;
@@ -2270,21 +2269,21 @@ hr {
  * Theme blocks -- success warning or danger
  * -----------------------------------------------------------------------------
  */
-/* line 65, ../sass/_theme.scss */
+/* line 62, ../sass/_theme.scss */
 .success-block {
   background-color: #c5ffc6;
   color: #468847;
   border-color: #468847;
 }
 
-/* line 70, ../sass/_theme.scss */
+/* line 67, ../sass/_theme.scss */
 .warning-block {
   background-color: #ffffd2;
   color: #dab26d;
   border-color: #dab26d;
 }
 
-/* line 75, ../sass/_theme.scss */
+/* line 72, ../sass/_theme.scss */
 .danger-block {
   background-color: #ffc9c7;
   color: #b94a48;
@@ -2295,28 +2294,28 @@ hr {
  *  Theme block -- primary, secondary, tertiary, quarternary
  * -----------------------------------------------------------------------------
  */
-/* line 107, ../sass/_theme.scss */
+/* line 104, ../sass/_theme.scss */
 .pt-block {
   background-color: white;
   color: #2e2f2b;
   border-color: white;
 }
 
-/* line 114, ../sass/_theme.scss */
+/* line 111, ../sass/_theme.scss */
 .st-block {
   background-color: #f2f2f2;
   color: #2e2f2b;
   border-color: #e6e6e6;
 }
 
-/* line 120, ../sass/_theme.scss */
+/* line 117, ../sass/_theme.scss */
 .tt-block {
   background-color: #2e2f2b;
   color: white;
   border-color: #2e2f2b;
 }
 
-/* line 126, ../sass/_theme.scss */
+/* line 123, ../sass/_theme.scss */
 .qt-block {
   background-color: #4d4d4d;
   color: white;
@@ -2327,21 +2326,21 @@ hr {
  *  Theme block --green, pink, blue
  * -----------------------------------------------------------------------------
  */
-/* line 153, ../sass/_theme.scss */
+/* line 150, ../sass/_theme.scss */
 .green-block {
   background-color: #a6e22e;
   color: #2e2f2b;
   border-color: #a6e22e;
 }
 
-/* line 158, ../sass/_theme.scss */
+/* line 155, ../sass/_theme.scss */
 .pink-block {
   background-color: #f92672;
   color: #2e2f2b;
   border-color: #f92672;
 }
 
-/* line 163, ../sass/_theme.scss */
+/* line 160, ../sass/_theme.scss */
 .blue-block {
   background-color: #4aa1c5;
   color: white;
@@ -2352,15 +2351,15 @@ hr {
  * breadcrumbs
  * -----------------------------------------------------------------------------
  */
-/* line 180, ../sass/_theme.scss */
+/* line 177, ../sass/_theme.scss */
 .pt-breadrumbs {
   background-color: #cccccc;
 }
-/* line 183, ../sass/_theme.scss */
+/* line 180, ../sass/_theme.scss */
 .pt-breadrumbs > li + li:before {
   color: #666666;
 }
-/* line 187, ../sass/_theme.scss */
+/* line 184, ../sass/_theme.scss */
 .pt-breadrumbs > .active {
   color: #555555;
 }
@@ -2369,14 +2368,14 @@ hr {
  * Badges
  * -----------------------------------------------------------------------------
  */
-/* line 207, ../sass/_theme.scss */
+/* line 204, ../sass/_theme.scss */
 .pt-badge {
   color: white;
   background-color: red;
   border-radius: 10px;
 }
 
-/* line 214, ../sass/_theme.scss */
+/* line 211, ../sass/_theme.scss */
 a.pt-badge_active > .badge {
   color: #efefef;
   background-color: blue;
@@ -2386,12 +2385,12 @@ a.pt-badge_active > .badge {
  * Page header
  * -----------------------------------------------------------------------------
  */
-/* line 232, ../sass/_theme.scss */
+/* line 229, ../sass/_theme.scss */
 .pt-page-header {
   color: #343434;
   border-bottom: 1px solid #e6e6e6;
 }
-/* line 235, ../sass/_theme.scss */
+/* line 232, ../sass/_theme.scss */
 .pt-page-header span {
   color: slategrey;
 }
@@ -2400,61 +2399,61 @@ a.pt-badge_active > .badge {
  * Buttons
  * -----------------------------------------------------------------------------
  */
-/* line 283, ../sass/_theme.scss */
+/* line 280, ../sass/_theme.scss */
 .btn-primary {
   background-color: #3cbe8a;
   color: white;
   border-color: #3cbe8a;
 }
-/* line 286, ../sass/_theme.scss */
+/* line 283, ../sass/_theme.scss */
 .btn-primary:hover {
   background-color: #33a376;
   color: white;
 }
 
-/* line 292, ../sass/_theme.scss */
+/* line 289, ../sass/_theme.scss */
 .btn-secondary {
   background-color: #999999;
   color: white;
   border-color: #3cbe8a;
 }
-/* line 294, ../sass/_theme.scss */
+/* line 291, ../sass/_theme.scss */
 .btn-secondary:hover {
   background-color: #777777;
   color: white;
 }
 
-/* line 300, ../sass/_theme.scss */
+/* line 297, ../sass/_theme.scss */
 .btn-tertiary {
   background-color: #dddddd;
   color: white;
   border-color: #444444;
 }
-/* line 302, ../sass/_theme.scss */
+/* line 299, ../sass/_theme.scss */
 .btn-tertiary:hover {
   background-color: #cccccc;
   color: #333333;
 }
 
-/* line 308, ../sass/_theme.scss */
+/* line 305, ../sass/_theme.scss */
 .btn-positive {
   background-color: #3977b1;
   color: white;
   border-color: #3cbe8a;
 }
-/* line 310, ../sass/_theme.scss */
+/* line 307, ../sass/_theme.scss */
 .btn-positive:hover {
   background-color: #306596;
   color: white;
 }
 
-/* line 316, ../sass/_theme.scss */
+/* line 313, ../sass/_theme.scss */
 .btn-negative {
   background-color: #eb3930;
   color: white;
   border-color: #444444;
 }
-/* line 318, ../sass/_theme.scss */
+/* line 315, ../sass/_theme.scss */
 .btn-negative:hover {
   background-color: #d8281f;
   color: white;
@@ -2463,7 +2462,7 @@ a.pt-badge_active > .badge {
 /**
  * A common active state makes us look pro as, bro!
  */
-/* line 328, ../sass/_theme.scss */
+/* line 325, ../sass/_theme.scss */
 .btn:active {
   background-color: #333333;
   color: white;
@@ -2571,7 +2570,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 /* line 87, ../sass/_page-specific.scss */
 .fred-buttons-page {
   right: 30px;
-  top: 196px;
+  top: 191px;
 }
 
 /* line 92, ../sass/_page-specific.scss */
@@ -2622,4 +2621,19 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 /* line 87, ../../../bower_components/fred/scss/helpers/_mixins.scss */
 .pink-input-text::-webkit-input-placeholder {
   color: #f92672;
+}
+
+/* line 146, ../sass/_page-specific.scss */
+h1 .tiny {
+  font-weight: normal;
+}
+
+/* line 150, ../sass/_page-specific.scss */
+.mw--80 {
+  max-width: 80%;
+}
+
+/* line 153, ../sass/_page-specific.scss */
+.mw--70 {
+  max-width: 70%;
 }

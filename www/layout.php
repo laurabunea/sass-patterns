@@ -2,7 +2,8 @@
     include 'header.php'; 
 ?>
 
-<div class='block--l block-small--s mb--l clearfix pt-block relative'>
+<div class='block--l block-small--s mb--l pt-block relative'>
+    
     <div class='page-header pt-page-header'>
         <h1>
             Layout
@@ -10,70 +11,83 @@
                 - Setting up
             </span>
         </h1>
-    </div>
+    </div><!--page header ends -->
+
     <img src='assets/images/fred-top.png' alt='' class='absolute fred-layout' />
 
-    <p>
+    <p class='m--m mw--70'>
         Be consistent with vertical spacing. Avoid setting arbitrary margins on items. 
         Defer these to a variable, and use multiples of that variable to control your vertical spacing. 
         Our designs will often change right up til the end, so it's worth making stuff really easy to change.
     </p>
 
-    <div class='page-header pt-page-header m--xl'>
+    <div class='page-header pt-page-header m--l'>
         <h1>
             Layout
             <span class='tiny'>
                 - Helper classes
             </span>
         </h1>
-    </div>
+    </div><!--page header ends -->
 
-    <ul class='list-styled--decimal'>
+    <ul class='list-styled--decimal m--m'>
 
         <li>
-            <a href='#layout-inline-block'>
+            <a href='#layoutAnchor1'>
                 Inline Blocks
             </a>
         </li>
         <li>
-            <a href='#layout-positioning'>
+            <a href='#layoutAnchor2'>
                 Positioning
             </a>
         </li>
         <li>
-            <a href='#layout-generic-block'>
-                Building blocks
+            <a href='#layoutAnchor3'>
+                Spacing
             </a>
         </li>
          <li>
-            <a href='#layout-section-block'>
-                Section blocks
+            <a href='#layoutAnchor4'>
+                Blocks
             </a>
         </li>
         <li>
-            <a href='#layout-media-block'>
+            <a href='#layoutAnchor5'>
                 Media Blocks
             </a>
         </li>
         <li>
-            <a href='#layout-icon-block'>
-                Icon block
+            <a href='#layoutAnchor6'>
+                Icons with text
             </a>
         </li>
         <li>
-            <a href='#layout-arrows'>
+            <a href='#layoutAnchor7'>
                 Arrows
             </a>
         </li>
         <li>
-            <a href='#layout-inline-grid'>
+            <a href='#layoutAnchor8'>
                 Inline Grid
             </a>
         </li>
 
         <li>
-            <a href='#layout-append'>
+            <a href='#layoutAnchor9'>
                 Prepend vs Append
+            </a>
+        </li>
+
+        <li>
+            <a href='#layoutAnchor10'>
+                Responsive images
+            </a>
+        </li>
+
+        <li>
+            <a href='#layoutAnchor11'>
+                Visibility classes
             </a>
         </li>
         
@@ -82,7 +96,7 @@
 
     <!-- /****************************************  Inline Blocks  *******************************/ -->
 
-    <div class='m--xl' id='layout-inline-block'>
+    <div class='m--xl' id='layoutAnchor1'>
         <h2 class='h3'>
             01. Inline block 
         </h2>
@@ -102,12 +116,13 @@
 </code>
             </pre>
         </div><!--  code block ends -->
+    </div><!-- Inline block ends-->
 
-    </div><!-- layout-clearfix ends-->
     <hr class='m--l'>
-    <!-- /****************************************  Positioning  *******************************/ -->
 
-    <div class='m--l' id='layout-positioning'>
+
+    <!-- /****************************************  Positioning  *******************************/ -->
+    <div class='m--l' id='layoutAnchor2'>
         <h2 class='h3'>
             02. Positioning - Absolute, Floating and Clearfixing
         </h2>
@@ -120,7 +135,6 @@
         <p>
             A page element with relative positioning gives you the control to absolutely position 
             children elements inside of it.
-
         </p>
         <!--  code block starts -->
         <div class=' block--s tt-block'>
@@ -156,7 +170,6 @@
  
 </code>
             </pre>  
-           
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
@@ -164,7 +177,7 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='grid '>
+            <div class='grid'>
                 <div class='st-block xxm relative testbox-100-100' >
                     <img class='absolute specific-bird' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
@@ -180,14 +193,15 @@
                 <div class='st-block xxm relative testbox-100-100' >
                     <img class='absolute--bottom-left' src='assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
-                 
-            </div>
+            </div><!--grid ends-->
         </div><!--  hello world block ends -->
         
         <!-- /********  Floating elements *************/ -->
         
         <div class='m--l'>
-            <h3 class='h4 '>b) Floating elements</h3>
+            <h3 class='h4 '>
+                b) Floating elements
+            </h3>
             <p>
                 With CSS float, an element can be pushed to the left or right, allowing other elements to wrap around it.
             </p>
@@ -209,12 +223,13 @@
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
-                <div class='block--stacked block--s clearfix'> 
+                <div class='m--s'> 
                     <img class='left' src='assets/images/yellow-bird.jpg' alt='i am an image'/>
                     <img class='right' src='assets/images/blue-bird.jpg' alt='i am an image'/>    
                 </div>
             </div><!--  hello world block ends -->
         </div>
+
         <!-- /********  Clearfix *************/ -->
         <div class='m--l'>
             <h3 class='h4'>c) Clearfix</h3>
@@ -231,41 +246,72 @@
 &lt;div class='clearfix'&gt; 
     ...  
 &lt;/div&gt;
-    </code>
+</code>
                 </pre>
             </div><!--  code block ends -->
-
-            <!--  hello world block starts -->
-            <div class='block--stacked block--s st-block'>
-                <h4 class='tiny uppercase text-muted'>
-                    hello world
-                </h4>
-                <div class='block--stacked block--s clearfix'> 
-                    <img class='left' src='assets/images/yellow-bird.jpg' alt='i am an image'/>
-                    <img class='right' src='assets/images/blue-bird.jpg' alt='i am an image'/>    
-                </div>
-            </div><!--  hello world block ends -->
         </div>
         
     </div><!-- layout-positioning ends-->
+
     <hr class='m--l'>
-    <!-- /****************************************  Building blocks  *******************************/ -->
+    <!-- /****************************************  Spacing *******************************/ -->
     
-    <div class='m--l' id='layout-generic-block' >
+    <div class='m--l' id='layoutAnchor3' >
         <h2 class='h3'>
-            03. Building blocks
+            03. Spacing Helpers
         </h2>
         <p>
-            like lego :) uses base spacing
+            Notes here
         </p>
         <!--  code block starts -->
         <div class=' block--s tt-block'> 
             <h4 class='tiny uppercase text-muted'>
-                code
+                How it works
             </h4>
             <pre>
 <code class="language-css">
-//margin-right 
+/*
+* Spacing helpers:
+* -------------------------------
+*/
+
+/* Spacing Prefixes */
+
+//Margins
+.m--        = margin-top
+.mb--       = margin-bottom
+.mr--       = margin-right
+.ml--       = margin-left
+
+//Padding
+.p--        = padding-top
+.pb--       = padding-bottom
+.pl--       = padding-left
+.pr--       = padding-right
+
+/* Suffix */
+
+//Size of spacing you want from 0 - xxxl
+0     
+xxxs  
+xxs   
+xs    
+s     
+m     
+l     
+xl    
+xxl   
+xxxl 
+
+//Examples
+
+/* This class would have a xxxs right margin */
+.mr--xxxs
+
+/* This class would have a large left padding */
+.pl--l
+
+/* Margin right SCSS code: */
 .mr--0     { margin-right:$bs--0; }
 .mr--xxxs  { margin-right:$bs--xxxs;}
 .mr--xxs   { margin-right:$bs--xxs; }
@@ -276,24 +322,6 @@
 .mr--xl    { margin-right:$bs--xl;}
 .mr--xxl   { margin-right:$bs--xxl;}
 .mr--xxxl  { margin-right:$bs--xxxl;}
-
-//margin-left 
-.ml--(block size here xs, s, m etc)
-
-//margin-top 
-.m--(block size here xs, s, m etc)
-
-//margin-bottom 
-.mb--(block size here xs, s, m etc)
-
-//padding-left 
-.pl--(block size here xs, s, m etc)
-
-//padding-top 
-.p--(block size here xs, s, m etc)
-
-//padding-bottom 
-.pb--(block size here xs, s, m etc)
 </code>
             </pre>
         </div><!--  code block ends -->
@@ -303,68 +331,155 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
-            <div class='m--xxxs block--xs green-block '>
+            <div class='mr--0 block--xs green-block '>
                 <p>
-                    block--xs with xxxs top margin (m--xxxs)
+                    block--xs with 0 margin right (mr--0)
                 </p>
             </div><!-- block xs ends-->
-            <div class='m--xxs block--xs green-block '>
+            <div class='mr--xxxs block--xs green-block '>
                 <p>
-                    block--xs with xxs top margin (m--xxs)
+                    block--xs with xxxs margin right (mr--xxxs)
                 </p>
             </div><!-- block xs ends-->
-            <div class='m--xs block--xs green-block '>
+            <div class='mr--xxs block--xs green-block '>
                 <p>
-                    block--xs with xs top margin (m--xs)
+                    block--xs with xxs margin right (mr--xxs)
                 </p>
             </div><!-- block xs ends-->
-            <div class='m--s block--xs green-block '>
+            <div class='mr--xs block--xs green-block '>
                 <p>
-                    block--xs with with s top margin (m--s)
+                    block--xs with xs margin right (mr--xs)
+                </p>
+            </div><!-- block xs ends-->
+            <div class='mr--s block--xs green-block '>
+                <p>
+                    block--xs with with s margin right (mr--s)
                 </p>
             </div><!-- block xs ends-->
 
-            <div class='m--m block--xs green-block '>
+            <div class='mr--m block--xs green-block '>
                 <p>
-                    block--xs with m top margin (m--m)
+                    block--xs with m margin right (mr--m)
                 </p>
             </div><!-- block xs ends-->
-            <div class='m--l block--xs green-block '>
+            <div class='mr--l block--xs green-block '>
                 <p>
-                    block--xs with l top margin (m--l)
+                    block--xs with l margin right (mr--l)
                 </p>
             </div><!-- block xs ends-->
-            <div class='m--xl block--xs green-block '>
+            <div class='mr--xl block--xs green-block '>
                 <p>
-                    block--xs with xl top margin (m--xl)
+                    block--xs with xl margin right (mr--xl)
                 </p>
             </div><!-- block xs ends-->
-            <div class='m--xxl block--xs green-block '>
+            <div class='mr--xxl block--xs green-block '>
                 <p>
-                    block--xs with xxl top margin (m--xxl)
+                    block--xs with xxl margin right (mr--xxl)
                 </p>
             </div><!-- block xs ends-->
-            <div class='m--xxxl block--xs green-block '>
+            <div class='mr--xxxl block--xs green-block '>
                 <p>
-                    block--xs with xxxl top margin (m--xxxl)
+                    block--xs with xxxl margin right (mr--xxxl)
                 </p>
             </div><!-- block xs ends-->
         </div><!--  hello world block ends -->
+
+        <h3 class='h4'>
+            b) Responsive spacing elements
+        </h3>
+
+        <div class=' block--s tt-block'> 
+            <h4 class='tiny uppercase text-muted'>
+                How it works
+            </h4>
+            <pre>
+<code class="language-css">
+/*
+* Spacing helpers:
+* -------------------------------
+*/
+
+/* Middle Prefix */
+
+-small       = mobile
+-medium      = tablet
+-large       = desktop
+-xlarge      = wide screen
+
+//Examples
+/* This class would have a xxxs right margin that only shows on mobile screens*/
+.mr-small--xxxs
+
+/* This class would have a large left padding that only shows on wide screens */
+.pl-xlarge--l
+
+/* Margin right SCSS code: */
+@include media('xlarge') {
+    .mr-xlarge--0     { margin-right:$bs--0; }
+    .mr-xlarge--xxxs  { margin-right:$bs--xxxs;}
+    .mr-xlarge--xxs   { margin-right:$bs--xxs; }
+    .mr-xlarge--xs    { margin-right:$bs--xs;}
+    .mr-xlarge--s     { margin-right:$bs--s;}
+    .mr-xlarge--m     { margin-right:$bs--m;}
+    .mr-xlarge--l     { margin-right:$bs--l;}
+    .mr-xlarge--xl    { margin-right:$bs--xl;}
+    .mr-xlarge--xxl   { margin-right:$bs--xxl;}
+    .mr-xlarge--xxxl  { margin-right:$bs--xxxl;}
+}
+</code>
+            </pre>
+        </div>
+        <!--  hello world block starts -->
+        <div class='block--stacked block--s st-block'>
+            <h4 class='tiny uppercase text-muted'>
+                hello world
+            </h4> 
+            <div class='mr-xlarge--xxxl mr-medium--l mr--s mr-small--0 block--xs green-block '>
+                <p>
+                
+                    <strong>mobile:</strong> mr-small--s<br />
+                    <strong>skinny:</strong> mr-medium--l<br />
+                    <strong>desktop:</strong> mr--s<br />
+                    <strong>wide:</strong> mr-xlarge--xxxl
+                </p>
+            </div><!-- block xs ends-->
+        </div>
     </div><!--layout-generic-block ends-->
+
     <hr class='m--l'>
    
     <!-- /****************************************  generic blocks  *******************************/ -->
-    <div class='m--l' id='layout-generic-block' >
+    <div class='m--l' id='layoutAnchor4' >
         <h2 class='h3'>
-            04. Section blocks
+            04. Blocks
         </h2>
+
+        <p>
+            Notes...
+        </p>
         <!--  code block starts -->
         <div class=' block--s tt-block'> 
             <h4 class='tiny uppercase text-muted'>
-                code
+                how it works
             </h4>
             <pre>
 <code class="language-markup">
+prefix = block 
+
+suffix is the size of the block you want: 
+
+--0     
+--xxxs  
+--xxs   
+--xs    
+--s     
+--m     
+--l     
+--xl    
+--xxl   
+--xxxl
+
+/*  CODE EXAMPLE  */
 &lt;div class='block--xs'&gt;
     block--xs
 &lt;/div&gt;
@@ -377,7 +492,16 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
-
+            <div class=' block--xxxs green-block '>
+                <p>
+                    block--xxxs
+                </p>
+            </div><!-- block xs ends-->
+            <div class=' block--xxs green-block '>
+                <p>
+                    block--xxs
+                </p>
+            </div><!-- block xs ends-->
             <div class=' block--xs green-block '>
                 <p>
                     block--xs
@@ -408,36 +532,27 @@
                 </p>
             </div><!-- block xl ends-->
 
-
-
-
-            <!--<div class='block--tight green-block '>
+            <div class='block--xxl green-block '>
                 <p>
-                    I am a tight block
+                    block--xxl
                 </p>
-            </div>
+            </div><!-- block xl ends-->
 
-            <div class='block--bleed green-block'>
+            <div class='block--xxxl green-block '>
                 <p>
-                    I am a block
+                    block--xxxl
                 </p>
-            </div>
-
-            <div class='block--bleed_padding green-block'>
-                <p>
-                    I am a block
-                </p>
-            </div>-->
+            </div><!-- block xl ends-->
 
         </div><!--  hello world block ends -->
     
         <h3 class='h4 m--l'>
-             b) Section blocks - reponsive 
+             b) Blocks - reponsive 
         </h4>
 
         <p>
-            These building blocks work in exactly the same way as the ones mentioned in <a href='#TODO'>layout</a>. 
-            The only difference is that they ...
+            These building blocks work in exactly the same way as the ones above</a>. 
+            The only difference is that they have an extra suffix added to them so they ..
         </p>
         <!--  code block starts -->
         <div class=' block--s tt-block'> 
@@ -446,45 +561,37 @@
             </h4>
             <pre>
 <code class="language-css">
+
 // Media queries breakpoints
 // -------------------------------------------------- 
 
-$mobile:                        30em;//Portrait regular mobiles//480px
-$skinny:                        48em;//Skinny 768px
-$desktop:                       60em;//Desktop 960px 
-$wide:                          75em;//Wide 1200px
+$small:                        30em;//Portrait regular mobiles//480px
+$medium:                       48em;//Skinny 768px
+$large:                        60em;//Desktop 960px 
+$xlarge:                       75em;//Wide 1200px
+
+// Extra middle prefixs that relate to the breakpoints
+// -----------------------------------------------------
+
+-small
+-medium
+-xlarge
 
 
 // Example one
 // --------------------------------------------------
 
-//margin-right  - desktop - default
-.mr--0          { margin-right:$bs--0; }
+//margin-right default ( displays on all breakpoints )
+.mr--0
 
-//margin-right  - mobile
-.mr-m--0        { margin-right:$bs--0;}
+//margin-right on mobile
+.mr-small--0
 
-//margin-right  - skinny
-.mr-s--0        { margin-right:$bs--0;}
+//margin-right on a tablet 
+.mr-medium--0  
 
-//margin-right  - wide
-.mr-w--0        { margin-right:$bs--0;}
-
-
-// Example two
-// --------------------------------------------------
-
-//small block   - desktop - default
-.block--s       { margin-right:$bs--0; }
-
-//small block   - mobile
-.block-m--s     { margin-right:$bs--0;}
-
-//small block   - skinny
-.block-s--s     { margin-right:$bs--0;}
-
-//small block   - wide
-.block-xlarge--s     { margin-right:$bs--0;}
+//margin-right on a wide screen 
+.mr-xlarge--0 
 
 
 ------------------------------------------------------- 
@@ -494,23 +601,12 @@ $wide:                          75em;//Wide 1200px
 // Example one
 // -------------------------------------------------- 
 
-&lt;div class='block--m block-m--xs block-s--s block-xlarge--l green-block '&gt;
+&lt;div class='block--m block-small--xs block-medium--s block-xlarge--l green-block '&gt;
     &lt;p&gt;
         &lt;strong>desktop:&lt;/strong&gt;    block--m
-        &lt;strong>mobile:&lt;/strong&gt;     block-m--xs
-        &lt;strong>skinny:&lt;/strong&gt;     block-s--s
+        &lt;strong>mobile:&lt;/strong&gt;     block-small--xs
+        &lt;strong>tablet:&lt;/strong&gt;     block-medium--s
         &lt;strong>wide:&lt;/strong&gt;       block-xlarge--l
-    &lt;/p&gt;
-&lt;/div&gt;<!-- block xs ends-->
-
-// Example two
-// -------------------------------------------------- 
-&lt;div class='m-m--xs m-s--s m--m m-w--l block--s green-block '&gt;
-    &lt;p&gt;
-        &lt;strong>mobile:&lt;/strong&gt; m-small--xs
-        &lt;strong>skinny:&lt;/strong&gt; m-medium--s
-        &lt;strong>desktop:&lt;/strong&gt; m--m
-        &lt;strong>wide:&lt;/strong&gt; m-large--l
     &lt;/p&gt;
 &lt;/div&gt;<!-- block xs ends-->
 
@@ -532,22 +628,15 @@ $wide:                          75em;//Wide 1200px
                     <strong>wide:</strong>       block-xlarge--l
                 </p>
             </div>
-            <p>Example two</p>
-            <div class='m-small--xs m-medium--s m--m m-large--l block--s green-block '>
-                <p>
-                    <strong>mobile:</strong> m-small--xs<br />
-                    <strong>skinny:</strong> m-medium--s<br />
-                    <strong>desktop:</strong> m--m<br />
-                    <strong>wide:</strong> m-large--l
-                </p>
-            </div>
             
         </div><!--  hello world block ends -->
     </div><!--Building blocks section ends-->
+
     <hr class='m--l' />
+
     <!-- /****************************************  Media blocks  *******************************/ -->
 
-    <div class='m--l' id='layout-media-block'>
+    <div class='m--l' id='layoutAnchor5'>
         <h2 class='h3'>
             05. Media blocks
         </h2>
@@ -605,10 +694,14 @@ $wide:                          75em;//Wide 1200px
     <hr class='m--l'>
     <!-- /****************************************  Icon blocks  *******************************/ -->
     
-    <div class='m--l' id='layout-icon-blocks'>
+    <div class='m--l' id='layoutAnchor6'>
         <h2  class='h3'>
-           06. Icon blocks
+           06. Icons with text
         </h2>
+        <p>
+            Notes
+        </p>
+
         <!--  code block starts -->
         <div class=' block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
@@ -652,10 +745,14 @@ $wide:                          75em;//Wide 1200px
 
     <!-- /****************************************  Arrows  *******************************/ -->
 
-    <div class='m--l' id='layout-arrows'>
+    <div class='m--l' id='layoutAnchor7'>
         <h2  class='h3'>
             07. Arrows
         </h2>
+
+        <p>
+            Notes
+        </p>
         <!--  code block starts -->
         <div class='block--s tt-block'>
             <h4 class='tiny uppercase text-muted'>
@@ -721,7 +818,7 @@ $wide:                          75em;//Wide 1200px
     <hr class='m--l'>
     <!-- /****************************************  Inline gird  *******************************/ -->
 
-    <div class='m--l' id='layout-inline-grid'>
+    <div class='m--l' id='layoutAnchor8'>
         <h2>
             08. Inline Grid
         </h2>
@@ -866,16 +963,12 @@ $wide:                          75em;//Wide 1200px
                 </div>
             </div>   
         </div><!--  hello world block ends -->
-    </div><!-- layout-inline-grid ends -->
-    <hr class='m--l'>
-
-    <!--Inline grid  section starts-->
-    <div class='m--l' id='responsiveAnchor4' >
-        <h2 class='h3'>
-            05. Inline Grid
-        </h2>
+    
+        <h3 class='h4 m--l'>
+            05. Inline Grid - Responsive
+        </h3>
         <p>
-          
+          Notes
         </p>
         <!--  code block starts -->
         <div class=' block--s tt-block'> 
@@ -934,7 +1027,7 @@ $wide:                          75em;//Wide 1200px
     <hr class='m--l'>
     <!-- /****************************************  Append vs Prepend  *******************************/ -->
 
-    <div class='m--l' id='layout-append'>
+    <div class='m--l' id='layoutAnchor10'>
         <h2 class='h3'>
             09. Prepend vs Append
         </h2>
@@ -999,10 +1092,10 @@ $wide:                          75em;//Wide 1200px
           
             
             <div class='grid'>
-                <div class='grid__item g--40' >
+                <div class='grid__item g--1-2' >
                     <img src='assets/images/fred.png' alt='' class='img--responsive' />
                 </div>
-                <div class='grid__item g--60'>
+                <div class='grid__item g--1-2'>
                     <div class='arrow--side blue-block block--m'>
                         <p>Resize the browser so you can see me shrink </p>
                         <i class='arrow arrow-left'></i>
@@ -1011,12 +1104,18 @@ $wide:                          75em;//Wide 1200px
             </div>
         </div><!--  hello world block ends -->
     </div><!--Responsive image section starts-->
+    
+    <hr class='m--l' />
 
     <!--Hidden section starts-->
-    <div class='m--l' id='responsiveAnchor3' >
+    <div class='m--l' id='responsiveAnchor11' >
         <h2 class='h3'>
-            03. Hidden classes
+            10. Visability classes - Hidden and Visible
         </h2>
+
+        <h3 class='h4'>
+            a) Hidden
+        </h3>
 
         <p>
             Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation.
@@ -1063,15 +1162,9 @@ $wide:                          75em;//Wide 1200px
             </div>
 
         </div><!--  hello world block ends -->
-    </div><!--Hidden section ends-->
-    
-    <hr class='m--l' />
-
-    <!--Visible section starts-->
-    <div class='m--l' id='responsiveAnchor2' >
-        <h2 class='h3'>
-            02. Visible classes
-        </h2>
+        <h3 class='h4'>
+            b) Visibile
+        </h3>
 
         <p>
             Try to use these on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation.
