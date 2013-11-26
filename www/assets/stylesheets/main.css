@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../../../bower_components/fred/normalize-css/normalize.css);
 /* line 29, ../../../bower_components/fred/scss/helpers/_mixins.scss */
 .overlay--75 {
@@ -554,7 +555,7 @@ body {
  */
 /* line 9, ../../../bower_components/fred/scss/objects/_blocks.scss */
 .block--stacked {
-  margin-top: 0 !important;
+  margin-top: 0!important;
 }
 
 /* line 24, ../../../bower_components/fred/scss/objects/_blocks.scss */
@@ -1186,28 +1187,28 @@ dd {
 .arrow-top {
   border-top-width: 0;
   border-bottom-color: inherit;
-  top: -.4em;
+  top: -0.4em;
 }
 
 /* line 32, ../../../bower_components/fred/scss/objects/_arrows.scss */
 .arrow-bottom {
   border-bottom-width: 0;
   border-top-color: inherit;
-  bottom: -.4em;
+  bottom: -0.4em;
 }
 
 /* line 38, ../../../bower_components/fred/scss/objects/_arrows.scss */
 .arrow-left {
   border-left-width: 0;
   border-right-color: inherit;
-  left: -.4em;
+  left: -0.4em;
 }
 
 /* line 44, ../../../bower_components/fred/scss/objects/_arrows.scss */
 .arrow-right {
   border-right-width: 0;
   border-left-color: inherit;
-  right: -.4em;
+  right: -0.4em;
 }
 
 /* line 53, ../../../bower_components/fred/scss/objects/_arrows.scss */
@@ -2353,7 +2354,7 @@ hr {
  */
 /* line 177, ../sass/_theme.scss */
 .pt-breadrumbs {
-  background-color: #cccccc;
+  background-color: #f2f2f2;
 }
 /* line 180, ../sass/_theme.scss */
 .pt-breadrumbs > li + li:before {
