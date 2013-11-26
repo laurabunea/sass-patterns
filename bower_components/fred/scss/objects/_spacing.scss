@@ -1,35 +1,10 @@
-@mixin spacing($margin: true, $padding: true) {
-    @if $margin {
-        @include sizer("m", $sizePrefixes,  "margin-top", $sizes);
-        @include sizer("mb", $sizePrefixes,  "margin-bottom", $sizes);
-        @include sizer("mr", $sizePrefixes,  "margin-right", $sizes);
-        @include sizer("ml", $sizePrefixes,  "margin-left", $sizes);
-    }
-
-    @if $padding {
-        @include sizer("p", $sizePrefixes,  "padding-top", $sizes);
-        @include sizer("pb", $sizePrefixes,  "padding-bottom", $sizes);
-        @include sizer("pr", $sizePrefixes,  "padding-right", $sizes);
-        @include sizer("pl", $sizePrefixes,  "padding-left", $sizes);
-    }
-}
-
-@include spacing($margin: true, $padding: false);
-
-
 /**
- * Responsive spacing elements
+ * Margin and padding helpers
  * ----------------------------------------------------------------------------
+ * These are provided after the core so they function as overrides
+ * to default values. The first kind of specificity is source order!
  */
 
-@include media('xlarge') {
-    @include sizer("m-xlarge", $sizePrefixes,  "margin-top", $sizes);
-}
+@include fred-breakpoint-sizer($fred-margin-breakpoints, $fred-margin-types);
+@include fred-breakpoint-sizer($fred-padding-breakpoints, $fred-padding-types);
 
-@include media('medium') {
-    @include sizer("m-medium", $sizePrefixes,  "margin-top", $sizes);
-}
-
-@include media('small') {
-    @include sizer("m-small", $sizePrefixes,  "margin-top", $sizes);
-}

@@ -1,6 +1,6 @@
 {
   "name": "Fred",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A friend front-end framework",
   "main": "dist/fred.scss",
   "keywords": [
@@ -24,11 +24,11 @@
   "dependencies": {
     "normalize-css": "2.1.3"
   },
-  "_release": "0.0.6",
+  "_release": "0.0.7",
   "_resolution": {
     "type": "version",
-    "tag": "v0.0.6",
-    "commit": "c4d6a8c2563507b93ee6a436ae743fc30bfe1155"
+    "tag": "v0.0.7",
+    "commit": "01c378e0ede6437ff5f36c6cd3bf8c30c3336c2f"
   },
   "_source": "git://github.com/springload/fred.git",
   "_target": "~0.0.1",

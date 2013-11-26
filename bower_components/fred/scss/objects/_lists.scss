@@ -1,5 +1,5 @@
 /**
- * 8. List styles
+ * Lists
  * ----------------------------------------------------------------------------
  */
 
@@ -58,7 +58,7 @@
  */
 
 dl {
-    @extend .m--m;
+    @extend .mt--m;
 }
     dt,
     dd {
@@ -79,21 +79,20 @@ dl {
  *
  */
 
-//TODO finish this ;)
-//@include media('skinny-only') { {
-//    .dl-horizontal {
-//        dt {
-//            @extend %text-overflow;
-//            float: left;
-//            width: (@component-offset-horizontal - 20);
-//            clear: left;
-//            text-align: right;
-//
-//        }
-//        dd {
-//            @extend %clearfix; // Clear the floated `dt` if an empty `dd` is present
-//           margin-left: @component-offset-horizontal;
-//
-//       }
-// }
-//}
+@include media('medium-down') {
+    .dl-horizontal {
+        > dt {
+            @extend %text-overflow;
+            float: left;
+            width: 35%;
+            clear: left;
+            text-align: right;
+
+        }
+        > dd {
+            @extend %clearfix; // Clear the floated `dt` if an empty `dd` is present
+            margin-left: 40%;
+
+       }
+    }
+}

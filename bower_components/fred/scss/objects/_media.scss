@@ -1,5 +1,5 @@
 /**
- * 5. Float an image to the left, with a clearfixed block of content to the right.
+ * Float an image to the left, with a clearfixed block of content to the right.
  * ----------------------------------------------------------------------------
  <div class='media'>
 	<img src='/some/image.png' class='media__image'>
@@ -22,6 +22,7 @@
         @extend .overflow-hidden;
     }
 
+/* Swap the image to the right */
 .media--rev {
     @extend .clearfix;
     margin-top: $base-spacing-unit;

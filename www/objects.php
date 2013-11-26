@@ -583,7 +583,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
 <code class='language-markup'>
 &lt;p&gt;Example one:&lt;/p&gt; 
 &lt;div class='grid'&gt;
-    &lt;div class='grid__item column'&gt;
+    &lt;div class='grid__item col'&gt;
        &lt;div class='pink-block block--s'&gt;
             &lt;p&gt;
                 full width
@@ -593,14 +593,14 @@ $breakpoint-xlarge-classname: "--q-xlarge";
 &lt;/div&gt;
 &lt;p&gt;Example two:&lt;/p&gt;
 &lt;div class='grid'&gt;
-    &lt;div class='grid__item column-50'&gt;
+    &lt;div class='grid__item col-2-4'&gt;
         &lt;div class='blue-block block--s'&gt;
             &lt;p&gt;
                 50%
             &lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class='grid__item column-50 '&gt;
+    &lt;div class='grid__item col-2-4 '&gt;
         &lt;div class='blue-block block--s'&gt;
             &lt;p&gt;
                 50%
@@ -615,7 +615,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
         <div class='block--stacked block--s st-block'> 
             <p>Example one:</p> 
             <div class='grid'>
-                <div class='grid__item column'>
+                <div class='grid__item col'>
                    <div class='pink-block block--s'>
                         <p>
                             full width
@@ -625,14 +625,14 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             </div>
             <p>Example two:</p>
             <div class='grid'>
-                <div class='grid__item column-50' >
+                <div class='grid__item col-2-4' >
                     <div class='blue-block block--s'>
                         <p>
                             50%
                         </p>
                     </div>
                 </div>
-                <div class='grid__item column-50 '>
+                <div class='grid__item col-2-4'>
                     <div class='blue-block block--s'>
                         <p>
                             50%
@@ -642,28 +642,28 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             </div>
             <p>Example three:</p>
             <div class='grid'>
-                <div class='grid__item column-25 '>
+                <div class='grid__item col-1-4'>
                     <div class='green-block block--s'>
                         <p>
                             25%
                         </p>
                     </div>
                 </div>
-                <div class='grid__item column-25 '>
+                <div class='grid__item col-1-4'>
                     <div class='green-block block--s'>
                         <p>
                             25%
                         </p>
                     </div>
                 </div>
-                <div class='grid__item column-25 '>
+                <div class='grid__item col-1-4 '>
                     <div class='green-block block--s'>
                         <p>
                             25%
                         </p>
                     </div>
                 </div>
-                <div class='grid__item column-25 '>
+                <div class='grid__item col-1-4 '>
                     <div class='green-block block--s'>
                         <p>
                             25%
@@ -673,14 +673,14 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             </div>
             <p>Example four:</p>
             <div class='grid'>
-                <div class='grid__item column-60'>
+                <div class='grid__item col-6-10'>
                     <div class='st-block block--s'>
                         <p>
                             60%
                         </p>
                     </div>
                 </div>
-                <div class='grid__item column-40'>
+                <div class='grid__item col-4-10'>
                     <div class='st-block block--s'>
                         <p>
                             40%
@@ -690,14 +690,14 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             </div>
             <p>Example five:</p>
             <div class='grid'>
-                <div class='grid__item column-80 '>
+                <div class='grid__item col-8-10'>
                     <div class='tt-block block--s'>
                         <p>
                             80%
                         </p>
                     </div>
                 </div>
-                <div class='grid__item column-20'>
+                <div class='grid__item col-2-10'>
                     <div class='tt-block block--s'>
                         <p>
                             20%
@@ -713,28 +713,28 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             </p>
 
             <div class='grid grid--middle'>
-                <div class='column-25'>
+                <div class='col-1-4'>
                     <div class='green-block block--s'>
                         <p>
                             1/4
                         </p>
                     </div>
                 </div>
-                <div class='column-25'>
+                <div class='col-1-4'>
                     <div class='green-block block--s'>
                         <p>
                             1/4
                         </p>
                     </div>
                 </div>
-                <div class='column-25'>
+                <div class='col-1-4'>
                     <div class='green-block block--s'>
                         <p>
                             1/4
                         </p>
                     </div>
                 </div>
-                <div class='column-25'>
+                <div class='col-1-4'>
                    <div class='green-block block--s'>
                         <p>
                             1/4
@@ -757,37 +757,40 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             </h4>
             <pre>
 <code class="language-html">
-// Media queries suffixs 
+// Media query prefixes
 // -------------------------------------------------- 
+
 $breakpoint-none:"";
-$breakpoint-small-classname: "--q-small";
-$breakpoint-medium-classname: "--q-medium";
-$breakpoint-large-classname: "--q-large";
-$breakpoint-xlarge-classname: "--q-xlarge";
+$breakpoint-xxlarge-name: "xxlarge";
+$breakpoint-xlarge-name: "xlarge";
+$breakpoint-large-name: "large";
+$breakpoint-medium-name: "medium";
+$breakpoint-small-name: "small";
+$breakpoint-classname-prefix: "--q-";
 
 &lt;div class='grid'&gt;
-    &lt;div class='grid__item column-25 column-50--q-medium column--q-small column60--q-xlarge'&gt;
+    &lt;div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'&gt;
        &lt;div class='pink-block block--s'&gt;
             &lt;p&gt;
                 1
            &lt;/p&gt;
         &lt;/div>
     &lt;/div>
-    &lt;div class='grid__item column-25 column-50--q-medium column--q-small column60--q-xlarge'&gt;
+    &lt;div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'&gt;
        &lt;div class='pink-block block--s'&gt;
             &lt;p&gt;
                 1
             &lt;/p&gt;
         &lt;/div>
     &lt;/div>
-    &lt;div class='grid__item column-25 column-50--q-medium column--q-small column60--q-xlarge'&gt;
+    &lt;div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'&gt;
        &lt;div class='pink-block block--s'&gt;
             &lt;p&gt;
                 1
             &lt;/p&gt;
         &lt;/div>
     &lt;/div>
-    &lt;div class='grid__item column-25 column-50--q-medium column--q-small column60--q-xlarge'&gt;
+    &lt;div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'&gt;
        &lt;div class='pink-block block--s'&gt;
             &lt;p&gt;
                 1
@@ -807,7 +810,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
           
             
             <div class='grid'>
-                <div class='grid__item column-25 column-50--q-medium column--q-small column60--q-xlarge'>
+                <div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'>
                    <div class='pink-block block--s'>
                         <p>
                             1<!--<strong>Desktop:</strong> 1/4 <br />
@@ -817,21 +820,21 @@ $breakpoint-xlarge-classname: "--q-xlarge";
                        </p>
                     </div>
                 </div>
-                <div class='grid__item column-25 column-50--q-medium column--q-small column60--q-xlarge'>
+                <div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'>
                    <div class='pink-block block--s'>
                         <p>
                             1
                         </p>
                     </div>
                 </div>
-                <div class='grid__item column-25 column-50--q-medium column--q-small column60--q-xlarge'>
+                <div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'>
                    <div class='pink-block block--s'>
                         <p>
                             1
                         </p>
                     </div>
                 </div>
-                <div class='grid__item column-25 column-50--q-medium column--q-small column60--q-xlarge'>
+                <div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'>
                    <div class='pink-block block--s'>
                         <p>
                             1

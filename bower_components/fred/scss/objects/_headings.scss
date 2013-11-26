@@ -1,11 +1,14 @@
-.page-header {
-    padding-bottom: $bs--xxs;
+.heading {
     > :first-child {
         margin-top:0;
-
-    }
-    //quick fix need to change this
-    > span {
-        font-weight: normal;
     }
 }
+
+    .heading--keyline {
+        padding-bottom: $bs--xxs;
+        border-bottom: solid 1px $hr-colour;
+    }
+
+    .heading__subheading {
+        font-weight: normal;
+    }

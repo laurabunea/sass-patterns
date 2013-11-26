@@ -23,12 +23,8 @@
     $ieOpacity: 100 * $value;
     opacity: $value;
     filter: alpha(opacity=#{$ieOpacity});
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{50})";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$ieOpacity})";
 }
-
-.overlay--75    { @include opacity(0.75); }
-.overlay--50    { @include opacity(0.5); }
-.overlay--25    { @include opacity(0.25);}
 
 
 // Simple theme mixins
@@ -104,12 +100,73 @@
     @return #{($size / $context)}em;
 }
 
+
+// Make nice media query namespaces from the variables file
+@function fred-prefixed-breakpoint($name) {
+    @if $name == "default" {
+        @return "";
+    } @else {
+        @return $breakpoint-classname-prefix + unquote($name);
+    }
+}
+
+// Get property names
+@function fred-property-by-shorthand($val) {
+    @if $val == "mt" {
+        @return "margin-top";
+    }
+    @if $val == "mb" {
+        @return "margin-bottom";
+    }
+    @if $val == "mr" {
+        @return "margin-right";
+    }
+    @if $val == "ml" {
+        @return "margin-left";
+    }
+    @if $val == "pt" {
+        @return "padding-top";
+    }
+    @if $val == "pb" {
+        @return "padding-bottom";
+    }
+    @if $val == "pr" {
+        @return "padding-right";
+    }
+    @if $val == "pl" {
+        @return "padding-left";
+    }
+    @else {
+        @return "padding";
+    }
+}
+
 // Spacing helpers
-// ----------------------------------------------------------------------------
-@mixin sizer($class, $prefixes, $property, $array) {
+@mixin fred-sizer($class: false, $sizePrefixes: false, $mediaQuery: false, $property: false, $array: false) {
     $index:1;
-    @each $prefix in $prefixes {
-        .#{$class + $prefix} { #{$property}: nth($array, $index)  }
+    @each $size in $sizePrefixes {
+        $className: $class + $size;
+        @if $mediaQuery {
+            $className: $className + fred-prefixed-breakpoint($mediaQuery);
+        }
+
+        .#{$className} { #{$property}: nth($array, $index)  }
         $index: $index + 1;
+    }
+}
+
+@mixin fred-breakpoint-sizer($breakpointList, $classList) {
+    @each $size in $breakpointList {
+        @if $size == "default" {
+            @each $class in $classList {
+                @include fred-sizer($class, $sizePrefixes, $size, fred-property-by-shorthand($class), $sizes);
+            }
+        } @else {
+            @include media($size) {
+                @each $class in $classList {
+                    @include fred-sizer($class, $sizePrefixes, $size, fred-property-by-shorthand($class), $sizes);
+                }
+            }
+        }
     }
 }

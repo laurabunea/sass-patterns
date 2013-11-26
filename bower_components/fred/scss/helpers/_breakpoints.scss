@@ -28,6 +28,12 @@
             @content;
         }
     }
+    // Deal with the default case (no media query)
+    @else if $breakpoint == "default" {
+        @content;
+    }
+    // If no breakpoint is passed, scope the content to browsers that support
+    // media queries only.
     @else {
         @media only screen {
             @content;

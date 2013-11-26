@@ -72,10 +72,9 @@ $bs--xxxl:                      $base-spacing-unit * 4;     // 96px
 $base-spacing: 24;
 $base-spacing--xs:  $base-spacing / 2;
 
+// Layout - blocks
+// -----------------------------------------------------------------------------
 
-
-
-// Layout - block sizes
 $block--xxxs:                   $bs--xxxs  $bs--xxxs;        // 6px 6px
 $block--xxs:                    $bs--xxxs $bs--xxs;         // 6px 8px
 $block--xs:                     $bs--xxs $bs--xs;           // 8px 12px
@@ -87,16 +86,16 @@ $block--xxl:                    $bs--xl $bs--xxl;           // 48px 72px
 $block--xxxl:                   $bs--xxl $bs--xxxl;         // 72px 96px
 
 $sizePrefixes:
-    "--0",
-    "--xxxs",
-    "--xxs",
-    "--xs",
-    "--s",
-    "--m",
-    "--l",
-    "--xl",
-    "--xxl",
-    "--xxxl";
+    "-0",
+    "-xxxs",
+    "-xxs",
+    "-xs",
+    "-s",
+    "-m",
+    "-l",
+    "-xl",
+    "-xxl",
+    "-xxxl";
 
 $sizes:
     $bs--0,
@@ -110,9 +109,33 @@ $sizes:
     $bs--xxl,
     $bs--xxxl;
 
+$blockSizes:
+    $block--xxxs,
+    $block--xxs,
+    $block--xs,
+    $block--s,
+    $block--m,
+    $block--l,
+    $block--xl,
+    $block--xxl,
+    $block--xxxl,
+    $block--xxxl;
 
+
+// -----------------------------------------------------------------------------
 // Media queries
 // -----------------------------------------------------------------------------
+
+// Media query prefixes
+
+$breakpoint-none:"";
+$breakpoint-xxlarge-name: "xxlarge";
+$breakpoint-xlarge-name: "xlarge";
+$breakpoint-large-name: "large";
+$breakpoint-medium-name: "medium";
+$breakpoint-small-name: "small";
+$breakpoint-classname-prefix: "--q-";
+
 $breakpoint-xsmall:     25em;
 $breakpoint-small:      30em; // Portrait regular mobiles//480px
 $breakpoint-medium:     48em; // Skinny 768px
@@ -120,15 +143,30 @@ $breakpoint-large:      60em; // Desktop 960px
 $breakpoint-xlarge:     75em; // Wide 1200px
 $breakpoint-xxlarge:    87.5em; // Wide 1200px
 
-$grid-column-name:          "column";
-$grid-column-name-small:    "column-small";
-$grid-column-name-medium:   "column-medium";
-$grid-column-name-large:    "column-large";
-$grid-column-name-xlarge:   "column-xlarge";
+
+// -----------------------------------------------------------------------------
+// Grid
+// -----------------------------------------------------------------------------
+
+$fred-grid-breakpoints:     default, small, medium, large;
+$grid-column-name:          "col";
+$grid-divisions:            3, 4, 5, 10;
+$grid-float-padding:        1em; // false to disable.
 
 
+
+//$grid-column-name-small:    "column-#{$breakpoint-classname-prefix + $breakpoint-small-name}";
+//$grid-column-name-medium:   "column-#{$breakpoint-classname-prefix + $breakpoint-medium-name}";
+//$grid-column-name-large:    "column-#{$breakpoint-classname-prefix + $breakpoint-large-name}";
+//$grid-column-name-xlarge:   "column-#{$breakpoint-classname-prefix + $breakpoint-xlarge-name}";
+//$grid-column-name-xxlarge:  "column-#{$breakpoint-classname-prefix + $breakpoint-xxlarge-name}";
+
+
+
+// -----------------------------------------------------------------------------
 // Colours
 // -----------------------------------------------------------------------------
+
 $bg-color:                      #EEEEEE;
 $base-font-color:               #2E2F2B;
 $hr-colour:                     #e5e5e5;
@@ -145,3 +183,19 @@ $text-warning:                  #c09853;
 $text-danger:                   #b94a48;
 $text-muted:                    #999;
 
+
+
+// -----------------------------------------------------------------------------
+// Fred config
+// -----------------------------------------------------------------------------
+
+// These instruct Fred on how to compile just the bits you want.
+
+
+$fred-block-breakpoints: default, small, medium, large;
+
+$fred-margin-breakpoints: default, small, medium, large;
+$fred-margin-types: "mt", "mb";
+
+$fred-padding-breakpoints: default, small, medium, large;
+$fred-padding-types: "pt";
