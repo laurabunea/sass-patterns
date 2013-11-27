@@ -237,12 +237,12 @@
 <code class="language-markup">
 /*  Example 1  */
 &lt;div class='block-xxxs'&gt;
-    block-xs
+    block-xxxs
 &lt;/div&gt;
 
 /*  Example 2  */
 &lt;div class='block-xxs'&gt;
-    block-xs
+    block-xxs
 &lt;/div&gt;
 
 /*  Example 3  */
@@ -319,8 +319,8 @@ and so on.....
         </h4>
 
         <p>
-            These building blocks work in exactly the same way as the ones above</a>. 
-            The only difference is that they have an extra suffix on the end ..
+            To make the blocks work on different devices all you need to do is add an extra suffix onto the classnames mentioned above.
+            This suffix relates to the breakpoint you want to target.
         </p>
         <!--  code block starts -->
         <div class=' block-s tt-block'> 
@@ -329,23 +329,15 @@ and so on.....
             </h4>
             <pre>
 <code class="language-css">
-// Media queries breakpoints
+// Extra suffix
 // -------------------------------------------------- 
++ --q-small     // Portrait regular mobiles//480px
++ --q-medium    // Tablet 768px
++ --q-large     // Desktop 960px
++ --q-xlarge    // Wide 1200px
 
-$small:                        30em;//Portrait regular mobiles//480px
-$medium:                       48em;//Skinny 768px
-$large:                        60em;//Desktop 960px 
-$xlarge:                       75em;//Wide 1200px
 
-// Media queries suffixs 
-// -------------------------------------------------- 
-$breakpoint-none:"";
-$breakpoint-small-classname: "--q-small";
-$breakpoint-medium-classname: "--q-medium";
-$breakpoint-large-classname: "--q-large";
-$breakpoint-xlarge-classname: "--q-xlarge";
-
-// Class examples
+// Block examples
 // --------------------------------------------------
 
 //xs block default ( displays on all breakpoints )
@@ -478,6 +470,9 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             </h4>
             <pre>
 <code class='language-markup'>
+    &lt;span class='caret'&gt;&lt;/span&gt;
+
+    &lt;span class='caret caret--rev'&gt;&lt;/span&gt;
 </code>
             </pre>
         </div><!--  code block ends -->
@@ -487,6 +482,14 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
+            <p>
+                Caret: <span class='caret'></span>
+            </p>
+            
+            <p>
+                Reversed Caret: <span class='caret caret--rev'></span>
+            </p>
+            
         </div><!--  hello world block ends -->
     </div><!-- Buttons ends-->
 
