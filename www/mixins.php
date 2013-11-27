@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?>
 
-<div class='block--l block-small--s mb--l clearfix pt-block'>
+<div class='block-l block-small--s mb-l clearfix pt-block'>
     <div class='page-header pt-page-header'>
         <h1>
             Mixins
@@ -16,7 +16,7 @@
         intro text
     </p>
 
-    <div class='page-header pt-page-header m--xl'>
+    <div class='page-header pt-page-header mt-xl'>
         <h1>
 
             Mixins
@@ -26,7 +26,7 @@
         </h1>
     </div>
 
-    <ul class='list-styled--decimal m--m'>
+    <ul class='list-styled--decimal mt-m'>
         <li>
             <a href='#mixinAnchor1'>
                 Vendor
@@ -69,15 +69,15 @@
         </li>
     </ul><!--list unstyled ends-->
     <!-- /****************************************  Vendor block  *******************************/ -->
-    <hr class='m--l'>
-    <div class='m--l' id='mixinAnchor1'>
+    <hr class='mt-l'>
+    <div class='mt-l' id='mixinAnchor1'>
         <h2 class='h3'>
            01. Vendor 
         </h2>
 
         <p>This mixin takes the hassle out of defining one css-attribute in all vendor-specific prefixes (-moz, -webkit, -o, -ms).</p>
         <!--  code block starts -->
-        <div class='block--s tt-block'>
+        <div class='block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
@@ -100,24 +100,24 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='img-rounded m--xm  testbox-100-100 green-block'>
+            <div class='img-rounded mt-xm  testbox-100-100 green-block'>
             </div>
         
         </div><!--  hello world block ends -->
     </div><!-- mixin-vendor ends-->
-    <hr class='m--l'>
+    <hr class='mt-l'>
     <!-- /****************************************  Media break point block  *******************************/ -->
 
-    <div class='m--l' id='mixinAnchor2'>
+    <div class='mt-l' id='mixinAnchor2'>
         <h2 class='h3'>
             02. Media break point 
         </h2>
         <!--  code block starts -->
-        <div class='block--s tt-block'>
+        <div class='block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
@@ -142,24 +142,24 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='element block--stacked block--s'>
+            <div class='element block-stacked block-s'>
                 resize the browser
             </div>
         </div><!--  hello world block ends -->
     </div><!-- mixin-break-point ends-->
-    <hr class='m--l'>
+    <hr class='mt-l'>
     <!-- /****************************************  Opacity block  *******************************/ -->
 
-    <div class='m--l' id='mixinAnchor1'>
+    <div class='mt-l' id='mixinAnchor1'>
         <h2 class='h3'>
            03. Opacity 
         </h2>
         <!--  code block starts -->
-        <div class='block--s tt-block'>
+        <div class='block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
@@ -189,29 +189,29 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <div class='grid'>
-                <div class='overlay--25 m--m  testbox-100-100 block--s green-block'>
+                <div class='overlay--25 mt-m  testbox-100-100 block-s green-block'>
                     <p>25% opacity</p>
                 </div>
 
-                <div class='overlay--50 m--m  testbox-100-100 block--s green-block'>
+                <div class='overlay--50 mt-m  testbox-100-100 block-s green-block'>
                     <p>50% opacity</p>
                 </div>
 
-                <div class='m--m  testbox-100-100 block--s green-block'>
+                <div class='mt-m  testbox-100-100 block-s green-block'>
                     <p>Block with out an opacity class</p>
                 </div>
             </div>
         </div><!--  hello world block ends -->
     </div><!-- mixin-opacity ends-->
-    <hr class='m--l'>
+    <hr class='mt-l'>
     <!-- /****************************************  Placeholder  *******************************/ -->
 
-    <div class='m--l' id='mixinAnchor4'>
+    <div class='mt-l' id='mixinAnchor4'>
         <h2 class='h3'>
             04. Placeholder Mixin 
         </h2>
@@ -219,7 +219,7 @@
 
         <p>This mixin takes the hassle out of defining placeholder prefixes (:-moz-placeholder, ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder).</p>
         
-        <div class='block--s tt-block'>
+        <div class='block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
@@ -244,20 +244,20 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <form class='m--xm '>
+            <form class='mt-xm '>
                 <input class='pink-input-text' type="text" name="fname" placeholder="First name">
             </form>
         
         </div><!--  hello world block ends -->
     </div><!-- mixin-vendor ends-->
-    <hr class='m--l'>
+    <hr class='mt-l'>
     <!-- /****************************************  Theme mixin  *******************************/ -->
 
-    <div class='m--l' id='mixinAnchor5'>
+    <div class='mt-l' id='mixinAnchor5'>
         <h2 class='h3'>
             05. Theme Mixin 
         </h2>
@@ -268,7 +268,7 @@
             <span style='color:red;font-weight:bold'>QUESTION:</span> For now it the border elements are just extending the border selecter - should we pass in the border width and style as well or have a seperate border mixin .... Thoughts people 
         </p>
         
-        <div class=' block--s tt-block'>
+        <div class=' block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
@@ -293,11 +293,11 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='m--xm  blue-block block--s'>
+            <div class='mt-xm  blue-block block-s'>
                 <p>Some text</p>
             </div>
         
@@ -306,7 +306,7 @@
 
     <!-- /****************************************  Theme mixin  *******************************/ -->
 
-    <div class='m--l' id='mixinAnchor6'>
+    <div class='mt-l' id='mixinAnchor6'>
         <h2 class='h3'>
             06. Form validation
         </h2>
@@ -316,7 +316,7 @@
             Apply contextual and semantic states to individual form controls. 
         </p>
         
-        <div class='block--s tt-block'>
+        <div class='block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 scss code
             </h4>
@@ -340,11 +340,11 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='m--xm  blue-block block--s'>
+            <div class='mt-xm  blue-block block-s'>
                 <p>Some text</p>
             </div>
         

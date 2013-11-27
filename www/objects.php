@@ -2,15 +2,22 @@
     include 'header.php'; 
 ?>
 
-<div class='block--l block-small--s pt-block relative mb--l'>
+<div class='block-l block-s--q-small pt-block relative mb-l'>
     <img class='absolute fred' alt='Fred the fed' src='assets/images/fred-side.png'  />
     
-    <div class='page-header pt-page-header'>
+    <div class='heading heading--keyline'>
         <h1>
             Objects
+            <!--<span class='heading__subheading tiny text-muted'> 
+                aka Fred's Lego
+            </span>-->
         </h1>
     </div>
-    <ul class='list-styled--decimal m--m'>   
+    <p class='mt-m'>
+        Notes to follow
+    </p>
+
+    <ul class=' list-styled--decimal mt-m'>   
         <li>
             <a href='#anchor1'>
                 Arrows
@@ -102,20 +109,25 @@
             </a>
         </li>
     </ul>
-    <!-- /*********************** Arrows ********************/ -->
+
+
+    <hr class='mt-l'/>
+
+    <!-- /******************************* Arrows **************************** / -->
     
-    <div class='m--l' id='anchor1'>
+    <div class='mt-l' id='anchor1'>
 
         <h2 class='h3'>
             01. Arrows
         </h2>
 
         <p> 
-            Notes
+            Apply the modifier classes to the parent. For instance the first example below will put an 
+            arrow in the top left corner of the containing div
         </p>
 
         <!-- code block starts -->
-        <div class=' block--s tt-block'>
+        <div class=' block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -145,26 +157,26 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='arrow--left m--xm block--xs blue-block'>
+            <div class='arrow--left mt-xm block-xs blue-block'>
                 <p> ... </p>
                 <i class='arrow arrow-top'></i>
             </div>
 
-            <div class='arrow--right m--xm block--xs blue-block'>
+            <div class='arrow--right mt-xm block-xs blue-block'>
                 <p> ... </p>
                 <i class='arrow arrow-top '></i>
             </div>
 
-            <div class='arrow--center m--xm block--xs blue-block'>
+            <div class='arrow--center mt-xm block-xs blue-block'>
                 <p> ... </p>
                 <i class='arrow arrow-bottom '></i>
             </div>
 
-            <div class='arrow--side m--xm block--xs blue-block'>
+            <div class='arrow--side mt-xm block-xs blue-block'>
                 <p> ... </p>
                 <i class='arrow arrow-left '></i>
             </div>
@@ -172,27 +184,30 @@
 
     </div><!-- arrows ends -->
 
-    <hr class='m--m'/>
+    <hr class='mt-l'/>
 
     <!-- /****************************************  Badges  *******************************/ -->
-    <div class='m--l' id='anchor2'>
+    <div class='mt-l' id='anchor2'>
         <h2 class='h3'>
             02. Badges
         </h2>
+        <p>
+            Easily highlight new or unread items by adding a class of 'badge' to a link.
+        </p>
         <!--  code block starts -->
-        <div class='block--s tt-block'>
+        <div class='block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
 <code class='language-markup'>
-&lt;a href='#'&gt; Inbox &lt;span class='pt-badge badge tiny'&gt;42&lt;/span&gt;&lt;/a&gt;
+&lt;a href='#'&gt; Inbox &lt;span class='badge'&gt;42&lt;/span&gt;&lt;/a&gt;
 </code>
             </pre>
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class=' block--stacked block--s st-block'>
+        <div class=' block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -202,22 +217,19 @@
         </div><!-- hello world block ends -->
     </div><!-- badges ends-->
     
-    <hr class='m--m'/>
+    <hr class='mt-l'/>
 
     <!-- /****************************************  Blocks  *******************************/ -->
-    <div class='m--l' id='layoutAnchor3' >
+    <div class='mt-l' id='layoutAnchor3' >
         <h2 class='h3'>
             03. Blocks
         </h2>
 
-        <h3 class='h4'>
-            How blocks work
-        </h3>
         <p>
             The prefix is 'block' and the suffix is the size of the padding you want to use. This ranges from (-xxxs to -xxxl).
         </p>
         <!--  code block starts -->
-        <div class=' block--s tt-block'> 
+        <div class=' block-s tt-block'> 
             <h4 class='tiny uppercase text-muted'>
                 Code
             </h4>
@@ -244,65 +256,65 @@ and so on.....
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
-            <div class=' block--xxxs green-block '>
+            <div class=' block-xxxs green-block '>
                 <p>
-                    block--xxxs
+                    block-xxxs
                 </p>
             </div><!-- block xs ends-->
-            <div class=' block--xxs green-block '>
+            <div class=' block-xxs green-block '>
                 <p>
-                    block--xxs
+                    block-xxs
                 </p>
             </div><!-- block xs ends-->
-            <div class=' block--xs green-block '>
+            <div class=' block-xs green-block '>
                 <p>
-                    block--xs
+                    block-xs
                 </p>
             </div><!-- block xs ends-->
 
-            <div class=' block--s green-block'>
+            <div class=' block-s green-block'>
                 <p>
-                    block--s
+                    block-s
                 </p>
             </div><!-- block ends-->
 
-            <div class='block--m green-block'>
+            <div class='block-m green-block'>
                 <p>
-                    block--m
+                    block-m
                 </p>
             </div><!-- block ends-->
 
-            <div class='block--l green-block '>
+            <div class='block-l green-block '>
                 <p>
-                    block--l
+                    block-l
                 </p>
             </div><!-- block xl ends-->
 
-            <div class='block--xl green-block '>
+            <div class='block-xl green-block '>
                 <p>
-                    block--xl
+                    block-xl
                 </p>
             </div><!-- block xl ends-->
 
-            <div class='block--xxl green-block '>
+            <div class='block-xxl green-block '>
                 <p>
-                    block--xxl
+                    block-xxl
                 </p>
             </div><!-- block xl ends-->
 
-            <div class='block--xxxl green-block '>
+            <div class='block-xxxl green-block '>
                 <p>
-                    block--xxxl
+                    block-xxxl
                 </p>
             </div><!-- block xl ends-->
 
         </div><!--  hello world block ends -->
     
-        <h3 class='h4 m--l'>
+        <h3 class='h4 mt-l'>
              b) Responsive blocks
         </h4>
 
@@ -311,7 +323,7 @@ and so on.....
             The only difference is that they have an extra suffix on the end ..
         </p>
         <!--  code block starts -->
-        <div class=' block--s tt-block'> 
+        <div class=' block-s tt-block'> 
             <h4 class='tiny uppercase text-muted'>
                 scss 
             </h4>
@@ -351,9 +363,9 @@ $breakpoint-xlarge-classname: "--q-xlarge";
 
 // Code example
 // -------------------------------------------------- 
-&lt;div class='block--m block-xs--q-small block-s--q-medium block-l--q-xlarge green-block '&gt;
+&lt;div class='block-m block-xs--q-small block-s--q-medium block-l--q-xlarge green-block '&gt;
     &lt;p&gt;
-        &lt;strong>desktop:&lt;/strong&gt;    block--m
+        &lt;strong>desktop:&lt;/strong&gt;    block-m
         &lt;strong>mobile:&lt;/strong&gt;     block-xs--q-small
         &lt;strong>tablet:&lt;/strong&gt;     block-s--q-medium
         &lt;strong>wide:&lt;/strong&gt;       block-l--q-xlarge 
@@ -365,14 +377,14 @@ $breakpoint-xlarge-classname: "--q-xlarge";
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
             <p>Example one</p>
-            <div class='block--m block-xs--q-small block-s--q-medium block-l--q-xlarge green-block'>
+            <div class='block-m block-xs--q-small block-s--q-medium block-l--q-xlarge green-block'>
                 <p>
-                    <strong>desktop:</strong>    block--m<br />
+                    <strong>desktop:</strong>    block-m<br />
                     <strong>mobile:</strong>     block-xs--q-small<br />
                     <strong>skinny:</strong>     block-s--q-medium<br />
                     <strong>wide:</strong>       block-l--q-xlarge 
@@ -382,17 +394,17 @@ $breakpoint-xlarge-classname: "--q-xlarge";
         </div><!--  hello world block ends -->
     </div><!--Building blocks section ends-->
 
-    <hr class='m--l' />
+    <hr class='mt-l' />
 
     <!-- /****************************************  Breadcrumbs *******************************/ -->
     
-    <div class='m--l' id='anchor4'>
+    <div class='mt-l' id='anchor4'>
         <h2 class='h3'>
            04. Breadcrumbs
         </h2>
         
         <!--  code block starts -->
-        <div class='block--s m--m tt-block'>
+        <div class='block-s mt-m tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -408,11 +420,11 @@ $breakpoint-xlarge-classname: "--q-xlarge";
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <ol class='breadcrumbs pt-breadrumbs block--xxs xm'>
+            <ol class='breadcrumbs pt-breadrumbs block-xxs xm'>
                 <li><a href='#'>Home</a></li>
                 <li><a href='#'>Page</a></li>
                 <li class='#'>Sub page</li>
@@ -420,11 +432,11 @@ $breakpoint-xlarge-classname: "--q-xlarge";
         </div><!--  hello world block ends -->
     </div><!-- components-bread-crumbs ends-->
     
-    <hr class='m--l' />
+    <hr class='mt-l' />
 
     <!-- /****************************************  Buttons *******************************/ -->
     
-    <div class='m--l' id='anchor5'>
+    <div class='mt-l' id='anchor5'>
         <h2 class='h3'>
            05. Buttons
         </h2>
@@ -432,7 +444,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             As buttons is pretty big we will show this some where else...
         </p>
         <!--  code block starts -->
-        <div class='block--s m--m tt-block'>
+        <div class='block-s mt-m tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -443,7 +455,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -452,7 +464,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
 
     <!-- /****************************************  Core *******************************/ -->
     
-    <div class='m--l' id='anchor6'>
+    <div class='mt-l' id='anchor6'>
         <h2 class='h3'>
            06. Carrets
         </h2>
@@ -460,7 +472,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
            ...
         </p>
         <!--  code block starts -->
-        <div class='block--s m--m tt-block'>
+        <div class='block-s mt-m tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -471,7 +483,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -480,7 +492,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
 
     <!-- /****************************************  Close *******************************/ -->
     
-    <div class='m--l' id='anchor7'>
+    <div class='mt-l' id='anchor7'>
         <h2 class='h3'>
            07. Close
         </h2>
@@ -488,7 +500,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             ...
         </p>
         <!--  code block starts -->
-        <div class='block--s m--m tt-block'>
+        <div class='block-s mt-m tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -499,7 +511,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -508,7 +520,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
 
     <!-- /****************************************  Core *******************************/ -->
     
-    <div class='m--l' id='anchor8'>
+    <div class='mt-l' id='anchor8'>
         <h2 class='h3'>
            08. Core
         </h2>
@@ -516,7 +528,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             ...
         </p>
         <!--  code block starts -->
-        <div class='block--s m--m tt-block'>
+        <div class='block-s mt-m tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -527,7 +539,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -536,7 +548,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
 
     <!-- /****************************************  Forms *******************************/ -->
     
-    <div class='m--l' id='anchor9'>
+    <div class='mt-l' id='anchor9'>
         <h2 class='h3'>
            09. Forms
         </h2>
@@ -544,7 +556,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             ...
         </p>
         <!--  code block starts -->
-        <div class='block--s m--m tt-block'>
+        <div class='block-s mt-m tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -555,7 +567,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -564,7 +576,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
     
     <!-- /**************************************** Grid  *******************************/ -->
 
-    <div class='m--l' id='layoutAnchor10'>
+    <div class='mt-l' id='layoutAnchor10'>
         <h2>
             10. Grids
         </h2>
@@ -575,7 +587,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             Sets the child elements to take up full justified width of the parent. The prefix class is 'column' and the suffix is the percentage.
         </p>
         <!--  code block ends -->
-        <div class='block--s tt-block'>
+        <div class='block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -584,7 +596,7 @@ $breakpoint-xlarge-classname: "--q-xlarge";
 &lt;p&gt;Example one:&lt;/p&gt; 
 &lt;div class='grid'&gt;
     &lt;div class='grid__item col'&gt;
-       &lt;div class='pink-block block--s'&gt;
+       &lt;div class='pink-block block-s'&gt;
             &lt;p&gt;
                 full width
             &lt;/p&gt;
@@ -594,14 +606,14 @@ $breakpoint-xlarge-classname: "--q-xlarge";
 &lt;p&gt;Example two:&lt;/p&gt;
 &lt;div class='grid'&gt;
     &lt;div class='grid__item col-2-4'&gt;
-        &lt;div class='blue-block block--s'&gt;
+        &lt;div class='blue-block block-s'&gt;
             &lt;p&gt;
                 50%
             &lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class='grid__item col-2-4 '&gt;
-        &lt;div class='blue-block block--s'&gt;
+        &lt;div class='blue-block block-s'&gt;
             &lt;p&gt;
                 50%
             &lt;/p&gt;
@@ -612,11 +624,11 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             </pre>
         </div>
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'> 
+        <div class='block-stacked block-s st-block'> 
             <p>Example one:</p> 
             <div class='grid'>
                 <div class='grid__item col'>
-                   <div class='pink-block block--s'>
+                   <div class='pink-block block-s'>
                         <p>
                             full width
                         </p>
@@ -626,14 +638,14 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             <p>Example two:</p>
             <div class='grid'>
                 <div class='grid__item col-2-4' >
-                    <div class='blue-block block--s'>
+                    <div class='blue-block block-s'>
                         <p>
                             50%
                         </p>
                     </div>
                 </div>
                 <div class='grid__item col-2-4'>
-                    <div class='blue-block block--s'>
+                    <div class='blue-block block-s'>
                         <p>
                             50%
                         </p>
@@ -643,28 +655,28 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             <p>Example three:</p>
             <div class='grid'>
                 <div class='grid__item col-1-4'>
-                    <div class='green-block block--s'>
+                    <div class='green-block block-s'>
                         <p>
                             25%
                         </p>
                     </div>
                 </div>
                 <div class='grid__item col-1-4'>
-                    <div class='green-block block--s'>
+                    <div class='green-block block-s'>
                         <p>
                             25%
                         </p>
                     </div>
                 </div>
                 <div class='grid__item col-1-4 '>
-                    <div class='green-block block--s'>
+                    <div class='green-block block-s'>
                         <p>
                             25%
                         </p>
                     </div>
                 </div>
                 <div class='grid__item col-1-4 '>
-                    <div class='green-block block--s'>
+                    <div class='green-block block-s'>
                         <p>
                             25%
                         </p>
@@ -674,14 +686,14 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             <p>Example four:</p>
             <div class='grid'>
                 <div class='grid__item col-6-10'>
-                    <div class='st-block block--s'>
+                    <div class='st-block block-s'>
                         <p>
                             60%
                         </p>
                     </div>
                 </div>
                 <div class='grid__item col-4-10'>
-                    <div class='st-block block--s'>
+                    <div class='st-block block-s'>
                         <p>
                             40%
                         </p>
@@ -691,14 +703,14 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             <p>Example five:</p>
             <div class='grid'>
                 <div class='grid__item col-8-10'>
-                    <div class='tt-block block--s'>
+                    <div class='tt-block block-s'>
                         <p>
                             80%
                         </p>
                     </div>
                 </div>
                 <div class='grid__item col-2-10'>
-                    <div class='tt-block block--s'>
+                    <div class='tt-block block-s'>
                         <p>
                             20%
                         </p>
@@ -714,28 +726,28 @@ $breakpoint-xlarge-classname: "--q-xlarge";
 
             <div class='grid grid--middle'>
                 <div class='col-1-4'>
-                    <div class='green-block block--s'>
+                    <div class='green-block block-s'>
                         <p>
                             1/4
                         </p>
                     </div>
                 </div>
                 <div class='col-1-4'>
-                    <div class='green-block block--s'>
+                    <div class='green-block block-s'>
                         <p>
                             1/4
                         </p>
                     </div>
                 </div>
                 <div class='col-1-4'>
-                    <div class='green-block block--s'>
+                    <div class='green-block block-s'>
                         <p>
                             1/4
                         </p>
                     </div>
                 </div>
                 <div class='col-1-4'>
-                   <div class='green-block block--s'>
+                   <div class='green-block block-s'>
                         <p>
                             1/4
                         </p>
@@ -744,14 +756,14 @@ $breakpoint-xlarge-classname: "--q-xlarge";
             </div>   
         </div><!--  hello world block ends -->
     
-        <h3 class='h4 m--l'>
+        <h3 class='h4 mt-l'>
             Inline Grid - Responsive
         </h3>
         <p>
          This works exactly the same as what's mentioned above the only thing that changes is a media query suffix gets added.
         </p>
         <!--  code block starts -->
-        <div class=' block--s tt-block'> 
+        <div class=' block-s tt-block'> 
             <h4 class='tiny uppercase text-muted'>
                 Media query suffix: 
             </h4>
@@ -770,28 +782,28 @@ $breakpoint-classname-prefix: "--q-";
 
 &lt;div class='grid'&gt;
     &lt;div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'&gt;
-       &lt;div class='pink-block block--s'&gt;
+       &lt;div class='pink-block block-s'&gt;
             &lt;p&gt;
                 1
            &lt;/p&gt;
         &lt;/div>
     &lt;/div>
     &lt;div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'&gt;
-       &lt;div class='pink-block block--s'&gt;
+       &lt;div class='pink-block block-s'&gt;
             &lt;p&gt;
                 1
             &lt;/p&gt;
         &lt;/div>
     &lt;/div>
     &lt;div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'&gt;
-       &lt;div class='pink-block block--s'&gt;
+       &lt;div class='pink-block block-s'&gt;
             &lt;p&gt;
                 1
             &lt;/p&gt;
         &lt;/div>
     &lt;/div>
     &lt;div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'&gt;
-       &lt;div class='pink-block block--s'&gt;
+       &lt;div class='pink-block block-s'&gt;
             &lt;p&gt;
                 1
             &lt;/p&gt;
@@ -803,7 +815,7 @@ $breakpoint-classname-prefix: "--q-";
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
@@ -811,7 +823,7 @@ $breakpoint-classname-prefix: "--q-";
             
             <div class='grid'>
                 <div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'>
-                   <div class='pink-block block--s'>
+                   <div class='pink-block block-s'>
                         <p>
                             1<!--<strong>Desktop:</strong> 1/4 <br />
                             <strong>Skinny:</strong> 1/2 <br />
@@ -821,21 +833,21 @@ $breakpoint-classname-prefix: "--q-";
                     </div>
                 </div>
                 <div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'>
-                   <div class='pink-block block--s'>
+                   <div class='pink-block block-s'>
                         <p>
                             1
                         </p>
                     </div>
                 </div>
                 <div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'>
-                   <div class='pink-block block--s'>
+                   <div class='pink-block block-s'>
                         <p>
                             1
                         </p>
                     </div>
                 </div>
                 <div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'>
-                   <div class='pink-block block--s'>
+                   <div class='pink-block block-s'>
                         <p>
                             1
                         </p>
@@ -849,9 +861,578 @@ $breakpoint-classname-prefix: "--q-";
         </h3>
     </div><!--Inline grid section starts-->
 
-    <hr class='m--l'>
+    <!-- /****************************************  Headings *******************************/ -->
+    
+    <div class='mt-l' id='anchor11'>
+        <h2 class='h3'>
+           11. Headings
+        </h2>
+        <p>
+            Notes
+        </p>
+        <!--  code block starts -->
+        <div class='block-s mt-m tt-block'>
+            <h4 class='tiny uppercase text-muted'>
+                code
+            </h4>
+            <pre>
+<code class='language-markup'>
+&lt;div class='heading heading--keyline'&gt;
+    &lt;h1&gt;
+        Heading
+       &lt;span class='heading__subheading tiny text-muted'&gt;
+            Sub heading
+        &lt;/span&gt;
+    &lt;/h1&gt;
+&lt;/div&gt;
+</code>
+            </pre>
+        </div><!--  code block ends -->
 
+        <!--  hello world block starts -->
+        <div class='block-stacked block-s st-block'>
+            <h4 class='tiny uppercase text-muted'>
+                hello world
+            </h4>
+            <div class='heading heading--keyline mt-m'>
+                <h1 >
+                    Heading
+                    <span class='heading__subheading tiny text-muted'> 
+                        Sub heading
+                    </span>
+                </h1>
+            </div>
+        </div><!--  hello world block ends -->
+    </div><!-- Buttons ends-->
 
+    <hr class='mt-l'>
+    <!-- /****************************************  Icon blocks  *******************************/ -->
+    
+    <div class='mt-l' id='anchor12'>
+        <h2  class='h3'>
+           12. Icons with text
+        </h2>
+        <p>
+            Notes
+        </p>
+
+        <!--  code block starts -->
+        <div class=' block-s tt-block'>
+            <h4 class='tiny uppercase text-muted'>
+                code
+            </h4>
+            <pre>
+<code class="language-markup">
+&lt;a class='media--rev' href='#'&gt;
+    &lt;i class='i icon-placeholder'&gt;&lt;/i&gt;
+    A link with an icon
+&lt;/a&gt;
+
+&lt;p class='media--rev' href='#'&gt;
+    A paragraph with an icon on the other side
+    &lt;i class='i icon-placeholder'&gt;&lt;/i&gt;
+&lt;/p&gt;
+</code>
+        </pre>
+        </div><!--  code block ends -->
+
+        <!--  hello world block starts -->
+        <div class='block-stacked block-s st-block'>
+            <h4 class='tiny uppercase text-muted'>
+                hello world
+            </h4>
+            <p>
+                <a class='icon-text xm' href='#'> 
+                    <i class='i icon-placeholder'></i>
+                    A link with an icon
+                </a>
+            </p>
+            
+            <p class='icon-text xm' href=''> 
+                A paragraph with an icon on the other side
+                <i class='i icon-placeholder'></i>
+            </p>
+            
+        </div><!--  hello world block ends -->
+    </div><!-- layout-media-block ends-->
+    <hr class='mt-l'>
+
+    <!-- /****************************************  Responsive images  *******************************/ -->
+    <div class='mt-l' id='anchor13' >
+        <h2 class='h3'>
+            13. Responsive images
+        </h2>
+        <p>
+            This applies max-width: 100%; and height: auto; to the image so that it scales nicely to 
+            the parent element.
+        </p>
+        <!--  code block starts -->
+        <div class=' block-s tt-block'> 
+            <h4 class='tiny uppercase text-muted'>
+                scss 
+            </h4>
+            <pre>
+<code class="language-css">
+&lt;img src='...' class='img-responsive' alt='Responsive image'&gt;
+
+</code>
+            </pre>
+        </div><!--  code block ends -->
+
+        <!--  hello world block starts -->
+        <div class='block-stacked block-s st-block'>
+            <h4 class='tiny uppercase text-muted'>
+                hello world
+            </h4> 
+          
+            
+            <div class='grid'>
+                <div class='grid__item g--1-2' >
+                    <img src='assets/images/fred.png' alt='' class='img--responsive' />
+                </div>
+                <div class='grid__item g--1-2'>
+                    <div class='arrow--side blue-block block-m'>
+                        <p>Resize the browser so you can see me shrink </p>
+                        <i class='arrow arrow-left'></i>
+                    </div>
+                </div>
+            </div>
+        </div><!--  hello world block ends -->
+    </div><!--Responsive image section starts-->
+
+    <!-- /****************************************  List styles  *******************************/ -->
+    <hr class='mt-l'>
+    <div class='mt-l' id='anchor14'>
+
+        <h2 class='h3'>
+            14. List styles
+        </h2>
+
+        <p>
+            Notes
+        </p>
+
+        <div class=''>
+            <h3 class='h4'>
+                a) Un styled list
+            </h3>
+
+            <!-- code block ends -->
+            <div class=' block-s tt-block'>
+                <h4 class='tiny uppercase text-muted'>
+                    code
+                </h4>
+                <pre>
+<code class='language-markup'>
+&lt;ul class='list--unstyled'&gt;
+    &lt;li&gt; unstyled list item 1 &lt;/li&gt;
+    &lt;li&gt; unstyled list item 2 &lt;/li&gt;
+&lt;ul&gt;
+</code>
+            </pre>
+            </div><!-- code block ends -->
+
+            <!-- hello world block starts -->
+            <div class='block-stacked block-s st-block'>
+                <h4 class='tiny uppercase text-muted'>
+                    hello world
+                </h4>
+                <ul class='list--unstyled '>
+                    <li>
+                        unstyled list item 1
+                    </li>
+                    <li>
+                        unstyled list item 2
+                    </li>
+                </ul>
+            </div><!-- hello world block ends -->
+        </div>
+        
+        <div class='mt-l'>
+            <h3 class='h4'>
+                b) Styled list
+            </h3>
+            <!-- code block starts -->
+            <div class=' block-s tt-block'>
+                <h4 class='tiny uppercase text-muted'>
+                    code
+                </h4>
+                <pre>
+<code class='language-markup'>
+&lt;ul class='list-styled'&gt;
+    &lt;li&gt; Styled list item 1 &lt;/li&gt;
+    &lt;li&gt; Styled list item 2 &lt;/li&gt;
+&lt;ul&gt;
+</code>
+                </pre>
+            </div><!-- code block ends -->
+
+            <!-- hello world block starts -->
+            <div class='block-stacked block-s st-block'>
+                <h4 class='h tiny uppercase text-muted'>
+                    hello world
+                </h4>
+                <ul class='list-styled'>
+                    <li>
+                        Styled list item 1
+                    </li>
+                    <li>
+                        Styled list item 2
+                    </li>
+                </ul>
+            </div><!-- hello world block ends -->
+        </div>
+
+        <!-- 3. Inline list -->
+        <div class='mt-l'>
+            <h3 class='h4'>c) Inline list</h3>
+            <!-- code block starts -->
+            <div class=' block-s tt-block'>
+                <h4 class='tiny uppercase text-muted'>
+                    code
+                </h4>
+            <pre>
+<code class='language-markup'>
+&lt;ul class='list--inline'&gt;
+    &lt;li&gt; inline list item 1 &lt;/li&gt;
+    &lt;li&gt; inline list item 2 &lt;/li&gt;
+&lt;ul&gt;
+</code>
+            </pre>
+            </div><!-- code block ends -->
+
+            <!-- hello world block starts -->
+            <div class='block-stacked block-s st-block'>
+                <h4 class='tiny uppercase text-muted'>
+                    hello world
+                </h4>
+                <ul class='list--inline '>
+                    <li>
+                        inline list item 1
+                    </li>
+                    <li>
+                        inine list item 2
+                    </li>
+                </ul>
+            </div><!-- hello world block ends -->
+        </div>
+    </div><!-- typo-lists ends -->
+
+    <!-- /****************************************  Media blocks  *******************************/ -->
+
+    <div class='mt-l' id='anchor15'>
+        <h2 class='h3'>
+            15. Media blocks
+        </h2>
+        <p>
+            Float an image to the left, with a clearfixed block of content to the right.
+        </p>
+        <!--  code block starts -->
+        <div class=' block-s tt-block'>
+            <h4 class='tiny uppercase text-muted'>
+                code
+            </h4>
+            <pre>
+<code class="language-markup">
+&lt;div class='media'&gt;
+    &lt;img class='media__image' src='ssets/images/green-bird.jpg' alt='' /&gt;
+    &lt;div class='media__body'&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+<code class='language-markup'>
+&lt;div class='media--rev'&gt;
+    &lt;img class='media__image' src='ssets/images/green-bird.jpg' alt='' /&gt;
+    &lt;div class='media__body'&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+            </pre>
+        </div><!--  code block ends -->
+
+        <!--  hello world block starts -->
+        <div class='block-stacked block-s st-block'>
+            <h4 class='tiny uppercase text-muted'>
+                hello world
+            </h4>
+            <div class='media'>
+                <img src='assets/images/green-bird.jpg' class='media__image'>
+                <div class='media__body'>
+                    <p class='mt-0'>
+                        Uncle Bully was pashing when the pearler packing a sad event occured. Oh no! I'm beached as, this carked it seabed is as stoked as a flat stick kumara. Mean while, in a waka, Rhys Darby and Cardigan Bay were up to no good with a bunch of random milks.
+                    </p>
+                </div>
+            </div>
+
+            <div class='media--rev'>
+                <img src='assets/images/green-bird.jpg' class='media__image'>
+                <div class='media__body'>
+                   <p class=''>
+                    I'd slam that clam, good afterble constanoon. The snarky force of his burning my Vogel's was on par with Hercules Morse, as big as a horse's good as mate.
+                    </p>
+                </div>
+            </div>
+        </div><!--  hello world block ends -->
+    </div><!-- layout-media-block ends-->
+    
+    <hr class='mt-l'>
+
+    <!-- /****************************************  Radii  *******************************/ -->
+
+    <div class='mt-l' id='anchor16'>
+        <h2 class='h3'>
+            16. Radii
+        </h2>
+        <p>
+           Notes
+        </p>
+        <!--  code block starts -->
+        <div class=' block-s tt-block'>
+            <h4 class='tiny uppercase text-muted'>
+                code
+            </h4>
+            <pre>
+<code class="language-markup">
+
+</code>
+            </pre>
+        </div><!--  code block ends -->
+
+        <!--  hello world block starts -->
+        <div class='block-stacked block-s st-block'>
+            <h4 class='tiny uppercase text-muted'>
+                hello world
+            </h4>
+        </div><!--  hello world block ends -->
+    </div><!-- layout-media-block ends-->
+    
+    <hr class='mt-l'>
+    
+    <!-- /****************************************  Spacing *******************************/ -->
+    
+    <div class='mt-l' id='anchor17' >
+        <h2 class='h3'>
+            17. Spacing Helpers
+        </h2>
+        <p>
+            Notes here
+        </p>
+        <!--  code block starts -->
+        <div class=' block-s tt-block'> 
+            <h4 class='tiny uppercase text-muted'>
+                How it works
+            </h4>
+            <pre>
+<code class="language-css">
+/*
+* Spacing helpers:
+* -------------------------------
+*/
+
+/* Spacing Prefixes */
+
+//Margins
+.mt-        = margin-top
+.mb-       = margin-bottom
+.mr-       = margin-right
+.ml-       = margin-left
+
+//Padding
+.p--        = padding-top
+.pb-       = padding-bottom
+.pl-       = padding-left
+.pr-       = padding-right
+
+/* Suffix */
+
+//Size of spacing you want from 0 - xxxl
+0     
+xxxs  
+xxs   
+xs    
+s     
+m     
+l     
+xl    
+xxl   
+xxxl 
+
+//Examples
+
+/* This class would have a xxxs right margin */
+.mr-xxxs
+
+/* This class would have a large left padding */
+.pl-l
+
+/* Margin right SCSS code: */
+.mr-0     { margin-right:$bs--0; }
+.mr-xxxs  { margin-right:$bs--xxxs;}
+.mr-xxs   { margin-right:$bs--xxs; }
+.mr-xs    { margin-right:$bs--xs;}
+.mr-s     { margin-right:$bs--s;}
+.mr-m     { margin-right:$bs--m;}
+.mr-l     { margin-right:$bs--l;}
+.mr-xl    { margin-right:$bs--xl;}
+.mr-xxl   { margin-right:$bs--xxl;}
+.mr-xxxl  { margin-right:$bs--xxxl;}
+</code>
+            </pre>
+        </div><!--  code block ends -->
+
+        <!--  hello world block starts -->
+        <div class='block-stacked block-s st-block'>
+            <h4 class='tiny uppercase text-muted'>
+                hello world
+            </h4> 
+            <div class='mr-0 block-xs green-block '>
+                <p>
+                    block-xs with 0 margin right (mr-0)
+                </p>
+            </div><!-- block xs ends-->
+            <div class='mr-xxxs block-xs green-block '>
+                <p>
+                    block-xs with xxxs margin right (mr-xxxs)
+                </p>
+            </div><!-- block xs ends-->
+            <div class='mr-xxs block-xs green-block '>
+                <p>
+                    block-xs with xxs margin right (mr-xxs)
+                </p>
+            </div><!-- block xs ends-->
+            <div class='mr-xs block-xs green-block '>
+                <p>
+                    block-xs with xs margin right (mr-xs)
+                </p>
+            </div><!-- block xs ends-->
+            <div class='mr-s block-xs green-block '>
+                <p>
+                    block-xs with with s margin right (mr-s)
+                </p>
+            </div><!-- block xs ends-->
+
+            <div class='mr-m block-xs green-block '>
+                <p>
+                    block-xs with m margin right (mr-m)
+                </p>
+            </div><!-- block xs ends-->
+            <div class='mr-l block-xs green-block '>
+                <p>
+                    block-xs with l margin right (mr-l)
+                </p>
+            </div><!-- block xs ends-->
+            <div class='mr-xl block-xs green-block '>
+                <p>
+                    block-xs with xl margin right (mr-xl)
+                </p>
+            </div><!-- block xs ends-->
+            <div class='mr-xxl block-xs green-block '>
+                <p>
+                    block-xs with xxl margin right (mr-xxl)
+                </p>
+            </div><!-- block xs ends-->
+            <div class='mr-xxxl block-xs green-block '>
+                <p>
+                    block-xs with xxxl margin right (mr-xxxl)
+                </p>
+            </div><!-- block xs ends-->
+        </div><!--  hello world block ends -->
+
+        <h3 class='h4'>
+            b) Responsive spacing elements
+        </h3>
+
+        <div class=' block-s tt-block'> 
+            <h4 class='tiny uppercase text-muted'>
+                How it works
+            </h4>
+            <pre>
+<code class="language-css">
+/*
+* Spacing helpers:
+* -------------------------------
+*/
+
+/* Middle Prefix */
+
+-small       = mobile
+-medium      = tablet
+-large       = desktop
+-xlarge      = wide screen
+
+//Examples
+/* This class would have a xxxs right margin that only shows on mobile screens*/
+.mr-small--xxxs
+
+/* This class would have a large left padding that only shows on wide screens */
+.pl-xlarge--l
+
+/* Margin right SCSS code: */
+@include media('xlarge') {
+    .mr-xlarge--0     { margin-right:$bs--0; }
+    .mr-xlarge--xxxs  { margin-right:$bs--xxxs;}
+    .mr-xlarge--xxs   { margin-right:$bs--xxs; }
+    .mr-xlarge--xs    { margin-right:$bs--xs;}
+    .mr-xlarge--s     { margin-right:$bs--s;}
+    .mr-xlarge--m     { margin-right:$bs--m;}
+    .mr-xlarge--l     { margin-right:$bs--l;}
+    .mr-xlarge--xl    { margin-right:$bs--xl;}
+    .mr-xlarge--xxl   { margin-right:$bs--xxl;}
+    .mr-xlarge--xxxl  { margin-right:$bs--xxxl;}
+}
+</code>
+            </pre>
+        </div>
+        <!--  hello world block starts -->
+        <div class='block-stacked block-s st-block'>
+            <h4 class='tiny uppercase text-muted'>
+                hello world
+            </h4> 
+            <div class='mr-xlarge--xxxl mr-mediumt-l mr-s mr-small--0 block-xs green-block '>
+                <p>
+                
+                    <strong>mobile:</strong> mr-small--s<br />
+                    <strong>skinny:</strong> mr-mediumt-l<br />
+                    <strong>desktop:</strong> mr-s<br />
+                    <strong>wide:</strong> mr-xlarge--xxxl
+                </p>
+            </div><!-- block xs ends-->
+        </div>
+    </div><!--layout-generic-block ends-->
+
+    <hr class='mt-l'>
+
+    <!-- /****************************************  Typography  *******************************/ -->
+
+    <div class='mt-l' id='anchor16'>
+        <h2 class='h3'>
+            17. Typography
+        </h2>
+        <p>
+           Notes
+        </p>
+        <!--  code block starts -->
+        <div class=' block-s tt-block'>
+            <h4 class='tiny uppercase text-muted'>
+                code
+            </h4>
+            <pre>
+<code class="language-markup">
+
+</code>
+            </pre>
+        </div><!--  code block ends -->
+
+        <!--  hello world block starts -->
+        <div class='block-stacked block-s st-block'>
+            <h4 class='tiny uppercase text-muted'>
+                hello world
+            </h4>
+        </div><!--  hello world block ends -->
+    </div><!-- layout-media-block ends-->
+    
+    <hr class='mt-l'>
+   
 
 </div>
 <?php 

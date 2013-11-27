@@ -77,15 +77,15 @@
 }
 
 /* line 73, ../../../bower_components/fred/scss/objects/_core.scss */
-.clearfix, .block--xxxs,
-.block--xxs,
-.block--xs,
-.block--s,
-.block--m,
-.block--l,
-.block--xl,
-.block--xxl,
-.block--xxxl, .list--inline, .media, .media--rev {
+.clearfix, .block-xxxs,
+.block-xxs,
+.block-xs,
+.block-s,
+.block-m,
+.block-l,
+.block-xl,
+.block-xxl,
+.block-xxxl, .list--inline, .media, .media--rev {
   /**
    * For IE 6/7 only
    * Include this rule to trigger hasLayout and contain floats.
@@ -94,15 +94,15 @@
 }
 
 /* line 81, ../../../bower_components/fred/scss/objects/_core.scss */
-.clearfix:before, .block--xxxs:before,
-.block--xxs:before,
-.block--xs:before,
-.block--s:before,
-.block--m:before,
-.block--l:before,
-.block--xl:before,
-.block--xxl:before,
-.block--xxxl:before, .list--inline:before, .media:before, .media--rev:before {
+.clearfix:before, .block-xxxs:before,
+.block-xxs:before,
+.block-xs:before,
+.block-s:before,
+.block-m:before,
+.block-l:before,
+.block-xl:before,
+.block-xxl:before,
+.block-xxxl:before, .list--inline:before, .media:before, .media--rev:before {
   content: " ";
   /* 1 */
   display: table;
@@ -110,15 +110,15 @@
 }
 
 /* line 86, ../../../bower_components/fred/scss/objects/_core.scss */
-.clearfix:after, .block--xxxs:after,
-.block--xxs:after,
-.block--xs:after,
-.block--s:after,
-.block--m:after,
-.block--l:after,
-.block--xl:after,
-.block--xxl:after,
-.block--xxxl:after, .list--inline:after, .media:after, .media--rev:after {
+.clearfix:after, .block-xxxs:after,
+.block-xxs:after,
+.block-xs:after,
+.block-s:after,
+.block-m:after,
+.block-l:after,
+.block-xl:after,
+.block-xxl:after,
+.block-xxxl:after, .list--inline:after, .media:after, .media--rev:after {
   content: " ";
   /* 1 */
   display: table;
@@ -956,33 +956,33 @@ hr {
  * ----------------------------------------------------------------------------
  */
 /* line 6, ../../../bower_components/fred/scss/objects/_blocks.scss */
-.block--stacked {
+.block-stacked {
   margin-top: 0!important;
 }
 
 /* line 21, ../../../bower_components/fred/scss/objects/_blocks.scss */
-.block--xxxs > :first-child,
-.block--xxs > :first-child,
-.block--xs > :first-child,
-.block--s > :first-child,
-.block--m > :first-child,
-.block--l > :first-child,
-.block--xl > :first-child,
-.block--xxl > :first-child,
-.block--xxxl > :first-child {
+.block-xxxs > :first-child,
+.block-xxs > :first-child,
+.block-xs > :first-child,
+.block-s > :first-child,
+.block-m > :first-child,
+.block-l > :first-child,
+.block-xl > :first-child,
+.block-xxl > :first-child,
+.block-xxxl > :first-child {
   margin-top: 0;
 }
 
 /* line 27, ../../../bower_components/fred/scss/objects/_blocks.scss */
-.block--xxxs,
-.block--xxs,
-.block--xs,
-.block--s,
-.block--m,
-.block--l,
-.block--xl,
-.block--xxl,
-.block--xxxl {
+.block-xxxs,
+.block-xxs,
+.block-xs,
+.block-s,
+.block-m,
+.block-l,
+.block-xl,
+.block-xxl,
+.block-xxxl {
   margin-top: 1em;
 }
 
@@ -2021,7 +2021,7 @@ dd {
  * to default values. The first kind of specificity is source order!
  */
 /* line 153, ../../../bower_components/fred/scss/helpers/_mixins.scss */
-.mt-0 {
+.mt-0, h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, p:first-child, .text:first-child, li:first-child, code:first-child {
   margin-top: 0;
 }
 
@@ -2046,7 +2046,7 @@ dd {
 }
 
 /* line 153, ../../../bower_components/fred/scss/helpers/_mixins.scss */
-.mt-m {
+.mt-m, dl {
   margin-top: 1.5em;
 }
 
@@ -2071,7 +2071,7 @@ dd {
 }
 
 /* line 153, ../../../bower_components/fred/scss/helpers/_mixins.scss */
-.mb-0 {
+.mb-0, h1, h2, h3, h4, h5, h6, p, .text, li, code {
   margin-bottom: 0;
 }
 

@@ -76,15 +76,15 @@ $base-spacing--xs:  $base-spacing / 2;
 
 
 // Layout - block sizes
-$block--xxxs:                   $bs--xxxs  $bs--xxxs;        // 6px 6px
-$block--xxs:                    $bs--xxxs $bs--xxs;         // 6px 8px
-$block--xs:                     $bs--xxs $bs--xs;           // 8px 12px
-$block--s:                      $bs--xs $bs--s;             // 12px 16px
-$block--m:                      $bs--m $bs--m;              // 24px 24px
-$block--l:                      $bs--l $bs--l;              // 36px 36px
-$block--xl:                     $bs--l $bs--xl;             // 36px 48px
-$block--xxl:                    $bs--xl $bs--xxl;           // 48px 72px
-$block--xxxl:                   $bs--xxl $bs--xxxl;         // 72px 96px
+$block-xxxs:                   $bs--xxxs  $bs--xxxs;        // 6px 6px
+$block-xxs:                    $bs--xxxs $bs--xxs;         // 6px 8px
+$block-xs:                     $bs--xxs $bs--xs;           // 8px 12px
+$block-s:                      $bs--xs $bs--s;             // 12px 16px
+$block-m:                      $bs--m $bs--m;              // 24px 24px
+$block-l:                      $bs--l $bs--l;              // 36px 36px
+$block-xl:                     $bs--l $bs--xl;             // 36px 48px
+$block-xxl:                    $bs--xl $bs--xxl;           // 48px 72px
+$block-xxxl:                   $bs--xxl $bs--xxxl;         // 72px 96px
 
 $sizePrefixes:
     "--0",

@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?> 
 
-<div class='block--l block-small--s mb--l clearfix pt-block relative'>
+<div class='block-l block-small--s mb-l clearfix pt-block relative'>
     <img src='assets/images/fred-top-big.png' class='absolute fred-buttons-page' alt=''/>
     <div class='page-header pt-page-header'>
         <h1>
@@ -44,13 +44,13 @@
   
     <!-- /****************************************  Button variations  *******************************/ -->
 
-    <div class='m--xl' id='btn-variations'> 
+    <div class='mt-xl' id='btn-variations'> 
         <h2 class='h3' >
             01. Button variations
         </h2>
 
         <!-- code block starts -->
-        <div class=' block--s tt-block'>
+        <div class=' block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -64,7 +64,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -92,7 +92,7 @@
             Stack a variation class to add some color
         </p>
         <!-- code block starts -->
-        <div class=' block--s tt-block'>
+        <div class=' block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -105,7 +105,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -119,10 +119,10 @@
             </p>
         </div><!-- hello world block ends -->
     </div><!-- btn-variations ends -->
-    <hr class='m--l'>
+    <hr class='mt-l'>
     <!-- /****************************************  Button modifiers  *******************************/ -->
 
-    <div class='m--l' id='btn-modifier'>
+    <div class='mt-l' id='btn-modifier'>
         <h2 class='h3' >
             02. Button modifiers
         </h2>
@@ -131,7 +131,7 @@
         </p>
 
         <!-- code block starts -->
-        <div class='block--s tt-block'>
+        <div class='block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -144,7 +144,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -163,7 +163,7 @@
         </p>
 
         <!-- code block starts -->
-         <div class=' block--s tt-block'>
+         <div class=' block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -176,7 +176,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -195,7 +195,7 @@
         </p>
 
         <!-- code block starts -->
-        <div class='block--s tt-block'>
+        <div class='block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -208,7 +208,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -228,10 +228,10 @@
         </div><!-- hello world block ends -->
         
     </div><!-- btn-modifier ends -->
-    <hr class='m--l'>
+    <hr class='mt-l'>
     <!-- /****************************************  Buttons with icons  *******************************/ -->
 
-    <div class='m--l' id='btn-icons'>
+    <div class='mt-l' id='btn-icons'>
         
         <h2 class='h3' >
             03. Buttons with icons
@@ -244,7 +244,7 @@
         </p>
 
         <!-- code block starts -->
-        <div class=' block--s tt-block'>
+        <div class=' block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -263,7 +263,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -311,7 +311,7 @@
         </p>
 
         <!-- code block starts -->
-        <div class='block--s tt-block'>
+        <div class='block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -327,7 +327,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -352,8 +352,8 @@
     </div><!-- btn-icons ends -->
     
     <!-- /****************************************  Buttons with icons  *******************************/ -->
-    <hr class='m--l'>
-    <div class='m--l' id='btn-variations'> 
+    <hr class='mt-l'>
+    <div class='mt-l' id='btn-variations'> 
         <h2 class='h3' >
             04. Submit buttons
         </h2>
@@ -362,7 +362,7 @@
              buttons and make sure the padding's the same as your default button :)
         </p>
         <!-- code block starts -->
-        <div class='block--s tt-block'>
+        <div class='block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -377,7 +377,7 @@
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

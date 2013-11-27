@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?>
 
-<div class='block--l block-small--s pt-block relative mb--l'>
+<div class='block-l block-small--s pt-block relative mb-l'>
     <img class='absolute fred' alt='Fred the fed' src='assets/images/fred-side.png'  />
     
     <div class='page-header pt-page-header'>
@@ -42,7 +42,7 @@
 
     
 
-    <div class='m--l' id='FontFamilyAnchor'>
+    <div class='mt-l' id='FontFamilyAnchor'>
         <h2 class='h3' >
             01. Base font family
         </h2>
@@ -54,7 +54,7 @@
             to linking multiple weights and styles.
         </p>
         
-        <div class='block--s tt-block'>
+        <div class='block-s tt-block'>
                 <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
@@ -101,7 +101,7 @@
 
         </div>
     </div>
-    <div class='m--l' id='FontStylesAnchor'>
+    <div class='mt-l' id='FontStylesAnchor'>
         <h2 class='h3'>
             02. Base font styles
         </h2>
@@ -120,7 +120,7 @@
         </p>
         
         
-        <div class=' block--s tt-block'>
+        <div class=' block-s tt-block'>
                 <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
@@ -146,7 +146,7 @@ body {
         </div>
     </div>
 
-    <div class='m--l' id='FontSizesAnchor'>
+    <div class='mt-l' id='FontSizesAnchor'>
         <h2 class='h3'>
             03. Base font sizes
         </h2>
@@ -159,7 +159,7 @@ body {
             <strong>Fred's rule:</strong> Always set font-sizes in ems.
         </p>
 
-        <div class=' block--s tt-block'>
+        <div class=' block-s tt-block'>
                 <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
@@ -197,7 +197,7 @@ $font-size-xxxs:        11;     //.tiny
         </div>
     </div>
 
-    <div class='m--l' id='FontHeirarchyAnchor'>
+    <div class='mt-l' id='FontHeirarchyAnchor'>
        <h2 class='h3'>
             04. Text Heirarchy
         </h2>
@@ -214,7 +214,7 @@ $font-size-xxxs:        11;     //.tiny
     </div>
         
 
-    <div class='page-header pt-page-header m--xl'>
+    <div class='page-header pt-page-header mt-xl'>
         <h1>
             Typography
             <span class='tiny'>
@@ -267,7 +267,7 @@ $font-size-xxxs:        11;     //.tiny
 
     <!-- /****************************************  Text sizes  *******************************/ -->
     
-    <div class='m--l' id='TypographyHelper1Anchor'>
+    <div class='mt-l' id='TypographyHelper1Anchor'>
         <h2 class='h3'>
             01. Font sizes
         </h2>
@@ -285,7 +285,7 @@ $font-size-xxxs:        11;     //.tiny
         </p>
 
         <!-- code block starts -->
-        <div class=' block--s tt-block'>
+        <div class=' block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -301,7 +301,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             
             <h4 class='tiny uppercase text-muted'>
                 hello world
@@ -325,7 +325,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- hello world block ends -->
 
         <!-- 2. Common Text sizes-->
-        <div class='m--l'>
+        <div class='mt-l'>
             <h3 class='h4'>
                 b) Common Text sizes
             </h3>
@@ -333,7 +333,7 @@ $font-size-xxxs:        11;     //.tiny
                 Notes
             </p>
             <!-- code block starts -->
-            <div class=' block--s tt-block'>
+            <div class=' block-s tt-block'>
                 <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
@@ -354,7 +354,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block--stacked block--s st-block'>
+            <div class='block-stacked block-s st-block'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -381,8 +381,8 @@ $font-size-xxxs:        11;     //.tiny
         </div>
 
         <!-- 3. sub headings-->
-        <div class='m--l'>
-            <h3 class='m--m  h4' >
+        <div class='mt-l'>
+            <h3 class='mt-m  h4' >
                 c) Sub Headings
             </h3>
             <p>
@@ -397,8 +397,8 @@ $font-size-xxxs:        11;     //.tiny
     </div><!-- typo-paragraph ends -->
 
 <!-- /****************************************  Sans/serif text  *******************************/ -->
-    <hr class='m--l'>
-    <div class='m--l' id='TypographyHelper2Anchor'>
+    <hr class='mt-l'>
+    <div class='mt-l' id='TypographyHelper2Anchor'>
         <h2 class='h3'>
             02. Sans vs Sans Serif
         </h2>
@@ -406,7 +406,7 @@ $font-size-xxxs:        11;     //.tiny
             Notes 
         </p>
         <!--  code block starts -->
-        <div class=' block--s tt-block'>
+        <div class=' block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -419,7 +419,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block starts -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -433,8 +433,8 @@ $font-size-xxxs:        11;     //.tiny
     </div><!--typo-sans ends-->
 
 <!-- /****************************************  Lower Case vs Upper Case  *******************************/ -->
-    <hr class='m--l'>
-    <div class='m--l' id='TypographyHelper3Anchor'>
+    <hr class='mt-l'>
+    <div class='mt-l' id='TypographyHelper3Anchor'>
 
         <h2 class='h3'>
             03. Lower vs Upper case
@@ -443,7 +443,7 @@ $font-size-xxxs:        11;     //.tiny
             Notes 
         </p>
         <!-- code block starts -->
-        <div class=' block--s tt-block'>
+        <div class=' block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -456,7 +456,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -468,8 +468,8 @@ $font-size-xxxs:        11;     //.tiny
 
  <!-- /****************************************  Text allignment classes  *******************************/ -->
     
-    <hr class='m--l'>
-    <div class='m--l' id='TypographyHelper4Anchor'>
+    <hr class='mt-l'>
+    <div class='mt-l' id='TypographyHelper4Anchor'>
 
         <h2 class='h3'>
             04. Text allignment classes
@@ -479,7 +479,7 @@ $font-size-xxxs:        11;     //.tiny
             Notes
         </p>
         <!-- code block starts -->
-        <div class=' block--s tt-block'>
+        <div class=' block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -493,7 +493,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -511,8 +511,8 @@ $font-size-xxxs:        11;     //.tiny
 
 <!-- /****************************************  Txt overflow and ellipsis  *******************************/ -->
     
-    <hr class='m--l'>
-    <div class='m--l' id='TypographyHelper5Anchor'>
+    <hr class='mt-l'>
+    <div class='mt-l' id='TypographyHelper5Anchor'>
         <h2 class='h3'>
             05. Text overflow and Ellipsis
         </h2>
@@ -520,7 +520,7 @@ $font-size-xxxs:        11;     //.tiny
             Notes 
         </p>
         <!--  code block starts -->
-        <div class=' block--s tt-block'>
+        <div class=' block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -532,18 +532,18 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block starts -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s st-block clearfix'>
+        <div class='block-stacked block-s st-block clearfix'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class=' block--s st-block testbox-100-100 push_left left' >
+            <div class=' block-s st-block testbox-100-100 push_left left' >
                 <p class='text--overflow'>
                     Hello I'm a text with an ellipsis
                 </p>
 
                 
             </div>
-            <div class=' block--s st-block testbox-100-100 right' >
+            <div class=' block-s st-block testbox-100-100 right' >
              
                 <p class='text--nowrap'>
                     I'm text that doesn't wrap
@@ -552,8 +552,8 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- hello world block ends -->
     </div><!--typo-overflow ends-->
 <!-- /****************************************  List styles  *******************************/ -->
-    <hr class='m--l'>
-    <div class='m--l' id='TypographyHelper6Anchor'>
+    <hr class='mt-l'>
+    <div class='mt-l' id='TypographyHelper6Anchor'>
 
         <h2 class='h3'>
             06. List styles
@@ -569,7 +569,7 @@ $font-size-xxxs:        11;     //.tiny
             </h3>
 
             <!-- code block ends -->
-            <div class=' block--s tt-block'>
+            <div class=' block-s tt-block'>
                 <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
@@ -584,7 +584,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block--stacked block--s st-block'>
+            <div class='block-stacked block-s st-block'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -599,12 +599,12 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- hello world block ends -->
         </div>
         
-        <div class='m--l'>
+        <div class='mt-l'>
             <h3 class='h4'>
                 b) Styled list
             </h3>
             <!-- code block starts -->
-            <div class=' block--s tt-block'>
+            <div class=' block-s tt-block'>
                 <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
@@ -619,7 +619,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block--stacked block--s st-block'>
+            <div class='block-stacked block-s st-block'>
                 <h4 class='h tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -635,10 +635,10 @@ $font-size-xxxs:        11;     //.tiny
         </div>
 
         <!-- 3. Inline list -->
-        <div class='m--l'>
+        <div class='mt-l'>
             <h3 class='h4'>c) Inline list</h3>
             <!-- code block starts -->
-            <div class=' block--s tt-block'>
+            <div class=' block-s tt-block'>
                 <h4 class='tiny uppercase text-muted'>
                     code
                 </h4>
@@ -653,7 +653,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block--stacked block--s st-block'>
+            <div class='block-stacked block-s st-block'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -670,9 +670,9 @@ $font-size-xxxs:        11;     //.tiny
     </div><!-- typo-lists ends -->
 
          <!-- /****************************************  Hide text *******************************/ -->
-    <hr class='m--l'>
+    <hr class='mt-l'>
     
-    <div class='m--l' id='TypographyHelper7Anchor'>
+    <div class='mt-l' id='TypographyHelper7Anchor'>
 
         <h2 class='h3'>
             07. Hide text
@@ -682,7 +682,7 @@ $font-size-xxxs:        11;     //.tiny
             Notes
         </p>
         <!-- code block starts -->
-        <div class=' block--s tt-block'>
+        <div class=' block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -695,7 +695,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

@@ -3,7 +3,7 @@
 ?>
 
 
-<div class='block--l block-small--s mb--l pt-block '>
+<div class='block-l block-small--s mb-l pt-block '>
     
     <div class='page-header pt-page-header'>
         <h1>
@@ -34,13 +34,13 @@
 
     <hr>
     <!-- /****************************************  Breadcrumbs *******************************/ -->
-    <div class='m--xl' id='components-bread-crumbs'>
+    <div class='mt-xl' id='components-bread-crumbs'>
         <h2  class='h3'>
             Breadcrumbs
         </h2>
         
         <!--  code block starts -->
-        <div class='block--s m--m tt-block'>
+        <div class='block-s mt-m tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -56,11 +56,11 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <ol class='breadcrumbs pt-breadrumbs block--xxs xm'>
+            <ol class='breadcrumbs pt-breadrumbs block-xxs xm'>
                 <li><a href='#'>Home</a></li>
                 <li><a href='#'>Page</a></li>
                 <li class='#'>Sub page</li>
@@ -69,12 +69,12 @@
     </div><!-- components-bread-crumbs ends-->
 
     <!-- /****************************************  Badges  *******************************/ -->
-    <div class='m--xl' id='components-badges'>
+    <div class='mt-xl' id='components-badges'>
         <h2  class='h3'>
             Badges
         </h2>
         <!--  code block starts -->
-        <div class='block--s tt-block'>
+        <div class='block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -86,7 +86,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class=' block--stacked block--s st-block'>
+        <div class=' block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -98,12 +98,12 @@
 
 
     <!-- /****************************************  Page headers  *******************************/ -->
-    <div class='m--xl' id='components-pg-headers'>
+    <div class='mt-xl' id='components-pg-headers'>
         <h2  class='h3'>
             Page Headers
         </h2>
         <!--  code block starts -->
-        <div class='block--s tt-block'>
+        <div class='block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -122,11 +122,11 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='page-header pt-page-header m--l'>
+            <div class='page-header pt-page-header mt-l'>
                 <h1>
                     H1 Heading 
                     <span class='tiny'>
@@ -134,7 +134,7 @@
                     </span>
                 </h1>
             </div>
-            <div class='page-header pt-page-header m--m'>
+            <div class='page-header pt-page-header mt-m'>
                 <h2>
                     H2 Heading 
                     <span class='tiny'>
@@ -142,7 +142,7 @@
                     </span>
                 </h2>
             </div>
-            <div class='page-header pt-page-header m--m'>
+            <div class='page-header pt-page-header mt-m'>
                 <h3>
                     H3 Heading 
                     <span class='tiny'>
@@ -150,7 +150,7 @@
                     </span>
                 </h3>
             </div>
-            <div class='page-header pt-page-header m--m'>
+            <div class='page-header pt-page-header mt-m'>
                 <h4>
                     H4 Heading 
                     <span class='tiny'>
@@ -158,7 +158,7 @@
                     </span>
                 </h4>
             </div>
-            <div class='page-header pt-page-header m--m'>
+            <div class='page-header pt-page-header mt-m'>
                 <h5>
                     H5 Heading 
                     <span class='tiny'>

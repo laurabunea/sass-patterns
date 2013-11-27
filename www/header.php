@@ -14,43 +14,59 @@
     <div class='navigation--wrapper qt-block '>
         <div class='navigation clearfix '>
             <h1 class='uppercase left logo' >
-                <a href='/' class='m--xxs'>
+                <a href='/' class='mt-xxs'>
                     F<span>r</span>ed
                 </a>
             </h1>
 
             <ul class='list--inline right'>
                 <li> 
-                    <a class='block--stacked block--s' href='/typography.php'>
+                    <a class='block-stacked block-s' href='/objects.php'>
+                        Objects
+                    </a>
+                </li>
+                <li>
+                    <a class='block-stacked block-s' href='/mixins.php'>
+                        Helper Mixins
+                    </a>
+                </li>
+                <li>
+                    <a class='block-stacked block-s' href='/breakpoints.php'>
+                        Core
+                    </a>
+                </li>
+                <li>
+                    <a class='block-stacked block-s' href='/breakpoints.php'>
+                        Breakpoints
+                    </a>
+                </li>
+                <!--<li>
+                    <a class='block-stacked block-s' href='/typography.php'>
                         Typography
                     </a>
                 </li>
                 <li>
-                    <a class='block--stacked block--s' href='/layout.php'>
+                    <a class='block-stacked block-s' href='/layout.php'>
                         Layout
                     </a>
                 </li>
                 <li>
-                    <a class='block--stacked block--s' href='/buttons.php'>
+                    <a class='block-stacked block-s' href='/buttons.php'>
                         Buttons
                     </a>
                 </li>
                 <li>
-                    <a class='block--stacked block--s' href='/themes.php'>
+                    <a class='block-stacked block-s' href='/themes.php'>
                         Themes
                     </a>
                 </li>
+                
                 <li>
-                    <a class='block--stacked block--s' href='/mixins.php'>
-                        Mixins
-                    </a>
-                </li>
-                <li>
-                    <a class='block--stacked block--s' href='/components.php'>
+                    <a class='block-stacked block-s' href='/components.php'>
                         Components
                     </a>
-                </li>
+                </li>-->
             </ul><!--list inline ends-->
         </div><!--navigation top ends-->
     </div><!--navigation wrapper ends-->
-    <div class='content m--xxxl'>
+    <div class='content mt-xxxl'>

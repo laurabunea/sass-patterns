@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?>
 
-<div class='block--l block-small--s mb--l clearfix pt-block '>
+<div class='block-l block-small--s mb-l clearfix pt-block '>
      <div class='page-header pt-page-header'>
         <h1>
             Themes
@@ -35,10 +35,10 @@
             </a>
         </li>
     </ul><!--list unstyled ends-->
-    <hr class='m--l'>
+    <hr class='mt-l'>
 	<!-- /****************************************  Block themes  *******************************/ -->
 
-    <div class='m--l' id='theme-blocks'>
+    <div class='mt-l' id='theme-blocks'>
         <h2 class='h3'>
             Theme blocks
         </h2>
@@ -46,7 +46,7 @@
             Use any of the available theme block classes to quickly create ....
         </p>
         <!--  code block starts -->
-        <div class=' block--s tt-block'>
+        <div class=' block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -69,28 +69,28 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
         	<div class='grid'>
-                <div class='g--1-4 testbox-100-100 m--xm block--s pt-block'>
+                <div class='g--1-4 testbox-100-100 mt-xm block-s pt-block'>
                     <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 m--xm block--s st-block'>
+                <div class='g--1-4 testbox-100-100 mt-xm block-s st-block'>
                    <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 m--xm block--s tt-block'>
+                <div class='g--1-4 testbox-100-100 mt-xm block-s tt-block'>
                     <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 m--xm block--s qt-block'>
+                <div class='g--1-4 testbox-100-100 mt-xm block-s qt-block'>
                     <p>Some text.</p>
                 </div>
             </div>
         </div><!--  hello world block ends -->
 
         <!--  code block starts -->
-        <div class='block--s  tt-block'>
+        <div class='block-s  tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -110,28 +110,28 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
         	<div class='grid'>
-                <div class='testbox-100-100 block--s m--xm  success-block'>
+                <div class='testbox-100-100 block-s mt-xm  success-block'>
                     <p>Success</p>
                 </div>
-                <div class='testbox-100-100 block--s m--xm  warning-block'>
+                <div class='testbox-100-100 block-s mt-xm  warning-block'>
                     <p>Success</p>
                 </div>
-                <div class='testbox-100-100 block--s m--xm  danger-block'>
+                <div class='testbox-100-100 block-s mt-xm  danger-block'>
                     <p>Danger</p>
                 </div>
                 
             </div>
         </div><!--  hello world block ends -->
     </div><!-- theme-blocks ends-->
-    <hr class='m--m'>
+    <hr class='mt-m'>
     <!-- /****************************************  Helpful Text colours  *******************************/ -->
 
-    <div class='m--xl' id='theme-blocks'>
+    <div class='mt-xl' id='theme-blocks'>
         <h2>
             Emphasis classes
         </h2>
@@ -139,7 +139,7 @@
         	Convey meaning through color with a handful of emphasis utility classes.
         </p>
         <!--  code block starts -->
-        <div class=' block--s tt-block'>
+        <div class=' block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -154,7 +154,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -165,16 +165,16 @@
         	<p class='text-danger'>Success, I am awesome</p>
         </div><!--  hello world block ends -->
     </div><!-- theme-blocks ends-->
-    <hr class='m--l'>
+    <hr class='mt-l'>
     <!-- /****************************************  Button colours  *******************************/ -->
 
-    <div class='m--xl' id='theme-blocks'>
+    <div class='mt-xl' id='theme-blocks'>
         <h2>
             Button themes
         </h2>
         
         <!--  code block starts -->
-        <div class=' block--s tt-block'>
+        <div class=' block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -188,7 +188,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -199,14 +199,14 @@
     </div><!-- theme-blocks ends-->
 
     <!-- /****************************************  Tables  *******************************/ -->
-    <hr class='m--l'>
-    <div class='m--xl' id='theme-blocks'>
+    <hr class='mt-l'>
+    <div class='mt-xl' id='theme-blocks'>
         <h2>
             Tables
         </h2>
         
         <!--  code block starts -->
-        <div class=' block--s m--m  tt-block'>
+        <div class=' block-s mt-m  tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
@@ -220,7 +220,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block--s st-block'>
+        <div class='block-stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

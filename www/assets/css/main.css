@@ -532,17 +532,17 @@ ol {
 }
 
 /* line 76, ../sass/core/_variables.scss */
-.xxm--b {
+.xxmt-b {
   margin-bottom: 0.5em;
 }
 
 /* line 77, ../sass/core/_variables.scss */
-.xm--b {
+.xmt-b {
   margin-bottom: 1em;
 }
 
 /* line 78, ../sass/core/_variables.scss */
-.m--b {
+.mt-b {
   margin-bottom: 1.5em;
 }
 
@@ -674,44 +674,44 @@ body {
 	block spacing 
 */
 /* line 69, ../sass/core/_extend-classes.scss */
-.block--xxxl,
-.block--xxxl__stacked {
+.block-xxxl,
+.block-xxxl__stacked {
   padding: 3.75em 7.5em;
 }
 
 /* line 73, ../sass/core/_extend-classes.scss */
-.block--xxl,
-.block--xxl__stacked {
+.block-xxl,
+.block-xxl__stacked {
   padding: 3em 6em;
 }
 
 /* line 77, ../sass/core/_extend-classes.scss */
-.block--xl,
-.block--xl__stacked {
+.block-xl,
+.block-xl__stacked {
   padding: 2.25em 4.5em;
 }
 
 /* line 81, ../sass/core/_extend-classes.scss */
 .block,
-.block--stacked {
+.block-stacked {
   padding: 1.5em 3em;
 }
 
 /* line 85, ../sass/core/_extend-classes.scss */
-.block--xs,
-.block--xs__stacked {
+.block-xs,
+.block-xs__stacked {
   padding: 1em 0.75em;
 }
 
 /* line 89, ../sass/core/_extend-classes.scss */
-.block--xxs,
-.block--xxs__stacked {
+.block-xxs,
+.block-xxs__stacked {
   padding: 0.75em 0.375em;
 }
 
 /* line 93, ../sass/core/_extend-classes.scss */
-.block--xxxs,
-.block--xxxs__stacked {
+.block-xxxs,
+.block-xxxs__stacked {
   padding: 0.6em 0.3em;
 }
 
@@ -981,7 +981,7 @@ body {
 /**
  * 4. Generic blocks
  * ----------------------------------------------------------------------------
- <div class='block block--bleed block--mobile'>
+ <div class='block block-bleed block-mobile'>
 	Some content.
  </div>
  */
@@ -989,27 +989,27 @@ body {
     making sure the first element has no margin on it 
 */
 /* line 123, ../sass/core/_layout.scss */
-.block--xxxs__stacked,
-.block--xxs__stacked,
-.block--xs__stacked,
-.block--stacked,
-.block--xl__stacked,
-.block--xxl__stacked,
-.block--xxxl__stacked,
-.block--stacked > :first-child,
-.block--xl__stacked > :first-child,
-.block--xxl__stacked > :first-child,
-.block--xxxl__stacked > :first-child,
-.block--xs__stacked > :first-child,
-.block--xxs__stacked > :first-child,
-.block--xxxs__stacked > :first-child,
+.block-xxxs__stacked,
+.block-xxs__stacked,
+.block-xs__stacked,
+.block-stacked,
+.block-xl__stacked,
+.block-xxl__stacked,
+.block-xxxl__stacked,
+.block-stacked > :first-child,
+.block-xl__stacked > :first-child,
+.block-xxl__stacked > :first-child,
+.block-xxxl__stacked > :first-child,
+.block-xs__stacked > :first-child,
+.block-xxs__stacked > :first-child,
+.block-xxxs__stacked > :first-child,
 .block > :first-child,
-.block--xl > :first-child,
-.block--xxl > :first-child,
-.block--xxxl > :first-child,
-.block--xs > :first-child,
-.block--xxs > :first-child,
-.block--xxxs > :first-child,
+.block-xl > :first-child,
+.block-xxl > :first-child,
+.block-xxxl > :first-child,
+.block-xs > :first-child,
+.block-xxs > :first-child,
+.block-xxxs > :first-child,
 .section > :first-child,
 .section--xl > :first-child,
 .section--xxl > :first-child,
@@ -1023,29 +1023,29 @@ body {
  adding a base margin-top to all block elements 
 */
 /* line 136, ../sass/core/_layout.scss */
-.block--xxxs,
-.block--xxs,
-.block--xs,
+.block-xxxs,
+.block-xxs,
+.block-xs,
 .block,
-.block--xl,
-.block--xxl,
-.block--xxxl {
+.block-xl,
+.block-xxl,
+.block-xxxl {
   margin-top: 1em;
 }
 
 /* line 180, ../sass/core/_layout.scss */
-.block--tight {
+.block-tight {
   padding-top: 0.75em;
   padding-bottom: 0.75em;
 }
 
 /* line 185, ../sass/core/_layout.scss */
-.block--bleed {
+.block-bleed {
   padding: 0;
 }
 
 /* line 189, ../sass/core/_layout.scss */
-.block--bleed__padding {
+.block-bleed__padding {
   padding: 1.5em 3em;
 }
 
@@ -1189,32 +1189,32 @@ body {
 
 @media only screen and (max-width: 30em) {
   /* line 331, ../sass/core/_layout.scss */
-  .g-m--1-1 {
+  .g-mt-1-1 {
     width: 100%;
   }
 
   /* line 334, ../sass/core/_layout.scss */
-  .g-m--1-2 {
+  .g-mt-1-2 {
     width: 50%;
   }
 
   /* line 337, ../sass/core/_layout.scss */
-  .g-m--9-10 {
+  .g-mt-9-10 {
     width: 90%;
   }
 
   /* line 340, ../sass/core/_layout.scss */
-  .g-m--1-10 {
+  .g-mt-1-10 {
     width: 10%;
   }
 
   /* line 343, ../sass/core/_layout.scss */
-  .g-m--8-10 {
+  .g-mt-8-10 {
     width: 80%;
   }
 
   /* line 346, ../sass/core/_layout.scss */
-  .g-m--2-10 {
+  .g-mt-2-10 {
     width: 20%;
   }
 }

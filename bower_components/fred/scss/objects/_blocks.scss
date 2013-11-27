@@ -3,20 +3,20 @@
  * ----------------------------------------------------------------------------
  */
 
-.block--stacked {
+.block-stacked {
    //only use this id we don't want a top margin on it
    margin-top:0!important;
 }
 
-    .block--xxxs, 
-    .block--xxs, 
-    .block--xs, 
-    .block--s,
-    .block--m,
-    .block--l, 
-    .block--xl, 
-    .block--xxl, 
-    .block--xxxl {
+    .block-xxxs, 
+    .block-xxs, 
+    .block-xs, 
+    .block-s,
+    .block-m,
+    .block-l, 
+    .block-xl, 
+    .block-xxl, 
+    .block-xxxl {
         @extend %block;
         > :first-child {
             margin-top:0;
