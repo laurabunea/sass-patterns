@@ -1,15 +1,17 @@
 <?php 
     include '../header.php'; 
 ?>
+<?php 
+    include '../helper-list.php'; 
+?>
+<div class='relative mb-l col-8-10 grid__item mt-xxxl' >
+    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:474px;' />
 
-<div class='relative mb-l col-8-10 grid__item mt-xxxl ml-l' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:458px;' />
 
+    <div class='block-l pt-block ml-l' >  
 
-    <div class='block-l pt-block' style='margin-left:50px'>  
-
-        <h2 class='h3'>
-            16. Spacing Helpers
+        <h2 class='heading heading--keyline'>
+           Spacing
         </h2>
         <p>
             Notes here

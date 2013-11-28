@@ -21,7 +21,11 @@
             </h1>
 
             <ul class='list--inline right'>
-
+                <li>
+                    <a class='block--stacked block-s' href='/helpers.php'>
+                        helper classes
+                    </a>
+                </li>
                 <li>
                     <a class='block--stacked block-s' href='/mixins.php'>
                         Helper Mixins
@@ -67,6 +71,4 @@
         </div><!--navigation top ends-->
     </div><!--navigation wrapper ends-->
     <div class='content mt-xxxl grid'>
-    <?php 
-        include 'helper-list.php'; 
-    ?>
+    

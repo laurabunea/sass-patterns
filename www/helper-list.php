@@ -1,8 +1,8 @@
 <div class='col-2-10 grid__item mt-xxxl'>
-    <div class='block-xs pt-block '>
+    <div class='block-xs pt-block pt-l'>
         
         <h3>
-            Fred's Helpers
+            My Helpers
         </h3>
         <ul class=' list-styled mt-m'>   
             <!-- Layout -->
@@ -13,7 +13,7 @@
             </li>
             <li>
                 <a href='/objects/badges.php'>
-                    Badge
+                    Badges
                 </a>
             </li>
             <li>
@@ -140,6 +140,11 @@
             <li>
                 <a href='/objects/block-grid.php'>
                     Block grid
+                </a>
+            </li>
+            <li>
+                <a href='/objects/links.php'>
+                    Links
                 </a>
             </li>
         </ul>

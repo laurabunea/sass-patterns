@@ -1,9 +1,8 @@
 /* 
 
-shame!!!! just some dirty styles to get a basic style. i WILL refacter to get the project started :) 
+shame!!!! just some dirty styles to get a basic style. I will refacter to get the project started :) 
 
 */
-
 
 .content,
 .navigation {
@@ -140,6 +139,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
     background-color: $background-color;
   }
 }
+
 .pink-input-text {
     /* @include placeholder($color);*/
     @include placeholder(#F92672);

@@ -1,14 +1,17 @@
 <?php 
     include '../header.php'; 
 ?>
+<?php 
+    include '../helper-list.php'; 
+?>
+<div class='relative mb-l col-8-10 grid__item mt-xxxl ' >
+    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style=' top:540px;' />
 
-<div class='relative mb-l col-8-10 grid__item mt-xxxl ml-l' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style=' top:523px;' />
 
+    <div class='block-l pt-block ml-l' >  
 
-    <div class='block-l pt-block' style='margin-left:50px'>  
-         <h2 class='h3'>
-            02. Positioning - Absolute, Floating and Clearfixing
+        <h2 class='heading heading--keyline'>
+           Positioning - Absolute, Floating and Clearfixing
         </h2>
 
         <!-- /********  absolute positioing *************/ -->

@@ -2,7 +2,6 @@
     include 'header.php'; 
 ?>
 
-
 <div class='media'>
     <img class='media__image' src='assets/images/fred.png' alt='Fred the friendly FED'/>
     <div class='media__body'>
@@ -11,7 +10,7 @@
             <i class='arrow  arrow-left'></i>
         </div>
     </div>
-</div> 
+</div>
 
 <div class='block--stacked block-l block-small--s mb-l pt-block'>
 	

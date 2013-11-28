@@ -1,15 +1,17 @@
 <?php 
     include '../header.php'; 
 ?>
+<?php 
+    include '../helper-list.php'; 
+?>
+<div class='relative mb-l col-8-10 grid__item mt-xxxl' >
+    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:309px;' />
 
-<div class='relative mb-l col-8-10 grid__item mt-xxxl ml-l' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:294px;' />
 
-
-    <div class='block-l pt-block' style='margin-left:50px'>  
+    <div class='block-l pt-block ml-l' >  
     
-        <h2  class='h3'>
-           11. Icons with text
+        <h2 class='heading heading--keyline'>
+           Icons with text
         </h2>
         <p>
             Notes

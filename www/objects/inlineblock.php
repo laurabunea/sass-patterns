@@ -1,14 +1,16 @@
 <?php 
     include '../header.php'; 
 ?>
-
-<div class='relative mb-l col-8-10 grid__item mt-xxxl ml-l' >
+<?php 
+    include '../helper-list.php'; 
+?>
+<div class='relative mb-l col-8-10 grid__item mt-xxxl' >
     <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:644px;' />
     <!--  ************  arrows block starts   ************   -->
 
-    <div class='block-l pt-block' style='margin-left:50px'>  
-         <h2 class='h3'>
-            Inline block 
+    <div class='block-l pt-block ml-l' >  
+        <h2 class='heading heading--keyline'>
+           Inline block
         </h2>
         <p>
             Displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box

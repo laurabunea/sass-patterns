@@ -1,14 +1,16 @@
 <?php 
     include '../header.php'; 
 ?>
+<?php 
+    include '../helper-list.php'; 
+?>
+<div class='relative mb-l col-8-10 grid__item mt-xxxl ' >
+    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:177px;' />
 
-<div class='relative mb-l col-8-10 grid__item mt-xxxl ml-l' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:163px;' />
 
-
-    <div class='block-l pt-block' style='margin-left:50px'>  
-        <h2 class='h3'>
-           07. Close
+    <div class='block-l pt-block ml-l' >  
+        <h2 class='heading heading--keyline'>
+           Close
         </h2>
         <p>
             A handy close icon with a sweet hover.

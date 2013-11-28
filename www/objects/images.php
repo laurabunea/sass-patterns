@@ -1,16 +1,17 @@
 <?php 
     include '../header.php'; 
 ?>
+<?php 
+    include '../helper-list.php'; 
+?>
+<div class='relative mb-l col-8-10 grid__item mt-xxxl ' >
+    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:343px;' />
 
-<div class='relative mb-l col-8-10 grid__item mt-xxxl ml-l' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:327px;' />
 
-
-    <div class='block-l pt-block' style='margin-left:50px'>  
-        <h1 class='heading heading--keyline h2'>
-            Responsive images
-            <span class='tiny text-muted'>helper class</span>
-        </h1>
+    <div class='block-l pt-block ml-l'>  
+        <h2 class='heading heading--keyline'>
+           Responsive images
+        </h2>
         <p>
             This applies max-width: 100%; and height: auto; to the image so that it scales nicely to 
             the parent element.

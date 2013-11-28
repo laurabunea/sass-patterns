@@ -1,15 +1,17 @@
 <?php 
     include '../header.php'; 
 ?>
-
-<div class='relative mb-l col-8-10 grid__item mt-xxxl ml-l' >
+<?php 
+    include '../helper-list.php'; 
+?>
+<div class='relative mb-l col-8-10 grid__item mt-xxxl ' >
     <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:128px;' />
     <!--  ************  arrows block starts   ************   -->
 
-    <div class='block-l pt-block' style='margin-left:50px'>  
+    <div class='block-l pt-block ml-l'>  
         
-        <h2 class='h3'>
-           Heading
+        <h2 class='heading heading--keyline'>
+           Pagination
         </h2>
    
         <!--  code block starts -->
