@@ -3683,35 +3683,34 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 
 /* line 80, ../sass/_page-specific.scss */
 .fred {
-  left: -138px;
-  top: 0;
+  left: -329px;
 }
 
-/* line 85, ../sass/_page-specific.scss */
+/* line 84, ../sass/_page-specific.scss */
 .fred-layout {
   top: -22px;
   right: 72px;
 }
 
-/* line 90, ../sass/_page-specific.scss */
+/* line 89, ../sass/_page-specific.scss */
 .fred-buttons-page {
   right: 30px;
   top: 191px;
 }
 
-/* line 95, ../sass/_page-specific.scss */
+/* line 94, ../sass/_page-specific.scss */
 .specific-bird {
   top: 10px;
   left: 17px;
 }
 
-/* line 101, ../sass/_page-specific.scss */
+/* line 100, ../sass/_page-specific.scss */
 .i {
   vertical-align: middle;
   font-style: normal;
 }
 
-/* line 108, ../sass/_page-specific.scss */
+/* line 107, ../sass/_page-specific.scss */
 .icon-placeholder {
   background-image: url("/assets/images/icon-placeholder.png");
   width: 40px;
@@ -3719,7 +3718,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   display: inline-block;
 }
 
-/* line 117, ../sass/_page-specific.scss */
+/* line 116, ../sass/_page-specific.scss */
 .img-rounded {
   -webkit-border-radius: 50% 50% 50% 50%;
   -moz-border-radius: 50% 50% 50% 50%;
@@ -3728,7 +3727,7 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   border-radius: 50% 50% 50% 50%;
 }
 
-/* line 144, ../sass/_page-specific.scss */
+/* line 143, ../sass/_page-specific.scss */
 .pink-input-text {
   /* @include placeholder($color);*/
 }
@@ -3749,85 +3748,19 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
   color: #f92672;
 }
 
-/* line 149, ../sass/_page-specific.scss */
+/* line 148, ../sass/_page-specific.scss */
 h1 .tiny {
   font-weight: normal;
 }
 
-/* line 153, ../sass/_page-specific.scss */
+/* line 152, ../sass/_page-specific.scss */
 .mw--80 {
   max-width: 80%;
 }
 
-/* line 156, ../sass/_page-specific.scss */
+/* line 155, ../sass/_page-specific.scss */
 .mw--70 {
   max-width: 70%;
-}
-
-/* ==========================================================================
-   SUIT form
-   ========================================================================== */
-/**
- * A thin layer on top of normalize.css that provides a starting point more
- * suitable for web applications. Removes the default spacing and border for
- * appropriate elements.
- */
-/* line 173, ../sass/_page-specific.scss */
-.form fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 182, ../sass/_page-specific.scss */
-.form label,
-.form input,
-.form textarea,
-.form select {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* line 187, ../sass/_page-specific.scss */
-.form--inline .Form-item {
-  display: inline-block;
-  margin-right: 5px;
-}
-
-/* line 192, ../sass/_page-specific.scss */
-.form-item {
-  margin: 0 0 1em;
-}
-
-/* line 196, ../sass/_page-specific.scss */
-.form-item--stacked .Form-label {
-  display: block;
-}
-
-/* line 200, ../sass/_page-specific.scss */
-.form-input {
-  border: 1px solid #000;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 0.5em 0.6em;
-}
-
-/**
- * Override the normalize.css search input `box-sizing` normalization.
- */
-/* line 211, ../sass/_page-specific.scss */
-.form-input[type="search"] {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/**
- * Add a basic focus style because Firefox removes the default focus style when
- * the unfocused input has an explicit border color set.
- */
-/* line 221, ../sass/_page-specific.scss */
-.form-input:focus {
-  border-color: #1980ce;
 }
 
 /**

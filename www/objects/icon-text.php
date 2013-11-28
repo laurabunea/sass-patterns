@@ -3,7 +3,7 @@
 ?>
 
 <div class='relative mb-l col-8-10 grid__item mt-xxxl ml-l' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='left:-329px; top:294px;' />
+    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:294px;' />
 
 
     <div class='block-l pt-block' style='margin-left:50px'>  

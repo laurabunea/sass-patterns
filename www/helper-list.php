@@ -4,7 +4,7 @@
         <h3>
             Fred's Helpers
         </h3>
-        <ul class=' list-styled--decimal mt-m'>   
+        <ul class=' list-styled mt-m'>   
             <!-- Layout -->
             <li>
                 <a href='/objects/arrows.php'>
@@ -43,7 +43,7 @@
             </li>
           
             <li>
-                <a href='#anchor8'>
+                <a href='/objects/forms.php'>
                     Forms
                 </a>
             </li>
@@ -53,7 +53,7 @@
                 </a>
             </li>
             <li>
-                <a href='#anchor10'>
+                <a href='/objects/headings.php'>
                     Headings
                 </a>
             </li>
@@ -98,8 +98,48 @@
                 </a>
             </li>
             <li>
-                <a href='#anchor18'>
+                <a href='/objects/visibility.php'>
                     Visibility
+                </a>
+            </li>
+            <li>
+                <a href='/objects/prependandappend.php'>
+                    Prepend and Append
+                </a>
+            </li>
+            <li>
+                <a href='/objects/inlineblock.php'>
+                    Inline Block
+                </a>
+            </li>
+             <li>
+                <a href='/objects/ratio.php'>
+                    Ratio
+                </a>
+            </li>
+            <li>
+                <a href='/objects/pills.php'>
+                    Pills
+                </a>
+            </li>
+            <li>
+                <a href='/objects/pagination.php'>
+                    Pagination
+                </a>
+            </li>
+            <li>
+                <a href='/objects/nav.php'>
+                    Navigation
+                </a>
+            </li>
+            <li>
+                <a href='/objects/button-group.php'>
+                    Button group
+                </a>
+            </li>
+            <li>
+                <a href='/objects/block-grid.php'>
+                    Block grid
                 </a>
             </li>
         </ul>

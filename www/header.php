@@ -5,8 +5,9 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <title>FRED</title>
         <link rel="stylesheet" href="/assets/stylesheets/main.css">
-        <link href="assets/css/prism.css" type="text/css" rel="stylesheet" />
+        <link href="/assets/css/prism.css" type="text/css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+        
     </head>
 
     <body>
@@ -20,11 +21,7 @@
             </h1>
 
             <ul class='list--inline right'>
-                <li> 
-                    <a class='block--stacked block-s' href='/objects.php'>
-                        Objects
-                    </a>
-                </li>
+
                 <li>
                     <a class='block--stacked block-s' href='/mixins.php'>
                         Helper Mixins

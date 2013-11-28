@@ -3,7 +3,7 @@
 ?>
 
 <div class='relative mb-l col-8-10 grid__item mt-xxxl ml-l' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='left:-329px; top:523px;' />
+    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style=' top:523px;' />
 
 
     <div class='block-l pt-block' style='margin-left:50px'>  
@@ -63,19 +63,19 @@
             </h4>
             <div class='grid'>
                 <div class='st-block relative testbox-100-100' >
-                    <img class='absolute specific-bird' src='assets/images/green-bird.jpg' alt='i am an image'/>
+                    <img class='absolute specific-bird' src='/assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
                 <div class='st-block relative testbox-100-100' >
-                    <img class='absolute--top-right' src='assets/images/green-bird.jpg' alt='i am an image'/>
+                    <img class='absolute--top-right' src='/assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
                 <div class='st-block relative testbox-100-100' >
-                    <img class='absolute--top-left' src='assets/images/green-bird.jpg' alt='i am an image'/>
+                    <img class='absolute--top-left' src='/assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
                 <div class='st-block relative testbox-100-100' >
-                    <img class='absolute--bottom-right' src='assets/images/green-bird.jpg' alt='i am an image'/>
+                    <img class='absolute--bottom-right' src='/assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
                 <div class='st-block relative testbox-100-100' >
-                    <img class='absolute--bottom-left' src='assets/images/green-bird.jpg' alt='i am an image'/>
+                    <img class='absolute--bottom-left' src='/assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
             </div><!--grid ends-->
         </div><!--  hello world block ends -->
@@ -113,8 +113,8 @@
                     hello world
                 </h4>
                 <div class='mt-s clearfix'> 
-                    <img class='left' src='assets/images/yellow-bird.jpg' alt='i am an image'/>
-                    <img class='right' src='assets/images/blue-bird.jpg' alt='i am an image'/>    
+                    <img class='left' src='/assets/images/yellow-bird.jpg' alt='i am an image'/>
+                    <img class='right' src='/assets/images/blue-bird.jpg' alt='i am an image'/>    
                 </div>
             </div><!--  hello world block ends -->
         </div>

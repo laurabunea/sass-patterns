@@ -3,26 +3,26 @@
 ?>
 
 <div class='relative mb-l col-8-10 grid__item mt-xxxl ml-l' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:63px;' />
+    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:590px;' />
     <!--  ************  arrows block starts   ************   -->
 
     <div class='block-l pt-block' style='margin-left:50px'>  
-        <h2 class='h3'>
-           04. Breadcrumbs
-        </h2>
         
+        <h2 class='h3'>
+            03. Prepend vs Append
+        </h2>
+        <p>
+            Place something before or after an element.
+        </p>
         <!--  code block starts -->
-        <div class='block-s mt-m tt-block'>
+        <div class='block-s tt-block'>
             <h4 class='tiny uppercase text-muted'>
                 code
             </h4>
             <pre>
 <code class='language-markup'>
-&lt;ol class='breadcrumbs'&gt;
-    &lt;li&gt;&lt;a href='#'&gt;Parent&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href='#'&gt;Child&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;Page I'm on &lt;/li&gt;
-&lt;/ol&gt;
+&lt;p class='prepend' data-prepend='email:'&gt;&nbsp;email@gmail.com&lt;/p&gt;
+&lt;p class='append' data-append='is my email'&gt;email@gmail.com&nbsp;&lt;/p&gt;
 </code>
             </pre>
         </div><!--  code block ends -->
@@ -32,15 +32,14 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <ol class='breadcrumbs pt-breadrumbs block-xxs xm'>
-                <li><a href='#'>Home</a></li>
-                <li><a href='#'>Page</a></li>
-                <li class='#'>Sub page</li>
-            </ol>
+            
+            <p class='prepend' data-prepend='email:'>&nbsp;email@gmail.com</p>
+        
+            <p class='append' data-append='is my email'>email@gmail.com&nbsp;</p>
+        
         </div><!--  hello world block ends -->
-
     </div>
-    <!--  ************  arrows block ends   ************   -->
+
 </div>
 <?php 
     include '../footer.php'; 

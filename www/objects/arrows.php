@@ -3,13 +3,13 @@
 ?>
 
 <div class='relative mb-l col-8-10 grid__item mt-xxxl ml-l' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='left:-329px; top:-35px;z-index:500' />
+    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style=' top:-37px;' />
     <!--  ************  arrows block starts   ************   -->
 
     <div class='block-l pt-block' style='margin-left:50px'>     
 
         <h2 class='h3'>
-           01. Arrows
+            Arrows
         </h2>
 
         <p> 

@@ -382,7 +382,7 @@ $font-size-xxxs:        11;     //.tiny
 
         <!-- 3. sub headings-->
         <div class='mt-l'>
-            <h3 class='mt-m  h4' >
+            <h3 class='mt-m h4' >
                 c) Sub Headings
             </h3>
             <p>
