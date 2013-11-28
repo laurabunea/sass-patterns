@@ -4,8 +4,8 @@
 html,
 body {
     @extend %fix-webkit-font-rendering;
-    line-height: $base-line-height;
     font-size: 100%;
+    line-height: $base-line-height;
 }
 
 
@@ -67,9 +67,9 @@ body {
  * ----------------------------------------------------------------------------
  */
 h1, h2, h3, h4, h5, h6, p, .text, li, code {
-    @extend .mb-0;
+    @extend .mb--0;
     &:first-child {
-        @extend .mt-0;
+        @extend .m--0;
     }
 }
 

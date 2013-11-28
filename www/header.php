@@ -31,7 +31,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class='block-stacked block-s' href='/breakpoints.php'>
+                    <a class='block-stacked block-s' href='/core.php'>
                         Core
                     </a>
                 </li>

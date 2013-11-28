@@ -14,7 +14,7 @@
         </h1>
     </div>
     <p class='mt-m'>
-        Notes to follow
+        Notes to follow 
     </p>
 
     <ul class=' list-styled--decimal mt-m'>   
@@ -53,28 +53,24 @@
                 Close
             </a>
         </li>
+      
         <li>
             <a href='#anchor8'>
-                Core
-            </a>
-        </li>
-        <li>
-            <a href='#anchor9'>
                 Forms
             </a>
         </li>
         <li>
-            <a href='#anchor10'>
+            <a href='#anchor9'>
                 Grid
             </a>
         </li>
         <li>
-            <a href='#anchor11'>
+            <a href='#anchor10'>
                 Headings
             </a>
         </li>
         <li>
-            <a href='#anchor12'>
+            <a href='#anchor11'>
                 Icon-text
             </a>
         </li>
@@ -89,22 +85,22 @@
             </a>
         </li>
         <li>
-            <a href='#anchor13'>
+            <a href='#anchor14'>
                 Media blocks
             </a>
         </li>
         <li>
-            <a href='#anchor13'>
+            <a href='#anchor15'>
                 Radii
             </a>
         </li>
         <li>
-            <a href='#anchor13'>
+            <a href='#anchor16'>
                 Spacing
             </a>
         </li>
         <li>
-            <a href='#anchor13'>
+            <a href='#anchor17'>
                 Typography
             </a>
         </li>
@@ -122,8 +118,10 @@
         </h2>
 
         <p> 
-            Apply the modifier classes to the parent. For instance the first example below will put an 
-            arrow in the top left corner of the containing div
+            Sometimes you just need an arrow :) and luckily it's really easy to do. Just apply a modifier classes to the parent. 
+        </p>    
+        <p>
+            For instance the first example below will put an arrow in the top left corner of the containing div
         </p>
 
         <!-- code block starts -->
@@ -220,14 +218,17 @@
     <hr class='mt-l'/>
 
     <!-- /****************************************  Blocks  *******************************/ -->
-    <div class='mt-l' id='layoutAnchor3' >
+    <div class='mt-l' id='anchor3' >
         <h2 class='h3'>
             03. Blocks
         </h2>
 
         <p>
-            The prefix is 'block' and the suffix is the size of the padding you want to use. This ranges from (-xxxs to -xxxl).
+            Use the block object to give a block element (e.g a div) an inset effect. 
+            It's pretty easy to use, the prefix is 'block' and the suffix is the size of the padding you want to use. 
+            This ranges from (-xxxs to -xxxl).
         </p>
+        
         <!--  code block starts -->
         <div class=' block-s tt-block'> 
             <h4 class='tiny uppercase text-muted'>
@@ -319,8 +320,10 @@ and so on.....
         </h4>
 
         <p>
-            To make the blocks work on different devices all you need to do is add an extra suffix onto the classnames mentioned above.
-            This suffix relates to the breakpoint you want to target.
+            To adjust the block inset on different breakpoints just add an extra suffix onto the block classes mentioned above.
+        </p>
+        <p>
+            The extra suffix relates to the breakpoints you want to target.
         </p>
         <!--  code block starts -->
         <div class=' block-s tt-block'> 
@@ -453,7 +456,8 @@ and so on.....
             </h4>
         </div><!--  hello world block ends -->
     </div><!-- Buttons ends-->
-
+    
+    <hr class='mt-l'>
     <!-- /****************************************  Core *******************************/ -->
     
     <div class='mt-l' id='anchor6'>
@@ -461,7 +465,7 @@ and so on.....
            06. Carrets
         </h2>
         <p>
-           ...
+            Handy litle drop down arrows
         </p>
         <!--  code block starts -->
         <div class='block-s mt-m tt-block'>
@@ -492,7 +496,8 @@ and so on.....
             
         </div><!--  hello world block ends -->
     </div><!-- Buttons ends-->
-
+    
+    <hr class='mt-l'>
     <!-- /****************************************  Close *******************************/ -->
     
     <div class='mt-l' id='anchor7'>
@@ -500,7 +505,7 @@ and so on.....
            07. Close
         </h2>
         <p>
-            ...
+            A handy close icon with a sweet hover.
         </p>
         <!--  code block starts -->
         <div class='block-s mt-m tt-block'>
@@ -509,6 +514,8 @@ and so on.....
             </h4>
             <pre>
 <code class='language-markup'>
+&lt;span class='close'&gt;&lt;/span&gt;
+
 </code>
             </pre>
         </div><!--  code block ends -->
@@ -518,42 +525,18 @@ and so on.....
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
+             <p>
+                Close icon: <span class='close'></span>
+            </p>
         </div><!--  hello world block ends -->
     </div><!-- Buttons ends-->
 
-    <!-- /****************************************  Core *******************************/ -->
-    
-    <div class='mt-l' id='anchor8'>
-        <h2 class='h3'>
-           08. Core
-        </h2>
-        <p>
-            ...
-        </p>
-        <!--  code block starts -->
-        <div class='block-s mt-m tt-block'>
-            <h4 class='tiny uppercase text-muted'>
-                code
-            </h4>
-            <pre>
-<code class='language-markup'>
-</code>
-            </pre>
-        </div><!--  code block ends -->
-
-        <!--  hello world block starts -->
-        <div class='block-stacked block-s st-block'>
-            <h4 class='tiny uppercase text-muted'>
-                hello world
-            </h4>
-        </div><!--  hello world block ends -->
-    </div><!-- Buttons ends-->
 
     <!-- /****************************************  Forms *******************************/ -->
     
-    <div class='mt-l' id='anchor9'>
+    <div class='mt-l' id='anchor8'>
         <h2 class='h3'>
-           09. Forms
+           08. Forms
         </h2>
         <p>
             ...
@@ -579,15 +562,15 @@ and so on.....
     
     <!-- /**************************************** Grid  *******************************/ -->
 
-    <div class='mt-l' id='layoutAnchor10'>
+    <div class='mt-l' id='anchor9'>
         <h2>
-            10. Grids
+            9. Grids
         </h2>
         <h3 class='h4'>
             a) Inline Grid
         </h3>
         <p>
-            Sets the child elements to take up full justified width of the parent. The prefix class is 'column' and the suffix is the percentage.
+            Sets the child elements to take up full justified width of the parent. The prefix class is 'col' (although you can change this in the variables file) and the suffix is the fraction.
         </p>
         <!--  code block ends -->
         <div class='block-s tt-block'>
@@ -596,6 +579,28 @@ and so on.....
             </h4>
             <pre>
 <code class='language-markup'>
+Grid columns
+------------------------------------------
+.col { width: 100%; }
+.col-1-3 { width: 33.33333%; }
+.col-2-3 { width: 66.66667%; }
+.col-1-4 { width: 25%; }
+.col-2-4 { width: 50%; }
+.col-3-4 { width: 75%; }
+.col-1-5 { width: 20%; }
+.col-2-5 { width: 40%; }
+.col-3-5 { width: 60%; }
+.col-4-5 { width: 80%; }
+.col-1-10 { width: 10%; }
+.col-2-10 { width: 20%; }
+.col-3-10 { width: 30%; }
+.col-4-10 { width: 40%; }
+.col-5-10 { width: 50%; }
+.col-6-10 { width: 60%; }
+.col-7-10 { width: 70%; }
+.col-8-10 { width: 80%; }
+.col-9-10 {width: 90%; }
+
 &lt;p&gt;Example one:&lt;/p&gt; 
 &lt;div class='grid'&gt;
     &lt;div class='grid__item col'&gt;
@@ -763,7 +768,8 @@ and so on.....
             Inline Grid - Responsive
         </h3>
         <p>
-         This works exactly the same as what's mentioned above the only thing that changes is a media query suffix gets added.
+            This works exactly the same as what's mentioned above. 
+            You just need to add an extra suffix onto the classes which relates to the breakpoint you want to target.
         </p>
         <!--  code block starts -->
         <div class=' block-s tt-block'> 
@@ -771,7 +777,7 @@ and so on.....
                 Media query suffix: 
             </h4>
             <pre>
-<code class="language-html">
+<code class='language-css'>
 // Media query prefixes
 // -------------------------------------------------- 
 
@@ -782,7 +788,8 @@ $breakpoint-large-name: "large";
 $breakpoint-medium-name: "medium";
 $breakpoint-small-name: "small";
 $breakpoint-classname-prefix: "--q-";
-
+</code>
+<code class='language-markup'>
 &lt;div class='grid'&gt;
     &lt;div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'&gt;
        &lt;div class='pink-block block-s'&gt;
@@ -863,12 +870,13 @@ $breakpoint-classname-prefix: "--q-";
             b) Float Grid
         </h3>
     </div><!--Inline grid section starts-->
-
+    
+    <hr class='mt-l' />
     <!-- /****************************************  Headings *******************************/ -->
     
-    <div class='mt-l' id='anchor11'>
+    <div class='mt-l' id='anchor10'>
         <h2 class='h3'>
-           11. Headings
+           10. Headings
         </h2>
         <p>
             Notes
@@ -911,9 +919,9 @@ $breakpoint-classname-prefix: "--q-";
     <hr class='mt-l'>
     <!-- /****************************************  Icon blocks  *******************************/ -->
     
-    <div class='mt-l' id='anchor12'>
+    <div class='mt-l' id='anchor11'>
         <h2  class='h3'>
-           12. Icons with text
+           11. Icons with text
         </h2>
         <p>
             Notes
@@ -961,9 +969,9 @@ $breakpoint-classname-prefix: "--q-";
     <hr class='mt-l'>
 
     <!-- /****************************************  Responsive images  *******************************/ -->
-    <div class='mt-l' id='anchor13' >
+    <div class='mt-l' id='anchor12' >
         <h2 class='h3'>
-            13. Responsive images
+            12. Responsive images
         </h2>
         <p>
             This applies max-width: 100%; and height: auto; to the image so that it scales nicely to 
@@ -990,10 +998,10 @@ $breakpoint-classname-prefix: "--q-";
           
             
             <div class='grid'>
-                <div class='grid__item g--1-2' >
+                <div class='grid__item col-1-3' >
                     <img src='assets/images/fred.png' alt='' class='img--responsive' />
                 </div>
-                <div class='grid__item g--1-2'>
+                <div class='grid__item col-2-3'>
                     <div class='arrow--side blue-block block-m'>
                         <p>Resize the browser so you can see me shrink </p>
                         <i class='arrow arrow-left'></i>
@@ -1005,10 +1013,10 @@ $breakpoint-classname-prefix: "--q-";
 
     <!-- /****************************************  List styles  *******************************/ -->
     <hr class='mt-l'>
-    <div class='mt-l' id='anchor14'>
+    <div class='mt-l' id='anchor13'>
 
         <h2 class='h3'>
-            14. List styles
+            13. List styles
         </h2>
 
         <p>
@@ -1123,9 +1131,9 @@ $breakpoint-classname-prefix: "--q-";
 
     <!-- /****************************************  Media blocks  *******************************/ -->
 
-    <div class='mt-l' id='anchor15'>
+    <div class='mt-l' id='anchor14'>
         <h2 class='h3'>
-            15. Media blocks
+            14. Media blocks
         </h2>
         <p>
             Float an image to the left, with a clearfixed block of content to the right.
@@ -1182,9 +1190,9 @@ $breakpoint-classname-prefix: "--q-";
 
     <!-- /****************************************  Radii  *******************************/ -->
 
-    <div class='mt-l' id='anchor16'>
+    <div class='mt-l' id='anchor15'>
         <h2 class='h3'>
-            16. Radii
+            15. Radii
         </h2>
         <p>
            Notes
@@ -1196,7 +1204,15 @@ $breakpoint-classname-prefix: "--q-";
             </h4>
             <pre>
 <code class="language-markup">
-
+&lt;div class='blue-block block-xs radius--xs'&gt;
+    Check out my rounded corners
+&lt;/div&gt;
+&lt;div class='blue-block block-xs radius--s'&gt;
+    Check out my rounded corners
+&lt;/div&gt;
+&lt;div class='blue-block block-xs radius--m'&gt;
+    Check out my rounded corners
+&lt;/div&gt;
 </code>
             </pre>
         </div><!--  code block ends -->
@@ -1206,6 +1222,15 @@ $breakpoint-classname-prefix: "--q-";
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
+            <div class='blue-block block-xs radius--xs'>
+                Check out my corners
+            </div>
+            <div class='blue-block block-xs radius--s'>
+                Check out my corners
+            </div>
+            <div class='blue-block block-xs radius--m'>
+                Check out my corners
+            </div>
         </div><!--  hello world block ends -->
     </div><!-- layout-media-block ends-->
     
@@ -1213,9 +1238,9 @@ $breakpoint-classname-prefix: "--q-";
     
     <!-- /****************************************  Spacing *******************************/ -->
     
-    <div class='mt-l' id='anchor17' >
+    <div class='mt-l' id='anchor16' >
         <h2 class='h3'>
-            17. Spacing Helpers
+            16. Spacing Helpers
         </h2>
         <p>
             Notes here
@@ -1407,7 +1432,7 @@ xxxl
 
     <!-- /****************************************  Typography  *******************************/ -->
 
-    <div class='mt-l' id='anchor16'>
+    <div class='mt-l' id='anchor17'>
         <h2 class='h3'>
             17. Typography
         </h2>

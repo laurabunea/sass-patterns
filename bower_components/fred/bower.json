@@ -1,8 +1,11 @@
 {
   "name": "Fred",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A friend front-end framework",
-  "main": "dist/fred.scss",
+  "main": [
+    "dist/lib/fred.scss",
+    "dist/fred.css"
+  ],
   "keywords": [
     "Sass",
     "css",
@@ -20,8 +23,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-      "normalize-css":"2.1.3"
-  }
+  ]
 }

@@ -2,12 +2,36 @@
 
 Fred is a collection of common CSS patterns for websites.
 
-You can build a custom package by running `grunt <module-name> <other-module-name>`. Defaults to all.
+## Building Fred
+ 
+To build a custom Fred package from the command line, run:
 
-Grunt will make a `dist/fred.scss`, and compiled `dist/fred.css` for your project.
+```
+> npm install
+> grunt
+```
+
+...and follow the directions of your cabin crew.
+
+Grunt will make a `dist/lib/fred.scss`, and compile `dist/fred.css` for your project
 
 
+## Working with your project
 
-## Installation
+You want to tweak all Fred's variables and make everything pretty for your project.
 
-Run `npm install` to set up all Fred's dependencies
+You also want to keep Fred under some kind of package management, like bower. 
+
+The `_fred-theme.scss` is copied into your sass directory and included by `lib/fred.scss`.
+
+
+```sass
+// style.scss
+
+@import "path/to/fred";
+
+// Rest of your styles here!
+
+```
+
+Now you can tweak away, while still being able to update Fred without nuking all your hard work.

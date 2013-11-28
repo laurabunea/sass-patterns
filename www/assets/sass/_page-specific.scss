@@ -58,16 +58,19 @@ shame!!!! just some dirty styles to get a basic style. i WILL refacter to get th
 }
 
 .testbox {
-    @include box-dimensions(150px, 150px);
+    width:150px;
+    height:150px;
     display:inline-block;
 }
 
 .testbox-100-100 {
-    @include box-dimensions(100px, 100px);
+     width:100px;
+    height:100px;
 }
 
 .testbox-400-100 {
-    @include box-dimensions(100px, 300px);  
+    width:300px;
+    height:100px; 
 }
 .homepage {
     background-color:#4D4D4D;
@@ -152,4 +155,69 @@ h1 .tiny {
 }
 .mw--70 {
     max-width:70%;
+}
+
+
+/* ==========================================================================
+   SUIT form
+   ========================================================================== */
+
+/**
+ * A thin layer on top of normalize.css that provides a starting point more
+ * suitable for web applications. Removes the default spacing and border for
+ * appropriate elements.
+ */
+
+.form {}
+
+.form fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form select {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.form--inline .Form-item {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.form-item {
+    margin: 0 0 1em;
+}
+
+.form-item--stacked .Form-label {
+    display: block;
+}
+
+.form-input {
+    border: 1px solid #000;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5em 0.6em;
+}
+
+/**
+ * Override the normalize.css search input `box-sizing` normalization.
+ */
+
+.form-input[type="search"] {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/**
+ * Add a basic focus style because Firefox removes the default focus style when
+ * the unfocused input has an explicit border color set.
+ */
+
+.form-input:focus {
+    border-color: #1980ce;
 }

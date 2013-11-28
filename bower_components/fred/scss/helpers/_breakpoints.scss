@@ -1,42 +1,15 @@
 // Breakpoints
 
 @mixin media($breakpoint) {
-    @if $breakpoint == "small" {
-        @media only screen and (max-width: $breakpoint-small) {
-            @content;
-        }
-    } @else if $breakpoint == "medium-down" {
-        @media only screen and (max-width: $breakpoint-medium){
-            @content;
-        }
-
-    } @else if $breakpoint == "medium-only" {
-        @media only screen and (min-width: $breakpoint-medium) and (max-width: $breakpoint-large - 0.01em){
-            @content;
-        }
-    } @else if $breakpoint == "medium" {
-        @media only screen and (min-width: $breakpoint-medium) {
-            @content;
-        }
-
-    } @else if $breakpoint == "large" {
-        @media only screen and (min-width: $breakpoint-large){
-            @content;
-        }
-    } @else if $breakpoint == "xlarge" {
-        @media only screen and (min-width: $breakpoint-xlarge) {
-            @content;
-        }
-    }
-    // Deal with the default case (no media query)
-    @else if $breakpoint == "default" {
+    @if $breakpoint == "default" {
         @content;
-    }
-    // If no breakpoint is passed, scope the content to browsers that support
-    // media queries only.
-    @else {
-        @media only screen {
-            @content;
+    } @else {
+        @each $query in $breakpoints {
+            @if $breakpoint == nth($query, 1) {
+                @media #{nth($query, 2)} {
+                    @content;
+                }
+            }
         }
     }
 }

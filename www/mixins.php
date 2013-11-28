@@ -349,7 +349,61 @@
             </div>
         
         </div><!--  hello world block ends -->
-    </div><!-- mixin-vendor ends-->               
+    </div><!-- mixin-vendor ends-->  
+
+    <!-- /****************************************  Sapcer mixin  *******************************/ -->
+
+    <div class='mt-l' id='mixinAnchor6'>
+        <h2 class='h3'>
+           Spacer Mixin
+        </h2>
+        <!--  code block starts -->
+
+        <p>
+            Notes
+        </p>
+        
+        <div class='block-s tt-block'>
+            <h4 class='tiny uppercase text-muted'>
+                scss code
+            </h4>
+            <pre>
+<code class='language-css'>
+//these variables are in the fred variables file
+$fred-grid-breakpoints:     default, small, medium, large;
+$fred-margin-types: "mt", "mb";
+$fred-padding-types: "pt", "pb";
+
+
+@include fred-breakpoint-sizer($fred-margin-breakpoints, $fred-margin-types);
+@include fred-breakpoint-sizer($fred-padding-breakpoints, $fred-padding-types);
+
+
+</code>
+            </pre>
+            <h4 class='tiny uppercase text-muted'>
+                html code
+            </h4>
+            <pre>
+<code class='language-markup'>
+&lt;div class='blue-block'&gt;
+    &lt;p&gt; Some text &lt;/p&gt;
+&lt;/div&gt;  
+</code>
+            </pre>
+        </div><!--  code block ends -->
+
+        <!--  hello world block starts -->
+        <div class='block-stacked block-s st-block'>
+            <h4 class='tiny uppercase text-muted'>
+                hello world
+            </h4>
+            <div class='mt-xm  blue-block block-s'>
+                <p>Some text</p>
+            </div>
+        
+        </div><!--  hello world block ends -->
+    </div><!-- mixin-vendor ends-->             
          
 
 </div><!-- content padding ends-->

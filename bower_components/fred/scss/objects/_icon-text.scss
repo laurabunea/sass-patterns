@@ -4,22 +4,22 @@
  */
 
 .icon-text,
-.icon-text--rev {/* a, div, etc */
+.icon-text--rev{/* a, div, etc */
     @extend %inline-block;
     display:inline-block; //CHECK why this isn't extending
 }
 
-.i {
+.i{
     overflow: hidden; /* for IE6 */
     vertical-align: middle;
     /* SMACSS line-height: 0; ? */
     .icon-text &,
     .btn--icon &{
-        margin-right: $bs--xxs;
+        margin-right: $base-spacing-unit/3;
     }
 
     .icon-text--rev &,
-    .btn--icon-rev & {
-        margin-left: $bs--xxs;
+    .btn--icon-rev &{
+        margin-left: $base-spacing-unit/3;
     }
 }

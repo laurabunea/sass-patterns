@@ -9,7 +9,7 @@
         @extend %inline-block;
         &+li:before {
             content: "/\00a0";
-            padding: 0 5px;
+            padding: 0 $bs-xxxs;
         }
     }
 }
