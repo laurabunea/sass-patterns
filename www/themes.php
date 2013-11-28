@@ -69,21 +69,21 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
         	<div class='grid'>
-                <div class='g--1-4 testbox-100-100 mt-xm block-s pt-block'>
+                <div class='g--1-4 testbox-100-100 mt-xs block-s pt-block'>
                     <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 mt-xm block-s st-block'>
+                <div class='g--1-4 testbox-100-100 mt-xs block-s st-block'>
                    <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 mt-xm block-s tt-block'>
+                <div class='g--1-4 testbox-100-100 mt-xs block-s tt-block'>
                     <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 mt-xm block-s qt-block'>
+                <div class='g--1-4 testbox-100-100 mt-xs block-s qt-block'>
                     <p>Some text.</p>
                 </div>
             </div>
@@ -110,18 +110,18 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
         	<div class='grid'>
-                <div class='testbox-100-100 block-s mt-xm  success-block'>
+                <div class='testbox-100-100 block-s mt-xs  success-block'>
                     <p>Success</p>
                 </div>
-                <div class='testbox-100-100 block-s mt-xm  warning-block'>
+                <div class='testbox-100-100 block-s mt-xs  warning-block'>
                     <p>Success</p>
                 </div>
-                <div class='testbox-100-100 block-s mt-xm  danger-block'>
+                <div class='testbox-100-100 block-s mt-xs  danger-block'>
                     <p>Danger</p>
                 </div>
                 
@@ -154,7 +154,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -188,7 +188,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -220,7 +220,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

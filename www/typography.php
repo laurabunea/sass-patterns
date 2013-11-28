@@ -301,7 +301,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             
             <h4 class='tiny uppercase text-muted'>
                 hello world
@@ -354,7 +354,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block-stacked block-s st-block'>
+            <div class='block--stacked block-s st-block'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -419,7 +419,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block starts -->
 
         <!-- hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -456,7 +456,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -493,7 +493,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -532,7 +532,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block starts -->
 
         <!-- hello world block starts -->
-        <div class='block-stacked block-s st-block clearfix'>
+        <div class='block--stacked block-s st-block clearfix'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -584,7 +584,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block-stacked block-s st-block'>
+            <div class='block--stacked block-s st-block'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -619,7 +619,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block-stacked block-s st-block'>
+            <div class='block--stacked block-s st-block'>
                 <h4 class='h tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -653,7 +653,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block-stacked block-s st-block'>
+            <div class='block--stacked block-s st-block'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -695,7 +695,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

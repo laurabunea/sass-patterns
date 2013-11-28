@@ -13,7 +13,7 @@
     </div>
 </div> 
 
-<div class='block-stacked block-l block-small--s mb-l pt-block'>
+<div class='block--stacked block-l block-small--s mb-l pt-block'>
 	
     <p class='intro'>
         Introduction on FRED here ...
@@ -54,6 +54,11 @@
         </li>
         <li>
             Indent sub-components in CSS
+        </li>
+        <li>
+            Be consistent with vertical spacing. Avoid setting arbitrary margins on items. 
+            Defer these to a variable, and use multiples of that variable to control your vertical spacing. 
+            Our designs will often change right up til the end, so it's worth making stuff really easy to change.
         </li>
     </ul>
     <hr class='mt-l'/>

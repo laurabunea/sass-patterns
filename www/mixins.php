@@ -100,11 +100,11 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='img-rounded mt-xm  testbox-100-100 green-block'>
+            <div class='img-rounded mt-xs  testbox-100-100 green-block'>
             </div>
         
         </div><!--  hello world block ends -->
@@ -142,11 +142,11 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='element block-stacked block-s'>
+            <div class='element block--stacked block-s'>
                 resize the browser
             </div>
         </div><!--  hello world block ends -->
@@ -189,7 +189,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -244,11 +244,11 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <form class='mt-xm '>
+            <form class='mt-xs '>
                 <input class='pink-input-text' type="text" name="fname" placeholder="First name">
             </form>
         
@@ -293,11 +293,11 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='mt-xm  blue-block block-s'>
+            <div class='mt-xs  blue-block block-s'>
                 <p>Some text</p>
             </div>
         
@@ -340,11 +340,11 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='mt-xm  blue-block block-s'>
+            <div class='mt-xs  blue-block block-s'>
                 <p>Some text</p>
             </div>
         
@@ -394,11 +394,11 @@ $fred-padding-types: "pt", "pb";
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block-stacked block-s st-block'>
+        <div class='block--stacked block-s st-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='mt-xm  blue-block block-s'>
+            <div class='mt-xs  blue-block block-s'>
                 <p>Some text</p>
             </div>
         
