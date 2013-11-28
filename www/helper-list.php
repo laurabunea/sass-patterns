@@ -68,31 +68,35 @@
                 </a>
             </li>
             <li>
-                <a href='#anchor13'>
+                <a href='/objects/lists.php'>
                     Lists
                 </a>
             </li>
             <li>
-                <a href='#anchor14'>
+                <a href='/objects/media.php'>
                     Media blocks
                 </a>
             </li>
             <li>
-                <a href='#anchor15'>
+                <a href='/objects/radii.php'>
                     Radii
                 </a>
             </li>
             <li>
-                <a href='#anchor16'>
+                <a href='/objects/spacing.php'>
                     Spacing
                 </a>
             </li>
             <li>
-                <a href='#anchor17'>
+                <a href='/objects/typography.php'>
                     Typography
                 </a>
             </li>
-
+            <li>
+                <a href='/objects/positioning.php'>
+                    Positioning
+                </a>
+            </li>
             <li>
                 <a href='#anchor18'>
                     Visibility
