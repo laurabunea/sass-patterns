@@ -1,0 +1,216 @@
+/**
+ * Antialias everything by default, and set the line-height.
+ */
+html,
+body {
+    @extend %fix-webkit-font-rendering;
+    font-size: 100%;
+    line-height: $base-line-height;
+}
+
+
+/**
+ * onMediaQuery sets the font-family on HTML, so declare your font-family
+ * on the body element instead.
+ */
+body {
+    @extend .font-primary;
+}
+
+
+/**
+ * Font declarations
+ * ----------------------------------------------------------------------------
+ */
+.font-primary {
+    @include font($font-primary, 400 , normal);
+}
+
+    .font-primary--italic {
+        @include font($font-primary, 400 , italic);
+        .ie8 & {
+            font-family:$font-primary-italic;
+        }
+    }
+
+    .font-primary--bold {
+        @include font($font-primary, 700 , normal);
+        .ie8 & {
+            font-family:$font-primary-bold;
+        }
+    }
+
+    .font-primary--bold-italic {
+        @include font($font-primary, 700 , italic);
+        .ie8 & {
+            font-family:$font-primary-bold-italic;
+        }
+    }
+
+.sans       { font-family:$sans-serif-stack; }
+.serif      { font-family:$serif-stack; }
+
+.font-size-xxxxl                { font-size: px-to-em($font-size-xxxxl);}
+.font-size-xxxl                 { font-size: px-to-em($font-size-xxxl);}
+.font-size-xxl                  { font-size: px-to-em($font-size-xxl);}
+.font-size-xl                   { font-size: px-to-em($font-size-xl);}
+.font-size-l                    { font-size: px-to-em($font-size-l);}
+.font-size-m                    { font-size: px-to-em($font-size-m);}
+.font-size-s                    { font-size: px-to-em($font-size-s);}
+.font-size-xs                   { font-size: px-to-em($font-size-xs);}
+.font-size-xxs                  { font-size: px-to-em($font-size-xxs);}
+.font-size-xxxs                 { font-size: px-to-em($font-size-xxxs);}
+
+
+/**
+ * Headings
+ * ----------------------------------------------------------------------------
+ */
+h1, h2, h3, h4, h5, h6, p, .text, li, code {
+    @extend .mb-0;
+    &:first-child {
+        @extend .mt-0;
+    }
+}
+
+/** 2. Header styles
+ * ----------------------------------------------------------------------------
+ * NOTE: These can change per project depending on what font etc you use :)
+ *
+ */
+
+.h0 {
+    @extend .font-size-xxxxl;
+}
+
+h1, .h1 {
+    @extend .font-size-xxxl;
+    line-height: $line-height-xxxl;
+    margin-top: pxem($base-spacing, $font-size-xxxl);
+
+
+}
+
+h2, .h2 {
+    @extend .font-size-xxl;
+    line-height: $line-height-xxl;
+    margin-top: pxem($base-spacing, $font-size-xxl);
+}
+
+h3, .h3 {
+    @extend .font-size-xl;
+    line-height: $line-height-xl;
+    margin-top: pxem($base-spacing, $font-size-xl);
+}
+
+h4, .h4 {
+    @extend .font-size-m;
+    line-height: $line-height-m;
+    margin-top: px-to-em($base-spacing, $font-size-m);
+}
+
+h5, .h5 {
+    @extend .font-size-s;
+
+    line-height: $line-height-s;
+    margin-top: px-to-em($base-spacing--xs, $font-size-s);
+}
+
+h6, .h6 {
+    @extend .font-size-xs;
+    line-height: $line-height-xs;
+    margin-top: px-to-em($base-spacing--xs, $font-size-xs);
+}
+
+
+p, .text, li, code {
+    @extend .font-size-xs;
+    line-height: $line-height-xs;
+    margin-top: px-to-em($base-spacing--xs, $font-size-xs);
+}
+
+strong, b {
+    .ie8 & {
+        @extend .font-primary--bold;
+    }
+}
+
+em, i {
+    .ie8 & {
+        @extend .font-primary--italic;
+    }
+}
+
+
+/**
+ *  3. Paragraph styles
+ * ----------------------------------------------------------------------------
+ */
+
+.intro {
+    @extend .font-size-s;
+}
+
+.small {
+    @extend .font-size-xxs;
+}
+
+.tiny {
+    @extend .font-size-xxxs;
+}
+
+.caption {
+    @extend .font-size-xxs;
+}
+
+.pullquote {
+    @extend .font-size-m;
+}
+
+.text-muted {
+    color: $text-muted;
+}
+
+.text-warning {
+    color: $text-warning;
+}
+
+.text-success {
+    color: $text-success;
+}
+.text-danger {
+    color: $text-danger;
+}
+
+
+/**
+ * 5. hr
+ * ----------------------------------------------------------------------------
+ */
+
+hr {
+    border: none;
+    height: 1px;
+}
+
+
+/**
+ * Text helpers
+ * ----------------------------------------------------------------------------
+ */
+.uppercase              { text-transform:uppercase; }
+.lowercase              { text-transform:lowercase; }
+
+.text-left              { text-align: left; }
+.text-right             { text-align: right; }
+.text-center            { text-align: center; }
+.text-nowrap            { white-space: nowrap; }
+
+.text--overflow {
+    @extend .inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+

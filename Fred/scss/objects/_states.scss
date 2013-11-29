@@ -1,0 +1,27 @@
+/**
+ * State utilities
+ * ----------------------------------------------------------------------------
+ * Indicate that interaction will result in an (in)action.
+ */
+
+.is-disabled {
+    cursor: default;
+}
+
+.is-draggable {
+    cursor: move;
+}
+
+
+//links for now it can sit in here may create a link oject 
+
+//do we want text decoration as default and then add it with a class or do we do the other way 
+//link blocks - commonly used in vertical navigation lists
+.link--block,
+.link--block:focus,
+.link--block:hover,
+.link--block:active {
+    display:block;
+    //removes any text decoration on all link states
+    text-decoration: none!important;
+}

@@ -1,0 +1,15 @@
+/**
+ * Visibility
+ * -----------------------------------------------------------------------------
+ */
+@each $query in $breakpoints {
+    $queryName: nth($query, 1);
+    @include media($queryName) {
+        .visible-#{$queryName} {
+            display: block !important;
+        }
+        .hidden-#{$queryName} {
+                display: none !important;
+        }
+    }
+}

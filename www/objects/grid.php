@@ -5,7 +5,7 @@
     include '../helper-list.php'; 
 ?>
 <div class='relative mb-l col-8-10 grid__item mt-xxxl ' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:243px;' />
+    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:239px;' />
 
 
     <div class='block-l pt-block ml-l' >  
@@ -17,7 +17,10 @@
             a) Inline Grid
         </h3>
         <p>
-            Sets the child elements to take up full justified width of the parent. The prefix class is 'col' (although you can change this in the variables file) and the suffix is the fraction you require.
+            Sets the child elements to take up full justified width of the parent.
+        </p>
+        <p> 
+            The prefix class is 'col' (although you can change this in the variables file) and the suffix is the fraction you require.
         </p>
         <!--  code block ends -->
         <div class='block-s tt-block'>

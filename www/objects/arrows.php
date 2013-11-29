@@ -5,7 +5,7 @@
     include '../helper-list.php'; 
 ?>
 <div class='relative mb-l col-8-10 grid__item mt-xxxl ' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style=' top:-21px;' />
+    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style=' top:-26px;' />
     <!--  ************  arrows block starts   ************   -->
 
     <div class='block-l pt-block ml-l' >     
@@ -56,22 +56,22 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='arrow--left mt-xs block-xs blue-block'>
+            <div class='arrow--left block-xs blue-block'>
                 <p> ... </p>
                 <i class='arrow arrow-top'></i>
             </div>
 
-            <div class='arrow--right mt-xs block-xs blue-block'>
+            <div class='arrow--right block-xs blue-block'>
                 <p> ... </p>
                 <i class='arrow arrow-top '></i>
             </div>
 
-            <div class='arrow--center mt-xs block-xs blue-block'>
+            <div class='arrow--center block-xs blue-block'>
                 <p> ... </p>
                 <i class='arrow arrow-bottom '></i>
             </div>
 
-            <div class='arrow--side mt-xs block-xs blue-block'>
+            <div class='arrow--side block-xs blue-block'>
                 <p> ... </p>
                 <i class='arrow arrow-left '></i>
             </div>

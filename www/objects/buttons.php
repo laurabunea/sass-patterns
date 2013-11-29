@@ -5,26 +5,19 @@
     include '../helper-list.php'; 
 ?>
 <div class='relative mb-l col-8-10 grid__item mt-xxxl ' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:111px;' />
+    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:106px;' />
     <div class='block-l pt-block ml-l' >  
         <div class='heading '>
             <h2 class='heading heading--keyline'>
                 Buttons
             </h2>
         </div>
-        <p>
-            Notes...
-        </p>
-
-       
-        <!--<p>Make a button with <code>&lt;a class='btn'&gt;A button&lt;/a&gt;</code>. You can build your buttons out of a bunch of useful classnames.</p>-->
-      
         <!-- /****************************************  Button variations  *******************************/ -->
 
-        <div class='mt-xl' id='btn-variations'> 
-            <h2 class='h3' >
+        <div class='mt-m'> 
+            <h3>
                 a) Button variations
-            </h2>
+            </h3>
 
             <!-- code block starts -->
             <div class=' block-s tt-block'>
@@ -100,9 +93,9 @@
         <!-- /****************************************  Button modifiers  *******************************/ -->
 
         <div class='mt-l' id='btn-modifier'>
-            <h2 class='h3' >
-                02. Button modifiers
-            </h2>
+            <h3>
+                Button modifiers
+            </h3>
             <p>
                 Stick buttons on anything you want. They don't have to go on anchor tags!
             </p>

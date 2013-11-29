@@ -1,7 +1,7 @@
 <div class='col-2-10 grid__item mt-xxxl'>
     <div class='block-xs pt-block pt-l'>
         
-        <h3>
+        <h3 class='h4 ml-xxs'>
             My Helpers
         </h3>
         <ul class=' list-styled mt-m'>   

@@ -1,9 +1,7 @@
 
 // Fred core
 @import
-    '../../../bower_components/fred/dist/lib/fred.scss',
-    '../../../bower_components/fred/dist/fred-theme.scss',
-    '../../../bower_components/fred/normalize-css/normalize.css';
+    '../../../Fred/dist/lib/fred.scss';
 
 @import 'variables',
         'typography',

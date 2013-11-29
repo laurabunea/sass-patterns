@@ -5,7 +5,7 @@
     include '../helper-list.php'; 
 ?>
 <div class='relative mb-l col-8-10 grid__item mt-xxxl ' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:46px;' />
+    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:41px;' />
     <!--  ************  arrows block starts   ************   -->
 
     <div class='block-l pt-block ml-l' >     
@@ -13,7 +13,7 @@
         <h2 class='heading heading--keyline'>
            Blocks
         </h2>
-
+       
         <p>
             Use the block object to give a block element (e.g a div) an inset effect. 
             It's pretty easy to use, the prefix is 'block' and the suffix is the size of the padding you want to use. 
@@ -105,7 +105,7 @@ and so on.....
             </div><!-- block xl ends-->
 
         </div><!--  hello world block ends -->
-    
+        <hr class='mt-l'>
         <h3 class='h4 mt-l'>
              b) Responsive blocks
         </h4>

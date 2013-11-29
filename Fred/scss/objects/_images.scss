@@ -1,0 +1,15 @@
+/**
+ * Responsive images
+ * ----------------------------------------------------------------------------
+ * <img src="..." class="img--responsive" alt="Responsive image">
+ */
+
+.img--responsive {
+    height: auto;
+    max-width: 100%;
+}
+
+// Use a massive em value, good for circles up to 960px wide
+.img--round {
+    @include vendor(border-radius, 30em);
+}

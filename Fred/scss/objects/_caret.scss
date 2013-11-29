@@ -1,0 +1,21 @@
+/**
+ * Drop-down caret
+ * ----------------------------------------------------------------------------
+ */
+
+.caret {
+    border-bottom: 0 dotted;
+    border-left: .25em solid transparent;
+    border-right: .25em solid transparent;
+    border-top: .25em solid #000;
+    display: inline-block;
+    height: 0;
+    margin-left: .125em;
+    vertical-align: middle;
+    width: 0;
+}
+
+.caret--rev {
+    border-bottom: .25em solid #000;
+    border-top: 0 dotted;
+}

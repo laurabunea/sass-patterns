@@ -1,0 +1,133 @@
+/**
+ * Lists
+ * ----------------------------------------------------------------------------
+ */
+
+.list-unstyled {
+    list-style: none;
+    margin: 0 0 0 0;
+    padding-left: 0;
+}
+
+    .list-unstyled > li {
+        list-style: none;
+        margin-left: 0;
+    }
+
+    .list--inline {
+        @extend .clearfix;
+        @extend .list-unstyled;
+    }
+
+    .list--inline > li {
+        @extend .inline-block;
+        margin: 0;
+    }
+
+//default list style in this case its circles
+%list-styled {
+    margin-top: $bs-xs; //same as the margin top on p tags
+    padding-left: $bs-m;
+}
+
+.list-styled {
+    @extend %list-styled;
+    list-style: circle;
+}
+
+    //decimal list
+    .list-styled--decimal,
+    .list-decimal {
+        @extend %list-styled;
+        list-style: decimal-leading-zero;
+        padding-left: $bs-l;
+    }
+
+    //alpha list
+    .list-styled--alpha,
+    .list-alpha {
+        @extend %list-styled;
+        list-style: lower-alpha;
+    }
+
+
+.list-dashed {
+    margin-left:1em;
+    margin-top:0;
+    @extend %list-styled;
+
+    & > li {
+        text-indent:-0.5em;
+
+        & > * {
+            text-indent: 0;
+        }
+
+        &:before {
+            content:"\2013";
+            position:relative;
+            left:-0.5em;
+        }
+    }
+}
+
+
+
+/**
+ * Block list
+ * ----------------------------------------------------------------------------
+ * Throws a list into a vertical stack. Handy for things like navigation.
+ */
+.block-list {
+    @extend .list-unstyled;
+    > li {
+        display: block;
+    }
+}
+
+
+/**
+ * Definition lists
+ * ----------------------------------------------------------------------------
+ * Defaults to being stacked without any of the below styles applied, until the
+ *
+ */
+
+dl {
+    @extend .mt--m;
+}
+    dt,
+    dd {
+        line-height: $line-height-xs;
+    }
+    dt {
+        font-weight: bold;
+    }
+    dd {
+      margin-left: 0; // Undo browser default
+    }
+
+
+/**
+ * 13. Horizontal description lists
+ * ----------------------------------------------------------------------------
+ * Defaults to being stacked without any of the below styles applied, until the
+ *
+ */
+
+@include media('medium-down') {
+    .dl-horizontal {
+        > dt {
+            @extend %text-overflow;
+            clear: left;
+            float: left;
+            text-align: right;
+            width: 35%;
+        }
+        > dd {
+            @extend %clearfix; // Clear the floated `dt` if an empty `dd` is present
+            margin-left: 40%;
+
+       }
+    }
+}

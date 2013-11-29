@@ -1,0 +1,2591 @@
+// ============================================================================
+// FRED
+// ============================================================================
+// 
+// Friendly front-end framework.
+// 
+// Made by Springload
+// 
+// With guest appearances from Inuit.css, Twitter Bootstrap and Foundation
+
+
+// ----------------------------------------------------------------------------
+// Typography
+// ----------------------------------------------------------------------------
+
+$sans-serif-stack:              'Open Sans', sans-serif;
+$serif-stack:                   "georgia", serif;
+
+$font-primary:                   $sans-serif-stack;
+
+// These variables are used to describe the font-family you want to serve
+// to IE8 and other detestable browers that don't entirely support
+// fonts with more than four variations. 
+      
+$font-primary-italic:            $sans-serif-stack;
+$font-primary-bold:              $sans-serif-stack;
+$font-primary-bold-italic:       $sans-serif-stack;
+
+// Specify some font sizes to get your project rolling. These are predominantly
+// used by _typography.scss and _forms.scss
+
+$font-size-xxxxl:               72;     //h0
+$font-size-xxxl:                36;     //h1
+$font-size-xxl:                 32;     //h2
+$font-size-xl:                  22;     //h3
+$font-size-l:                   20;     //h4
+$font-size-m:                   18;     //h5
+$font-size-s:                   16;     //h6 & .intro
+$font-size-xs:                  14;     //p
+$font-size-xxs:                 12;     //.small
+$font-size-xxxs:                11;     //.tiny
+
+$base-line-height:              1.428571429; // 20/14
+
+$line-height-xxxxl:               1;                //h0
+$line-height-xxxl:                1;                //h1
+$line-height-xxl:                 1.2;              //h2
+$line-height-xl:                  1.2;              //h3
+$line-height-l:                   1.33333333;       //h4
+$line-height-m:                   1.2;              //h5
+$line-height-s:                   1.2;              //h6 & .intro
+$line-height-xs:                  1.5;              //p
+$line-height-xxs:                 1.4;              //.small
+$line-height-xxxs:                1.4;              //.tiny
+
+
+// ----------------------------------------------------------------------------
+// Spacing
+// ----------------------------------------------------------------------------
+
+// Everything inherits from the base spacing unit. Pick this number wisely. 
+// It should probably relate somehow to your line-height;
+
+$base-spacing:                  24;
+$base-spacing-unit:             1.5em;
+
+
+// Compute a range of expansions to the base spacing, to use in our mixins:
+
+$bs-0:                         0;
+$bs-xxxs:                      $base-spacing-unit / 4;     // 6px
+$bs-xxs:                       $base-spacing-unit / 3;     // 8px
+$bs-xs:                        $base-spacing-unit / 2;     // 12px
+$bs-s:                         $base-spacing-unit / 1.5;   // 16px
+$bs-m:                         $base-spacing-unit;         // 24px
+$bs-l:                         $base-spacing-unit * 1.5;   // 36px
+$bs-xl:                        $base-spacing-unit * 2;     // 48px
+$bs-xxl:                       $base-spacing-unit * 3;     // 72px
+$bs-xxxl:                      $base-spacing-unit * 4;     // 96px
+
+$base-spacing--xs:  $base-spacing / 2;
+
+// Build some SaSS lists of our spacing classes, and map them to 
+// a consistent set of class modifiers so that anything we size
+// has a consistent naming convention:
+
+$sizePrefixes:
+    "-0",
+    "-xxxs",
+    "-xxs",
+    "-xs",
+    "-s",
+    "-m",
+    "-l",
+    "-xl",
+    "-xxl",
+    "-xxxl";
+
+$sizes:
+    $bs-0, $bs-xxxs, $bs-xxs, $bs-xs, $bs-s, $bs-m, $bs-l, $bs-xl, $bs-xxl, $bs-xxxl;
+
+
+// -----------------------------------------------------------------------------
+// Blocks
+// -----------------------------------------------------------------------------
+
+$block-xxxs:                   $bs-xxxs $bs-xxxs;        // 6px 6px
+$block-xxs:                    $bs-xxxs $bs-xxs;         // 6px 8px
+$block-xs:                     $bs-xxs $bs-xs;           // 8px 12px
+$block-s:                      $bs-xs $bs-s;             // 12px 16px
+$block-m:                      $bs-m $bs-m;              // 24px 24px
+$block-l:                      $bs-l $bs-l;              // 36px 36px
+$block-xl:                     $bs-l $bs-xl;             // 36px 48px
+$block-xxl:                    $bs-xl $bs-xxl;           // 48px 72px
+$block-xxxl:                   $bs-xxl $bs-xxxl;         // 72px 96px
+
+$blockSizes:
+    $block-xxxs,
+    $block-xxs,
+    $block-xs,
+    $block-s,
+    $block-m,
+    $block-l,
+    $block-xl,
+    $block-xxl,
+    $block-xxxl,
+    $block-xxxl;
+
+
+// -----------------------------------------------------------------------------
+// Media queries
+// -----------------------------------------------------------------------------
+
+// General approach to media queries:
+// - Assume `no media` as the first query.
+// - The `small` breakpoint just gets @media only screen { @content }
+// - `small-only` applies a max-width to prevent an upward cascade. 
+//
+// Sizing guide:
+// 
+// xsmall       | small mobiles, fridges, watches etc
+// small        | mobiles, some internet-of-things displays
+// medium       | tablet devices, netbooks, mobiles in landscape
+// large        | screens > 960px
+// xlarge       | wide screen devices > 1200px
+// xxlarge      | in our experience, things need adjusting > 1440px
+// xxxlarge     | Full HD 
+
+$breakpoint-none:"";
+$breakpoint-xxlarge-name: "xxlarge";
+$breakpoint-xlarge-name: "xlarge";
+$breakpoint-large-name: "large";
+$breakpoint-medium-name: "medium";
+$breakpoint-small-name: "small";
+$breakpoint-classname-prefix: "--q-";
+
+// Set media queries in ems. If you're wondering, we remove 0.01em
+// from the next breakpoint up, so that the breakpoints don't
+// overlap. For instance:
+//
+// @media only screen and (max-width: 47.99em);
+// @media only screen and (min-width: 48em);
+
+$breakpoint-xsmall:     25em;   // The mighty LG Android!
+$breakpoint-small:      30em;   // Portrait regular mobiles//480px
+$breakpoint-medium:     48em;   // Skinny 768px
+$breakpoint-large:      60em;   // Desktop 960px
+$breakpoint-xlarge:     75em;   // Wide 1200px
+$breakpoint-xxlarge:    90em;   // Wide 1440px
+$breakpoint-xxxlarge:   120em;  // Full HD
+
+$breakpoints:
+        (
+            small "only screen"
+        ),
+        (
+            small-only "only screen and (max-width: #{$breakpoint-small})"
+        ),
+        (
+            medium "only screen and (min-width: #{$breakpoint-medium})"
+        ),
+        (
+            medium-down "only screen and (max-width: #{$breakpoint-medium})"
+        ),
+        (
+            medium-only "only screen and (min-width: #{$breakpoint-medium}) and (max-width: #{$breakpoint-large - 0.01em})"
+        ),
+        (
+            large "only screen and (min-width: #{$breakpoint-large})"
+        ),
+        (
+            large-only "only screen and (min-width: #{$breakpoint-large}) and (max-width: #{$breakpoint-xlarge - 0.01em})"
+        ),
+        (
+            xlarge "only screen and (min-width: #{$breakpoint-xlarge})"
+        ),
+        (
+            screen "only screen"
+        ),
+        (
+            landscape "only screen and (orientation: landscape)"
+        ),
+        (
+            portrait "only screen and (orientation: portrait)"
+        )
+;
+
+
+
+// -----------------------------------------------------------------------------
+// Grid
+// -----------------------------------------------------------------------------
+
+$fred-grid-breakpoints:     default, small, medium, large;
+$grid-column-name:          "col";
+$grid-divisions:            3, 4, 5, 10;
+$grid-float-padding:        1em; // false to disable.
+
+// -----------------------------------------------------------------------------
+// Fred module config
+// -----------------------------------------------------------------------------
+
+// These instruct Fred on how to generate just the bits you want.
+
+// Make a range of blocks for the given breakpoints
+$fred-block-breakpoints: default, small, medium, large;
+
+// Generate margin classes for the given breakpoints
+// 
+// mt   | margin-top
+// mb   | margin-bottom
+// mr   | margin-right
+// ml   | margin-left
+
+$fred-margin-breakpoints: default, small, medium, large;
+$fred-margin-types: "mt", "mb";
+
+// Generate padding classes for the given breakpoints
+// 
+// pt   | padding-top
+// pb   | padding-bottom
+// pr   | padding-right
+// pl   | padding-left
+
+$fred-padding-breakpoints: default, small, medium, large;
+$fred-padding-types: "pt";
+
+// -----------------------------------------------------------------------------
+// Colours
+// -----------------------------------------------------------------------------
+
+$bg-color:                      #EEEEEE;
+$base-font-color:               #2E2F2B;
+$hr-colour:                     #e5e5e5;
+
+// Links
+$base-link-color:               #2F72BA;
+$base-link-hover-color:         darken($base-link-color, 15%);
+$list-block-color:              #ccc;
+$sub-header:                    #999;
+
+// Text emphasis colours
+$text-success:                  #468847;
+$text-warning:                  #c09853;
+$text-danger:                   #b94a48;
+$text-muted:                    #999;
+
+
+
+$pill-ui-color:               #333;
+$lozenge-radius:       .25em;
+// Breakpoints
+
+@mixin media($breakpoint) {
+    @if $breakpoint == "default" {
+        @content;
+    } @else {
+        @each $query in $breakpoints {
+            @if $breakpoint == nth($query, 1) {
+                @media #{nth($query, 2)} {
+                    @content;
+                }
+            }
+        }
+    }
+}
+// -----------------------------------------------------------------------------
+// Mixins
+// -----------------------------------------------------------------------------
+
+
+// Vendor
+// A lightweight way of vendor-prefixing things:
+// @include vendor(transition, opacity 0.3s ease-out, margin-top 5s linear);
+
+@mixin vendor($property, $value...){
+    -webkit-#{$property}:$value;
+       -moz-#{$property}:$value;
+        -ms-#{$property}:$value;
+         -o-#{$property}:$value;
+            #{$property}:$value;
+}
+
+
+// Opacity
+// ----------------------------------------------------------------------------
+
+@mixin opacity($value) {
+    $ieOpacity: 100 * $value;
+    opacity: $value;
+    filter: alpha(opacity=#{$ieOpacity});
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$ieOpacity})";
+}
+
+
+// Simple theme mixins
+// ----------------------------------------------------------------------------
+
+@mixin theme-block($bg-color, $txt-color, $border-color){
+    background-color:$bg-color;
+    color:$txt-color;
+    border-color:$border-color;
+}
+
+
+// Sizing shortcuts
+@mixin box-dimensions($height, $width){
+    height: $height;
+    width:  $width;
+}
+
+@mixin square($size){
+    height: $size;
+    width:  $size;
+}
+
+// Box sizing
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+
+
+// Mixins for forms
+// ----------------------------------------------------------------------------
+
+// Webkit-style focus
+@mixin tab-focus() {
+  // Default
+  outline: thin dotted #333;
+  // Webkit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+
+// Normalise the approach to CSS placeholders.
+// ----------------------------------------------------------------------------
+// 1. Firefox 4-18
+// 2. Firefox 19+
+// 3. Internet Explorer 10+
+// 4. Safari and Chrome
+
+@mixin placeholder($color: $input-color-placeholder) {
+  &:-moz-placeholder            { color: $color; } //[1]
+  &::-moz-placeholder           { color: $color; } //[2]
+  &:-ms-input-placeholder       { color: $color; } //[3]
+  &::-webkit-input-placeholder  { color: $color; } //[4]
+}
+
+@mixin font($font-family, $font-weight , $font-style) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+
+// Translate pixels to ems, given a base size.
+// By default, assume the base size is 16px (body font size)
+@function px-to-em($size, $context: 16) {
+    @return #{($size / $context)}em;
+}
+
+@function pxem($size, $context: 16) {
+    @return #{($size / $context)}em;
+}
+
+
+// Make nice media query namespaces from the variables file
+@function fred-prefixed-breakpoint($name) {
+    @if $name == "default" {
+        @return "";
+    } @else {
+        @return $breakpoint-classname-prefix + unquote($name);
+    }
+}
+
+// Get property names
+@function fred-property-by-shorthand($val) {
+    @if $val == "mt" {
+        @return "margin-top";
+    }
+    @if $val == "mb" {
+        @return "margin-bottom";
+    }
+    @if $val == "mr" {
+        @return "margin-right";
+    }
+    @if $val == "ml" {
+        @return "margin-left";
+    }
+    @if $val == "pt" {
+        @return "padding-top";
+    }
+    @if $val == "pb" {
+        @return "padding-bottom";
+    }
+    @if $val == "pr" {
+        @return "padding-right";
+    }
+    @if $val == "pl" {
+        @return "padding-left";
+    }
+    @else {
+        @return "padding";
+    }
+}
+
+// Spacing helpers
+@mixin fred-sizer($class: false, $sizePrefixes: false, $mediaQuery: false, $property: false, $array: false) {
+    $index:1;
+    @each $size in $sizePrefixes {
+        $className: $class + $size;
+        @if $mediaQuery {
+            $className: $className + fred-prefixed-breakpoint($mediaQuery);
+        }
+
+        .#{$className} { #{$property}: nth($array, $index)  }
+        $index: $index + 1;
+    }
+}
+
+@mixin fred-breakpoint-sizer($breakpointList, $classList) {
+    @each $size in $breakpointList {
+        @if $size == "default" {
+            @each $class in $classList {
+                @include fred-sizer($class, $sizePrefixes, $size, fred-property-by-shorthand($class), $sizes);
+            }
+        } @else {
+            @include media($size) {
+                @each $class in $classList {
+                    @include fred-sizer($class, $sizePrefixes, $size, fred-property-by-shorthand($class), $sizes);
+                }
+            }
+        }
+    }
+}
+@import "../_fred-theme.scss";
+
+
+
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/**
+ * Positioning - Absolute, Floating and Clearfixing
+ * ----------------------------------------------------------------------------
+ */
+
+%relative   { position: relative; }
+%absolute   { position: absolute; }
+
+.absolute   { @extend %absolute; }
+.relative   { @extend %relative; }
+
+.left       { float:left; }
+.right      { float:right; }
+
+
+    .absolute--bottom-left {
+        @extend %absolute;
+        bottom:0;
+        left:0;
+    }
+
+    .absolute--bottom-right {
+        @extend %absolute;
+        bottom:0;
+        right:0;
+    }
+
+    .absolute--top-left {
+        @extend %absolute;
+        top:0;
+        left:0;
+    }
+
+    .absolute--top-right {
+        @extend %absolute;
+        top:0;
+        right:0;
+    }
+
+%center-element {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/**
+ * Inline block
+ * ----------------------------------------------------------------------------
+ * zoom fix for IE6/7 so they correctly display inline-block elements
+ * (forces hasLayout)
+ */
+
+%inline-block {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.inline-block { @extend %inline-block; }
+
+%border {
+	border-width: 1px;
+	border-style: solid;
+}
+
+%clearfix{
+	/**
+	 * For IE 6/7 only
+	 * Include this rule to trigger hasLayout and contain floats.
+	 */
+	*zoom: 1;
+}
+
+%clearfix:before {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+%clearfix:after {
+    clear: both;
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix           { @extend %clearfix; }
+.overflow-hidden    { overflow: hidden; }
+
+
+
+/**
+ * Screen reader content
+ * ----------------------------------------------------------------------------
+
+ <a class="sr-only" href="#content">Skip to main content</a>
+
+ */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/**
+ * Fix webkit bug
+ * ----------------------------------------------------------------------------
+ *
+ * Since v22, Chrome makes fat sausage horrible web typography. Fix it with
+ * these properties right here. Maybe consider scoping this to a class for
+ * chrome/mac osx only at some point?
+ */
+
+%fix-webkit-font-rendering {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+}
+
+.isWindowsChrome %fix-webkit-font-rendering  {
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.antialiased {
+    @extend %fix-webkit-font-rendering;
+}
+
+
+/**
+ * Hide an element, but make it visible to screen readers
+ * ----------------------------------------------------------------------------
+ */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+%hide { display: none !important; }
+%show { display: block !important; }
+
+.hide { @extend %hide; }
+.show { @extend %show; }
+
+%visible    {visibility: visible !important;}
+%hidden     {visibility: hidden !important;}
+
+
+
+/**
+ * Append and Prepend
+ * ----------------------------------------------------------------------------
+ */
+
+/**
+ * Place something before an element
+ */
+.prepend{
+    &:before{
+        content: attr(data-prepend);
+        display: inline-block;
+    }
+}
+
+/**
+ * Place something after an element
+ */
+.append{
+    &:after{
+        content: attr(data-append);
+        display: inline-block;
+    }
+}
+/**
+ * Arrows
+ * ----------------------------------------------------------------------------
+ * $base-spacing-unit: 1.4em
+ *
+ *
+ * Apply the modifier classes to the parent. For instance, this will put an
+ * arrow in the top left corner of the containing div:
+ *
+ * <div class='arrow__left'>
+ *        <i class='arrow arrow_top'></i>
+ * </div>
+ *
+ */
+
+.arrow {/*i,span*/
+    @extend %inline-block;
+    border-color: transparent;
+    border-style: solid;
+    border-width: .4em;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+    .arrow-top {
+        border-bottom-color: inherit;
+        border-top-width: 0;
+        top: -.4em;
+    }
+
+    .arrow-bottom {
+        border-bottom-width: 0;
+        border-top-color: inherit;
+        bottom: -.4em;
+    }
+
+    .arrow-left {
+        border-left-width: 0;
+        border-right-color: inherit;
+        left: -.4em;
+    }
+
+    .arrow-right {
+        border-left-color: inherit;
+        border-right-width: 0;
+        right: -.4em;
+    }
+
+.arrow--left,
+.arrow--right,
+.arrow--side,
+.arrow--center {/*div,block*/
+    position:relative;
+}
+
+    .arrow--center .arrow {
+        left:0;
+        right:0;
+        @extend %center-element;
+    }
+
+    .arrow--left .arrow {
+        left: $base-spacing-unit;
+    }
+
+    .arrow--right .arrow {
+        right: $base-spacing-unit;
+    }
+
+    .arrow--side .arrow {
+        top: $base-spacing-unit;
+    }
+
+/**
+ * Badges
+ * ----------------------------------------------------------------------------
+ *
+ * <span class='badge'>
+ *      3
+ * </span>
+ *
+ */
+.badge {
+    @extend %inline-block;
+
+    line-height: $base-line-height;
+    margin-left:0.3em;
+    min-width: .625em;
+    padding: .1875em .4375em;
+    // Quick fix for labels/badges in buttons
+
+    position: relative;
+    text-align: center;
+    top: -1px;
+    vertical-align: baseline;
+    white-space: nowrap;
+
+    // Empty badges collapse automatically (not available in IE8)
+    &:empty {
+        display: none;
+    }
+}
+/**
+ * Block grid
+ * ----------------------------------------------------------------------------
+ * A grid of items that reflow as the browser size changes.
+ */
+
+
+.block-grid {
+
+}
+
+    .block-grid > * {
+
+    }
+
+    .block-grid:after {
+
+    }
+
+
+/**
+ * Generic blocks
+ * ----------------------------------------------------------------------------
+ */
+
+.block--stacked {
+   //only use this id we don't want a top margin on it
+   margin-top:0!important;
+}
+
+    .block-xxxs, 
+    .block-xxs, 
+    .block-xs, 
+    .block-s,
+    .block-m,
+    .block-l, 
+    .block-xl, 
+    .block-xxl, 
+    .block-xxxl {
+        @extend %block;
+        > :first-child {
+            margin-top:0;
+        }
+    }
+
+// making sure the first element has no margin on it
+%block {
+    @extend .clearfix;
+    margin-top:1em;
+}
+
+@each $breakpoint in $fred-block-breakpoints {
+    @include media($breakpoint) {
+        @include fred-sizer("block", $sizePrefixes, $breakpoint, "padding", $blockSizes);
+    }
+}
+/**
+ * Breadcrumbs
+ * ----------------------------------------------------------------------------
+ */
+
+/* Unicode space added since inline-block means non-collapsing white-space */
+.breadcrumbs {
+    > li {
+        @extend %inline-block;
+        &+li:before {
+            content: "/\00a0";
+            padding: 0 $bs-xxxs;
+        }
+    }
+}
+/**
+ * Contain buttons in a horizontal group.
+ * ----------------------------------------------------------------------------
+ * Borrowed from Twitter Bootstrap and put on a border-radius diet.
+ */
+
+// Make the div behave like a button
+.btn-group,
+.btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; // match .btn alignment given font-size hack above
+    > .btn {
+        position: relative;
+        float: left;
+        // Bring the "active" button to the front
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            z-index: 2;
+        }
+        &:focus {
+            // Remove focus outline when dropdown JS adds it after closing the menu
+            outline: none;
+        }
+    }
+}
+
+// Prevent double borders when buttons are next to each other
+.btn-group {
+    .btn + .btn,
+    .btn + .btn-group,
+    .btn-group + .btn,
+    .btn-group + .btn-group {
+        margin-left: -1px;
+    }
+}
+
+// Optional: Group multiple button groups together for a toolbar
+.btn-toolbar {
+    @extend %clearfix;
+
+    .btn-group {
+        float: left;
+    }
+    // Space out series of button groups
+    > .btn,
+    > .btn-group {
+        + .btn,
+        + .btn-group {
+            margin-left: .3125em;
+        }
+    }
+}
+
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    border-radius: 0;
+}
+
+// Set corners individual because sometimes a single button can be in a .btn-group and we need :first-child and :last-child to both match
+.btn-group > .btn:first-child {
+    margin-left: 0;
+    &:not(:last-child) {
+//        @include vendor(border-right-radius, 0);
+    }
+}
+// Need .dropdown-toggle since :last-child doesn't apply given a .dropdown-menu immediately after it
+.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .dropdown-toggle:not(:first-child) {
+//    .border-left-radius(0);
+}
+
+// Custom edits for including btn-groups within btn-groups (useful for including dropdown buttons within a btn-group)
+.btn-group > .btn-group {
+    float: left;
+}
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
+    border-radius: 0;
+}
+.btn-group > .btn-group:first-child {
+    > .btn:last-child {
+//        @include vendor(border-right-radius, 0);
+    }
+}
+.btn-group > .btn-group:last-child > .btn:first-child {
+//    @include vendor(border-left-radius, 0);
+}
+
+
+
+// Sizing
+//
+// Remix the default button sizing classes into new ones for easier manipulation.
+
+.btn-group-xs > .btn { font-size: pxem($font-size-xxs); }
+.btn-group-sm > .btn { font-size: pxem($font-size-m); }
+.btn-group-lg > .btn { font-size: pxem($font-size-l); }
+
+
+// Vertical button groups
+// ----------------------
+
+.btn-group-vertical {
+    > .btn,
+    > .btn-group {
+        display: block;
+        float: none;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    // Clear floats so dropdown menus can be properly placed
+    > .btn-group {
+        @extend %clearfix;
+        > .btn {
+            float: none;
+        }
+    }
+
+    > .btn + .btn,
+    > .btn + .btn-group,
+    > .btn-group + .btn,
+    > .btn-group + .btn-group {
+        margin-top: -1px;
+        margin-left: 0;
+    }
+}
+
+//.btn-group-vertical > .btn {
+//    &:not(:first-child):not(:last-child) {
+////        border-radius: 0;
+//    }
+//    &:first-child:not(:last-child) {
+////        border-top-right-radius: @border-radius-base;
+////        .border-bottom-radius(0);
+//    }
+//    &:last-child:not(:first-child) {
+////        border-bottom-left-radius: @border-radius-base;
+////        .border-top-radius(0);
+//    }
+//}
+//.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
+////    border-radius: 0;
+//}
+//.btn-group-vertical > .btn-group:first-child {
+//    > .btn:last-child,
+//    > .dropdown-toggle {
+////        .border-bottom-radius(0);
+//    }
+//}
+//.btn-group-vertical > .btn-group:last-child > .btn:first-child {
+////    .border-top-radius(0);
+//}
+
+// Justified button groups
+// -----------------------
+
+.btn-group-justified {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    .btn {
+        float: none;
+        display: table-cell;
+        width: 1%;
+    }
+}
+/**
+ * Buttons
+ * -----------------------------------------------------------------------------
+ *
+ * 1. Allow us to better style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Stop buttons wrapping and looking broken.
+ * 4. Make buttons inherit font styles.
+ * 5. Force all elements using buttons to appear clickable.
+ * 6. Normalise box model styles.
+ * 7. If the button’s text is 1em, and the button is (2.5 * font-size) tall, then
+ *    there is 1em of space above and below that text. We therefore apply 1em
+ *    of space to the left and right, as padding, to keep consistent spacing.
+ * 8. Basic cosmetics for default buttons. Change or override at will.
+ * 9. Don’t allow buttons to have underlines; it kinda ruins the illusion.
+ */
+.btn{
+    @extend .inline-block;                          /* [1] */
+    //@extend .user-select-none;
+    @include vendor(border-radius, $base-spacing-unit/4);
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;                                /* [5] */
+    font-family: inherit;                           /* [4] */
+    line-height: 2.5;                               /* [7] */
+    margin: inherit 0 0 0;                          /* [6] */
+    padding-bottom: 0;                              /* [6] */
+    padding-left: $base-spacing-unit;               /* [7] */
+    padding-right: $base-spacing-unit;              /* [7] */
+    padding-top: 0;                                 /* [6] */
+    vertical-align: middle;                         /* [2] */
+    white-space: nowrap;                            /* [3] */
+
+    &,
+    &:hover{
+        text-decoration:none;   /* [9] */
+    }
+
+    &:active,
+    &:focus{
+        outline:none;
+    }
+}
+
+/**
+ * Button modifiers
+ * ----------------------------------------------------------------------------
+ * E.g:
+    <a class='btn btn--large'>
+        My big button
+    </a>
+ * Or,
+    <a class='btn btn--small btn--soft'>
+        My small rounded button
+    </a>
+ */
+.btn--large,
+.btn--icon-large,
+.btn--icon-large--rev,
+.btn--icon-only--large {
+    line-height: 3.5;         
+}
+
+.btn--large {
+    padding-right: $base-spacing-unit * 2;          
+    padding-left: $base-spacing-unit * 2;  
+}
+
+.btn--small,
+.btn--icon-small,
+.btn--icon-small--rev,
+.btn--icon-only--small {
+    line-height: 2;   
+}
+
+.btn--small{
+    padding-right: $base-spacing-unit / 2;          
+    padding-left: $base-spacing-unit / 2;  
+}
+
+/**
+ * Pill type buttons with (rounded) ends
+ * ----------------------------------------------------------------------------
+ */
+.btn--soft {
+    @include vendor(border-radius, 200px);
+}
+
+.btn--hard {
+    @include vendor(border-radius, 0);
+}
+
+
+/**
+ * Block buttons stretch to the full width of their parent (handy!)
+ */
+.btn--block{
+    display: block;
+    text-align: center;
+}
+
+/**
+ * Make a button behave like a block at mobile only (also handy)
+ */
+@media only screen and (max-width:37.5em) {
+    .btn--block-mobile{
+        text-align: center;
+        display: block;
+    }
+}
+
+/**
+ * Submit buttons
+ * ----------------------------------------------------------------------------
+ * FireFox doesn't like line-heights on submit buttons. Stick a class on submit
+ * buttons and make sure the padding's the same as your default button :)
+ */
+.btn--submit{
+    line-height: 1;
+    padding-top: $base-spacing-unit / 2;
+    padding-bottom: $base-spacing-unit / 2;
+}
+
+.btn--submit-large{
+    line-height: 1;
+    padding-top: $base-spacing-unit;
+    padding-bottom: $base-spacing-unit;
+}
+
+.btn--submit-small{
+    line-height: 1;
+    padding-top: $base-spacing-unit / 4;
+    padding-bottom: $base-spacing-unit / 4;
+}
+
+
+/**
+ * Buttons with icons
+ * ----------------------------------------------------------------------------
+ * E.g:
+    <a class='btn btn--icon'>
+        <i class='i sprite_icon_edit'></i>
+        My big button
+    </a>
+ * Or,
+    <a class='btn btn--icon-large--rev'>
+        My small rounded button
+        <i class='i sprite_icon_close'></i>
+    </a>
+ */
+.btn--icon-only,
+.btn--icon-only--small,
+.btn--icon-only--large {
+    text-align: center;
+    min-width: 1em;
+}
+.btn--icon-only {
+    padding-left: $base-spacing-unit / 1.6;
+    padding-right: $base-spacing-unit / 1.6;
+}
+
+.btn--icon-only--small {
+    padding-left: $base-spacing-unit / 2.5;
+    padding-right: $base-spacing-unit / 2.5;
+}
+
+.btn--icon-only--large {
+    padding-left: $base-spacing-unit / .9;
+    padding-right: $base-spacing-unit / .9;
+}
+
+
+.btn--icon {
+    padding-left: $base-spacing-unit/2;
+    & > .i {
+        margin-right: $base-spacing-unit / 2;
+    } 
+}
+
+.btn--icon--rev {
+    padding-right: $base-spacing-unit/2;
+    & > .i {
+        margin-left: $base-spacing-unit / 2;
+    } 
+}
+
+.btn--icon-large{
+    padding-left: $base-spacing-unit;
+    padding-right: $base-spacing-unit * 2;
+    & > .i {
+        margin-right: $base-spacing-unit / 2;
+    } 
+}
+
+.btn--icon-large--rev{
+    padding-left: $base-spacing-unit * 2;
+    padding-right: $base-spacing-unit;
+    & > .i {
+        margin-left: $base-spacing-unit / 2;
+    } 
+}
+
+.btn--icon-small{
+    padding-left: $base-spacing-unit / 3;
+    padding-right: $base-spacing-unit / 2; 
+    & > .i {
+        margin-right: $base-spacing-unit / 4;
+    }
+}
+
+.btn--icon-small--rev{
+    padding-left: $base-spacing-unit / 2;
+    padding-right: $base-spacing-unit / 4;
+    & > .i {
+        margin-left: $base-spacing-unit / 2;
+    }
+}
+
+
+/**
+ * ----------------------------------------------------------------------------
+ * Button behaviors
+ * ----------------------------------------------------------------------------
+ */
+
+/**
+ * Simple bounces
+ * ----------------------------------------------------------------------------
+ */
+.btn--bounce,
+.btn--bob{
+    position: relative;
+    @include vendor(transition, bottom 100ms ease-out);
+}
+
+    .btn--bounce:active {
+        bottom: -2px;
+    }
+
+    .btn--bob:active {
+        bottom: -1px;
+    }
+
+/**
+ * Bounce the icon to a side
+ */
+.btn--bounce-icon--right .i,
+.btn--bounce-icon--left .i,
+.btn--bounce-icon--bottom .i,
+.btn--bounce-icon--top .i {
+    position: relative;
+    @include vendor(transition-timing-function, cubic-bezier(0.165, 0.840, 0.440, 1.000));
+    @include vendor(transition-duration, 300ms);
+}
+
+    .btn--bounce-icon--right:hover .i {
+        @include vendor(transition-property, left);
+        left: .3125em;
+    }
+
+    .btn--bounce-icon--left:hover .i {
+        @include vendor(transition-property, right);
+        right: .3125em;
+    }
+
+    .btn--bounce-icon--bottom:hover .i {
+        @include vendor(transition-property, top);
+        top: .3125em;
+    }
+
+    .btn--bounce-icon--top:hover .i {
+        @include vendor(transition-property, bottom);
+        bottom: .3125em;
+    }
+
+/**
+ * Inset buttons on block level elements
+ * ----------------------------------------------------------------------------
+ */
+.btn--inset {
+    position: relative;
+
+}
+    .btn--inset:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        visibility: hidden;
+        @include vendor(transition, border-width 100ms ease-out, visibility 100ms);
+        content: " ";
+        display: block;
+        border-width: 0;
+        border-color: inherit;
+        border-style: solid;
+    }
+    .btn--inset:hover:after {
+        border-width: 4px;
+        visibility: visible;
+    }
+    .btn--inset-primary:after {
+        border-color: #3977B1;
+    }
+    .btn--inset-secondary:after {
+        border-color: #eb3930;
+    }
+    .btn--inset-large:hover:after {
+        border-width: 8px;
+    }
+    .btn--inset-small:hover:after {
+        border-width: 1px;
+    }
+
+/**
+ * Buttons that show a loading indicator when clicked
+ * ----------------------------------------------------------------------------
+ */
+.btn--spinner {
+    position: relative;
+    cursor: default;
+}
+
+    .btn--spinner .btn--label {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .btn--spinner:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        content: url('../images/spinner.png');
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .btn--spinner--text:after {
+        content: attr(data-btn-loading-indicator);
+    }
+/**
+ * Drop-down caret
+ * ----------------------------------------------------------------------------
+ */
+
+.caret {
+    border-bottom: 0 dotted;
+    border-left: .25em solid transparent;
+    border-right: .25em solid transparent;
+    border-top: .25em solid #000;
+    display: inline-block;
+    height: 0;
+    margin-left: .125em;
+    vertical-align: middle;
+    width: 0;
+}
+
+.caret--rev {
+    border-bottom: .25em solid #000;
+    border-top: 0 dotted;
+}
+/**
+ * CSS close icon
+ * ----------------------------------------------------------------------------
+ * <button type="button" class="close" aria-hidden="true">×</button>
+ */
+
+.close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+    .close:after {
+        content: "\00d7";
+        display: inline-block;
+        font-size: 1.5em;
+        line-height: 1;
+        opacity: 0.2;
+    }
+
+    .close:hover:after {
+        opacity: 1;
+    }
+
+/**
+ * Form helpers
+ * ----------------------------------------------------------------------------
+ */
+
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+/**
+ * 6. Inline block grid
+ * -----------------------------------------------------------------------------
+ *
+ * [1] Sets the child elements to take up full justified width of the parent
+ * [2] Overcomes an issue where the :after element blows out the bottom.
+ * [3] A fix for Internet Explorer 8/9
+ *
+ */
+.grid {
+    font-size: 0;                       /* [2] */
+    text-align: justify;                /* [1] */
+    // text-justify: distribute-all-lines; /* [3] */
+
+    // Not sure if we need the last line as it stuffs up text align:center
+    .ie8 & {
+        // This fixes and issue mentioned above
+        text-justify:normal;
+    }
+}
+
+    .grid > * {
+        @extend .grid__item;
+    }
+
+    // Font-size medium reset the block to the context of body (ie, 16px)
+    .grid__item {
+        @extend .inline-block;
+        font-size: medium;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    .grid:after,
+    .grid__break {
+        @extend .inline-block;
+        content: '';
+        height: 0;
+        width:100%;
+    }
+
+    /**
+     * Vertical align these grid items in the middle!
+     */
+    .grid--middle > .grid__item {
+        vertical-align: middle;
+    }
+
+    .grid--bottom > .grid__item {
+        vertical-align: bottom;
+    }
+
+
+
+
+
+// Sometimes you don't want an inline block grid, you want a float grid.
+// Fred doesn't mind :)
+.grid-float {
+    width: 100%;
+}
+
+    .grid-float:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .grid-float > [class^=#{quote($grid-column-name)}] {
+        float: left;
+        @if $grid-float-padding {
+            padding-left: $grid-float-padding;
+        }
+    }
+
+    .grid-float > [class^=#{quote($grid-column-name)}]:first-of-type {
+        padding-left: 0;
+    }
+
+
+// Print grid classnames
+
+.#{$grid-column-name} {
+    width: 100%;
+}
+
+
+// Print column widths via a handy mixin.
+
+@mixin grid-columns($name: $grid-column-name, $stops: 10, $fractional: false, $breakpointSuffix: false) {
+    @for $i from 1 to $stops {
+        $colName: $i;
+        $width: $i / $stops * 100;
+        @if $fractional {
+            $colName: #{$i + "-"  + $stops};
+        }
+        @if $breakpointSuffix {
+            $colName: #{$colName + $breakpointSuffix};
+        }
+        .#{$name}-#{$colName} {
+            width: #{$width + "%"};
+        }
+    }
+}
+
+@each $breakpoint in $fred-grid-breakpoints {
+    @if $breakpoint == "default" {
+        @each $division in $grid-divisions {
+            @include grid-columns($stops: $division, $fractional: true);
+        }
+    } @else {
+        @include media($breakpoint) {
+            $suffix: $breakpoint-classname-prefix + $breakpoint;
+            @each $division in $grid-divisions {
+                @include grid-columns($name: $grid-column-name, $stops: $division, $fractional: true, $breakpointSuffix: $suffix);
+            }
+            .#{$grid-column-name + $suffix} {
+                width: 100%;
+            }
+        }
+    }
+}
+.heading {
+    > :first-child {
+        margin-top:0;
+    }
+}
+
+    .heading--keyline {
+        padding-bottom: $bs-xxs;
+        border-bottom: solid 1px $hr-colour;
+    }
+
+    .heading__subheading {
+        font-weight: normal;
+    }
+/**
+ * Icon block
+ * ----------------------------------------------------------------------------
+ */
+
+.icon-text,
+.icon-text--rev{/* a, div, etc */
+    @extend %inline-block;
+    display:inline-block; //CHECK why this isn't extending
+}
+
+.i{
+    overflow: hidden; /* for IE6 */
+    vertical-align: middle;
+    /* SMACSS line-height: 0; ? */
+    .icon-text &,
+    .btn--icon &{
+        margin-right: $base-spacing-unit/3;
+    }
+
+    .icon-text--rev &,
+    .btn--icon-rev &{
+        margin-left: $base-spacing-unit/3;
+    }
+}
+
+/**
+ * Responsive images
+ * ----------------------------------------------------------------------------
+ * <img src="..." class="img--responsive" alt="Responsive image">
+ */
+
+.img--responsive {
+    height: auto;
+    max-width: 100%;
+}
+
+.img--round {
+    @include vendor(border-radius, 50% 50% 50% 50%);
+}
+/**
+ * Lists
+ * ----------------------------------------------------------------------------
+ */
+
+.list-unstyled {
+    list-style: none;
+    margin: 0 0 0 0;
+    padding-left: 0;
+}
+
+    .list-unstyled > li {
+        list-style: none;
+        margin-left: 0;
+    }
+
+    .list--inline {
+        @extend .clearfix;
+        @extend .list-unstyled;
+    }
+
+    .list--inline > li {
+        @extend .inline-block;
+        margin: 0;
+    }
+
+//default list style in this case its circles
+%list-styled {
+    margin-top: $bs-xs; //same as the margin top on p tags
+    padding-left: $bs-m;
+}
+
+.list-styled {
+    @extend %list-styled;
+    list-style: circle;
+}
+
+    //decimal list
+    .list-styled--decimal,
+    .list-decimal {
+        @extend %list-styled;
+        list-style: decimal-leading-zero;
+        padding-left: $bs-l;
+    }
+
+    //alpha list
+    .list-styled--alpha,
+    .list-alpha {
+        @extend %list-styled;
+        list-style: lower-alpha;
+    }
+
+
+.list-dashed {
+    margin-left:1em;
+    margin-top:0;
+    @extend %list-styled;
+
+    & > li {
+        text-indent:-0.5em;
+
+        & > * {
+            text-indent: 0;
+        }
+
+        &:before {
+            content:"\2013";
+            position:relative;
+            left:-0.5em;
+        }
+    }
+}
+
+
+
+/**
+ * Block list
+ * ----------------------------------------------------------------------------
+ * Throws a list into a vertical stack. Handy for things like navigation.
+ */
+.block-list {
+    @extend .list-unstyled;
+    > li {
+        display: block;
+    }
+}
+
+
+/**
+ * Definition lists
+ * ----------------------------------------------------------------------------
+ * Defaults to being stacked without any of the below styles applied, until the
+ *
+ */
+
+dl {
+    @extend .mt-m;
+}
+    dt,
+    dd {
+        line-height: $line-height-xs;
+    }
+    dt {
+        font-weight: bold;
+    }
+    dd {
+      margin-left: 0; // Undo browser default
+    }
+
+
+/**
+ * 13. Horizontal description lists
+ * ----------------------------------------------------------------------------
+ * Defaults to being stacked without any of the below styles applied, until the
+ *
+ */
+
+@include media('medium-down') {
+    .dl-horizontal {
+        > dt {
+            @extend %text-overflow;
+            clear: left;
+            float: left;
+            text-align: right;
+            width: 35%;
+        }
+        > dd {
+            @extend %clearfix; // Clear the floated `dt` if an empty `dd` is present
+            margin-left: 40%;
+
+       }
+    }
+}
+
+/**
+ * Float an image to the left, with a clearfixed block of content to the right.
+ * ----------------------------------------------------------------------------
+ <div class='media'>
+	<img src='/some/image.png' class='media__image'>
+	<div class='media__body'>
+       The text!
+	</div>
+ </div>
+ */
+.media {
+    @extend .clearfix;
+    margin-top: $base-spacing-unit;
+}
+
+    .media__image{
+        float: left;
+        margin-right:$base-spacing-unit;
+    }
+
+    .media__body{
+        @extend .overflow-hidden;
+    }
+
+/* Swap the image to the right */
+.media--rev {
+    @extend .clearfix;
+    margin-top: $base-spacing-unit;
+}
+
+    .media--rev > .media__image{
+        float: right;
+        margin-left:$base-spacing-unit;
+    }
+
+    .media--rev > .media__body{
+        @extend .overflow-hidden;
+    }
+
+
+/**
+ * Nav
+ * ----------------------------------------------------------------------------
+ *
+ * Turns a list into a horizontal block of inline-blocks;
+ *
+ */
+
+.nav {
+    @extend .clearfix;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+    .nav > li {
+        @extend %inline-block;
+    }
+
+
+/**
+ * Sub nav
+ * ----------------------------------------------------------------------------
+
+<dl class="sub-nav">
+    <dt>Filter:</dt>
+    <dd class="active"><a href="#">All</a></dd>
+    <dd><a href="#">Active</a></dd>
+    <dd><a href="#">Pending</a></dd>
+    <dd><a href="#">Suspended</a></dd>
+</dl>
+ */
+
+.sub-nav {
+    display: block;
+    width: auto;
+    overflow: hidden;
+}
+
+    .sub-nav > dt,
+    .sub-nav > dd {
+        float: left;
+    }
+
+    .sub-nav > dd {
+        margin-left: $bs-xs;
+    }
+
+
+    .sub-nav > .active a {
+
+    }
+/**
+ * Pagination
+ * ----------------------------------------------------------------------------
+
+ <ul class='pagination'>
+    <li class=pagination__first>First</li>
+    <li class='pagination__prev'><a href="#"></a></li>
+    <li class='pagination__current'><a href="#">1</a></li>
+    <li class='pagination__more'><a href="#"></a></li>
+    <li><a href="#">10</a></li>
+    <li class='pagination__next'><a href="#"></a></li>
+    <li class=pagination__last><a href=/page/last>Last</a></li>
+ </ul>
+ */
+
+.pagination {
+    @extend .nav;
+    /**
+     * Remove whitespace caused by `inline-block`.
+     */
+    letter-spacing:-0.31em;
+    word-spacing:-0.43em;
+}
+
+    .pagination > li{
+        padding:$base-spacing-unit / 2;
+        letter-spacing:normal;
+        word-spacing:normal;
+    }
+
+        .pagination > li > a{
+            padding:$base-spacing-unit / 2;
+            margin:-$base-spacing-unit / 2;
+        }
+
+    .pagination__current {
+        font-weight: bold;
+    }
+
+    .pagination__first > a:before,
+    .pagination__last > a:before,
+    .pagination__more > a:before {
+        display: inline-block;
+    }
+
+    .pagination__last > a:before {
+        content: "\203A";
+    }
+
+    .pagination__first > a:before {
+        content: "\2039";
+    }
+
+    .pagination__more > a:before {
+        content: "\2026";
+    }
+
+
+
+/**
+ * Pills (eg, 'Some content [new!]'
+ * ----------------------------------------------------------------------------
+ * Create pill- and lozenge-like runs of text, e.g.:
+ *
+   <p>This <span class=pill>here</span> is a pill!</p>
+ *
+   <p>This <span class=loz>here</span> is also a lozenge!</p>
+ *
+ * Pills have fully rounded ends, lozenges have only their corners rounded.
+ *
+ * Demo: jsfiddle.net/inuitcss/N3pGm
+ *
+ */
+
+.pill{
+    display:inline-block;
+    /**
+     * These numbers set in ems mean that, at its narrowest, a lozenge will be
+     * the same width as the `line-height` set on the `html` element.
+     * This allows us to use the `.loz` in almost any `font-size` we wish.
+     */
+    min-width:    ($base-line-height * 0.666667) * 1em;
+    padding-right:($base-line-height * 0.166667) * 1em;
+    padding-left: ($base-line-height * 0.166667) * 1em;
+    /* =1.50em */
+    text-align:center;
+    background-color: $pill-ui-color;
+    color:#fff; /* Override this color in your theme stylesheet */
+
+    /**
+     * Normally we’d use border-radius:100%; but instead here we just use an
+     * overly large number; `border-radius:100%;` would create an oval on
+     * non-square elements whereas we just want to round the ends of an element.
+     */
+    border-radius:100px;
+}
+
+.lozenge {
+    @extend .pill;
+    border-radius: $lozenge-radius;
+}
+// Border radii
+.radius--xs {
+    @include vendor(border-radius, 2px 2px 2px 2px);
+}
+.radius--s {
+    @include vendor(border-radius, 5px 5px 5px 5px);
+}
+.radius--m {
+    @include vendor(border-radius, 10px 10px 10px 10px);
+}
+/**
+ * Ratio boxes
+ * ----------------------------------------------------------------------------
+
+This box will be 16:9
+
+ <div class='ratio-16-9'>
+    <div class='ratio__content'></div>
+ </div>
+
+
+This box will be a square
+
+ <div class='ratio-square'>
+    <div class='ratio__content'></div>
+ </div>
+
+ */
+
+%ratio {
+    overflow: hidden;
+    position: relative;
+}
+
+%ratio:before {
+    content: "";
+    display: block;
+    height: 0;
+    padding-top: 100%;
+}
+
+.ratio-square, .ratio-4-3, .ratio-16-9, .ratio-3-4, .ratio-2-1 {
+    @extend %ratio;
+}
+
+.ratio-2-1:before {
+    padding-top: 50%;
+}
+
+.ratio-4-3:before {
+    padding-top: 75%;
+}
+
+.ratio-3-4:before {
+    padding-top: 1.333333333%;
+}
+
+.ratio-16-9:before {
+    padding-top: 56.25%;
+}
+
+    .ratio__content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+/**
+ * Margin and padding helpers
+ * ----------------------------------------------------------------------------
+ * These are provided after the core so they function as overrides
+ * to default values. The first kind of specificity is source order!
+ */
+
+@include fred-breakpoint-sizer($fred-margin-breakpoints, $fred-margin-types);
+@include fred-breakpoint-sizer($fred-padding-breakpoints, $fred-padding-types);
+
+
+/**
+ * Antialias everything by default, and set the line-height.
+ */
+html,
+body {
+    @extend %fix-webkit-font-rendering;
+    font-size: 100%;
+    line-height: $base-line-height;
+}
+
+
+/**
+ * onMediaQuery sets the font-family on HTML, so declare your font-family
+ * on the body element instead.
+ */
+body {
+    @extend .font-primary;
+}
+
+
+/**
+ * Font declarations
+ * ----------------------------------------------------------------------------
+ */
+.font-primary {
+    @include font($font-primary, 400 , normal);
+}
+
+    .font-primary--italic {
+        @include font($font-primary, 400 , italic);
+        .ie8 & {
+            font-family:$font-primary-italic;
+        }
+    }
+
+    .font-primary--bold {
+        @include font($font-primary, 700 , normal);
+        .ie8 & {
+            font-family:$font-primary-bold;
+        }
+    }
+
+    .font-primary--bold-italic {
+        @include font($font-primary, 700 , italic);
+        .ie8 & {
+            font-family:$font-primary-bold-italic;
+        }
+    }
+
+.sans       { font-family:$sans-serif-stack; }
+.serif      { font-family:$serif-stack; }
+
+.font-size-xxxxl                { font-size: px-to-em($font-size-xxxxl);}
+.font-size-xxxl                 { font-size: px-to-em($font-size-xxxl);}
+.font-size-xxl                  { font-size: px-to-em($font-size-xxl);}
+.font-size-xl                   { font-size: px-to-em($font-size-xl);}
+.font-size-l                    { font-size: px-to-em($font-size-l);}
+.font-size-m                    { font-size: px-to-em($font-size-m);}
+.font-size-s                    { font-size: px-to-em($font-size-s);}
+.font-size-xs                   { font-size: px-to-em($font-size-xs);}
+.font-size-xxs                  { font-size: px-to-em($font-size-xxs);}
+.font-size-xxxs                 { font-size: px-to-em($font-size-xxxs);}
+
+
+/**
+ * Headings
+ * ----------------------------------------------------------------------------
+ */
+h1, h2, h3, h4, h5, h6, p, .text, li, code {
+    @extend .mb-0;
+    &:first-child {
+        @extend .mt-0;
+    }
+}
+
+/** 2. Header styles
+ * ----------------------------------------------------------------------------
+ * NOTE: These can change per project depending on what font etc you use :)
+ *
+ */
+
+.h0 {
+    @extend .font-size-xxxxl;
+}
+
+h1, .h1 {
+
+    @extend .font-size-xxxl;
+    line-height: $line-height-xxxl;
+    margin-top: pxem($base-spacing, $font-size-xxxl);
+}
+
+h2, .h2 {
+    @extend .font-size-xxl;
+    line-height: $line-height-xxl;
+    margin-top: pxem($base-spacing, $font-size-xxl);
+}
+
+h3, .h3 {
+    @extend .font-size-xl;
+    line-height: $line-height-xl;
+    margin-top: pxem($base-spacing, $font-size-xl);
+}
+
+h4, .h4 {
+    @extend .font-size-m;
+    line-height: $line-height-m;
+    margin-top: px-to-em($base-spacing, $font-size-m);
+}
+
+h5, .h5 {
+    @extend .font-size-s;
+    line-height: $line-height-s;
+    margin-top: px-to-em($base-spacing--xs, $font-size-s);
+}
+
+h6, .h6 {
+    @extend .font-size-xs;
+    line-height: $line-height-xs;
+    margin-top: px-to-em($base-spacing--xs, $font-size-xs);
+}
+
+
+p, .text, li, code {
+    @extend .font-size-xs;
+    line-height: $line-height-xs;
+    margin-top: px-to-em($base-spacing--xs, $font-size-xs);
+}
+
+strong, b {
+    .ie8 & {
+        @extend .font-primary--bold;
+    }
+}
+
+em, i {
+    .ie8 & {
+        @extend .font-primary--italic;
+    }
+}
+
+
+/**
+ *  3. Paragraph styles
+ * ----------------------------------------------------------------------------
+ */
+
+.intro {
+    @extend .font-size-s;
+}
+
+.small {
+    @extend .font-size-xxs;
+}
+
+.tiny {
+    @extend .font-size-xxxs;
+}
+
+.caption {
+    @extend .font-size-xxs;
+}
+
+.pullquote {
+    @extend .font-size-m;
+}
+
+.text-muted {
+    color: $text-muted;
+}
+
+.text-warning {
+    color: $text-warning;
+}
+
+.text-success {
+    color: $text-success;
+}
+.text-danger {
+    color: $text-danger;
+}
+
+
+/**
+ * 5. hr
+ * ----------------------------------------------------------------------------
+ */
+
+hr {
+    border: none;
+    height: 1px;
+}
+
+
+/**
+ * Text helpers
+ * ----------------------------------------------------------------------------
+ */
+.uppercase              { text-transform:uppercase; }
+.lowercase              { text-transform:lowercase; }
+
+.text-align--left       { text-align: left; }
+.text-align--right      { text-align: right; }
+.text-align--center     { text-align: center; }
+.text--nowrap           { white-space: nowrap; }
+
+.text--overflow {
+    @extend .inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+
+/**
+ * Visibility
+ * -----------------------------------------------------------------------------
+ */
+@each $query in $breakpoints {
+    $queryName: nth($query, 1);
+    @include media($queryName) {
+        .visible-#{$queryName} {
+            display: block !important;
+        }
+        .hidden-#{$queryName} {
+                display: none !important;
+        }
+    }
+}

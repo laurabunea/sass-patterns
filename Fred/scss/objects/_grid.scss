@@ -1,0 +1,123 @@
+/**
+ * 6. Inline block grid
+ * -----------------------------------------------------------------------------
+ *
+ * [1] Sets the child elements to take up full justified width of the parent
+ * [2] Overcomes an issue where the :after element blows out the bottom.
+ * [3] A fix for Internet Explorer 8/9
+ *
+ */
+.grid {
+    font-size: 0;                       /* [2] */
+    text-align: justify;                /* [1] */
+    // text-justify: distribute-all-lines; /* [3] */
+
+    // Not sure if we need the last line as it stuffs up text align:center
+    .ie8 & {
+        // This fixes and issue mentioned above
+        text-justify:normal;
+    }
+}
+
+    .grid > * {
+        @extend .grid__item;
+    }
+
+    // Font-size medium reset the block to the context of body (ie, 16px)
+    .grid__item {
+        @extend .inline-block;
+        @extend %align--top;
+        @extend .text-left;
+        font-size: medium;
+
+    }
+
+    .grid:after,
+    .grid__break {
+        @extend .inline-block;
+        content: '';
+        height: 0;
+        width:100%;
+    }
+
+    /**
+     * Vertical align these grid items in the middle!
+     */
+    .grid--middle > .grid__item {
+        @extend %align--middle;
+    }
+
+    .grid--bottom > .grid__item {
+        @extend %align--bottom;
+    }
+
+
+
+
+
+// Sometimes you don't want an inline block grid, you want a float grid.
+// Fred doesn't mind :)
+.grid-float {
+    width: 100%;
+}
+
+    .grid-float:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .grid-float > [class^=#{quote($grid-column-name)}] {
+        @extend .left;
+        @if $grid-float-padding {
+            padding-left: $grid-float-padding;
+        }
+    }
+
+    .grid-float > [class^=#{quote($grid-column-name)}]:first-of-type {
+        padding-left: 0;
+    }
+
+
+// Print grid classnames
+
+.#{$grid-column-name} {
+    width: 100%;
+}
+
+
+// Print column widths via a handy mixin.
+
+@mixin grid-columns($name: $grid-column-name, $stops: 10, $fractional: false, $breakpointSuffix: false) {
+    @for $i from 1 to $stops {
+        $colName: $i;
+        $width: $i / $stops * 100;
+        @if $fractional {
+            $colName: #{$i + "-"  + $stops};
+        }
+        @if $breakpointSuffix {
+            $colName: #{$colName + $breakpointSuffix};
+        }
+        .#{$name}-#{$colName} {
+            width: #{$width + "%"};
+        }
+    }
+}
+
+@each $breakpoint in $fred-grid-breakpoints {
+    @if $breakpoint == "default" {
+        @each $division in $grid-divisions {
+            @include grid-columns($stops: $division, $fractional: true);
+        }
+    } @else {
+        @include media($breakpoint) {
+            $suffix: $breakpoint-classname-prefix + $breakpoint;
+            @each $division in $grid-divisions {
+                @include grid-columns($name: $grid-column-name, $stops: $division, $fractional: true, $breakpointSuffix: $suffix);
+            }
+            .#{$grid-column-name + $suffix} {
+                width: 100%;
+            }
+        }
+    }
+}

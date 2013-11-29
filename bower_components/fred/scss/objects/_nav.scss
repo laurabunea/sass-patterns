@@ -1,0 +1,51 @@
+/**
+ * Nav
+ * ----------------------------------------------------------------------------
+ *
+ * Turns a list into a horizontal block of inline-blocks;
+ *
+ */
+
+.nav {
+    @extend .clearfix;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+    .nav > li {
+        @extend %inline-block;
+    }
+
+
+/**
+ * Sub nav
+ * ----------------------------------------------------------------------------
+
+<dl class="sub-nav">
+    <dt>Filter:</dt>
+    <dd class="active"><a href="#">All</a></dd>
+    <dd><a href="#">Active</a></dd>
+    <dd><a href="#">Pending</a></dd>
+    <dd><a href="#">Suspended</a></dd>
+</dl>
+ */
+
+.sub-nav {
+    display: block;
+    width: auto;
+    overflow: hidden;
+}
+
+    .sub-nav > dt,
+    .sub-nav > dd {
+        float: left;
+    }
+
+    .sub-nav > dd {
+        margin-left: $bs-xs;
+    }
+
+
+    .sub-nav > .active a {
+
+    }

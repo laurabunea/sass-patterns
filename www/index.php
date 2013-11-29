@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?>
 
-<div class='media'>
+<div class='media mt-xxxl col'>
     <img class='media__image' src='assets/images/fred.png' alt='Fred the friendly FED'/>
     <div class='media__body'>
         <div class='arrow--side block-s tt-block br--s' >

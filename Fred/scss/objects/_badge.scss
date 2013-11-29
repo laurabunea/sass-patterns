@@ -1,0 +1,29 @@
+/**
+ * Badges
+ * ----------------------------------------------------------------------------
+ *
+ * <span class='badge'>
+ *      3
+ * </span>
+ *
+ */
+.badge {
+    @extend %inline-block;
+
+    line-height: $base-line-height;
+    margin-left:0.3em;
+    min-width: .625em;
+    padding: .1875em .4375em;
+    // Quick fix for labels/badges in buttons
+
+    position: relative;
+    text-align: center;
+    top: -1px;
+    vertical-align: baseline;
+    white-space: nowrap;
+
+    // Empty badges collapse automatically (not available in IE8)
+    &:empty {
+        display: none;
+    }
+}

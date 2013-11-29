@@ -1,0 +1,172 @@
+// -----------------------------------------------------------------------------
+// Mixins
+// -----------------------------------------------------------------------------
+
+
+// Vendor
+// A lightweight way of vendor-prefixing things:
+// @include vendor(transition, opacity 0.3s ease-out, margin-top 5s linear);
+
+@mixin vendor($property, $value...){
+    -webkit-#{$property}:$value;
+       -moz-#{$property}:$value;
+        -ms-#{$property}:$value;
+         -o-#{$property}:$value;
+            #{$property}:$value;
+}
+
+
+// Opacity
+// ----------------------------------------------------------------------------
+
+@mixin opacity($value) {
+    $ieOpacity: 100 * $value;
+    opacity: $value;
+    filter: alpha(opacity=#{$ieOpacity});
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$ieOpacity})";
+}
+
+
+// Simple theme mixins
+// ----------------------------------------------------------------------------
+
+@mixin theme-block($bg-color, $txt-color, $border-color){
+    background-color:$bg-color;
+    color:$txt-color;
+    border-color:$border-color;
+}
+
+
+// Sizing shortcuts
+@mixin box-dimensions($height, $width){
+    height: $height;
+    width:  $width;
+}
+
+@mixin square($size){
+    height: $size;
+    width:  $size;
+}
+
+// Box sizing
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+
+
+// Mixins for forms
+// ----------------------------------------------------------------------------
+
+// Webkit-style focus
+@mixin tab-focus() {
+  // Default
+  outline: thin dotted #333;
+  // Webkit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+
+// Normalise the approach to CSS placeholders.
+// ----------------------------------------------------------------------------
+// 1. Firefox 4-18
+// 2. Firefox 19+
+// 3. Internet Explorer 10+
+// 4. Safari and Chrome
+
+@mixin placeholder($color: $input-color-placeholder) {
+  &:-moz-placeholder            { color: $color; } //[1]
+  &::-moz-placeholder           { color: $color; } //[2]
+  &:-ms-input-placeholder       { color: $color; } //[3]
+  &::-webkit-input-placeholder  { color: $color; } //[4]
+}
+
+@mixin font($font-family, $font-weight , $font-style) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+
+// Translate pixels to ems, given a base size.
+// By default, assume the base size is 16px (body font size)
+@function px-to-em($size, $context: 16) {
+    @return #{($size / $context)}em;
+}
+
+@function pxem($size, $context: 16) {
+    @return #{($size / $context)}em;
+}
+
+
+// Make nice media query namespaces from the variables file
+@function fred-prefixed-breakpoint($name) {
+    @if $name == "default" {
+        @return "";
+    } @else {
+        @return $breakpoint-classname-prefix + unquote($name);
+    }
+}
+
+// Get property names
+@function fred-property-by-shorthand($val) {
+    @if $val == "mt" {
+        @return "margin-top";
+    }
+    @if $val == "mb" {
+        @return "margin-bottom";
+    }
+    @if $val == "mr" {
+        @return "margin-right";
+    }
+    @if $val == "ml" {
+        @return "margin-left";
+    }
+    @if $val == "pt" {
+        @return "padding-top";
+    }
+    @if $val == "pb" {
+        @return "padding-bottom";
+    }
+    @if $val == "pr" {
+        @return "padding-right";
+    }
+    @if $val == "pl" {
+        @return "padding-left";
+    }
+    @else {
+        @return "padding";
+    }
+}
+
+// Spacing helpers
+@mixin fred-sizer($class: false, $sizePrefixes: false, $mediaQuery: false, $property: false, $array: false) {
+    $index:1;
+    @each $size in $sizePrefixes {
+        $className: $class + $size;
+        @if $mediaQuery {
+            $className: $className + fred-prefixed-breakpoint($mediaQuery);
+        }
+
+        .#{$className} { #{$property}: nth($array, $index)  }
+        $index: $index + 1;
+    }
+}
+
+@mixin fred-breakpoint-sizer($breakpointList, $classList) {
+    @each $size in $breakpointList {
+        @if $size == "default" {
+            @each $class in $classList {
+                @include fred-sizer($class, $sizePrefixes, $size, fred-property-by-shorthand($class), $sizes);
+            }
+        } @else {
+            @include media($size) {
+                @each $class in $classList {
+                    @include fred-sizer($class, $sizePrefixes, $size, fred-property-by-shorthand($class), $sizes);
+                }
+            }
+        }
+    }
+}
