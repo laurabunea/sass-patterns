@@ -127,21 +127,39 @@ $grid-column-name-large:    "column-large";
 $grid-column-name-xlarge:   "column-xlarge";
 
 
-// Colours
-// -----------------------------------------------------------------------------
-$bg-color:                      #4D4D4D;
-$base-font-color:               #2E2F2B;
-$hr-colour:                     #e5e5e5;
 
-// Links
-$base-link-color:               #2F72BA;
-$base-link-hover-color:         darken($base-link-color, 15%);
-$list-block-color:              #ccc;
-$sub-header:                    #999;
+/**
+ *  Theme block --green, pink, blue
+ * -----------------------------------------------------------------------------
+ */
 
-// Text emphasis colours
-$text-success:                  #468847;
-$text-warning:                  #c09853;
-$text-danger:                   #b94a48;
-$text-muted:                    #999;
+//green theme box
+$green-bg-color:                #A6E22E;
+$green-txt-color:               $base-font-color; 
+$green-border-color:            $green-bg-color;
 
+//pink theme box
+$pink-bg-color:                 #F92672;
+$pink-txt-color:                $base-font-color ; 
+$pink-border-color:             $pink-bg-color;
+
+//blue theme box
+$blue-bg-color:                 #4AA1C5;
+$blue-txt-color:                #fff; 
+$blue-border-color:             $blue-bg-color;
+
+
+.green-block {
+  @extend %border;
+    @include theme-block( $green-bg-color, $green-txt-color, $green-border-color );
+}
+
+.pink-block {
+  @extend %border;
+    @include theme-block( $pink-bg-color, $pink-txt-color, $pink-border-color );
+}
+
+.blue-block {
+  @extend %border;
+    @include theme-block( $blue-bg-color, $blue-txt-color, $blue-border-color );
+}

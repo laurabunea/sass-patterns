@@ -180,9 +180,9 @@
             </h4>
             <pre>
 <code class='language-markup'>
-&lt;a class='btn btn-primary' href='#'&gt; I'm a primary button &lt;/a&gt;
-&lt;a class='btn btn-secondary' href='#'&gt; I'm a secondary button &lt;/a&gt;
-&lt;a class='btn btn-tertiary' href='#'&gt; I'm a tertiary button &lt;/a&gt;
+&lt;a class='btn tp-btn' href='#'&gt; I'm a primary button &lt;/a&gt;
+&lt;a class='btn ts-btn' href='#'&gt; I'm a secondary button &lt;/a&gt;
+&lt;a class='btn tt-btn' href='#'&gt; I'm a tertiary button &lt;/a&gt;
 </code>
             </pre>
         </div><!--  code block ends -->
@@ -192,9 +192,9 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <p class='xm'><a class='btn btn-primary '>I'm a primary button</a>
-            <a class='btn btn-secondary'>I'm a secondary button</a>
-            <a class='btn btn-tertiary'>I'm a tertiary button</a></p>
+            <p class='xm'><a class='btn tp-btn '>I'm a primary button</a>
+            <a class='btn ts-btn'>I'm a secondary button</a>
+            <a class='btn tt-btn'>I'm a tertiary button</a></p>
         </div><!--  hello world block ends -->
     </div><!-- theme-blocks ends-->
 
@@ -212,9 +212,9 @@
             </h4>
             <pre>
 <code class='language-markup'>
-&lt;a class='btn btn-primary' href='#'&gt; I'm a primary button &lt;/a&gt;
-&lt;a class='btn btn-secondary' href='#'&gt; I'm a secondary button &lt;/a&gt;
-&lt;a class='btn btn-tertiary' href='#'&gt; I'm a tertiary button &lt;/a&gt;
+&lt;a class='btn tp-btn' href='#'&gt; I'm a primary button &lt;/a&gt;
+&lt;a class='btn ts-btn' href='#'&gt; I'm a secondary button &lt;/a&gt;
+&lt;a class='btn tt-btn' href='#'&gt; I'm a tertiary button &lt;/a&gt;
 </code>
             </pre>
         </div><!--  code block ends -->

@@ -6,7 +6,9 @@
 
     .heading--keyline {
         padding-bottom: $bs-xxs;
-        border-bottom: solid 1px $hr-colour;
+        border-bottom-width:1px; 
+        border-bottom-style:solid;
+
     }
 
     .heading__subheading {

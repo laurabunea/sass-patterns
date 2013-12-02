@@ -38,7 +38,7 @@
 
             <p>
                 <a class='xm' href='#'>Inbox
-                    <span class='pt-badge badge tiny'>42</span>
+                    <span class='tp-badge badge tiny'>42</span>
                 </a>
             </p>
 

@@ -1,25 +1,52 @@
 
 /**
- * Colours /Themes
+ * Base Colours website and theme helpers for the objects 
  * -----------------------------------------------------------------------------
  */
 
 
-// Grays
-// -------------------------
+//base colours
 
-$gray-darker:                   lighten(#000, 13.5%); // #222
-$gray-dark:                     lighten(#000, 20%);   // #333
-$gray:                          lighten(#000, 33.5%); // #555
-$gray-light:                    lighten(#000, 60%);   // #999
-$gray-lighter:                  lighten(#000, 93.5%); // #eee
+//objects
+//- Breadcrumbs
+//- Badges
+//- Block themes
+//- Buttons
+//- Page heading
+
+// Theme class prefixes 
+// ---------------------------------------------------
+// tp- primary theme
+// ts- secondary theme
+// tt- tertiary theme
+// tq- quarternary theme
 
 
-/**
- * . Base colours for your site
- * -----------------------------------------------------------------------------
- */
+// Base Colours
+// -----------------------------------------------------------------------------
+$bg-color:                      #4D4D4D;
+$base-font-color:               #2E2F2B;
+$hr-colour:                     #e5e5e5;
 
+// Links
+$base-link-color:               #2F72BA;
+$base-link-hover-color:         darken($base-link-color, 15%);
+
+
+$list-block-color:              #ccc;
+
+$sub-header:                    #999;
+
+// Text emphasis colours
+$text-success:                  #468847;
+$text-warning:                  #c09853;
+$text-danger:                   #b94a48;
+$text-muted:                    #999;
+
+
+
+// Base colours for your site
+// ----------------------------------------------------------------------------
 
 html, 
 body {
@@ -39,12 +66,82 @@ hr {
   color:                $hr-colour;
 }
 
+// Common colours - Greys
+// -------------------------
 
-/**
- * Theme blocks -- success warning or danger
- * -----------------------------------------------------------------------------
- */
+$grey-darker:                   lighten(#000, 13.5%); // #222
+$grey-dark:                     lighten(#000, 20%);   // #333
+$grey:                          lighten(#000, 33.5%); // #555
+$grey-light:                    lighten(#000, 60%);   // #999
+$grey-lighter:                  lighten(#000, 93.5%); // #eee
 
+
+
+
+// Breadcrumbs
+// ----------------------------------------------------------------------------
+
+//primary theme
+$tp-breadcrumb-active-txt:        #555;
+$tp-breadcrumb-txt:               #666;
+$tp-breadcrumb-bg:                #f2f2f2;
+
+
+.tp-breadrumbs {
+  background-color: $tp-breadcrumb-bg;
+  > li {
+    &+li:before {
+      color: $tp-breadcrumb-txt;
+    }
+  }
+  > .active {
+    color: $tp-breadcrumb-active-txt;
+  }
+}
+
+
+
+// Badges
+// ----------------------------------------------------------------------------
+
+//primary theme
+$tp-badge-txt:                    #fff;
+$tp-badge-bg:                     pink;
+$tp-badge-radius:                 10px;
+$tp-badge-active-txt:             #efefef;
+$tp-badge-active-bg:              blue;
+
+
+.tp-badge {
+    color: $tp-badge-txt;
+    background-color: $tp-badge-bg;
+    border-radius: $tp-badge-radius;
+}
+
+// Account for counters in navs
+a.tp-badge_active > .badge {
+    color: $tp-badge-active-txt;
+    background-color: $tp-badge-active-bg;
+}
+
+
+// Page header
+// ----------------------------------------------------------------------------
+
+$tp-page-header-txt:                #343434;
+$tp-page-header-span-txt:           slategray;
+
+.tp-page-header {
+    color:$tp-page-header-txt;
+    span {
+        color:$tp-page-header-span-txt;
+    }
+}
+
+
+
+// Theme blocks - success, warning and danger 
+// ----------------------------------------------------------------------------
 
 $success-bg-color:              #C5FFC6;
 $success-txt-color:             #468847;
@@ -75,10 +172,8 @@ $danger-border-color:           $danger-txt-color;
 }
 
 
-/**
- *  Theme block -- primary, secondary, tertiary, quarternary
- * -----------------------------------------------------------------------------
- */
+// Theme blocks - Primary, Secondary, Tertiary, Quarternary 
+// ----------------------------------------------------------------------------
 
 //primary 
 $primary-bg-color:              #fff;
@@ -100,144 +195,32 @@ $quarternary-bg-color:          #4D4D4D;
 $quarternary-txt-color:         #fff; 
 $quarternary-border-color:      $quarternary-bg-color;
 
-//primary theme block
-.pt-block {
+
+.tp-block {
   @extend %border;
-    @include theme-block( $primary-bg-color, $primary-txt-color, $primary-border-color );
-    @extend .radius--m;
+  @extend .radius--m;
+  @include theme-block( $primary-bg-color, $primary-txt-color, $primary-border-color );
 }
 
-//Secondary theme block
-.st-block {
-    @extend %border;
+.ts-block {
+  @extend %border;
   @include theme-block( $secondary-bg-color, $secondary-txt-color, $secondary-border-color );
 }
 
-//Tertiary theme block
 .tt-block {
   @extend %border;
-    @include theme-block( $tertiary-bg-color, $tertiary-txt-color, $tertiary-border-color );
+  @include theme-block( $tertiary-bg-color, $tertiary-txt-color, $tertiary-border-color );
 }
 
-//quarternary theme block
-.qt-block {
+.tq-block {
   @extend %border;
     @include theme-block( $quarternary-bg-color, $quarternary-txt-color, $quarternary-border-color );
 }
 
 
-/**
- *  Theme block --green, pink, blue
- * -----------------------------------------------------------------------------
- */
 
-//green theme box
-$green-bg-color:                #A6E22E;
-$green-txt-color:               $base-font-color; 
-$green-border-color:            $green-bg-color;
-
-//pink theme box
-$pink-bg-color:                 #F92672;
-$pink-txt-color:                $base-font-color ; 
-$pink-border-color:             $pink-bg-color;
-
-//blue theme box
-$blue-bg-color:                 #4AA1C5;
-$blue-txt-color:                #fff; 
-$blue-border-color:             $blue-bg-color;
-
-
-.green-block {
-  @extend %border;
-    @include theme-block( $green-bg-color, $green-txt-color, $green-border-color );
-}
-
-.pink-block {
-  @extend %border;
-    @include theme-block( $pink-bg-color, $pink-txt-color, $pink-border-color );
-}
-
-.blue-block {
-  @extend %border;
-    @include theme-block( $blue-bg-color, $blue-txt-color, $blue-border-color );
-}
-
-
-/**
- * breadcrumbs
- * -----------------------------------------------------------------------------
- */
-
-//primary theme
-$pt-breadcrumb-active-txt:        #555;
-$pt-breadcrumb-txt:               #666;
-$pt-breadcrumb-bg:                #f2f2f2;
-
-
-.pt-breadrumbs {
-  background-color: $pt-breadcrumb-bg;
-  > li {
-    &+li:before {
-      color: $pt-breadcrumb-txt;
-    }
-  }
-  > .active {
-    color: $pt-breadcrumb-active-txt;
-  }
-}
-
-
-
-/**
- * Badges
- * -----------------------------------------------------------------------------
- */
-
-//primary theme
-$pt-badge-txt:                    #fff;
-$pt-badge-bg:                     pink;
-$pt-badge-radius:                 10px;
-$pt-badge-active-txt:             #efefef;
-$pt-badge-active-bg:              blue;
-
-
-.pt-badge {
-    color: $pt-badge-txt;
-    background-color: $pt-badge-bg;
-    border-radius: $pt-badge-radius;
-}
-
-// Account for counters in navs
-a.pt-badge_active > .badge {
-    color: $pt-badge-active-txt;
-    background-color: $pt-badge-active-bg;
-}
-
-
-
-/**
- * Page header
- * -----------------------------------------------------------------------------
- */
-
-//primary theme
-$pt-page-header-border:             #E6E6E6;
-$pt-page-header-txt:                #343434;
-$pt-page-header-span-txt:           slategray;
-
-
-.pt-page-header {
-    color:$pt-page-header-txt;
-//    border-bottom:1px solid $pt-page-header-border;
-    span {
-        color:$pt-page-header-span-txt;
-    }
-}
-
-/**
- * Buttons
- * -----------------------------------------------------------------------------
- */
+// Buttons
+// ----------------------------------------------------------------------------
 
 //default active states
 
@@ -277,7 +260,7 @@ $negative-btn-border:          #444;
 $negative-btn-hover-bg:        #d8281f;
 $negative-btn-hover-txt:       $negative-btn-txt;
 
-.btn-primary {
+.tp-btn {
     
     @include theme-block($primary-btn-bg, $primary-btn-txt, $primary-btn-border);  
     &:hover {
@@ -286,7 +269,7 @@ $negative-btn-hover-txt:       $negative-btn-txt;
     }
 }
 
-.btn-secondary {
+.ts-btn {
     @include theme-block($secondary-btn-bg, $secondary-btn-txt, $secondary-btn-border);
     &:hover {
         background-color: $secondary-btn-hover-bg;
@@ -294,7 +277,7 @@ $negative-btn-hover-txt:       $negative-btn-txt;
     }
 }
 
-.btn-tertiary {
+.tt-btn {
     @include theme-block($tertiary-btn-bg, $tertiary-btn-txt, $tertiary-btn-border);
     &:hover {
         background-color: $tertiary-btn-hover-bg;
@@ -327,22 +310,58 @@ $negative-btn-hover-txt:       $negative-btn-txt;
     color: $active-btn-text;
 }
 
+/**
+ *  Theme block --green, pink, blue
+ * -----------------------------------------------------------------------------
+ */
 
-// Form states and alerts
-// -------------------------
+//green theme box
+$green-bg-color:                #A6E22E;
+$green-txt-color:               $base-font-color; 
+$green-border-color:            $green-bg-color;
 
-$state-warning-text:             #c09853;
-$state-warning-bg:               #fcf8e3;
-//$state-warning-border:           darken(spin($state-warning-bg, -10), 3%);
+//pink theme box
+$pink-bg-color:                 #F92672;
+$pink-txt-color:                $base-font-color ; 
+$pink-border-color:             $pink-bg-color;
 
-$state-danger-text:              #b94a48;
-$state-danger-bg:                #f2dede;
-//$state-danger-border:            darken(spin($state-danger-bg, -10), 3%);
+//blue theme box
+$blue-bg-color:                 #4AA1C5;
+$blue-txt-color:                #fff; 
+$blue-border-color:             $blue-bg-color;
 
-$state-success-text:             #468847;
-$state-success-bg:               #dff0d8;
-//$state-success-border:           darken(spin($state-success-bg, -10), 5%);
 
-$state-info-text:                #3a87ad;
-$state-info-bg:                  #d9edf7;
-//$state-info-border:              darken(spin($state-info-bg, -10), 7%);
+.green-block {
+  @extend %border;
+    @include theme-block( $green-bg-color, $green-txt-color, $green-border-color );
+}
+
+.pink-block {
+  @extend %border;
+    @include theme-block( $pink-bg-color, $pink-txt-color, $pink-border-color );
+}
+
+.blue-block {
+  @extend %border;
+    @include theme-block( $blue-bg-color, $blue-txt-color, $blue-border-color );
+}
+
+// Pills
+// ----------------------------------------------------------------------------
+
+
+
+
+// Arrows  
+// ----------------------------------------------------------------------------
+
+
+
+// Typography  
+// ----------------------------------------------------------------------------
+
+
+
+// Forms
+// ----------------------------------------------------------------------------
+

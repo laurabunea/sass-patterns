@@ -27,8 +27,8 @@
                 <pre>
     <code class="language-markup">
     &lt;a class='btn--label'&gt; Button 1 &lt;/a&gt;
-    &lt;a class='btn btn-secondary'&gt; Button 2 &lt;/a&gt;
-    &lt;a class='btn btn-tertiary'&gt; Button 3 &lt;/a&gt;
+    &lt;a class='btn ts-btn'&gt; Button 2 &lt;/a&gt;
+    &lt;a class='btn tt-btn'&gt; Button 3 &lt;/a&gt;
     </code>
                 </pre>
             </div><!-- code block ends -->
@@ -39,17 +39,17 @@
                     hello world
                 </h4>
                 <p>
-                    <a class='btn btn-primary' data-btn-loading-indicator='Thinking...'>
+                    <a class='btn tp-btn' data-btn-loading-indicator='Thinking...'>
                         <span class='btn--label'>
                             Button 1
                         </span>
                     </a>
                 
-                    <a class='btn btn-secondary'>
+                    <a class='btn ts-btn'>
                         Button 2
                     </a>
                 
-                    <a class='btn btn-tertiary'>
+                    <a class='btn tt-btn'>
                         Button 3
                     </a>
                 </p>
@@ -107,8 +107,8 @@
                 </h4>
                 <pre>
     <code class="language-markup">
-    &lt;h3 class='btn btn-primary btn--large btn--bounce'&gt; Button 1 &lt;/h3&gt;
-    &lt;small class='bbtn btn-tertiary btn--small btn--bob'&gt; Button 2 &lt;/small&gt;
+    &lt;h3 class='btn tp-btn btn--large btn--bounce'&gt; Button 1 &lt;/h3&gt;
+    &lt;small class='bbtn tt-btn btn--small btn--bob'&gt; Button 2 &lt;/small&gt;
     </code>
                 </pre>
             </div><!-- code block ends -->
@@ -118,11 +118,11 @@
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
-                <h3 class='btn btn-primary btn--large btn--bounce'>
+                <h3 class='btn tp-btn btn--large btn--bounce'>
                     Button 1
                 </h3>
                 <p>
-                    <small class='btn btn-tertiary btn--small btn--bob'>
+                    <small class='btn tt-btn btn--small btn--bob'>
                         Button 2
                     </small>    
                 </p>
@@ -139,8 +139,8 @@
                 </h4>
                 <pre>
     <code class="language-markup">
-    &lt;a class='tn btn-primary btn--soft'&gt; Button 1 &lt;/a&gt;
-    &lt;a class='btn btn-secondary btn--hard'&gt; Button 2 &lt;/a&gt;
+    &lt;a class='tn tp-btn btn--soft'&gt; Button 1 &lt;/a&gt;
+    &lt;a class='btn ts-btn btn--hard'&gt; Button 2 &lt;/a&gt;
     </code>
                 </pre>
             </div><!-- code block ends -->
@@ -151,10 +151,10 @@
                     hello world
                 </h4>
                 <p>
-                    <a class='btn btn-primary btn--soft'>
+                    <a class='btn tp-btn btn--soft'>
                         Button 1
                     </a>
-                    <a class='btn btn-secondary btn--hard'>
+                    <a class='btn ts-btn btn--hard'>
                         Button 2
                     </a>
                 </p>
@@ -172,7 +172,7 @@
                 <pre>
     <code class="language-markup">
     &lt;a class='btn btn-positive btn--block'&gt; Button 1 &lt;/a&gt;
-    &lt;a class='btn btn-primary btn--block-mobile'&gt; Responsinate! &lt;/a&gt;
+    &lt;a class='btn tp-btn btn--block-mobile'&gt; Responsinate! &lt;/a&gt;
     </code>
                 </pre>
             </div><!-- code block ends -->
@@ -191,7 +191,7 @@
                     A sneaky button that becomes a block on mobile: 
                 </p>
                 <p>
-                    <a class='btn btn-primary btn--block-mobile'>
+                    <a class='btn tp-btn btn--block-mobile'>
                         Responsinate!
                     </a>
                 </p>
@@ -220,14 +220,14 @@
                 </h4>
                 <pre>
     <code class='language-markup'>
-    &lt;a class='btn btn-primary btn--icon btn--bounce-icon--left'&gt;&lt;i class='i'&gt;&#9834;&lt;/i&gt; A button with .btn--icon&lt;/a&gt;
-    &lt;a class='btn btn-primary btn--icon--rev btn--bounce-icon--bottom'&gt; A button with .btn--icon--rev &lt;i class='i'&gt;&#9835;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class='btn tp-btn btn--icon btn--bounce-icon--left'&gt;&lt;i class='i'&gt;&#9834;&lt;/i&gt; A button with .btn--icon&lt;/a&gt;
+    &lt;a class='btn tp-btn btn--icon--rev btn--bounce-icon--bottom'&gt; A button with .btn--icon--rev &lt;i class='i'&gt;&#9835;&lt;/i&gt;&lt;/a&gt;
 
-    &lt;a class='btn btn-secondary btn--icon-large btn--bounce-icon--top'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt; A button with .btn--icon-large &lt;/a&gt;
-    &lt;a class='btn btn-secondary btn--icon-large--rev btn--bounce-icon--right'&gt; A button with .btn--icon-large--rev &lt;i class='i'&gt;&#9733;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class='btn ts-btn btn--icon-large btn--bounce-icon--top'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt; A button with .btn--icon-large &lt;/a&gt;
+    &lt;a class='btn ts-btn btn--icon-large--rev btn--bounce-icon--right'&gt; A button with .btn--icon-large--rev &lt;i class='i'&gt;&#9733;&lt;/i&gt;&lt;/a&gt;
 
-    &lt;a class='bbtn btn-tertiary btn--icon-small'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt; A button with .btn--icon-small &lt;/a&gt;
-    &lt;a class='btn btn-tertiary btn--icon-small'&gt;&lt;i class='i'&gt;&#9733;&lt;/i&gt; A small with .btn--icon-small&lt;/a&gt;
+    &lt;a class='bbtn tt-btn btn--icon-small'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt; A button with .btn--icon-small &lt;/a&gt;
+    &lt;a class='btn tt-btn btn--icon-small'&gt;&lt;i class='i'&gt;&#9733;&lt;/i&gt; A small with .btn--icon-small&lt;/a&gt;
     </code>
                 </pre>
             </div><!-- code block ends -->
@@ -238,38 +238,38 @@
                     hello world
                 </h4>
                 <p>
-                    <a class='btn btn-primary btn--icon btn--bounce-icon--left'>
+                    <a class='btn tp-btn btn--icon btn--bounce-icon--left'>
                         <i class='i'>&#9834;</i> 
                         A button with .btn--icon
                     </a>
                 </p>
                 <p>
-                    <a class='btn btn-primary btn--icon--rev btn--bounce-icon--bottom'>
+                    <a class='btn tp-btn btn--icon--rev btn--bounce-icon--bottom'>
                         A button with .btn--icon--rev 
                         <i class='i'>&#9835;</i>
                     </a>
                 </p>
                 <p>
-                    <a class='btn btn-secondary btn--icon-large btn--bounce-icon--top'>
+                    <a class='btn ts-btn btn--icon-large btn--bounce-icon--top'>
                         <i class='i'>&#9829;</i> 
                         A button with .btn--icon-large
                     </a>
                 </p>
                 <p>
-                    <a class='btn btn-secondary btn--icon-large--rev btn--bounce-icon--right'>
+                    <a class='btn ts-btn btn--icon-large--rev btn--bounce-icon--right'>
                         A button with .btn--icon-large--rev 
                         <i class='i'>&#9733;</i>
                     </a>
                 </p>
 
                 <p>
-                    <a class='btn btn-tertiary btn--icon-small'>
+                    <a class='btn tt-btn btn--icon-small'>
                         <i class='i'>&#163;</i> 
                         A button with .btn--icon-small
                     </a>
                 </p>   
                 <p>
-                    <small class='btn btn-tertiary btn--icon-small'>
+                    <small class='btn tt-btn btn--icon-small'>
                         <i class='i'>&#163;</i> 
                         A small with .btn--icon-small
                     </small>
@@ -289,9 +289,9 @@
     <code class='language-markup'>
     &lt;a class='btn btn-positive btn--icon-only--large'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
     &lt;a class='btn btn-negative btn--icon-only'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
-    &lt;a class='btn btn-tertiary btn--icon-only--small'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
-    &lt;a class='btn btn-tertiary btn--icon-only--small btn--soft'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
-    &lt;a class='btn btn-tertiary btn--icon-only--small btn--hard'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class='btn tt-btn btn--icon-only--small'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class='btn tt-btn btn--icon-only--small btn--soft'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class='btn tt-btn btn--icon-only--small btn--hard'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
     </code>
             </pre>
             </div><!-- code block ends -->
@@ -308,13 +308,13 @@
                     <a class='btn btn-negative btn--icon-only'>
                         <i class='i'>&#9829;</i>
                     </a>
-                    <a class='btn btn-tertiary btn--icon-only--small'>
+                    <a class='btn tt-btn btn--icon-only--small'>
                         <i class='i'>&#9829;</i>
                     </a>
-                    <a class='btn btn-tertiary btn--icon-only--small btn--soft'>
+                    <a class='btn tt-btn btn--icon-only--small btn--soft'>
                         <i class='i'>&#9733;</i>
                     </a>
-                    <a class='btn btn-tertiary btn--icon-only--small btn--hard'>
+                    <a class='btn tt-btn btn--icon-only--small btn--hard'>
                         <i class='i'>&#9834;</i>
                     </a>
                 </p>
@@ -352,10 +352,10 @@
                     hello world
                 </h4>
                 <p>
-                    <input type='submit' value='Button 2' class='btn btn--submit-small btn-primary' />
-                    <input type='submit' value='Button 2' class='btn btn--submit btn-primary' />
+                    <input type='submit' value='Button 2' class='btn btn--submit-small tp-btn' />
+                    <input type='submit' value='Button 2' class='btn btn--submit tp-btn' />
                     
-                    <input type='submit' value='Button 2' class='btn btn--submit-large btn-primary' />
+                    <input type='submit' value='Button 2' class='btn btn--submit-large tp-btn' />
                       
                 </p>
             </div><!-- hello world block ends -->

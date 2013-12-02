@@ -1766,37 +1766,37 @@ body {
  * -----------------------------------------------------------------------------
  */
 /* line 150, ../sass/core/_theme.scss */
-.btn-primary {
+.tp-btn {
   background-color: #3cbe8a;
   color: white;
   border-color: #3cbe8a;
 }
 /* line 153, ../sass/core/_theme.scss */
-.btn-primary:hover {
+.tp-btn:hover {
   background-color: #33a376;
   color: white;
 }
 
 /* line 159, ../sass/core/_theme.scss */
-.btn-secondary {
+.ts-btn {
   background-color: #999999;
   color: white;
   border-color: #3cbe8a;
 }
 /* line 161, ../sass/core/_theme.scss */
-.btn-secondary:hover {
+.ts-btn:hover {
   background-color: #777777;
   color: white;
 }
 
 /* line 167, ../sass/core/_theme.scss */
-.btn-tertiary {
+.tt-btn {
   background-color: #dddddd;
   color: white;
   border-color: #444444;
 }
 /* line 169, ../sass/core/_theme.scss */
-.btn-tertiary:hover {
+.tt-btn:hover {
   background-color: #cccccc;
   color: #333333;
 }
@@ -1848,14 +1848,14 @@ body {
 }
 
 /* line 217, ../sass/core/_theme.scss */
-.pt-badge {
+.tp-badge {
   color: white;
   background-color: red;
   border-radius: 10px;
 }
 
 /* line 224, ../sass/core/_theme.scss */
-a.pt-badge_active > .badge {
+a.tp-badge_active > .badge {
   color: #efefef;
   background-color: blue;
 }
