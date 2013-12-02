@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?>
 
-<div class='block-l block-small--s mb-l clearfix pt-block'>
+<div class='block-l block-small--s mb-l clearfix tp-block'>
     <div class='page-header pt-page-header'>
         <h1>
             Mixins
@@ -100,7 +100,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -142,7 +142,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -189,7 +189,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -244,7 +244,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -293,7 +293,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -340,7 +340,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -394,7 +394,7 @@ $fred-padding-types: "pt", "pb";
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

@@ -12,7 +12,7 @@
     </div>
 </div>
 
-<div class='block--stacked block-l block-small--s mb-l pt-block'>
+<div class='block--stacked block-l block-small--s mb-l tp-block'>
 	
     <p class='intro'>
         Introduction on FRED here ...

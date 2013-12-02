@@ -1,6 +1,6 @@
 {
   "name": "Fred",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "description": "A friend front-end framework",
   "main": [
     "dist/lib/fred.scss",
@@ -13,6 +13,8 @@
   ],
   "authors": [
     "Laura Bunea",
+    "Josh Barr",
+    "Thomas Winter",
     "Springload"
   ],
   "license": "MIT",
@@ -23,5 +25,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "normalize-css": "2.1.3"
+  }
 }

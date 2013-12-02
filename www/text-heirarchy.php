@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?>
 
-<div class='block-l block-small--s mb-l clearfix pt-block'>
+<div class='block-l block-small--s mb-l clearfix tp-block'>
     <div class='page-header pt-page-header'>
         <h1>
             Heading sizes

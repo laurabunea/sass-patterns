@@ -256,7 +256,7 @@ $hr-colour:                     #e5e5e5;
 // Links
 $base-link-color:               #2F72BA;
 $base-link-hover-color:         darken($base-link-color, 15%);
-$list-block-color:              #ccc;
+$lits-block-color:              #ccc;
 $sub-header:                    #999;
 
 // Text emphasis colours
@@ -269,3 +269,10 @@ $text-muted:                    #999;
 
 $pill-ui-color:               #333;
 $lozenge-radius:       .25em;
+
+
+// Radii (set to false to disable)
+$radius:            .3125em;
+$radius-s:          .125em;
+$radius-l:          .625em;
+$radius-circle:     35em;

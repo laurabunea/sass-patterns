@@ -1,14 +1,24 @@
 // Border radii
-.radius--xs {
-    @include vendor(border-radius, 2px 2px 2px 2px);
-}
-.radius--s {
-    @include vendor(border-radius, 5px 5px 5px 5px);
-}
-.radius--m {
-    @include vendor(border-radius, 10px 10px 10px 10px);
+@if $radius-s {
+    .radius--s {
+        @include vendor(border-radius, 2px 2px 2px 2px);
+    }
 }
 
-.circle {
-    @include vendor(border-radius, 35em);
+@if $radius {
+    .radius {
+        @include vendor(border-radius, 5px 5px 5px 5px);
+    }
+}
+
+@if $radius-l {
+    .radius--l {
+        @include vendor(border-radius, 10px 10px 10px 10px);
+    }
+}
+
+@if $radius-circle {
+    .circle {
+        @include vendor(border-radius, 35em);
+    }
 }

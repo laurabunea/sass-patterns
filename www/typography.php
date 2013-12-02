@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?>
 
-<div class='block-l block-small--s pt-block relative mb-l'>
+<div class='block-l block-small--s tp-block relative mb-l'>
     <img class='absolute fred' alt='Fred the fed' src='assets/images/fred-side.png'  />
     
     <div class='page-header pt-page-header'>
@@ -301,7 +301,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             
             <h4 class='tiny uppercase text-muted'>
                 hello world
@@ -354,7 +354,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block--stacked block-s st-block'>
+            <div class='block--stacked block-s ts-block'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -419,7 +419,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block starts -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -456,7 +456,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -493,7 +493,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -532,18 +532,18 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block starts -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block-s st-block clearfix'>
+        <div class='block--stacked block-s ts-block clearfix'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class=' block-s st-block testbox-100-100 push_left left' >
+            <div class=' block-s ts-block testbox-100-100 push_left left' >
                 <p class='text--overflow'>
                     Hello I'm a text with an ellipsis
                 </p>
 
                 
             </div>
-            <div class=' block-s st-block testbox-100-100 right' >
+            <div class=' block-s ts-block testbox-100-100 right' >
              
                 <p class='text--nowrap'>
                     I'm text that doesn't wrap
@@ -584,7 +584,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block--stacked block-s st-block'>
+            <div class='block--stacked block-s ts-block'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -619,7 +619,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block--stacked block-s st-block'>
+            <div class='block--stacked block-s ts-block'>
                 <h4 class='h tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -653,7 +653,7 @@ $font-size-xxxs:        11;     //.tiny
             </div><!-- code block ends -->
 
             <!-- hello world block starts -->
-            <div class='block--stacked block-s st-block'>
+            <div class='block--stacked block-s ts-block'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
@@ -695,7 +695,7 @@ $font-size-xxxs:        11;     //.tiny
         </div><!-- code block ends -->
 
         <!-- hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

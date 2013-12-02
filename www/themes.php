@@ -2,7 +2,7 @@
     include 'header.php'; 
 ?>
 
-<div class='block-l block-small--s mb-l clearfix pt-block '>
+<div class='block-l block-small--s mb-l clearfix tp-block '>
      <div class='page-header pt-page-header'>
         <h1>
             Themes
@@ -52,16 +52,16 @@
             </h4>
             <pre>
 <code class='language-markup'>
-    &lt;div class='pt-block'&gt;
+    &lt;div class='tp-block'&gt;
         &lt;p&gt;Some text.&lt;/p&gt;
     &lt;/div&gt;
-    &lt;div class='st-block'&gt;
+    &lt;div class='ts-block'&gt;
        &lt;p&gt;Some text.&lt;/p&gt;
     &lt;/div>
     &lt;div class='tt-block'&gt;
         &lt;p&gt;Some text.&lt;/p&gt;
     &lt;/div>
-    &lt;div class='qt-block'&gt;
+    &lt;div class='tq-block'&gt;
         &lt;p&gt;Some text.&lt;/p&gt;
     &lt;/div&gt;
 </code>
@@ -69,21 +69,21 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
         	<div class='grid'>
-                <div class='g--1-4 testbox-100-100 mt-xs block-s pt-block'>
+                <div class='g--1-4 testbox-100-100 mt-xs block-s tp-block'>
                     <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 mt-xs block-s st-block'>
+                <div class='g--1-4 testbox-100-100 mt-xs block-s ts-block'>
                    <p>Some text.</p>
                 </div>
                 <div class='g--1-4 testbox-100-100 mt-xs block-s tt-block'>
                     <p>Some text.</p>
                 </div>
-                <div class='g--1-4 testbox-100-100 mt-xs block-s qt-block'>
+                <div class='g--1-4 testbox-100-100 mt-xs block-s tq-block'>
                     <p>Some text.</p>
                 </div>
             </div>
@@ -110,7 +110,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -154,7 +154,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -188,7 +188,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
@@ -220,7 +220,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

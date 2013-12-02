@@ -79,7 +79,7 @@ a:active, a:hover {
  */
 h1 {
   font-size: 2em;
-  margin: 0; }
+  margin-bottom: 0; }
 
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
@@ -302,11 +302,11 @@ table {
  * these properties right here. Maybe consider scoping this to a class for
  * chrome/mac osx only at some point?
  */
-.antialiased, html, body {
+.antialiased {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
-.isWindowsChrome .antialiased, .isWindowsChrome html, .isWindowsChrome body {
+.isWindowsChrome .antialiased {
   -webkit-font-smoothing: subpixel-antialiased; }
 
 
@@ -1349,7 +1349,8 @@ textarea {
 
 .heading--keyline {
   padding-bottom: 0.5em;
-  border-bottom: solid 1px #e5e5e5; }
+  border-bottom-width: 1px;
+  border-bottom-style: solid; }
 
 .heading__subheading {
   font-weight: normal; }
@@ -1387,6 +1388,23 @@ textarea {
   -ms-border-radius: 30em;
   -o-border-radius: 30em;
   border-radius: 30em; }
+
+/**
+ * State utilities
+ * ----------------------------------------------------------------------------
+ * Indicate that interaction will result in an (in)action.
+ */
+/* http://www.thecssninja.com/javascript/pointer-events-60fps */
+.is-disabled, .is-disabled * {
+  cursor: default;
+  pointer-events: none !important; }
+
+.is-draggable {
+  cursor: move; }
+
+.link--block, .link--block:focus, .link--block:hover, .link--block:active {
+  display: block;
+  text-decoration: none !important; }
 
 /**
  * Lists
@@ -1606,9 +1624,6 @@ dd {
   padding-left: 0.2381em;
   /* =1.50em */
   text-align: center;
-  background-color: #333333;
-  color: white;
-  /* Override this color in your theme stylesheet */
   /**
      * Normally we’d use border-radius:100%; but instead here we just use an
      * overly large number; `border-radius:100%;` would create an oval on
@@ -1616,24 +1631,22 @@ dd {
      */
   border-radius: 100px; }
 
-.lozenge {
-  border-radius: 0.25em; }
 
-.radius--xs {
+.radius--s {
   -webkit-border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -ms-border-radius: 2px 2px 2px 2px;
   -o-border-radius: 2px 2px 2px 2px;
   border-radius: 2px 2px 2px 2px; }
 
-.radius--s {
+.radius {
   -webkit-border-radius: 5px 5px 5px 5px;
   -moz-border-radius: 5px 5px 5px 5px;
   -ms-border-radius: 5px 5px 5px 5px;
   -o-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px; }
 
-.radius--m {
+.radius--l {
   -webkit-border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -ms-border-radius: 10px 10px 10px 10px;
@@ -1716,7 +1729,7 @@ This box will be a square
 .mt-s {
   margin-top: 1em; }
 
-.mt-m {
+.mt-m, dl {
   margin-top: 1.5em; }
 
 .mt-l {
@@ -1731,7 +1744,7 @@ This box will be a square
 .mt-xxxl {
   margin-top: 6em; }
 
-.mb-0, h1, h2, h3, h4, h5, h6, p, .text, li, code {
+.mb-0 {
   margin-bottom: 0; }
 
 .mb-xxxs {
@@ -2434,22 +2447,7 @@ This box will be a square
     padding-right: 6em; } }
 
 /**
- * State utilities
- * ----------------------------------------------------------------------------
- * Indicate that interaction will result in an (in)action.
- */
-.is-disabled {
-  cursor: default; }
-
-.is-draggable {
-  cursor: move; }
-
-.link--block, .link--block:focus, .link--block:hover, .link--block:active {
-  display: block;
-  text-decoration: none !important; }
-
-/**
- * Antialias everything by default, and set the line-height.
+ * By default, and set the line-height.
  */
 html, body {
   font-size: 100%;

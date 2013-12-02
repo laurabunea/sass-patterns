@@ -94,7 +94,7 @@
  */
 
 dl {
-    @extend .mt--m;
+    @extend .mt-m;
 }
     dt,
     dd {
@@ -118,7 +118,7 @@ dl {
 @include media('medium-down') {
     .dl-horizontal {
         > dt {
-            @extend %text-overflow;
+            @extend .text-overflow;
             clear: left;
             float: left;
             text-align: right;

@@ -5,7 +5,7 @@
     include 'helper-list.php'; 
 ?>
 <div class='relative mb-l col-8-10 grid__item mt-xxxl' >
-    <div class='block-l pt-block ml-l' > 
+    <div class='block-l tp-block ml-l' > 
         <div class='heading'>
             <h1>
                 Helper classes

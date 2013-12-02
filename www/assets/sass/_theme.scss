@@ -1,29 +1,35 @@
 
 /**
- * Base Colours website and theme helpers for the objects 
+ *  Fred's theme 
  * -----------------------------------------------------------------------------
+ *  This template holds theme patters for a few of Fred's objects (These are outlined below), along with some other theme helpers 
+ *  This template will vary with every project so it is just intended to be included once at 
+ * the start of your project and then you can modify it all you like
  */
 
+// Classname theme prefixes  (I was going to do pt but that kinda looks like padding top, ... other ideas welcome though)
+// ------------------------------------------------------------------------------------------------------------------------------
+// tp = Primary theme
+// ts = Secondary theme
+// tt = Tertiary theme
+// tq = Quarternary theme
 
-//base colours
 
-//objects
-//- Breadcrumbs
-//- Badges
-//- Block themes
-//- Buttons
-//- Page heading
-
-// Theme class prefixes 
-// ---------------------------------------------------
-// tp- primary theme
-// ts- secondary theme
-// tt- tertiary theme
-// tq- quarternary theme
+// Objects with theme helpers
+// -----------------------------------------------------------------------------
+// * Breadcrumbs
+// * Badges
+// * Block themes
+// * Page headers
+// * Buttons
+// * Pills
+// * Lozenge
+// *
 
 
 // Base Colours
 // -----------------------------------------------------------------------------
+
 $bg-color:                      #4D4D4D;
 $base-font-color:               #2E2F2B;
 $hr-colour:                     #e5e5e5;
@@ -33,15 +39,7 @@ $base-link-color:               #2F72BA;
 $base-link-hover-color:         darken($base-link-color, 15%);
 
 
-$list-block-color:              #ccc;
-
-$sub-header:                    #999;
-
-// Text emphasis colours
-$text-success:                  #468847;
-$text-warning:                  #c09853;
-$text-danger:                   #b94a48;
-$text-muted:                    #999;
+$lits-block-color:              #ccc;
 
 
 
@@ -66,8 +64,10 @@ hr {
   color:                $hr-colour;
 }
 
+
+
 // Common colours - Greys
-// -------------------------
+// --------------------------------------------------------
 
 $grey-darker:                   lighten(#000, 13.5%); // #222
 $grey-dark:                     lighten(#000, 20%);   // #333
@@ -77,11 +77,10 @@ $grey-lighter:                  lighten(#000, 93.5%); // #eee
 
 
 
-
 // Breadcrumbs
 // ----------------------------------------------------------------------------
 
-//primary theme
+
 $tp-breadcrumb-active-txt:        #555;
 $tp-breadcrumb-txt:               #666;
 $tp-breadcrumb-bg:                #f2f2f2;
@@ -198,7 +197,7 @@ $quarternary-border-color:      $quarternary-bg-color;
 
 .tp-block {
   @extend %border;
-  @extend .radius--m;
+  border-radius: $radius-l;
   @include theme-block( $primary-bg-color, $primary-txt-color, $primary-border-color );
 }
 
@@ -310,56 +309,51 @@ $negative-btn-hover-txt:       $negative-btn-txt;
     color: $active-btn-text;
 }
 
-/**
- *  Theme block --green, pink, blue
- * -----------------------------------------------------------------------------
- */
-
-//green theme box
-$green-bg-color:                #A6E22E;
-$green-txt-color:               $base-font-color; 
-$green-border-color:            $green-bg-color;
-
-//pink theme box
-$pink-bg-color:                 #F92672;
-$pink-txt-color:                $base-font-color ; 
-$pink-border-color:             $pink-bg-color;
-
-//blue theme box
-$blue-bg-color:                 #4AA1C5;
-$blue-txt-color:                #fff; 
-$blue-border-color:             $blue-bg-color;
-
-
-.green-block {
-  @extend %border;
-    @include theme-block( $green-bg-color, $green-txt-color, $green-border-color );
-}
-
-.pink-block {
-  @extend %border;
-    @include theme-block( $pink-bg-color, $pink-txt-color, $pink-border-color );
-}
-
-.blue-block {
-  @extend %border;
-    @include theme-block( $blue-bg-color, $blue-txt-color, $blue-border-color );
-}
 
 // Pills
 // ----------------------------------------------------------------------------
 
+$tp-pill-bg-color:               #333;
+$tp-pill-text-color:             #fff;
 
+.tp-pill {
+  background-color: $tp-pill-bg-color;
+  color: $tp-pill-text-color;
+}
+
+
+// Lozenge
+// ----------------------------------------------------------------------------
+
+$tp-lozenge-radius:              .25em;
+
+.tp-lozenge {
+  border-radius: $tp-lozenge-radius;
+}
+
+
+// Headings 
+// ----------------------------------------------------------------------------
+
+$tp-sub-header:                    #999;
+$tp-heading:                       #2E2F2B;                  
+$tp-keyline-color:                 #E5E5E5;
+
+.tp-heading {
+  color:$tp-heading;
+}
+
+    .heading--keyline { 
+      border-bottom-color:$tp-keyline-color;
+    }
+
+    .heading__subheading {
+      color:$tp-sub-header;
+    }
 
 
 // Arrows  
 // ----------------------------------------------------------------------------
-
-
-
-// Typography  
-// ----------------------------------------------------------------------------
-
 
 
 // Forms

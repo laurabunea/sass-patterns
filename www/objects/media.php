@@ -8,7 +8,7 @@
     <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style=' top:403px;' />
 
 
-    <div class='block-l pt-block ml-l' >  
+    <div class='block-l tp-block ml-l' >  
 
         <h2 class='heading heading--keyline'>
            Media blocks
@@ -40,7 +40,7 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

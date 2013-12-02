@@ -8,7 +8,7 @@
     <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style=' top:535px;' />
 
 
-    <div class='block-l pt-block ml-l' >  
+    <div class='block-l tp-block ml-l' >  
 
         <h2 class='heading heading--keyline'>
            Positioning - Absolute, Floating and Clearfixing
@@ -60,24 +60,24 @@
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block-s st-block'> 
+        <div class='block--stacked block-s ts-block'> 
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
             <div class='grid'>
-                <div class='st-block relative testbox-100-100' >
+                <div class='ts-block relative testbox-100-100' >
                     <img class='absolute specific-bird' src='/assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
-                <div class='st-block relative testbox-100-100' >
+                <div class='ts-block relative testbox-100-100' >
                     <img class='absolute--top-right' src='/assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
-                <div class='st-block relative testbox-100-100' >
+                <div class='ts-block relative testbox-100-100' >
                     <img class='absolute--top-left' src='/assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
-                <div class='st-block relative testbox-100-100' >
+                <div class='ts-block relative testbox-100-100' >
                     <img class='absolute--bottom-right' src='/assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
-                <div class='st-block relative testbox-100-100' >
+                <div class='ts-block relative testbox-100-100' >
                     <img class='absolute--bottom-left' src='/assets/images/green-bird.jpg' alt='i am an image'/>
                 </div>
             </div><!--grid ends-->
@@ -111,7 +111,7 @@
             </div><!--  code block ends -->
 
             <!--  hello world block starts -->
-            <div class='block--stacked block-s st-block'>
+            <div class='block--stacked block-s ts-block'>
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>

@@ -8,7 +8,7 @@
     <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:7px;' />
     <!--  ************  arrows block starts   ************   -->
 
-    <div class='block-l pt-block ml-l' >     
+    <div class='block-l tp-block ml-l' >     
         
         <h2 class='heading heading--keyline'>
            Badges
@@ -25,13 +25,17 @@
             </h4>
             <pre>
 <code class='language-markup'>
-&lt;a href='#'&gt; Inbox &lt;span class='badge'&gt;42&lt;/span&gt;&lt;/a&gt;
+&lt;a href='#'&gt; Inbox 
+    &lt;span class='badge'&gt;
+        42
+    &lt;/span&gt;
+&lt;/a&gt;
 </code>
             </pre>
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class=' block--stacked block-s st-block'>
+        <div class=' block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>

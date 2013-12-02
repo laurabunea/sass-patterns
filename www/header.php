@@ -12,7 +12,7 @@
 
     <body>
     <!-- Top Navigation Bar - this holds the parent categories -->
-    <div class='navigation--wrapper qt-block '>
+    <div class='navigation--wrapper tq-block '>
         <div class='navigation clearfix '>
             <h1 class='uppercase left logo' >
                 <a href='/' class='mt-xxs'>
@@ -23,7 +23,7 @@
             <ul class='list--inline right'>
                 <li>
                     <a class='block--stacked block-s' href='/helpers.php'>
-                        helper classes
+                        Helper classes
                     </a>
                 </li>
                 <li>

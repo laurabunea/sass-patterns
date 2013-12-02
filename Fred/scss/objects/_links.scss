@@ -4,13 +4,17 @@
  * Indicate that interaction will result in an (in)action.
  */
 
-.is-disabled {
+/* http://www.thecssninja.com/javascript/pointer-events-60fps */
+.is-disabled,
+.is-disabled * {
     cursor: default;
+    pointer-events: none !important;
 }
 
 .is-draggable {
     cursor: move;
 }
+
 
 
 //Do we want text decoration as default and then add it with a class or do we do the other way 

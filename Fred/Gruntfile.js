@@ -102,6 +102,7 @@ module.exports = function(grunt) {
                 }
             },
             install: {
+                install_path: "../../www/assets/sass",
                 options: {
                     questions: [
                         {
@@ -114,7 +115,7 @@ module.exports = function(grunt) {
                             config: 'copy.install.fred', // arbitray name or config for any other grunt task
                             type: 'text', // list, checkbox, confirm, input, password
                             message: 'Where would you like Fred deployed to (relative to this fred directory)?',
-                            default: "../../www/assets/sass", // default value if nothing is entered
+                            default: "<%= prompt.install.install_path %>", // default value if nothing is entered
                             when: function(answers) {
                                 return answers['install_now'] === true;
                             }
@@ -146,19 +147,19 @@ module.exports = function(grunt) {
         var dest = grunt.config('copy.install.fred');
         var theme = grunt.config('copy.install.theme');
 
-            if (dest) {
-                grunt.task.run('copy:install');
-                if(!grunt.file.exists(dest + "/screen.scss"))
-                    grunt.file.write(dest + "/screen.scss", "@import 'lib/fred';");
-                if (theme) {
-                    grunt.task.run('copy:theme');
-                }
-            } else {
-                return true;
+        if (!dest) {
+            return true;
+        } else {
+            grunt.task.run('copy:install');
+            if (!grunt.file.exists(dest + "/screen.scss"))
+                grunt.file.write(dest + "/screen.scss", "@import 'lib/fred';");
+            if (theme) {
+                grunt.task.run('copy:theme');
             }
+        }
     });
 
-    grunt.registerTask('default', [
+    grunt.registerTask('install', [
         'prompt:build',
         'build',
         'prompt:install',
@@ -174,4 +175,16 @@ module.exports = function(grunt) {
         'sass:dist',
         'clean:build'
     ]);
+
+    // Check for the presence of a Yak site dir above bower_components
+    grunt.registerTask('default', function() {
+        var sitePath = "../../site";
+
+        if (grunt.file.isDir(sitePath)) {
+            console.log(grunt.config("prompt.install.install_path"));
+            grunt.config.set('prompt.install.install_path', sitePath + "/assets/sass");
+        }
+        grunt.task.run("install");
+    });
+
 };

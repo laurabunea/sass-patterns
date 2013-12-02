@@ -8,7 +8,7 @@
     <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:239px;' />
 
 
-    <div class='block-l pt-block ml-l' >  
+    <div class='block-l tp-block ml-l' >  
 
        <h2 class='heading heading--keyline'>
            Grids
@@ -82,7 +82,7 @@ Grid columns
             </pre>
         </div>
         <!--  hello world block starts -->
-        <div class='block--stacked block-s st-block'> 
+        <div class='block--stacked block-s ts-block'> 
             <p>Example one:</p> 
             <div class='grid'>
                 <div class='grid__item col'>
@@ -144,14 +144,14 @@ Grid columns
             <p>Example four:</p>
             <div class='grid'>
                 <div class='grid__item col-6-10'>
-                    <div class='st-block block-s'>
+                    <div class='ts-block block-s'>
                         <p>
                             60%
                         </p>
                     </div>
                 </div>
                 <div class='grid__item col-4-10'>
-                    <div class='st-block block-s'>
+                    <div class='ts-block block-s'>
                         <p>
                             40%
                         </p>
@@ -275,7 +275,7 @@ $breakpoint-classname-prefix: "--q-";
         </div><!--  code block ends -->
 
         <!--  hello world block starts -->
-        <div class='block--stacked block-s st-block'>
+        <div class='block--stacked block-s ts-block'>
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 

@@ -8,7 +8,7 @@
     <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:640px;' />
     <!--  ************  arrows block starts   ************   -->
 
-    <div class='block-l pt-block ml-l' >  
+    <div class='block-l tp-block ml-l' >  
         <h2 class='heading heading--keyline'>
            Inline block
         </h2>
