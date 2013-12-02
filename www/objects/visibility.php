@@ -113,6 +113,44 @@
 
         </div><!--  hello world block ends -->
 
+ 
+        <hr class='mt-l'/>
+         <div class='mt-l' >
+
+            <h2 class='h3'>
+                Visually hidden
+            </h2>
+
+            <p> 
+               Hide an element, but make it visible to screen readers
+            </p>
+            <!-- code block starts -->
+            <div class=' block-s tt-block'>
+                <h4 class='tiny uppercase text-muted'>
+                    code
+                </h4>
+                <pre>
+    <code class='language-markup'>
+    &lt;p&gt; Check out the source code to see a hidden h1 tag &lt;/p&gt;
+    &lt;h1 class='visually-hidden'&gt; I am hidden &lt;/h1&gt;
+    </code>
+                </pre>
+            </div><!-- code block ends -->
+
+            <!-- hello world block starts -->
+            <div class='block--stacked block-s ts-block'>
+                <h4 class='tiny uppercase text-muted'>
+                    hello world
+                </h4>
+                <p>
+                    Check out the source code to see a hidden h1 tag
+                </p>
+                <h1 class='visually-hidden'>
+                    I am hidden
+                </h1>
+                
+            </div><!-- hello world block ends -->
+        </div><!--  typo-text-align ends -->
     </div>
 </div>
 <?php 

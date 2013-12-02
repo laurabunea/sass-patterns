@@ -884,18 +884,6 @@ table {
 }
 
 
-/**
- * Hide an element, but make it visible to screen readers
- * ----------------------------------------------------------------------------
- */
-.visually-hidden {
-    clip: rect(0 0 0 0);
-    height: 1px; width: 1px;
-    margin: -1px; padding: 0; border: 0;
-    overflow: hidden;
-    position: absolute;
-}
-
 %hide { display: none !important; }
 %show { display: block !important; }
 
@@ -2099,7 +2087,7 @@ dl {
       margin-left: 0; // Undo browser default
     }
 
-
+//TODO !
 /**
  * 13. Horizontal description lists
  * ----------------------------------------------------------------------------
@@ -2107,22 +2095,22 @@ dl {
  *
  */
 
-@include media('medium-down') {
-    .dl-horizontal {
-        > dt {
-            @extend %text-overflow;
-            clear: left;
-            float: left;
-            text-align: right;
-            width: 35%;
-        }
-        > dd {
-            @extend %clearfix; // Clear the floated `dt` if an empty `dd` is present
-            margin-left: 40%;
-
-       }
-    }
-}
+//@include media('medium-down') {
+//    .dl-horizontal {
+//        > dt {
+//            @extend .text-overflow;
+//            clear: left;
+//            float: left;
+ //           text-align: right;
+ //           width: 35%;
+ //       }
+ //       > dd {
+ //           @extend %clearfix; // Clear the floated `dt` if an empty `dd` is present
+ //           margin-left: 40%;
+//
+//       }
+ //   }
+//}
 
 /**
  * Float an image to the left, with a clearfixed block of content to the right.
@@ -2639,4 +2627,16 @@ hr {
                 display: none !important;
         }
     }
+}
+
+/**
+ * Hide an element, but make it visible to screen readers
+ * ----------------------------------------------------------------------------
+ */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+    overflow: hidden;
+    position: absolute;
 }

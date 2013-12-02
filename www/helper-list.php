@@ -1,4 +1,4 @@
-<div class='col-2-10 grid__item mt-xxxl'>
+<div class='col-2-10 grid__item mt-xxxl '>
     <div class='block-xs tp-block pt-l'>
         
         <h3 class='h4 ml-xxs'>

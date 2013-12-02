@@ -107,7 +107,7 @@ dl {
       margin-left: 0; // Undo browser default
     }
 
-
+//TODO !
 /**
  * 13. Horizontal description lists
  * ----------------------------------------------------------------------------
@@ -115,19 +115,19 @@ dl {
  *
  */
 
-@include media('medium-down') {
-    .dl-horizontal {
-        > dt {
-            @extend %text-overflow;
-            clear: left;
-            float: left;
-            text-align: right;
-            width: 35%;
-        }
-        > dd {
-            @extend %clearfix; // Clear the floated `dt` if an empty `dd` is present
-            margin-left: 40%;
-
-       }
-    }
-}
+//@include media('medium-down') {
+//    .dl-horizontal {
+//        > dt {
+//            @extend .text-overflow;
+//            clear: left;
+//            float: left;
+ //           text-align: right;
+ //           width: 35%;
+ //       }
+ //       > dd {
+ //           @extend %clearfix; // Clear the floated `dt` if an empty `dd` is present
+ //           margin-left: 40%;
+//
+//       }
+ //   }
+//}

@@ -253,20 +253,20 @@ table {
 
 
 
-.clearfix, .btn-toolbar, .btn-group-vertical > .btn-group, .dl-horizontal > dd {
+.clearfix, .btn-toolbar, .btn-group-vertical > .btn-group {
   /**
 	 * For IE 6/7 only
 	 * Include this rule to trigger hasLayout and contain floats.
 	 */
   *zoom: 1; }
 
-.clearfix:before, .btn-toolbar:before, .btn-group-vertical > .btn-group:before, .dl-horizontal > dd:before {
+.clearfix:before, .btn-toolbar:before, .btn-group-vertical > .btn-group:before {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after, .btn-toolbar:after, .btn-group-vertical > .btn-group:after, .dl-horizontal > dd:after {
+.clearfix:after, .btn-toolbar:after, .btn-group-vertical > .btn-group:after {
   clear: both;
   content: " ";
   /* 1 */
@@ -309,20 +309,6 @@ table {
 .isWindowsChrome .antialiased {
   -webkit-font-smoothing: subpixel-antialiased; }
 
-
-/**
- * Hide an element, but make it visible to screen readers
- * ----------------------------------------------------------------------------
- */
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  position: absolute; }
 
 .hide {
   display: none !important; }
@@ -1479,15 +1465,6 @@ dd {
  * Defaults to being stacked without any of the below styles applied, until the
  *
  */
-@media only screen and (max-width: 48em) {
-  .dl-horizontal > dt {
-    clear: left;
-    float: left;
-    text-align: right;
-    width: 35%; }
-  .dl-horizontal > dd {
-    margin-left: 40%; } }
-
 /**
  * Float an image to the left, with a clearfixed block of content to the right.
  * ----------------------------------------------------------------------------
@@ -2691,3 +2668,17 @@ hr {
     display: block !important; }
   .hidden-portrait {
     display: none !important; } }
+
+/**
+ * Hide an element, but make it visible to screen readers
+ * ----------------------------------------------------------------------------
+ */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  position: absolute; }

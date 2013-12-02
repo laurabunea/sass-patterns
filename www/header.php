@@ -26,45 +26,9 @@
                         Helper classes
                     </a>
                 </li>
-                <li>
-                    <a class='block--stacked block-s' href='/mixins.php'>
-                        Helper Mixins
-                    </a>
-                </li>
-                <li>
-                    <a class='block--stacked block-s' href='/core.php'>
-                        Core
-                    </a>
-                </li>
-                <li>
-                    <a class='block--stacked block-s' href='/breakpoints.php'>
-                        Breakpoints
-                    </a>
-                </li>
                 <!--<li>
-                    <a class='block--stacked block-s' href='/typography.php'>
-                        Typography
-                    </a>
-                </li>
-                <li>
-                    <a class='block--stacked block-s' href='/layout.php'>
-                        Layout
-                    </a>
-                </li>
-                <li>
-                    <a class='block--stacked block-s' href='/buttons.php'>
-                        Buttons
-                    </a>
-                </li>
-                <li>
-                    <a class='block--stacked block-s' href='/themes.php'>
-                        Themes
-                    </a>
-                </li>
-                
-                <li>
-                    <a class='block--stacked block-s' href='/components.php'>
-                        Components
+                    <a class='block--stacked block-s' href='/mixins.php'>
+                        TODO Helper Mixins
                     </a>
                 </li>-->
             </ul><!--list inline ends-->
