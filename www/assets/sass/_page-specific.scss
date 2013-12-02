@@ -51,55 +51,19 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
 
 }
 
-//extract and make small medium and large
-.br--s {
-    border-radius:10px;
-}
-
-.testbox {
-    width:150px;
-    height:150px;
-    display:inline-block;
-}
 
 .testbox-100-100 {
      width:100px;
     height:100px;
 }
 
-.testbox-400-100 {
-    width:300px;
-    height:100px; 
-}
-.homepage {
-    background-color:#4D4D4D;
-    color:#fff;
-}
-
 .fred {
     left:-329px;
 }
-
-.fred-layout {
-    top:-22px; 
-    right:72px;
-}
-
-.fred-buttons-page {
-    right:30px; 
-    top:191px;
-}
-
+//example for poitioning page
 .specific-bird {
     top:10px;
     left:17px;
-}
-//wtf setcion am i using this 
-//????
-.i {
-    @extend .inline-block;
-    vertical-align: middle;
-    font-style: normal;
 }
 
 //dummy icon for this tut :) 
@@ -144,16 +108,4 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
     /* @include placeholder($color);*/
     @include placeholder(#F92672);
 }
-
-h1 .tiny {
-    font-weight:normal;
-}
-
-.mw--80 {
-    max-width:80%;
-}
-.mw--70 {
-    max-width:70%;
-}
-
 

@@ -343,7 +343,7 @@ table {
  */
 /* line 807, ../../../Fred/dist/lib/fred.scss */
 .inline-block, .btn, .grid__item, .grid > *, .grid:after,
-.grid__break, .list--inline > li, .text--overflow, .i, .arrow, .badge, .breadcrumbs > li, .icon-text,
+.grid__break, .list--inline > li, .text--overflow, .arrow, .badge, .breadcrumbs > li, .icon-text,
 .icon-text--rev, .nav > li, .pagination > li {
   display: inline-block;
   *display: inline;
@@ -4705,42 +4705,18 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
   height: 100px;
 }
 
-/* line 74, ../sass/_page-specific.scss */
-.homepage {
-  background-color: #4D4D4D;
-  color: #fff;
-}
-
-/* line 79, ../sass/_page-specific.scss */
+/* line 76, ../sass/_page-specific.scss */
 .fred {
   left: -329px;
 }
 
-/* line 83, ../sass/_page-specific.scss */
-.fred-layout {
-  top: -22px;
-  right: 72px;
-}
-
-/* line 88, ../sass/_page-specific.scss */
-.fred-buttons-page {
-  right: 30px;
-  top: 191px;
-}
-
-/* line 93, ../sass/_page-specific.scss */
+/* line 80, ../sass/_page-specific.scss */
 .specific-bird {
   top: 10px;
   left: 17px;
 }
 
-/* line 99, ../sass/_page-specific.scss */
-.i {
-  vertical-align: middle;
-  font-style: normal;
-}
-
-/* line 106, ../sass/_page-specific.scss */
+/* line 86, ../sass/_page-specific.scss */
 .icon-placeholder {
   background-image: url("/assets/images/icon-placeholder.png");
   width: 40px;
@@ -4748,7 +4724,7 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
   display: inline-block;
 }
 
-/* line 115, ../sass/_page-specific.scss */
+/* line 95, ../sass/_page-specific.scss */
 .img-rounded {
   -webkit-border-radius: 50% 50% 50% 50%;
   -moz-border-radius: 50% 50% 50% 50%;
@@ -4757,7 +4733,7 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
   border-radius: 50% 50% 50% 50%;
 }
 
-/* line 143, ../sass/_page-specific.scss */
+/* line 123, ../sass/_page-specific.scss */
 .pink-input-text {
   /* @include placeholder($color);*/
 }
@@ -4776,21 +4752,6 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
 /* line 376, ../../../Fred/dist/lib/fred.scss */
 .pink-input-text::-webkit-input-placeholder {
   color: #f92672;
-}
-
-/* line 148, ../sass/_page-specific.scss */
-h1 .tiny {
-  font-weight: normal;
-}
-
-/* line 152, ../sass/_page-specific.scss */
-.mw--80 {
-  max-width: 80%;
-}
-
-/* line 155, ../sass/_page-specific.scss */
-.mw--70 {
-  max-width: 70%;
 }
 
 /**
