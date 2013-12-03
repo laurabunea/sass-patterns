@@ -4943,11 +4943,11 @@ p + p,
  */
 /* line 42, ../sass/_theme.scss */
 .tp-active-link {
-  color: #007f00;
+  color: #33b233;
 }
 /* line 43, ../sass/_theme.scss */
 .tp-active-link:hover {
-  color: #003300;
+  color: #227722;
 }
 
 /* line 54, ../sass/_theme.scss */
@@ -4974,7 +4974,7 @@ hr {
 
 /* line 78, ../sass/_theme.scss */
 .tp-active-list {
-  color: #007f00;
+  color: #33b233;
 }
 
 /* line 92, ../sass/_theme.scss */
