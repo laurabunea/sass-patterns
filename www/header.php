@@ -15,15 +15,15 @@
     <div class='navigation--wrapper tq-block '>
         <div class='navigation clearfix '>
             <h1 class='uppercase left inline-block mt-xxs font-size-xxl' >
-                <a href='/' class='mt-xxs tp-text-white tp-text-yellow--hover '>
-                    F<span class='tp-text-yellow'>r</span>ed
+                <a href='/' class='mt-xxs tp-text-white tp-text-green--hover '>
+                    F<span class='tp-text-green'>r</span>ed
                 </a>
-                <span class='tiny tp-text-yellow font-size-xxxs'>- The friendly FED</span>
+                <span class='tiny tp-text-grey font-size-xxxs'>- The friendly FED</span>
             </h1>
 
             <ul class='list--inline right tp-navigation'>
                 <li>
-                    <a class='block--stacked block-s' href='/helpers.php'>
+                    <a class='block--stacked block-s tp-text-white' href='/helpers.php'>
                         Helper classes
                     </a>
                 </li>

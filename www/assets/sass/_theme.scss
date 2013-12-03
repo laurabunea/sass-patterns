@@ -36,7 +36,7 @@ $tp-hr-colour:                      #e5e5e5;
 
 $tp-link-color:                     #2F72BA;
 $tp-link-hover-color:               darken($tp-link-color, 15%);
-$tp-active-link-color:              #F92672;
+$tp-active-link-color:              #007F00;
 $tp-active-link-hover-color:        darken($tp-active-link-color, 15%);
 
 .tp-active-link { 
@@ -72,7 +72,7 @@ hr {
 // Lists
 // ----------------------------------------------------------------------------
 
-$tp-active-list-style-color:    #F92672;
+$tp-active-list-style-color:    $tp-active-link-color;
 
 //change the colour of the list style type
 .tp-active-list { 
@@ -401,17 +401,19 @@ $grey-lighter:                  lighten(#000, 93.5%); // #eee
 
 $tp-white:  #fff;
 $tp-yellow: #E6DB74;
+$tp-grey: #999;
+$tp-green: #33B233;
 
-.tp-text-yellow {
-  color:$tp-yellow;
-}
+.tp-text-yellow         { color:$tp-yellow; }
+.tp-text-green          { color:$tp-green; }
+.tp-text-grey           { color:$tp-grey; }
+.tp-text-white          { color:$tp-white; }
 
-.tp-text-yellow--hover {
+
+.tp-text-green--hover {
   &:hover {
-    color:$tp-yellow;
+    color:$tp-green;
   }
 }
 
-.tp-text-white {
-  color:$tp-white;
-}
+

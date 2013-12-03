@@ -4943,11 +4943,11 @@ p + p,
  */
 /* line 42, ../sass/_theme.scss */
 .tp-active-link {
-  color: #f92672;
+  color: #007f00;
 }
 /* line 43, ../sass/_theme.scss */
 .tp-active-link:hover {
-  color: #cd064d;
+  color: #003300;
 }
 
 /* line 54, ../sass/_theme.scss */
@@ -4974,7 +4974,7 @@ hr {
 
 /* line 78, ../sass/_theme.scss */
 .tp-active-list {
-  color: #f92672;
+  color: #007f00;
 }
 
 /* line 92, ../sass/_theme.scss */
@@ -5171,17 +5171,27 @@ a.tp-badge_active > .badge {
   color: #e6db74;
 }
 
-/* line 405, ../sass/_theme.scss */
+/* line 407, ../sass/_theme.scss */
 .tp-text-yellow {
   color: #e6db74;
 }
 
-/* line 410, ../sass/_theme.scss */
-.tp-text-yellow--hover:hover {
-  color: #e6db74;
+/* line 408, ../sass/_theme.scss */
+.tp-text-green {
+  color: #33b233;
 }
 
-/* line 415, ../sass/_theme.scss */
+/* line 409, ../sass/_theme.scss */
+.tp-text-grey {
+  color: #999999;
+}
+
+/* line 410, ../sass/_theme.scss */
 .tp-text-white {
   color: white;
+}
+
+/* line 414, ../sass/_theme.scss */
+.tp-text-green--hover:hover {
+  color: #33b233;
 }
