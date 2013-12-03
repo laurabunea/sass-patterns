@@ -1,9 +1,32 @@
 /**
- * State utilities
- * ----------------------------------------------------------------------------
- * Indicate that interaction will result in an (in)action.
+ * Links/Anchors
+ * 
  */
 
+/* A link without any text-decoration at all. */
+%clean-link {
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
+    text-decoration: none;
+}
+
+
+/* A link with out any text decoration */
+.clean-link {
+    @extend %clean-link;
+}
+
+
+/* A list without any text decoration commonly used in vertical navigation lists*/
+.clean-link-list a {
+   @extend %clean-link;
+   display: block; 
+}
+
+/* Link states */
 /* http://www.thecssninja.com/javascript/pointer-events-60fps */
 .is-disabled,
 .is-disabled * {
@@ -13,17 +36,4 @@
 
 .is-draggable {
     cursor: move;
-}
-
-
-
-//Do we want text decoration as default and then add it with a class or do we do the other way 
-//link blocks - commonly used in vertical navigation lists
-.link--block,
-.link--block:focus,
-.link--block:hover,
-.link--block:active {
-    display:block;
-    //removes any text decoration on all link states
-    text-decoration: none!important;
 }

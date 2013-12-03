@@ -1013,8 +1013,7 @@ table {
     padding: .1875em .4375em;
     // Quick fix for labels/badges in buttons
     top: -1px;
-    text-align: center;
-    
+    text-align: center;  
     white-space: nowrap;
 
     // Empty badges collapse automatically (not available in IE8)
@@ -1770,7 +1769,7 @@ textarea {
     vertical-align: top; /* 2 */
 }
 /**
- * 6. Inline block grid
+ * Inline block grid
  * -----------------------------------------------------------------------------
  *
  * [1] Sets the child elements to take up full justified width of the parent
@@ -1796,16 +1795,16 @@ textarea {
 
     // Font-size medium reset the block to the context of body (ie, 16px)
     .grid__item {
-        @extend .inline-block;
-        @extend %align--top;
-        @extend .text-left;
+        @extend .inline-block; /* This extend is found in core */
+        @extend %align--top; /* This extend is found in core */
+        @extend .text-left; /* This extend is found in typography */
         font-size: medium;
 
     }
 
     .grid:after,
     .grid__break {
-        @extend .inline-block;
+        @extend .inline-block; /* This extend is found in core */
         content: '';
         height: 0;
         width:100%;
@@ -1815,11 +1814,11 @@ textarea {
      * Vertical align these grid items in the middle!
      */
     .grid--middle > .grid__item {
-        @extend %align--middle;
+        @extend %align--middle; /* This extend is found in core */
     }
 
     .grid--bottom > .grid__item {
-        @extend %align--bottom;
+        @extend %align--bottom; /* This extend is found in core */
     }
 
 
@@ -1892,6 +1891,11 @@ textarea {
         }
     }
 }
+/**
+ * Headings
+ * -----------------------------------------------------------------------------
+ */
+ 
 .heading {
     > :first-child {
         margin-top:0;
@@ -1949,11 +1953,34 @@ textarea {
     @include vendor(border-radius, 30em);
 }
 /**
- * State utilities
- * ----------------------------------------------------------------------------
- * Indicate that interaction will result in an (in)action.
+ * Links/Anchors
+ * 
  */
 
+/* A link without any text-decoration at all. */
+%clean-link {
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
+    text-decoration: none;
+}
+
+
+/* A link with out any text decoration */
+.clean-link {
+    @extend %clean-link;
+}
+
+
+/* A list without any text decoration commonly used in vertical navigation lists*/
+.clean-link-list a {
+   @extend %clean-link;
+   display: block; 
+}
+
+/* Link states */
 /* http://www.thecssninja.com/javascript/pointer-events-60fps */
 .is-disabled,
 .is-disabled * {
@@ -1964,20 +1991,6 @@ textarea {
 .is-draggable {
     cursor: move;
 }
-
-
-
-//Do we want text decoration as default and then add it with a class or do we do the other way 
-//link blocks - commonly used in vertical navigation lists
-.link--block,
-.link--block:focus,
-.link--block:hover,
-.link--block:active {
-    display:block;
-    //removes any text decoration on all link states
-    text-decoration: none!important;
-}
-
 /**
  * Lists
  * ----------------------------------------------------------------------------
@@ -2000,7 +2013,7 @@ textarea {
     }
 
     .list--inline > li {
-        @extend .inline-block;
+        @extend %inline-block; /* This extend is found in core */
         margin: 0;
     }
 
@@ -2138,7 +2151,7 @@ dl {
 
 /* Swap the image to the right */
 .media--rev {
-    @extend .clearfix;
+    @extend .clearfix; 
     margin-top: $base-spacing-unit;
 }
 
@@ -2161,7 +2174,7 @@ dl {
  */
 
 .nav {
-    @extend .clearfix;
+    @extend .clearfix; /* This extend is found in core */
     list-style: none;
     margin-bottom: 0;
     margin-top: 0;
@@ -2169,7 +2182,7 @@ dl {
 }
 
     .nav > li {
-        @extend %inline-block;
+        @extend %inline-block; /* This extend is found in core */
         margin-top: 0;
     }
 

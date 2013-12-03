@@ -27,20 +27,24 @@
 // *
 
 
-// Base Colours
+// Base Colours and links 
 // -----------------------------------------------------------------------------
 
-$bg-color:                      #4D4D4D;
-$base-font-color:               #2E2F2B;
-$hr-colour:                     #e5e5e5;
+$tp-base-bg-color:                  #4D4D4D;
+$tp-base-font-color:                #2E2F2B;
+$tp-hr-colour:                      #e5e5e5;
 
-// Links
-$base-link-color:               #2F72BA;
-$base-link-hover-color:         darken($base-link-color, 15%);
+$tp-link-color:                     #2F72BA;
+$tp-link-hover-color:               darken($tp-link-color, 15%);
+$tp-active-link-color:              #F92672;
+$tp-active-link-hover-color:        darken($tp-active-link-color, 15%);
 
-
-$lits-block-color:              #ccc;
-
+.tp-active-link { 
+  &:hover {
+    color: $tp-active-link-hover-color; 
+  }
+  color: $tp-active-link-color; 
+}
 
 
 // Base colours for your site
@@ -48,33 +52,32 @@ $lits-block-color:              #ccc;
 
 html, 
 body {
-    background-color:   $bg-color;
-    color:              $base-font-color;
+    background-color:   $tp-base-bg-color;
+    color:              $tp-base-font-color;
 }
 
 a {
-    color:              $base-link-color;
+    color:              $tp-link-color;
     &:hover {
-        color:          $base-link-hover-color;
+        color:          $tp-link-hover-color;
     }
 }
 
 hr {
-  background-color:     $hr-colour;
-  color:                $hr-colour;
+  background-color:     $tp-hr-colour;
+  color:                $tp-hr-colour;
 }
 
 
+// Lists
+// ----------------------------------------------------------------------------
 
-// Common colours - Greys
-// --------------------------------------------------------
+$tp-active-list-style-color:    #F92672;
 
-$grey-darker:                   lighten(#000, 13.5%); // #222
-$grey-dark:                     lighten(#000, 20%);   // #333
-$grey:                          lighten(#000, 33.5%); // #555
-$grey-light:                    lighten(#000, 60%);   // #999
-$grey-lighter:                  lighten(#000, 93.5%); // #eee
-
+//change the colour of the list style type
+.tp-active-list { 
+  color: $tp-active-list-style-color; 
+}
 
 
 // Breadcrumbs
@@ -383,6 +386,32 @@ $tp-nav-bg-color:                 #4D4D4D;
     
 }
 
-.test li.active {
-    color: red;
+// Common colours - Greys
+// --------------------------------------------------------
+
+$grey-darker:                   lighten(#000, 13.5%); // #222
+$grey-dark:                     lighten(#000, 20%);   // #333
+$grey:                          lighten(#000, 33.5%); // #555
+$grey-light:                    lighten(#000, 60%);   // #999
+$grey-lighter:                  lighten(#000, 93.5%); // #eee
+
+
+// Common text colours
+// --------------------------------------------------------
+
+$tp-white:  #fff;
+$tp-yellow: #E6DB74;
+
+.tp-text-yellow {
+  color:$tp-yellow;
+}
+
+.tp-text-yellow--hover {
+  &:hover {
+    color:$tp-yellow;
+  }
+}
+
+.tp-text-white {
+  color:$tp-white;
 }

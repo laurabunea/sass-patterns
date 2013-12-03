@@ -248,7 +248,7 @@ table {
  * zoom fix for IE6/7 so they correctly display inline-block elements
  * (forces hasLayout)
  */
-.inline-block, .arrow, .badge, .breadcrumbs > li, .btn-group, .btn-group-vertical, .caret, .close:after, .icon-text, .icon-text--rev, .nav > li, .pill {
+.inline-block, .arrow, .badge, .breadcrumbs > li, .btn-group, .btn-group-vertical, .caret, .close:after, .icon-text, .icon-text--rev, .list--inline > li, .nav > li, .pill {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
@@ -1105,7 +1105,7 @@ textarea {
   /* 2 */ }
 
 /**
- * 6. Inline block grid
+ * Inline block grid
  * -----------------------------------------------------------------------------
  *
  * [1] Sets the child elements to take up full justified width of the parent
@@ -1123,9 +1123,13 @@ textarea {
 
 
 .grid__item, .grid > * {
+  /* This extend is found in core */
+  /* This extend is found in core */
+  /* This extend is found in typography */
   font-size: medium; }
 
 .grid:after, .grid__break {
+  /* This extend is found in core */
   content: '';
   height: 0;
   width: 100%; }
@@ -1133,7 +1137,11 @@ textarea {
 /**
      * Vertical align these grid items in the middle!
      */
+.grid--middle > .grid__item, .grid--middle > .grid > *, .grid > .grid--middle > * {
+  /* This extend is found in core */ }
 
+.grid--bottom > .grid__item, .grid--bottom > .grid > *, .grid > .grid--bottom > * {
+  /* This extend is found in core */ }
 
 .grid-float {
   width: 100%; }
@@ -1326,6 +1334,10 @@ textarea {
   .col--q-large {
     width: 100%; } }
 
+/**
+ * Headings
+ * -----------------------------------------------------------------------------
+ */
 .heading > :first-child {
   margin-top: 0; }
 
@@ -1371,10 +1383,22 @@ textarea {
   border-radius: 30em; }
 
 /**
- * State utilities
- * ----------------------------------------------------------------------------
- * Indicate that interaction will result in an (in)action.
+ * Links/Anchors
+ * 
  */
+/* A link without any text-decoration at all. */
+.clean-link, .clean-link-list a {
+  text-decoration: none; }
+  %clean-link:hover, %clean-link:active, %clean-link:focus {
+    text-decoration: none; }
+
+/* A link with out any text decoration */
+
+/* A list without any text decoration commonly used in vertical navigation lists*/
+.clean-link-list a {
+  display: block; }
+
+/* Link states */
 /* http://www.thecssninja.com/javascript/pointer-events-60fps */
 .is-disabled, .is-disabled * {
   cursor: default;
@@ -1382,10 +1406,6 @@ textarea {
 
 .is-draggable {
   cursor: move; }
-
-.link--block, .link--block:focus, .link--block:hover, .link--block:active {
-  display: block;
-  text-decoration: none !important; }
 
 /**
  * Lists
@@ -1404,6 +1424,7 @@ textarea {
   /* This extend is found in core */ }
 
 .list--inline > li {
+  /* This extend is found in core */
   margin: 0; }
 
 .list-styled, .list-styled--decimal, .list-decimal, .list-styled--alpha, .list-alpha, .list-dashed {
@@ -1495,12 +1516,14 @@ dd {
  *
  */
 .nav, .pagination {
+  /* This extend is found in core */
   list-style: none;
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0; }
 
 .nav > li {
+  /* This extend is found in core */
   margin-top: 0; }
 
 /**
