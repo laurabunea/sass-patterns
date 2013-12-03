@@ -5,14 +5,13 @@
     include '../helper-list.php'; 
 ?>
 <div class='relative mb-l col-8-10 grid__item mt-xxxl ' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:74px;' />
-    <!--  ************  arrows block starts   ************   -->
-
+    <img class='absolute fred-breadcrumbs' alt='Fred the fed' src='/assets/images/fred-side.png'  />
+    
     <div class='block-l tp-block ml-l' >  
         <h2 class='heading heading--keyline'>
            Breadcrumbs
         </h2>
-        
+    
         <!--  code block starts -->
         <div class='block-s mt-m tt-block'>
             <h4 class='tiny uppercase text-muted'>

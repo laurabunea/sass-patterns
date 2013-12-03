@@ -5,7 +5,7 @@
     include '../helper-list.php'; 
 ?>
 <div class='relative mb-l col-8-10 grid__item mt-xxxl ' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:271px;' />
+    <img class='absolute fred-headings' alt='Fred the fed' src='/assets/images/fred-side.png' />
 
 
     <div class='block-l tp-block ml-l' >    
@@ -39,14 +39,32 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='heading heading--keyline mt-m'>
-                <h1 >
-                    Heading
-                    <span class='heading__subheading tiny text-muted'> 
-                        Sub heading
-                    </span>
-                </h1>
-            </div>
+            
+            <h1 class='heading heading--keyline mt-m'>
+                Heading
+                <span class='heading__subheading tiny text-muted'> 
+                    Sub heading
+                </span>
+            </h1>
+            
+            <h2 class='heading heading--keyline'>
+                H2 Heading
+                <span class='heading__subheading tiny text-muted'> 
+                    Sub heading
+                </span>
+            </h2>
+            <h3 class='heading heading--keyline'>
+                H3 Heading
+                <span class='heading__subheading tiny text-muted'> 
+                    Sub heading
+                </span>
+            </h3>
+            <h4 class='heading heading--keyline'>
+                H4 Heading
+                <span class='heading__subheading tiny text-muted'> 
+                    Sub heading
+                </span>
+            </h4>
         </div><!--  hello world block ends -->
     </div>
 </div>

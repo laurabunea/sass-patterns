@@ -57,9 +57,80 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
     height:100px;
 }
 
-.fred {
+%fred {
     left:-329px;
 }
+.fred-block-grid {
+  @extend %fred;
+  top:123px;
+}
+.fred-button-group {
+  @extend %fred;
+  top:123px;
+}
+
+.fred-arrows, 
+.fred-badges, 
+.fred-blocks,
+.fred-breadcrumbs, 
+.fred-buttons, 
+.fred-caret, 
+.fred-close, 
+.fred-forms, 
+.fred-grid, 
+.fred-headings, 
+.fred-icons-with-text,
+.fred-images,
+.fred-lists,
+.fred-meia,
+.fred-visability,
+.fred-typography,
+.fred-spacing,
+.fred-ratio,
+.fred-prepend,
+.fred-positioning,
+.fred-pills,
+.fred-pagination,
+.fred-nav,
+.fred-links,
+.fred-inline-block,{
+  @extend %fred;
+}
+
+.fred-arrows          {top:-26px;} //1
+.fred-badges          {top:7px;}   //2
+.fred-blocks          {top:41px;}  //3
+.fred-breadcrumbs     {top:74px;}  //4
+.fred-buttons         {top:106px;} //5
+.fred-caret           {top:139px;} //6
+.fred-close           {top:172px;} //7
+.fred-forms           {top:205px;} //8
+.fred-grid            {top:239px;} //9
+.fred-headings        {top:271px;} //10
+.fred-icons-with-text {top:304px;} //11
+.fred-images          {top:338px;} //12
+.fred-lists           {top:370px;} //13
+.fred-media           {top:403px;} //14
+.fred-radii           {top:436px;} //15
+.fred-spacing         {top:468px;} //16
+.fred-typography      {top:502px;} //17
+.fred-positioning     {top:536px;} //18
+.fred-visability      {top:569px;} //19
+.fred-prepend         {top:601px;} //20
+.fred-inline-block    {top:655px;} //21
+.fred-ratio           {top:687px;} //22
+.fred-pills           {top:723px;} //23
+.fred-pagination      {top:755px;} //24
+.fred-nav             {top:787px;} //25
+.fred-button-group    {top:820px;} //26
+.fred-block-grid      {top:853px;} //27
+.fred-links           {top:887px;} //28
+
+
+
+.fred-nav             {top:338px;}
+
+
 //example for poitioning page
 .specific-bird {
     top:10px;
@@ -108,4 +179,20 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
     /* @include placeholder($color);*/
     @include placeholder(#F92672);
 }
+/**
+ * Typographic relationships (nawww, aren't they so good together?)
+ * ----------------------------------------------------------------------------
+ */
 
+h4 + h6,
+h4 + p,
+h5 + p {
+    margin-top: px-to-em($bs--xxs, $font-size-xs);               
+}
+
+p + p, 
+.list-styled li + li, 
+.list-styled--decimal li + li, 
+.list-styled-alpha li + li {
+    margin-top: px-to-em($bs--xxs, $font-size-xs);                           
+}

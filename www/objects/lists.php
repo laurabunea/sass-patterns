@@ -5,7 +5,7 @@
     include '../helper-list.php'; 
 ?>
 <div class='relative mb-l col-8-10 grid__item mt-xxxl ' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style=' top:370px;' />
+    <img class='absolute fred-lists' alt='Fred the fed' src='/assets/images/fred-side.png'  />
 
 
     <div class='block-l tp-block ml-l' >     
@@ -25,7 +25,7 @@
                 </h4>
                 <pre>
 <code class='language-markup'>
-&lt;ul class='list--unstyled'&gt;
+&lt;ul class='list-unstyled'&gt;
     &lt;li&gt; unstyled list item 1 &lt;/li&gt;
     &lt;li&gt; unstyled list item 2 &lt;/li&gt;
 &lt;ul&gt;
@@ -38,7 +38,7 @@
                 <h4 class='tiny uppercase text-muted'>
                     hello world
                 </h4>
-                <ul class='list--unstyled '>
+                <ul class='list-unstyled mt-s'>
                     <li>
                         unstyled list item 1
                     </li>

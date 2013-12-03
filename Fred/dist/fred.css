@@ -1721,7 +1721,7 @@ This box will be a square
 .mt-xxxl {
   margin-top: 6em; }
 
-.mb-0 {
+.mb-0, h1, h2, h3, h4, h5, h6, p, .text, li, code {
   margin-bottom: 0; }
 
 .mb-xxxs {

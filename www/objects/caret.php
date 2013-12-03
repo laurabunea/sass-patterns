@@ -5,7 +5,7 @@
     include '../helper-list.php'; 
 ?>
 <div class='relative mb-l col-8-10 grid__item mt-xxxl' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:139px;' />
+    <img class='absolute fred-caret' alt='Fred the fed' src='/assets/images/fred-side.png' />
     <!--  ************  arrows block starts   ************   -->
 
     <div class='block-l tp-block ml-l' >  
@@ -23,9 +23,9 @@
             </h4>
             <pre>
 <code class='language-markup'>
-    &lt;span class='caret'&gt;&lt;/span&gt;
+&lt;span class='caret'&gt;&lt;/span&gt;
 
-    &lt;span class='caret caret--rev'&gt;&lt;/span&gt;
+&lt;span class='caret caret--rev'&gt;&lt;/span&gt;
 </code>
             </pre>
         </div><!--  code block ends -->

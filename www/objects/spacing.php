@@ -23,11 +23,6 @@
             </h4>
             <pre>
 <code class="language-css">
-/*
-* Spacing helpers:
-* -------------------------------
-*/
-
 /* Spacing Prefixes */
 
 //Margins
@@ -43,7 +38,6 @@
 .pr-       = padding-right
 
 /* Suffix */
-
 //Size of spacing you want from 0 - xxxl
 0     
 xxxs  
@@ -154,30 +148,30 @@ xxxl
 
 /* Middle Prefix */
 
--small       = mobile
--medium      = tablet
--large       = desktop
--xlarge      = wide screen
+--q-small       = mobile
+--q-medium      = tablet
+--q-large       = desktop
+--q-xlarge      = wide screen
 
 //Examples
 /* This class would have a xxxs right margin that only shows on mobile screens*/
-.mr-small--xxxs
+.mr-xxxs--q-small
 
 /* This class would have a large left padding that only shows on wide screens */
-.pl-xlarge--l
+.pl-l--q-xlarge
 
 /* Margin right SCSS code: */
 @include media('xlarge') {
-    .mr-xlarge--0     { margin-right:$bs--0; }
-    .mr-xlarge--xxxs  { margin-right:$bs--xxxs;}
-    .mr-xlarge--xxs   { margin-right:$bs--xxs; }
-    .mr-xlarge--xs    { margin-right:$bs--xs;}
-    .mr-xlarge--s     { margin-right:$bs--s;}
-    .mr-xlarge--m     { margin-right:$bs--m;}
-    .mr-xlarge--l     { margin-right:$bs--l;}
-    .mr-xlarge--xl    { margin-right:$bs--xl;}
-    .mr-xlarge--xxl   { margin-right:$bs--xxl;}
-    .mr-xlarge--xxxl  { margin-right:$bs--xxxl;}
+    .mr-0--q-xlarge     { margin-right:$bs--0; }
+    .mr-xxxs--q-xlarge  { margin-right:$bs--xxxs;}
+    .mr-xxs--q-xlarge   { margin-right:$bs--xxs; }
+    .mr-xs--q-xlarge    { margin-right:$bs--xs;}
+    .mr-s--q-xlarge     { margin-right:$bs--s;}
+    .mr-m--q-xlarge     { margin-right:$bs--m;}
+    .mr-l--q-xlarge     { margin-right:$bs--l;}
+    .mr-xl--q-xlarge   { margin-right:$bs--xl;}
+    .mr-xxl--q-xlarge   { margin-right:$bs--xxl;}
+    .mr-xxxl--q-xlarge  { margin-right:$bs--xxxl;}
 }
 </code>
             </pre>
@@ -187,13 +181,13 @@ xxxl
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
-            <div class='mr-xlarge--xxxl mr-mediumt-l mr-s mr-small--0 block-xs green-block '>
+            <div class='mr-xxxl--q-large mr-l--q-medium mr-s mr-0--q-small block-xs green-block '>
                 <p>
                 
-                    <strong>mobile:</strong> mr-small--s<br />
-                    <strong>skinny:</strong> mr-mediumt-l<br />
-                    <strong>desktop:</strong> mr-s<br />
-                    <strong>wide:</strong> mr-xlarge--xxxl
+                    <strong>mobile:</strong> mr-s--q-small<br />
+                    <strong>skinny:</strong> mr-l--q-medium<br />
+                    <strong>desktop:</strong>mr-s<br />
+                    <strong>wide:</strong> mr-xxxl--q-xlarge
                 </p>
             </div><!-- block xs ends-->
         </div>

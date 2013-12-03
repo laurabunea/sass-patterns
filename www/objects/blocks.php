@@ -5,9 +5,8 @@
     include '../helper-list.php'; 
 ?>
 <div class='relative mb-l col-8-10 grid__item mt-xxxl ' >
-    <img class='absolute fred' alt='Fred the fed' src='/assets/images/fred-side.png' style='top:41px;' />
-    <!--  ************  arrows block starts   ************   -->
-
+    <img class='absolute fred-blocks' alt='Fred the fed' src='/assets/images/fred-side.png' />
+    
     <div class='block-l tp-block ml-l' >     
 
         <h2 class='heading heading--keyline'>

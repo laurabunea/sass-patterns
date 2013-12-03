@@ -66,6 +66,7 @@ body {
  * ----------------------------------------------------------------------------
  */
 h1, h2, h3, h4, h5, h6, p, .text, li, code {
+     @extend .mb-0;
     &:first-child {
         @extend .mt-0;
     }
@@ -85,8 +86,6 @@ h1, .h1 {
     @extend .font-size-xxxl;
     line-height: $line-height-xxxl;
     margin-top: pxem($base-spacing, $font-size-xxxl);
-
-
 }
 
 h2, .h2 {
@@ -109,7 +108,6 @@ h4, .h4 {
 
 h5, .h5 {
     @extend .font-size-s;
-
     line-height: $line-height-s;
     margin-top: px-to-em($base-spacing--xs, $font-size-s);
 }

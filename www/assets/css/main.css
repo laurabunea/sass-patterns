@@ -1588,14 +1588,14 @@ p + p {
  * ----------------------------------------------------------------------------
  */
 /* line 213, ../sass/core/_typography.scss */
-.list--unstyled, .list--inline {
+.list-unstyled, .list--inline {
   list-style: none;
   padding-left: 0;
   margin: 0 0 0 0;
 }
 
 /* line 219, ../sass/core/_typography.scss */
-.list--unstyled > li, .list--inline > li {
+.list-unstyled > li, .list--inline > li {
   list-style: none;
   margin-left: 0;
 }
