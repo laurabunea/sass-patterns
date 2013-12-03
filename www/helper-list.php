@@ -72,8 +72,8 @@
                     Lists
                 </a>
             </li>
-            <li <?php echo ($page == 'blocks') ? 'class="tp-active-list"' : '';?>>
-                <a <?php echo ($page == 'blocks') ? 'class="tp-active-link"' : '';?> href='/objects/media.php'>
+            <li <?php echo ($page == 'media') ? 'class="tp-active-list"' : '';?>>
+                <a <?php echo ($page == 'media') ? 'class="tp-active-link"' : '';?> href='/objects/media.php'>
                     Media blocks
                 </a>
             </li>
@@ -82,8 +82,8 @@
                     Radii
                 </a>
             </li>
-            <li <?php echo ($page == 'blocks') ? 'class="tp-active-list"' : '';?>>
-                <a <?php echo ($page == 'blocks') ? 'class="tp-active-link"' : '';?> href='/objects/spacing.php'>
+            <li <?php echo ($page == 'spacing') ? 'class="tp-active-list"' : '';?>>
+                <a <?php echo ($page == 'spacing') ? 'class="tp-active-link"' : '';?> href='/objects/spacing.php'>
                     Spacing
                 </a>
             </li>

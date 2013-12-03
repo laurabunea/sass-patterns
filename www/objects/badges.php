@@ -23,7 +23,8 @@
             </h4>
             <pre>
 <code class='language-markup'>
-&lt;a href='#'&gt; Inbox 
+&lt;a href='#'&gt; 
+    Inbox 
     &lt;span class='badge'&gt;
         42
     &lt;/span&gt;

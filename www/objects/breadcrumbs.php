@@ -32,7 +32,7 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <ol class='breadcrumbs pt-breadrumbs block-xxs xm'>
+            <ol class='breadcrumbs pt-breadrumbs '>
                 <li><a href='#'>Home</a></li>
                 <li><a href='#'>Page</a></li>
                 <li class='#'>Sub page</li>

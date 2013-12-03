@@ -10,10 +10,10 @@
     <div class='block-l tp-block ml-l'>  
 
         <h2 class='h3'>
-            15. Radii
+            Radii
         </h2>
         <p>
-           Notes
+           Need to fix and update this page :(, it's broken
         </p>
         <!--  code block starts -->
         <div class=' block-s tt-block'>

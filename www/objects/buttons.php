@@ -11,10 +11,13 @@
                 Buttons
             </h2>
         </div>
+        <p>
+            Notes...
+        </p>
         <!-- /****************************************  Button variations  *******************************/ -->
 
         <div class='mt-m'> 
-            <h3>
+            <h3 class='h4'>
                 a) Button variations
             </h3>
 
@@ -25,7 +28,7 @@
                 </h4>
                 <pre>
     <code class="language-markup">
-    &lt;a class='btn--label'&gt; Button 1 &lt;/a&gt;
+    &lt;a class='btn--label tp-btn'&gt; Button 1 &lt;/a&gt;
     &lt;a class='btn ts-btn'&gt; Button 2 &lt;/a&gt;
     &lt;a class='btn tt-btn'&gt; Button 3 &lt;/a&gt;
     </code>

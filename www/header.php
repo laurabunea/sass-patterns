@@ -22,11 +22,11 @@
             </h1>
 
             <ul class='list--inline right tp-navigation'>
-                <li>
+                <!--<li>
                     <a class='block--stacked block-s tp-text-white' href='/helpers.php'>
                         Helper classes
                     </a>
-                </li>
+                </li>-->
                 <!--<li>
                     <a class='block--stacked block-s' href='/mixins.php'>
                         TODO Helper Mixins

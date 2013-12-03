@@ -1,5 +1,5 @@
 <?php 
-    $page = 'inlin-block';
+    $page = 'inline-block';
     include '../header.php';  
     include '../helper-list.php'; 
 ?>

@@ -10,7 +10,7 @@
     <div class='block-l tp-block ml-l' >  
 
        <h2 class='heading heading--keyline'>
-           Grids
+           Grids (Inline and Float grid)
         </h2>
         <h3 class='h4'>
             a) Inline Grid
@@ -318,6 +318,9 @@ $breakpoint-classname-prefix: "--q-";
         <h3 class='h4'>
             b) Float Grid
         </h3>
+        <p>
+            Still to do ...
+        </p>
     </div><!--Inline grid section starts-->
     
         

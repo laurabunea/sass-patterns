@@ -26,6 +26,28 @@
 // * Lozenge
 // *
 
+// Common text colours
+// --------------------------------------------------------
+
+$tp-white:  #fff;
+$tp-pink:  #F92672;
+$tp-yellow: #E6DB74;
+$tp-grey: #999;
+$tp-green: #33B233;
+$tp-black: #2E2F2B;
+
+.tp-text-yellow         { color:$tp-yellow; }
+.tp-text-green          { color:$tp-green; }
+.tp-text-grey           { color:$tp-grey; }
+.tp-text-white          { color:$tp-white; }
+
+
+.tp-text-green--hover {
+  &:hover {
+    color:$tp-green;
+  }
+}
+
 
 // Base Colours and links 
 // -----------------------------------------------------------------------------
@@ -229,63 +251,68 @@ $quarternary-border-color:      $quarternary-bg-color;
 $active-btn-bg:                 #333;
 $active-btn-text:               #fff;
 
-// main theme blocks
-$primary-btn-bg:                #3CBE8A;
-$primary-btn-txt:               #fff;
-$primary-btn-border:            $primary-btn-bg;
-$primary-btn-hover-bg:          darken(#3CBE8A, 7%);
-$primary-btn-hover-txt:         #fff;
+//Theme - primary
+$tp-btn-bg:                $tp-pink;
+$tp-btn-txt:               $tp-white;
+$tp-btn-border:            $tp-btn-bg;
+$tp-btn-hover-bg:          darken($tp-pink, 7%);
+$tp-btn-hover-txt:         $tp-black;
 
-$secondary-btn-bg:              #999;
-$secondary-btn-txt:             #fff;
-$secondary-btn-border:          $primary-btn-bg;
-$secondary-btn-hover-bg:        #777;
-$secondary-btn-hover-txt:       #fff;
+//Theme - secondary
+$ts-btn-bg:              $tp-green;
+$ts-btn-txt:             $tp-white;
+$ts-btn-border:          darken($tp-green, 10%);
+$ts-btn-hover-bg:        lighten($tp-green, 10%);
+$ts-btn-hover-txt:       $tp-black;
 
-$tertiary-btn-bg:               #ddd;
-$tertiary-btn-txt:              #fff;
-$tertiary-btn-border:           #444;
-$tertiary-btn-hover-bg:         #ccc;
-$tertiary-btn-hover-txt:        #333;
+//Theme - tertiary
+$tt-btn-bg:               $tp-yellow;
+$tt-btn-txt:              $tp-white;
+$tt-btn-border:           darken($tp-yellow, 20%);;
+$tt-btn-hover-bg:         $tp-black;
+$tt-btn-hover-txt:        $tp-yellow;
 
 
 // theme blocks positive negative.. ??
-$positive-btn-bg:              #3977B1;
-$positive-btn-txt:             #fff;
-$positive-btn-border:          $primary-btn-bg;
-$positive-btn-hover-bg:        darken(#3977B1, 7%);
-$positive-btn-hover-txt:       $secondary-btn-txt;
+$positive-btn-bg:              $tp-white;
+$positive-btn-txt:             $tp-black;
+$positive-btn-border:          $tp-white;
+$positive-btn-hover-bg:        $tp-black;
+$positive-btn-hover-txt:       $tp-white;
 
-$negative-btn-bg:              #eb3930;
-$negative-btn-txt:             #fff;
-$negative-btn-border:          #444;
-$negative-btn-hover-bg:        #d8281f;
-$negative-btn-hover-txt:       $negative-btn-txt;
+$negative-btn-bg:              $tp-black;
+$negative-btn-txt:             $tp-white;
+$negative-btn-border:          $tp-white;
+$negative-btn-hover-bg:        $tp-white;
+$negative-btn-hover-txt:       $tp-black;
 
-.tp-btn {
-    
-    @include theme-block($primary-btn-bg, $primary-btn-txt, $primary-btn-border);  
+//Theme - primary
+.tp-btn { 
+    @include theme-block($tp-btn-bg, $tp-btn-txt, $tp-btn-border);  
     &:hover {
-        background-color: $primary-btn-hover-bg;
-        color: $primary-btn-hover-txt;
+        background-color: $tp-btn-hover-bg;
+        color: $tp-btn-hover-txt;
     }
 }
 
+//Theme - secondary
 .ts-btn {
-    @include theme-block($secondary-btn-bg, $secondary-btn-txt, $secondary-btn-border);
+    @include theme-block($ts-btn-bg, $ts-btn-txt, $ts-btn-border);
     &:hover {
-        background-color: $secondary-btn-hover-bg;
-        color: $secondary-btn-hover-txt;
+        background-color: $ts-btn-hover-bg;
+        color: $ts-btn-hover-txt;
     }
 }
 
+//Theme - tertiary
 .tt-btn {
-    @include theme-block($tertiary-btn-bg, $tertiary-btn-txt, $tertiary-btn-border);
+    @include theme-block($tt-btn-bg, $tt-btn-txt, $tt-btn-border);
     &:hover {
-        background-color: $tertiary-btn-hover-bg;
-        color: $tertiary-btn-hover-txt;
+        background-color: $tt-btn-hover-bg;
+        color: $tt-btn-hover-txt;
     }
 }
+
 
 .btn-positive {
     @include theme-block($positive-btn-bg, $positive-btn-txt, $positive-btn-border);
@@ -396,24 +423,6 @@ $grey-light:                    lighten(#000, 60%);   // #999
 $grey-lighter:                  lighten(#000, 93.5%); // #eee
 
 
-// Common text colours
-// --------------------------------------------------------
 
-$tp-white:  #fff;
-$tp-yellow: #E6DB74;
-$tp-grey: #999;
-$tp-green: #33B233;
-
-.tp-text-yellow         { color:$tp-yellow; }
-.tp-text-green          { color:$tp-green; }
-.tp-text-grey           { color:$tp-grey; }
-.tp-text-white          { color:$tp-white; }
-
-
-.tp-text-green--hover {
-  &:hover {
-    color:$tp-green;
-  }
-}
 
 
