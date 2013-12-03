@@ -14,12 +14,12 @@
  */
 
 .arrow {/*i,span*/
-    @extend %inline-block;
+    @extend %inline-block; /* This extend is found in core */
+    @extend %absolute; /* This extend is found in core */
     border-color: transparent;
     border-style: solid;
     border-width: .4em;
     height: 0;
-    position: absolute;
     width: 0;
 }
 
@@ -51,13 +51,14 @@
 .arrow--right,
 .arrow--side,
 .arrow--center {/*div,block*/
-    position:relative;
+    @extend %relative;
 }
 
     .arrow--center .arrow {
+        @extend %center-element;
         left:0;
         right:0;
-        @extend %center-element;
+        
     }
 
     .arrow--left .arrow {

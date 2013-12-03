@@ -7,7 +7,7 @@
  */
 
 .nav {
-    @extend .clearfix;
+    @extend .clearfix; /* This extend is found in core */
     list-style: none;
     margin-bottom: 0;
     margin-top: 0;
@@ -15,7 +15,7 @@
 }
 
     .nav > li {
-        @extend %inline-block;
+        @extend %inline-block; /* This extend is found in core */
         margin-top: 0;
     }
 

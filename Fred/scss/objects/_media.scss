@@ -24,7 +24,7 @@
 
 /* Swap the image to the right */
 .media--rev {
-    @extend .clearfix;
+    @extend .clearfix; 
     margin-top: $base-spacing-unit;
 }
 

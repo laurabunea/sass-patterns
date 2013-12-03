@@ -4,7 +4,7 @@
  */
 // making sure the first element has no margin on it
 %block {
-    @extend .clearfix;
+    @extend .clearfix; /* This extend is found in core */
     margin-top:1em;
 }
 

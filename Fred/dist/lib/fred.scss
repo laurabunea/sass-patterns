@@ -935,12 +935,12 @@ table {
  */
 
 .arrow {/*i,span*/
-    @extend %inline-block;
+    @extend %inline-block; /* This extend is found in core */
+    @extend %absolute; /* This extend is found in core */
     border-color: transparent;
     border-style: solid;
     border-width: .4em;
     height: 0;
-    position: absolute;
     width: 0;
 }
 
@@ -972,13 +972,14 @@ table {
 .arrow--right,
 .arrow--side,
 .arrow--center {/*div,block*/
-    position:relative;
+    @extend %relative;
 }
 
     .arrow--center .arrow {
+        @extend %center-element;
         left:0;
         right:0;
-        @extend %center-element;
+        
     }
 
     .arrow--left .arrow {
@@ -1003,18 +1004,17 @@ table {
  *
  */
 .badge {
-    @extend %inline-block;
-
+    @extend %inline-block; /* This extend is found in core */
+    @extend %align--baseline; /* This extend is found in core */
+    @extend %relative;/* This extend is found in core */
     line-height: $base-line-height;
     margin-left:0.3em;
     min-width: .625em;
     padding: .1875em .4375em;
     // Quick fix for labels/badges in buttons
-
-    position: relative;
-    text-align: center;
     top: -1px;
-    vertical-align: baseline;
+    text-align: center;
+    
     white-space: nowrap;
 
     // Empty badges collapse automatically (not available in IE8)
@@ -1048,7 +1048,7 @@ table {
  */
 // making sure the first element has no margin on it
 %block {
-    @extend .clearfix;
+    @extend .clearfix; /* This extend is found in core */
     margin-top:1em;
 }
 
@@ -1087,7 +1087,7 @@ table {
 /* Unicode space added since inline-block means non-collapsing white-space */
 .breadcrumbs {
     > li {
-        @extend %inline-block;
+        @extend %inline-block; /* This extend is found in core */
         &+li:before {
             content: "/\00a0";
             padding: 0 $bs-xxxs;
@@ -1103,12 +1103,13 @@ table {
 // Make the div behave like a button
 .btn-group,
 .btn-group-vertical {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle; // match .btn alignment given font-size hack above
+    @extend %relative; //in core
+    @extend %inline-block; //in core
+    @extend %align--middle;// in core. This match .btn alignment given font-size hack above
+
     > .btn {
-        position: relative;
-        float: left;
+        @extend %relative; //in core
+        @extend .left; //in core
         // Bring the "active" button to the front
         &:hover,
         &:focus,
@@ -1138,7 +1139,7 @@ table {
     @extend %clearfix;
 
     .btn-group {
-        float: left;
+        @extend .left; //in core
     }
     // Space out series of button groups
     > .btn,
@@ -1169,7 +1170,7 @@ table {
 
 // Custom edits for including btn-groups within btn-groups (useful for including dropdown buttons within a btn-group)
 .btn-group > .btn-group {
-    float: left;
+    @extend .left; /* This extend is found in core */
 }
 .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
     border-radius: 0;
@@ -1255,6 +1256,7 @@ table {
  */
 .btn {
     @extend .inline-block;                          /* [1] */
+    @extend %align--middle;                         /* [2] */
     //@extend .user-select-none;
     @include vendor(border-radius, $base-spacing-unit/4);
     border-color: transparent;
@@ -1268,7 +1270,6 @@ table {
     padding-left: $base-spacing-unit;               /* [7] */
     padding-right: $base-spacing-unit;              /* [7] */
     padding-top: 0;                                 /* [6] */
-    vertical-align: middle;                         /* [2] */
     white-space: nowrap;                            /* [3] */
 
     &,
@@ -1586,14 +1587,14 @@ table {
  */
 
 .caret {
+    @extend %inline-block; /* This extend is found in core */
+    @extend %align--middle; /* This extend is found in core */
     border-bottom: 0 dotted;
     border-left: .25em solid transparent;
     border-right: .25em solid transparent;
     border-top: .25em solid #000;
-    display: inline-block;
     height: 0;
     margin-left: .125em;
-    vertical-align: middle;
     width: 0;
 }
 
@@ -1616,8 +1617,8 @@ table {
 }
 
     .close:after {
+        @extend %inline-block; /* This extend is found in core */
         content: "\00d7";
-        display: inline-block;
         font-size: 1.5em;
         line-height: 1;
         opacity: 0.2;
@@ -1914,13 +1915,12 @@ textarea {
 
 .icon-text,
 .icon-text--rev{/* a, div, etc */
-    @extend %inline-block;
-    display:inline-block; //CHECK why this isn't extending
+    @extend %inline-block; /* This extend is found in core */
 }
 
 .i{
+    @extend %align--middle; //in core 
     overflow: hidden; /* for IE6 */
-    vertical-align: middle;
     /* SMACSS line-height: 0; ? */
     .icon-text &,
     .btn--icon &{
@@ -1995,8 +1995,8 @@ textarea {
     }
 
     .list--inline {
-        @extend .clearfix;
-        @extend .list-unstyled;
+        @extend .clearfix; /* This extend is found in core */
+        @extend .list-unstyled; 
     }
 
     .list--inline > li {
@@ -2280,8 +2280,8 @@ dl {
  *
  */
 
-.pill{
-    display:inline-block;
+.pill {
+    @extend %inline-block; /* This extend is found in core */
     /**
      * These numbers set in ems mean that, at its narrowest, a lozenge will be
      * the same width as the `line-height` set on the `html` element.

@@ -1,7 +1,5 @@
 <?php 
     include '../header.php'; 
-?>
-<?php 
     include '../helper-list.php'; 
 ?>
 <div class='relative mb-l col-8-10 grid__item mt-xxxl ' >

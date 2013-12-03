@@ -20,7 +20,7 @@
                 </a>
             </h1>
 
-            <ul class='list--inline right'>
+            <ul class='list--inline right tp-navigation'>
                 <li>
                     <a class='block--stacked block-s' href='/helpers.php'>
                         Helper classes

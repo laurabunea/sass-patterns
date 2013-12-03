@@ -1,5 +1,5 @@
 /**
- * 6. Inline block grid
+ * Inline block grid
  * -----------------------------------------------------------------------------
  *
  * [1] Sets the child elements to take up full justified width of the parent
@@ -25,16 +25,16 @@
 
     // Font-size medium reset the block to the context of body (ie, 16px)
     .grid__item {
-        @extend .inline-block;
-        @extend %align--top;
-        @extend .text-left;
+        @extend .inline-block; /* This extend is found in core */
+        @extend %align--top; /* This extend is found in core */
+        @extend .text-left; /* This extend is found in typography */
         font-size: medium;
 
     }
 
     .grid:after,
     .grid__break {
-        @extend .inline-block;
+        @extend .inline-block; /* This extend is found in core */
         content: '';
         height: 0;
         width:100%;
@@ -44,11 +44,11 @@
      * Vertical align these grid items in the middle!
      */
     .grid--middle > .grid__item {
-        @extend %align--middle;
+        @extend %align--middle; /* This extend is found in core */
     }
 
     .grid--bottom > .grid__item {
-        @extend %align--bottom;
+        @extend %align--bottom; /* This extend is found in core */
     }
 
 

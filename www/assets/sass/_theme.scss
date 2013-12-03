@@ -361,3 +361,28 @@ $tp-keyline-color:                 #E5E5E5;
 // Forms
 // ----------------------------------------------------------------------------
 
+// Navigation
+// ----------------------------------------------------------------------------
+$tp-nav-color:                    #FFFFFF;
+$tp-nav-color-hover:              #E6DB74;
+$tp-nav-bg-color:                 #4D4D4D;                  
+//active?
+.tp-navigation {
+  
+  background-color: $tp-nav-bg-color;
+  //text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  & > li, 
+  & > a {
+    color:$tp-nav-color;
+  }
+    & > li:hover,
+    & > li.active, 
+    & > a.active {
+      color:$tp-nav-color-hover;
+    }
+    
+}
+
+.test li.active {
+    color: red;
+}

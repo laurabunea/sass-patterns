@@ -192,15 +192,15 @@ table {
  * Positioning - Absolute, Floating and Clearfixing
  * ----------------------------------------------------------------------------
  */
-.relative {
+.relative, .arrow--left, .arrow--right, .arrow--side, .arrow--center, .badge, .btn-group, .btn-group-vertical, .btn-group > .btn, .btn-group-vertical > .btn {
   position: relative; }
 
-.absolute, .absolute--bottom-left, .absolute--bottom-right, .absolute--top-left, .absolute--top-right {
+.absolute, .absolute--bottom-left, .absolute--bottom-right, .absolute--top-left, .absolute--top-right, .arrow {
   position: absolute; }
 
 
 
-.left, .grid-float > [class^=col], .media__image {
+.left, .btn-group > .btn, .btn-group-vertical > .btn, .btn-toolbar .btn-group, .btn-group > .btn-group, .grid-float > [class^=col], .media__image {
   float: left; }
 
 .right, .media--rev > .media__image {
@@ -233,9 +233,11 @@ table {
 .grid__item {
   vertical-align: top; }
 
-.grid--middle > .grid__item {
+.btn-group, .btn-group-vertical, .btn, .caret, .grid--middle > .grid__item, .i {
   vertical-align: middle; }
 
+.badge {
+  vertical-align: baseline; }
 
 .grid--bottom > .grid__item {
   vertical-align: bottom; }
@@ -246,7 +248,7 @@ table {
  * zoom fix for IE6/7 so they correctly display inline-block elements
  * (forces hasLayout)
  */
-.inline-block, .arrow, .badge, .breadcrumbs > li, .icon-text, .icon-text--rev, .nav > li {
+.inline-block, .arrow, .badge, .breadcrumbs > li, .btn-group, .btn-group-vertical, .caret, .close:after, .icon-text, .icon-text--rev, .nav > li, .pill {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
@@ -354,11 +356,12 @@ table {
  */
 .arrow {
   /*i,span*/
+  /* This extend is found in core */
+  /* This extend is found in core */
   border-color: transparent;
   border-style: solid;
   border-width: 0.4em;
   height: 0;
-  position: absolute;
   width: 0; }
 
 .arrow-top {
@@ -382,8 +385,7 @@ table {
   right: -0.4em; }
 
 .arrow--left, .arrow--right, .arrow--side, .arrow--center {
-  /*div,block*/
-  position: relative; }
+  /*div,block*/ }
 
 .arrow--center .arrow {
   left: 0;
@@ -408,14 +410,15 @@ table {
  *
  */
 .badge {
+  /* This extend is found in core */
+  /* This extend is found in core */
+  /* This extend is found in core */
   line-height: 1.42857;
   margin-left: 0.3em;
   min-width: 0.625em;
   padding: 0.1875em 0.4375em;
-  position: relative;
-  text-align: center;
   top: -1px;
-  vertical-align: baseline;
+  text-align: center;
   white-space: nowrap; }
   .badge:empty {
     display: none; }
@@ -433,6 +436,7 @@ table {
  * ----------------------------------------------------------------------------
  */
 .block-xxxs, .block-xxs, .block-xs, .block-s, .block-m, .block-l, .block-xl, .block-xxl, .block-xxxl {
+  /* This extend is found in core */
   margin-top: 1em; }
 
 .block--stacked {
@@ -542,32 +546,25 @@ table {
  * ----------------------------------------------------------------------------
  */
 /* Unicode space added since inline-block means non-collapsing white-space */
-.breadcrumbs > li + li:before {
-  content: "/\00a0";
-  padding: 0 0.375em; }
+.breadcrumbs > li {
+  /* This extend is found in core */ }
+  .breadcrumbs > li + li:before {
+    content: "/\00a0";
+    padding: 0 0.375em; }
 
 /**
  * Contain buttons in a horizontal group.
  * ----------------------------------------------------------------------------
  * Borrowed from Twitter Bootstrap and put on a border-radius diet.
  */
-.btn-group, .btn-group-vertical {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle; }
-  .btn-group > .btn, .btn-group-vertical > .btn {
-    position: relative;
-    float: left; }
-    .btn-group > .btn:hover, .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active, .btn-group-vertical > .btn:hover, .btn-group-vertical > .btn:focus, .btn-group-vertical > .btn:active, .btn-group-vertical > .btn.active {
-      z-index: 2; }
-    .btn-group > .btn:focus, .btn-group-vertical > .btn:focus {
-      outline: none; }
+.btn-group > .btn:hover, .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active, .btn-group-vertical > .btn:hover, .btn-group-vertical > .btn:focus, .btn-group-vertical > .btn:active, .btn-group-vertical > .btn.active {
+  z-index: 2; }
+.btn-group > .btn:focus, .btn-group-vertical > .btn:focus {
+  outline: none; }
 
 .btn-group .btn + .btn, .btn-group .btn + .btn-group, .btn-group .btn-group + .btn, .btn-group .btn-group + .btn-group {
   margin-left: -1px; }
 
-.btn-toolbar .btn-group {
-  float: left; }
 .btn-toolbar > .btn + .btn, .btn-toolbar > .btn + .btn-group, .btn-toolbar > .btn-group + .btn, .btn-toolbar > .btn-group + .btn-group {
   margin-left: 0.3125em; }
 
@@ -579,7 +576,7 @@ table {
 
 
 .btn-group > .btn-group {
-  float: left; }
+  /* This extend is found in core */ }
 
 .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0; }
@@ -634,6 +631,7 @@ table {
  */
 .btn {
   /* [1] */
+  /* [2] */
   -webkit-border-radius: 0.375em;
   -moz-border-radius: 0.375em;
   -ms-border-radius: 0.375em;
@@ -658,8 +656,6 @@ table {
   /* [7] */
   padding-top: 0;
   /* [6] */
-  vertical-align: middle;
-  /* [2] */
   white-space: nowrap;
   /* [3] */ }
   .btn, .btn:hover {
@@ -955,14 +951,14 @@ table {
  * ----------------------------------------------------------------------------
  */
 .caret {
+  /* This extend is found in core */
+  /* This extend is found in core */
   border-bottom: 0 dotted;
   border-left: 0.25em solid transparent;
   border-right: 0.25em solid transparent;
   border-top: 0.25em solid black;
-  display: inline-block;
   height: 0;
   margin-left: 0.125em;
-  vertical-align: middle;
   width: 0; }
 
 .caret--rev {
@@ -982,8 +978,8 @@ table {
   -webkit-appearance: none; }
 
 .close:after {
+  /* This extend is found in core */
   content: "\00d7";
-  display: inline-block;
   font-size: 1.5em;
   line-height: 1;
   opacity: 0.2; }
@@ -1347,12 +1343,11 @@ textarea {
  */
 .icon-text, .icon-text--rev {
   /* a, div, etc */
-  display: inline-block; }
+  /* This extend is found in core */ }
 
 .i {
   overflow: hidden;
   /* for IE6 */
-  vertical-align: middle;
   /* SMACSS line-height: 0; ? */ }
   .icon-text .i, .btn--icon .i {
     margin-right: 0.5em; }
@@ -1405,6 +1400,8 @@ textarea {
   list-style: none;
   margin-left: 0; }
 
+.list--inline {
+  /* This extend is found in core */ }
 
 .list--inline > li {
   margin: 0; }
@@ -1590,7 +1587,7 @@ dd {
  *
  */
 .pill, .lozenge {
-  display: inline-block;
+  /* This extend is found in core */
   /**
      * These numbers set in ems mean that, at its narrowest, a lozenge will be
      * the same width as the `line-height` set on the `html` element.

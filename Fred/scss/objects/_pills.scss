@@ -14,7 +14,7 @@
  */
 
 .pill {
-    display:inline-block;
+    @extend %inline-block; /* This extend is found in core */
     /**
      * These numbers set in ems mean that, at its narrowest, a lozenge will be
      * the same width as the `line-height` set on the `html` element.

@@ -1,7 +1,6 @@
 <?php 
+    $page = 'ratio';
     include '../header.php'; 
-?>
-<?php 
     include '../helper-list.php'; 
 ?>
 

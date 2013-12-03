@@ -13,8 +13,8 @@
 }
 
     .close:after {
+        @extend %inline-block; /* This extend is found in core */
         content: "\00d7";
-        display: inline-block;
         font-size: 1.5em;
         line-height: 1;
         opacity: 0.2;

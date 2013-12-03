@@ -266,17 +266,23 @@ table {
  * ----------------------------------------------------------------------------
  */
 /* line 739, ../../../Fred/dist/lib/fred.scss */
-.relative {
+.relative, .arrow--left,
+.arrow--right,
+.arrow--side,
+.arrow--center, .badge, .btn-group,
+.btn-group-vertical, .btn-group > .btn,
+.btn-group-vertical > .btn {
   position: relative;
 }
 
 /* line 740, ../../../Fred/dist/lib/fred.scss */
-.absolute, .absolute--bottom-left, .absolute--bottom-right, .absolute--top-left, .absolute--top-right {
+.absolute, .absolute--bottom-left, .absolute--bottom-right, .absolute--top-left, .absolute--top-right, .arrow {
   position: absolute;
 }
 
 /* line 745, ../../../Fred/dist/lib/fred.scss */
-.left, .grid-float > [class^=col], .media__image {
+.left, .btn-group > .btn,
+.btn-group-vertical > .btn, .btn-toolbar .btn-group, .btn-group > .btn-group, .grid-float > [class^=col], .media__image {
   float: left;
 }
 
@@ -326,8 +332,14 @@ table {
 }
 
 /* line 788, ../../../Fred/dist/lib/fred.scss */
-.grid--middle > .grid__item, .grid.grid--middle > * {
+.btn-group,
+.btn-group-vertical, .btn, .caret, .grid--middle > .grid__item, .grid.grid--middle > *, .i {
   vertical-align: middle;
+}
+
+/* line 792, ../../../Fred/dist/lib/fred.scss */
+.badge {
+  vertical-align: baseline;
 }
 
 /* line 796, ../../../Fred/dist/lib/fred.scss */
@@ -343,8 +355,9 @@ table {
  */
 /* line 807, ../../../Fred/dist/lib/fred.scss */
 .inline-block, .btn, .grid__item, .grid > *, .grid:after,
-.grid__break, .list--inline > li, .text--overflow, .arrow, .badge, .breadcrumbs > li, .icon-text,
-.icon-text--rev, .nav > li, .pagination > li {
+.grid__break, .list--inline > li, .text--overflow, .arrow, .badge, .breadcrumbs > li, .btn-group,
+.btn-group-vertical, .caret, .close:after, .icon-text,
+.icon-text--rev, .nav > li, .pagination > li, .pill, .lozenge, .logo {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -498,11 +511,12 @@ table {
 /* line 937, ../../../Fred/dist/lib/fred.scss */
 .arrow {
   /*i,span*/
+  /* This extend is found in core */
+  /* This extend is found in core */
   border-color: transparent;
   border-style: solid;
   border-width: .4em;
   height: 0;
-  position: absolute;
   width: 0;
 }
 
@@ -540,7 +554,6 @@ table {
 .arrow--side,
 .arrow--center {
   /*div,block*/
-  position: relative;
 }
 
 /* line 978, ../../../Fred/dist/lib/fred.scss */
@@ -549,17 +562,17 @@ table {
   right: 0;
 }
 
-/* line 984, ../../../Fred/dist/lib/fred.scss */
+/* line 985, ../../../Fred/dist/lib/fred.scss */
 .arrow--left .arrow {
   left: 1.5em;
 }
 
-/* line 988, ../../../Fred/dist/lib/fred.scss */
+/* line 989, ../../../Fred/dist/lib/fred.scss */
 .arrow--right .arrow {
   right: 1.5em;
 }
 
-/* line 992, ../../../Fred/dist/lib/fred.scss */
+/* line 993, ../../../Fred/dist/lib/fred.scss */
 .arrow--side .arrow {
   top: 1.5em;
 }
@@ -573,16 +586,17 @@ table {
  * </span>
  *
  */
-/* line 1005, ../../../Fred/dist/lib/fred.scss */
+/* line 1006, ../../../Fred/dist/lib/fred.scss */
 .badge {
+  /* This extend is found in core */
+  /* This extend is found in core */
+  /* This extend is found in core */
   line-height: 1.42857;
   margin-left: 0.3em;
   min-width: .625em;
   padding: .1875em .4375em;
-  position: relative;
-  text-align: center;
   top: -1px;
-  vertical-align: baseline;
+  text-align: center;
   white-space: nowrap;
 }
 /* line 1021, ../../../Fred/dist/lib/fred.scss */
@@ -609,6 +623,7 @@ table {
 .block-xl,
 .block-xxl,
 .block-xxxl {
+  /* This extend is found in core */
   margin-top: 1em;
 }
 
@@ -838,6 +853,10 @@ table {
  * ----------------------------------------------------------------------------
  */
 /* Unicode space added since inline-block means non-collapsing white-space */
+/* line 1089, ../../../Fred/dist/lib/fred.scss */
+.breadcrumbs > li {
+  /* This extend is found in core */
+}
 /* line 1091, ../../../Fred/dist/lib/fred.scss */
 .breadcrumbs > li + li:before {
   content: "/\00a0";
@@ -849,20 +868,7 @@ table {
  * ----------------------------------------------------------------------------
  * Borrowed from Twitter Bootstrap and put on a border-radius diet.
  */
-/* line 1105, ../../../Fred/dist/lib/fred.scss */
-.btn-group,
-.btn-group-vertical {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-}
-/* line 1109, ../../../Fred/dist/lib/fred.scss */
-.btn-group > .btn,
-.btn-group-vertical > .btn {
-  position: relative;
-  float: left;
-}
-/* line 1116, ../../../Fred/dist/lib/fred.scss */
+/* line 1117, ../../../Fred/dist/lib/fred.scss */
 .btn-group > .btn:hover, .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active,
 .btn-group-vertical > .btn:hover,
 .btn-group-vertical > .btn:focus,
@@ -870,13 +876,13 @@ table {
 .btn-group-vertical > .btn.active {
   z-index: 2;
 }
-/* line 1119, ../../../Fred/dist/lib/fred.scss */
+/* line 1120, ../../../Fred/dist/lib/fred.scss */
 .btn-group > .btn:focus,
 .btn-group-vertical > .btn:focus {
   outline: none;
 }
 
-/* line 1131, ../../../Fred/dist/lib/fred.scss */
+/* line 1132, ../../../Fred/dist/lib/fred.scss */
 .btn-group .btn + .btn,
 .btn-group .btn + .btn-group,
 .btn-group .btn-group + .btn,
@@ -884,11 +890,7 @@ table {
   margin-left: -1px;
 }
 
-/* line 1140, ../../../Fred/dist/lib/fred.scss */
-.btn-toolbar .btn-group {
-  float: left;
-}
-/* line 1147, ../../../Fred/dist/lib/fred.scss */
+/* line 1148, ../../../Fred/dist/lib/fred.scss */
 .btn-toolbar > .btn + .btn,
 .btn-toolbar > .btn + .btn-group,
 .btn-toolbar > .btn-group + .btn,
@@ -896,42 +898,42 @@ table {
   margin-left: .3125em;
 }
 
-/* line 1153, ../../../Fred/dist/lib/fred.scss */
+/* line 1154, ../../../Fred/dist/lib/fred.scss */
 .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
-/* line 1158, ../../../Fred/dist/lib/fred.scss */
+/* line 1159, ../../../Fred/dist/lib/fred.scss */
 .btn-group > .btn:first-child {
   margin-left: 0;
 }
 
-/* line 1171, ../../../Fred/dist/lib/fred.scss */
+/* line 1172, ../../../Fred/dist/lib/fred.scss */
 .btn-group > .btn-group {
-  float: left;
+  /* This extend is found in core */
 }
 
-/* line 1174, ../../../Fred/dist/lib/fred.scss */
+/* line 1175, ../../../Fred/dist/lib/fred.scss */
 .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0;
 }
 
-/* line 1192, ../../../Fred/dist/lib/fred.scss */
+/* line 1193, ../../../Fred/dist/lib/fred.scss */
 .btn-group-xs > .btn {
   font-size: 0.75em;
 }
 
-/* line 1193, ../../../Fred/dist/lib/fred.scss */
+/* line 1194, ../../../Fred/dist/lib/fred.scss */
 .btn-group-sm > .btn {
   font-size: 1.125em;
 }
 
-/* line 1194, ../../../Fred/dist/lib/fred.scss */
+/* line 1195, ../../../Fred/dist/lib/fred.scss */
 .btn-group-lg > .btn {
   font-size: 1.25em;
 }
 
-/* line 1202, ../../../Fred/dist/lib/fred.scss */
+/* line 1203, ../../../Fred/dist/lib/fred.scss */
 .btn-group-vertical > .btn,
 .btn-group-vertical > .btn-group {
   display: block;
@@ -939,11 +941,11 @@ table {
   width: 100%;
   max-width: 100%;
 }
-/* line 1212, ../../../Fred/dist/lib/fred.scss */
+/* line 1213, ../../../Fred/dist/lib/fred.scss */
 .btn-group-vertical > .btn-group > .btn {
   float: none;
 }
-/* line 1220, ../../../Fred/dist/lib/fred.scss */
+/* line 1221, ../../../Fred/dist/lib/fred.scss */
 .btn-group-vertical > .btn + .btn,
 .btn-group-vertical > .btn + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
@@ -952,14 +954,14 @@ table {
   margin-left: 0;
 }
 
-/* line 1229, ../../../Fred/dist/lib/fred.scss */
+/* line 1230, ../../../Fred/dist/lib/fred.scss */
 .btn-group-justified {
   display: table;
   width: 100%;
   table-layout: fixed;
   border-collapse: separate;
 }
-/* line 1234, ../../../Fred/dist/lib/fred.scss */
+/* line 1235, ../../../Fred/dist/lib/fred.scss */
 .btn-group-justified .btn {
   float: none;
   display: table-cell;
@@ -982,9 +984,10 @@ table {
  * 8. Basic cosmetics for default buttons. Change or override at will.
  * 9. Don’t allow buttons to have underlines; it kinda ruins the illusion.
  */
-/* line 1256, ../../../Fred/dist/lib/fred.scss */
+/* line 1257, ../../../Fred/dist/lib/fred.scss */
 .btn {
   /* [1] */
+  /* [2] */
   -webkit-border-radius: 0.375em;
   -moz-border-radius: 0.375em;
   -ms-border-radius: 0.375em;
@@ -1009,17 +1012,15 @@ table {
   /* [7] */
   padding-top: 0;
   /* [6] */
-  vertical-align: middle;
-  /* [2] */
   white-space: nowrap;
   /* [3] */
 }
-/* line 1275, ../../../Fred/dist/lib/fred.scss */
+/* line 1276, ../../../Fred/dist/lib/fred.scss */
 .btn, .btn:hover {
   text-decoration: none;
   /* [9] */
 }
-/* line 1280, ../../../Fred/dist/lib/fred.scss */
+/* line 1281, ../../../Fred/dist/lib/fred.scss */
 .btn:active, .btn:focus {
   outline: none;
 }
@@ -1036,7 +1037,7 @@ table {
         My small rounded button
     </a>
  */
-/* line 1300, ../../../Fred/dist/lib/fred.scss */
+/* line 1301, ../../../Fred/dist/lib/fred.scss */
 .btn--large,
 .btn--icon-large,
 .btn--icon-large--rev,
@@ -1044,13 +1045,13 @@ table {
   line-height: 3.5;
 }
 
-/* line 1304, ../../../Fred/dist/lib/fred.scss */
+/* line 1305, ../../../Fred/dist/lib/fred.scss */
 .btn--large {
   padding-right: 3em;
   padding-left: 3em;
 }
 
-/* line 1312, ../../../Fred/dist/lib/fred.scss */
+/* line 1313, ../../../Fred/dist/lib/fred.scss */
 .btn--small,
 .btn--icon-small,
 .btn--icon-small--rev,
@@ -1058,7 +1059,7 @@ table {
   line-height: 2;
 }
 
-/* line 1316, ../../../Fred/dist/lib/fred.scss */
+/* line 1317, ../../../Fred/dist/lib/fred.scss */
 .btn--small {
   padding-right: 0.75em;
   padding-left: 0.75em;
@@ -1068,7 +1069,7 @@ table {
  * Pill type buttons with (rounded) ends
  * ----------------------------------------------------------------------------
  */
-/* line 1325, ../../../Fred/dist/lib/fred.scss */
+/* line 1326, ../../../Fred/dist/lib/fred.scss */
 .btn--soft {
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
@@ -1077,7 +1078,7 @@ table {
   border-radius: 200px;
 }
 
-/* line 1329, ../../../Fred/dist/lib/fred.scss */
+/* line 1330, ../../../Fred/dist/lib/fred.scss */
 .btn--hard {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1089,7 +1090,7 @@ table {
 /**
  * Block buttons stretch to the full width of their parent (handy!)
  */
-/* line 1337, ../../../Fred/dist/lib/fred.scss */
+/* line 1338, ../../../Fred/dist/lib/fred.scss */
 .btn--block {
   display: block;
   text-align: center;
@@ -1099,7 +1100,7 @@ table {
  * Make a button behave like a block at mobile only (also handy)
  */
 @media only screen and (max-width: 37.5em) {
-  /* line 1346, ../../../Fred/dist/lib/fred.scss */
+  /* line 1347, ../../../Fred/dist/lib/fred.scss */
   .btn--block-mobile {
     text-align: center;
     display: block;
@@ -1111,21 +1112,21 @@ table {
  * FireFox doesn't like line-heights on submit buttons. Stick a class on submit
  * buttons and make sure the padding's the same as your default button :)
  */
-/* line 1358, ../../../Fred/dist/lib/fred.scss */
+/* line 1359, ../../../Fred/dist/lib/fred.scss */
 .btn--submit {
   line-height: 1;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
 }
 
-/* line 1364, ../../../Fred/dist/lib/fred.scss */
+/* line 1365, ../../../Fred/dist/lib/fred.scss */
 .btn--submit-large {
   line-height: 1;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 
-/* line 1370, ../../../Fred/dist/lib/fred.scss */
+/* line 1371, ../../../Fred/dist/lib/fred.scss */
 .btn--submit-small {
   line-height: 1;
   padding-top: 0.375em;
@@ -1146,7 +1147,7 @@ table {
         <i class='i sprite_icon_close'></i>
     </a>
  */
-/* line 1393, ../../../Fred/dist/lib/fred.scss */
+/* line 1394, ../../../Fred/dist/lib/fred.scss */
 .btn--icon-only,
 .btn--icon-only--small,
 .btn--icon-only--large {
@@ -1154,78 +1155,78 @@ table {
   min-width: 1em;
 }
 
-/* line 1397, ../../../Fred/dist/lib/fred.scss */
+/* line 1398, ../../../Fred/dist/lib/fred.scss */
 .btn--icon-only {
   padding-left: 0.9375em;
   padding-right: 0.9375em;
 }
 
-/* line 1402, ../../../Fred/dist/lib/fred.scss */
+/* line 1403, ../../../Fred/dist/lib/fred.scss */
 .btn--icon-only--small {
   padding-left: 0.6em;
   padding-right: 0.6em;
 }
 
-/* line 1407, ../../../Fred/dist/lib/fred.scss */
+/* line 1408, ../../../Fred/dist/lib/fred.scss */
 .btn--icon-only--large {
   padding-left: 1.66667em;
   padding-right: 1.66667em;
 }
 
-/* line 1413, ../../../Fred/dist/lib/fred.scss */
+/* line 1414, ../../../Fred/dist/lib/fred.scss */
 .btn--icon {
   padding-left: 0.75em;
 }
-/* line 1415, ../../../Fred/dist/lib/fred.scss */
+/* line 1416, ../../../Fred/dist/lib/fred.scss */
 .btn--icon > .i {
   margin-right: 0.75em;
 }
 
-/* line 1420, ../../../Fred/dist/lib/fred.scss */
+/* line 1421, ../../../Fred/dist/lib/fred.scss */
 .btn--icon--rev {
   padding-right: 0.75em;
 }
-/* line 1422, ../../../Fred/dist/lib/fred.scss */
+/* line 1423, ../../../Fred/dist/lib/fred.scss */
 .btn--icon--rev > .i {
   margin-left: 0.75em;
 }
 
-/* line 1427, ../../../Fred/dist/lib/fred.scss */
+/* line 1428, ../../../Fred/dist/lib/fred.scss */
 .btn--icon-large {
   padding-left: 1.5em;
   padding-right: 3em;
 }
-/* line 1430, ../../../Fred/dist/lib/fred.scss */
+/* line 1431, ../../../Fred/dist/lib/fred.scss */
 .btn--icon-large > .i {
   margin-right: 0.75em;
 }
 
-/* line 1435, ../../../Fred/dist/lib/fred.scss */
+/* line 1436, ../../../Fred/dist/lib/fred.scss */
 .btn--icon-large--rev {
   padding-left: 3em;
   padding-right: 1.5em;
 }
-/* line 1438, ../../../Fred/dist/lib/fred.scss */
+/* line 1439, ../../../Fred/dist/lib/fred.scss */
 .btn--icon-large--rev > .i {
   margin-left: 0.75em;
 }
 
-/* line 1443, ../../../Fred/dist/lib/fred.scss */
+/* line 1444, ../../../Fred/dist/lib/fred.scss */
 .btn--icon-small {
   padding-left: 0.5em;
   padding-right: 0.75em;
 }
-/* line 1446, ../../../Fred/dist/lib/fred.scss */
+/* line 1447, ../../../Fred/dist/lib/fred.scss */
 .btn--icon-small > .i {
   margin-right: 0.375em;
 }
 
-/* line 1451, ../../../Fred/dist/lib/fred.scss */
+/* line 1452, ../../../Fred/dist/lib/fred.scss */
 .btn--icon-small--rev {
   padding-left: 0.75em;
   padding-right: 0.375em;
 }
-/* line 1454, ../../../Fred/dist/lib/fred.scss */
+/* line 1455, ../../../Fred/dist/lib/fred.scss */
 .btn--icon-small--rev > .i {
   margin-left: 0.75em;
 }
@@ -1239,7 +1240,7 @@ table {
  * Simple bounces
  * ----------------------------------------------------------------------------
  */
-/* line 1471, ../../../Fred/dist/lib/fred.scss */
+/* line 1472, ../../../Fred/dist/lib/fred.scss */
 .btn--bounce,
 .btn--bob {
   position: relative;
@@ -1250,12 +1251,12 @@ table {
   transition: bottom 100ms ease-out;
 }
 
-/* line 1476, ../../../Fred/dist/lib/fred.scss */
+/* line 1477, ../../../Fred/dist/lib/fred.scss */
 .btn--bounce:active {
   bottom: -2px;
 }
 
-/* line 1480, ../../../Fred/dist/lib/fred.scss */
+/* line 1481, ../../../Fred/dist/lib/fred.scss */
 .btn--bob:active {
   bottom: -1px;
 }
@@ -1263,7 +1264,7 @@ table {
 /**
  * Bounce the icon to a side
  */
-/* line 1490, ../../../Fred/dist/lib/fred.scss */
+/* line 1491, ../../../Fred/dist/lib/fred.scss */
 .btn--bounce-icon--right .i,
 .btn--bounce-icon--left .i,
 .btn--bounce-icon--bottom .i,
@@ -1281,7 +1282,7 @@ table {
   transition-duration: 300ms;
 }
 
-/* line 1496, ../../../Fred/dist/lib/fred.scss */
+/* line 1497, ../../../Fred/dist/lib/fred.scss */
 .btn--bounce-icon--right:hover .i {
   -webkit-transition-property: left;
   -moz-transition-property: left;
@@ -1291,7 +1292,7 @@ table {
   left: .3125em;
 }
 
-/* line 1501, ../../../Fred/dist/lib/fred.scss */
+/* line 1502, ../../../Fred/dist/lib/fred.scss */
 .btn--bounce-icon--left:hover .i {
   -webkit-transition-property: right;
   -moz-transition-property: right;
@@ -1301,7 +1302,7 @@ table {
   right: .3125em;
 }
 
-/* line 1506, ../../../Fred/dist/lib/fred.scss */
+/* line 1507, ../../../Fred/dist/lib/fred.scss */
 .btn--bounce-icon--bottom:hover .i {
   -webkit-transition-property: top;
   -moz-transition-property: top;
@@ -1311,7 +1312,7 @@ table {
   top: .3125em;
 }
 
-/* line 1511, ../../../Fred/dist/lib/fred.scss */
+/* line 1512, ../../../Fred/dist/lib/fred.scss */
 .btn--bounce-icon--top:hover .i {
   -webkit-transition-property: bottom;
   -moz-transition-property: bottom;
@@ -1325,12 +1326,12 @@ table {
  * Inset buttons on block level elements
  * ----------------------------------------------------------------------------
  */
-/* line 1520, ../../../Fred/dist/lib/fred.scss */
+/* line 1521, ../../../Fred/dist/lib/fred.scss */
 .btn--inset {
   position: relative;
 }
 
-/* line 1524, ../../../Fred/dist/lib/fred.scss */
+/* line 1525, ../../../Fred/dist/lib/fred.scss */
 .btn--inset:after {
   position: absolute;
   top: 0;
@@ -1350,28 +1351,28 @@ table {
   border-style: solid;
 }
 
-/* line 1538, ../../../Fred/dist/lib/fred.scss */
+/* line 1539, ../../../Fred/dist/lib/fred.scss */
 .btn--inset:hover:after {
   border-width: 4px;
   visibility: visible;
 }
 
-/* line 1542, ../../../Fred/dist/lib/fred.scss */
+/* line 1543, ../../../Fred/dist/lib/fred.scss */
 .btn--inset-primary:after {
   border-color: #3977B1;
 }
 
-/* line 1545, ../../../Fred/dist/lib/fred.scss */
+/* line 1546, ../../../Fred/dist/lib/fred.scss */
 .btn--inset-secondary:after {
   border-color: #eb3930;
 }
 
-/* line 1548, ../../../Fred/dist/lib/fred.scss */
+/* line 1549, ../../../Fred/dist/lib/fred.scss */
 .btn--inset-large:hover:after {
   border-width: 8px;
 }
 
-/* line 1551, ../../../Fred/dist/lib/fred.scss */
+/* line 1552, ../../../Fred/dist/lib/fred.scss */
 .btn--inset-small:hover:after {
   border-width: 1px;
 }
@@ -1380,19 +1381,19 @@ table {
  * Buttons that show a loading indicator when clicked
  * ----------------------------------------------------------------------------
  */
-/* line 1559, ../../../Fred/dist/lib/fred.scss */
+/* line 1560, ../../../Fred/dist/lib/fred.scss */
 .btn--spinner {
   position: relative;
   cursor: default;
 }
 
-/* line 1564, ../../../Fred/dist/lib/fred.scss */
+/* line 1565, ../../../Fred/dist/lib/fred.scss */
 .btn--spinner .btn--label {
   opacity: 0;
   visibility: hidden;
 }
 
-/* line 1569, ../../../Fred/dist/lib/fred.scss */
+/* line 1570, ../../../Fred/dist/lib/fred.scss */
 .btn--spinner:after {
   position: absolute;
   top: 0;
@@ -1405,7 +1406,7 @@ table {
   width: 100%;
 }
 
-/* line 1580, ../../../Fred/dist/lib/fred.scss */
+/* line 1581, ../../../Fred/dist/lib/fred.scss */
 .btn--spinner--text:after {
   content: attr(data-btn-loading-indicator);
 }
@@ -1414,20 +1415,20 @@ table {
  * Drop-down caret
  * ----------------------------------------------------------------------------
  */
-/* line 1588, ../../../Fred/dist/lib/fred.scss */
+/* line 1589, ../../../Fred/dist/lib/fred.scss */
 .caret {
+  /* This extend is found in core */
+  /* This extend is found in core */
   border-bottom: 0 dotted;
   border-left: .25em solid transparent;
   border-right: .25em solid transparent;
   border-top: .25em solid #000;
-  display: inline-block;
   height: 0;
   margin-left: .125em;
-  vertical-align: middle;
   width: 0;
 }
 
-/* line 1600, ../../../Fred/dist/lib/fred.scss */
+/* line 1601, ../../../Fred/dist/lib/fred.scss */
 .caret--rev {
   border-bottom: .25em solid #000;
   border-top: 0 dotted;
@@ -1438,7 +1439,7 @@ table {
  * ----------------------------------------------------------------------------
  * <button type="button" class="close" aria-hidden="true">×</button>
  */
-/* line 1610, ../../../Fred/dist/lib/fred.scss */
+/* line 1611, ../../../Fred/dist/lib/fred.scss */
 .close {
   padding: 0;
   cursor: pointer;
@@ -1447,16 +1448,16 @@ table {
   -webkit-appearance: none;
 }
 
-/* line 1618, ../../../Fred/dist/lib/fred.scss */
+/* line 1619, ../../../Fred/dist/lib/fred.scss */
 .close:after {
+  /* This extend is found in core */
   content: "\00d7";
-  display: inline-block;
   font-size: 1.5em;
   line-height: 1;
   opacity: 0.2;
 }
 
-/* line 1626, ../../../Fred/dist/lib/fred.scss */
+/* line 1627, ../../../Fred/dist/lib/fred.scss */
 .close:hover:after {
   opacity: 1;
 }
@@ -1468,7 +1469,7 @@ table {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 1640, ../../../Fred/dist/lib/fred.scss */
+/* line 1641, ../../../Fred/dist/lib/fred.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -1479,7 +1480,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 1651, ../../../Fred/dist/lib/fred.scss */
+/* line 1652, ../../../Fred/dist/lib/fred.scss */
 legend {
   border: 0;
   /* 1 */
@@ -1492,7 +1493,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 1665, ../../../Fred/dist/lib/fred.scss */
+/* line 1666, ../../../Fred/dist/lib/fred.scss */
 button,
 input,
 select,
@@ -1509,7 +1510,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 1677, ../../../Fred/dist/lib/fred.scss */
+/* line 1678, ../../../Fred/dist/lib/fred.scss */
 button,
 input {
   line-height: normal;
@@ -1521,7 +1522,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 1689, ../../../Fred/dist/lib/fred.scss */
+/* line 1690, ../../../Fred/dist/lib/fred.scss */
 button,
 select {
   text-transform: none;
@@ -1534,7 +1535,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 1704, ../../../Fred/dist/lib/fred.scss */
+/* line 1705, ../../../Fred/dist/lib/fred.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -1548,7 +1549,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 1714, ../../../Fred/dist/lib/fred.scss */
+/* line 1715, ../../../Fred/dist/lib/fred.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -1558,7 +1559,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 1724, ../../../Fred/dist/lib/fred.scss */
+/* line 1725, ../../../Fred/dist/lib/fred.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -1572,7 +1573,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 1735, ../../../Fred/dist/lib/fred.scss */
+/* line 1736, ../../../Fred/dist/lib/fred.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -1586,7 +1587,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 1748, ../../../Fred/dist/lib/fred.scss */
+/* line 1749, ../../../Fred/dist/lib/fred.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -1595,7 +1596,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 1757, ../../../Fred/dist/lib/fred.scss */
+/* line 1758, ../../../Fred/dist/lib/fred.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -1606,7 +1607,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 1767, ../../../Fred/dist/lib/fred.scss */
+/* line 1768, ../../../Fred/dist/lib/fred.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -1623,24 +1624,24 @@ textarea {
  * [3] A fix for Internet Explorer 8/9
  *
  */
-/* line 1780, ../../../Fred/dist/lib/fred.scss */
+/* line 1781, ../../../Fred/dist/lib/fred.scss */
 .grid {
   font-size: 0;
   /* [2] */
   text-align: justify;
   /* [1] */
 }
-/* line 1786, ../../../Fred/dist/lib/fred.scss */
+/* line 1787, ../../../Fred/dist/lib/fred.scss */
 .ie8 .grid {
   text-justify: normal;
 }
 
-/* line 1797, ../../../Fred/dist/lib/fred.scss */
+/* line 1798, ../../../Fred/dist/lib/fred.scss */
 .grid__item, .grid > * {
   font-size: medium;
 }
 
-/* line 1806, ../../../Fred/dist/lib/fred.scss */
+/* line 1807, ../../../Fred/dist/lib/fred.scss */
 .grid:after,
 .grid__break {
   content: '';
@@ -1651,424 +1652,424 @@ textarea {
 /**
  * Vertical align these grid items in the middle!
  */
-/* line 1830, ../../../Fred/dist/lib/fred.scss */
+/* line 1831, ../../../Fred/dist/lib/fred.scss */
 .grid-float {
   width: 100%;
 }
 
-/* line 1834, ../../../Fred/dist/lib/fred.scss */
+/* line 1835, ../../../Fred/dist/lib/fred.scss */
 .grid-float:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 1840, ../../../Fred/dist/lib/fred.scss */
+/* line 1841, ../../../Fred/dist/lib/fred.scss */
 .grid-float > [class^=col] {
   padding-left: 1em;
 }
 
-/* line 1847, ../../../Fred/dist/lib/fred.scss */
+/* line 1848, ../../../Fred/dist/lib/fred.scss */
 .grid-float > [class^=col]:first-of-type {
   padding-left: 0;
 }
 
-/* line 1854, ../../../Fred/dist/lib/fred.scss */
+/* line 1855, ../../../Fred/dist/lib/fred.scss */
 .col {
   width: 100%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-1-3 {
   width: 33.33333%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-2-3 {
   width: 66.66667%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-1-4 {
   width: 25%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-2-4 {
   width: 50%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-3-4 {
   width: 75%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-1-5 {
   width: 20%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-2-5 {
   width: 40%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-3-5 {
   width: 60%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-4-5 {
   width: 80%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-1-10 {
   width: 10%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-2-10 {
   width: 20%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-3-10 {
   width: 30%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-4-10 {
   width: 40%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-5-10 {
   width: 50%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-6-10 {
   width: 60%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-7-10 {
   width: 70%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-8-10 {
   width: 80%;
 }
 
-/* line 1871, ../../../Fred/dist/lib/fred.scss */
+/* line 1872, ../../../Fred/dist/lib/fred.scss */
 .col-9-10 {
   width: 90%;
 }
 
 @media only screen {
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-1-3--q-small {
     width: 33.33333%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-2-3--q-small {
     width: 66.66667%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-1-4--q-small {
     width: 25%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-2-4--q-small {
     width: 50%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-3-4--q-small {
     width: 75%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-1-5--q-small {
     width: 20%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-2-5--q-small {
     width: 40%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-3-5--q-small {
     width: 60%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-4-5--q-small {
     width: 80%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-1-10--q-small {
     width: 10%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-2-10--q-small {
     width: 20%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-3-10--q-small {
     width: 30%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-4-10--q-small {
     width: 40%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-5-10--q-small {
     width: 50%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-6-10--q-small {
     width: 60%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-7-10--q-small {
     width: 70%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-8-10--q-small {
     width: 80%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-9-10--q-small {
     width: 90%;
   }
 
-  /* line 1888, ../../../Fred/dist/lib/fred.scss */
+  /* line 1889, ../../../Fred/dist/lib/fred.scss */
   .col--q-small {
     width: 100%;
   }
 }
 @media only screen and (min-width: 48em) {
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-1-3--q-medium {
     width: 33.33333%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-2-3--q-medium {
     width: 66.66667%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-1-4--q-medium {
     width: 25%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-2-4--q-medium {
     width: 50%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-3-4--q-medium {
     width: 75%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-1-5--q-medium {
     width: 20%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-2-5--q-medium {
     width: 40%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-3-5--q-medium {
     width: 60%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-4-5--q-medium {
     width: 80%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-1-10--q-medium {
     width: 10%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-2-10--q-medium {
     width: 20%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-3-10--q-medium {
     width: 30%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-4-10--q-medium {
     width: 40%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-5-10--q-medium {
     width: 50%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-6-10--q-medium {
     width: 60%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-7-10--q-medium {
     width: 70%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-8-10--q-medium {
     width: 80%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-9-10--q-medium {
     width: 90%;
   }
 
-  /* line 1888, ../../../Fred/dist/lib/fred.scss */
+  /* line 1889, ../../../Fred/dist/lib/fred.scss */
   .col--q-medium {
     width: 100%;
   }
 }
 @media only screen and (min-width: 60em) {
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-1-3--q-large {
     width: 33.33333%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-2-3--q-large {
     width: 66.66667%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-1-4--q-large {
     width: 25%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-2-4--q-large {
     width: 50%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-3-4--q-large {
     width: 75%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-1-5--q-large {
     width: 20%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-2-5--q-large {
     width: 40%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-3-5--q-large {
     width: 60%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-4-5--q-large {
     width: 80%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-1-10--q-large {
     width: 10%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-2-10--q-large {
     width: 20%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-3-10--q-large {
     width: 30%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-4-10--q-large {
     width: 40%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-5-10--q-large {
     width: 50%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-6-10--q-large {
     width: 60%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-7-10--q-large {
     width: 70%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-8-10--q-large {
     width: 80%;
   }
 
-  /* line 1871, ../../../Fred/dist/lib/fred.scss */
+  /* line 1872, ../../../Fred/dist/lib/fred.scss */
   .col-9-10--q-large {
     width: 90%;
   }
 
-  /* line 1888, ../../../Fred/dist/lib/fred.scss */
+  /* line 1889, ../../../Fred/dist/lib/fred.scss */
   .col--q-large {
     width: 100%;
   }
 }
-/* line 1895, ../../../Fred/dist/lib/fred.scss */
+/* line 1896, ../../../Fred/dist/lib/fred.scss */
 .heading > :first-child {
   margin-top: 0;
 }
 
-/* line 1900, ../../../Fred/dist/lib/fred.scss */
+/* line 1901, ../../../Fred/dist/lib/fred.scss */
 .heading--keyline {
   padding-bottom: 0.5em;
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
 
-/* line 1907, ../../../Fred/dist/lib/fred.scss */
+/* line 1908, ../../../Fred/dist/lib/fred.scss */
 .heading__subheading {
   font-weight: normal;
 }
@@ -2077,18 +2078,17 @@ textarea {
  * Icon block
  * ----------------------------------------------------------------------------
  */
-/* line 1916, ../../../Fred/dist/lib/fred.scss */
+/* line 1917, ../../../Fred/dist/lib/fred.scss */
 .icon-text,
 .icon-text--rev {
   /* a, div, etc */
-  display: inline-block;
+  /* This extend is found in core */
 }
 
 /* line 1921, ../../../Fred/dist/lib/fred.scss */
 .i {
   overflow: hidden;
   /* for IE6 */
-  vertical-align: middle;
   /* SMACSS line-height: 0; ? */
 }
 /* line 1926, ../../../Fred/dist/lib/fred.scss */
@@ -2162,6 +2162,11 @@ textarea {
 .list-unstyled > li, .list--inline > li, .block-list > li {
   list-style: none;
   margin-left: 0;
+}
+
+/* line 1997, ../../../Fred/dist/lib/fred.scss */
+.list--inline {
+  /* This extend is found in core */
 }
 
 /* line 2002, ../../../Fred/dist/lib/fred.scss */
@@ -2413,7 +2418,7 @@ dd {
  */
 /* line 2283, ../../../Fred/dist/lib/fred.scss */
 .pill, .lozenge {
-  display: inline-block;
+  /* This extend is found in core */
   /**
    * These numbers set in ems mean that, at its narrowest, a lozenge will be
    * the same width as the `line-height` set on the `html` element.
@@ -4601,17 +4606,18 @@ hr {
 }
 /* 
 
-shame!!!! just some dirty styles to get a basic style. I will refacter to get the project started :) 
+shame!!!! just some dirty styles to get a basic style. 
+I will refacter to get the project started :) 
 
 */
-/* line 8, ../sass/_page-specific.scss */
+/* line 9, ../sass/_page-specific.scss */
 .content,
 .navigation {
   max-width: 960px;
   width: 100%;
 }
 
-/* line 14, ../sass/_page-specific.scss */
+/* line 15, ../sass/_page-specific.scss */
 .navigation--wrapper {
   position: fixed;
   top: 0;
@@ -4619,50 +4625,37 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
   z-index: 5;
 }
 
-/* line 21, ../sass/_page-specific.scss */
+/* line 22, ../sass/_page-specific.scss */
 .navigation a {
-  color: #fff;
   text-decoration: none;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   display: inline-block;
 }
 
-/* line 27, ../sass/_page-specific.scss */
-.navigation a.active {
-  background-color: #2E2F2B;
-}
-
-/* line 30, ../sass/_page-specific.scss */
-.navigation a:hover {
-  color: #E6DB74;
-}
-
-/* line 35, ../sass/_page-specific.scss */
+/* line 28, ../sass/_page-specific.scss */
 .logo {
-  display: inline-block;
   margin-top: 0.45em;
   font-size: 1.8em;
 }
-/* line 39, ../sass/_page-specific.scss */
+/* line 32, ../sass/_page-specific.scss */
 .logo a {
   color: #fff;
 }
-/* line 42, ../sass/_page-specific.scss */
+/* line 35, ../sass/_page-specific.scss */
 .logo a:hover {
   color: #E6DB74;
 }
-/* line 48, ../sass/_page-specific.scss */
+/* line 41, ../sass/_page-specific.scss */
 .logo span {
   color: #E6DB74;
 }
 
-/* line 55, ../sass/_page-specific.scss */
+/* line 48, ../sass/_page-specific.scss */
 .testbox-100-100 {
   width: 100px;
   height: 100px;
 }
 
-/* line 60, ../sass/_page-specific.scss */
+/* line 53, ../sass/_page-specific.scss */
 .fred-block-grid, .fred-button-group, .fred-arrows,
 .fred-badges,
 .fred-blocks,
@@ -4692,163 +4685,163 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
   left: -329px;
 }
 
-/* line 63, ../sass/_page-specific.scss */
+/* line 56, ../sass/_page-specific.scss */
 .fred-block-grid {
   top: 123px;
 }
 
-/* line 67, ../sass/_page-specific.scss */
+/* line 60, ../sass/_page-specific.scss */
 .fred-button-group {
   top: 123px;
 }
 
-/* line 101, ../sass/_page-specific.scss */
+/* line 94, ../sass/_page-specific.scss */
 .fred-arrows {
   top: -26px;
 }
 
-/* line 102, ../sass/_page-specific.scss */
+/* line 95, ../sass/_page-specific.scss */
 .fred-badges {
   top: 7px;
 }
 
-/* line 103, ../sass/_page-specific.scss */
+/* line 96, ../sass/_page-specific.scss */
 .fred-blocks {
   top: 41px;
 }
 
-/* line 104, ../sass/_page-specific.scss */
+/* line 97, ../sass/_page-specific.scss */
 .fred-breadcrumbs {
   top: 74px;
 }
 
-/* line 105, ../sass/_page-specific.scss */
+/* line 98, ../sass/_page-specific.scss */
 .fred-buttons {
   top: 106px;
 }
 
-/* line 106, ../sass/_page-specific.scss */
+/* line 99, ../sass/_page-specific.scss */
 .fred-caret {
   top: 139px;
 }
 
-/* line 107, ../sass/_page-specific.scss */
+/* line 100, ../sass/_page-specific.scss */
 .fred-close {
   top: 172px;
 }
 
-/* line 108, ../sass/_page-specific.scss */
+/* line 101, ../sass/_page-specific.scss */
 .fred-forms {
   top: 205px;
 }
 
-/* line 109, ../sass/_page-specific.scss */
+/* line 102, ../sass/_page-specific.scss */
 .fred-grid {
   top: 239px;
 }
 
-/* line 110, ../sass/_page-specific.scss */
+/* line 103, ../sass/_page-specific.scss */
 .fred-headings {
   top: 271px;
 }
 
-/* line 111, ../sass/_page-specific.scss */
+/* line 104, ../sass/_page-specific.scss */
 .fred-icons-with-text {
   top: 304px;
 }
 
-/* line 112, ../sass/_page-specific.scss */
+/* line 105, ../sass/_page-specific.scss */
 .fred-images {
   top: 338px;
 }
 
-/* line 113, ../sass/_page-specific.scss */
+/* line 106, ../sass/_page-specific.scss */
 .fred-lists {
   top: 370px;
 }
 
-/* line 114, ../sass/_page-specific.scss */
+/* line 107, ../sass/_page-specific.scss */
 .fred-media {
   top: 403px;
 }
 
-/* line 115, ../sass/_page-specific.scss */
+/* line 108, ../sass/_page-specific.scss */
 .fred-radii {
   top: 436px;
 }
 
-/* line 116, ../sass/_page-specific.scss */
+/* line 109, ../sass/_page-specific.scss */
 .fred-spacing {
   top: 468px;
 }
 
-/* line 117, ../sass/_page-specific.scss */
+/* line 110, ../sass/_page-specific.scss */
 .fred-typography {
   top: 502px;
 }
 
-/* line 118, ../sass/_page-specific.scss */
+/* line 111, ../sass/_page-specific.scss */
 .fred-positioning {
   top: 536px;
 }
 
-/* line 119, ../sass/_page-specific.scss */
+/* line 112, ../sass/_page-specific.scss */
 .fred-visability {
   top: 569px;
 }
 
-/* line 120, ../sass/_page-specific.scss */
+/* line 113, ../sass/_page-specific.scss */
 .fred-prepend {
   top: 601px;
 }
 
-/* line 121, ../sass/_page-specific.scss */
+/* line 114, ../sass/_page-specific.scss */
 .fred-inline-block {
   top: 655px;
 }
 
-/* line 122, ../sass/_page-specific.scss */
+/* line 115, ../sass/_page-specific.scss */
 .fred-ratio {
   top: 687px;
 }
 
-/* line 123, ../sass/_page-specific.scss */
+/* line 116, ../sass/_page-specific.scss */
 .fred-pills {
   top: 723px;
 }
 
-/* line 124, ../sass/_page-specific.scss */
+/* line 117, ../sass/_page-specific.scss */
 .fred-pagination {
   top: 755px;
 }
 
-/* line 125, ../sass/_page-specific.scss */
+/* line 118, ../sass/_page-specific.scss */
 .fred-navigation {
   top: 787px;
 }
 
-/* line 126, ../sass/_page-specific.scss */
+/* line 119, ../sass/_page-specific.scss */
 .fred-button-group {
   top: 820px;
 }
 
-/* line 127, ../sass/_page-specific.scss */
+/* line 120, ../sass/_page-specific.scss */
 .fred-block-grid {
   top: 853px;
 }
 
-/* line 128, ../sass/_page-specific.scss */
+/* line 121, ../sass/_page-specific.scss */
 .fred-links {
   top: 887px;
 }
 
-/* line 133, ../sass/_page-specific.scss */
+/* line 126, ../sass/_page-specific.scss */
 .specific-bird {
   top: 10px;
   left: 17px;
 }
 
-/* line 139, ../sass/_page-specific.scss */
+/* line 132, ../sass/_page-specific.scss */
 .icon-placeholder {
   background-image: url("/assets/images/icon-placeholder.png");
   width: 40px;
@@ -4856,7 +4849,7 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
   display: inline-block;
 }
 
-/* line 148, ../sass/_page-specific.scss */
+/* line 141, ../sass/_page-specific.scss */
 .img-rounded {
   -webkit-border-radius: 50% 50% 50% 50%;
   -moz-border-radius: 50% 50% 50% 50%;
@@ -4865,7 +4858,7 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
   border-radius: 50% 50% 50% 50%;
 }
 
-/* line 176, ../sass/_page-specific.scss */
+/* line 169, ../sass/_page-specific.scss */
 .pink-input-text {
   /* @include placeholder($color);*/
 }
@@ -4890,14 +4883,14 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
  * Typographic relationships (nawww, aren't they so good together?)
  * ----------------------------------------------------------------------------
  */
-/* line 187, ../sass/_page-specific.scss */
+/* line 180, ../sass/_page-specific.scss */
 h4 + h6,
 h4 + p,
 h5 + p {
   margin-top: 0.03571emem;
 }
 
-/* line 194, ../sass/_page-specific.scss */
+/* line 187, ../sass/_page-specific.scss */
 p + p,
 .list-styled li + li,
 .list-styled--decimal li + li,
@@ -4909,21 +4902,21 @@ p + p,
  *  Theme block --green, pink, blue
  * -----------------------------------------------------------------------------
  */
-/* line 219, ../sass/_page-specific.scss */
+/* line 212, ../sass/_page-specific.scss */
 .green-block {
   background-color: #a6e22e;
   color: #2e2f2b;
   border-color: #a6e22e;
 }
 
-/* line 224, ../sass/_page-specific.scss */
+/* line 217, ../sass/_page-specific.scss */
 .pink-block {
   background-color: #f92672;
   color: #2e2f2b;
   border-color: #f92672;
 }
 
-/* line 229, ../sass/_page-specific.scss */
+/* line 222, ../sass/_page-specific.scss */
 .blue-block {
   background-color: #4aa1c5;
   color: white;
@@ -5138,4 +5131,22 @@ a.tp-badge_active > .badge {
 /* line 352, ../sass/_theme.scss */
 .heading__subheading {
   color: #999999;
+}
+
+/* line 370, ../sass/_theme.scss */
+.tp-navigation {
+  background-color: #4d4d4d;
+}
+/* line 375, ../sass/_theme.scss */
+.tp-navigation > li, .tp-navigation > a {
+  color: white;
+}
+/* line 380, ../sass/_theme.scss */
+.tp-navigation > li:hover, .tp-navigation > li.active, .tp-navigation > a.active {
+  color: #e6db74;
+}
+
+/* line 386, ../sass/_theme.scss */
+.test li.active {
+  color: red;
 }

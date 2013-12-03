@@ -8,18 +8,16 @@
  *
  */
 .badge {
-    @extend %inline-block;
-
+    @extend %inline-block; /* This extend is found in core */
+    @extend %align--baseline; /* This extend is found in core */
+    @extend %relative;/* This extend is found in core */
     line-height: $base-line-height;
     margin-left:0.3em;
     min-width: .625em;
     padding: .1875em .4375em;
     // Quick fix for labels/badges in buttons
-
-    position: relative;
-    text-align: center;
     top: -1px;
-    vertical-align: baseline;
+    text-align: center;  
     white-space: nowrap;
 
     // Empty badges collapse automatically (not available in IE8)

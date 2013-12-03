@@ -5,13 +5,12 @@
 
 .icon-text,
 .icon-text--rev{/* a, div, etc */
-    @extend %inline-block;
-    display:inline-block; //CHECK why this isn't extending
+    @extend %inline-block; /* This extend is found in core */
 }
 
 .i{
+    @extend %align--middle; //in core 
     overflow: hidden; /* for IE6 */
-    vertical-align: middle;
     /* SMACSS line-height: 0; ? */
     .icon-text &,
     .btn--icon &{

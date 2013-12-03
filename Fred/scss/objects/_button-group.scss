@@ -7,12 +7,13 @@
 // Make the div behave like a button
 .btn-group,
 .btn-group-vertical {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle; // match .btn alignment given font-size hack above
+    @extend %relative; //in core
+    @extend %inline-block; //in core
+    @extend %align--middle;// in core. This match .btn alignment given font-size hack above
+
     > .btn {
-        position: relative;
-        float: left;
+        @extend %relative; //in core
+        @extend .left; //in core
         // Bring the "active" button to the front
         &:hover,
         &:focus,
@@ -42,7 +43,7 @@
     @extend %clearfix;
 
     .btn-group {
-        float: left;
+        @extend .left; //in core
     }
     // Space out series of button groups
     > .btn,
@@ -73,7 +74,7 @@
 
 // Custom edits for including btn-groups within btn-groups (useful for including dropdown buttons within a btn-group)
 .btn-group > .btn-group {
-    float: left;
+    @extend .left; /* This extend is found in core */
 }
 .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
     border-radius: 0;

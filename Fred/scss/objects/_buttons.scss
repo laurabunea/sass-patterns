@@ -16,6 +16,7 @@
  */
 .btn {
     @extend .inline-block;                          /* [1] */
+    @extend %align--middle;                         /* [2] */
     //@extend .user-select-none;
     @include vendor(border-radius, $base-spacing-unit/4);
     border-color: transparent;
@@ -29,7 +30,6 @@
     padding-left: $base-spacing-unit;               /* [7] */
     padding-right: $base-spacing-unit;              /* [7] */
     padding-top: 0;                                 /* [6] */
-    vertical-align: middle;                         /* [2] */
     white-space: nowrap;                            /* [3] */
 
     &,

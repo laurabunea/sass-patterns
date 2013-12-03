@@ -6,7 +6,7 @@
 /* Unicode space added since inline-block means non-collapsing white-space */
 .breadcrumbs {
     > li {
-        @extend %inline-block;
+        @extend %inline-block; /* This extend is found in core */
         &+li:before {
             content: "/\00a0";
             padding: 0 $bs-xxxs;

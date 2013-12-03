@@ -20,21 +20,13 @@ I will refacter to get the project started :)
 }
 
     .navigation a {
-        color:#fff;
         text-decoration: none;
-        text-shadow: 0 1px rgba(0, 0, 0, 0.3);
         display:inline-block;
     }
-        .navigation a.active {
-            background-color: #2E2F2B;
-        }
-        .navigation a:hover {
-            color:#E6DB74;
-        }
 
 
 .logo {
-    display:inline-block;
+    @extend %inline-block;
     margin-top:0.45em;
     font-size:1.8em;
     a {
@@ -54,8 +46,8 @@ I will refacter to get the project started :)
 
 
 .testbox-100-100 {
-     width:100px;
-    height:100px;
+  width:100px;
+  height:100px;
 }
 
 %fred {
