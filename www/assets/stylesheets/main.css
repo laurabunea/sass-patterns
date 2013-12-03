@@ -4245,7 +4245,7 @@ body {
 }
 
 /* line 2459, ../../../Fred/dist/lib/fred.scss */
-.font-size-xs, h6, .h6, p, .text, li, code {
+.font-size-xs, h6, .h6, p, .text, li, code, dt, dd {
   font-size: 0.875em;
 }
 
@@ -4305,7 +4305,7 @@ h6, .h6 {
 }
 
 /* line 2522, ../../../Fred/dist/lib/fred.scss */
-p, .text, li, code {
+p, .text, li, code, dt, dd {
   line-height: 1.5;
   margin-top: 0.85714em;
 }
@@ -4527,31 +4527,6 @@ hr {
   position: absolute;
 }
 
-/**
- *  Theme block --green, pink, blue
- * -----------------------------------------------------------------------------
- */
-/* line 152, ../sass/_variables.scss */
-.green-block {
-  background-color: #a6e22e;
-  color: #2e2f2b;
-  border-color: #a6e22e;
-}
-
-/* line 157, ../sass/_variables.scss */
-.pink-block {
-  background-color: #f92672;
-  color: #2e2f2b;
-  border-color: #f92672;
-}
-
-/* line 162, ../sass/_variables.scss */
-.blue-block {
-  background-color: #4aa1c5;
-  color: white;
-  border-color: #4aa1c5;
-}
-
 @media print {
   /* line 7, ../sass/_print.scss */
   * {
@@ -4701,16 +4676,17 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
 .fred-icons-with-text,
 .fred-images,
 .fred-lists,
-.fred-meia,
+.fred-media,
 .fred-visability,
 .fred-typography,
 .fred-spacing,
 .fred-ratio,
+.fred-radii,
 .fred-prepend,
 .fred-positioning,
 .fred-pills,
 .fred-pagination,
-.fred-nav,
+.fred-navigation,
 .fred-links,
 .fred-inline-block {
   left: -329px;
@@ -4726,158 +4702,153 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
   top: 123px;
 }
 
-/* line 100, ../sass/_page-specific.scss */
+/* line 101, ../sass/_page-specific.scss */
 .fred-arrows {
   top: -26px;
 }
 
-/* line 101, ../sass/_page-specific.scss */
+/* line 102, ../sass/_page-specific.scss */
 .fred-badges {
   top: 7px;
 }
 
-/* line 102, ../sass/_page-specific.scss */
+/* line 103, ../sass/_page-specific.scss */
 .fred-blocks {
   top: 41px;
 }
 
-/* line 103, ../sass/_page-specific.scss */
+/* line 104, ../sass/_page-specific.scss */
 .fred-breadcrumbs {
   top: 74px;
 }
 
-/* line 104, ../sass/_page-specific.scss */
+/* line 105, ../sass/_page-specific.scss */
 .fred-buttons {
   top: 106px;
 }
 
-/* line 105, ../sass/_page-specific.scss */
+/* line 106, ../sass/_page-specific.scss */
 .fred-caret {
   top: 139px;
 }
 
-/* line 106, ../sass/_page-specific.scss */
+/* line 107, ../sass/_page-specific.scss */
 .fred-close {
   top: 172px;
 }
 
-/* line 107, ../sass/_page-specific.scss */
+/* line 108, ../sass/_page-specific.scss */
 .fred-forms {
   top: 205px;
 }
 
-/* line 108, ../sass/_page-specific.scss */
+/* line 109, ../sass/_page-specific.scss */
 .fred-grid {
   top: 239px;
 }
 
-/* line 109, ../sass/_page-specific.scss */
+/* line 110, ../sass/_page-specific.scss */
 .fred-headings {
   top: 271px;
 }
 
-/* line 110, ../sass/_page-specific.scss */
+/* line 111, ../sass/_page-specific.scss */
 .fred-icons-with-text {
   top: 304px;
 }
 
-/* line 111, ../sass/_page-specific.scss */
+/* line 112, ../sass/_page-specific.scss */
 .fred-images {
   top: 338px;
 }
 
-/* line 112, ../sass/_page-specific.scss */
+/* line 113, ../sass/_page-specific.scss */
 .fred-lists {
   top: 370px;
 }
 
-/* line 113, ../sass/_page-specific.scss */
+/* line 114, ../sass/_page-specific.scss */
 .fred-media {
   top: 403px;
 }
 
-/* line 114, ../sass/_page-specific.scss */
+/* line 115, ../sass/_page-specific.scss */
 .fred-radii {
   top: 436px;
 }
 
-/* line 115, ../sass/_page-specific.scss */
+/* line 116, ../sass/_page-specific.scss */
 .fred-spacing {
   top: 468px;
 }
 
-/* line 116, ../sass/_page-specific.scss */
+/* line 117, ../sass/_page-specific.scss */
 .fred-typography {
   top: 502px;
 }
 
-/* line 117, ../sass/_page-specific.scss */
+/* line 118, ../sass/_page-specific.scss */
 .fred-positioning {
   top: 536px;
 }
 
-/* line 118, ../sass/_page-specific.scss */
+/* line 119, ../sass/_page-specific.scss */
 .fred-visability {
   top: 569px;
 }
 
-/* line 119, ../sass/_page-specific.scss */
+/* line 120, ../sass/_page-specific.scss */
 .fred-prepend {
   top: 601px;
 }
 
-/* line 120, ../sass/_page-specific.scss */
+/* line 121, ../sass/_page-specific.scss */
 .fred-inline-block {
   top: 655px;
 }
 
-/* line 121, ../sass/_page-specific.scss */
+/* line 122, ../sass/_page-specific.scss */
 .fred-ratio {
   top: 687px;
 }
 
-/* line 122, ../sass/_page-specific.scss */
+/* line 123, ../sass/_page-specific.scss */
 .fred-pills {
   top: 723px;
 }
 
-/* line 123, ../sass/_page-specific.scss */
+/* line 124, ../sass/_page-specific.scss */
 .fred-pagination {
   top: 755px;
 }
 
-/* line 124, ../sass/_page-specific.scss */
-.fred-nav {
+/* line 125, ../sass/_page-specific.scss */
+.fred-navigation {
   top: 787px;
 }
 
-/* line 125, ../sass/_page-specific.scss */
+/* line 126, ../sass/_page-specific.scss */
 .fred-button-group {
   top: 820px;
 }
 
-/* line 126, ../sass/_page-specific.scss */
+/* line 127, ../sass/_page-specific.scss */
 .fred-block-grid {
   top: 853px;
 }
 
-/* line 127, ../sass/_page-specific.scss */
+/* line 128, ../sass/_page-specific.scss */
 .fred-links {
   top: 887px;
 }
 
-/* line 131, ../sass/_page-specific.scss */
-.fred-nav {
-  top: 338px;
-}
-
-/* line 135, ../sass/_page-specific.scss */
+/* line 133, ../sass/_page-specific.scss */
 .specific-bird {
   top: 10px;
   left: 17px;
 }
 
-/* line 141, ../sass/_page-specific.scss */
+/* line 139, ../sass/_page-specific.scss */
 .icon-placeholder {
   background-image: url("/assets/images/icon-placeholder.png");
   width: 40px;
@@ -4885,7 +4856,7 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
   display: inline-block;
 }
 
-/* line 150, ../sass/_page-specific.scss */
+/* line 148, ../sass/_page-specific.scss */
 .img-rounded {
   -webkit-border-radius: 50% 50% 50% 50%;
   -moz-border-radius: 50% 50% 50% 50%;
@@ -4894,7 +4865,7 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
   border-radius: 50% 50% 50% 50%;
 }
 
-/* line 178, ../sass/_page-specific.scss */
+/* line 176, ../sass/_page-specific.scss */
 .pink-input-text {
   /* @include placeholder($color);*/
 }
@@ -4919,19 +4890,44 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
  * Typographic relationships (nawww, aren't they so good together?)
  * ----------------------------------------------------------------------------
  */
-/* line 189, ../sass/_page-specific.scss */
+/* line 187, ../sass/_page-specific.scss */
 h4 + h6,
 h4 + p,
 h5 + p {
   margin-top: 0.03571emem;
 }
 
-/* line 196, ../sass/_page-specific.scss */
+/* line 194, ../sass/_page-specific.scss */
 p + p,
 .list-styled li + li,
 .list-styled--decimal li + li,
 .list-styled-alpha li + li {
   margin-top: 0.03571emem;
+}
+
+/**
+ *  Theme block --green, pink, blue
+ * -----------------------------------------------------------------------------
+ */
+/* line 219, ../sass/_page-specific.scss */
+.green-block {
+  background-color: #a6e22e;
+  color: #2e2f2b;
+  border-color: #a6e22e;
+}
+
+/* line 224, ../sass/_page-specific.scss */
+.pink-block {
+  background-color: #f92672;
+  color: #2e2f2b;
+  border-color: #f92672;
+}
+
+/* line 229, ../sass/_page-specific.scss */
+.blue-block {
+  background-color: #4aa1c5;
+  color: white;
+  border-color: #4aa1c5;
 }
 
 /**
@@ -5123,22 +5119,23 @@ a.tp-badge_active > .badge {
   color: white;
 }
 
-/* line 330, ../sass/_theme.scss */
+/* line 331, ../sass/_theme.scss */
 .tp-lozenge {
+  background-color: #f92672;
   border-radius: 0.25em;
 }
 
-/* line 342, ../sass/_theme.scss */
+/* line 344, ../sass/_theme.scss */
 .tp-heading {
   color: #2e2f2b;
 }
 
-/* line 346, ../sass/_theme.scss */
+/* line 348, ../sass/_theme.scss */
 .heading--keyline {
   border-bottom-color: #e5e5e5;
 }
 
-/* line 350, ../sass/_theme.scss */
+/* line 352, ../sass/_theme.scss */
 .heading__subheading {
   color: #999999;
 }

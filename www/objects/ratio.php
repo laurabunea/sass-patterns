@@ -51,16 +51,16 @@
                 This box will be 16:9
             </p>
 
-             <div class='ratio-16-9'>
+             <div class='ratio-16-9 tt-block'>
                 <div class='ratio__content'></div>
              </div>
 
 
-            </p>
+            <p>
                 This box will be a square
             </p>
 
-             <div class='ratio-square'>
+             <div class='ratio-square tt-block'>
                 <div class='ratio__content'></div>
              </div>
         </div><!--  hello world block ends -->

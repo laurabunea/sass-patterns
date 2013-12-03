@@ -1,6 +1,7 @@
 /* 
 
-shame!!!! just some dirty styles to get a basic style. I will refacter to get the project started :) 
+shame!!!! just some dirty styles to get a basic style. 
+I will refacter to get the project started :) 
 
 */
 
@@ -82,16 +83,17 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
 .fred-icons-with-text,
 .fred-images,
 .fred-lists,
-.fred-meia,
+.fred-media,
 .fred-visability,
 .fred-typography,
 .fred-spacing,
 .fred-ratio,
+.fred-radii,
 .fred-prepend,
 .fred-positioning,
 .fred-pills,
 .fred-pagination,
-.fred-nav,
+.fred-navigation,
 .fred-links,
 .fred-inline-block,{
   @extend %fred;
@@ -121,14 +123,11 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
 .fred-ratio           {top:687px;} //22
 .fred-pills           {top:723px;} //23
 .fred-pagination      {top:755px;} //24
-.fred-nav             {top:787px;} //25
+.fred-navigation      {top:787px;} //25
 .fred-button-group    {top:820px;} //26
 .fred-block-grid      {top:853px;} //27
 .fred-links           {top:887px;} //28
 
-
-
-.fred-nav             {top:338px;}
 
 
 //example for poitioning page
@@ -187,12 +186,48 @@ shame!!!! just some dirty styles to get a basic style. I will refacter to get th
 h4 + h6,
 h4 + p,
 h5 + p {
-    margin-top: px-to-em($bs--xxs, $font-size-xs);               
+    margin-top: px-to-em($bs-xxs, $font-size-xs);               
 }
 
 p + p, 
 .list-styled li + li, 
 .list-styled--decimal li + li, 
 .list-styled-alpha li + li {
-    margin-top: px-to-em($bs--xxs, $font-size-xs);                           
+    margin-top: px-to-em($bs-xxs, $font-size-xs);                           
+}
+
+/**
+ *  Theme block --green, pink, blue
+ * -----------------------------------------------------------------------------
+ */
+
+//green theme box
+$green-bg-color:                #A6E22E;
+$green-txt-color:               $base-font-color; 
+$green-border-color:            $green-bg-color;
+
+//pink theme box
+$pink-bg-color:                 #F92672;
+$pink-txt-color:                $base-font-color ; 
+$pink-border-color:             $pink-bg-color;
+
+//blue theme box
+$blue-bg-color:                 #4AA1C5;
+$blue-txt-color:                #fff; 
+$blue-border-color:             $blue-bg-color;
+
+
+.green-block {
+  @extend %border;
+    @include theme-block( $green-bg-color, $green-txt-color, $green-border-color );
+}
+
+.pink-block {
+  @extend %border;
+    @include theme-block( $pink-bg-color, $pink-txt-color, $pink-border-color );
+}
+
+.blue-block {
+  @extend %border;
+    @include theme-block( $blue-bg-color, $blue-txt-color, $blue-border-color );
 }

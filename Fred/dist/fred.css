@@ -2492,7 +2492,7 @@ html, body {
 .font-size-s, h5, .h5, .intro {
   font-size: 1em; }
 
-.font-size-xs, h6, .h6, p, .text, li, code {
+.font-size-xs, h6, .h6, p, .text, li, code, dt, dd {
   font-size: 0.875em; }
 
 .font-size-xxs, .small, .caption {
@@ -2536,7 +2536,7 @@ h6, .h6 {
   line-height: 1.5;
   margin-top: 0.85714em; }
 
-p, .text, li, code {
+p, .text, li, code, dt, dd {
   line-height: 1.5;
   margin-top: 0.85714em; }
 

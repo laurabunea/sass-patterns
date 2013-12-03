@@ -119,7 +119,7 @@ h6, .h6 {
 }
 
 
-p, .text, li, code {
+p, .text, li, code, dt, dd {
     @extend .font-size-xs;
     line-height: $line-height-xs;
     margin-top: px-to-em($base-spacing--xs, $font-size-xs);

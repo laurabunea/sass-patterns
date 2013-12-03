@@ -326,8 +326,10 @@ $tp-pill-text-color:             #fff;
 // ----------------------------------------------------------------------------
 
 $tp-lozenge-radius:              .25em;
+$tp-lozenge-bg-color:            #F92672;
 
 .tp-lozenge {
+  background-color: $tp-lozenge-bg-color;
   border-radius: $tp-lozenge-radius;
 }
 
