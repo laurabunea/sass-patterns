@@ -12,7 +12,9 @@
         <h2 class='heading heading--keyline'>
            Visibility
         </h2>
-
+        <p>
+            This is broken :( Fred is looking into it !
+        </p>
         <h3 class='h4'>
             a) Hidden
         </h3>
@@ -39,23 +41,23 @@
             </h4> 
           <div class='block-s tq-block '>
                 <p>
-                    normal block always how this 
+                    normal block always show this 
                 </p>
             </div>
 
-            <div class='block-s pink-block hidden-mobile'>
+            <div class='block-s pink-block hidden--q-small'>
                 <p>
                     hide this block on mobile 
                 </p>
             </div>
 
-            <div class='block-s green-block hidden-skinny'>
+            <div class='block-s green-block hidden--q-medium'>
                 <p>
                     hide this block on skinny
                 </p>
             </div>
 
-            <div class='block-s blue-block hidden-wide'>
+            <div class='block-s blue-block hidden--q-xlarge'>
                 <p>
                     hide this block on wide
                 </p>
@@ -92,19 +94,19 @@
                 </p>
             </div>
 
-            <div class='block-s pink-block visible-mobile'>
+            <div class='block-s pink-block visible--q-small'>
                 <p>
                     show this block on mobile
                 </p>
             </div>
 
-            <div class='block-s blue-block visible-skinny'>
+            <div class='block-s blue-block visible--q-medium'>
                 <p>
                     show this block on skinny
                 </p>
             </div>
 
-            <div class='block-s green-block visible-wide'>
+            <div class='block-s green-block visible--q-xlarge'>
                 <p>
                     show this block on wide
                 </p>

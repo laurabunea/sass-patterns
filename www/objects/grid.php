@@ -10,7 +10,7 @@
     <div class='block-l tp-block ml-l' >  
 
        <h2 class='heading heading--keyline'>
-           Grids (Inline and Float grid)
+           Grids <span class='tiny'>(Inline and Float grid)</span>
         </h2>
         <h3 class='h4'>
             a) Inline Grid
@@ -281,7 +281,7 @@ $breakpoint-classname-prefix: "--q-";
           
             
             <div class='grid'>
-                <div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'>
+                <div class='grid__item col-1-4 col--q-small col-2-4--q-medium col-4-10--q-xlarge'>
                    <div class='pink-block block-s'>
                         <p>
                             1<!--<strong>Desktop:</strong> 1/4 <br />
@@ -291,21 +291,21 @@ $breakpoint-classname-prefix: "--q-";
                        </p>
                     </div>
                 </div>
-                <div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'>
+                <div class='grid__item col-1-4 col--q-small col-2-4--q-medium col-6-10--q-xlarge'>
                    <div class='pink-block block-s'>
                         <p>
                             1
                         </p>
                     </div>
                 </div>
-                <div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'>
+                <div class='grid__item col-1-4 col--q-small col-2-4--q-medium col-4-10--q-xlarge'>
                    <div class='pink-block block-s'>
                         <p>
                             1
                         </p>
                     </div>
                 </div>
-                <div class='grid__item col-1-4 col-2-4--q-medium col--q-small col-6-10--q-xlarge'>
+                <div class='grid__item col-1-4 col--q-small col-2-4--q-medium col-6-10--q-xlarge'>
                    <div class='pink-block block-s'>
                         <p>
                             1

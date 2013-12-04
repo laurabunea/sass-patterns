@@ -57,46 +57,12 @@
                 </p>
             </div><!-- hello world block ends -->
             
-            <h3 class='h4'>
-                a) Positive/negative actions
-            </h3>
-            <p>
-                Stack a variation class to add some color
-            </p>
-            <!-- code block starts -->
-            <div class=' block-s tt-block'>
-                <h4 class='tiny uppercase text-muted'>
-                    code
-                </h4>
-                <pre>
-    <code class="language-markup">
-    &lt;a class='btn btn-positive'&gt; Button 1 &lt;/a&gt;
-    &lt;a class='btn btn-negative'&gt; Button 2 &lt;/a&gt;
-    </code>
-                </pre>
-            </div><!-- code block ends -->
-
-            <!-- hello world block starts -->
-            <div class='block--stacked block-s ts-block'>
-                <h4 class='tiny uppercase text-muted'>
-                    hello world
-                </h4>
-                <p>
-                    <a class='btn btn-positive'>
-                        A button with .btn and .btn-positive
-                    </a>
-                    <a class='btn btn-negative'>
-                        A button with .btn and .btn-negative
-                    </a>
-                </p>
-            </div><!-- hello world block ends -->
-        </div><!-- btn-variations ends -->
         <hr class='mt-l'>
         <!-- /****************************************  Button modifiers  *******************************/ -->
 
         <div class='mt-l' id='btn-modifier'>
-            <h3>
-                Button modifiers
+            <h3 class='h4'>
+                b) Button modifiers
             </h3>
             <p>
                 Stick buttons on anything you want. They don't have to go on anchor tags!
@@ -185,7 +151,7 @@
                     hello world
                 </h4>
                 <p>
-                    <a class='btn btn-positive btn--block'>
+                    <a class='btn tp-btn btn--block'>
                         Button 1
                     </a>
                 </p>
@@ -205,9 +171,9 @@
 
         <div class='mt-l' id='btn-icons'>
             
-            <h2 class='h3' >
-                03. Buttons with icons
-            </h2>
+            <h3 class='h4' >
+                c) Buttons with icons
+            </h3>
 
             <p>
                 These assume there's an inline-block element with a class of 
@@ -222,14 +188,42 @@
                 </h4>
                 <pre>
     <code class='language-markup'>
-    &lt;a class='btn tp-btn btn--icon btn--bounce-icon--left'&gt;&lt;i class='i'&gt;&#9834;&lt;/i&gt; A button with .btn--icon&lt;/a&gt;
-    &lt;a class='btn tp-btn btn--icon--rev btn--bounce-icon--bottom'&gt; A button with .btn--icon--rev &lt;i class='i'&gt;&#9835;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class='btn tp-btn btn--icon btn--bounce-icon--left'&gt;
+        &lt;i class='i'&gt;&#9834;&lt;/i&gt; 
+            A button with .btn--icon
+        &lt;/a&gt;
+    &lt;a class='btn tp-btn btn--icon--rev btn--bounce-icon--bottom'&gt; 
+        A button with .btn--icon--rev 
+        &lt;i class='i'&gt;
+            &#9835;
+        &lt;/i&gt;
+    &lt;/a&gt;
 
-    &lt;a class='btn ts-btn btn--icon-large btn--bounce-icon--top'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt; A button with .btn--icon-large &lt;/a&gt;
-    &lt;a class='btn ts-btn btn--icon-large--rev btn--bounce-icon--right'&gt; A button with .btn--icon-large--rev &lt;i class='i'&gt;&#9733;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class='btn ts-btn btn--icon-large btn--bounce-icon--top'&gt;
+        &lt;i class='i'&gt;
+            &#9829;
+        &lt;/i&gt; 
+        A button with .btn--icon-large 
+    &lt;/a&gt;
 
-    &lt;a class='bbtn tt-btn btn--icon-small'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt; A button with .btn--icon-small &lt;/a&gt;
-    &lt;a class='btn tt-btn btn--icon-small'&gt;&lt;i class='i'&gt;&#9733;&lt;/i&gt; A small with .btn--icon-small&lt;/a&gt;
+    &lt;a class='btn ts-btn btn--icon-large--rev btn--bounce-icon--right'&gt; 
+        A button with .btn--icon-large--rev 
+        &lt;i class='i'&gt;
+            &#9733;
+        &lt;/i&gt;
+    &lt;/a&gt;
+
+    &lt;a class='bbtn tt-btn btn--icon-small'&gt;
+        &lt;i class='i'&gt;
+            &#9829;
+        &lt;/i&gt; A button with .btn--icon-small 
+    &lt;/a&gt;
+    &lt;a class='btn tt-btn btn--icon-small'&gt;
+        &lt;i class='i'&gt;
+            &#9733;
+        &lt;/i&gt; 
+        A small with .btn--icon-small
+    &lt;/a&gt;
     </code>
                 </pre>
             </div><!-- code block ends -->
@@ -279,7 +273,7 @@
             </div><!-- hello world block ends -->
 
             <p class='m'>
-                Buttons can also be icon only:
+                Buttons can also be icons only:
             </p>
 
             <!-- code block starts -->
@@ -289,11 +283,31 @@
                 </h4>
                 <pre>
     <code class='language-markup'>
-    &lt;a class='btn btn-positive btn--icon-only--large'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
-    &lt;a class='btn btn-negative btn--icon-only'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
-    &lt;a class='btn tt-btn btn--icon-only--small'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
-    &lt;a class='btn tt-btn btn--icon-only--small btn--soft'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
-    &lt;a class='btn tt-btn btn--icon-only--small btn--hard'&gt;&lt;i class='i'&gt;&#9829;&lt;/i&gt;&lt;/a&gt;
+    &lt;a class='btn btn--icon-only--large'&gt;
+        &lt;i class='i'&gt;
+            &#9829;
+        &lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a class='btn btn--icon-only'&gt;
+        &lt;i class='i'&gt;
+            &#9829;
+        &lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a class='btn btn--icon-only--small'&gt;
+        &lt;i class='i'&gt;
+            &#9829;
+        &lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a class='btn btn--icon-only--small btn--soft'&gt;
+        &lt;i class='i'&gt;
+            &#9829;
+        &lt;/i&gt;
+    &lt;/a&gt;
+    &lt;a class='btn btn--icon-only--small btn--hard'&gt;
+        &lt;i class='i'&gt;
+            &#9829;
+        &lt;/i&gt;
+    &lt;/a&gt;
     </code>
             </pre>
             </div><!-- code block ends -->
@@ -304,20 +318,30 @@
                     hello world
                 </h4>
                 <p>
-                    <a class='btn btn-positive btn--icon-only--large'>
-                        <i class='i'>&#9829;</i>
+                    <a class='btn tp-btn btn--icon-only--large'>
+                        <i class='i'>
+                            &#9829;
+                        </i>
                     </a>
-                    <a class='btn btn-negative btn--icon-only'>
-                        <i class='i'>&#9829;</i>
+                    <a class='btn ts-btn btn--icon-only'>
+                        <i class='i'>
+                            &#9829;
+                        </i>
                     </a>
                     <a class='btn tt-btn btn--icon-only--small'>
-                        <i class='i'>&#9829;</i>
+                        <i class='i'>
+                            &#9829;
+                        </i>
                     </a>
-                    <a class='btn tt-btn btn--icon-only--small btn--soft'>
-                        <i class='i'>&#9733;</i>
+                    <a class='btn ts-btn btn--icon-only--small btn--soft'>
+                        <i class='i'>
+                            &#9733;
+                        </i>
                     </a>
-                    <a class='btn tt-btn btn--icon-only--small btn--hard'>
-                        <i class='i'>&#9834;</i>
+                    <a class='btn tp-btn btn--icon-only--small btn--hard'>
+                        <i class='i'>
+                            &#9834;
+                        </i>
                     </a>
                 </p>
             </div><!-- hello world block ends -->
@@ -326,9 +350,9 @@
         <!-- /****************************************  Buttons with icons  *******************************/ -->
         <hr class='mt-l'>
         <div class='mt-l' id='btn-variations'> 
-            <h2 class='h3' >
-                04. Submit buttons
-            </h2>
+            <h3 class='h4' >
+                d) Submit buttons
+            </h3>
             <p>
                 FireFox doesn't like line-heights on submit buttons. Stick a class on submit
                  buttons and make sure the padding's the same as your default button :)
@@ -339,12 +363,11 @@
                     code
                 </h4>
                 <pre>
-    <code class="language-markup">
-    &lt;input type='submit' value='Button 3' class='btn btn--submit-small' &lt;/&gt;
-    &lt;input type='submit' value='Button' class='btn btn--submit' &lt;/&gt;
-    &lt;input type='submit' value='Button 2' class='btn btn--submit-large' &lt;/&gt;
-
-    </code>
+<code class="language-markup">
+&lt;input type='submit' value='Button 3' class='btn btn--submit-small' /&gt;
+&lt;input type='submit' value='Button' class='btn btn--submit' /&gt;
+&lt;input type='submit' value='Button 2' class='btn btn--submit-large' /&gt;
+</code>
                 </pre>
             </div><!-- code block ends -->
 

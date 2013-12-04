@@ -1,14 +1,16 @@
 /**
- * Visibility
+ * Visibility -
  * -----------------------------------------------------------------------------
  */
+ //loop through every query in the breakpoints array found in fred defaults
 @each $query in $breakpoints {
+
     $queryName: nth($query, 1);
     @include media($queryName) {
-        .visible-#{$queryName} {
+        .visible#{$breakpoint-classname-prefix}#{$queryName} {
             display: block !important;
         }
-        .hidden-#{$queryName} {
+        .hidden#{$breakpoint-classname-prefix}#{$queryName} {
                 display: none !important;
         }
     }

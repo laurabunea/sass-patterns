@@ -22,8 +22,12 @@
             </h4>
             <pre>
 <code class='language-markup'>
-&lt;p class='prepend' data-prepend='email:'&gt;&nbsp;email@gmail.com&lt;/p&gt;
-&lt;p class='append' data-append='is my email'&gt;email@gmail.com&nbsp;&lt;/p&gt;
+&lt;p class='prepend' data-prepend='email:'&gt; 
+    email@gmail.com
+&lt;/p&gt;
+&lt;p class='append' data-append='is my email'&gt;
+    email@gmail.com 
+&lt;/p&gt;
 </code>
             </pre>
         </div><!--  code block ends -->

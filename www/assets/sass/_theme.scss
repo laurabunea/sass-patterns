@@ -273,19 +273,6 @@ $tt-btn-hover-bg:         $tp-black;
 $tt-btn-hover-txt:        $tp-yellow;
 
 
-// theme blocks positive negative.. ??
-$positive-btn-bg:              $tp-white;
-$positive-btn-txt:             $tp-black;
-$positive-btn-border:          $tp-white;
-$positive-btn-hover-bg:        $tp-black;
-$positive-btn-hover-txt:       $tp-white;
-
-$negative-btn-bg:              $tp-black;
-$negative-btn-txt:             $tp-white;
-$negative-btn-border:          $tp-white;
-$negative-btn-hover-bg:        $tp-white;
-$negative-btn-hover-txt:       $tp-black;
-
 //Theme - primary
 .tp-btn { 
     @include theme-block($tp-btn-bg, $tp-btn-txt, $tp-btn-border);  
@@ -313,22 +300,6 @@ $negative-btn-hover-txt:       $tp-black;
     }
 }
 
-
-.btn-positive {
-    @include theme-block($positive-btn-bg, $positive-btn-txt, $positive-btn-border);
-    &:hover {
-        background-color: $positive-btn-hover-bg;
-        color: $positive-btn-hover-txt;
-    }
-}
-
-.btn-negative {
-    @include theme-block($negative-btn-bg, $negative-btn-txt, $negative-btn-border);
-    &:hover {
-        background-color: $negative-btn-hover-bg;
-        color: $negative-btn-hover-txt;
-    }
-}
 
 /**
  * A common active state makes us look pro as, bro!

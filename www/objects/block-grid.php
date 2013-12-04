@@ -9,7 +9,7 @@
     <div class='block-l tp-block ml-l' >  
         
         <h2 class='heading heading--keyline'>
-          BloCK Grid
+          Block Grid
         </h2>
    
         <!--  code block starts -->

@@ -211,7 +211,7 @@ $breakpoints:
 // Grid
 // -----------------------------------------------------------------------------
 
-$fred-grid-breakpoints:     default, small, medium, large;
+$fred-grid-breakpoints:     default, small, medium, large, xlarge;
 $grid-column-name:          "col";
 $grid-divisions:            3, 4, 5, 10;
 $grid-float-padding:        1em; // false to disable.
@@ -223,7 +223,7 @@ $grid-float-padding:        1em; // false to disable.
 // These instruct Fred on how to generate just the bits you want.
 
 // Make a range of blocks for the given breakpoints
-$fred-block-breakpoints: default, small, medium, large;
+$fred-block-breakpoints: default, small, medium, large, xlarge;
 
 // Generate margin classes for the given breakpoints
 // 
@@ -232,7 +232,7 @@ $fred-block-breakpoints: default, small, medium, large;
 // mr   | margin-right
 // ml   | margin-left
 
-$fred-margin-breakpoints: default, small, medium, large;
+$fred-margin-breakpoints: default, small, medium, large, xlarge;
 $fred-margin-types: "mt", "mb", "ml", "mr";
 
 // Generate padding classes for the given breakpoints
@@ -242,7 +242,7 @@ $fred-margin-types: "mt", "mb", "ml", "mr";
 // pr   | padding-right
 // pl   | padding-left
 
-$fred-padding-breakpoints: default, small, medium, large;
+$fred-padding-breakpoints: default, small, medium, large, xlarge;
 $fred-padding-types: "pt", "pb", "pl", "pr";
 
 // -----------------------------------------------------------------------------
