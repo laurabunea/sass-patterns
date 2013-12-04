@@ -203,3 +203,23 @@ $blue-border-color:             $blue-bg-color;
   @extend %border;
     @include theme-block( $blue-bg-color, $blue-txt-color, $blue-border-color );
 }
+@include module('note') {
+
+  #{&}__content {
+    background: white;
+  }
+
+  #{&}__meta {
+    background: #f1f1f1;
+    border-top: 1px solid #eee;
+  }
+
+  #{&}--featured {
+
+    #{&}__meta {
+      background: pink;
+    }
+
+  } 
+
+}
