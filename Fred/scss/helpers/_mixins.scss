@@ -170,12 +170,3 @@
         }
     }
 }
-//fred's new friend
-@mixin module($name) {
-  .#{$name} {
-    @at-root {
-      @content;
-    }
-  }
-}
-

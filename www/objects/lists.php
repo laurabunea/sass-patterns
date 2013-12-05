@@ -13,7 +13,7 @@
         </h2>
 
         <div class='mt-m'>
-            <h3 >
+            <h3 class='h4'>
                 a) Un styled list
             </h3>
 
@@ -63,6 +63,21 @@
     &lt;li&gt; Styled list item 1 &lt;/li&gt;
     &lt;li&gt; Styled list item 2 &lt;/li&gt;
 &lt;ul&gt;
+
+&lt;ul class='list-styled--alpha'&gt;
+    &lt;li&gt; Styled list item 1 &lt;/li&gt;
+    &lt;li&gt; Styled list item 2 &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class='list-styled--dashed'&gt;
+    &lt;li&gt; Styled list item 1 &lt;/li&gt;
+    &lt;li&gt; Styled list item 2 &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class='list-styled--decimal'&gt;
+    &lt;li&gt; Styled list item 1 &lt;/li&gt;
+    &lt;li&gt; Styled list item 2 &lt;/li&gt;
+&lt;/ul&gt;
 </code>
                 </pre>
             </div><!-- code block ends -->
@@ -73,6 +88,33 @@
                     hello world
                 </h4>
                 <ul class='list-styled'>
+                    <li>
+                        Styled list item 1
+                    </li>
+                    <li>
+                        Styled list item 2
+                    </li>
+                </ul>
+                <hr />
+                <ul class='list-styled--alpha'>
+                    <li>
+                        Styled list item 1
+                    </li>
+                    <li>
+                        Styled list item 2
+                    </li>
+                </ul>
+                <hr />
+                <ul class='list-styled--dashed'>
+                    <li>
+                        Styled list item 1
+                    </li>
+                    <li>
+                        Styled list item 2
+                    </li>
+                </ul>
+                <hr />
+                <ul class='list-styled--decimal'>
                     <li>
                         Styled list item 1
                     </li>
@@ -114,6 +156,54 @@
                         inine list item 2
                     </li>
                 </ul>
+            </div><!-- hello world block ends -->
+        </div> 
+        <div class='mt-l'>
+            <h3 class='h4'>d) Definition list</h3>
+            <!-- code block starts -->
+            <div class=' block-s tt-block'>
+                <h4 class='tiny uppercase text-muted'>
+                    code
+                </h4>
+            <pre>
+<code class='language-markup'>
+
+</code>
+            </pre>
+            </div><!-- code block ends -->
+
+            <!-- hello world block starts -->
+            <div class='block--stacked block-s ts-block'>
+                <h4 class='tiny uppercase text-muted'>
+                    hello world
+                </h4>
+                <dl>
+                  <dt>Description 1</dt>
+                    <dd>Info</dd>
+                  <dt>Description 2</dt>
+                    <dd>Info</dd>
+                </dl> 
+                <hr class='mt-m'/>
+                <dl class='dl-horizontal dl-horizontal--1-4 '>
+                  <dt>Description 1</dt>
+                    <dd>Info</dd>
+                  <dt>Description 2</dt>
+                    <dd>Info</dd>
+                </dl>
+                <hr class='mt-m'/>
+                <dl class='dl-horizontal dl-horizontal--1-3 '>
+                    <dt>Description 1</dt>
+                    <dd>Info</dd>
+                  <dt>Description 2</dt>
+                    <dd>Info</dd>
+                </dl>
+                <hr class='mt-m'/>
+                <dl class='dl-horizontal dl-horizontal--1-2 '>
+                  <dt>Description 1</dt>
+                    <dd>Info</dd>
+                  <dt>Description 2</dt>
+                    <dd>Info</dd>
+                </dl>
             </div><!-- hello world block ends -->
         </div> 
        

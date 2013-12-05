@@ -23,7 +23,6 @@
 /* A list without any text decoration commonly used in vertical navigation lists*/
 .clean-link-list a {
    @extend %clean-link;
-   display: block; 
 }
 
 /* Link states */
@@ -37,3 +36,9 @@
 .is-draggable {
     cursor: move;
 }
+
+a[rel~="external"]:before {
+    //add an image so we can add in a external image icon
+}
+
+//add in a pdf link 

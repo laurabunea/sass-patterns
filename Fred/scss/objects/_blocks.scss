@@ -32,6 +32,6 @@
 
 @each $breakpoint in $fred-block-breakpoints {
     @include media($breakpoint) {
-        @include fred-sizer("block", $sizePrefixes, $breakpoint, "padding", $blockSizes);
+        @include fred-sizer("block", $blockPrefixes, $breakpoint, "padding", $blockSizes);
     }
 }

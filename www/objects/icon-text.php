@@ -23,12 +23,12 @@
             </h4>
             <pre>
 <code class="language-markup">
-&lt;a class='media--rev' href='#'&gt;
+&lt;a class='icon-text' href='#'&gt;
     &lt;i class='i icon-placeholder'&gt;&lt;/i&gt;
     A link with an icon
 &lt;/a&gt;
 
-&lt;p class='media--rev' href='#'&gt;
+&lt;p class='icon-text--rev' href='#'&gt;
     A paragraph with an icon on the other side
     &lt;i class='i icon-placeholder'&gt;&lt;/i&gt;
 &lt;/p&gt;
@@ -42,15 +42,16 @@
                 hello world
             </h4>
             <p>
-                <a class='icon-text xm' href='#'> 
+                <a class='icon-text ' href='#'> 
                     <i class='i icon-placeholder'></i>
                     A link with an icon
                 </a>
             </p>
             
-            <p class='icon-text xm' href=''> 
+            <p class='icon-text--rev' href=''>
+                
                 A paragraph with an icon on the other side
-                <i class='i icon-placeholder'></i>
+                <i class='i icon-placeholder '></i>
             </p>
             
         </div><!--  hello world block ends -->

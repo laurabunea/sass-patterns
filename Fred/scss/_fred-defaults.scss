@@ -101,8 +101,24 @@ $sizes:
 
 
 // -----------------------------------------------------------------------------
-// Blocks
+// Blocks 
 // -----------------------------------------------------------------------------
+/* 
+* The block prefixes need to match up with the $block sizes below otherwise the 
+* array will through an error or we could create an argument and pass in size 
+prefixes and minus the ones we dont need eg block-0 hmmm 
+*/
+
+$blockPrefixes:
+    "-xxxs",
+    "-xxs",
+    "-xs",
+    "-s",
+    "-m",
+    "-l",
+    "-xl",
+    "-xxl",
+    "-xxxl";
 
 $block-xxxs:                   $bs-xxxs $bs-xxxs;        // 6px 6px
 $block-xxs:                    $bs-xxxs $bs-xxs;         // 6px 8px
@@ -123,7 +139,6 @@ $blockSizes:
     $block-l,
     $block-xl,
     $block-xxl,
-    $block-xxxl,
     $block-xxxl;
 
 
@@ -163,33 +178,36 @@ $breakpoint-classname-prefix: "--q-";
 
 $breakpoint-xsmall:     25em;   // The mighty LG Android!
 $breakpoint-small:      30em;   // Portrait regular mobiles//480px
+$breakpoint-small-max:  47.99em;   // Portrait regular mobiles//480px
 $breakpoint-medium:     48em;   // Skinny 768px
+$breakpoint-medium-max: 59.99em;   // Skinny 768px
 $breakpoint-large:      60em;   // Desktop 960px
+$breakpoint-large-max:  74.99em;   // Desktop 960px
 $breakpoint-xlarge:     75em;   // Wide 1200px
 $breakpoint-xxlarge:    90em;   // Wide 1440px
 $breakpoint-xxxlarge:   120em;  // Full HD
 
 $breakpoints:
         (
-            small "only screen"
+            small-up "only screen"
         ),
         (
-            small-only "only screen and (max-width: #{$breakpoint-small})"
+            small "only screen and (max-width: #{$breakpoint-small})"
         ),
         (
-            medium "only screen and (min-width: #{$breakpoint-medium})"
+            medium-up "only screen and (min-width: #{$breakpoint-medium})"
+        ),
+        (
+            medium "only screen and (min-width: #{$breakpoint-medium}) and (max-width: #{$breakpoint-medium-max})"
         ),
         (
             medium-down "only screen and (max-width: #{$breakpoint-medium})"
         ),
         (
-            medium-only "only screen and (min-width: #{$breakpoint-medium}) and (max-width: #{$breakpoint-large - 0.01em})"
+            large-up "only screen and (min-width: #{$breakpoint-large})"
         ),
         (
-            large "only screen and (min-width: #{$breakpoint-large})"
-        ),
-        (
-            large-only "only screen and (min-width: #{$breakpoint-large}) and (max-width: #{$breakpoint-xlarge - 0.01em})"
+            large "only screen and (min-width: #{$breakpoint-large}) and (max-width: #{$breakpoint-large-max})"
         ),
         (
             xlarge "only screen and (min-width: #{$breakpoint-xlarge})"
@@ -205,7 +223,7 @@ $breakpoints:
         )
 ;
 
-
+$testing: "";
 
 // -----------------------------------------------------------------------------
 // Grid

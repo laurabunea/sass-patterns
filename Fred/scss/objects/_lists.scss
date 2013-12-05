@@ -11,7 +11,7 @@
 
     .list-unstyled > li {
         list-style: none;
-        margin-left: 0;
+        margin: 0;
     }
 
     .list--inline {
@@ -115,19 +115,45 @@ dl {
  *
  */
 
-//@include media('medium-down') {
-//    .dl-horizontal {
-//        > dt {
-//            @extend .text-overflow;
-//            clear: left;
-//            float: left;
- //           text-align: right;
- //           width: 35%;
- //       }
- //       > dd {
- //           @extend %clearfix; // Clear the floated `dt` if an empty `dd` is present
- //           margin-left: 40%;
-//
-//       }
- //   }
-//}
+.dl-horizontal {
+    margin:0;
+    font-size: 0;                       /* [2] */
+    text-align: justify;                /* [1] */
+   
+    .ie8 & {
+        // This fixes and issue mentioned above
+        text-justify:normal;
+    }
+    > dt, 
+    > dd {
+        @extend .inline-block;/* This extend is found in core */
+        @extend %align--top; /* This extend is found in core */
+        font-size: medium;
+    }
+    > dt { text-align: right; }
+    > dd { text-align: left; }
+}
+
+    .dl-horizontal:after {
+        @extend .inline-block; /* This extend is found in core */
+        content: '';
+        height: 0;
+        width:100%;
+    }
+
+/**/
+.dl-horizontal--1-4 {
+    > dt { width:24%; }
+    > dd { width:74%; }
+}
+
+.dl-horizontal--1-3 {
+    > dt { width:32%; }
+    > dd { width:65%; }
+}
+
+.dl-horizontal--1-2 {
+    > dt { width:49%; }
+    > dd { width:49%; }
+}
+

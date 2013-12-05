@@ -32,7 +32,7 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-             <p>
+             <p >
                 Close icon: <span class='close'></span>
             </p>
         </div><!--  hello world block ends -->

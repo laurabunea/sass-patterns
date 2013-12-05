@@ -12,9 +12,7 @@
         <h2 class='heading heading--keyline'>
            Visibility
         </h2>
-        <p>
-            This is broken :( Fred is looking into it !
-        </p>
+
         <h3 class='h4'>
             a) Hidden
         </h3>
@@ -28,8 +26,35 @@
                 scss 
             </h4>
             <pre>
-<code class="language-css">
+<code class="language-markup">
 
+&lt;div class='block-s pink-block hidden--q-small'&gt;
+    hide this block on mobile 
+&lt;/div&gt;
+
+&lt;div class='block-s green-block hidden--q-medium'&gt;
+    hide this block on skinny
+&lt;/div&gt;
+
+&lt;div class='block-s tp-block hidden--q-medium-down'&gt;
+    hide this block skinny down
+&lt;/div&gt;
+
+&lt;div class='block-s tp-block hidden--q-medium-up'&gt;
+    hide this block on a medium screen, large screen and xlarge screen
+&lt;/div&gt;
+
+&lt;div class='block-s blue-block hidden--q-large'&gt;
+    hide this block on desktop
+&lt;/div&gt;
+
+&lt;div class='block-s ts-block hidden--q-large-up'&gt;
+    hide this block desktop up
+&lt;/div&gt;
+
+&lt;div class='block-s tt-block hidden--q-xlarge'&gt;
+    hide this block on wide
+&lt;/div&gt;
 </code>
             </pre>
         </div><!--  code block ends -->
@@ -39,30 +64,28 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
-          <div class='block-s tq-block '>
-                <p>
-                    normal block always show this 
-                </p>
-            </div>
 
             <div class='block-s pink-block hidden--q-small'>
-                <p>
-                    hide this block on mobile 
-                </p>
+                hide this block on mobile 
             </div>
-
             <div class='block-s green-block hidden--q-medium'>
-                <p>
-                    hide this block on skinny
-                </p>
+                hide this block on skinny
             </div>
-
-            <div class='block-s blue-block hidden--q-xlarge'>
-                <p>
-                    hide this block on wide
-                </p>
+            <div class='block-s tp-block hidden--q-medium-down'>
+                hide this block skinny down
             </div>
-
+            <div class='block-s blue-block hidden--q-medium-up'>
+                hide this block on a medium screen, large screen and xlarge screen
+            </div>
+            <div class='block-s pink-block hidden--q-large'>
+                hide this block on desktop
+            </div>
+            <div class='block-s ts-block hidden--q-large-up'>
+                hide this block desktop up
+            </div>
+            <div class='block-s tt-block hidden--q-xlarge'>
+                hide this block on wide
+            </div>
         </div><!--  hello world block ends -->
         <h3 class='h4'>
             b) Visibile
@@ -77,8 +100,35 @@
                 scss 
             </h4>
             <pre>
-<code class="language-css">
+<code class="language-markup">
 
+&lt;div class='block-s pink-block visible--q-small'&gt;
+    show this block on small screen
+&lt;/div&gt;
+
+&lt;div class='block-s blue-block visible--q-medium'&gt;
+    show this block on a medium screen
+&lt;/div&gt;
+
+&lt;div class='block-s blue-block visible--q-medium-down'&gt;
+    Show this block on a medium screen and small screen
+&lt;/div&gt;
+
+&lt;div class='block-s blue-block visible--q-medium-up'&gt;
+    Show this block on a medium screen, large screen and xlarge screen
+&lt;/div&gt;
+
+&lt;div class='block-s tt-block visible--q-large'&gt;
+    Show this block on a large screen
+&lt;/div&gt;
+
+&lt;div class='block-s blue-block visible--q-large-up'&gt;
+    Show this block on a large screen and a xlarge screen
+&lt;/div&gt;
+
+&lt;div class='block-s green-block visible--q-xlarge'&gt;
+    show this block on a xlarge screen
+&lt;/div&gt;
 </code>
             </pre>
         </div><!--  code block ends -->
@@ -88,28 +138,28 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4> 
-          <div class='block-s tq-block '>
-                <p>
-                    normal block always show this 
-                </p>
-            </div>
 
             <div class='block-s pink-block visible--q-small'>
-                <p>
-                    show this block on mobile
-                </p>
+                show this block on small screen
             </div>
 
             <div class='block-s blue-block visible--q-medium'>
-                <p>
-                    show this block on skinny
-                </p>
+                show this block on a medium screen
             </div>
-
+            <div class='block-s blue-block visible--q-medium-down'>
+                Show this block on a medium screen and small screen
+            </div>
+            <div class='block-s pink-block visible--q-medium-up'>
+                Show this block on a medium screen, large screen and xlarge screen
+            </div>
+            <div class='block-s tt-block visible--q-large'>
+                Show this block on a large screen
+            </div>
+            <div class='block-s blue-block visible--q-large-up'>
+                Show this block on a large and xlarge screen
+            </div>
             <div class='block-s green-block visible--q-xlarge'>
-                <p>
-                    show this block on wide
-                </p>
+                show this block on a xlarge screen
             </div>
 
         </div><!--  hello world block ends -->

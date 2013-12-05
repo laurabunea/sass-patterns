@@ -332,6 +332,22 @@ table {
     vertical-align: bottom;
 }
 
+
+.align--top {
+   @extend %align--top;
+}
+
+.align--middle {
+    @extend %align--middle;
+}
+
+.align--baseline {
+    @extend %align--baseline;
+}
+
+.align--bottom {
+    @extend %align--bottom;
+}
 /**
  * Inline block
  * ----------------------------------------------------------------------------

@@ -2,19 +2,7 @@
  * Visibility -
  * -----------------------------------------------------------------------------
  */
- //loop through every query in the breakpoints array found in fred defaults
-@each $query in $breakpoints {
 
-    $queryName: nth($query, 1);
-    @include media($queryName) {
-        .visible#{$breakpoint-classname-prefix}#{$queryName} {
-            display: block !important;
-        }
-        .hidden#{$breakpoint-classname-prefix}#{$queryName} {
-                display: none !important;
-        }
-    }
-}
 
 /**
  * Hide an element, but make it visible to screen readers
@@ -26,4 +14,136 @@
     margin: -1px; padding: 0; border: 0;
     overflow: hidden;
     position: absolute;
+}
+
+
+/**
+ * Common visible and hidden classes 
+ * ----------------------------------------------------------------------------
+ */
+
+//Show / Hide this element on a small screen 
+@media only screen and (max-width: $breakpoint-small-max) {
+    .visible--q-small,
+    .hidden--q-medium,
+    .hidden--q-large,
+    .hidden--q-xlarge {
+        display:block;
+    }
+    .visible--q-medium,
+    .visible--q-large,
+    .visible--q-xlarge,
+    .hidden--q-small {
+        display: none;
+    }
+
+}
+
+//Show / Hide this element on a medium screen 
+@media only screen and (min-width: $breakpoint-medium) and (max-width: $breakpoint-medium-max) {
+    .visible--q-medium,
+    .hidden--q-small,
+    .hidden--q-large,
+    .hidden--q-xlarge
+     {
+        display:block
+    }
+    .hidden--q-medium,
+    .visible--q-small,
+    .visible--q-large,
+    .visible--q-xlarge {
+        display: none;
+    }
+}
+
+//Show / Hide this element on a large screen 
+@media only screen and (min-width:$breakpoint-large) and (max-width: $breakpoint-large-max){
+    .hidden--q-small,
+    .hidden--q-medium,
+    .hidden--q-xlarge,
+    .visible--q-large {
+        display:block
+    }
+    .hidden--q-large,
+    .visible--q-small,
+    .visible--q-medium,
+    .visible--q-xlarge {
+        display: none;
+    }
+}
+
+//Show / Hide this element on a xlarge screen 
+@media only screen and (min-width: $breakpoint-xlarge) {
+    
+    .hidden--q-small,
+    .hidden--q-medium,
+    .hidden--q-large,
+    .visible--q-xlarge {
+        display:block
+    }
+
+    .hidden--q-xlarge,
+    .visible--q-small,
+    .visible--q-medium,
+    .visible--q-large {
+        display: none;
+    }
+}
+
+// or do you just include skinny and mobile classes class='visible--q-small visible--q-medium' 
+//Show / Hide this element on a medium and small screen 
+@media only screen and (max-width: $breakpoint-medium-max) {
+    .visible--q-medium-down {
+        display:block;
+    }
+    .hidden--q-medium-down {
+        display:none;
+    }
+}
+
+@media only screen and (min-width: $breakpoint-large ) {
+    .visible--q-medium-down {
+        display:none;
+    }
+    .hidden--q-medium-down {
+        display:block;
+    }
+}
+
+//Show / Hide this element on a medium, large and xlarge screen 
+@media only screen and (min-width: $breakpoint-medium) {
+    .visible--q-medium-up {
+        display:block;
+    }
+    .hidden--q-medium-up {
+        display:none;
+    }
+}
+
+@media only screen and (max-width: $breakpoint-small-max) {
+    .visible--q-medium-up {
+        display:none;
+    }
+    .hidden--q-medium-up {
+        display:block;
+    }
+}
+
+//Show / Hide this element on a large and xlarge screen 
+@media only screen and (max-width: $breakpoint-medium-max) {
+    .visible--q-large-up {
+        display:none;
+    }
+    .hidden--q-large-up {
+        display:block;
+    }
+}
+
+@media only screen and (min-width: $breakpoint-large ) {
+    .visible--q-large-up {
+        display:block;
+    }
+    .hidden--q-large-up {
+        display:none;
+    }
 }

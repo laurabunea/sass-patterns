@@ -6,7 +6,6 @@
 <div class='relative mb-l col-8-10 grid__item mt-xxxl ' >
     <img class='absolute fred-radii' alt='Fred the fed' src='/assets/images/fred-side.png'  />
 
-
     <div class='block-l tp-block ml-l'>  
 
         <h2 class='h3'>
@@ -31,6 +30,9 @@
 &lt;div class='blue-block block-xs radius--m'&gt;
     Check out my rounded corners
 &lt;/div&gt;
+&lt;div class='blue-block block-xs circle'&gt;
+    Check out my rounded corners
+&lt;/div&gt;
 </code>
             </pre>
         </div><!--  code block ends -->
@@ -40,14 +42,17 @@
             <h4 class='tiny uppercase text-muted'>
                 hello world
             </h4>
-            <div class='blue-block block-xs radius--xs'>
+            <div class='blue-block block-xs radius-s'>
                 Check out my corners
             </div>
-            <div class='blue-block block-xs radius--s'>
+            <div class='blue-block block-xs radius'>
                 Check out my corners
             </div>
-            <div class='blue-block block-xs radius--m'>
+            <div class='blue-block block-xs radius-l'>
                 Check out my corners
+            </div>
+            <div class='blue-block block-xs circle'>
+                I'm nearly a circle, wohoo
             </div>
         </div><!--  hello world block ends -->
     </div>

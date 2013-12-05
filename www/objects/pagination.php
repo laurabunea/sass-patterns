@@ -22,7 +22,9 @@
 <code class='language-markup'>
 &lt;ul class='pagination'&gt;
     &lt;li class='pagination__first'&gt;
-        First
+         &lt;a href="#"&gt; 
+            First 
+         &lt;/a&gt;
     &lt;/li&gt;
     &lt;li class='pagination__prev'&gt;
         &lt;a href="#"&gt;
@@ -63,7 +65,9 @@
             </h4>
             <ul class='pagination'>
                 <li class='pagination__first'>
-                    First
+                     <a href='#'>
+                        First
+                    </a>
                 </li>
                 <li class='pagination__prev'>
                     <a href='#'></a>

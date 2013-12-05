@@ -1,3 +1,13 @@
+/* 
+* The block prefixes need to match up with the $block sizes below otherwise the 
+* array will through an error or we could create an argument and pass in size 
+prefixes and minus the ones we dont need eg block-0 hmmm 
+*/
+/* 
+* The block prefixes need to match up with the $block sizes below otherwise the 
+* array will through an error or we could create an argument and pass in size 
+prefixes and minus the ones we dont need eg block-0 hmmm 
+*/
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -230,17 +240,21 @@ table {
  * Vertical alignment utilities
  * 
  */
-.grid__item {
+.align--top, .grid__item, .dl-horizontal > dt, .dl-horizontal > dd {
   vertical-align: top; }
 
-.btn-group, .btn-group-vertical, .btn, .caret, .grid--middle > .grid__item, .i {
+.align--middle, .btn-group, .btn-group-vertical, .btn, .caret, .close:after, .grid--middle > .grid__item, .i {
   vertical-align: middle; }
 
-.badge {
+.align--baseline, .badge {
   vertical-align: baseline; }
 
-.grid--bottom > .grid__item {
+.align--bottom, .grid--bottom > .grid__item {
   vertical-align: bottom; }
+
+
+
+
 
 /**
  * Inline block
@@ -445,121 +459,110 @@ table {
 .block-xxxs > :first-child, .block-xxs > :first-child, .block-xs > :first-child, .block-s > :first-child, .block-m > :first-child, .block-l > :first-child, .block-xl > :first-child, .block-xxl > :first-child, .block-xxxl > :first-child {
   margin-top: 0; }
 
-.block-0 {
+.block-xxxs {
   padding: 0.375em 0.375em; }
 
-.block-xxxs {
+.block-xxs {
   padding: 0.375em 0.5em; }
 
-.block-xxs {
+.block-xs {
   padding: 0.5em 0.75em; }
 
-.block-xs {
+.block-s {
   padding: 0.75em 1em; }
 
-.block-s {
+.block-m {
   padding: 1.5em 1.5em; }
 
-.block-m {
+.block-l {
   padding: 2.25em 2.25em; }
 
-.block-l {
+.block-xl {
   padding: 2.25em 3em; }
 
-.block-xl {
-  padding: 3em 4.5em; }
-
 .block-xxl {
-  padding: 4.5em 6em; }
+  padding: 3em 4.5em; }
 
 .block-xxxl {
   padding: 4.5em 6em; }
 
-@media only screen {
-  .block-0--q-small {
-    padding: 0.375em 0.375em; }
+@media only screen and (max-width: 30em) {
   .block-xxxs--q-small {
-    padding: 0.375em 0.5em; }
+    padding: 0.375em 0.375em; }
   .block-xxs--q-small {
-    padding: 0.5em 0.75em; }
+    padding: 0.375em 0.5em; }
   .block-xs--q-small {
-    padding: 0.75em 1em; }
+    padding: 0.5em 0.75em; }
   .block-s--q-small {
-    padding: 1.5em 1.5em; }
+    padding: 0.75em 1em; }
   .block-m--q-small {
-    padding: 2.25em 2.25em; }
+    padding: 1.5em 1.5em; }
   .block-l--q-small {
-    padding: 2.25em 3em; }
+    padding: 2.25em 2.25em; }
   .block-xl--q-small {
-    padding: 3em 4.5em; }
+    padding: 2.25em 3em; }
   .block-xxl--q-small {
-    padding: 4.5em 6em; }
+    padding: 3em 4.5em; }
   .block-xxxl--q-small {
     padding: 4.5em 6em; } }
 
-@media only screen and (min-width: 48em) {
-  .block-0--q-medium {
-    padding: 0.375em 0.375em; }
+@media only screen and (min-width: 48em) and (max-width: 59.99em) {
   .block-xxxs--q-medium {
-    padding: 0.375em 0.5em; }
+    padding: 0.375em 0.375em; }
   .block-xxs--q-medium {
-    padding: 0.5em 0.75em; }
+    padding: 0.375em 0.5em; }
   .block-xs--q-medium {
-    padding: 0.75em 1em; }
+    padding: 0.5em 0.75em; }
   .block-s--q-medium {
-    padding: 1.5em 1.5em; }
+    padding: 0.75em 1em; }
   .block-m--q-medium {
-    padding: 2.25em 2.25em; }
+    padding: 1.5em 1.5em; }
   .block-l--q-medium {
-    padding: 2.25em 3em; }
+    padding: 2.25em 2.25em; }
   .block-xl--q-medium {
-    padding: 3em 4.5em; }
+    padding: 2.25em 3em; }
   .block-xxl--q-medium {
-    padding: 4.5em 6em; }
+    padding: 3em 4.5em; }
   .block-xxxl--q-medium {
     padding: 4.5em 6em; } }
 
-@media only screen and (min-width: 60em) {
-  .block-0--q-large {
-    padding: 0.375em 0.375em; }
+@media only screen and (min-width: 60em) and (max-width: 74.99em) {
   .block-xxxs--q-large {
-    padding: 0.375em 0.5em; }
+    padding: 0.375em 0.375em; }
   .block-xxs--q-large {
-    padding: 0.5em 0.75em; }
+    padding: 0.375em 0.5em; }
   .block-xs--q-large {
-    padding: 0.75em 1em; }
+    padding: 0.5em 0.75em; }
   .block-s--q-large {
-    padding: 1.5em 1.5em; }
+    padding: 0.75em 1em; }
   .block-m--q-large {
-    padding: 2.25em 2.25em; }
+    padding: 1.5em 1.5em; }
   .block-l--q-large {
-    padding: 2.25em 3em; }
+    padding: 2.25em 2.25em; }
   .block-xl--q-large {
-    padding: 3em 4.5em; }
+    padding: 2.25em 3em; }
   .block-xxl--q-large {
-    padding: 4.5em 6em; }
+    padding: 3em 4.5em; }
   .block-xxxl--q-large {
     padding: 4.5em 6em; } }
 
 @media only screen and (min-width: 75em) {
-  .block-0--q-xlarge {
-    padding: 0.375em 0.375em; }
   .block-xxxs--q-xlarge {
-    padding: 0.375em 0.5em; }
+    padding: 0.375em 0.375em; }
   .block-xxs--q-xlarge {
-    padding: 0.5em 0.75em; }
+    padding: 0.375em 0.5em; }
   .block-xs--q-xlarge {
-    padding: 0.75em 1em; }
+    padding: 0.5em 0.75em; }
   .block-s--q-xlarge {
-    padding: 1.5em 1.5em; }
+    padding: 0.75em 1em; }
   .block-m--q-xlarge {
-    padding: 2.25em 2.25em; }
+    padding: 1.5em 1.5em; }
   .block-l--q-xlarge {
-    padding: 2.25em 3em; }
+    padding: 2.25em 2.25em; }
   .block-xl--q-xlarge {
-    padding: 3em 4.5em; }
+    padding: 2.25em 3em; }
   .block-xxl--q-xlarge {
-    padding: 4.5em 6em; }
+    padding: 3em 4.5em; }
   .block-xxxl--q-xlarge {
     padding: 4.5em 6em; } }
 
@@ -1001,9 +1004,10 @@ table {
 
 .close:after {
   /* This extend is found in core */
+  /* This extend is found in core */
   content: "\00d7";
   font-size: 1.5em;
-  line-height: 1;
+  line-height: 0;
   opacity: 0.2; }
 
 .close:hover:after {
@@ -1236,7 +1240,7 @@ textarea {
 .col-9-10 {
   width: 90%; }
 
-@media only screen {
+@media only screen and (max-width: 30em) {
   .col-1-3--q-small {
     width: 33.33333%; }
   .col-2-3--q-small {
@@ -1276,7 +1280,7 @@ textarea {
   .col--q-small {
     width: 100%; } }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48em) and (max-width: 59.99em) {
   .col-1-3--q-medium {
     width: 33.33333%; }
   .col-2-3--q-medium {
@@ -1316,7 +1320,7 @@ textarea {
   .col--q-medium {
     width: 100%; } }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 60em) and (max-width: 74.99em) {
   .col-1-3--q-large {
     width: 33.33333%; }
   .col-2-3--q-large {
@@ -1457,8 +1461,6 @@ textarea {
 /* A link with out any text decoration */
 
 /* A list without any text decoration commonly used in vertical navigation lists*/
-.clean-link-list a {
-  display: block; }
 
 /* Link states */
 /* http://www.thecssninja.com/javascript/pointer-events-60fps */
@@ -1468,6 +1470,7 @@ textarea {
 
 .is-draggable {
   cursor: move; }
+
 
 /**
  * Lists
@@ -1480,7 +1483,7 @@ textarea {
 
 .list-unstyled > li {
   list-style: none;
-  margin-left: 0; }
+  margin: 0; }
 
 .list--inline {
   /* This extend is found in core */ }
@@ -1545,6 +1548,45 @@ dd {
  * Defaults to being stacked without any of the below styles applied, until the
  *
  */
+.dl-horizontal {
+  margin: 0;
+  font-size: 0;
+  /* [2] */
+  text-align: justify;
+  /* [1] */ }
+  .ie8 .dl-horizontal {
+    text-justify: normal; }
+  .dl-horizontal > dt, .dl-horizontal > dd {
+    /* This extend is found in core */
+    /* This extend is found in core */
+    font-size: medium; }
+  .dl-horizontal > dt {
+    text-align: right; }
+  .dl-horizontal > dd {
+    text-align: left; }
+
+.dl-horizontal:after {
+  /* This extend is found in core */
+  content: '';
+  height: 0;
+  width: 100%; }
+
+/**/
+.dl-horizontal--1-4 > dt {
+  width: 24%; }
+.dl-horizontal--1-4 > dd {
+  width: 74%; }
+
+.dl-horizontal--1-3 > dt {
+  width: 32%; }
+.dl-horizontal--1-3 > dd {
+  width: 65%; }
+
+.dl-horizontal--1-2 > dt {
+  width: 49%; }
+.dl-horizontal--1-2 > dd {
+  width: 49%; }
+
 /**
  * Float an image to the left, with a clearfixed block of content to the right.
  * ----------------------------------------------------------------------------
@@ -1639,8 +1681,8 @@ dd {
   word-spacing: normal; }
 
 .pagination > li > a {
-  padding: 0.75em;
-  margin: -0.75em; }
+  padding: 0.75em 0;
+  margin: -0.75em 0; }
 
 .pagination__current {
   font-weight: bold; }
@@ -1648,7 +1690,7 @@ dd {
 .pagination__first > a:before, .pagination__last > a:before, .pagination__more > a:before {
   display: inline-block; }
 
-.pagination__last > a:before {
+.pagination__last > a:after {
   content: "\203A"; }
 
 .pagination__first > a:before {
@@ -1691,7 +1733,7 @@ dd {
   border-radius: 100px; }
 
 
-.radius--s {
+.radius-s {
   -webkit-border-radius: 2px 2px 2px 2px;
   -moz-border-radius: 2px 2px 2px 2px;
   -ms-border-radius: 2px 2px 2px 2px;
@@ -1705,7 +1747,7 @@ dd {
   -o-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px; }
 
-.radius--l {
+.radius-l {
   -webkit-border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -ms-border-radius: 10px 10px 10px 10px;
@@ -1755,7 +1797,7 @@ This box will be a square
   padding-top: 75%; }
 
 .ratio-3-4:before {
-  padding-top: 1.33333%; }
+  padding-top: 133.33333%; }
 
 .ratio-16-9:before {
   padding-top: 56.25%; }
@@ -1893,7 +1935,7 @@ This box will be a square
 .mr-xxxl {
   margin-right: 6em; }
 
-@media only screen {
+@media only screen and (max-width: 30em) {
   .mt-0--q-small {
     margin-top: 0; }
   .mt-xxxs--q-small {
@@ -1975,7 +2017,7 @@ This box will be a square
   .mr-xxxl--q-small {
     margin-right: 6em; } }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48em) and (max-width: 59.99em) {
   .mt-0--q-medium {
     margin-top: 0; }
   .mt-xxxs--q-medium {
@@ -2057,7 +2099,7 @@ This box will be a square
   .mr-xxxl--q-medium {
     margin-right: 6em; } }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 60em) and (max-width: 74.99em) {
   .mt-0--q-large {
     margin-top: 0; }
   .mt-xxxs--q-large {
@@ -2341,7 +2383,7 @@ This box will be a square
 .pr-xxxl {
   padding-right: 6em; }
 
-@media only screen {
+@media only screen and (max-width: 30em) {
   .pt-0--q-small {
     padding-top: 0; }
   .pt-xxxs--q-small {
@@ -2423,7 +2465,7 @@ This box will be a square
   .pr-xxxl--q-small {
     padding-right: 6em; } }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48em) and (max-width: 59.99em) {
   .pt-0--q-medium {
     padding-top: 0; }
   .pt-xxxs--q-medium {
@@ -2505,7 +2547,7 @@ This box will be a square
   .pr-xxxl--q-medium {
     padding-right: 6em; } }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 60em) and (max-width: 74.99em) {
   .pt-0--q-large {
     padding-top: 0; }
   .pt-xxxs--q-large {
@@ -2846,78 +2888,9 @@ hr {
   width: 100%; }
 
 /**
- * Visibility
+ * Visibility -
  * -----------------------------------------------------------------------------
  */
-@media only screen {
-  .visible--q-small {
-    display: block !important; }
-  .hidden--q-small {
-    display: none !important; } }
-
-@media only screen and (max-width: 30em) {
-  .visible--q-small-only {
-    display: block !important; }
-  .hidden--q-small-only {
-    display: none !important; } }
-
-@media only screen and (min-width: 48em) {
-  .visible--q-medium {
-    display: block !important; }
-  .hidden--q-medium {
-    display: none !important; } }
-
-@media only screen and (max-width: 48em) {
-  .visible--q-medium-down {
-    display: block !important; }
-  .hidden--q-medium-down {
-    display: none !important; } }
-
-@media only screen and (min-width: 48em) and (max-width: 59.99em) {
-  .visible--q-medium-only {
-    display: block !important; }
-  .hidden--q-medium-only {
-    display: none !important; } }
-
-@media only screen and (min-width: 60em) {
-  .visible--q-large {
-    display: block !important; }
-  .hidden--q-large {
-    display: none !important; } }
-
-@media only screen and (min-width: 60em) and (max-width: 74.99em) {
-  .visible--q-large-only {
-    display: block !important; }
-  .hidden--q-large-only {
-    display: none !important; } }
-
-@media only screen and (min-width: 75em) {
-  .visible--q-xlarge {
-    display: block !important; }
-  .hidden--q-xlarge {
-    display: none !important; } }
-
-@media only screen {
-  .visible--q-screen {
-    display: block !important; }
-  .hidden--q-screen {
-    display: none !important; } }
-
-@media only screen and (orientation: landscape) {
-  .visible--q-landscape {
-    display: block !important; }
-  .hidden--q-landscape {
-    display: none !important; } }
-
-@media only screen and (orientation: portrait) {
-  .visible--q-portrait {
-    display: block !important; }
-  .hidden--q-portrait {
-    display: none !important; } }
-
-.test-none {
-  display: none; }
-
 /**
  * Hide an element, but make it visible to screen readers
  * ----------------------------------------------------------------------------
@@ -2931,3 +2904,67 @@ hr {
   border: 0;
   overflow: hidden;
   position: absolute; }
+
+/**
+ * Common visible and hidden classes 
+ * ----------------------------------------------------------------------------
+ */
+@media only screen and (max-width: 47.99em) {
+  .visible--q-small, .hidden--q-medium, .hidden--q-large, .hidden--q-xlarge {
+    display: block; }
+  .visible--q-medium, .visible--q-large, .visible--q-xlarge, .hidden--q-small {
+    display: none; } }
+
+@media only screen and (min-width: 48em) and (max-width: 59.99em) {
+  .visible--q-medium, .hidden--q-small, .hidden--q-large, .hidden--q-xlarge {
+    display: block; }
+  .hidden--q-medium, .visible--q-small, .visible--q-large, .visible--q-xlarge {
+    display: none; } }
+
+@media only screen and (min-width: 60em) and (max-width: 74.99em) {
+  .hidden--q-small, .hidden--q-medium, .hidden--q-xlarge, .visible--q-large {
+    display: block; }
+  .hidden--q-large, .visible--q-small, .visible--q-medium, .visible--q-xlarge {
+    display: none; } }
+
+@media only screen and (min-width: 75em) {
+  .hidden--q-small, .hidden--q-medium, .hidden--q-large, .visible--q-xlarge {
+    display: block; }
+  .hidden--q-xlarge, .visible--q-small, .visible--q-medium, .visible--q-large {
+    display: none; } }
+
+@media only screen and (max-width: 59.99em) {
+  .visible--q-medium-down {
+    display: block; }
+  .hidden--q-medium-down {
+    display: none; } }
+
+@media only screen and (min-width: 60em) {
+  .visible--q-medium-down {
+    display: none; }
+  .hidden--q-medium-down {
+    display: block; } }
+
+@media only screen and (min-width: 48em) {
+  .visible--q-medium-up {
+    display: block; }
+  .hidden--q-medium-up {
+    display: none; } }
+
+@media only screen and (max-width: 47.99em) {
+  .visible--q-medium-up {
+    display: none; }
+  .hidden--q-medium-up {
+    display: block; } }
+
+@media only screen and (max-width: 59.99em) {
+  .visible--q-large-up {
+    display: none; }
+  .hidden--q-large-up {
+    display: block; } }
+
+@media only screen and (min-width: 60em) {
+  .visible--q-large-up {
+    display: block; }
+  .hidden--q-large-up {
+    display: none; } }
